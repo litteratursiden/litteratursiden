@@ -1,0 +1,386 @@
+// Front Page Sliders
+body.path-frontpage .main-container {
+  //Sliders
+  .block-views-blockrecent-reviews-block-recent-reviews {
+    margin-top: $xlarge-spacer;
+  }
+}
+
+// Slider Tabs
+.entity-reference-tabs-container {
+  .entity-reference-tabs {
+    @include flex-row();
+    @include flex-wrap();
+    padding: $small-spacer*0.5 $small-spacer;
+    margin-bottom: 0;
+    > li.tab {
+      display: flex;
+      background: none;
+      border: 0 none;
+      margin-right: $small-spacer;
+      padding-bottom: $regular-spacer;
+      min-height: $small-spacer*5;
+      overflow: hidden;
+      &.active a {
+        background-color: $brand-color;
+        border-color: $brand-color;
+        position: relative;
+        color: $inverse-text-color;
+        &:hover, &:focus {
+          background-color: darken($brand-color, 10%);
+          border-color: darken($brand-color, 10%);
+          color: $inverse-text-color;
+          &:after {
+            border-color: darken($brand-color, 10%) transparent transparent transparent;
+          }
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          bottom: (-$small-spacer);
+          left: 50%;
+          margin-left: (-$small-spacer);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: $small-spacer $small-spacer 0 $small-spacer;
+          border-color: $brand-color transparent transparent transparent;
+          z-index: 100;
+        }
+      }
+      a {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
+        transition: all 0.2s ease-out;
+        padding: 0 $large-spacer;
+        line-height: $small-spacer*5;
+        background-color: transparent;
+        color: $inverse-text-color;
+        border: 1px solid $border-gray;
+        border-radius: 4px;
+        &:hover, &:focus {
+          border-color: $brand-color;
+          background-color: $brand-color;
+          color: $inverse-text-color;
+        }
+        .ajax-throbber {
+          padding: 7px;
+        }
+      }
+    }
+  }
+}
+.view-book-list-filter-book_list-book_list_block {
+  margin-bottom: $small-spacer*4;
+  .view-book-list {
+    .view-header {
+      display: none;
+    }
+  }
+}
+// Slider blocks
+
+//Sliders Front page
+.block-views-blockbook-list-book-list-block {
+  @include container-fixed(0);
+  @include bs-container();
+  padding: 0;
+}
+//Sliders Sub pages
+.block-type-content_carousel,
+.block-type-book_list_carousel,
+.block-type-similar_content_tabs {
+  background-color: $dark-bg;
+  padding-bottom: $large-spacer;
+
+  .content-wrapper {
+    @include container-fixed();
+    @include bs-container();
+    @include slider-paddings();
+    @include respond-to(phones) {
+      padding-left: 0;
+      padding-right: 0;
+      .block-title {
+        padding-left: $large-spacer;
+        padding-right: $large-spacer;
+      }
+    }
+  }
+
+  h2.block-title {
+    @include icon-title-custom();
+  }
+
+  .read-more {
+    @include btn-link(35px, transparent, $inverse-color!important, 18px, inline-flex);
+    @include align-center();
+    @include respond-to(phones-landscape) {
+      font-size: $font-size;
+      line-height: $large-font-size;
+    }
+    &:hover, &:focus {
+      color: darken($inverse-color, 10%)!important;
+    }
+    @include arrows-link($inverse-color, darken($inverse-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+    &:after {
+      @include respond-to(phones-landscape) {
+        font-size: $font-size;
+        line-height: $medium-font-size;
+      }
+    }
+  }
+
+  .node-readmore {
+    float: right;
+    @include respond-to(phones-landscape) {
+      width: 100%!important;
+    }
+  }
+
+  .node-all {
+    @include respond-to(phones-landscape) {
+      width: 100%!important;
+      float: right;
+      text-align: right;
+      display: none;
+    }
+    .read-more {
+      font-weight: normal;
+    }
+  }
+
+  .links.inline {
+    float: right;
+    display: block!important;
+    margin-bottom: 0;
+    margin-top: -$large-spacer;
+  }
+}
+
+.block-views-blockrelated-content-topic-related-content,
+.block-views-blockbooks-being-debated-books-being-debated-block,
+.block-views-blockbook-list-book-list-block,
+.block-views-blockrecent-reviews-block-recent-reviews,
+.block-views-blockauthors-other-authors-block,
+.block-views-blockrelated-books-related-books-by-author-block,
+.block-views-blockrelated-books-related-books-by-tags-block,
+.view-book-list-filter-book_list-book_list_block {
+  background-color: $dark-bg;
+  padding-bottom: $large-spacer;
+
+  .content-wrapper {
+    @include container-fixed();
+    @include bs-container();
+    @include slider-paddings();
+    @include respond-to(phones) {
+      padding-left: 0;
+      padding-right: 0;
+      .block-title {
+        padding-left: $large-spacer;
+        padding-right: $large-spacer;
+      }
+    }
+  }
+  h2.block-title {
+    @include icon-title();
+  }
+}
+.block-views-blockauthors-other-authors-block {
+  h2.block-title {
+    @include icon-title($h2-font-size, 83px, $icon-writers, $h2-font-size*1.2);
+  }
+}
+
+.tns-slider {
+  display: flex;
+}
+
+.tns-outer {
+  position: relative;
+  padding: 0 15px !important;
+  overflow: visible;
+  padding-bottom: $xxlarge-spacer!important;
+  margin-bottom: 20px;
+
+  .tns-inner {
+    overflow: hidden;
+  }
+
+  .tns-item {
+    @include slider-item();
+  }
+
+  .tns-controls button {
+    position: absolute;
+    display: block;
+    height: $slick-arrow-font-size;
+    width: 25px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -60%);
+    -ms-transform: translate(0, -60%);
+    transform: translate(0, -60%);
+    padding: 0;
+    border: none;
+    outline: none;
+    z-index: 100;
+    @include respond-to(tablets-portrait) {
+      height: $slick-arrow-font-size * 0.667;
+      @include respond-to(phones-landscape) {
+        height: $slick-arrow-font-size*0.5;
+      }
+    }
+    &:hover, &:focus {
+      outline: none;
+      background: transparent;
+      color: transparent;
+      &:before {
+        color: $slick-arrow-hover-color;
+        opacity: $slick-opacity-on-hover;
+        @include respond-to(tablets-portrait) {
+          color: $slick-arrow-hover-color;
+        }
+      }
+    }
+    &.slick-disabled:before {
+      opacity: $slick-opacity-not-active;
+    }
+    &:before {
+      font-family: $slick-font-family;
+      font-size: $slick-arrow-font-size;
+      line-height: 1;
+      color: $slick-arrow-color;
+      opacity: $slick-opacity-default;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      @include respond-to(tablets-portrait) {
+        color: $inverse-text-color;
+        font-size: $slick-arrow-font-size*0.667;
+        @include respond-to(phones-landscape) {
+          font-size: $slick-arrow-font-size*0.5;
+        }
+      }
+    }
+
+    &:first-child {
+      left: -35px;
+      @include respond-to(tablets-landscape) {
+        left: -25px;
+        @include respond-to(tablets-portrait) {
+          left: 10px;
+        }
+      }
+      [dir="rtl"] & {
+        left: auto;
+        right: -35px;
+      }
+      &:before {
+        content: $slick-prev-character;
+        [dir="rtl"] & {
+          content: $slick-next-character;
+        }
+      }
+    }
+    &:last-child {
+      right: -35px;
+      @include respond-to(tablets-landscape) {
+        right: -25px;
+        @include respond-to(tablets-portrait) {
+          right: 10px;
+        }
+      }
+      [dir="rtl"] & {
+        left: -35px;
+        right: auto;
+      }
+
+      &:before {
+        content: $slick-next-character;
+        [dir="rtl"] & {
+          content: $slick-prev-character;
+        }
+      }
+    }
+  }
+
+  .tns-nav {
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    @include respond-to(phones-landscape) {
+      left: 1%;
+      right: 1%;
+      margin: 0 auto;
+    }
+    button {
+      position: relative;
+      margin: 0 5px;
+      cursor: pointer;
+      border: 0;
+      background: transparent;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer;
+      @include respond-to(phones-landscape) {
+        margin: 0;
+        width: $regular-spacer;
+        height: $regular-spacer;
+        line-height: $regular-spacer;
+      }
+      &:hover, &:focus {
+        outline: none;
+        transition: all 0.2s ease-out;
+        &:before {
+          opacity: $slick-opacity-on-hover;
+          transition: all 0.2s ease-out;
+        }
+      }
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: $slick-dot-character;
+        width: $large-spacer;
+        height: $large-spacer;
+        font-family: $slick-font-family;
+        font-size: $slick-dot-size;
+        line-height: 20px;
+        text-align: center;
+        color: $slick-dot-color;
+        opacity: $slick-opacity-not-active;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: all 0.2s ease-out;
+        @include respond-to(phones-landscape) {
+          font-size: $slick-dot-size*0.5;
+          margin: 0;
+          width: $regular-spacer;
+          height: $regular-spacer;
+          line-height: $regular-spacer;
+        }
+      }
+      &.tns-nav-active:before {
+        color: $slick-dot-color-active;
+        opacity: $slick-opacity-default;
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+body {
+  padding: 0;
+  margin-top: 0 !important;
+}
+.main-container {
+  min-height: 10vh;
+  padding-top: 0;
+}
+// Wrap all needed pages here
+.path-system, .path-da, .path-en, .system-container, .path-admin, .path-taxonomy {
+  padding-left: 0;
+  padding-right: 0;
+  .region-content {
+    padding-top: $large-spacer;
+    min-height: 30vh;
+    font-size: $medium-font-size;
+    @include footer-paddings();
+    @include respond-to(phones-landscape) {
+      padding-top: $xlarge-spacer;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include pager-nav();
+  }
+}
+.path-node, .path-group, .path-user {
+  .main-container {
+    background-color: $inverse-color;
+    color: $primary-text-color;
+    .node-add-wrapper {
+      @include slider-paddings();
+      padding-bottom: $xlarge-spacer;
+      @include respond-to(tablets-portrait) {
+        padding-left: 0;
+        padding-right: 0;
+        @include respond-to(phones-landscape) {
+          @include make-row(20px);
+        }
+      }
+      padding-top: $xlarge-spacer;
+      dl {
+        dt {
+          line-height: $main-text-line-height;
+          a {
+            &:hover, &:focus {
+              color: $brand-color;
+            }
+          }
+        }
+      }
+    }
+    .node-page-container {
+      @include make-row(30px);
+      color: $inverse-text-color;
+    }
+  }
+}
+// Wrap content in container
+.path-saved-content, .path-comment, .path-da, .path-en, .path-book-lists-overview {
+  .region-content {
+    padding-top: $xlarge-spacer;
+    @include container-fixed(30px);
+    @include bs-container();
+    @include respond-to(phones-landscape) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.path-saved-content, .path-taxonomy, .path-comment, .path-da, .path-en, .path-book-lists-overview {
+  .region-content {
+    > div, > .comment-form {
+      @include slider-paddings();
+    }
+  }
+}
+// Individual comments path overrides
+.path-comment {
+  article > .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100%;
+  }
+}
+// Saved Content
+.path-saved-content {
+  .region-content > .system-block-wrap > .form-group {
+    margin-bottom: $large-spacer;
+    .table-responsive {
+      padding-bottom: 20px;
+    }
+  }
+  .table > tbody > tr > td {
+    &.views-empty {
+      display: none; // Hide Dublication of 'No saved content'
+    }
+  }
+}
+.path-contact {
+  .contact-page {
+    .region-content > .system-block-wrap {
+      @include slider-paddings();
+    }
+  }
+  .contact-message-literature-form {
+    float: left;
+    margin-top: $xlarge-spacer;
+    margin-bottom: $xlarge-spacer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    @include respond-to(phones) {
+      margin-top: $large-spacer;
+      margin-bottom: $large-spacer;
+    }
+  }
+}
+
+.region-content {
+  .tabs {
+    @include container-fixed(30px);
+    @include bs-container();
+  }
+}
+h3, h4, h5, h6 {
+  @include respond-to(phones) {
+    padding: 0 15px;
+  }
+}
+@include like-dislike();
+
+.field--type-image {
+  &.image--default img {
+    border: 1px solid $light-gray;
+  }
+}
+.field--name-field-title {
+  @include h1-paragraph();
+}
+.field--name-field-short-text {
+  color: $primary-text-color;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: $large-font-size;
+  font-style: italic;
+}
+table.sticky-header {
+  z-index: 50;
+}
+.main-container .highlighted .alert {
+  margin-top: $regular-spacer;
+}
+.panel-group {
+  @include bs-accordion();
+}
+
+.block-type-content_carousel,
+.block-type-book_list_carousel,
+.block-type-similar_content_tabs {
+  ul.links.inline.list-inline {
+    width: 100%;
+    li {
+      &.node-all {
+        width: 50%;
+      }
+      &.node-readmore {
+        text-align: right;
+        width: 50%;
+      }
+    }
+  }
+}

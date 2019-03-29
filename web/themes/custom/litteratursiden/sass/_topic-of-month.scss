@@ -1,0 +1,4 @@
+// Topic of the month
+body:not(.path-frontpage) {
+  @include month-topic-rp();
+}

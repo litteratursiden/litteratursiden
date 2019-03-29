@@ -1,0 +1,101 @@
+// Buttons
+.btn {
+  &.btn-primary, &.btn-success, &.btn-info {
+    @include btn-mixin();
+    &.dropdown-toggle {
+      min-width: auto;
+      padding-left: $small-spacer;
+      padding-right: $small-spacer;
+      &:focus, &:hover, &.active {
+        background-color: $brand-color;
+        min-width: auto;
+        border: 0 none;
+        padding-left: $small-spacer;
+        padding-right: $small-spacer;
+      }
+    }
+  }
+  &.btn-default {
+    @include btn-mixin(35px, $btn-gray, $btn-gray, $primary-text-color);
+  }
+}
+.button {
+  @include btn-mixin(35px, $btn-gray, $btn-gray, $primary-text-color);
+}
+.btn-group.dropdown {
+  display: inline-block;
+  vertical-align: top;
+  .btn {
+    &.btn-primary, &.btn-success, &.btn-default {
+      min-width: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .btn.btn-xs {
+    min-width: auto;
+    padding: 0 $small-spacer;
+    border: 1px solid transparent;
+  }
+}
+.button--danger, .btn.btn-danger {
+  @include btn-mixin(50px, $brand-danger,$brand-danger, $inverse-text-color);
+  &:hover, &:focus {
+    color: $inverse-text-color;
+  }
+  + a.button {
+    @include btn-mixin(50px, $btn-gray, $btn-gray, $primary-text-color);
+
+  }
+}
+.btn-group + .button {
+  margin-left: $small-spacer;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.open > {
+  .btn {
+    &.btn-primary, &.btn-success, &.btn-default {
+      @include btn-mixin();
+      min-width: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      &.dropdown-toggle {
+        min-width: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        &:focus, &:hover, &.active {
+          background-color: $brand-color;
+          min-width: auto;
+          border: 0 none;
+          padding-left: $small-spacer;
+          padding-right: $small-spacer;
+        }
+        // Right aligned dropdown menu
+        + .dropdown-menu {
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+    &.btn-default {
+      @include btn-mixin(35px, $btn-gray, $btn-gray, $primary-text-color);
+      &.btn-xs {
+        min-width: auto;
+      }
+    }
+  }
+}
+.circle-btn {
+  @include circle-btn-mixin();
+}
+.pagination {
+  > .active {
+    > a, > span {
+      &:focus, &:hover {
+        background-color: $brand-color;
+        border-color: $brand-color;
+      }
+    }
+  }
+}

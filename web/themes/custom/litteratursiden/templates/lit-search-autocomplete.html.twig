@@ -1,0 +1,115 @@
+<div class="lit-search-autocomplete-results-books column">
+  <div class="main-title">
+    {{ books.getTitle() }}
+    <span class="count">({{ books.getCount() }})</span>
+  </div>
+  <div class="items">
+    {% if (books.getItems()) %}
+      {% for item in books.getItems() %}
+        {{ item }}
+      {% endfor %}
+    {% else %}
+      <div class="media">
+        <div class="media-body media-middle">
+          <h4 class="media-heading">
+            {{ 'No books available.'|t }}
+          </h4>
+        </div>
+      </div>
+    {% endif %}
+    <div class="show-more">
+      <a href="{{ path('view.search.search', {'search': match}) }}">{{ 'Show more'|t }}</a>
+    </div>
+  </div>
+</div>
+
+<div class="lit-search-autocomplete-results-authors column">
+  <div class="main-title">
+    {{ authors.getTitle() }}
+    <span class="count">({{ authors.getCount() }})</span>
+  </div>
+  <div class="items">
+    {% if (authors.getItems()) %}
+      {% for item in authors.getItems() %}
+        {{ item }}
+      {% endfor %}
+    {% else %}
+      <div class="media">
+        <div class="media-body media-middle">
+          <h4 class="media-heading">
+            {{ 'No authors available.'|t }}
+          </h4>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+</div>
+
+<div class="lit-search-autocomplete-results-others column">
+  <div class="title-placeholder"></div>
+  <div class="items">
+    <div class="media">
+      <div class="media-body media-middle">
+        <a class="arrow-link" href="{{ path('view.search.search', {'search': match, 'f[0]': 'type:topic'}) }}">
+          <h4 class="media-heading ">
+            {{ topics.getTitle() }}
+            <span class="count">({{ topics.getCount() }})</span>
+          </h4>
+        </a>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-body media-middle">
+        <a class="arrow-link" href="{{ path('view.search.search', {'search': match, 'f[0]': 'type:article'}) }}">
+          <h4 class="media-heading">
+            {{ articles.getTitle() }}
+            <span class="count">({{ articles.getCount() }})</span>
+          </h4>
+        </a>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-body media-middle">
+        <a class="arrow-link" href="{{ path('view.search.search', {'search': match, 'f[0]': 'type:blog'}) }}">
+          <h4 class="media-heading">
+            {{ blogs.getTitle() }}
+            <span class="count">({{ blogs.getCount() }})</span>
+          </h4></a>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-body media-middle">
+        <a class="arrow-link" href="{{ path('view.search.search', {'search': match, 'f[0]': 'type:book_list'}) }}">
+          <h4 class="media-heading">
+              {{ lists.getTitle() }}
+            <span class="count">({{ lists.getCount() }})</span>
+          </h4></a>
+      </div>
+    </div>
+    {#<div class="title">#}
+    {#{{ analyses.getTitle() }}#}
+    {#<span class="count">({{ analyses.getCount() }})</span>#}
+    {#</div>#}
+    {#<div class="title">#}
+    {#{{ debates.getTitle() }}#}
+    {#<span class="count">({{ debates.getCount() }})</span>#}
+    {#</div>#}
+    {#<div class="title">#}
+    {#{{ lists.getTitle() }}#}
+    {#<span class="count">({{ lists.getCount() }})</span>#}
+    {#</div>#}
+    {#<div class="title">#}
+    {#{{ interviews.getTitle() }}#}
+    {#<span class="count">({{ interviews.getCount() }})</span>#}
+    {#</div>#}
+    {#<div class="title">#}
+    {#{{ reviews.getTitle() }}#}
+    {#<span class="count">({{ reviews.getCount() }})</span>#}
+    {#</div>#}
+    {#<div class="title">#}
+    {#{{ similars.getTitle() }}#}
+    {#<span class="count">({{ similars.getCount() }})</span>#}
+    {#</div>#}
+  </div>
+</div>

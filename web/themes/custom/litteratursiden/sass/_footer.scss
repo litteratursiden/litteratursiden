@@ -1,0 +1,199 @@
+footer.footer {
+  background-color: $footer-bg;
+  border-top-color: $footer-bg;
+  margin-top: 0;
+  padding: 0;
+  font-family: $heading-font-serif;
+  z-index: 1;
+  position: relative;
+  > .container {
+    padding-top: 57px;
+    min-height: 464px;
+    background: transparent url('https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Litteratur_bg_footer.svg') no-repeat 85px 75%;
+    background-size: 33.5%; ///390px;
+    @include footer-paddings();
+    @include respond-to(tablets-landscape) {
+      background-position: 60px 80%;
+      @include respond-to(tablets-portrait) {
+        background-size: 390px auto;
+        background-position: $xlarge-spacer 80%;
+        @include respond-to(phones-landscape) {
+          min-height: 366px;
+          @include respond-to(phones) {
+            background-size: 75% auto;
+          }
+        }
+      }
+    }
+
+    .logo-holder {
+      float: left;
+      width: 100%;
+      padding: 0 $regular-spacer;
+      margin-bottom: $xlarge-spacer;
+      @include respond-to(tablets-portrait) {
+        float: none;
+        padding: 0 $regular-spacer;
+      }
+      img {
+        @include respond-to(phones-landscape) {
+          max-width: 140px;
+        }
+      }
+    }
+    .language-switcher-language-url,
+    #block-sidefod,
+    #block-social {
+      @include make-sm-column(12, 0);
+      @include make-sm-column-offset(0);
+      @include make-md-column(4, 0);
+      @include make-md-column-offset(8);
+      @include make-lg-column(3, 0);
+      @include make-lg-column-offset(9);
+    }
+    #block-sidefod {
+      .menu.nav {
+        > li {
+          overflow: hidden;
+          > a {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            font-family: $heading-font-serif;
+            font-size: $large-font-size;
+            color: $inverse-text-color;
+            padding: 0;
+            line-height: 50px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: relative;
+            transition: all 0.2s ease-out;
+            @include respond-to(tablets-portrait) {
+              padding: 0;
+              @include respond-to(phones-landscape) {
+                font-size: $font-size;
+                line-height: $small-spacer*3.5;
+              }
+            }
+            &:hover, &:focus {
+              color: $brand-color;
+              background-color: transparent;
+              transition: all 0.2s ease-out;
+            }
+            @include arrows-link($inverse-text-color, $brand-color, $large-spacer, $large-font-size, inline-block, initial, 20px, 20px);
+          }
+        }
+      }
+    }
+    //Social links menu
+    #block-social {
+      margin-top: $small-spacer*5;
+      h2 {
+        @include text-mixin(
+                $family: $heading-font-serif,
+                $font-size: $medium-font-size,
+                $text-color: $inverse-text-color,
+                $font-weight: $font-weight-bold,
+                $line-height: $medium-font-size*1.5
+        );
+        @include respond-to(phones-landscape) {
+          font-size: $font-size;
+          margin-bottom: $small-spacer;
+        }
+      }
+      ul.menu.nav, ul.links {
+        li {
+          &.facebook a:before {
+            content: $icon-facebook;
+          }
+          &.twitter a:before {
+            content: $icon-twitter;
+          }
+          &.instagram a:before {
+            content: $icon-instagram;
+          }
+          > a {
+            font-size: 0; // Hide text
+            height: $small-spacer*4;
+            width: $small-spacer*4;
+            display: block;
+            float: left;
+            padding: 0;
+            margin: 0 $large-spacer 0 0;
+            transition: all 0.2s ease-out;
+            &:hover, &:focus {
+              background: transparent;
+              transition: all 0.2s ease-out;
+              &:before {
+                transition: all 0.2s ease-out;
+                color: $brand-color;
+              }
+            }
+            &:before {
+              @include icon-props();
+              font-size: $small-spacer*4;
+              line-height: $small-spacer*4;
+              color: $inverse-text-color;
+              transition: all 0.2s ease-out;
+            }
+          }
+        }
+      }
+    }
+    .language-switcher-language-url {
+      // Un-hide it if needed in the future
+      display: none;
+      margin-top: $large-spacer;
+      .links {
+        > li {
+          float: left;
+          @include flex-row();
+          @include flex-nowrap();
+          @include align-center();
+          &:last-of-type {
+            &:after {
+              background: transparent;
+            }
+          }
+          &:after {
+            content: "";
+            background: $inverse-text-color;
+            height: $large-font-size;
+            margin: 1px $regular-spacer;
+            width: 2px;
+            @include respond-to(phones-landscape) {
+              margin-right: $regular-spacer;
+              height: $font-size;
+            }
+          }
+          > a {
+            display: block;
+            font-family: $heading-font-serif;
+            font-size: $large-font-size;
+            color: $inverse-text-color;
+            padding: 0;
+            line-height: $large-font-size*1.25;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: relative;
+            transition: all 0.2s ease-out;
+            @include respond-to(tablets-portrait) {
+              padding: 0;
+              @include respond-to(phones-landscape) {
+                font-size: $font-size;
+                line-height: $font-size*1.3;
+              }
+            }
+            &:hover, &:focus {
+              color: $brand-color;
+              background-color: transparent;
+              transition: all 0.2s ease-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}

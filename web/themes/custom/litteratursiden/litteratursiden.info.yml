@@ -1,0 +1,22 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+name: 'Litteratursiden'
+description: 'Bootstrap 3 framework based theme.'
+package: 'Bootstrap'
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  user_dropdown: 'User Dropdown'
+  header: 'Header'
+  sub_header: 'Sub-header'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  sidebar: 'Sidebar'
+  content: 'Content'
+  footer: 'Footer'
+  page_bottom: 'Page bottom'
+libraries:
+  - litteratursiden/global-styling
+  - litteratursiden/match-height
+  - litteratursiden/litteratursiden

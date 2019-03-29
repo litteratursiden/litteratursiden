@@ -1,0 +1,369 @@
+// Navigation
+#navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: 0 none;
+  box-shadow: none;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 102;
+  color: $inverse-text-color;
+  padding: 0;
+  height: $nav-bar-height;
+  &.navbar-default {
+    @include respond-to(phones-landscape) {
+      height: $largest-spacer;
+      min-height: $largest-spacer;
+    }
+    .navbar-nav > .open > a, .navbar-nav > .active > a {
+      box-shadow: none !important;
+    }
+    .navbar-header {
+      background-color: $brand-color;
+      width: 100%;
+      padding: 0 $regular-spacer;
+      margin-right: 0;
+      margin-left: 0;
+      > .btn-group {
+        padding-right: $regular-spacer;
+      }
+      .navbar-toggle {
+        display: block !important;
+        margin: 25px 0;
+        border: 0 none;
+        padding: 0 $regular-spacer;
+        background-color: transparent;
+        background-image: none;
+        border: none;
+        border-radius: 0;
+        @include respond-to(phones-landscape) {
+          padding: 0 0 0 $small-spacer;
+          margin: 20.5px 0;
+        }
+        &:focus,
+        &:visited,
+        &:hover {
+          background-color: transparent;
+        }
+        &.collapsed {
+          .icon-bar {
+            &:nth-child(2) {
+              -webkit-transform: none;
+              -ms-transform: none;
+              transform: none;
+            }
+            &:nth-child(3) {
+              opacity: 1;
+            }
+            &:nth-child(4) {
+              -webkit-transform: none;
+              -ms-transform: none;
+              transform: none;
+            }
+          }
+        }
+        .icon-bar {
+          background-color: $inverse-text-color;
+          display: block;
+          width: 37px;
+          height: 5px;
+          border-radius: 0;
+          @include transition(all 0.25s ease-in-out);
+          @include respond-to(phones-landscape) {
+            width: 23px;
+            height: 3px;
+          }
+          &:nth-child(2) {
+            transform: rotate(45deg) translate(8px, 9px);
+            @include respond-to(phones-landscape) {
+              transform: rotate(45deg) translate(4px, 7px);
+            }
+          }
+          &:nth-child(3) {
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            transform: rotate(-45deg) translate(8px, -10px);
+            @include respond-to(phones-landscape) {
+              transform: rotate(-45deg) translate(4px, -8px);
+            }
+          }
+        }
+        .icon-bar + .icon-bar {
+          margin-top: 7px;
+          @include respond-to(phones-landscape) {
+            margin-top: 5px;
+          }
+        }
+      }
+      .profile-toggle {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          bottom: -10px;
+          left: 50%;
+          margin-left: -20px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 20px 0 20px;
+          border-color: $brand-color transparent transparent transparent;
+          z-index: 100;
+        }
+        &.collapsed {
+          &:after {
+            display: none;
+          }
+          .ic-profile,
+          .profile-pic {
+            color: $inverse-text-color;
+            &:focus,
+            &:hover {
+              color: $inverse-text-color;
+            }
+          }
+        }
+        // IE fix
+        .wrap {
+          background-size: cover;
+          border-radius: 50%;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin: 21px 0;
+          @include respond-to(phones-landscape) {
+            margin: 18px 0;
+          }
+        }
+
+        .ic-profile,
+        .profile-pic {
+          color: $dark-bg;
+          width: 36px;
+          height: 36px;
+          font-size: 30px;
+          line-height: 36px;
+          text-align: center;
+          box-sizing: content-box;
+          object-fit: cover;
+          object-position: center;
+          @include respond-to(phones-landscape) {
+            width: 24px;
+            height: 24px;
+            font-size: 20px;
+            line-height: 24px;
+          }
+          &:focus,
+          &:hover {
+            color: $dark-bg;
+          }
+        }
+      }
+      .icon-btn {
+        height: $nav-bar-height;
+        padding: 0 $regular-spacer;
+        position: relative;
+        @include respond-to(phones-landscape) {
+          padding: 0 $small-spacer;
+          height: $largest-spacer;
+        }
+
+        &.no-search, &.collapsed {
+          > i {
+            color: $inverse-text-color;
+          }
+        }
+        > i {
+          color: $primary-text-color;
+          font-size: 30px;
+          line-height: $nav-bar-height;
+          margin-top: 24px;
+          @include respond-to(phones-landscape) {
+            font-size: 20px;
+            line-height: $largest-spacer;
+          }
+        }
+      }
+      .region-navigation {
+        height: $navbar-height;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        @include respond-to(phones-landscape) {
+          height: $largest-spacer;
+        }
+        .logo-holder {
+          @include respond-to(phones-landscape) {
+            width: 150px;
+            @include respond-to(phones) {
+              position: absolute;
+              left: $large-spacer;
+            }
+          }
+          .logo {
+            display: block;
+            margin: 0;
+            padding: 0 $regular-spacer;
+            @include respond-to(tablets-portrait) {
+              padding: 0;
+              @include respond-to(phones-landscape) {
+                padding: 0 5px;
+              }
+            }
+
+            .navbar-text {
+              margin-top: 0;
+              margin-bottom: 0;
+              height: $nav-bar-height;
+              padding: $small-spacer*2.5 0;
+              @include respond-to(phones-landscape) {
+                height: $largest-spacer;
+                padding: $small-spacer*2.1 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    #navbar-collapse {
+      box-shadow: none;
+      border: 0 none;
+      margin-right: 0;
+      margin-left: 0;
+      &.collapse {
+        opacity: 1;
+        width: 100%;
+        max-height: 0;
+        overflow-y: hidden !important;
+        display: block !important; // Override default setting
+        @include transition(all 0.3s ease-in);
+      }
+      &.collapsing, &.in {
+        z-index: 101;
+        position: relative;
+        box-shadow: none;
+        padding-bottom: 0; // Override default setting
+        max-height: inherit;
+        background: $menu-bg;
+        border-color: $menu-bg;
+        width: 100%;
+        @include transition(all 0.3s ease-in);
+      }
+      &.in {
+        height: initial; // Override default setting
+        overflow-y: auto !important; // Override default setting
+      }
+      // Hide block title
+      .region-navigation-collapsible {
+        @include container-fixed(30px);
+        @include bs-container();
+        @include respond-to(phones) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        > nav > h2 {
+          display: none;
+        }
+      }
+      .main-menu.navbar-nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: $header-height;
+        @include respond-to(tablets-portrait) {
+          padding: 0;
+          @include respond-to(phones-landscape) {
+            height: 240px;
+            padding: 0 $small-spacer;
+          }
+        }
+        > li {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          width: 100%;
+          height: 120px;
+          border-bottom: 2px solid $menu-border-color;
+          @include respond-to(phones-landscape) {
+            height: 80px;
+          }
+          &:last-child {
+            border-bottom: 2px solid $menu-bg;
+          }
+          &:after {
+            content: '';
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: $brand-color;
+            @include icon-props();
+            font-size: $h3-font-size;
+            text-align: center;
+            line-height: 55px;
+            @include respond-to(phones-landscape) {
+              position: absolute;
+              right: 0;
+              z-index: 1;
+              width: 45px;
+              height: 45px;
+              line-height: 45px;
+              font-size: $h4-font-size;
+            }
+          }
+          &.l-1 {
+            &:after {
+              content: $icon-book;
+              font-size: $h4-font-size;
+              @include respond-to(phones-landscape) {
+                font-size: $large-font-size;
+              }
+            }
+          }
+          &.l-2 {
+            &:after {
+              content: $icon-writers;
+            }
+          }
+          &.l-3 {
+            &:after {
+              content: $icon-books;
+            }
+          }
+          a {
+            padding: 0 $xlarge-spacer;
+            color: $inverse-text-color;
+            font-family: $heading-font-serif;
+            font-size: $h2-font-size;
+            font-weight: $font-weight-bold;
+            line-height: 1;
+            text-align: right;
+            @include respond-to(tablets-portrait) {
+              padding: 0 $large-spacer;
+              @include respond-to(phones-landscape) {
+                width: 100%;
+                padding: $regular-spacer $small-spacer*5.5 $regular-spacer 0;
+                z-index: 2;
+                position: relative;
+                @include respond-to(phones) {
+                  font-size: $h4-font-size;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// Navigation
+header.main-header {
+  .region-header {
+    @include make-row();
+  }
+}
+
+// Sub Header for Nodes
+.header-wrapper {
+  background-color: $btn-gray;
+  min-height: $gray-header-height;
+  @include flex-row();
+  @include align-center();
+  @include flex-wrap();
+  .container {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    @include respond-to(phones-landscape) {
+      width:100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .page-header {
+    color: $primary-text-color;
+    font-family: $heading-font-sans-serif;
+    font-size: $medium-font-size*1.125;
+    font-weight: $font-weight-bold;
+    line-height: $gray-header-height;
+    margin-bottom: 0;
+    padding: 0;
+    text-transform: uppercase;
+    border-bottom: 0 none;
+    display: inline-block;
+    // Re-CHECK
+    @include slider-paddings();
+
+  }
+}

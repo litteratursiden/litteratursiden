@@ -1,0 +1,53 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ * - groups: A list of gropus keyd by id.
+ *   - title: The title of a group.
+ *   - amount: Amount of rows in a group.
+ *   - rows: A list of the view's row items related to the group.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ * @see litteratursiden_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+
+  {% for id, group in groups %}
+    <div class="accordion-group {{ id }}">
+      <div class="panel-heading" role="tab" id="{{ id }}-heading">
+        <h4 class="panel-title collapsed" role="button" data-toggle="collapse" data-parent="accordion-group"
+             href="#{{ id }}-accordion" aria-expanded="false" aria-controls="{{ id }}-accordion">
+            {{ group.title }} <span class="amount">({{ group.amount }})</span>
+        </h4>
+      </div>
+      <div id="{{ id }}-accordion" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ id }}-heading">
+        <div class="panel-body">
+          {% for row in group.rows %}
+            {% set row_classes = [
+            default_row_class ? 'views-row',
+            ] %}
+            <div{{ row.attributes.addClass(row_classes) }}>
+              {{ row.content }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<!-- panel-group -->

@@ -1,0 +1,231 @@
+// Form Page
+form {
+  .form-wrapper .span.field-edit-link {
+    @include clearfix();
+  }
+  .table-responsive {
+    width: 100%;
+  }
+  .text-format-wrapper .filter-wrapper {
+    height: $small-spacer*7.1;
+  }
+  .form-inline {
+    .form-group {
+      margin-bottom: $regular-spacer;
+      + button {
+        margin-top: 0;
+      }
+      .control-label {
+        margin: 0 $small-spacer;
+      }
+    }
+  }
+  .form-group {
+    .error {
+      color: $brand-color;
+      a {
+        color: $brand-color;
+        text-decoration: underline;
+      }
+    }
+    label.error {
+      margin-top: $small-spacer*0.5;
+    }
+    label ~ .form-control {
+      &.has-error, &.error {
+        border-color: $brand-color;
+      }
+    }
+    .form-control {
+      &.has-error, &.error {
+        border-color: $brand-color;
+      }
+    }
+
+    .control-label {
+      margin-top: $small-spacer;
+      // Use CSS/SVG image for required mark.
+      // @see https://www.drupal.org/node/2152217
+      // @see https://www.drupal.org/node/2274631
+      &.form-required:after {
+        content: "\002A";
+        background-image: none;
+        background-size: 10px 7px;
+        font-family: sans-serif;
+        display: inline-block;
+        line-height: 1;
+        height: 7px;
+        width: 14px;
+        font-size: $font-size-base*1.25;
+      }
+
+    }
+    .form-control {
+      height: $input-height;
+      padding: 6px $regular-spacer;
+      border-radius: 0;
+      border-color: $light-gray;
+      box-shadow: none;
+      color: $primary-text-color;
+      background-color: $light-gray;
+      @include placeholder($border-gray, $font-size);
+      &:focus {
+        box-shadow: none;
+        outline: none;
+        border-color: $brand-color;
+      }
+    }
+    // IE11 specifics
+    ::-ms-clear { display: none; }
+    ::-ms-reveal {
+      display: none;
+    }
+    .input-group-addon {
+      border-color: $light-gray;
+    }
+    .form-required:after {
+      display: none;
+    }
+    // Prevent Webkit autocomplete bg
+    input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+      background: transparent;
+      color: $primary-text-color !important;
+      -webkit-text-fill-color: $primary-text-color !important;
+      -webkit-box-shadow: none !important;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
+  }
+  // Browsers do not recognize pseudo :after selectors, we must create a wrapper
+  // around the select element to style it properly.
+  // $see http://stackoverflow.com/q/21103542
+  .select-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    .form-inline & {
+      width: auto;
+    }
+    .input-group & {
+      display: table-cell;
+      // Reset rounded corners
+      &:first-child .form-control:first-child {
+        @include border-left-radius(0);
+      }
+      &:last-child .form-control:first-child {
+        @include border-right-radius(0);
+      }
+    }
+    select:not([multiple]) {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      line-height: 1;
+      padding-right: 2.5em;
+      &::-ms-expand {
+        opacity: 0;
+      }
+      &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 #000;
+      }
+    }
+    &:after {
+      color: $dark-gray;
+      content: '▼';
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1;
+      margin-top: -.6em;
+      padding-right: .3em;
+      pointer-events: none;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: 10;
+
+      // Use a more stylish icon if the theme uses glyphicons.
+      .has-glyphicons & {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '▼';
+        font-style: normal;
+        transform: scaleY(0.5);
+        font-size: $h4-font-size;
+      }
+      .has-error & {
+        color: $state-danger-text;
+      }
+      .has-success & {
+        color: $state-success-text;
+      }
+      .has-warning & {
+        color: $state-warning-text;
+      }
+    }
+  }
+  input, select, textarea {
+    color: $primary-text-color;
+    @include placeholder($border-gray, $font-size);
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  }
+  .form-type-textarea {
+    width: 100%;
+    min-height: 150px;
+  }
+  .form-actions {
+    width: 100%;
+    .webform-button--submit {
+      @include btn-mixin();
+      margin-top: 30px;
+    }
+  }
+  legend {
+    border-bottom: 0 !important;
+    margin-bottom: 15px !important;
+    .fieldset-legend {
+      font-family: "PT Sans", sans-serif;
+      font-size: 18px;
+      color: $dark-blue;
+    }
+  }
+  @include md-checkbox();
+}
+// User edit
+.user-edit-page .page-container article.full {
+  .user-form {
+    .author-block {
+      img {
+        max-width: 155px;
+      }
+    }
+  }
+}
+.views-field-extrafield-views-integration__flag-notifications {
+  position: absolute;
+  top: (-$small-spacer*18);
+  right: (-$small-spacer*3.5);
+  @include respond-to(tablets-landscape) {
+    top: (-$small-spacer*14);
+    right: (-$small-spacer*2.5);
+    @include respond-to(tablets-portrait) {
+      right: 0;
+      @include respond-to(phones-landscape) {
+        top: auto;
+        position: static;
+        margin: $large-spacer auto;
+      }
+    }
+  }
+  .flag.flag-notifications {
+    @include custom-switch();
+  }
+}

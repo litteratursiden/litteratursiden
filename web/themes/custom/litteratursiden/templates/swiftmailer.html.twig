@@ -1,0 +1,60 @@
+{#
+/**
+ * @file
+ * The default template file for e-mails.
+ *
+ * Available variables:
+ * - subject: The subject.
+ * - body: The message content.
+ * - message: The $message array created and used in the mail building
+ *   procedure. Its content varies between cases, but typically contains at
+ *   least the following elements:
+ *   - id: The message identifier.
+ *   - module: The module that handles the building of the message.
+ *   - key: The key of the message.
+ *   - to: The recipient email address.
+ *   - from: The email address of the sender.
+ *   - langcode: The langcode to use to compose the e-mail.
+ *   - params: The message parameters.
+ *
+ * This template may be overriden by module and/or mail key, using any of the
+ * following template names:
+ * - swiftmailer.html.twig: global, used by default.
+ * - swiftmailer--mymodule.html.twig: only emails sent by the module "mymodule".
+ * - swiftmailer--mymodule--test.html.twig: only emails by the module
+ *   "mymodule" with key "test".
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_swiftmailer()
+ *
+ * @ingroup themeable
+ */
+#}
+<html>
+<head>
+  <style>
+    div a {
+      color: #ff5102;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      vertical-align: middle;
+      line-height: 28px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+<div style="background: #3e3e40; font-family: sans-serif;">
+  <div style="background: url('https://litteratursiden.dk/themes/custom/litteratursiden/images/email-bg.png') no-repeat 10px; height: 170px; text-align: right; padding: 20px 40px;">
+    <span style="color: #fff; font-size: 14px; vertical-align: middle;">{{ 'See'|t }} <a href="https://litteratursiden.dk" style="color: #fff; font-size: 14px; vertical-align: middle;">{{ 'web-version'|t }}</a></span>
+  </div>
+  <div style="background: #eeecec; padding: 100px 40px; font-size: 14px; line-height: 22px;">
+      {{ body|nl2br }}
+    <p style="color: #ff5102; font-weight: bold; margin-top: 80px;">— Litteratursiden</p>
+  </div>
+  <div style="background: #ff5102; height: 15px;"></div>
+  <div style="height: 130px;"></div>
+</div>
+</body>
+</html>

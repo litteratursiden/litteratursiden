@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'literatur-icons';
+  src: url('#{$custom-icon-font-path}/literatur-icons.eot?qjc8v4');
+  src: url('#{$custom-icon-font-path}/literatur-icons.eot?qjc8v4#iefix') format('embedded-opentype'),
+  url('#{$custom-icon-font-path}/literatur-icons.ttf?qjc8v4') format('truetype'),
+  url('#{$custom-icon-font-path}/literatur-icons.woff?qjc8v4') format('woff'),
+  url('#{$custom-icon-font-path}/literatur-icons.svg?qjc8v4#literatur-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="ic-"], [class*=" ic-"] {
+  @include icon-props();
+}
+.ic-accordion-down {
+  &:before {
+    content: $icon-accordion-down;
+  }
+}
+.ic-accordion-up {
+  &:before {
+    content: $icon-accordion-up;
+  }
+}
+.ic-book {
+  &:before {
+    content: $icon-book;
+  }
+}
+.ic-books {
+  &:before {
+    content: $icon-books;
+  }
+}
+.ic-tick {
+  &:before {
+    content: $icon-tick;
+  }
+}
+.ic-links-arrow {
+  &:before {
+    content: $icon-links-arrow;
+  }
+}
+.ic-play .path1 {
+  &:before {
+    content: $icon-play-path1;
+    color: rgb(255, 79, 0);
+  }
+}
+.ic-play .path2 {
+  &:before {
+    content: $icon-play-path2;
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+  }
+}
+.ic-profile {
+  &:before {
+    content: $icon-profile;
+  }
+}
+.ic-reading-club {
+  &:before {
+    content: $icon-reading-club;
+  }
+}
+.ic-search {
+  &:before {
+    content: $icon-search;
+  }
+}
+.ic-slider-arrow-left {
+  &:before {
+    content: $icon-slider-arrow-left;
+  }
+}
+.ic-slider-arrow-right {
+  &:before {
+    content: $icon-slider-arrow-right;
+  }
+}
+.ic-slider-dot {
+  &:before {
+    content: $icon-slider-dot;
+  }
+}
+.ic-theme {
+  &:before {
+    content: $icon-theme;
+  }
+}
+.ic-report {
+  &:before {
+    content: $icon-report;
+  }
+}
+.ic-favourites {
+  &:before {
+    content: $icon-favourites;
+  }
+}
+.ic-like {
+  &:before {
+    content: $icon-like;
+  }
+}
+.ic-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.ic-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.ic-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.ic-writers {
+  &:before {
+    content: $icon-writers;
+  }
+}
+

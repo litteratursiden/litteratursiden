@@ -1,0 +1,433 @@
+body {
+  &.path-user {
+    .user-form, .user-pass {
+      .form-group {
+        position: relative;
+        label.error {
+          margin-top: $small-spacer*0.5;
+          position: absolute;
+          right: -($small-spacer);
+          transform: translate(100%, -40px);
+          @include respond-to(desktops) {
+            position: static;
+            transform: none;
+          }
+        }
+      }
+    }
+    &.user-password, &.user-register {
+      .region-content {
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .user-edit-page .page-container article.full {
+      .left-col .author-block h4 {
+        @include respond-to(phones) {
+          padding: 0;
+        }
+      }
+      .right-col {
+        @include respond-to(phones-landscape) {
+          width: 100% !important;
+          padding-left: 0;
+        }
+      }
+      .region-content {
+        &:after {
+          background-image: none;
+        }
+        .tabs, > .system-block-wrap {
+          padding: 0 $regular-spacer;
+          width: 100%;
+          @include respond-to(phones-landscape) {
+            padding: 0;
+          }
+        }
+        .user-form {
+          .field--name-field-user-full-name {
+            font-family: $body-font-family;
+          }
+        }
+        .field--name-field-user-birth {
+          .form-inline {
+            .form-type-select {
+              @include make-xs-column(12, 30px);
+              @include make-sm-column(4, 30px);
+              .select-wrapper, .select-wrapper select {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+  &.path-user, &.path-bookmarks, &.path-taxonomy {
+    .region-content {
+      position: relative;
+      z-index: 1;
+      &:after {
+        z-index: 0;
+        pointer-events: none;
+        content: '';
+        opacity: 0.5;
+        display: block;
+        width: 60%;
+        min-height: 450px;
+        max-height: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
+        background-size: contain;
+        @include respond-to(tablets-portrait) {
+          width: 85%;
+
+          @include respond-to(phones) {
+            width: 95%;
+            min-height: 260px;
+          }
+
+        }
+      }
+      > .tabs {
+        @include slider-paddings();
+      }
+      > .system-block-wrap,
+      > article {
+        @include container-fixed(0);
+        @include bs-container();
+        @include slider-paddings();
+      }
+      form {
+        margin-top: $xxlarge-spacer;
+        margin-bottom: $xxlarge-spacer;
+      }
+      .views-row {
+        padding: $regular-spacer 0;
+        border-bottom: 1px solid $border-gray;
+      }
+      > .system-block-wrap article {
+        min-height: 25vh;
+        @include respond-to(tablets-portrait) {
+          min-height: 20vh;
+        }
+        &.user-page {
+          @include clearfix();
+          padding-top: $xlarge-spacer;
+          padding-bottom: $xlarge-spacer;
+          min-height: 450px;
+          .left-col .author-block h4 {
+            @include respond-to(phones) {
+              padding: 0;
+            }
+          }
+          .right-col {
+            @include respond-to(phones-landscape) {
+              width: 100% !important;
+              padding-left: 0;
+            }
+          }
+        }
+        .left-col {
+          margin: 0 auto;
+          @include slider-paddings();
+          width: 30%;
+          float: left;
+          min-height: 1px;
+          @include respond-to(tablets-portrait) {
+            width: 170px;
+            margin: 0;
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            @include respond-to(phones-landscape) {
+              width: 50%;
+              @include respond-to(phones) {
+                width: 100%;
+              }
+            }
+          }
+          .tools-link ul > li > a {
+            @include btn-mixin(35px, $dark-bg, $dark-bg, $inverse-text-color, block);
+          }
+          .edit-profile-link a {
+            @include btn-mixin(35px, $brand-color, $brand-color, $inverse-text-color, block);
+          }
+          .tools-link ul > li > a, .edit-profile-link a {
+            margin-bottom: $small-spacer*0.5;
+            margin-top: 0;
+          }
+          .tools-link, .edit-profile-link {
+            @include respond-to(phones) {
+              width: 50%;
+              float: left;
+            }
+          }
+        }
+        .right-col {
+          min-height: 1px;
+          width: 70%;
+          float: left;
+          @include respond-to(tablets-portrait) {
+            width: calc(100% - 170px);
+            padding-left: $large-spacer;
+            @include respond-to(phones-landscape) {
+              width: calc(100% - 85px);
+              @include respond-to(phones) {
+                width: 100%;
+                padding-left: 0;
+              }
+            }
+          }
+
+          .profile-heading {
+            @include text-mixin($heading-font-sans-serif, $medium-font-size*1.125, $primary-text-color, $font-weight-bold, $large-font-size);
+            margin-top: $regular-spacer;
+            text-transform: uppercase;
+          }
+        }
+        .field--name-field-user-picture {
+          margin-top: 15px;
+          @include respond-to(tablets-portrait) {
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            margin-bottom: $small-spacer*0.5;
+            @include respond-to(tablets-portrait) {
+              margin-right: $regular-spacer;
+              @include respond-to(phones) {
+                width: 70px;
+              }
+            }
+          }
+        }
+        .profile-heading, .field--name-field-user-full-name {
+          + .form-group {
+            margin-top: $xlarge-spacer;
+            margin-bottom: $xlarge-spacer;
+            border-top: 1px solid $border-gray;
+            border-bottom: 1px solid $border-gray;
+            width: 100%;
+            @include text-mixin($heading-font-sans-serif,
+                    $medium-font-size,
+                    $primary-text-color,
+                    $font-weight-bold,
+                    $small-spacer*4
+            );
+            @include respond-to(phones-landscape) {
+              margin-top: $regular-spacer;
+              width: calc(100% - 85px);
+              margin-left: 0;
+              float: left;
+              @include respond-to(phones) {
+                width: 100%;
+              }
+            }
+            h4 {
+              @include text-mixin($heading-font-sans-serif,
+                      $medium-font-size,
+                      $primary-text-color,
+                      $font-weight-bold,
+                      $small-spacer*4
+              );
+            }
+          }
+        }
+        .field--name-field-user-full-name {
+          margin-top: $small-spacer;
+          text-transform: uppercase;
+          margin-bottom: 0;
+          @include text-mixin($heading-font-sans-serif,
+                  $h1-font-size,
+                  $primary-text-color,
+                  $font-weight-bold,
+                  $h0-font-size
+          );
+          @include respond-to(tablets-portrait) {
+            width: calc(100% - 85px);
+            @include respond-to(phones-landscape) {
+              font-size: $h4-font-size;
+              margin-top: $regular-spacer;
+            }
+          }
+          .authored-by {
+            display: none;
+          }
+
+        }
+        .field--name-field-user-body {
+          margin-bottom: $xlarge-spacer;
+          @include respond-to(phones-landscape) {
+            width: 100%;
+            margin-left: 0;
+            float: left;
+          }
+        }
+      }
+      > .system-block-wrap .views-element-container .views-row article {
+        min-height: $large-spacer*4;
+        @include respond-to(tablets-portrait) {
+          min-height: $large-spacer*2;
+        }
+        > .field--name-field-user-picture {
+          float: left;
+          width: 30%;
+          margin-top: $large-spacer;
+          min-height: 155px;
+
+          @include respond-to(tablets-portrait) {
+            width: auto;
+          }
+          img {
+            width: 155px;
+            height: auto;
+            @include respond-to(tablets-portrait) {
+              width: 70px;
+              margin-right: $regular-spacer;
+            }
+          }
+
+        }
+        .field--name-field-user-full-name {
+          float: left;
+          width: 70%;
+          margin-top: $regular-spacer;
+          margin-bottom: $xlarge-spacer;
+          text-transform: uppercase;
+          @include text-mixin($heading-font-sans-serif,
+                  $h1-font-size,
+                  $primary-text-color,
+                  $font-weight-bold,
+                  $h0-font-size
+          );
+          @include respond-to(tablets-portrait) {
+            width: calc(100% - 85px);
+            @include respond-to(phones-landscape) {
+              font-size: $h4-font-size;
+              margin-top: $regular-spacer;
+            }
+          }
+          + .form-group {
+            border-top: 1px solid $border-gray;
+            border-bottom: 1px solid $border-gray;
+            float: left;
+            width: 70%;
+            @include text-mixin($heading-font-sans-serif,
+                    $medium-font-size,
+                    $primary-text-color,
+                    $font-weight-bold,
+                    $small-spacer*4
+            );
+            @include respond-to(tablets-portrait) {
+              width: 100%;
+            }
+            h4 {
+              @include text-mixin($heading-font-sans-serif,
+                      $medium-font-size,
+                      $primary-text-color,
+                      $font-weight-bold,
+                      $small-spacer*4
+              );
+            }
+          }
+        }
+
+      }
+      .block-views-blockflag-bookmark-favorite-content-block {
+        background-color: $light-gray;
+        padding-bottom: $largest-spacer;
+        @include respond-to(tablets-portrait) {
+          padding-bottom: $xlarge-spacer;
+        }
+        .content-wrapper {
+          @include container-fixed(0);
+          @include bs-container();
+          @include slider-paddings();
+          .form-group {
+            margin-left: 30%;
+            @include respond-to(tablets-portrait) {
+              margin-left: 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .favorite-content-teaser, article.teaser {
+        @include search-items();
+        .media {
+          .media-left:empty {
+            width: auto;
+          }
+          .media-left:empty + .media-body {
+            padding-left: 0;
+            .content-area {
+              @include respond-to(phones) {
+                width: 100%;
+              }
+            }
+          }
+        }
+        .btn-area {
+          .flag-bookmark a {
+            @include btn-mixin(50px, $brand-color, $brand-color, $inverse-text-color, block);
+          }
+        }
+      }
+      article.taxonomy-term {
+        @include search-items();
+        .media .media-left {
+          width: auto;
+          max-width: 130px;
+          @include respond-to(phones) {
+            max-width: 100%;
+            width: 100%;
+          }
+          &:empty + .media-body {
+            padding-left: 0;
+          }
+          .field--name-field-topic-cover-image img {
+            max-width: 130px;
+          }
+        }
+      }
+    }
+  }
+  &.path-taxonomy {
+    .region-content {
+      .field--name-uid {
+        display: none;
+      }
+      .pager {
+        width: 100%;
+        margin-bottom: $largest-spacer;
+        > li {
+          display: inline-block;
+          > a {
+            @include btn-mixin(50px, $btn-gray, $btn-gray, $primary-text-color, block);
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+body.path-bookmarks {
+  .region-content {
+    > .views-element-container {
+      @include container-fixed(0);
+      @include bs-container();
+      @include slider-paddings();
+      padding-top: $large-spacer;
+    }
+  }
+}

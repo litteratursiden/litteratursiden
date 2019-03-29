@@ -1,0 +1,393 @@
+// Search
+// Navbar search
+#navbar {
+  .lit-search-autocomplete-form {
+    form {
+      &.active {
+        .lit-search-autocomplete-field-container {
+          @include transition(all 0.3s ease-in);
+          @include respond-to(phones) {
+            margin-top: 0;
+            width: 100%;
+          }
+          .form-item-autocomplete {
+            &.active {
+              &:after {
+                content: '';
+                position: absolute;
+                display: block;
+                bottom: (-$small-spacer);
+                left: 50%;
+                margin-left: -$large-spacer;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: $large-spacer $large-spacer 0 $large-spacer;
+                border-color: $inverse-color transparent transparent transparent;
+                z-index: 100;
+              }
+            }
+            .loader {
+              display: block;
+              z-index: 12;
+              @include respond-to(phones-landscape) {
+                top: $small-spacer*2.4;
+                @include respond-to(phones-landscape) {
+                  top: $small-spacer*2;
+                }
+              }
+            }
+            .lit-search-autocomplete-field {
+              @include transition(all 0.3s ease-in);
+              width: 300px;
+              padding: 6px $regular-spacer;
+              @include respond-to(phones) {
+                width: 100%;
+                @include respond-to(old-phones) {
+                  padding: 6px 8px;
+                }
+              }
+            }
+          }
+          .lit-search-autocomplete-total {
+            display: none;
+          }
+        }
+      }
+      .lit-search-autocomplete-field-container {
+        @include respond-to(phones-landscape) {
+          height: $largest-spacer;
+          margin-top: 0;
+          height: $largest-spacer;
+        }
+        .form-item-autocomplete {
+          .lit-search-autocomplete-field {
+            width: 0;
+            float: right;
+            background-color: $inverse-color;
+            @include respond-to(phones-landscape) {
+              margin-top: $small-spacer;
+            }
+            @include placeholder($border-gray, 12px, $font-weight-normal);
+          }
+        }
+        .lit-search-autocomplete-total {
+          display: none;
+        }
+      }
+      .lit-search-autocomplete-results {
+        overflow: hidden;
+        height: 0;
+        &.active {
+          @include transition(all 0.3s ease-in);
+          height: auto;
+          overflow: auto;
+          @include respond-to(phones-landscape) {
+            height: 70vh;
+          }
+        }
+      }
+      .form-actions {
+        display: none;
+      }
+    }
+  }
+}
+// Main styles
+.lit-search-autocomplete-form {
+  position: initial;
+  z-index: 20;
+  &.active {
+    .lit-search-autocomplete-field-container {
+      @include transition(all 0.3s ease-in);
+      //@include respond-to(phones-landscape) {
+      //  width: 60%;
+      //  @include respond-to(old-phones) {
+      //    width: 55%;
+      //  }
+      //}
+      .form-item-autocomplete {
+        &.active {
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -$xlarge-spacer;
+            left: 50%;
+            margin-left: -$large-spacer;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: $large-spacer $large-spacer 0 $large-spacer;
+            border-color: $brand-color transparent transparent transparent;
+            z-index: 100;
+          }
+        }
+      }
+    }
+  }
+  form {
+    .form-group {
+      margin-bottom: 0;
+    }
+    // Input block
+    .lit-search-autocomplete-field-container {
+      @include clearfix();
+      background-color: transparent;
+      height: $nav-bar-height;
+      margin: 0;
+      padding: 0;
+      @include transition(all 0.3s ease-in);
+      @include respond-to(phones-landscape) {
+        margin-top: $small-spacer;
+      }
+      .form-item-autocomplete {
+        background-color: transparent;
+        position: relative;
+        z-index: 11;
+        display: inline-block;
+        float: right;
+        @include loader();
+
+        &.active {
+          &:after {
+            display: none;
+          }
+        }
+        .lit-search-autocomplete-field {
+          pointer-events: all;
+          border: 0 none;
+          border-radius: 0;
+          padding: 0;
+          margin-top: $regular-spacer;
+          height: 50px;
+          position: relative;
+          z-index: 11;
+          @include transition(all 0.3s ease-in);
+          @include respond-to(phones-landscape) {
+            height: 40px;
+          }
+          @include placeholder($border-gray, $large-font-size, $font-weight-normal);
+        }
+      }
+    }
+    .lit-search-autocomplete-results {
+      background-color: transparent;
+      pointer-events: all;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 101;
+      pointer-events: none;
+      &.active {
+        @include transition(all 0.3s ease-in);
+        height: auto;
+        @include respond-to(phones-landscape) {
+          height: 75vh;
+        }
+      }
+      // Ajax wrapper
+      > .container {
+        pointer-events: all;
+        @include transition(all 0.3s ease-in);
+        height: 100%;
+        padding: $small-spacer*4 $small-spacer*5;
+        background-color: $menu-bg;
+        @include respond-to(tablets-portrait) {
+          padding: $small-spacer*3 $small-spacer*3.5;
+          height: 700px;
+          overflow: auto;
+          @include respond-to(phones) {
+            padding: $large-spacer $regular-spacer;
+          }
+        }
+        @include clearfix();
+        .column {
+          @include make-md-column(4, 30px);
+          @include respond-to(tablets-portrait) {
+            margin-bottom: $large-spacer;
+          }
+          &.lit-search-autocomplete-results-books {
+            .main-title {
+              @include icon-title($h4-font-size, $small-spacer*5.5, $icon-book, $h4-font-size);
+              @include respond-to(tablets-portrait) {
+                padding: 0;
+              }
+            }
+          }
+          &.lit-search-autocomplete-results-authors {
+            .main-title {
+              @include icon-title($h4-font-size, 55px, $icon-writers, $h3-font-size);
+              @include respond-to(tablets-portrait) {
+                padding: 0;
+              }
+            }
+          }
+          &.lit-search-autocomplete-results-others {
+            .items .media:first-of-type {
+              @include respond-to(tablets-portrait) {
+               border-top: 0 none;
+              }
+            }
+            .items .media .media-body .media-heading {
+              font-size: $medium-font-size;
+              .count {
+                color: $inverse-text-color;
+                font-size: $font-size;
+                font-weight: $font-weight-normal;
+                font-family: $body-font-family;
+              }
+            }
+          }
+          .main-title {
+            margin-bottom: $small-spacer;
+            @include respond-to(tablets-portrait) {
+              padding: 0;
+            }
+            .count {
+              font-weight: $font-weight-normal;
+              font-family: $body-font-family;
+              font-size: $large-font-size;
+            }
+          }
+          .title-placeholder {
+            margin-bottom: $small-spacer;
+            height: 54px;
+            @include respond-to(tablets-portrait) {
+              height: initial;
+            }
+          }
+          .items {
+            padding-left: $largest-spacer;
+            @include respond-to(tablets-portrait) {
+              padding-left: $small-spacer*7;
+            }
+            .media {
+              margin-top: 0;
+              display: flex;
+              flex-wrap: nowrap;
+              align-items: center;
+              justify-content: space-around;
+              border-top: 1px solid $arrow-gray;
+              min-height: $small-spacer*8;
+              &:last-of-type {
+                border-bottom: 1px solid $arrow-gray;
+              }
+              .media-body {
+                display: block;
+                .media-heading {
+                  font-size: $large-font-size;
+                  color: $brand-color;
+                  line-height: 1.5;
+                  a, span {
+                    color: inherit;
+                  }
+                }
+                .author {
+                  color: $inverse-text-color;
+                  font-family: $font-serif;
+                  font-weight: $font-weight-normal;
+                  a, span {
+                    color: inherit;
+                    &:hover, &:focus {
+                      color: $brand-color;
+                    }
+                  }
+                }
+              }
+              .media-right > a {
+                display: block;
+                margin: $small-spacer 0;
+
+                > div {
+                  &.image--default img {
+                    border: 1px solid $light-gray;
+                  }
+                  width: $small-spacer*6;
+                  height: $small-spacer*9.5;
+                }
+              }
+            }
+            .arrow-link {
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              justify-content: flex-start;
+              font-family: $heading-font-serif;
+              font-size: $large-font-size*0.9;
+              color: $brand-color;
+              padding: 0;
+              line-height: 40px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              position: relative;
+              transition: all 0.2s ease-out;
+              @include respond-to(tablets-portrait) {
+                padding: 0;
+              }
+              &:hover, &:focus {
+                color: darken($brand-color, 10%);
+                background-color: transparent;
+                transition: all 0.2s ease-out;
+                h4 {
+                  color: inherit !important;
+                }
+              }
+              @include arrows-link ($brand-color, darken($brand-color, 10%), 0, $regular-spacer, block, absolute, $regular-spacer, $regular-spacer);
+              &:after {
+                top: 7px;
+                @include respond-to(phones-landscape) {
+                  font-size: $font-size;
+                  line-height: $medium-font-size;
+                }
+              }
+              h4 {
+                color: inherit;
+              }
+            }
+            .show-more {
+              margin-top: $regular-spacer;
+              a {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                font-family: $heading-font-sans-serif;
+                font-size: $medium-font-size*1.125;
+                font-weight: $font-weight-bold;
+                color: $inverse-text-color;
+                padding: 0;
+                line-height: 40px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                position: relative;
+                transition: all 0.2s ease-out;
+                letter-spacing: 0;
+                font-style: normal;
+                text-transform: uppercase;
+                @include respond-to(tablets-portrait) {
+                  padding: 0;
+                }
+                &:hover, &:focus {
+                  color: $brand-color;
+                  background-color: transparent;
+                  transition: all 0.2s ease-out;
+                }
+                @include arrows-link($inverse-color, $light-gray, $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+                &:after {
+                  @include respond-to(phones-landscape) {
+                    font-size: $font-size;
+                    line-height: $medium-font-size;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

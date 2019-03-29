@@ -1,0 +1,49 @@
+body {
+  font-family: $body-font-family;
+  font-size: $font-size-base;
+  color: $body-font-color;
+  @include respond-to(old-phones) {
+    font-size: $font-size-base*0.875;
+  }
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, .label, .form-item  {
+    color: $body-font-color;
+  }
+  .h1, .h2, .h3, .h4, h1, h2, h3, h4 {
+    margin-top: $large-spacer;
+    margin-bottom: $large-spacer;
+    font-family: $heading-font-serif;
+    color: $body-font-color;
+  }
+
+  // Headings
+  h1, h2 {
+    @include h1-paragraph();
+  }
+
+  h3 {
+    margin-top: $regular-spacer;
+  }
+
+  p {
+    @include respond-to(old-phones) {
+      font-size: $font-size;
+      line-height: $large-font-size;
+    }
+  }
+
+  a {
+    color: $body-font-color;
+    text-decoration: none;
+    outline: none;
+    &:hover, &:focus, &:active, .active {
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  ul, ol {
+    list-style: none;
+    padding-left: 0;
+  }
+}

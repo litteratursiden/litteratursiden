@@ -1,0 +1,517 @@
+// Comments
+.block-views-blockcomments-comments-block,
+.block-views-blockcomments-user-reviews-block,
+.block-views-blockcomments-book-dabate-block {
+
+  .comments-header {
+    background-color: $btn-gray;
+    min-height: $small-spacer*18.5;
+    @include respond-to(tablets-landscape) {
+      min-height: $small-spacer*13.3;
+      @include respond-to(phones-landscape) {
+        min-height: $small-spacer*5.8;
+        position: relative;
+      }
+    }
+    &:after {
+      @include respond-to(phones-landscape) {
+        content: $icon-accordion-down;
+        width: 36px;
+        height: $large-spacer;
+        position: absolute;
+        z-index: 2;
+        right: $xlarge-spacer;
+        left: auto;
+        top: $xxlarge-spacer;
+        text-indent: 0;
+        @include icon-props();
+        display: block;
+        line-height: $large-spacer;
+        font-size: $medium-font-size;
+        color: $primary-text-color;
+        @include transition(all 0.3s ease-in-out);
+        @include respond-to(phones) {
+          top: ($accordion-list-height/2);
+        }
+      }
+    }
+    &.in {
+      &:after {
+        color: $brand-color;
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateX(180deg);
+        transform-origin: 50% 50%;
+        @include transition(all 0.3s ease-in-out);
+      }
+    }
+    &.dark {
+      background-color: $dark-bg;
+      &:after {
+        @include respond-to(phones-landscape) {
+          color: $inverse-text-color;
+        }
+      }
+
+      .title-container {
+        h2.block-title {
+          color: $inverse-text-color;
+          margin-bottom: $small-spacer;
+        }
+        .views-field-comment-count,
+        .views-field-lit-comments-count {
+          color: $inverse-text-color !important;
+        }
+      }
+
+      + .comments-body {
+        .views-field-extrafield-views-integration__flag-notifications {
+          .flag.flag-notifications {
+            &.action-unflag {
+              .toggle-on {
+                color: $brand-color;
+              }
+            }
+            .title, .toggle-off, .toggle-on {
+              color: $inverse-text-color;
+              @include respond-to(phones-landscape) {
+                color: $primary-text-color;
+              }
+            }
+
+          }
+        }
+      }
+
+      .views-field-extrafield-views-integration__flag-notifications {
+        position: absolute;
+        top: (-$small-spacer*16);
+        right: (-$small-spacer*3.5);
+        @include respond-to(tablets-landscape) {
+          top: (-$small-spacer*12);
+          right: (-$small-spacer*2.5);
+          @include respond-to(tablets-portrait) {
+            right: 0;
+            @include respond-to(phones-landscape) {
+              top: auto;
+              position: static;
+              margin: $large-spacer 0 $regular-spacer auto;
+            }
+          }
+        }
+      }
+    }
+    > .container {
+      @include slider-paddings();
+    }
+    .flex-row {
+      @include respond-to(tablets-portrait) {
+        @include respond-to(phones) {
+          height: $small-spacer*13.5;
+        }
+      }
+      .left-col {
+        width: 30%;
+        float: left;
+        padding: 0;
+        @include respond-to(tablets-portrait) {
+          width: 170px;
+          @include respond-to(phones-landscape) {
+            width: 85px;
+          }
+        }
+      }
+      .right-col {
+        width: 70%;
+        float: left;
+        @include respond-to(tablets-portrait) {
+          width: calc(100% - 170px);
+          @include respond-to(phones-landscape) {
+            width: calc(100% - 85px);
+          }
+        }
+      }
+    }
+    .comments-icon, .reviews-icon, .debate-icon {
+      display: block;
+      background-color: $dark-bg;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: $small-spacer auto;
+      width: $small-spacer*18.5;
+      height: $small-spacer*18.5;
+      border-radius: 50%;
+      @include respond-to(tablets-landscape) {
+        width: $small-spacer*13.5;
+        height: $small-spacer*13.3;
+        margin: $small-spacer 0;
+        @include respond-to(phones-landscape) {
+          width: $small-spacer*6;
+          height: $small-spacer*5.8;
+        }
+      }
+    }
+    .comments-icon {
+      background-image: url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/comments_icon.svg);
+    }
+    .reviews-icon {
+      background-image: url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/user_reviews.svg);
+      width: $small-spacer*13.5;
+      height: $small-spacer*13.5;
+      margin: $small-spacer*3.5 0;
+      @include respond-to(tablets-landscape) {
+        width: $small-spacer*10;
+        height: $small-spacer*10;
+        margin: $small-spacer*3 0;
+        @include respond-to(phones-landscape) {
+          width: $small-spacer*6;
+          height: $small-spacer*5.8;
+        }
+      }
+    }
+    .debate-icon {
+      background-image: url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/book_debate_icon.svg);
+      position: relative;
+      &:after {
+        content: 'Læseklub';
+        display: block;
+        text-align: center;
+        font-family: $heading-font-serif;
+        font-size: $h4-font-size;
+        font-weight: $font-weight-bold;
+        color: $inverse-text-color;
+        margin-top: $small-spacer*18.5*0.6;
+        @include respond-to(tablets-landscape) {
+          margin-top: $small-spacer*13.5*0.6;
+          font-size: $medium-font-size;
+          @include respond-to(phones-landscape) {
+            margin-top: $small-spacer*6*0.6;
+            font-size: $small-spacer*0.8;
+          }
+        }
+      }
+    }
+    .title-container {
+      align-self: center;
+      h2.block-title {
+        @include text-mixin(
+                $family: $heading-font-serif,
+                $font-size: $h2-font-size,
+                $text-color: $primary-text-color,
+                $font-weight: $font-weight-bold,
+                $line-height: $h2-font-size*1.2,
+                $letter-spacing: $space-letter-null
+        );
+        @include respond-to(phones-landscape) {
+          font-size: $h4-font-size;
+          line-height: $h2-font-size*0.75;
+          margin: 0;
+          @include respond-to(old-phones) {
+            font-size: $large-font-size;
+          }
+        }
+      }
+      .views-field-comment-count,
+      .views-field-lit-comments-count {
+        @include text-mixin($heading-font-serif,
+                $medium-font-size*1.125,
+                $primary-text-color,
+                $font-weight-bold,
+                $medium-font-size*1.125*1.2
+        );
+      }
+    }
+  }
+  .comments-body {
+    background-color: $light-gray;
+    > .container {
+      @include slider-paddings();
+      .right-col {
+        width: 70%;
+        margin-left: 30%;
+        float: left;
+        @include respond-to(tablets-portrait) {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+      .actions-row {
+        .action-links {
+          .comment-reply {
+            display: none;
+          }
+        }
+      }
+      article {
+        .comment-body-wrapper {
+          position: relative;
+          .field--name-comment-body {
+            a {
+              color: $brand-color;
+              &:hover, &:focus {
+                color: $link-hover-color
+              }
+            }
+            b, strong {
+              font-family: $font-family-bold;
+            }
+          }
+
+          &.no-btn {
+            .show-more, .show-less {
+              display: none;
+            }
+            .field--name-comment-body {
+              max-height: initial;
+              overflow: auto;
+            }
+          }
+          &.show {
+            .field--name-comment-body {
+              max-height: initial;
+              overflow: auto;
+            }
+            .show-less {
+              display: block;
+            }
+            .show-more {
+              display: none;
+            }
+          }
+          .field--name-comment-body {
+            max-height: $small-spacer*7.5;
+            overflow: hidden;
+            text-align: justify;
+          }
+          .show-more, .show-less {
+            padding: 0 0 0 $small-spacer;
+            font-family: $font-family-bold;
+            color: $brand-color;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            background-color: $light-gray;
+            position: absolute;
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+          }
+          .show-less {
+            display: none;
+          }
+        }
+
+      }
+      .footer-links {
+        margin-top: $small-spacer;
+        .list-inline {
+          margin: 0;
+          .comment-delete, .comment-edit {
+            display: none;
+          }
+          .comment-reply {
+            padding: 0;
+            a {
+              @include btn-mixin(35px, $brand-color, $brand-color, $inverse-text-color, inline-block);
+              min-width: auto;
+              margin: 0 $regular-spacer 0 0;
+            }
+          }
+        }
+      }
+    }
+    .comments-block, .user-reviews-block, .book-dabate-block {
+      @include comments-body();
+    }
+
+  }
+  .comment-load-more {
+    @include btn-mixin(50px, $btn-gray, $btn-gray, $primary-text-color, block);
+    width: 100%;
+    font-family: $heading-font-serif;
+    margin-bottom: $xlarge-spacer;
+  }
+}
+.path-comment {
+  .comment-comment-delete, .comment-confirm-form {
+    padding-top: $large-spacer;
+    padding-bottom: $large-spacer;
+    .form-actions {
+      margin-top: $large-spacer;
+    }
+  }
+  .comment-header {
+    > article {
+      //User info
+      .field--name-field-user-picture {
+        float: left;
+        img {
+          display: block;
+          width: 83px;
+          height: 83px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+          margin-right: $regular-spacer;
+          @include respond-to(phones-landscape) {
+            width: $small-spacer*6;
+            height: $small-spacer*6;
+          }
+        }
+      }
+      .field--name-field-user-full-name {
+        @include text-mixin($font-family-sans-serif,
+                $h4-font-size,
+                $primary-text-color,
+                $font-weight-normal,
+                $h4-font-size*1.5
+        );
+        padding-top: $regular-spacer;
+        @include respond-to(phones-landscape) {
+          padding-top: $small-spacer*0.5;
+          @include respond-to(phones) {
+            padding-top: 0;
+            line-height: $small-spacer*3;
+          }
+        }
+        .authored-by {
+          display: none;
+        }
+      }
+
+    }
+    .actions-row {
+      margin-bottom: $regular-spacer;
+      .flex-nowrap {
+        @include respond-to(phones-landscape) {
+          flex-wrap: wrap;
+        }
+      }
+
+      .created {
+        color: $primary-text-color;
+        padding-right: $regular-spacer;
+        @include respond-to(phones-landscape) {
+          width: 100%;
+        }
+      }
+      .action-links {
+        ul > li {
+          color: $primary-text-color;
+          > a {
+            color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+  .actions-row {
+    .action-links {
+      .comment-reply {
+        display: none;
+      }
+    }
+  }
+  article {
+    .comment-body-wrapper {
+      position: relative;
+      &.no-btn {
+        .show-more, .show-less {
+          display: none;
+        }
+        .field--name-comment-body {
+          max-height: initial;
+          overflow: auto;
+        }
+      }
+      &.show {
+        .field--name-comment-body {
+          max-height: initial;
+          overflow: auto;
+        }
+        .show-less {
+          display: block;
+        }
+        .show-more {
+          display: none;
+        }
+      }
+      .field--name-comment-body {
+        max-height: $small-spacer*7.5;
+        overflow: hidden;
+        text-align: justify;
+      }
+      .show-more, .show-less {
+        padding: 0 0 0 $small-spacer;
+        font-family: $font-family-bold;
+        color: $brand-color;
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        background-color: $light-gray;
+        position: absolute;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      .show-less {
+        display: none;
+      }
+    }
+
+  }
+  .footer-links {
+    margin-top: $small-spacer;
+    .list-inline {
+      margin: 0;
+      .comment-delete, .comment-edit {
+        display: none;
+      }
+      .comment-reply {
+        padding: 0;
+        a {
+          @include btn-mixin(35px, $brand-color, $brand-color, $inverse-text-color, inline-block);
+          min-width: auto;
+          margin: 0 $regular-spacer 0 0;
+        }
+      }
+    }
+
+    @include like-dislike();
+  }
+}
+.indented {
+  margin-left: $small-spacer*12;
+  @include respond-to(phones) {
+    margin-left: $small-spacer*6;
+  }
+  $sel: '';
+  @for $i from 2 through 10 {
+    $sel: if($i == 2, ".indented", selector-nest($sel, ".indented"));
+
+    #{$sel} {
+      margin-left: 60px - (6px*$i);
+      @include respond-to(phones) {
+        margin-left: 30px - (3px*$i);
+      }
+    }
+  }
+}
+
+.comment-forbidden * {
+  color: $white;
+}
+
+.path-frontpage .comment-forbidden,
+.page-node-type-book .content-wrapper .comment-forbidden,
+.path-books .comment-forbidden,
+.path-authors .comment-forbidden,
+.page-node-type-book .content-wrapper .comment-add,
+.path-books .comment-add,
+.path-authors .comment-add {
+  display: none;
+}

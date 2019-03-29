@@ -1,0 +1,945 @@
+// Node Edit Mode {
+.path-node {
+  .node-page-container {
+    .region-content .system-block-wrap .node-form,
+    .region-content .system-block-wrap > form,
+    .region-content .system-block-wrap .node-confirm-form,
+    .region-content .system-block-wrap .confirmation {
+      @include container-fixed(30px);
+      @include bs-container();
+      @include slider-paddings();
+      padding-bottom: $xlarge-spacer;
+      > div {
+        padding-right: $regular-spacer;
+        padding-left: $regular-spacer;
+        @include respond-to(phones-landscape) {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      .form-actions {
+        @include clearfix();
+        > .button {
+          float: left;
+        }
+      }
+    }
+  }
+}
+.path-comment,
+.path-group,
+.user-edit-page,
+.page-node-type-page,
+.page-node-type-similar,
+.page-node-type-book-debate,
+.page-node-type-book,
+.page-node-type-article,
+.page-node-type-review,
+.page-node-type-analysis,
+.page-node-type-blog,
+.page-node-type-topic,
+.page-node-type-author-portrait,
+.page-node-type-interview,
+.page-node-type-book-list {
+  .header-wrapper {
+    display: none;
+    &.shown {
+      display: block;
+    }
+  }
+
+  .main-container {
+    position: relative;
+    .logo-bg-holder {
+      z-index: 0;
+      pointer-events: none;
+      content: '';
+      opacity: 0.5;
+      display: block;
+      width: 60%;
+      min-height: 450px;
+      max-height: 600px;
+      position: absolute;
+      top: $small-spacer*5;
+      left: 0;
+      background: transparent url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
+      background-size: contain;
+      @include respond-to(tablets-portrait) {
+        width: 85%;
+
+        @include respond-to(phones) {
+          width: 95%;
+          min-height: 260px;
+        }
+
+      }
+    }
+  }
+  .node-page-container, .page-container {
+    position: relative;
+    z-index: 2;
+    .btn {
+      &.btn-primary, &.btn-success, &.btn-default, &.btn-info {
+        height: $small-spacer*5;
+      }
+    }
+  }
+  article.full {
+    > .container {
+      @include slider-paddings();
+      padding-top: 88px;
+      @include respond-to(phones-landscape) {
+        padding-top: $xxlarge-spacer;
+        padding-left: $large-spacer;
+        padding-right: $large-spacer;
+      }
+    }
+
+    // Node Book overrides
+    &.book, &.group {
+      .social-block {
+        .grow {
+          @include respond-to(phones) {
+            @include flex-wrap();
+          }
+        }
+      }
+      .title {
+        margin: 0 0 $small-spacer;
+        @include respond-to(old-phones) {
+          font-size: $large-font-size;
+        }
+        a, span {
+          @include respond-to(old-phones) {
+            font-size: inherit;
+          }
+        }
+      }
+      h4.author {
+        margin-top: 0;
+        font-size: $h4-font-size;
+        font-family: $heading-font-sans-serif;
+        font-weight: $font-weight-bold;
+        @include respond-to(tablets-portrait) {
+          padding: 0;
+          margin: $small-spacer 0;
+          @include respond-to(phones) {
+            padding: 0;
+            @include respond-to(old-phones) {
+              font-size: $medium-font-size;
+            }
+          }
+        }
+        .field--name-field-book-author,
+        .field--name-field-book-reference-author {
+          display: inline-block;
+          @include respond-to(old-phones) {
+            font-size: $medium-font-size;
+          }
+        }
+      }
+      .bibliotek {
+        > a {
+          @include btn-mixin($small-spacer*5);
+          margin-bottom: $small-spacer;
+          display: block;
+          margin-top: 0;
+          @include respond-to(tablets-portrait) {
+            margin-top: $regular-spacer;
+            display: inline-block;
+            @include respond-to(phones-landscape) {
+              margin-top: $small-spacer*0.5;
+            }
+          }
+        }
+      }
+      .field--name-field-book-published-year {
+        display: inline-block;
+      }
+
+      .content .field--name-field-book-cover-image {
+        display: none;
+      }
+      @include accordion();
+    }
+    &.book-debate {
+      .author-block {
+        .content-owner-portrait {
+          padding-left: 15%;
+          @include respond-to(tablets-portrait) {
+            padding-left: 0;
+          }
+          img {
+            width: 100%;
+            height: auto;
+            @include respond-to(tablets-portrait) {
+              width: 80%;
+              height: auto;
+              margin-right: $regular-spacer;
+              @include respond-to(phones) {
+                width: 70px;
+              }
+            }
+          }
+        }
+        .field--name-field-book-cover-image {
+          height: auto;
+          width: 100%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          @include respond-to(tablets-portrait) {
+            width: 155px;
+            margin-right: $regular-spacer;
+            @include respond-to(tablets-portrait) {
+              width: 70px;
+              margin-right: $regular-spacer;
+            }
+          }
+        }
+      }
+    }
+    &.user-edit {
+      .left-col {
+        @include respond-to(phones) {
+          width: 100%;
+        }
+      }
+      .right-col {
+        @include respond-to(phones) {
+          width: 100%;
+        }
+        .user-form {
+          margin-top: $large-spacer;
+          @include bs-accordion();
+        }
+      }
+    }
+    .left-col {
+      width: 30%;
+      float: left;
+      padding: 0;
+      min-height: 1px;
+      @include respond-to(tablets-portrait) {
+        width: 170px;
+        @include respond-to(phones-landscape) {
+          width: 85px;
+        }
+      }
+      .content-owner-portrait .review-author {
+        flex-wrap: wrap;
+      }
+    }
+    .right-col {
+      min-height: 1px;
+      width: 70%;
+      float: left;
+      @include respond-to(tablets-portrait) {
+        width: calc(100% - 170px);
+        @include respond-to(phones-landscape) {
+          width: calc(100% - 85px);
+        }
+      }
+    }
+
+    .node-type {
+      @include text-mixin($heading-font-sans-serif,
+              $medium-font-size*1.125,
+              $primary-text-color,
+              $font-weight-bold,
+              $medium-font-size*1.125*1.5
+      );
+      text-transform: uppercase;
+      margin-top: (-$small-spacer*0.5);
+      margin-bottom: $small-spacer;
+      @include respond-to(tablets-portrait) {
+        margin-bottom: $small-spacer*0.5;
+        @include respond-to(phones-landscape) {
+          padding: 0;
+          font-size: $small-font-size;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .title {
+      @include text-mixin($heading-font-sans-serif,
+              $h1-font-size,
+              $primary-text-color,
+              $font-weight-bold,
+              $h1-font-size*1.3
+      );
+      text-transform: uppercase;
+      margin: 0 0 $regular-spacer;
+      @include respond-to(tablets-portrait) {
+        line-height: $small-spacer*5.5;
+        @include respond-to(phones-landscape) {
+          line-height: 1;
+          font-size: $h4-font-size;
+          @include respond-to(old-phones) {
+            font-size: $large-font-size;
+          }
+        }
+      }
+      a:hover, a:focus {
+        color: inherit;
+      }
+    }
+    .author-block {
+      margin: 0 auto;
+      @include slider-paddings();
+      @include respond-to(tablets-portrait) {
+        margin: 0;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        margin-bottom: $regular-spacer;
+        @include respond-to(tablets-portrait) {
+          margin-right: $regular-spacer;
+          @include respond-to(phones) {
+            width: 70px;
+          }
+        }
+      }
+
+      .field--name-field-book-cover-image {
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        @include respond-to(tablets-portrait) {
+          width: 155px;
+          margin-right: $regular-spacer;
+          @include respond-to(phones-landscape) {
+            width: 70px;
+            margin-right: $regular-spacer;
+          }
+        }
+      }
+
+      .latest-review-book a {
+        @include btn-mixin($small-spacer*5);
+        display: block;
+      }
+
+    }
+    .content-owner-portrait {
+      color: $primary-text-color;
+      padding-left: 15%;
+      @include respond-to(tablets-portrait) {
+        padding-left: 0;
+      }
+      .user-created-date, .user-roles {
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 18px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        @include respond-to(tablets-portrait) {
+          width: 80%;
+          height: auto;
+          margin-right: $regular-spacer;
+          @include respond-to(phones) {
+            width: 70px;
+          }
+        }
+      }
+    }
+    .field--name-field-user-full-name {
+      a {
+        color: $orange;
+      }
+      margin: $small-spacer 0 $small-spacer;
+      @include text-mixin($heading-font-sans-serif,
+              $medium-font-size,
+              $dark-gray,
+              $font-weight-bold,
+              $medium-font-size*1.5
+      );
+      @include respond-to(tablets-portrait) {
+        padding: 0;
+        margin: $small-spacer 0 0;
+        @include respond-to(phones) {
+          margin: 0;
+        }
+      }
+      .authored-by {
+        color: $primary-text-color;
+        margin-right: $small-spacer*0.5;
+      }
+    }
+    .user-roles {
+      margin-bottom: 0;
+    }
+    .user-created-date {
+      padding-bottom: $large-spacer;
+      @include respond-to(phones) {
+        border-bottom: 1px solid $btn-gray;
+      }
+    }
+
+    // Hide on tablets and less and leave only picture
+    .author-block {
+      .content-owner-portrait {
+        .field--name-field-user-full-name, .user-roles, .user-created-date {
+          @include respond-to(tablets-portrait) {
+            display: none;
+          }
+        }
+      }
+    }
+    .mobile-node-content {
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      .content-owner-portrait {
+        .field--name-field-user-picture {
+          display: none;
+        }
+      }
+    }
+    .social-block {
+      width: 100%;
+      @include flex-row();
+      @include flex-wrap();
+      justify-content: space-between;
+      border-top: 1px solid $btn-gray;
+      border-bottom: 1px solid $btn-gray;
+      margin: 0 0 $small-spacer*2.5;
+      @include respond-to(tablets-portrait) {
+        margin: 0 0 $small-spacer*2;
+        @include respond-to(phones) {
+          padding-top: $small-spacer*0.5;
+          padding-bottom: $small-spacer*0.5;
+        }
+      }
+      .grow {
+        flex-grow: 2;
+        @include flex-row();
+        @include flex-nowrap();
+        justify-content: flex-start;
+      }
+      .login-to-review,
+      .add-review,
+      .flag.flag-bookmark,
+      .flag.flag-like,
+      .social-media-sharing {
+        display: inline-block;
+        height: $logo-font-size*2;
+        @include respond-to(phones) {
+          width: 100%;
+          height: auto;
+          min-height: $small-spacer*3;
+        }
+      }
+      .login-to-review,
+      .add-review,
+      .flag.flag-bookmark,
+      .flag.flag-like {
+        margin-right: $xlarge-spacer;
+        @include respond-to(phones) {
+          margin-right: $small-spacer;
+          line-height: 1;
+        }
+        a {
+          @include respond-to(phones) {
+            line-height: $small-spacer*2.8;
+          }
+          &:hover, &:focus {
+            color: $brand-color;
+          }
+        }
+      }
+      // Actions
+      .login-to-review {
+        padding: 11px 0;
+        @include text-mixin($body-font-family, $medium-font-size, $primary-text-color, $font-weight-normal);
+        @include respond-to(phones) {
+          padding: 0 5px;
+          font-size: $font-size;
+          line-height: 1;
+          width: auto
+        }
+        a {
+          font-size: inherit;
+          color: $brand-color;
+          &:hover, &:focus {
+            color: $link-hover-color;
+          }
+        }
+      }
+      .add-review {
+        @include text-mixin($heading-font-sans-serif, $medium-font-size, $primary-text-color, $font-weight-bold);
+        text-transform: uppercase;
+        position: relative;
+        padding: 11px 0;
+        @include respond-to(phones) {
+          padding: 0 5px;
+          font-size: $font-size;
+          line-height: 1;
+          width: auto
+        }
+        &:before {
+          content: $icon-report;
+          @include icon-props();
+          color: $brand-color;
+          font-size: $large-font-size;
+          position: absolute;
+          left: $small-spacer*0.5;
+          top: -2px;
+          line-height: $logo-font-size*2;
+          @include icon-props();
+          @include respond-to(phones) {
+            font-size: $medium-font-size;
+            line-height: $small-spacer*3;
+          }
+        }
+        > a {
+          margin-left: $small-spacer*3.5;
+          @include respond-to(phones) {
+            margin-left: 27px;
+          }
+        }
+      }
+      @include bookmark();
+      @include like-dislike();
+      .social-media-sharing {
+        @include clearfix();
+        display: inline-block;
+        float: left;
+        @include respond-to(phones) {
+          width: 100%;
+        }
+        ul {
+          height: $logo-font-size*2;
+          margin: 0;
+          padding-top: $small-spacer*1.4;
+          @include respond-to(phones-landscape) {
+            padding-top: 7px;
+            @include respond-to(phones) {
+              height: auto;
+              min-height: $small-spacer*2.6;
+            }
+          }
+          li {
+            float: left;
+            margin-right: 0;
+            margin-left: $small-spacer;
+            @include respond-to(phones) {
+              float: left;
+            }
+            &:first-of-type {
+              @include respond-to(phones-landscape) {
+                margin-left: 0;
+              }
+            }
+            a {
+              &.share {
+                display: block;
+                padding: 0 $small-spacer;
+                height: $small-spacer*2.6;
+                min-width: $xlarge-spacer;
+                color: $inverse-text-color;
+                line-height: $small-spacer*2.4;
+                border-radius: 3px;
+                @include respond-to(phones) {
+                  padding-top: 2px;
+                  padding-bottom: 2px;
+                }
+                &.twitter {
+                  background-color: #1da1f2;
+                  background-image: url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/twitter.svg);
+                  background-position: $small-spacer center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  padding-left: $xlarge-spacer;
+                  background-size: $regular-spacer;
+                }
+                &.facebook-share {
+                  background-color: #3b5998;
+                }
+                img {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .content {
+      color: $primary-text-color;
+      @include text-mixin($body-font-family,
+              $medium-font-size*1.125,
+              $primary-text-color,
+              $font-weight-normal,
+              $medium-font-size*1.125*1.5
+      );
+      @include respond-to(phones-landscape) {
+        font-size: $medium-font-size;
+        @include respond-to(old-phones) {
+          font-size: $font-size;
+          line-height: $large-spacer;
+        }
+      }
+      .field--name-field-topic-body p {
+        @include respond-to(phones-landscape) {
+          font-size: $medium-font-size;
+          @include respond-to(old-phones) {
+            font-size: $font-size;
+            line-height: $large-spacer;
+          }
+        }
+      }
+      .field--name-field-article-cover-image,
+      .field--name-field-review-cover-image,
+      .field--name-field-topic-cover-image {
+        img {
+          width: 100%;
+          margin-bottom: $large-spacer;
+        }
+      }
+      .field--name-field-interview-video {
+        margin-bottom: $large-spacer;
+      }
+
+      @each $name in 'analysis', 'article', 'author-portrait', 'basic-page', 'blog', 'book', 'book-list', 'interview', 'review', 'something-similar', 'topic' {
+        .field--name-field-#{$name}-internal-link,
+        .field--name-field-#{$name}-link-external,
+        .field--name-field-#{$name}-external-link,
+        .field--name-field-#{$name}-ext-link,
+        .field--name-field-#{$name}-int-link {
+          float: left;
+          width: 100%;
+          margin-bottom: $regular-spacer;
+          @include respond-to(old-phones) {
+            font-size: $font-size;
+          }
+          a {
+            font-family: $font-family;
+            color: $link-color;
+            &:hover, &:focus {
+              color: $link-hover-color;
+            }
+          }
+          .field__items {
+            list-style-type: none;
+            > .field--item {
+              &:before {
+                content: "-";
+                width: $regular-spacer;
+                display: inline-block;
+              }
+
+            }
+          }
+        }
+      }
+      .field--type-link {
+        float: left;
+        width: 100%;
+        margin-bottom: $regular-spacer;
+        @include respond-to(phones-landscape) {
+          font-size: $medium-font-size;
+          line-height: $large-spacer*1.25;
+          @include respond-to(old-phones) {
+            font-size: $font-size;
+            line-height: $large-spacer;
+          }
+        }
+        a {
+          font-family: $font-family;
+          color: $link-color;
+          font-size: inherit;
+          &:hover, &:focus {
+            color: $link-hover-color;
+          }
+        }
+      }
+      .field--type-text-long {
+        width: 100%;
+        margin: 0 0 $large-spacer*2;
+        * {
+          word-break: break-word;
+          white-space: normal;
+        }
+        a {
+          font-family: $font-family;
+          color: $brand-color;
+        }
+      }
+      .field--name-field-book-published-year {
+        margin-bottom: $xlarge-spacer;
+        @include respond-to(tablets-portrait) {
+          padding-left: 0;
+        }
+      }
+      .field--name-field-book-body {
+        margin-bottom: $xlarge-spacer;
+      }
+      .field--name-field-author-portrait-first-name,
+      .field--name-field-author-portrait-surname,
+      .field--name-field-book-reference-author {
+        display: none;
+      }
+      strong {
+        font-family: $font-family-bold;
+      }
+    }
+    // ACCORDION
+    .accordion {
+      margin-top: $xlarge-spacer;
+      background-color: $light-gray;
+      padding-right: $regular-spacer;
+      padding-left: $regular-spacer;
+      @include respond-to(tablets-portrait) {
+        margin-top: $regular-spacer;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      > .container {
+        @include slider-paddings();
+      }
+      .right-col {
+        margin-left: 30%;
+        float: left;
+        width: 70%;
+        min-width: 1px;
+        @include respond-to(tablets-portrait) {
+          width: 100%;
+          margin-left: 0;
+        }
+        article {
+          .content-owner-portrait {
+            .field--name-field-user-picture {
+              float: left;
+              overflow: hidden;
+              margin-right: $regular-spacer;
+              max-width: $small-spacer*15.5;
+              height: auto;
+              @include respond-to(phones-landscape) {
+                max-width: $small-spacer*7;
+                margin-right: $regular-spacer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.block-type-basic {
+  padding: $xxlarge-spacer 0;
+  @include respond-to(phones-landscape) {
+    padding: $large-spacer 0;
+  }
+  .content-wrapper {
+    @include container-fixed();
+    @include bs-container();
+    @include slider-paddings();
+
+    .field--name-body, h3 {
+      padding-left: $large-spacer;
+      padding-right: $large-spacer;
+      @include respond-to(tablets-portrait) {
+        padding-left: $regular-spacer;
+        padding-right: $regular-spacer;
+      }
+    }
+  }
+  h3.block-title {
+    @include respond-to(phones-landscape) {
+      font-size: $large-font-size;
+      line-height: $logo-font-size;
+      margin-top: $small-spacer;
+      margin-bottom: $small-spacer*3;
+    }
+  }
+}
+
+//Related content blocks
+.block-views-blockrelated-content-related-content-block {
+  .content-wrapper {
+    @include container-fixed(0);
+    @include bs-container();
+    .block-title {
+      @include text-mixin($heading-font-serif, $subtitle-size, $body-font-color, $font-weight-bold);
+      margin-top: $large-spacer*2;
+      margin-bottom: 0;
+      padding-right: $xlarge-spacer;
+      padding-left: $xlarge-spacer;
+      @include respond-to(old-phones) {
+        font-size: $large-font-size;
+      }
+    }
+    .related-content-block {
+      @include flex-row();
+      @include flex-stretch();
+      @include flex-wrap();
+
+      > .views-row {
+        background-color: $btn-gray;
+        margin-top: $regular-spacer*2;
+        margin-bottom: $regular-spacer*2;
+        width: calc(50% - #{$regular-spacer*3});
+        float: left;
+        padding-left: $small-spacer*5;
+        padding-right: $small-spacer*3.5;
+        @include respond-to(tablets-landscape) {
+          width: calc(50% - #{$regular-spacer});
+          @include respond-to(tablets-portrait) {
+            width: 100%;
+            padding-left: $xlarge-spacer;
+            padding-right: $xlarge-spacer;
+            margin-top: $small-spacer;
+            margin-bottom: 0;
+            @include respond-to(phones-landscape) {
+              padding-left: $large-spacer;
+              padding-right: $large-spacer;
+            }
+          }
+        }
+        &:nth-of-type(even) {
+          margin-left: $regular-spacer;
+          margin-right: $regular-spacer*2;
+          @include respond-to(tablets-landscape) {
+            margin-right: 0;
+            @include respond-to(tablets-portrait) {
+              margin-left: 0;
+              margin-right: 0;
+              margin-bottom: $small-spacer;
+            }
+          }
+        }
+        &:nth-of-type(odd) {
+          margin-left: $regular-spacer*2;
+          margin-right: $regular-spacer;
+          @include respond-to(tablets-landscape) {
+            margin-left: 0;
+            @include respond-to(tablets-portrait) {
+              margin-left: 0;
+              margin-right: 0;
+            }
+          }
+        }
+        .teaser {
+          position: relative;
+          height: 100%;
+          @include teaser-title();
+          margin: 0;
+          .content, .media .media-body {
+            margin-bottom: $small-spacer*10;
+            @include respond-to(tablets-portrait) {
+              margin-bottom: 0;
+            }
+            .node-type, .content-tag {
+              display: inline-block;
+              width: 100%;
+              color: $body-font-color;
+              font-family: $heading-font-serif;
+              font-size: $h3-font-size;
+              font-weight: $font-weight-bold;
+              line-height: 1.333;
+              margin: $small-spacer*4 0 $large-spacer;
+              @include respond-to(phones-landscape) {
+                font-size: $large-font-size;
+                line-height: $logo-font-size;
+                margin: $small-spacer*3 0;
+              }
+
+            }
+          }
+          .inner-content {
+            margin-bottom: $large-spacer;
+            > a {
+              display: block;
+              @include text-mixin($heading-font-serif, $large-font-size, $arrow-gray, $font-weight-bold, 26px);
+              margin: $xlarge-spacer 0;
+              @include respond-to(phones-landscape) {
+                font-size: $small-font-size;
+                line-height: $medium-font-size;
+              }
+            }
+          }
+          .field--type-text-long {
+            @include field--type-text-long();
+          }
+          .btn-link {
+            @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
+            @include align-center();
+            position: absolute;
+            margin-top: $large-spacer;
+            margin-bottom: 0;
+            bottom: $xxlarge-spacer;
+            @include respond-to(tablets-portrait) {
+              position: initial;
+              margin-bottom: $xxlarge-spacer;
+              @include respond-to(phones-landscape) {
+                font-size: $font-size;
+                line-height: $large-font-size;
+              }
+            }
+            &:hover, &:focus {
+              color: darken($brand-color, 10%);
+            }
+            @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+            &:after {
+              @include respond-to(phones-landscape) {
+                font-size: $font-size;
+                line-height: $medium-font-size;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.book .accordion .review > .content {
+  display: flex;
+  flex-direction: column;
+
+  ul.links{
+    order: 1;
+
+    a {
+      color: $orange;
+    }
+  }
+}
+
+.author-block {
+
+  > .form-type-item {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    padding-bottom: 20px;
+    padding-left: 15%;
+    text-transform: capitalize;
+  }
+}
+
+.book-analysis {
+
+  .user-created-date {
+    display: none;
+  }
+
+  .form-type-item {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+}

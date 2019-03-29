@@ -1,0 +1,84 @@
+//Topics page
+body.path-topics {
+  background-color: $lightest-gray;
+}
+.topics-page {
+  padding-top: $xxlarge-spacer;
+  @include respond-to(phones-landscape) {
+    padding-top: $large-spacer;
+  }
+  .views-infinite-scroll-content-wrapper {
+    @include container-fixed(0);
+    @include bs-container();
+    @include slider-paddings();
+    .views-row {
+      @include make-sm-column(6, 30px);
+      @include make-md-column(4, 30px);
+      @include respond-to(phones-landscape) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      margin-bottom: $regular-spacer*2;
+      article.topic {
+        &:hover, &:focus {
+          .title-holder > a {
+            background-color: $brand-color;
+            color: $inverse-text-color;
+            @include transition(all 0.2s ease-out);
+            h2 {
+              color: $inverse-text-color;
+              > span {
+                color: $inverse-text-color;
+                &:hover, &:focus {
+                  color: $inverse-text-color;
+                }
+                @include arrows-link($inverse-text-color, $inverse-text-color, $xlarge-spacer, $large-font-size, inline-block, static, $large-spacer, $large-spacer);
+                &:after{
+                  line-height: $large-spacer;
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .title-holder > a {
+        display: block;
+        height: 130px;
+        padding: $large-spacer $regular-spacer;
+        background-color: $btn-gray;
+        h2 {
+          margin: 0;
+          @include text-mixin(
+          $family:$heading-font-serif,
+          $font-size: $h4-font-size,
+          $text-color:$primary-text-color,
+          $font-weight:$font-weight-bold,
+          $line-height: $h3-font-size
+          );
+          > a, span {
+            color: inherit;
+          }
+        }
+      }
+      .content {
+        min-height: $topic-block-height;
+
+        .field--name-field-topic-cover-image {
+          background-position: center;
+          background-color: transparent;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: auto;
+          min-height: $topic-block-height;
+          width: 100%;
+        }
+        img {
+          height: $topic-block-height;
+        }
+      }
+    }
+  }
+
+  @include ajax-pager();
+}

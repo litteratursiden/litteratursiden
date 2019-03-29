@@ -1,0 +1,37 @@
+.no-padding {
+  @include no-padding();
+}
+.flex-row {
+  @include flex-row();
+}
+.align-center {
+  @include align-center();
+}
+.space-between {
+  @include space-between();
+}
+.stretch {
+  @include flex-stretch();
+}
+.flex-wrap {
+  @include flex-wrap();
+}
+.flex-nowrap {
+  @include flex-nowrap();
+}
+.flex-xs-wrap {
+  @include respond-to(phones-landscape) {
+    @include flex-wrap();
+  }
+}
+.flex-md-nowrap {
+  @include flex-nowrap();
+  @include respond-to(tablets-portrait) {
+    @include flex-wrap();
+  }
+}
+.flex-xxs-wrap {
+  @include respond-to(phones) {
+    @include flex-wrap();
+  }
+}

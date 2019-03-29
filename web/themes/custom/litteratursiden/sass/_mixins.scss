@@ -1,0 +1,1939 @@
+/* MIXINS */
+
+// Different devices resolutions
+// Different devices resolutions
+@mixin respond-to($media) {
+  @if $media==old-phones {
+    @media only screen and (max-width: 320px) {
+      @content;
+    }
+  } @else if $media==phones {
+    @media only screen and (max-width: $screen-xs) {
+      @content;
+    }
+  } @else if $media==phones-landscape {
+    @media only screen and (max-width: $screen-xs-max) {
+      @content;
+    }
+  } @else if $media==nexus7 {
+    @media only screen and (min-width: 600px) and (max-width: 960px) {
+      @content;
+    }
+  } @else if $media==tablets-portrait {
+    @media only screen and (max-width: $screen-sm-max) {
+      @content;
+    }
+  } @else if $media==tablets-landscape {
+    @media only screen and (max-width: $screen-md-max) {
+      @content;
+    }
+  } @else if $media==desktops {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  } @else if $media==desktops-large {
+    @media only screen and (max-width: 1920px) {
+      @content;
+    }
+  } @else if $media==desktops-xlarge {
+    @media only screen and (max-width: 2560px) {
+      @content;
+    }
+  }
+}
+/*
+Mixin for responsive (relative) font-sizes depending on the screen size using media queries.
+*/
+@mixin responsive-font($fontsize) {
+  $base: 2560px;
+  @media (min-width: $base) {
+    font-size: $fontsize;
+  }
+  @each $factor in 0.9, 0.8, 0.7, 0.6, 0.5 {
+    @media (max-width: $base * $factor) {
+      font-size: $fontsize * $factor;
+    }
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+@mixin responsive-dimensions($property, $dimensions) {
+  $base: 2560px;
+  @media (min-width: $base) {
+    #{$property}: $dimensions;
+  }
+  @each $factor in 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3 {
+    @media (max-width: $base * $factor) {
+      #{$property}: $dimensions * $factor;
+    }
+  }
+}
+// Container Widths
+@mixin bs-container() {
+  width: $container-lg;
+  max-width: $container-lg;
+  @include respond-to(tablets-landscape) {
+    width: $container-md;
+    max-width: $container-md;
+    @include respond-to(tablets-portrait) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+// Input placeholders
+@mixin placeholder($color: $primary-text-color, $size: $font-size, $weight: $font-weight-normal) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-weight: $weight;
+      @include respond-to(phones) {
+        font-size: $font-size;
+      }
+    }
+  }
+  &:-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-weight: $weight;
+      @include respond-to(phones) {
+        font-size: $font-size;
+      }
+    }
+  }
+  &::-moz-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-weight: $weight;
+      @include respond-to(phones) {
+        font-size: $font-size;
+      }
+    }
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    @if $size != "" {
+      font-size: $size;
+      font-weight: $weight;
+      @include respond-to(phones) {
+        font-size: $font-size;
+      }
+    }
+  }
+}
+// Animations
+@mixin transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
+@mixin fadeIn($duration, $delay) {
+  opacity: 0;
+  /* make things invisible upon start */
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  animation-duration: $duration;
+  animation-delay: $delay;
+}
+//Utils
+@mixin no-padding() {
+  padding-left: 0;
+  padding-right: 0;
+}
+@mixin flex-row() {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+@mixin flex-stretch() {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+@mixin flex-wrap() {
+  flex-wrap: wrap;
+}
+@mixin flex-nowrap() {
+  flex-wrap: nowrap;
+}
+@mixin align-center() {
+  align-items: center;
+}
+@mixin space-between() {
+  justify-content: space-between;
+}
+@mixin icon-props() {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'literatur-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@mixin text-mixin(
+  $family:$heading-font-serif,
+  $font-size: $large-font-size,
+  $text-color:$primary-text-color,
+  $font-weight:$font-weight-normal,
+  $line-height: $main-text-line-height,
+  $letter-spacing:$space-letter-null
+) {
+  font-family: $family;
+  font-size: $font-size;
+  color: $text-color;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  font-style: normal;
+}
+//
+// Article mixins
+@mixin title-article() {
+  @include text-mixin($heading-font-sans-serif, $h1-font-size*1.125, $body-font-color, $font-weight-bold, $h1-font-size*1.25);
+  @include respond-to(phones) {
+    font-size: $h4-font-size;
+  }
+}
+@mixin small-heading() {
+  @include text-mixin($heading-font-sans-serif, $medium-font-size*1.125, $body-font-color, $font-weight-bold, $medium-font-size*1.25);
+  @include respond-to(phones) {
+    font-size: $small-font-size;
+  }
+}
+@mixin h1-paragraph() {
+  @include title-article();
+  word-wrap: break-word;
+  margin-top: $large-spacer;
+  margin-bottom: $large-spacer;
+}
+@mixin h2-paragraph() {
+  @include text-mixin($heading-font-sans-serif, $subtitle-size, $body-font-color, $font-weight-bold);
+  @include respond-to(old-phones) {
+    font-size: $large-font-size;
+  }
+}
+@mixin h3-paragraph() {
+  @include text-mixin($heading-font-serif, $h3-font-size, $body-font-color, $font-weight-bold);
+  @include respond-to(old-phones) {
+    font-size: $medium-font-size;
+  }
+}
+// Article tags and smallest headings/links
+@mixin smallest-heading() {
+  @include text-mixin($heading-font-sans-serif, $font-size, $body-font-color, $font-weight-bold);
+  @include respond-to(phones) {
+    font-size: $small-font-size;
+  }
+}
+@mixin field--type-text-long() {
+  color: $primary-text-color;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: $font-family;
+  margin-bottom: $xlarge-spacer;
+  @include respond-to(phones-landscape) {
+    font-size: $medium-font-size;
+    line-height: $large-font-size;
+    margin-bottom: $large-spacer;
+  }
+  strong {
+    font-family: $font-family-bold;
+  }
+}
+@mixin teaser-title() {
+  h2, .media-heading {
+    @include text-mixin($heading-font-serif, $h2-font-size, $brand-color, $font-weight-bold, $h1-font-size);
+    margin-bottom: $large-spacer;
+    margin-top: 0;
+    @include respond-to(tablets-landscape) {
+      font-size: $h2-font-size;
+      @include respond-to(phones-landscape) {
+        font-size: $h3-font-size;
+        line-height: $h2-font-size;
+      }
+    }
+    a, a span {
+      color: $brand-color;
+    }
+  }
+}
+//
+// BUTTONS & LINKS
+@mixin btn-mixin($height: 35px, $bgcolor: $brand-color, $bordercolor: $brand-color, $text-color: $inverse-text-color, $display: inline-block) {
+  margin-top: $regular-spacer;
+  margin-bottom: $regular-spacer;
+  display: $display;
+  min-width: 170px;
+  line-height: $height - 2px;
+  height: $height;
+  padding: 0 10px;
+  background-color: $bgcolor;
+  color: $text-color;
+  border: 1px solid $bordercolor;
+  border-radius: 0;
+  font-size: $font-size;
+  font-family: $heading-font-sans-serif;
+  font-weight: 500;
+  letter-spacing: $space-letter-null;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    outline: none;
+    background-color: darken($bgcolor, 10%);
+    transition: all 0.2s ease-out;
+  }
+  // @include respond-to(old-phones) {
+  //   min-width: 170px;
+  // }
+}
+@mixin circle-btn-mixin($radius: 83px, $bgcolor: $inverse-text-color, $bordercolor: $inverse-text-color, $text-color: $brand-color, $display: inline-block) {
+  display: $display;
+  width: $radius;
+  line-height: $radius - 2px;
+  height: $radius;
+  padding: 0;
+  background-color: $bgcolor;
+  font-weight: normal;
+  color: $text-color;
+  border: 1px solid $bordercolor;
+  border-radius: 50%;
+  font-size: 0;
+  text-align: center;
+  transition: all 0.2s ease-out;
+  &:after {
+    content: $icon-links-arrow;
+    @include icon-props();
+    line-height: $radius - 2px;
+    font-size: $radius*0.4;
+    color: $text-color;
+  }
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+    outline: none;
+    background-color: darken($bgcolor, 10%);
+    border-color: darken($bgcolor, 10%);
+    transition: all 0.2s ease-out;
+  }
+}
+@mixin btn-link($height: 35px, $bgcolor: transparent, $text-color: $inverse-text-color, $f-size:$font-size, $display: inline-block) {
+  margin-top: $regular-spacer;
+  margin-bottom: $regular-spacer;
+  line-height: $height - 2px;
+  height: $height;
+  display: $display;
+  color: $text-color;
+  font-size: $f-size;
+  font-family: $heading-font-sans-serif;
+  letter-spacing: $space-letter-null;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+@mixin arrows-link($primary-color:$primary-text-color, $hover-color: $inverse-text-color, $right:$xlarge-spacer, $arr-font-size:$h4-font-size,  $block:block, $position: absolute, $width: $xlarge-spacer, $height: $xlarge-spacer ) {
+  &:hover, &:focus {
+    color: $hover-color;
+    transition: all 0.2s ease-out;
+    &:after {
+      color: $hover-color;
+    }
+  }
+  &:after {
+    content: $icon-links-arrow;
+    @include icon-props();
+    display: $block;
+    position: $position;
+    right: $right;
+    margin-left: $small-spacer;
+    width: $width;
+    height: $height;
+    line-height: $height;
+    top: $regular-spacer;
+    font-size: $arr-font-size;
+    color: $primary-color;
+    transition: all 0.2s ease-out;
+    @include respond-to(phones-landscape) {
+      font-size: $font-size;
+    }
+  }
+
+}
+//
+// ACCORDIONS
+@mixin accordion($accordion-color:$accordion-list-bg,  $inverse-color: $inverse-text-color ) {
+  .field-group-accordion-wrapper {
+    margin-bottom: $xxlarge-spacer;
+    @include respond-to(tablets-portrait) {
+      margin-bottom: $large-spacer;
+      @include respond-to(phones-landscape) {
+        @include make-row(30px);
+      }
+    }
+
+    .field-group-format-toggler.ui-accordion-header {
+      padding: 0;
+      margin: 0 0 1px;
+      border: 0 none;
+      line-height: $accordion-list-height;
+      outline: none;
+      box-shadow: none;
+      @include respond-to(phones-landscape) {
+        padding: 0;
+        line-height: $accordion-list-height*0.79;
+      }
+      &.ui-state-active {
+        > .ui-accordion-header-icon {
+          &:after {
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -o-transform: rotateY(180deg);
+            transform: rotateX(180deg);
+            transform-origin: 50% 50%;
+            @include transition(all 0.3s ease-in-out);
+          }
+        }
+        > a {
+          background-color: $brand-color;
+        }
+      }
+      > .ui-accordion-header-icon.ui-icon {
+        overflow: inherit;
+        width: 36px;
+        height: $large-spacer;
+        position: absolute;
+        z-index: 2;
+        right: $xlarge-spacer;
+        left: auto;
+        top: ($accordion-list-height/2);
+        text-indent: 0;
+        background-color: transparent;
+        background-image: none;
+        @include respond-to(phones-landscape) {
+          top: $accordion-list-height*0.5*0.79;
+          right: $large-spacer;
+        }
+        &:after {
+          content: $icon-accordion-down;
+          @include icon-props();
+          display: block;
+          width: 100%;
+          height: $large-spacer;
+          line-height: $large-spacer;
+          font-size: $h4-font-size;
+          color: $inverse-text-color;
+          @include transition(all 0.3s ease-in-out);
+          @include respond-to(phones-landscape) {
+            font-size: $medium-font-size;
+          }
+        }
+      }
+      > a {
+        line-height: $accordion-list-height;
+        background-color: $accordion-color;
+        @include transition(all 0.3s ease-in);
+        font-size: $h3-font-size;
+        font-family: $heading-font-sans-serif;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        color: $inverse-color;
+        display: block;
+        padding: 0 $xlarge-spacer;
+        position: relative;
+        @include respond-to(phones-landscape) {
+          line-height: $accordion-list-height*0.79;
+          font-size: $large-font-size;
+          padding-left: $large-spacer;
+          padding-right: $large-spacer;
+        }
+        &:hover, &:focus {
+          color: $inverse-color !important;
+          text-decoration: none !important;
+        }
+      }
+    }
+    .field-group-format-wrapper {
+      border-color: transparent;
+      background: none;
+      background-color: transparent;
+      padding: $regular-spacer 0;
+      @include text-mixin($body-font-family,
+              $medium-font-size*1.125,
+              $primary-text-color,
+              $font-weight-normal,
+              $medium-font-size*1.125*1.5
+      );
+      @include respond-to(phones-landscape) {
+        font-size: $medium-font-size;
+        padding: $regular-spacer $large-spacer;
+      }
+      article.additional-info {
+        h2, .comment-forbidden {
+          //@include h3-paragraph();
+          display: none;
+        }
+
+        .content-owner-portrait {
+          @include clearfix();
+          padding-left: 0;
+          margin: 0 0 $small-spacer*2.5;
+          .review-author {
+            align-items: flex-end;
+            .info-col {
+              .field--name-field-user-full-name {
+                margin-bottom: $small-spacer*0.5;
+              }
+              .user-created-date {
+                padding-bottom: 0;
+              }
+            }
+          }
+          .field--name-field-user-picture {
+            height: auto;
+            img {
+              max-width: 155px;
+              @include respond-to(phones-landscape) {
+                max-width: $small-spacer*7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin bs-accordion($primary-color:$brand-color, $collapsed-color:$accordion-list-bg, $inverse-color: $inverse-text-color ) {
+
+  > div {
+    border-bottom: 2px solid $light-gray;
+  }
+  .panel + .panel {
+    margin-top: 1px;
+  }
+  .panel-heading {
+    height: $accordion-list-height;
+    @include respond-to(phones-landscape) {
+      height: $accordion-list-height*0.79;
+    }
+    .panel-title {
+      line-height: $accordion-list-height;
+      @include transition(all 0.3s ease-in);
+      font-size: $h3-font-size;
+      font-family: $heading-font-sans-serif;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      color: $inverse-color;
+      background-color: $primary-color;
+      padding: 0 $xlarge-spacer;
+      display: block;
+      position: relative;
+      transition: all 0.3s ease-out;
+      @include respond-to(phones-landscape) {
+        line-height: $accordion-list-height*0.79;
+        font-size: $h4-font-size;
+        padding: 0 $large-spacer;
+      }
+      &[data-toggle]:after {
+        content: $icon-accordion-up;
+        @include icon-props();
+        display: block;
+        position: absolute;
+        right: $xlarge-spacer;
+        width: 36px;
+        height: $large-spacer;
+        line-height: $large-spacer;
+        top: $accordion-list-height*0.5 - $small-spacer;
+        font-size: $h4-font-size;
+        color: $inverse-text-color;
+        @include transition(all 0.3s ease-in-out);
+        @include respond-to(phones-landscape) {
+          font-size: $large-font-size;
+          top: $accordion-list-height*0.5*0.79 - $small-spacer;
+          right: $large-spacer;
+        }
+      }
+      &.collapsed {
+        transition: all 0.3s ease-out;
+        background-color: $collapsed-color;
+        &:after {
+          -webkit-transform: rotateX(180deg);
+          -moz-transform: rotateX(180deg);
+          -o-transform: rotateY(180deg);
+          transform: rotateX(180deg);
+          transform-origin: 50% 50%;
+          @include transition(all 0.3s ease-in-out);
+        }
+        .amount {
+          color: $brand-color;
+        }
+      }
+
+    }
+  }
+  .panel-collapse {
+    &.collapse.in {
+      background-color: transparent;
+      @include transition(all 0.3s ease-in);
+    }
+    .panel-body {
+      padding: $regular-spacer 0;
+    }
+  }
+
+}
+@mixin links-border-bottom($padding:$largest-spacer) {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-color: $border-gray;
+    left: $padding;
+    height: 1px;
+    width: calc(100% - #{$padding*2});
+    @include respond-to(phones-landscape) {
+      width: calc(100% - #{$padding*0.75*2});
+      left: $padding*0.75;
+    }
+  }
+}
+// Forms / Checkboxes
+@mixin md-checkbox() {
+  .select-all,
+  .form-type-checkbox {
+    label {
+      padding-left: $small-spacer*2.5;
+      line-height: $small-spacer*2.6;
+    }
+    input[type="checkbox"]  {
+      margin: 4px 0 0;
+      -webkit-appearance: none;
+      margin-left: (-$small-spacer*2.5);
+      &:after {
+        border-color: rgba(0, 0, 0, 0.54);
+        border: 2px solid;
+        border-radius: 2px;
+        content: '';
+        display: block;
+        height: 18px;
+        transition: 240ms;
+        width: 18px;
+      }
+      &:checked:after {
+        background-color: $brand-color;
+        border-color: $brand-color;
+      }
+      &:checked:before {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        left: 6px;
+        top: 0;
+        display: table;
+        width: 6px;
+        height: 12px;
+        border: 2px solid $inverse-text-color;
+        border-top: 0;
+        border-left: 0;
+        content: '';
+      }
+      &:disabled:after {
+        border-color: rgba(0, 0, 0, 0.26);
+      }
+      &:disabled:checked:after {
+        background-color: rgba(0, 0, 0, 0.26);
+        border-color: transparent;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .select-all {
+    input[type="checkbox"] {
+      margin-left: 0;
+      position: relative;
+    }
+  }
+}
+@mixin checkbox-square() {
+  &.checked {
+    label {
+      font-weight: $font-weight-bold;
+      color: $brand-color;
+      &:before {
+        background: $brand-color url("https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/check.svg") no-repeat center !important;
+      }
+    }
+  }
+  label {
+    width: 100%;
+    position: relative;
+    line-height: $xlarge-spacer;
+    font-family: $font-family;
+    font-size: $medium-font-size*1.125;
+    color: $primary-text-color;
+    font-weight: $font-weight-normal;
+    &:before {
+      content: "";
+      width: 20px;
+      background: $inverse-color;
+      position: absolute;
+      height: 20px;
+      top: $small-spacer*0.5;
+      z-index: 2;
+      right: 0;
+      border-radius: 2px;
+      border: 0 none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    span {
+      font-size: inherit;
+      color: inherit;
+      font-weight: inherit;
+    }
+  }
+  input {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 6px;
+    visibility: hidden;
+  }
+}
+// Slider mixins
+@mixin icon-title($font-size: $h2-font-size, $icon-size: 83px, $icon: $icon-book, $icon-font-size: $h2-font-size ) {
+  display: block;
+  font-family: $heading-font-serif;
+  line-height: 1.1;
+  font-size: $font-size;
+  color: $inverse-text-color;
+  @include respond-to(tablets-portrait) {
+    padding: 0 $regular-spacer;
+    @include respond-to(phones-landscape) {
+      padding: 0;
+      font-size: $large-font-size; //20px
+      line-height: $large-font-size*1.5;
+    }
+  }
+  &:before {
+    content: $icon;
+    @include icon-props();
+    color: $inverse-text-color;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $brand-color;
+    font-size: $icon-font-size;
+    text-align: center;
+    margin-right: $icon-size*0.25;
+    width: $icon-size;
+    height: $icon-size;
+    line-height: $icon-size;
+    @include respond-to(phones) {
+      width: $icon-size*0.7;
+      height: $icon-size*0.7;
+      line-height: $icon-size*0.7;
+      font-size: $icon-font-size*0.75;
+    }
+  }
+}
+@mixin icon-title-custom($font-size: $h2-font-size, $icon-size: 83px, $icon: $icon-book, $icon-font-size: $h2-font-size ) {
+  display: block;
+  font-family: $heading-font-serif;
+  line-height: 1.1;
+  font-size: $font-size;
+  color: $inverse-text-color;
+  @include respond-to(tablets-portrait) {
+    padding: 0 $regular-spacer;
+    @include respond-to(phones-landscape) {
+      padding: 0;
+      font-size: $large-font-size; //20px
+      line-height: $large-font-size*1.5;
+      @include respond-to(old-phones) {
+        font-size: $large-font-size*0.9; //18px
+        line-height: $large-font-size*1.2;
+      }
+    }
+  }
+  .block-icon {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: $brand-color;
+    font-size: $icon-font-size;
+    text-align: center;
+    margin-right: $icon-size*0.25;
+    width: $icon-size;
+    height: $icon-size;
+    line-height: $icon-size*0.5;
+    padding: $small-spacer*1.8;
+    @include respond-to(phones-landscape) {
+      width: $icon-size*0.7;
+      height: $icon-size*0.7;
+      line-height: $icon-size*0.7;
+      font-size: $icon-font-size*0.75;
+      padding: 0;
+      @include respond-to(old-phones) {
+        margin-right: $small-spacer;
+        width: $icon-size*0.5;
+        height: $icon-size*0.5;
+        line-height: $icon-size*0.5;
+        font-size: $icon-font-size*0.55;
+      }
+    }
+    .field--type-image {
+      .field--label {
+        display: none;
+      }
+      img {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        max-width: $small-spacer*4;
+        max-height: $small-spacer*4;
+        @include respond-to(phones-landscape) {
+          max-width: $small-spacer*3;
+          max-height: $small-spacer*3;
+          @include respond-to(old-phones) {
+            max-width: $small-spacer*2;
+            max-height: $small-spacer*2;
+          }
+        }
+      }
+    }
+    .icon {
+      font-size: inherit;
+      &:before {
+        content: $icon;
+        @include icon-props();
+        color: $inverse-text-color;
+        display: inline-block;
+      }
+    }
+  }
+}
+@mixin slider-item() {
+  article {
+    background-color: $dark-gray-books;
+    padding: $small-spacer*2.5 $small-spacer*2.5 $regular-spacer;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    @include respond-to(phones-landscape) {
+      padding: $small-spacer*2 $small-spacer*3 $regular-spacer;
+    }
+    &:hover {
+      .hover-content, .hover-content .read-more {
+        background-color: $dark-gray-hover;
+        opacity: 1;
+      }
+      .hover-content {
+        @include transition(all 0.15s ease-in);
+      }
+      .hover-content .read-more {
+        @include transition(all 0.2s ease-in);
+      }
+    }
+    > .content {
+      width: 100%;
+
+      .image--default {
+        border: 1px solid $light-gray;
+      }
+      .image--default,
+      .field--name-field-book-cover-image,
+      .field--name-field-review-cover-image,
+      .field--name-field-author-portrait-image {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: $small-spacer;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      > h2 {
+        order: 1;
+        color: $light-gray;
+        font-size: $font-size;
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-normal;
+        letter-spacing: $space-letter-one;
+        line-height: 1.3;
+        margin: 0;
+        text-align: left;
+        @include respond-to(phones-landscape) {
+          font-size: $font-size*0.7;
+        }
+        > a {
+          color: $light-gray;
+          text-transform: uppercase;
+          font-family: inherit;
+        }
+
+      }
+      .author {
+        float: left;
+        display: inline-block;
+        width: auto;
+        color: $light-gray;
+        font-size: $font-size;
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-normal;
+        line-height: 1.3;
+        margin: 0;
+        letter-spacing: $space-letter-one;
+        @include respond-to(phones-landscape) {
+          font-size: $font-size*0.7;
+        }
+      }
+
+    }
+    // Info showed on hover
+    > .hover-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: $xlarge-spacer $small-spacer*2.5;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      @include transition(all 0.15s ease-in);
+      @include respond-to(phones-landscape) {
+        //Hide for mobiles
+        display: none;
+      }
+      .link-wrapper {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+      h2 {
+        @include text-mixin($heading-font-sans-serif,
+                $h4-font-size,
+                $brand-color,
+                $font-weight-normal,
+                $h4-font-size*1.2,
+                $space-letter-one);
+        margin: 0 0 $small-spacer;
+        display: inline-block;
+        width: 100%;
+        @include respond-to(phones-landscape) {
+          font-size: $large-font-size;
+          line-height: $large-font-size*1.2;
+        }
+        a, span {
+          color: inherit;
+        }
+      }
+
+      .hover-author {
+        color: $light-gray;
+        font-size: $font-size;
+        font-family: $heading-font-sans-serif;
+        font-weight: $font-weight-normal;
+        letter-spacing: $space-letter-one;
+        line-height: 1.3;
+        margin: 0 0 $regular-spacer;
+      }
+      .description {
+        color: $light-gray;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+        @include respond-to(phones-landscape) {
+          font-size: $small-font-size;
+          line-height: $small-font-size*1.3;
+        }
+      }
+      .comment-forbidden {
+        display: none;
+        visibility: hidden;
+      }
+      .read-more {
+        opacity: 0;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: $xlarge-spacer*2;
+        text-transform: uppercase;
+        font-size: $font-size;
+        color: $brand-color;
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-normal;
+        letter-spacing: $space-letter-one;
+        padding-left: $xlarge-spacer*2;
+        padding-top: $small-spacer;
+        overflow: hidden;
+        @include transition(all 0.2s ease-in);
+        &:hover, &:focus {
+          color: darken($brand-color, 10%);
+        }
+        @include respond-to(phones-landscape) {
+          height: $small-spacer*5;
+        }
+        @include arrows-link($inverse-text-color, darken($inverse-text-color, 10%), auto, $font-size, block, absolute, $small-spacer, $small-spacer);
+        &:after {
+          font-family: inherit;
+          font-weight: inherit;
+          letter-spacing: inherit;
+          left: $xlarge-spacer;
+          top: $regular-spacer;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@mixin slider-paddings() {
+  padding-left: $small-spacer*6.5;
+  padding-right: $small-spacer*6.5;
+  @include respond-to(tablets-landscape) {
+    padding-left: $small-spacer*4;
+    padding-right: $small-spacer*4;
+    @include respond-to(tablets-portrait) {
+      padding-left: $small-spacer*2;
+      padding-right: $small-spacer*2;
+    }
+  }
+}
+@mixin footer-paddings() {
+  padding-left: $small-spacer*8;
+  padding-right: $small-spacer*8;
+  @include respond-to(tablets-landscape) {
+    padding-left: $small-spacer*6;
+    padding-right: $small-spacer*6;
+    @include respond-to(tablets-portrait) {
+      padding-left: $xlarge-spacer;
+      padding-right: $xlarge-spacer;
+    }
+  }
+}
+// Topic of the month
+@mixin month-topic($bg-color: $inverse-color, $btn-color: $brand-color, $hover-btn-color: darken($brand-color, 10%) ) {
+  .block-type-spot {
+    .header-container {
+      position: relative;
+      padding: 0 $largest-spacer;
+      z-index: 3;
+      @include respond-to(tablets-landscape) {
+        padding: 0 $xlarge-spacer;
+        @include respond-to(tablets-portrait) {
+          padding: 0 $large-spacer;
+          @include respond-to(phones-landscape) {
+            padding: 0 $small-spacer*0.5;
+          }
+        }
+      }
+
+      .col-xs-12 {
+        position: absolute;
+        top: $xxlarge-spacer;
+        left: 60px;
+        right: 0px;
+        padding-left: $large-spacer;
+        padding-right: $large-spacer;
+        @include respond-to(tablets-landscape) {
+          left: 30px;
+        }
+        @include respond-to(tablets-portrait) {
+          left: 20px;
+          padding-left: $regular-spacer;
+          padding-right: $regular-spacer;
+        }
+        @include respond-to(phones-landscape) {
+          left: 5px;
+          top: $small-spacer*3;
+        }
+      }
+
+      h3 {
+        margin: 0;
+        @include respond-to(phones-landscape) {
+          padding: 0;
+          font-size: $large-font-size;
+          line-height: $logo-font-size;
+        }
+      }
+    }
+  }
+
+  .field--name-field-spot-content {
+    .spot {
+      .right-col, .left-col {
+        @include make-xs-column(12);
+        @include make-md-column(6);
+        @include no-padding();
+      }
+
+      .content {
+        .infobox {
+          padding-top: $xxlarge-spacer+26;
+          position: relative;
+          overflow: hidden;
+          @include respond-to(tablets-portrait) {
+            background-color: $bg-color;
+          }
+          @include respond-to(phones-landscape) {
+            padding-top: $small-spacer*4+26;
+          }
+          > .container {
+            padding: 0 $largest-spacer;
+            @include respond-to(tablets-landscape) {
+              padding: 0 $xlarge-spacer;
+              @include respond-to(tablets-portrait) {
+                padding: 0 $large-spacer;
+                @include respond-to(phones-landscape) {
+                  padding: 0 $small-spacer*0.5;
+                }
+              }
+            }
+          }
+          .col-xs-12 {
+            position: static;
+            padding-left: $large-spacer;
+            padding-right: $large-spacer;
+            @include respond-to(tablets-portrait) {
+              padding-left: $regular-spacer;
+              padding-right: $regular-spacer;
+            }
+            .inner-wrap {
+              position: relative;
+              z-index: 3;
+            }
+            .left-col, .right-col {
+              top: 0;
+              position: absolute;
+              width: 50%;
+              height: 100%;
+              display: block;
+              z-index: 2;
+            }
+            .left-col {
+              background-color: $bg-color;
+              left: 0;
+            }
+            .right-col {
+              background-position: center;
+              background-color: transparent;
+              background-size: cover;
+              background-repeat: no-repeat;
+              right: 0;
+            }
+          }
+          h2 {
+            display: block;
+            font-family: $heading-font-serif;
+            line-height: 1.1;
+            font-size: $h1-font-size;
+            margin-bottom: $xlarge-spacer;
+            font-weight: $font-weight-bold;
+            @include respond-to(tablets-landscape) {
+              font-size: $h2-font-size;
+              @include respond-to(tablets-portrait) {
+                font-size: $h1-font-size;
+                @include respond-to(phones-landscape) {
+                  font-size: $h3-font-size;
+                  line-height: $h3-font-size+5px;
+                }
+              }
+            }
+            a, a:focus, a:hover, span {
+              font-size: inherit;
+              color: inherit;
+            }
+          }
+          .topic-title {
+            margin-top: $xxlarge-spacer;
+            @include respond-to(phones-landscape) {
+              padding: 0;
+              font-size: $large-font-size;
+              line-height: $logo-font-size;
+              margin: $small-spacer*3 0;
+            }
+
+          }
+          .field--name-field-book-body,
+          .field--type-text-long {
+            @include field--type-text-long();
+            margin-bottom: $xlarge-spacer;
+            strong {
+              font-weight: $font-weight-normal;
+            }
+          }
+          .links.list-inline {
+            display: none;
+          }
+          .btn-link {
+            @include btn-link(35px, transparent, $btn-color, 18px, inline-flex);
+            @include align-center();
+            margin-bottom: $xxlarge-spacer;
+            @include respond-to(phones-landscape) {
+              font-size: $font-size;
+              line-height: $large-font-size;
+              margin-bottom: $large-spacer;
+            }
+            &:hover, &:focus {
+              color: $hover-btn-color;
+            }
+            @include arrows-link($btn-color, $hover-btn-color, $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+            &:after {
+              @include respond-to(phones-landscape) {
+                font-size: $font-size;
+                line-height: $medium-font-size;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin month-topic-rp-row() {
+  .header-container .block-title {
+    left: 50%;
+
+    @include respond-to(tablets-portrait) {
+      left: 20px;
+    }
+    @include respond-to(phones-landscape) {
+      left: 5px;
+    }
+  }
+
+  .infobox > .flex-row {
+    flex-direction: row-reverse;
+
+    .left-col {
+      left: auto;
+      right: 0;
+    }
+    .right-col {
+      right: auto;
+      left: 0;
+    }
+  }
+}
+
+@mixin month-topic-rp($bg-color: $inverse-color, $btn-color: $brand-color, $hover-btn-color: darken($brand-color, 10%) ) {
+  @include month-topic($bg-color, $btn-color, $hover-btn-color);
+
+  :not(.block-type-spot) + .block-type-spot, .block-type-spot:first-child {
+    & + .block-type-spot {
+      @include month-topic-rp-row();
+
+      & + .block-type-spot + .block-type-spot  {
+        @include month-topic-rp-row();
+
+        & + .block-type-spot + .block-type-spot  {
+          @include month-topic-rp-row();
+
+          & + .block-type-spot + .block-type-spot  {
+            @include month-topic-rp-row();
+
+            & + .block-type-spot + .block-type-spot  {
+              @include month-topic-rp-row();
+
+              & + .block-type-spot + .block-type-spot  {
+                @include month-topic-rp-row();
+
+                & + .block-type-spot + .block-type-spot  {
+                  @include month-topic-rp-row();
+
+                  & + .block-type-spot + .block-type-spot  {
+                    @include month-topic-rp-row();
+
+                    & + .block-type-spot + .block-type-spot  {
+                      @include month-topic-rp-row();
+
+                      & + .block-type-spot + .block-type-spot  {
+                        @include month-topic-rp-row();
+
+                        & + .block-type-spot + .block-type-spot  {
+                          @include month-topic-rp-row();
+
+                          & + .block-type-spot + .block-type-spot  {
+                            @include month-topic-rp-row();
+
+                            & + .block-type-spot + .block-type-spot  {
+                              @include month-topic-rp-row();
+
+                              & + .block-type-spot + .block-type-spot  {
+                                @include month-topic-rp-row();
+
+                                & + .block-type-spot + .block-type-spot  {
+                                  @include month-topic-rp-row();
+
+                                  & + .block-type-spot + .block-type-spot  {
+                                    @include month-topic-rp-row();
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin loader() {
+  .loader {
+    position: absolute;
+    right: $small-spacer;
+    top: $xlarge-spacer;
+    width: $small-spacer*2;
+    height: $small-spacer*2;
+    background: $inverse-color url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/loader.svg) no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0;
+    border-top: 2px solid $brand-color;
+    border-right: 2px solid $brand-color;
+    border-bottom: 2px solid $brand-color;
+    border-left: 2.4px solid $inverse-color;
+    transform: translateZ(0);
+    -webkit-animation: loader 1.1s infinite linear;
+    animation: loader 1.1s infinite linear;
+    z-index: 12;
+    &:after {
+      border-radius: 50%;
+      width: $xlarge-spacer;
+      height: $xlarge-spacer;
+    }
+    @include respond-to(phones-landscape) {
+      top: $small-spacer*2.6;
+
+      @include respond-to(phones) {
+        top: $small-spacer*1.6;
+        right: $small-spacer*0.5;
+      }
+    }
+  }
+}
+@mixin bookmark() {
+  .flag.flag-bookmark {
+    @include text-mixin($heading-font-sans-serif, $medium-font-size, $primary-text-color, $font-weight-bold);
+    text-transform: uppercase;
+    padding: 11px 0;
+    @include respond-to(phones) {
+      padding: 0 5px;
+      font-size: $font-size;
+      line-height: 1;
+      width: auto
+    }
+
+    &.action-unflag {
+      &:before {
+        margin-right: $small-spacer;
+        content: $icon-favourites;
+        color: $brand-color;
+        @include icon-props();
+        font-size: $medium-font-size;
+      }
+    }
+    &.action-flag {
+      &:before {
+        margin-right: $small-spacer;
+        content: $icon-favourites;
+        color: $btn-gray;
+        @include icon-props();
+        font-size: $medium-font-size;
+      }
+    }
+  }
+}
+@mixin like-dislike() {
+  .flag.flag-like, .flag.flag-comment_like {
+    position: relative;
+    @include respond-to(phones) {
+      width: auto;
+      padding: 0 5px;
+      font-size: $font-size;
+      line-height: 1;
+    }
+    &:before {
+      font-size: $large-font-size;
+      position: absolute;
+      left: $small-spacer*0.5;
+      top: -2px;
+      line-height: $logo-font-size*2;
+      @include icon-props();
+      @include respond-to(phones) {
+        font-size: $medium-font-size;
+        line-height: $small-spacer*3;
+      }
+    }
+    &.action-unflag {
+      &:before {
+        content: $icon-like;
+        color: $brand-color;
+      }
+    }
+    &.action-flag {
+      &:before {
+        content: $icon-like;
+        color: $btn-gray;
+      }
+    }
+
+    a, .flag-counter {
+      text-transform: uppercase;
+      @include text-mixin($heading-font-sans-serif, $medium-font-size, $primary-text-color, $font-weight-bold);
+      line-height: $logo-font-size*2;
+      @include respond-to(phones) {
+        font-size: $font-size;
+        line-height: $small-spacer*3;
+      }
+    }
+    a {
+      padding-left: $large-spacer*2;
+      @include respond-to(phones) {
+        padding-left: $xlarge-spacer;
+      }
+    }
+    .flag-counter {
+      margin-left: $small-spacer*0.3;
+    }
+  }
+}
+@mixin comments-body() {
+  position: relative;
+  .views-field-comment-count,
+  .views-field-lit-comments-count {
+    position: relative;
+    padding: 0;
+    top: (-$small-spacer*7.5);
+    @include text-mixin($heading-font-serif,
+            $medium-font-size*1.125,
+            $primary-text-color,
+            $font-weight-bold,
+            $medium-font-size*1.125*1.2
+    );
+    @include respond-to(tablets-landscape) {
+      top: (-$small-spacer*6);
+      @include respond-to(tablets-portrait) {
+        margin-left: $small-spacer*17;
+        @include respond-to(phones-landscape) {
+          visibility: hidden;
+        }
+      }
+    }
+    .field-content {
+      @include respond-to(tablets-portrait) {
+        font-size: $medium-font-size;
+      }
+    }
+  }
+  .comments-posting-forbidden {
+    padding: $xlarge-spacer 0 $regular-spacer;
+    font-size: $large-font-size;
+  }
+  .views-row {
+    .views-field {
+      .field-content {
+        .comment-comment-form {
+          border-bottom: 1px solid $inverse-color;
+          margin-bottom: $regular-spacer*2;
+          .field--widget-text-textarea {
+            .control-label {
+              @include text-mixin($font-family-sans-serif,
+                      $h4-font-size,
+                      $primary-text-color,
+                      $font-weight-normal,
+                      $h4-font-size*1.5
+              );
+              margin: $large-spacer 0;
+              @include respond-to(phones-landscape) {
+                display: none;
+              }
+            }
+            .form-group .form-control {
+              background-color: $inverse-color;
+            }
+          }
+          .filter-help {
+            float: none;
+          }
+          .form-actions {
+            @include clearfix();
+            .btn.btn-success {
+              margin: 0 0 $large-spacer;
+              float: right;
+            }
+          }
+        }
+        .comments-posting-forbidden {
+          color: $primary-text-color;
+          > a {
+            color: $brand-color;
+          }
+          .comment-forbidden {
+            a {
+              color: $brand-color;
+            }
+          }
+        }
+        .comments-container {
+
+          .comment {
+            margin-bottom: $large-spacer;
+            color: $primary-text-color;
+            .comment-header {
+              > article {
+                //User info
+                .field--name-field-user-picture {
+                  float: left;
+                  img {
+                    display: block;
+                    width: 83px;
+                    height: 83px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-right: $regular-spacer;
+                    @include respond-to(phones-landscape) {
+                      width: $small-spacer*6;
+                      height: $small-spacer*6;
+                    }
+                  }
+                }
+                .field--name-field-user-full-name {
+                  @include text-mixin($font-family-sans-serif,
+                          $h4-font-size,
+                          $primary-text-color,
+                          $font-weight-normal,
+                          $h4-font-size*1.5
+                  );
+                  padding-top: $regular-spacer;
+                  @include respond-to(phones-landscape) {
+                    padding-top: $small-spacer*0.5;
+                    @include respond-to(phones) {
+                      padding-top: 0;
+                      line-height: $small-spacer*3;
+                    }
+                  }
+                  .authored-by {
+                    display: none;
+                  }
+                }
+
+              }
+              .actions-row {
+                margin-bottom: $regular-spacer;
+                .flex-nowrap {
+                  @include respond-to(phones-landscape) {
+                    flex-wrap: wrap;
+                  }
+                }
+
+                .created {
+                  color: $primary-text-color;
+                  padding-right: $regular-spacer;
+                  @include respond-to(phones-landscape) {
+                    width: 100%;
+                  }
+                }
+                .action-links {
+                  ul > li {
+                    color: $primary-text-color;
+                    > a {
+                      color: $brand-color;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .indented {
+            position: relative;
+            &:before {
+              content: '';
+              position: absolute;
+              display: inline-block;
+              background: transparent url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/indent-arrow.svg) no-repeat center / cover;
+              width: $large-spacer;
+              height: $large-spacer;
+              left: (-$xxlarge-spacer);
+              top: $xlarge-spacer;
+              @include respond-to(phones) {
+                left: (-$regular-spacer*1.5);
+                top: $large-spacer;
+                width: $regular-spacer;
+                height: $regular-spacer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin ajax-pager() {
+  // Ajax pager
+  .pager {
+    @include container-fixed(30px);
+    @include bs-container();
+    @include slider-paddings();
+    margin-bottom: $largest-spacer;
+    li.pager__item {
+      display: block;
+
+      > a {
+        @include btn-mixin(50px, $btn-gray, $btn-gray, $primary-text-color, block);
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  }
+}
+@mixin search-items() {
+  .media {
+    @include clearfix();
+    .media-left {
+      padding-right: 0;
+      width: 130px;
+      min-height: 1px;
+      float: left;
+      @include respond-to(phones) {
+        display: block;
+        margin-bottom: $large-spacer;
+      }
+
+      .field--name-field-cover-image {
+        width: 130px;
+        height: 210px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include respond-to(phones) {
+          width: 90px;
+          height: 160px;
+        }
+      }
+      + .media-body {
+        padding-left: $xlarge-spacer;
+        @include respond-to(phones) {
+          padding-left: 0;
+        }
+      }
+    }
+    .media-body {
+      width: calc(100% - 130px);
+      float: left;
+      display: block;
+      @include respond-to(phones) {
+        width: 100%;
+      }
+    }
+    .media-heading {
+      @include h3-paragraph();
+      margin-top: $small-spacer;
+      margin-bottom: $small-spacer*0.7;
+      color: $brand-color;
+      @include respond-to(phones) {
+        padding: 0;
+        font-size: $h4-font-size;
+      }
+      a, span {
+        color: inherit;
+        &:hover, &:focus {
+          color: darken($brand-color, 10%);
+        }
+      }
+    }
+    .content-tag {
+      display: inline-block;
+      margin-top: $small-spacer;
+      padding: 4px $small-spacer;
+      background: $btn-gray;
+      font-size: $font-size;
+      font-family: $font-family;
+    }
+    .author {
+      font-family: $font-family-bold;
+      font-size: $medium-font-size;
+      font-weight: $font-weight-bold;
+      margin-bottom: $regular-spacer;
+    }
+    .field--type-text-long {
+      font-size: $medium-font-size;
+      margin-bottom: $regular-spacer;
+    }
+  }
+}
+@mixin pager-nav() {
+  .pager-nav {
+    .pagination {
+      > li {
+        &:first-child {
+          > a {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+          }
+        }
+        &:last-child {
+          > a {
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+          }
+        }
+        &.pager__item--last > a, &.pager__item--first > a {
+          min-width: 144px;
+          text-transform: uppercase;
+          @include respond-to(tablets-portrait) {
+            min-width: $small-spacer*9;
+            @include respond-to(phones-landscape) {
+              min-width: $small-spacer*5;
+            }
+          }
+        }
+        &.active > a {
+          background-color: $brand-color;
+          color: $inverse-text-color;
+        }
+        > a {
+          min-width: $small-spacer*5;
+          height: $small-spacer*5;
+          line-height: $small-spacer*5;
+          background-color: $btn-gray;
+          border: 0 none;
+          margin: $regular-spacer*0.5;
+          padding: 0 $small-spacer;
+          font-family: $heading-font-sans-serif;
+          font-weight: $font-weight-bold;
+          color: $primary-text-color;
+          font-size: $font-size;
+          @include respond-to(phones-landscape) {
+            margin: $small-spacer*0.5;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin custom-switch() {
+  @include respond-to(phones-landscape) {
+    justify-content: flex-end;
+  }
+  &.action-unflag {
+    .toggle-on {
+      color: $brand-color;
+    }
+  }
+  .title, .toggle-off, .toggle-on {
+    font-family: $font-family-bold;
+    font-weight: $font-weight-bold;
+    color: $primary-text-color;
+  }
+  .title {
+    margin-right: $large-spacer;
+  }
+  form.flag-checkbox .form-item {
+    margin: 0;
+    display: inline-block;
+    label {
+      font-size: 0; //Hide label
+      padding: 2px 5px;
+      line-height: 1;
+    }
+    .flag-checkbox {
+      position: absolute;
+      visibility: hidden;
+
+      + .input-group-addon {
+        position: relative;
+        height: $switch-height;
+        width: $small-spacer*5.5;
+        margin-right: $small-spacer*0.5;
+        margin-left: $small-spacer*0.5;
+        border-radius: 10px;
+        background-color: $inverse-color;
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.3s 0.05s;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          transition: 0.35s;
+        }
+        &::before {
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 20%;
+          border-radius: 10px;
+          background-color: $inverse-color;
+        }
+        &::after {
+          left: -2px;
+          top: 50%;
+          height: $switch-thumb-size;
+          width: $switch-thumb-size;
+          border-radius: 50%;
+          border: none;
+          transform: translateY(-50%);
+          opacity: 1;
+          background-color: $light-gray;
+          border: 1px solid $border-gray;
+        }
+
+        &:hover {
+          &::after {
+            transform: translateY(-50%) scale(1.1);
+          }
+        }
+      }
+
+      &:checked {
+        + .input-group-addon {
+          background-color: $light-gray;
+
+          &::before {
+            width: 100%;
+            background-color: $inverse-color;
+          }
+          &::after {
+            left: calc(100% - #{$switch-thumb-size*0.9});
+            background-color: $brand-color;
+            border: 1px solid $brand-color;
+          }
+        }
+      }
+      + .input-group-addon {
+        .ajax-progress.ajax-progress-throbber {
+          position: absolute;
+          right: 0;
+          top: -1px;
+          visibility: hidden;
+          color: $brand-color;
+          &:before {
+            color: $brand-color;
+          }
+          &.glyphicon-spin {
+            visibility: visible;
+          }
+
+        }
+      }
+
+    }
+  }
+}
+@mixin tags($tag-font: $heading-font-sans-serif, $text-transform: uppercase) {
+  @include clearfix();
+  width: 100%;
+  float: left;
+  margin-bottom: $xlarge-spacer;
+  @include respond-to(tablets-portrait) {
+    margin-bottom: $small-spacer;
+  }
+  .field--label, .field__items, .field--item {
+    float: left;
+    display: inline-block;
+  }
+  .field--label {
+    @include respond-to(phones-landscape) {
+      width: 100%;
+      float: none;
+      padding: 0;
+    }
+  }
+  .field--label, .field--item {
+    @include text-mixin($tag-font, $font-size, $primary-text-color, $font-weight-bold, $font-size*1.5);
+    text-transform: $text-transform;
+  }
+  .field__items {
+    max-width: 90%;
+    @include respond-to(phones-landscape) {
+      max-width: 100%;
+    }
+  }
+  .field--item {
+    @include flex-row();
+    @include flex-nowrap();
+    @include align-center();
+    &:last-of-type {
+      &:after {
+        background: transparent;
+      }
+    }
+    &:after {
+      content: "";
+      background: $dark-bg;
+      height: 12px;
+      margin: 1px 0;
+      width: 2px;
+      @include respond-to(phones-landscape) {
+        margin-right: $regular-spacer;
+      }
+    }
+    a {
+      font-size: $font-size;
+      color: $brand-color;
+      padding: 0 $regular-spacer;
+      @include respond-to(phones-landscape) {
+        padding: 0 $regular-spacer 0 0;
+      }
+      &:hover, &:focus {
+        color: darken($brand-color, 10%);
+      }
+    }
+  }
+}

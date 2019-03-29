@@ -1,0 +1,210 @@
+
+.user-main-dropdown {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  z-index: 21;
+  color: $inverse-text-color;
+  opacity: 0;
+  pointer-events: none;
+  top: 79px;
+  padding: 0 $regular-spacer;
+  @include transition(all 0.3s ease-in);
+  @include respond-to(phones-landscape) {
+    top: 60px;
+    padding: 0;
+  }
+  &.collapsing, &.in {
+    opacity: 1;
+    @include transition(all 0.3s ease-in);
+  }
+  .container {
+    padding: 0;
+    > .row {
+      @include respond-to(phones-landscape) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  // Hide block title
+  .region > nav > h2 {
+    display: none;
+  }
+  .menu.nav {
+    > li {
+      > a {
+        color: $inverse-text-color;
+        &:hover, &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .user-dropdown {
+    pointer-events: all;
+    float: right;
+    width: 550px;
+    min-height: $header-height;
+    background-color: $menu-bg;
+    padding: 0;
+    z-index: 21;
+    @include respond-to(phones-landscape) {
+      width: 100%;
+      @include respond-to(phones) {
+        max-height: $small-spacer*55;
+        overflow-y: auto;
+        @include respond-to(phones) {
+          max-height: $small-spacer*45;
+        }
+      }
+    }
+
+    .user-heading {
+      margin-top: $small-spacer*2.5;
+      padding: 0 $largest-spacer;
+      color: $inverse-text-color;
+      font-family: $heading-font-serif;
+      font-size: $h4-font-size;
+      font-weight: $font-weight-bold;
+      line-height: $small-spacer*7.5;
+      @include links-border-bottom();
+      @include respond-to(phones-landscape) {
+        margin-top: $regular-spacer;
+        padding: 0 $xxlarge-spacer;
+      }
+    }
+    .region-user-dropdown {
+      margin-bottom: $regular-spacer;
+      // Hide block title
+      nav > h2 {
+        display: none;
+      }
+      // Login Form
+      .block-user-login-block {
+        padding: 0 $largest-spacer;
+        position: relative;
+        @include respond-to(phones-landscape) {
+          padding: 0 $large-spacer;
+          height: 70vh;
+          overflow: auto;
+        }
+        .block-title {
+          color: $inverse-text-color;
+          font-size: $h4-font-size;
+          font-family: $heading-font-serif;
+          margin: 0 0 $small-spacer;
+        }
+        .flex-row {
+          margin-top: $regular-spacer;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          .create-account-link, .facebook-login {
+            @include btn-mixin(40px, transparent, $inverse-text-color, $inverse-text-color, inline-block);
+            @include respond-to(phones-landscape) {
+              width: 100%;
+            }
+            &:hover, &:focus {
+              background-color: $inverse-text-color;
+              color: $primary-text-color;
+              &:before {
+                color: $primary-text-color;
+              }
+            }
+          }
+          .create-account-link {
+            margin-right: $small-spacer*0.5;
+            @include respond-to(phones-landscape) {
+              margin: $regular-spacer 0 0;
+            }
+          }
+          .facebook-login {
+            flex-grow: 1;
+            margin-left: $small-spacer*0.5;
+            position: relative;
+            padding: 0 $small-spacer*2 0 $small-spacer*4;
+            @include respond-to(phones-landscape) {
+              margin-left: 0;
+              padding: 0 $large-spacer;
+            }
+            &:before {
+              content: $icon-facebook;
+              @include icon-props();
+              font-size: 20px;
+              color: $inverse-text-color;
+              position: absolute;
+              left: 10px;
+            }
+          }
+        }
+        .user-login-form {
+          @include clearfix();
+          .form-group .control-label {
+            display: none; //Hide labels
+          }
+          .form-actions .button.form-submit {
+            float: right;
+            margin-right: 0;
+            margin-left: 0;
+            @include respond-to(phones) {
+              float: none;
+              width: 100%;
+            }
+          }
+          + ul {
+            position: absolute;
+            display: inline-block;
+            bottom: $regular-spacer;
+            margin-bottom: 0;
+            @include respond-to(phones-landscape) {
+              position: relative;
+              bottom: 50px;
+              @include respond-to(phones) {
+                position: static;
+              }
+            }
+            li a {
+              display: block;
+              color: $brand-color;
+              font-family: $heading-font-serif;
+              font-size: $medium-font-size;
+              font-weight: $font-weight-bold;
+              line-height: $small-spacer*3.5;
+              &:hover, &:focus {
+                color: darken($brand-color, 10%);
+              }
+            }
+          }
+          .form-group input.form-control {
+            height: $small-spacer*5;
+          }
+        }
+
+      }
+      .menu.nav {
+        > li {
+          overflow: hidden;
+          > a {
+            font-family: $heading-font-serif;
+            font-size: $medium-font-size;
+            color: $brand-color;
+            padding: 0 $largest-spacer;
+            line-height: $largest-spacer;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            position: relative;
+            @include respond-to(phones-landscape) {
+              padding: 0 $xxlarge-spacer;
+            }
+            @include links-border-bottom();
+            @include arrows-link($brand-color, $inverse-text-color, $largest-spacer);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

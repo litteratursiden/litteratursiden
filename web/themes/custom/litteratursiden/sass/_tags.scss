@@ -1,0 +1,52 @@
+.path-node, .path-search, .path-comment {
+  .field--name-field-analysis-general-tags,
+  .field--name-field-article-general-tags,
+  .field--name-field-author-portrait-tags,
+  .field--name-field-basic-page-general-tags,
+  .field--name-field-blog-general-tags,
+  .field--name-field-book-general-tags,
+  .field--name-field-book-list-general-tags,
+  .field--name-field-interview-general-tags,
+  .field--name-field-review-generel-tags,
+  .field--name-field-something-similar-general-tags,
+  .field--name-field-topic-general-tags{
+    @include tags();
+  }
+}
+.path-book-lists-overview {
+  .field--book-lists-overview {
+    @include tags($font-family, initial);
+  }
+}
+.path-search {
+  .tags {
+    @include flex-row();
+    @include flex-nowrap();
+    margin-bottom: 0;
+    @include respond-to(phones-landscape) {
+      margin-bottom: $small-spacer;
+      @include flex-wrap();
+    }
+    .tag-label {
+      @include text-mixin($heading-font-sans-serif, $font-size, $primary-text-color, $font-weight-bold, $font-size*1.5);
+      text-transform: uppercase;
+      @include respond-to(phones-landscape) {
+        width: 100%;
+        float: none;
+        padding: 0;
+      }
+    }
+    .field--name-field-article-general-tags,
+    .field--name-field-topic-general-tags,
+    .field--name-field-review-generel-tags,
+    .field--name-field-analysis-general-tags,
+    .field--name-field-blog-general-tags,
+    .field--name-field-book-general-tags,
+    .field--name-field-author-portrait-tags {
+      margin-bottom: $regular-spacer;
+      @include respond-to(tablets-portrait) {
+        margin-bottom: $small-spacer;
+      }
+    }
+  }
+}

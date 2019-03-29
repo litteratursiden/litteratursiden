@@ -1,0 +1,634 @@
+body {
+  padding: 0;
+  margin-top: 0 !important;
+  &.path-frontpage {
+    @include respond-to(phones-landscape) {
+      overflow-x: hidden;
+    }
+    // IE overrides
+    &.ie {
+      header.main-header .region-header .lit-search-autocomplete-form .block-title {
+        font-size: 52px;
+        letter-spacing: -1px;
+        @include respond-to(tablets-landscape) {
+          font-size: ($h1-font-size - 3px);
+          @include respond-to(phones-landscape) {
+            font-size: ($h2-font-size - 3px);
+          }
+        }
+      }
+    }
+    // HEADER
+    header.main-header {
+      min-height: $header-height;
+      background: rgba(0, 0, 0, 0.95) url('https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Front_page_bg.jpg') no-repeat 0% 50%;
+      background-size: cover;
+      position: relative;
+      @include respond-to(tablets-portrait) {
+        min-height: 566px;
+        background-position: 15% 50%;
+        @include respond-to(phones-landscape) {
+          min-height: 430px;
+          @include respond-to(phones) {
+            min-height: 566px;
+          }
+        }
+      }
+      &:after {
+        content: '';
+        pointer-events: none;
+        display: block;
+        position: absolute;
+        width: 32%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        background-image: url('https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Litteratur_bg_header.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-position-x: 0;
+        background-position-y: 0;
+        background-size: auto 100%;
+        @include respond-to(tablets-portrait) {
+          width: 100%;
+          background-size: 70% auto;
+          background-position: 20px 10%;
+          background-position-x: 20px;
+          background-position-y: 10%;
+          @include respond-to(phones) {
+            background-size: 90% auto;
+          }
+        }
+      }
+      .region-header {
+        .header-wrapper {
+          display: none;
+        }
+        //Search container
+        .lit-search-autocomplete-form {
+          @include make-md-column(6, 0);
+          @include make-md-column-offset(6);
+          position: static; //Override position for proper container positioning
+          min-height: $header-height;
+          background-color: rgba(59, 59, 61, 0.5);
+          padding: $xlarge-spacer $xlarge-spacer 0 $xxlarge-spacer;
+          @include respond-to(tablets-portrait) {
+            padding: 240px $xxlarge-spacer 0;
+            min-height: 566px;
+            @include respond-to(phones-landscape) {
+              padding: 160px $xlarge-spacer 0;
+              min-height: 430px;
+              @include respond-to(phones) {
+                padding-top: 240px;
+                min-height: 566px;
+              }
+            }
+          }
+          .block-title {
+            z-index: 3;
+            position: relative;
+            @include text-mixin(
+                    $family: $heading-font-serif,
+                    $font-size: $h0-font-size,
+                    $text-color: $inverse-text-color,
+                    $font-weight: $font-weight-bold,
+                    $line-height: $h0-font-size*1.3,
+                    $letter-spacing: $space-letter-null
+            );
+            @include respond-to(tablets-landscape) {
+              font-size: $h1-font-size;
+              line-height: $h2-font-size*1.3;
+              margin-bottom: $xlarge-spacer;
+              @include respond-to(phones-landscape) {
+                font-size: $h2-font-size;
+                line-height: $h2-font-size*1.3;
+              }
+            }
+          }
+          form {
+            @include clearfix();
+            .lit-search-autocomplete-field-container, .form-actions {
+              display: inline-block;
+            }
+            .lit-search-autocomplete-field-container {
+              width: calc(100% - 100px);
+              position: relative;
+              margin-top: 0;
+              margin-bottom: $large-spacer;
+              @include respond-to(phones) {
+                width: calc(100% - #{$small-spacer*6.5});
+                margin-bottom: 0;
+              }
+              .form-item-autocomplete {
+                position: relative;
+                &.active {
+                  &:after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    bottom: (-$regular-spacer);
+                    left: 50%;
+                    margin-left: -$large-spacer;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: $large-spacer $large-spacer 0 $large-spacer;
+                    border-color: $inverse-color transparent transparent transparent;
+                    z-index: 100;
+                  }
+                }
+                .lit-search-autocomplete-field {
+                  background-color: $inverse-color;
+                  font-size: $large-font-size;
+                  padding: $regular-spacer;
+                  padding-right: $small-spacer*6.5; //To prevent overflow of loader and total counter
+                  height: 81px;
+                  margin: 0;
+                  width: 100%;
+                  @include placeholder($border-gray, $large-font-size, $font-weight-normal);
+                  @include respond-to(phones) {
+                    height: $small-spacer*5.5;
+                    line-height: $small-spacer*5.5;
+                    padding-right: $regular-spacer;
+                    font-size: $font-size;
+                    @include respond-to(old-phones) {
+                      padding-left: $small-spacer;
+                    }
+                  }
+                }
+              }
+              .lit-search-autocomplete-total {
+                position: absolute;
+                right: $small-spacer;
+                text-align: right;
+                width: auto;
+                top: $small-spacer*2.6;
+                font-size: $large-font-size;
+                z-index: 11;
+                background-color: $inverse-text-color;
+                @include respond-to(phones) {
+                  top: $small-spacer*2;
+                  font-size: $small-font-size;
+                }
+              }
+            }
+            .form-actions {
+              float: right;
+              width: $small-spacer*10;
+              @include respond-to(phones) {
+                width: $small-spacer*6.5;
+              }
+              @include clearfix();
+              .btn.btn-primary {
+                min-width: auto;
+                @include circle-btn-mixin(83px, $brand-color, $brand-color, $primary-text-color, block);
+                margin: 0 0 0 auto;
+                @include respond-to(phones) {
+                  width: $small-spacer*5.5;
+                  line-height: $small-spacer*5.3;
+                  height: $small-spacer*5.5;
+                  &:after {
+                    font-size: $large-spacer;
+                    line-height: $small-spacer*5.3;
+                  }
+                }
+                .glyphicon {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .main-container {
+      background-color: $dark-bg;
+      color: $inverse-text-color;
+      .front-page-container {
+        @include make-row(30px);
+        color: $inverse-text-color;
+        * {
+          color: $inverse-text-color;
+        }
+        form .form-group .error,
+        label.error {
+          color: $brand-color;
+        }
+        .views-element-container {
+          @include clearfix();
+        }
+        .form-group {
+          margin-bottom: 0;
+        }
+
+      }
+      // Hide unneeded links
+      article .content {
+        .links.list-inline {
+          display: none;
+        }
+        h2 {
+          a, a span {
+            font-size: inherit;
+          }
+        }
+      }
+      // Topic of the month OVERRIDE
+      @include month-topic($brand-color, $inverse-color, $light-gray);
+      .field--name-field-spot-content .spot .content .infobox .field--name-field-book-body,
+      .field--name-field-spot-content .spot .content .infobox .field--type-text-long {
+        color: $inverse-text-color;
+      }
+      // Slider with buttons
+      .view-book-list-filter-book_list-book_list_block {
+        margin-bottom: $xlarge-spacer;
+        //Filters
+        .form-group .book-list-block header {
+          .book-lists-container {
+            @include clearfix();
+            padding: $small-spacer*0.5 $small-spacer $large-spacer;
+            @include respond-to(phones-landscape) {
+              padding: $small-spacer*0.5 $small-spacer*2 $large-spacer;
+            }
+            .book-list-link {
+              display: inline-block;
+              float: left;
+              padding: $small-spacer $large-spacer;
+              background-color: transparent;
+              color: $inverse-text-color;
+              border: 1px solid $border-gray;
+              border-radius: 4px;
+              margin-right: $small-spacer;
+              margin-bottom: $small-spacer;
+              &:hover, &:focus {
+                background-color: $brand-color;
+                color: $inverse-text-color;
+                border: 1px solid $brand-color;
+              }
+              &.active {
+                background-color: $brand-color;
+                border-color: $brand-color;
+                position: relative;
+                color: inherit;
+                &:hover, &:focus {
+                  background-color: darken($brand-color, 10%);
+                  border-color: darken($brand-color, 10%);
+                  &:after {
+                    border-color: darken($brand-color, 10%) transparent transparent transparent;
+                  }
+                }
+                &:after {
+                  content: '';
+                  position: absolute;
+                  display: block;
+                  bottom: (-$small-spacer);
+                  left: 50%;
+                  margin-left: (-$small-spacer);
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: $small-spacer $small-spacer 0 $small-spacer;
+                  border-color: $brand-color transparent transparent transparent;
+                  z-index: 10;
+                }
+              }
+              .ajax-throbber {
+                margin-left: $small-spacer;
+              }
+            }
+          }
+        }
+      }
+      // Article & Blog
+      #articles-wrapper {
+        background-color: $inverse-color;
+
+        .block.block-views {
+          background-color: $btn-gray;
+          margin-top: $regular-spacer*2;
+          margin-bottom: $regular-spacer;
+          width: calc(50% - #{$regular-spacer*3});
+          float: left;
+          padding-left: $small-spacer*5;
+          padding-right: $small-spacer*3.5;
+          @include respond-to(tablets-landscape) {
+            width: calc(50% - #{$regular-spacer});
+            @include respond-to(tablets-portrait) {
+              width: 100%;
+              padding-left: $xlarge-spacer;
+              padding-right: $xlarge-spacer;
+              margin-top: $small-spacer;
+              margin-bottom: 0;
+              @include respond-to(phones-landscape) {
+                padding-left: $large-spacer;
+                padding-right: $large-spacer;
+              }
+            }
+          }
+          * {
+            color: $body-font-color;
+          }
+          &.block-views-blockfront-article-block-front-article {
+            margin-left: $regular-spacer*2;
+            margin-right: $regular-spacer;
+            @include respond-to(tablets-landscape) {
+              margin-left: 0;
+              @include respond-to(tablets-portrait) {
+                margin-left: 0;
+                margin-right: 0;
+              }
+            }
+          }
+          &.block-views-blockfront-blog-block-front-blog {
+            margin-left: $regular-spacer;
+            margin-right: $regular-spacer*2;
+            @include respond-to(tablets-landscape) {
+              margin-right: 0;
+              @include respond-to(tablets-portrait) {
+                margin-left: 0;
+                margin-right: 0;
+              }
+            }
+          }
+          .content-wrapper {
+            .block-title {
+              width: 100%;
+              color: $body-font-color;
+              font-family: $heading-font-serif;
+              font-size: $h3-font-size;
+              font-weight: $font-weight-bold;
+              line-height: 1.333;
+              margin: $small-spacer*4 0 $large-spacer;
+              @include respond-to(phones-landscape) {
+                font-size: $large-font-size;
+                line-height: $logo-font-size;
+                margin: $small-spacer*3 0;
+              }
+            }
+            > .form-group {
+              .front {
+                @include teaser-title();
+                .content {
+                  .inner-content {
+                    margin-bottom: $large-spacer;
+                    > a {
+                      display: block;
+                      @include text-mixin($heading-font-serif, $large-font-size, $arrow-gray, $font-weight-bold, 26px);
+                      margin: $xlarge-spacer 0;
+                      @include respond-to(phones-landscape) {
+                        font-size: $small-font-size;
+                        line-height: $medium-font-size;
+                      }
+                    }
+                    > div {
+                      @include field--type-text-long();
+                    }
+                  }
+                }
+                .btn-link {
+                  @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
+                  @include align-center();
+                  margin-top: $large-spacer;
+                  margin-bottom: $xxlarge-spacer;
+                  @include respond-to(phones-landscape) {
+                    font-size: $font-size;
+                    line-height: $large-font-size;
+                  }
+                  &:hover, &:focus {
+                    color: darken($brand-color, 10%);
+                  }
+                  @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+                  &:after {
+                    @include respond-to(phones-landscape) {
+                      font-size: $font-size;
+                      line-height: $medium-font-size;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // Subscribe block
+        .mailchimp-signup-subscribe-form {
+          //background-color: $brand-color;
+          background-color: $dark-gray;
+          margin-top: $regular-spacer;
+          margin-bottom: $regular-spacer*2;
+          width: calc(50% - #{$regular-spacer*3});
+          float: left;
+          padding-left: $small-spacer*5;
+          padding-right: $small-spacer*3.5;
+          margin-left: $regular-spacer*2;
+          margin-right: $regular-spacer;
+
+          @include respond-to(tablets-landscape) {
+            width: calc(50% - #{$regular-spacer});
+            margin-left: 0;
+            @include respond-to(tablets-portrait) {
+              width: 100%;
+              padding-left: $xlarge-spacer;
+              padding-right: $xlarge-spacer;
+              margin-top: $small-spacer;
+              margin-bottom: 0;
+              margin-left: 0;
+              margin-right: 0;
+              @include respond-to(phones-landscape) {
+                padding-left: $large-spacer;
+                padding-right: $large-spacer;
+              }
+            }
+          }
+          .content-wrapper {
+            @include flex-wrap();
+            align-items: stretch;
+            height: 100%;
+            justify-content: flex-start;
+            @include respond-to(phones-landscape) {
+              flex-wrap: wrap;
+              align-content: flex-start;
+              height: auto;
+              @include respond-to(phones) {
+                padding-top: $regular-spacer;
+                padding-bottom: $xlarge-spacer;
+              }
+            }
+            .left-col, .right-col {
+              display: block;
+              float: left;
+              width: 100%;
+              padding: 0;
+              @include respond-to(phones-landscape) {
+                padding: 0;
+              }
+            }
+            .left-col {
+              .block-title {
+                @include text-mixin($heading-font-serif,
+                        $h1-font-size,
+                        $inverse-text-color,
+                        $font-weight-bold,
+                        $h1-font-size*1.2);
+                @include respond-to(tablets-landscape) {
+                  font-size: $h2-font-size;
+                  @include respond-to(tablets-portrait) {
+                    font-size: $h1-font-size;
+                    @include respond-to(phones-landscape) {
+                      font-size: $h3-font-size;
+                      line-height: $h3-font-size+5px;
+                    }
+                  }
+                }
+                margin: $large-spacer*2 0 $large-spacer;
+                a, a span {
+                  color: $brand-color;
+                }
+              }
+            }
+            .right-col {
+              @include respond-to(tablets-portrait) {
+                margin-bottom: $large-spacer;
+              }
+              form {
+                @include respond-to(tablets-portrait) {
+                  padding-left: 0;
+                }
+                @include clearfix();
+                .mailchimp-newsletter-mergefields, .form-actions {
+                  display: inline-block;
+                }
+                .mailchimp-newsletter-mergefields {
+                  width: calc(100% - 100px);
+                  position: relative;
+                  margin-top: 0;
+                  margin-bottom: $large-spacer;
+                  @include respond-to(phones) {
+                    width: calc(100% - #{$small-spacer*6.5});
+                    margin-bottom: 0;
+                  }
+                  .form-type-email {
+                    position: relative;
+                    color: $primary-text-color;
+                    &.active {
+                      &:after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        bottom: (-$regular-spacer);
+                        left: 50%;
+                        margin-left: -$large-spacer;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: $large-spacer $large-spacer 0 $large-spacer;
+                        border-color: $inverse-color transparent transparent transparent;
+                        z-index: 100;
+                      }
+                    }
+                    .form-control {
+                      font-size: $large-font-size;
+                      padding: $regular-spacer;
+                      padding-right: $small-spacer; //To prevent overflow of loader and total counter
+                      height: 78px;
+                      margin: 0;
+                      width: 100%;
+                      color: $primary-text-color;
+                      @include placeholder($border-gray, $large-font-size, $font-weight-normal);
+                      @include respond-to(phones) {
+                        height: $small-spacer*5.5;
+                        font-size: $font-size;
+                      }
+                    }
+                  }
+                }
+                .form-actions {
+                  float: right;
+                  width: $small-spacer*10;
+                  @include respond-to(phones) {
+                    width: $small-spacer*6.5;
+                  }
+                  @include clearfix();
+                  .btn.btn-primary, .btn.btn-default {
+                    min-width: auto;
+                    @include circle-btn-mixin(80px, $inverse-color, $inverse-color, $primary-text-color, block);
+                    margin: 0 0 0 auto;
+                    @include respond-to(phones) {
+                      width: $small-spacer*5.5;
+                      line-height: $small-spacer*5.3;
+                      height: $small-spacer*5.5;
+                      &:after {
+                        font-size: $large-spacer;
+                        line-height: $small-spacer*5.3;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // Facebook Feed
+        .block.block-facebook-feed-block {
+          margin-top: $regular-spacer;
+          margin-bottom: $regular-spacer*2;
+          margin-left: $regular-spacer;
+          margin-right: $regular-spacer*2;
+          @include respond-to(tablets-landscape) {
+            margin-right: 0;
+            @include respond-to(tablets-portrait) {
+              width: 100%;
+              margin-top: $small-spacer;
+              margin-bottom: $small-spacer;
+              margin-left: 0;
+              margin-right: 0;
+            }
+          }
+          .flex-nowrap {
+            @include respond-to(tablets-landscape) {
+              flex-wrap: wrap;
+            }
+          }
+          .fb-page {
+            min-width: 340px;
+            @include respond-to(tablets-landscape) {
+              min-width: 100%;
+              @include respond-to(tablets-portrait) {
+                min-width: 340px;
+                @include respond-to(phones) {
+                  min-width: 100%;
+                  width: 100%;
+                  overflow: auto;
+                }
+              }
+            }
+          }
+          .left-col {
+            padding-right: $regular-spacer;
+          }
+          .block-title {
+            @include text-mixin($heading-font-serif,
+                    $h3-font-size,
+                    $primary-text-color,
+                    $font-weight-bold,
+                    $h3-font-size*1.2);
+            margin: $large-spacer*2 0 $large-spacer;
+            @include respond-to(tablets-landscape) {
+              line-height: $h1-font-size*1.2;
+              @include respond-to(phones-landscape) {
+                line-height: $h3-font-size*1.2;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+

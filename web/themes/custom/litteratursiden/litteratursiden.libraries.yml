@@ -1,0 +1,21 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+
+match-height:
+  js:
+    js/jquery.matchHeight.js: {}
+  dependencies:
+     - core/jquery
+     - core/jquery.once
+     - core/drupal
+
+litteratursiden:
+  js:
+    js/litteratursiden.js: {}
+  dependencies:
+     - core/jquery
+     - core/jquery.once
+     - core/drupal
+         

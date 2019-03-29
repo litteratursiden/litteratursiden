@@ -1,0 +1,287 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+use Drupal\user\Entity\User;
+use Drupal\file\Entity\File;
+use Drupal\image\Entity\ImageStyle;
+use Symfony\Cmf\Component\Routing\RouteObjectInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function litteratursiden_preprocess_html(&$variables) {
+  // Add node alias class to body.
+  $path = \Drupal::service('path.current')->getPath();
+  $path_args = explode('/', $path);
+  if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+    $variables['attributes']['class'][] = 'page-node-' . $path_args[2];
+  }
+
+  // Remove 'Drupal' in <title>.
+  if (!empty($variables['head_title']['title'])) {
+    $title_parts = explode('|', $variables['head_title']['title']);
+    $variables['head_title']['title'] = reset($title_parts);
+  }
+
+  $variables['head_title']['name'] = "Litteratursiden";
+} 
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function litteratursiden_page_attachments_alter(array &$attachments) {
+  foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
+    if ($attachment[1] == 'system_meta_generator') {
+      unset($attachments['#attached']['html_head'][$key]);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function litteratursiden_preprocess_page(&$variables) {
+  // Get User name.
+  $user = User::load(\Drupal::currentUser()->id());
+  $variables['user_name'] = FALSE;
+  $variables['user_picture'] = FALSE;
+  if ($user->hasField('field_user_full_name') && $user->get('field_user_full_name')
+      ->isEmpty() === FALSE) {
+    $variables['user_name'] = $user->get('field_user_full_name')->value;
+  }
+  else {
+    $variables['user_name'] = $user->getDisplayName();
+  }
+  if ($user->hasField('field_user_picture') && $user->get('field_user_picture')
+      ->isEmpty() === FALSE) {
+    $picture = $user->get('field_user_picture')->entity;
+
+    $image_style = Drupal::entityTypeManager()->getStorage('image_style')->load('avatar');
+    if ($image_style && $picture) {
+      $image_with_style = $image_style->buildUrl($picture->getFileUri());
+      $variables['user_picture'] = $image_with_style;
+    }
+
+    $image_style = Drupal::entityTypeManager()->getStorage('image_style')->load('user_icon');
+    if ($image_style && $picture) {
+      $image_with_style = $image_style->buildUrl($picture->getFileUri());
+      $variables['user_icon'] = $image_with_style;
+    }
+  }
+  /* @var \Drupal\Core\Config\Config $config */
+  $config = Drupal::service('config.factory')
+    ->getEditable('litteratursiden.settings');
+
+  $data = $config->getRawData();
+  if ($data['background_path']) {
+    $variables['header_bg_image'] = file_create_url($data['background_path']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function litteratursiden_preprocess_node(&$variables) {
+  $view_mode = $variables['view_mode'];
+  $node = $variables['node'];
+  $author = $node->getOwner();
+
+  // Get node author info.
+  $variables['node_author'] = $author->get('field_user_full_name')->getString();
+  if ($author->get('field_user_picture')->isEmpty() === FALSE) {
+    $variables['node_author_picture'] = $author->get('field_user_picture')->entity->url();
+  }
+
+  // Get and style image for spot display type.
+  if ($view_mode == 'spot') {
+    switch ($node->getType()) {
+      case 'author_portrait':
+        $suffix = 'image';
+        break;
+      case 'article':
+      case 'blog':
+        $suffix = 'cover_image';
+        break;
+      case 'interview':
+        $suffix = 'images';
+        break;
+      default:
+        $suffix = 'spotbox_image';
+        break;
+    }
+    $spotbox_image_field_name = "field_{$node->getType()}_" . $suffix;
+
+    if ($node->hasField($spotbox_image_field_name)) {
+      $spotbox_image = $node->get($spotbox_image_field_name)->first();
+
+      if ($spotbox_image) {
+        $fid = $spotbox_image->get('target_id')->getValue();
+
+        if ($fid) {
+          $spotbox_image_original_uri = File::load($fid)->getFileUri();
+
+          $variables['spotbox_image'] = ImageStyle::load('spot')
+            ->buildUrl($spotbox_image_original_uri);
+        }
+      }
+    }
+  }
+
+  if (in_array($node->getType(), ['review', 'article'])) {
+    $node_created = $node->get('created')->first()->getValue();
+    $author->set('created', $node_created['value']);
+  }
+
+  if ($node->getType() == 'review' && $view_mode == 'slick_item') {
+    $item = $node->get('field_review_reference_book')->first();
+
+    if ($item && $item->entity) {
+      $variables['label'] = $item->entity->label();
+      $variables['url'] = $item->entity->url();
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function litteratursiden_preprocess_block(&$variables) {
+  if ($variables['base_plugin_id'] == 'block_content') {
+    $block = $variables['elements']['content']['#block_content'];
+    $type = $block->get('type')->first()->getValue();
+
+    $variables['attributes']['class'][] = 'block-type-' . $type['target_id'] ?? 'block-type-default';
+  }
+}
+
+/**
+ * Implements hook_preprocess_field().
+ */
+function litteratursiden_preprocess_field(&$variables, $hook) {
+  if ($variables['element']['#field_type'] == "image") {
+    // If this is the default image, add a class.
+    $images = $variables['element']['#items']->referencedEntities();
+    if (empty($images)) {
+      $variables['attributes']['class'][] = 'image--default';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view_unformatted().
+ */
+function litteratursiden_preprocess_views_view_unformatted(&$variables) {
+  /** @var \Drupal\views\ViewExecutable $view */
+  $view = $variables['view'];
+  if ($view->id() == 'flag_bookmark' && $view->current_display == 'favorite_content_block') {
+    $variables['groups'] = _litteratursiden_views_group_favorite_content_rows($variables['rows']);
+  }
+}
+
+/**
+ * Regroups views rows by content type for.
+ *
+ * @param array $rows
+ *   Array of views row items that should be grouped.
+ *
+ * @return array
+ *   Regrouped rows by content type. Array keyed by node type and valued by
+ *   array with the following structure:
+ *     title: (string) Title of the group
+ *     amount: (string) Amount of content in the group
+ *     rows: (array) Views row items related to the group.
+ */
+function _litteratursiden_views_group_favorite_content_rows($rows) {
+  $content_title_map = [
+    'book' => t('Favorite books'),
+    'article' => t('Favorite articles'),
+    'review' => t('Favorite reviews'),
+    'blog' => t('Favorite blogs'),
+    'analysis' => t('Favorite analysis'),
+    'author_portrait' => t('Favorite authors'),
+    'interview' => t('Favorite interviews'),
+    'topic' => t('Favorite topics'),
+    'similar' => t('Favorite something similar'),
+    'book_debate' => t('Favorite book debates'),
+    'book_list' => t('Favorite book lists'),
+  ];
+
+  $groups = [];
+  foreach ($rows as $row) {
+    if (empty($row['content']['#node'])) {
+      continue;
+    }
+
+    /** @var \Drupal\node\NodeInterface $node */
+    $node = $row['content']['#node'];
+    $node_type = $node->getType();
+
+    if (empty($groups[$node_type])) {
+      $groups[$node_type] = [
+        'title' => $content_title_map[$node_type],
+        'amount' => 0,
+        'rows' => [],
+      ];
+    }
+
+    $groups[$node_type]['rows'][] = $row;
+    $groups[$node_type]['amount']++;
+  }
+
+  ksort($groups);
+  return $groups;
+}
+
+/**
+ * Implements hook_theme_suggestions_user_alter().
+ */
+function litteratursiden_theme_suggestions_user_alter(&$suggestions, $vars, $hook) {
+  $mode = $vars['elements']['#view_mode'];
+  $suggestions[] = 'user__' . $mode;
+}
+
+/**
+ * Implements hook_theme_suggestions_user_alter().
+ */
+function litteratursiden_theme_suggestions_node_alter(&$suggestions, $vars, $hook) {
+  $mode = $vars['elements']['#view_mode'];
+
+  if ($mode == 'spot') {
+    foreach ($suggestions as $key => $suggestion) {
+      if (strpos($suggestion, 'node__view') !== FALSE) {
+        unset($suggestions[$key]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_block_alter().
+ */
+function litteratursiden_theme_suggestions_block_alter(&$suggestions, $vars, $hook) {
+  $element = $vars['elements'];
+  if (!empty($element['content']['#block_content'])) {
+    $block_bundle = $element['content']['#block_content']->bundle();
+    $suggestions_name = 'block__block_content__' . $block_bundle;
+    // Put it after 2 items from behind.
+    array_splice($suggestions, -2, 0, $suggestions_name);
+  }
+}
+
+/**
+ * Implements hook_preprocess_user().
+ */
+function litteratursiden_preprocess_user(&$variables) {
+  if (\Drupal::request()
+      ->get(RouteObjectInterface::ROUTE_NAME) == 'entity.user.canonical') {
+    $variables['view_page_path'] = Url::fromUri('base:' . \Drupal::service('path.current')
+          ->getPath())->toString() . '/view-page';
+  }
+}

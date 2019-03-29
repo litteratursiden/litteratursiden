@@ -1,0 +1,167 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+$icon-font-path: 'https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/fonts/bootstrap/';
+// Main  colors
+$white: #fff;
+$black: #000;
+$blue: #01579b;
+$lightest-blue: #e5f7ff;
+$light-blue: #039be5;
+$dark-blue: #345671;
+$darkest-blue: #022c4e;
+$orange: #ff5002;
+$gray: #d8d8d8;
+// Gray group
+$darkest-gray: #222;
+$dark-gray: #3a3b3d;
+$dark-gray-2: #4a4a4b;
+$dark-gray-hover: #333436;
+$mid-gray: $gray;
+$light-gray: #eeecec;
+$lightest-gray: #f6f6f6;
+$arrow-gray: #787777;
+$border-gray: #979797;
+$btn-gray: #D8D8D8;
+// Theme colours (use theme for styling!)
+$inverse-color: $white;
+$main-blue: $blue;
+$brand-color: $orange;
+
+// Main  text colors
+$dark-bg:  $dark-gray; //Background
+$dark-gray-text: $dark-gray; //Text
+$dark-gray-books: $dark-gray-2; //Books
+$menu-bg: $darkest-gray;
+$menu-border-color: $border-gray;
+$footer-bg: $dark-gray-2;
+$primary-text-color: $dark-gray-text;
+$inverse-text-color: $white;
+$accordion-list-bg: $dark-gray-text;
+
+//Main Font-Size Text
+$small-font-size: 12px;
+$font-size: 14px;
+$medium-font-size: 16px;
+$large-font-size: 20px;
+$h4-font-size: 24px;
+$logo-font-size: 26px;
+$h3-font-size: 30px;
+$h2-font-size: 35px;
+$h1-font-size: 45px;
+$h0-font-size: 52px;
+// Theme font variables (use them for styling!)
+$font-size-base: $font-size;
+$subtitle-size: $h2-font-size;
+$title-size: $h1-font-size;
+$body-font-color: $primary-text-color;
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$space-letter-null: 0px;
+$space-letter-one: 1px;
+$space-letter-two: 2px;
+
+//font families
+$heading-font-serif: 'RobotoSlab-Regular', serif;
+$font-serif: 'RobotoSlab-Regular', serif;
+$heading-font-sans-serif: 'Oswald-Regular', sans-serif;
+$font-family-sans-serif: 'Oswald-Regular', sans-serif;
+$font-family: 'Roboto-Regular', sans-serif;
+$font-family-bold: 'Roboto-Bold', sans-serif;
+$body-font-family: $font-family;
+
+// Main dimensions
+// margins / paddings
+$small-spacer: 10px;
+$regular-spacer: 15px;
+$large-spacer: 20px;
+$xlarge-spacer: $small-spacer*3; //30px
+$xxlarge-spacer: $small-spacer*4.5; //45px
+$largest-spacer: $small-spacer*6; //60px
+
+//heights
+$nav-bar-height: $small-spacer*7.9;
+$input-height: 52px;
+//line-height and height
+$main-text-line-height: $small-spacer*3;
+$accordion-list-height: 111px;
+$toggle-width: $xxlarge-spacer;
+// /topics
+$topic-block-height: 155px;
+// Gray Header
+$gray-header-height: 89px;
+// Custom Switch
+$switch-height: $regular-spacer;
+$switch-thumb-size: $large-spacer;
+//Bootstrap default overrides
+$brand-primary: $brand-color;
+$navbar-height: $nav-bar-height;
+$content-large-padding: 180px;
+$header-height: 362px;
+//BS Overrides
+$grid-gutter-width: 30px !default;
+$container-tablet: 100% !default;
+$container-sm: $container-tablet !default;
+//$grid-float-breakpoint: 4000px !default;
+
+// ICONS VARIABLES
+$custom-icon-font-path: "https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/fonts" !default;
+$icon-accordion-down: "\e900";
+$icon-accordion-up: "\e901";
+$icon-book: "\e902";
+$icon-books: "\e903";
+$icon-tick: "\e904";
+$icon-links-arrow: "\e905";
+$icon-play-path1: "\e906";
+$icon-play-path2: "\e907";
+$icon-profile: "\e908";
+$icon-reading-club: "\e909";
+$icon-search: "\e90a";
+$icon-slider-arrow-left: "\e90c";
+$icon-slider-arrow-right: "\e90b";
+$icon-slider-dot: "\e90d";
+$icon-theme: "\e90e";
+$icon-report: "\e90f";
+$icon-favourites: "\e910";
+$icon-like: "\e911";
+$icon-comments-path1: "\e912";
+$icon-comments-path2: "\e913";
+$icon-comments-path3: "\e914";
+$icon-comments-path4: "\e915";
+$icon-comments-path5: "\e916";
+$icon-instagram: "\e917";
+$icon-facebook: "\e918";
+$icon-twitter: "\e919";
+$icon-writers: "\e91a";
+
+
+// SLICK Slider Default Variables
+$slick-font-path: "https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/fonts/" !default;
+$slick-font-family: 'literatur-icons' !default;
+$slick-loader-path: "https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/" !default;
+$slick-arrow-color: $arrow-gray !default;
+$slick-arrow-hover-color: $inverse-text-color !default;
+$slick-arrow-font-size: $small-spacer*8.5 !default;
+$slick-dot-color: $dark-gray-books !default;
+$slick-dot-color-active: $inverse-text-color !default;
+
+$slick-prev-character: $icon-slider-arrow-left !default;
+$slick-next-character: $icon-slider-arrow-right !default;
+$slick-dot-character: $icon-slider-dot !default;
+$slick-dot-size: $large-spacer !default;
+$slick-opacity-default: 1 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 1 !default;
+// Loader
+$loader-offset: 187;
+$loader-duration: 1.4s;

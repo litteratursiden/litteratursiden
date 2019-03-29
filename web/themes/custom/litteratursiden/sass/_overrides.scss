@@ -1,0 +1,307 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/alert";
+@import "component/ajax";
+@import "component/field";
+@import "component/file";
+@import "component/filter";
+@import "component/form";
+@import "component/icon";
+@import "component/navbar";
+@import "component/node";
+@import "component/panel";
+@import "component/progress-bar";
+@import "component/table-drag";
+@import "component/tabs";
+@import "component/toolbar";
+// jQuery UI style overrides.
+@import "jquery-ui/autocomplete";
+ol, ul {
+  padding-left: 1.5em;
+  .popover &:last-child {
+    margin-bottom: 0;
+  }
+}
+// Navs
+.tabs, .vertical-tabs {
+  margin-top: $small-spacer;
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:focus,
+  .nav-tabs > li.active > a:hover {
+    color: $inverse-text-color;
+    background-color: $brand-color;
+    border-radius: 0;
+    .summary, span {
+      color: $inverse-text-color;
+    }
+  }
+}
+// Page header.
+.page-header {
+  margin-top: 0;
+}
+// Paragraphs.
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0;
+}
+// Help region.
+.region-help {
+  > .glyphicon {
+    font-size: $font-size-large;
+    float: left;
+    margin: -0.05em 0.5em 0 0;
+  }
+  .block {
+    overflow: hidden;
+  }
+}
+.help-block, .control-group .help-inline {
+  color: $gray-light;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+body {
+  overflow: auto;
+  touch-action: auto;
+  padding-top: $nav-bar-height; //For fixed navbar
+  @include respond-to(phones-landscape) {
+    padding-top: $largest-spacer; //For fixed navbar
+  }
+  &.path-node {
+    .region-content, .edit > .region-content {
+      .tabs {
+        @include slider-paddings();
+      }
+    }
+  }
+  &.path-user, &.path-admin {
+    .region-content {
+      .tabs {
+        width: 100%;
+      }
+
+      #user-login-form {
+        margin-top: $xxlarge-spacer;
+        margin-bottom: $xxlarge-spacer;
+        width: 100%;
+        @include make-sm-column(10, 0);
+        @include make-sm-column-offset(1);
+        @include make-lg-column(8, 0);
+        @include make-lg-column-offset(2);
+        .form-actions {
+          padding: 0;
+        }
+      }
+    }
+  }
+  &.path-user:not(.toolbar-fixed) {
+    .header-wrapper, .region-content .tabs {
+      display: none;
+    }
+    .user-edit-page .region-content .tabs {
+      display: block;
+    }
+  }
+  &.path-admin {
+    .region-content {
+      padding-top: $xlarge-spacer;
+      padding-bottom: $xlarge-spacer;
+      @include respond-to(phones-landscape) {
+        padding-bottom: $xlarge-spacer;
+      }
+      .local-actions + .tabs {
+        padding: 0;
+      }
+      .views-exposed-form {
+        margin-top: $regular-spacer;
+        .form-inline {
+          @include make-row(30px);
+          .edit-actions,
+          .form-group {
+            padding: 0 $regular-spacer;
+            display: block;
+            float: left;
+            width: 100%;
+          }
+          .form-group {
+            width: 50%;
+            @include respond-to(phones-landscape) {
+              width: 100%;
+            }
+            .control-label {
+              display: block;
+              margin: 0 $small-spacer 0 0;
+            }
+            .form-control, .select-wrapper {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .views-form > form {
+        table.sticky-header {
+          @include respond-to(phones-landscape) {
+            display: none;
+          }
+        }
+        table.table {
+          @include respond-to(phones-landscape) {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+          }
+          tbody tr {
+            .views-field-title {
+              max-width: $small-spacer*25;
+              @include respond-to(tablets-portrait) {
+              }
+            }
+            .views-field-operations {
+              .btn-group.dropdown {
+                @include flex-row();
+                @include flex-nowrap();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.user-logged-in {
+    &.toolbar-vertical, &.toolbar-oriented {
+      padding-top: $nav-bar-height + $small-spacer*3.9 !important;
+      @include respond-to(phones-landscape) {
+        padding-top: $nav-bar-height + $small-spacer*1.9 !important; // -20px
+      }
+      .toolbar-bar {
+        position: fixed;
+      }
+      #navbar {
+        top: $small-spacer*3.9;
+      }
+      .user-main-dropdown, table.sticky-header {
+        top: $small-spacer*3.9 + $nav-bar-height;
+        @include respond-to(phones-landscape) {
+          top: $small-spacer*3.9 + 60px;
+        }
+      }
+      aside.sidebar {
+        @include respond-to(tablets-portrait) {
+          top: $small-spacer*3.9 + $nav-bar-height;
+          @include respond-to(phones-landscape) {
+            top: $small-spacer*3.9 + 60px;
+          }
+        }
+      }
+    }
+    &.toolbar-horizontal {
+      padding-top: $nav-bar-height + $small-spacer*3.9 !important;
+      &.toolbar-tray-open {
+        padding-top: $nav-bar-height + $small-spacer*7.9 !important;
+        #navbar {
+          top: $nav-bar-height;
+        }
+        .user-main-dropdown, table.sticky-header {
+          top: $nav-bar-height + $nav-bar-height;
+          @include respond-to(phones-landscape) {
+            top: $small-spacer*8 + 60px;
+          }
+        }
+        aside.sidebar {
+          @include respond-to(tablets-portrait) {
+            top: $nav-bar-height + $nav-bar-height;
+            @include respond-to(phones-landscape) {
+              top: $small-spacer*8 + 60px;
+            }
+          }
+        }
+      }
+      #navbar {
+        top: $small-spacer*3.9;
+      }
+      .user-main-dropdown, table.sticky-header {
+        top: $small-spacer*3.9 + $nav-bar-height;
+        @include respond-to(phones-landscape) {
+          top: $small-spacer*3.9 + 60px;
+        }
+      }
+      aside.sidebar {
+        @include respond-to(tablets-portrait) {
+          top: $small-spacer*3.9 + $nav-bar-height;
+          @include respond-to(phones-landscape) {
+            top: $small-spacer*3.9 + 60px;
+          }
+        }
+      }
+    }
+    // Table Sticky header
+    table.sticky-header {
+      top: $nav-bar-height !important;
+      @include respond-to(phones-landscape) {
+        top: $small-spacer*6 !important;
+      }
+    }
+  }
+}
+.main-container {
+  &.no-scroll {
+    pointer-events: none;
+    touch-action: auto;
+  }
+}
+// Modal Overrides for Panels Maximized version
+#drupal-modal.modal {
+  z-index: 1041;
+}
+.contextual-region .contextual .contextual-links a {
+  color: $primary-text-color;
+  &:hover, &:focus {
+    color: $brand-color;
+  }
+}
+.no-touchevents .contextual-region .contextual .contextual-links li a:hover {
+  color: $brand-color;
+}
+// JQueryUI overrides
+.ui-menu {
+  &.ui-autocomplete {
+    .ui-menu-item {
+      padding: 0;
+      .ui-menu-item-wrapper {
+        @include clearfix();
+        padding: $small-spacer $large-spacer;
+        display: block;
+        &.ui-state-active {
+          border: none;
+          background: $light-gray;
+          font-weight: normal;
+          color: $primary-text-color;
+          padding: $small-spacer*0.5 $large-spacer;
+          clear: both;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+// IE fixes
+body.ie {
+  #navbar.navbar-default .navbar-header .profile-toggle .profile-pic {
+    opacity: 0;
+  }
+  .compat-object-fit {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    > img {
+      opacity: 0;
+    }
+  }
+}

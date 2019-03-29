@@ -1,0 +1,196 @@
+{#
+/**
+ * @file
+ * Theme override to display a node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+     Only "getter" methods (method names starting with "get", "has", or "is")
+     and a few common methods such as "id" and "label" are available. Calling
+     other methods (such as node.delete) will result in an exception.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - author_picture: The node author user entity, rendered using the "compact"
+ *   view mode.
+ * - metadata: Metadata for this node.
+ * - date: Themed creation date field.
+ * - author_name: Themed author name field.
+ * - url: Direct URL of the current node.
+ * - display_submitted: Whether submission information should be displayed.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - node: The current template type (also known as a "theming hook").
+ *   - node--type-[type]: The current node type. For example, if the node is an
+ *     "Article" it would result in "node--type-article". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - node--view-mode-[view_mode]: The View Mode of the node; for example, a
+ *     teaser would result in: "node--view-mode-teaser", and
+ *     full: "node--view-mode-full".
+ *   The following are controlled through the node publishing options.
+ *   - node--promoted: Appears on nodes promoted to the front page.
+ *   - node--sticky: Appears on nodes ordered above other non-sticky nodes in
+ *     teaser listings.
+ *   - node--unpublished: Appears on unpublished nodes visible only to site
+ *     admins.
+ * - title_attributes: Same as attributes, except applied to the main title
+ *   tag that appears in the template.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ * - author_attributes: Same as attributes, except applied to the author of
+ *   the node tag that appears in the template.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - view_mode: View mode; for example, "teaser" or "full".
+ * - teaser: Flag for the teaser state. Will be true if view_mode is 'teaser'.
+ * - page: Flag for the full page state. Will be true if view_mode is 'full'.
+ * - readmore: Flag for more state. Will be true if the teaser content of the
+ *   node cannot hold the main body content.
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_node()
+ *
+ * @todo Remove the id attribute (or make it a class), because if that gets
+ *   rendered twice on a page this is invalid CSS for example: two lists
+ *   in different view modes.
+ */
+#}
+{% set classes = [
+node.bundle|clean_class,
+node.isPromoted() ? 'is-promoted',
+node.isSticky() ? 'is-sticky',
+not node.isPublished() ? 'is-unpublished',
+view_mode ? view_mode|clean_class,
+'clearfix', 'taxonomy-term',
+] %}
+
+
+{% set categories = [
+'book',
+'blog',
+'author',
+'analysis',
+'booklist',
+'review',
+'topic'
+] %}
+
+<article{{ attributes.addClass(classes) }}>
+  <div class="media">
+    {% spaceless %}
+      <div class="media-left">
+
+        {% if content.field_book_cover_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_book_cover_image }}
+          </a>
+        {% elseif content.field_article_cover_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_article_cover_image }}
+          </a>
+        {% elseif content.field_blog_cover_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_blog_cover_image }}
+          </a>
+        {% elseif content.field_author_portrait_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_author_portrait_image }}
+          </a>
+        {% elseif content.field_analysis_cover_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_analysis_cover_image }}
+          </a>
+        {% elseif content.field_book_list_cover_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_book_list_cover_image }}
+          </a>
+        {% elseif content.field_review_cover_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_review_cover_image }}
+          </a>
+        {% elseif content.field_topic_cover_image|render is not empty %}
+          <a href="{{ url }}" rel="bookmark">
+            {{ content.field_topic_cover_image }}
+          </a>
+        {% elseif content.field_book_debate_cover_image|render is not empty %}
+          <a href="{{ url }}">
+            {{ content.field_book_debate_cover_image }}
+          </a>
+        {% endif %}
+      </div>
+    {% endspaceless %}
+    <div {{ content_attributes.addClass('media-body ') }}>
+      <span class="content-tag">{{ node.type.entity.label }}</span>
+      {{ title_prefix }}
+      <h4 {{ title_attributes.addClass('media-heading') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h4>
+      {{ title_suffix }}
+      {#Book Author#}
+      {% if content.field_book_author %}
+        <div class="author flex-row flex-nowrap">
+          {% trans %}By{% endtrans %}&nbsp;{{ content.field_book_author|render|striptags|raw }}
+        </div>
+      {% endif %}
+      {#Search Short text#}
+      {% if content.field_book_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set book_text = content.field_book_body|render|striptags|raw|trim %}
+          {{ (book_text|length > 300 ? book_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : book_text)|raw }}
+        </div>
+      {% elseif content.field_article_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set article_text = content.field_article_body|render|striptags|raw|trim %}
+          {{ (article_text|length > 200 ? article_text|slice(0, 201)|split(' ')|slice(0, -1)|join(' ') ~ '…' : article_text)|raw }}
+        </div>
+      {% elseif content.field_blog_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set blog_text = content.field_blog_body|render|striptags|raw|trim %}
+          {{ (blog_text|length > 300 ? blog_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : blog_text)|raw }}
+        </div>
+      {% elseif content.field_author_portrait_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set author_text = content.field_author_portrait_body|render|striptags|raw|trim %}
+          {{ (author_text|length > 300 ? author_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : author_text)|raw }}
+        </div>
+      {% elseif  content.field_analysis_excerpt|render is not empty %}
+        <div class="field--type-text-long">
+          {% set analysis_text = content.field_analysis_excerpt|render|striptags|raw|trim %}
+          {{ (analysis_text|length > 300 ? analysis_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : analysis_text)|raw }}
+        </div>
+      {% elseif content.field_book_list_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set list_text = content.field_book_list_body|render|striptags|raw|trim %}
+          {{ (list_text|length > 300 ? list_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : list_text)|raw }}
+        </div>
+      {% elseif content.field_review_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set review_text = content.field_review_body|render|striptags|raw|trim %}
+          {{ (review_text|length > 300 ? review_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : review_text)|raw }}
+        </div>
+      {% elseif content.field_topic_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set topic_text = content.field_topic_body|render|striptags|raw|trim %}
+          {{ (topic_text|length > 300 ? topic_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : topic_text)|raw }}
+        </div>
+      {% elseif content.field_book_debate_body|render is not empty %}
+        <div class="field--type-text-long">
+          {% set debate_text = content.field_book_debate_body|render|striptags|raw|trim %}
+          {{ (debate_text|length > 300 ? debate_text|slice(0, 301)|split(' ')|slice(0, -1)|join(' ') ~ '…' : debate_text)|raw }}
+        </div>
+      {% endif %}
+
+      {#{{ content|without('links') }}#}
+    </div>
+  </div>
+</article>
