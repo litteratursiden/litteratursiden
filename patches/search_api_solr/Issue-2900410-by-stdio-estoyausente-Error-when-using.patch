@@ -1,0 +1,143 @@
+From eed22f77715e6663adbab8230c244417dff9bf2f Mon Sep 17 00:00:00 2001
+From: SamuelSolis <SamuelSolis@1232954.no-reply.drupal.org>
+Date: Thu, 24 Aug 2017 15:35:48 +0200
+Subject: [PATCH] Issue #2900410 by stdio, estoyausente: Error when using
+ grouping (fields and sort)
+
+---
+ .../search_api/backend/SearchApiSolrBackend.php    | 48 +++++++++++++---------
+ tests/src/Kernel/SearchApiSolrTest.php             | 29 +++++++++++++
+ 2 files changed, 58 insertions(+), 19 deletions(-)
+
+diff --git a/src/Plugin/search_api/backend/SearchApiSolrBackend.php b/src/Plugin/search_api/backend/SearchApiSolrBackend.php
+index 8033a4d..3a7409d 100644
+--- a/src/Plugin/search_api/backend/SearchApiSolrBackend.php
++++ b/src/Plugin/search_api/backend/SearchApiSolrBackend.php
+@@ -1383,20 +1383,24 @@ class SearchApiSolrBackend extends BackendPluginBase implements SolrBackendInter
+     // If field collapsing has been enabled for this query, we need to process
+     // the results differently.
+     $grouping = $query->getOption('search_api_grouping');
+-    $docs = array();
++
+     if (!empty($grouping['use_grouping']) && $is_grouping) {
+-      // $docs = array();
+-      //      $result_set['result count'] = 0;
+-      //      foreach ($grouping['fields'] as $field) {
+-      //        if (!empty($response->grouped->{$fields[$field]})) {
+-      //          $result_set['result count'] += $response->grouped->{$fields[$field]}->ngroups;
+-      //          foreach ($response->grouped->{$fields[$field]}->groups as $group) {
+-      //            foreach ($group->doclist->docs as $doc) {
+-      //              $docs[] = $doc;
+-      //            }
+-      //          }
+-      //        }
+-      //      }.
++      $docs = array();
++      $resultCount = 0;
++      if($result_set->hasExtraData("search_api_solr_response")) {
++        $response = $result_set->getExtraData("search_api_solr_response");
++        foreach ($grouping['fields'] as $field) {
++          if (!empty($response["grouped"][$field_names[$field]])) {
++            $resultCount += $response["grouped"][$field_names[$field]]["ngroups"];
++            foreach ($response["grouped"][$field_names[$field]]["groups"] as $group) {
++              foreach ($group["doclist"]["docs"] as $doc) {
++                $docs[] = $doc;
++              }
++            }
++          }
++        }
++      }
++      $result_set->setResultCount($resultCount);
+     }
+     else {
+       $result_set->setResultCount($result->getNumFound());
+@@ -1404,9 +1408,13 @@ class SearchApiSolrBackend extends BackendPluginBase implements SolrBackendInter
+     }
+ 
+     // Add each search result to the results array.
+-    /** @var \Solarium\QueryType\Select\Result\Document $doc */
+     foreach ($docs as $doc) {
+-      $doc_fields = $doc->getFields();
++      if(is_array($doc)) {
++        $doc_fields = $doc;
++      }else {
++        /** @var \Solarium\QueryType\Select\Result\Document $doc */
++        $doc_fields = $doc->getFields();
++      }
+       $item_id = $doc_fields[$id_field];
+       // For items coming from a different site, we need to adapt the item ID.
+       if (!$this->configuration['site_hash'] && $doc_fields['hash'] != $site_hash) {
+@@ -2626,6 +2634,7 @@ class SearchApiSolrBackend extends BackendPluginBase implements SolrBackendInter
+    * @todo This code is outdated and needs to be reviewd and refactored.
+    */
+   protected function setGrouping(Query $solarium_query, QueryInterface $query, $grouping_options = array(), $index_fields = array(), $field_names = array()) {
++    $solarium_query->getGrouping();
+     $group_params['group'] = 'true';
+     // We always want the number of groups returned so that we get pagers done
+     // right.
+@@ -2637,8 +2646,9 @@ class SearchApiSolrBackend extends BackendPluginBase implements SolrBackendInter
+       $group_params['group.facet'] = 'true';
+     }
+     foreach ($grouping_options['fields'] as $collapse_field) {
+-      $type = $index_fields[$collapse_field]['type'];
+-      // Only single-valued fields are supported.
++      /** @var $field Field $type */
++      $field = $index_fields[$collapse_field];
++      $type = $field->getType();
+       if ($this->dataTypeHelper->isTextType($type)) {
+         $warnings[] = $this->t('Grouping is not supported for field @field. Only single-valued fields not indexed as "Fulltext" are supported.',
+           array('@field' => $index_fields[$collapse_field]['name']));
+@@ -2652,8 +2662,8 @@ class SearchApiSolrBackend extends BackendPluginBase implements SolrBackendInter
+     else {
+       if (!empty($grouping_options['group_sort'])) {
+         foreach ($grouping_options['group_sort'] as $group_sort_field => $order) {
+-          if (isset($fields[$group_sort_field])) {
+-            $f = $fields[$group_sort_field];
++          if (isset($field_names[$group_sort_field])) {
++            $f = $field_names[$group_sort_field];
+             if (substr($f, 0, 3) == 'ss_') {
+               $f = 'sort_' . substr($f, 3);
+             }
+diff --git a/tests/src/Kernel/SearchApiSolrTest.php b/tests/src/Kernel/SearchApiSolrTest.php
+index d8bd267..0520e5d 100644
+--- a/tests/src/Kernel/SearchApiSolrTest.php
++++ b/tests/src/Kernel/SearchApiSolrTest.php
+@@ -802,6 +802,35 @@ class SearchApiSolrTest extends BackendTestBase {
+   }
+ 
+   /**
++   * Tests search result groping
++   */
++  public function testSearchResultGrouping() {
++    //Only run the tests if we have a Solr core available
++    if($this->solrAvailable) {
++      $this->insertExampleContent();
++      $this->indexItems($this->indexId);
++
++      $query = $this->buildSearch(NULL, [], [], FALSE);
++      $query->setOption('search_api_grouping', [
++        'use_grouping' => TRUE,
++        'fields' => [
++          'type',
++        ],
++      ]);
++      $results = $query->execute();
++
++      $this->assertEquals(2, $results->getResultCount(), 'Get the results count grouping by type.');
++      $data = $results->getExtraData('search_api_solr_response');
++      $this->assertEquals(5, $data['grouped']['ss_type']['matches'], 'Get the total documents after groping.');
++      $this->assertEquals(2, $data['grouped']['ss_type']['ngroups'], 'Get the number of groups after groping.');
++      $this->assertResults([1, 4], $results, 'Grouping by type');
++    }
++    else {
++      $this->assertTrue(TRUE, 'Error: The Solr instance could not be found. Please enable a multi-core one on http://localhost:8983/solr/d8');
++    }
++  }
++  
++  /**
+    * Tests the autocomplete support.
+    */
+   public function testAutocomplete() {
+-- 
+2.7.4
+

@@ -1,0 +1,18 @@
+Index: clientside_validation_jquery/js/cv.jquery.validate.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- clientside_validation_jquery/js/cv.jquery.validate.js	(revision )
++++ clientside_validation_jquery/js/cv.jquery.validate.js	(revision )
+@@ -13,7 +13,9 @@
+    */
+   Drupal.behaviors.cvJqueryValidate = {
+     attach: function (context) {
+-      $(context).find('form').validate();
++      $(context).find('form').each(function() {
++        $(this).validate();
++      });
+     }
+   };
+ })(jQuery, Drupal);

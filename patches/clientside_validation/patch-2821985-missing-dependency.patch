@@ -1,0 +1,14 @@
+diff --git a/clientside_validation_jquery/clientside_validation_jquery.libraries.yml b/clientside_validation_jquery/clientside_validation_jquery.libraries.yml
+old mode 100644
+new mode 100755
+index 9000a1d..19b03cf
+--- a/clientside_validation_jquery/clientside_validation_jquery.libraries.yml
++++ b/clientside_validation_jquery/clientside_validation_jquery.libraries.yml
+@@ -2,6 +2,7 @@ jquery.validate:
+   js:
+     js/lib/dist/jquery.validate.js: {}
+   dependencies:
++    - core/drupal
+     - core/jquery
+ jquery.validate.additional:
+   js:

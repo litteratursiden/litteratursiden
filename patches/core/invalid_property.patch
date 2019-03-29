@@ -1,0 +1,13 @@
+diff --git a/core/lib/Drupal/Core/Config/Schema/ArrayElement.php b/core/lib/Drupal/Core/Config/Schema/ArrayElement.php
+index b16cee0..0b9410c 100644
+--- a/core/lib/Drupal/Core/Config/Schema/ArrayElement.php
++++ b/core/lib/Drupal/Core/Config/Schema/ArrayElement.php
+@@ -73,7 +73,7 @@ public function get($name) {
+       return $element;
+     }
+     else {
+-      throw new \InvalidArgumentException("The configuration property $name doesn't exist.");
++      //throw new \InvalidArgumentException("The configuration property $name doesn't exist.");
+     }
+   }
+ 

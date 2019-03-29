@@ -1,0 +1,13 @@
+diff -Naur a/src/Plugin/Deriver/EntityBundle.php b/src/Plugin/Deriver/EntityBundle.php
+--- a/src/Plugin/Deriver/EntityBundle.php	2017-02-28 17:25:32.000000000 +0100
++++ b/src/Plugin/Deriver/EntityBundle.php	2017-03-02 12:22:31.713220257 +0100
+@@ -18,7 +18,8 @@
+    */
+   public function getDerivativeDefinitions($base_plugin_definition) {
+     foreach ($this->entityManager->getDefinitions() as $entity_type_id => $entity_type) {
+-      if ($entity_type->hasKey('bundle')) {
++      // Node entity type condition managed by core node module.
++      if ($entity_type->hasKey('bundle') && $entity_type_id != 'node') {
+         $this->derivatives[$entity_type_id] = $base_plugin_definition;
+         $this->derivatives[$entity_type_id]['label'] = $this->getEntityBundleLabel($entity_type);
+         $this->derivatives[$entity_type_id]['context'] = [

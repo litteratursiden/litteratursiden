@@ -1,0 +1,23 @@
+diff --git a/src/Plugin/video_embed_field/Provider/Html5.php b/src/Plugin/video_embed_field/Provider/Html5.php
+index f70b260..d73e949 100644
+--- a/src/Plugin/video_embed_field/Provider/Html5.php
++++ b/src/Plugin/video_embed_field/Provider/Html5.php
+@@ -57,6 +57,9 @@ class Html5 extends ProviderPluginBase {
+ 
+     // Set filename for thumbnail.
+     list($video_url, $video_type) = $this->getVideoId();
++
++    $video_type = $video_type == 'm4v' ? 'mp4' : $video_type;
++
+     $this->videoUrl = $video_url;
+     $this->videoType = $video_type;
+     $this->filename = md5($video_url);
+@@ -187,7 +190,7 @@ class Html5 extends ProviderPluginBase {
+    * {@inheritdoc}
+    */
+   public static function getIdFromInput($input) {
+-    $pattern = "/\b(http|https):\/\/.*(mp4|ogg|webm)\b/";
++    $pattern = "/\b(http|https):\/\/.*(mp4|ogg|webm|m4v)\b/";
+     $matches = array();
+     preg_match($pattern, $input, $matches);
+ 

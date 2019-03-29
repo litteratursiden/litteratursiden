@@ -1,0 +1,13 @@
+diff --git a/core/modules/comment/src/Plugin/Field/FieldWidget/CommentWidget.php b/core/modules/comment/src/Plugin/Field/FieldWidget/CommentWidget.php
+index c9478f6..0a21575 100644
+--- a/core/modules/comment/src/Plugin/Field/FieldWidget/CommentWidget.php
++++ b/core/modules/comment/src/Plugin/Field/FieldWidget/CommentWidget.php
+@@ -63,7 +63,7 @@ public function formElement(FieldItemListInterface $items, $delta, array $elemen
+       $field_default_values = $this->fieldDefinition->getDefaultValue($entity);
+ 
+       // Override widget title to be helpful for end users.
+-      $element['#title'] = $this->t('Comment settings');
++      $element['#title'] = $this->t('%type settings', ['%type' => $element['#title']]);
+ 
+       $element += [
+         '#type' => 'details',

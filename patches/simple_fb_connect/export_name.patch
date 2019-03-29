@@ -1,0 +1,13 @@
+diff --git a/src/SimpleFbConnectUserManager.php b/src/SimpleFbConnectUserManager.php
+index e0973cb..59364e9 100644
+--- a/src/SimpleFbConnectUserManager.php
++++ b/src/SimpleFbConnectUserManager.php
+@@ -183,7 +183,7 @@ class SimpleFbConnectUserManager {
+     // Dispatch an event so that other modules can react to the user creation.
+     // Set the account twice on the event: as the main subject but also in the
+     // list of arguments.
+-    $event = new GenericEvent($new_user, ['account' => $new_user, 'fbid' => $fbid]);
++    $event = new GenericEvent($new_user, ['account' => $new_user, 'name' => $name, 'fbid' => $fbid]);
+     $this->eventDispatcher->dispatch('simple_fb_connect.user_created', $event);
+ 
+     // Validate the new user.
