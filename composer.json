@@ -146,14 +146,7 @@
         "wikimedia/composer-merge-plugin": "^1.4"
     },
     "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.6.0",
-        "behat/mink": "~1.7",
-        "behat/mink-goutte-driver": "~1.2",
-        "jcalderonzumba/gastonjs": "~1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsstream": "~1.2",
-        "phpunit/phpunit": ">=4.8.28 <5",
-        "symfony/css-selector": "~2.8"
+        "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -214,9 +207,6 @@
                 "fix for 404, 403 system pages": "patches/core/40x_error_theme_sugggestions-2363987-11.patch",
                 "comment settings patch": "patches/core/comment_settings_tabs.patch",
                 "invalid property": "patches/core/invalid_property.patch"
-            },
-            "drupal/ctools": {
-                "dublicated node type condition": "patches/ctools/ctools-duplicated_node_type_condition.patch"
             },
             "drupal/simple_fb_connect": {
                 "export name": "patches/simple_fb_connect/export_name.patch"
