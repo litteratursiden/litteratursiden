@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Contains lit_share.module.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\node\NodeInterface;
+use Drupal\node\Entity\NodeType;
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function lit_share_entity_extra_field_info() {
+  $extra = [];
+
+  $module_social_media_enabled = \Drupal::moduleHandler()->moduleExists('social_media');
+  if ($module_social_media_enabled) {
+    foreach (NodeType::loadMultiple() as $bundle) {
+      $extra['node'][$bundle->id()]['display']['social_media'] = [
+        'label' => t('Social media'),
+        'visible' => TRUE,
+      ];
+    }
+  }
+
+  return $extra;
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function lit_share_node_view(array &$build, NodeInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  $module_social_media_enabled = \Drupal::moduleHandler()->moduleExists('social_media');
+  if ($module_social_media_enabled) {
+    $block_manager = \Drupal::service('plugin.manager.block');
+    $block = $block_manager->createInstance('social_sharing_block', []);
+    if ($display->getComponent('social_media')) {
+      $build['social_media'] = $block->build();
+    }
+  }
+}

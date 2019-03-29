@@ -1,0 +1,11 @@
+uuid: 76ccde62-bd3b-41ed-9820-da62624266ae
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.lit_notifications_test
+id: node.lit_notifications_test
+target_entity_type_id: node
+target_bundle: lit_notifications_test
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,77 @@
+langcode: en
+status: true
+id: lit_book_node
+migration_tags: null
+migration_group: node
+label: Book
+source:
+  plugin: lit_node
+  node_type: bog
+process:
+  type:
+    plugin: default_value
+    default_value: book
+  title: title
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  uid:
+    plugin: migration_lookup
+    migration: lit_user
+    source: node_uid
+    no_stub: true
+  field_book_subject_number: field_subject_number
+  field_book_old_library_key: field_old_library_key
+  field_book_author: field_book_author
+  field_book_publisher: field_publisher
+  field_book_graphic: field_book_graphic
+  'field_book_body/format':
+      plugin: default_value
+      default_value: 'full_html'
+  'field_book_body/value': body
+  field_book_isbn: field_isbn
+  field_book_original_title: field_book_original_title
+  field_book_translater: field_book_translater
+  field_book_secondary_title: field_secondary_title
+  field_book_number_of_pages: field_number_of_pages
+  field_book_language: field_book_language
+  field_book_published_year: field_published_year
+  field_book_pid: field_pid
+  field_book_cover_image:
+    plugin: iterator
+    source: field_cover_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+  field_book_spotbox_image:
+    plugin: iterator
+    source: field_spotbox_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - lit_term
+    - lit_user
+    - lit_file
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

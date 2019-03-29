@@ -1,0 +1,94 @@
+<?php
+
+/**
+ * @file
+ * Contains lit_taxonomy.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\lit_taxonomy\Term;
+
+/**
+ * Denotes that the taxonomy term is not published.
+ */
+const TAXONOMY_TERM_NOT_PUBLISHED = 0;
+
+/**
+ * Denotes that the taxonomy term is published.
+ */
+const TAXONOMY_TERM_PUBLISHED = 1;
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function lit_taxonomy_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'taxonomy_term') {
+    $fields = [];
+    $fields['status'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Publishing status'))
+      ->setDescription(t('A boolean indicating whether the taxonomy term is published.'))
+      ->setDefaultValue(TAXONOMY_TERM_PUBLISHED);
+
+    $fields['uid'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Authored by'))
+      ->setDescription(t('The username of the taxonomy term author.'))
+      ->setSetting('target_type', 'user')
+      ->setRequired(TRUE)
+      ->setDefaultValueCallback('Drupal\node\Entity\Node::getCurrentUserId')
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'author',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 5,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => '',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE);
+
+    return $fields;
+  }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function lit_taxonomy_entity_type_alter(array &$entity_types) {
+  $entity_types['taxonomy_term']->setAccessClass('Drupal\lit_taxonomy\TermAccessControlHandler');
+  $entity_types['taxonomy_term']->setStorageClass('Drupal\lit_taxonomy\TermStorage');
+  $entity_types['taxonomy_term']->setFormClass('default', 'Drupal\lit_taxonomy\TermForm');
+}
+
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function lit_taxonomy_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  $field_definition = $context['items']->getFieldDefinition();
+
+  if ($field_definition->getType() == 'entity_reference') {
+    $settings = $field_definition->getSettings();
+
+    if ($settings['handler'] == 'default:taxonomy_term') {
+      $element['target_id']['#selection_handler'] = 'lit:taxonomy_term';
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function lit_taxonomy_taxonomy_term_presave(EntityInterface $entity) {
+  $account = \Drupal::currentUser();
+  if (!Term::access($entity, 'update', $account)->isAllowed()) {
+    $entity->set('status', TAXONOMY_TERM_NOT_PUBLISHED);
+  }
+}

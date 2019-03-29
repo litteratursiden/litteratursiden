@@ -1,0 +1,10 @@
+lit_search.autocomplete:
+  version: 1
+  css:
+    theme:
+      css/autocomplete.css: {}
+  js:
+    js/autocomplete.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

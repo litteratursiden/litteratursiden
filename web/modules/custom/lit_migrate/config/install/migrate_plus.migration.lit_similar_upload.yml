@@ -1,0 +1,39 @@
+id: lit_similar_upload
+label: Something similar file uploads
+migration_group: node
+migration_tags:
+  - Drupal 6
+source:
+  plugin: lit_upload
+  node_type: noget_der_ligner
+process:
+  nid:
+    -
+      plugin: migration_lookup
+      migration: lit_similar_node
+      source: nid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  field_similar_files:
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      display: list
+      description: description
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - lit_file
+    - lit_similar_node
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

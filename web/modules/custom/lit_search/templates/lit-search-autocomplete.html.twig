@@ -1,0 +1,78 @@
+<div class="lit-search-autocomplete-results-books">
+    <div class="title">
+        {{ books.getTitle() }}
+        <span class="count">({{ books.getCount() }})</span>
+    </div>
+    <div class="items">
+        {% if (books.getItems()) %}
+            {% for item in books.getItems() %}
+                {{ item }}
+            {% endfor %}
+        {% else %}
+            {{ 'No books available.'|t }}
+        {% endif %}
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+
+<div class="lit-search-autocomplete-results-authors">
+    <div class="title">
+        {{ authors.getTitle() }}
+        <span class="count">({{ authors.getCount() }})</span>
+    </div>
+    <div class="items">
+        {% if (authors.getItems()) %}
+            {% for item in authors.getItems() %}
+                {{ item }}
+            {% endfor %}
+        {% else %}
+            {{ 'No authors available.'|t }}
+        {% endif %}
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+
+<div class="lit-search-autocomplete-results-others">
+    <div class="items">
+        <div class="title">
+            {{ analyses.getTitle() }}
+            <span class="count">({{ analyses.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ articles.getTitle() }}
+            <span class="count">({{ articles.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ blogs.getTitle() }}
+            <span class="count">({{ blogs.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ debates.getTitle() }}
+            <span class="count">({{ debates.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ lists.getTitle() }}
+            <span class="count">({{ lists.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ interviews.getTitle() }}
+            <span class="count">({{ interviews.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ reviews.getTitle() }}
+            <span class="count">({{ reviews.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ similars.getTitle() }}
+            <span class="count">({{ similars.getCount() }})</span>
+        </div>
+        <div class="title">
+            {{ topics.getTitle() }}
+            <span class="count">({{ topics.getCount() }})</span>
+        </div>
+    </div>
+</div>

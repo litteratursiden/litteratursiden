@@ -1,0 +1,17 @@
+langcode: en
+status: true
+id: node
+label: 'Node Imports'
+description: 'Node imports.'
+source_type: 'Drupal 6'
+module: null
+shared_configuration:
+  source:
+    key: d6
+dependencies:
+  enforced:
+    module:
+      - node
+      - taxonomy
+      - user
+      - lit_migrate

@@ -1,0 +1,65 @@
+langcode: en
+status: true
+id: lit_url_alias
+migration_group: other
+migration_tags:
+  - Drupal 6
+label: URL aliases
+source:
+  plugin: d6_url_alias
+  constants:
+    slash: '/'
+process:
+  source:
+    -
+      plugin: explode
+      source: src
+      delimiter: /
+    -
+      plugin: extract
+      index:
+        - 1
+    -
+      plugin: migration_lookup
+      migration:
+        - lit_analysis_node
+        - lit_article_node
+        - lit_author_interview_node
+        - lit_author_portrait_node
+        - lit_blog_node
+        - lit_book_node
+        - lit_book_list_node
+        - lit_book_review_node
+        - lit_similar_node
+        - lit_topic_node
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  alias:
+    plugin: concat
+    source:
+      - constants/slash
+      - dst
+  langcode:
+    plugin: default_value
+    default_value: 'und'
+destination:
+  plugin: lit_url_alias
+migration_dependencies:
+  required:
+    - lit_analysis_node
+    - lit_article_node
+    - lit_author_interview_node
+    - lit_author_portrait_node
+    - lit_blog_node
+    - lit_book_node
+    - lit_book_list_node
+    - lit_book_review_node
+    - lit_similar_node
+    - lit_topic_node
+dependencies:
+  enforced:
+    module:
+      - lit_migrate
+

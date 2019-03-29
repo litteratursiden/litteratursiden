@@ -1,0 +1,24 @@
+uuid: 994d87a0-311b-4ca6-96f8-ab558bee48d4
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.lit_notifications_test
+  module:
+    - user
+id: node.lit_notifications_test.teaser
+targetEntityType: node
+bundle: lit_notifications_test
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+  social_media:
+    weight: null
+    region: content
+hidden:
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true

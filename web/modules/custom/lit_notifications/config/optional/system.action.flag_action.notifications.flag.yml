@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.notifications.flag
+label: 'Notifications'
+type: node
+plugin: 'flag_action:notifications.flag'
+configuration:
+  flag_id: notifications
+  flag_action: flag

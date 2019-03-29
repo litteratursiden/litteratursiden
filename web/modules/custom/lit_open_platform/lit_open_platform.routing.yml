@@ -1,0 +1,7 @@
+lit_open_platform.settings:
+  path: '/admin/config/services/open-platform/settings'
+  defaults:
+    _form: '\Drupal\lit_open_platform\Form\LitOpenPlatformSettingsForm'
+    _title: 'Open platform settings'
+  requirements:
+    _permission: 'administer site configuration'

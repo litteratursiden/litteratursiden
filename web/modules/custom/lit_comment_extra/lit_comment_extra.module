@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Provides extra functionality for drupal comments.
+ */
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function lit_comment_extra_entity_type_alter(array &$entity_types) {
+  if (isset($entity_types['comment'])) {
+    $entity_types['comment']->setStorageClass('\Drupal\lit_comment_extra\CommentStorageExtra');
+  }
+}

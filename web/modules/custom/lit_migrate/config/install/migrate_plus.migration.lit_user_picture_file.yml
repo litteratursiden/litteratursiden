@@ -1,0 +1,45 @@
+id: lit_user_picture_file
+label: User pictures
+migration_group: user
+source:
+  plugin: d6_user_picture_file
+  constants:
+    is_public: true
+    source_base_path: 'public://d6_files'
+process:
+  filename: filename
+  uid:
+    plugin: migration_lookup
+    migration: lit_user
+    source: uid
+    no_stub: true
+  source_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/source_base_path
+        - picture
+  destination_full_path:
+    plugin: file_uri
+    source:
+      - picture
+      - file_directory_path
+      - temp_directory_path
+      - 'constants/is_public'
+  uri:
+    plugin: file_copy
+    source:
+      - '@source_full_path'
+      - '@destination_full_path'
+destination:
+  plugin: entity:file
+migration_dependencies:
+  required:
+    - lit_user
+    - lit_file
+dependencies:
+  enforced:
+    module:
+      - lit_migrate
+

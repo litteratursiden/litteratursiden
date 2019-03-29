@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains lit_migrate.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lit_migrate_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lit_migrate module.
+    case 'help.page.lit_migrate':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Migation from old site') . '</p>';
+      return $output;
+
+    default:
+  }
+}

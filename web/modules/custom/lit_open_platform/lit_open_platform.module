@@ -1,0 +1,75 @@
+<?php
+
+/**
+ * @file
+ * Exposes global functionality of integration with the Open platform.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lit_open_platform_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lit_open_platform module.
+    case 'help.page.lit_open_platform':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This is the integration with the open platform, which is the API for the Danish libraries.') . '</p>';
+      $output .= '<a href="https://openplatform.dbc.dk/v3/">https://openplatform.dbc.dk/v3/</a>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function lit_open_platform_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  $field_definition = $context['items']->getFieldDefinition();
+
+  if ($field_definition->getType() == 'entity_reference') {
+    $settings = $field_definition->getSettings();
+
+    if ($settings['handler'] == 'default:node') {
+      $target_bundles = $settings['handler_settings']['target_bundles'];
+
+      if (in_array('book', $target_bundles)) {
+        $element['target_id']['#selection_handler'] = 'lit:node';
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function lit_open_platform_entity_type_alter(array &$entity_types) {
+  $entity_types['node']->setFormClass('default', 'Drupal\lit_open_platform\Form\LitNodeForm');
+  $entity_types['node']->setFormClass('edit', 'Drupal\lit_open_platform\Form\LitNodeForm');
+
+  if (isset($entity_types['block_content'])) {
+    $entity_types['block_content']->setFormClass('default', 'Drupal\lit_open_platform\Form\LitBlockContentForm');
+    $entity_types['block_content']->setFormClass('add', 'Drupal\lit_open_platform\Form\LitBlockContentForm');
+    $entity_types['block_content']->setFormClass('edit', 'Drupal\lit_open_platform\Form\LitBlockContentForm');
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function lit_open_platform_theme($existing, $type, $theme, $path) {
+  return [
+    'lit_open_platform_book_selection' => [
+      'variables' => [
+        'label' => '',
+        'image' => FALSE,
+        'author' => FALSE,
+        'storage' => t('Local'),
+      ],
+    ],
+  ];
+}

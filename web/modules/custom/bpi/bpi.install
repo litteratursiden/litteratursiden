@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * BPI install routine.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function bpi_schema() {
+  $schema = [];
+
+  $schema['bpi_syndicated'] = [
+    'description' => 'Holds the correspondence between bpi id and node id.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'nid' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'bid' => [
+        'type' => 'varchar',
+        'length' => '128',
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'status' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'timestamp' => [
+        'type' => 'varchar',
+        'length' => '128',
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'data' => [
+        'type' => 'blob',
+        'description' => 'Data blob for values related to syndication',
+      ],
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'node_id' => ['nid'],
+      'bpi_id' => ['bid'],
+    ],
+  ];
+
+  return $schema;
+}

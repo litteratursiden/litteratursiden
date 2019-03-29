@@ -1,0 +1,8 @@
+name: Litteratursiden User
+type: module
+description: Covers integration with user system
+core: 8.x
+package: Litteratursiden
+
+dependencies:
+  - lit

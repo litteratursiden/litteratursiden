@@ -1,0 +1,269 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/custom/bpi/bpi.module: n/a
+#  modules/custom/bpi/bpi.info.yml: n/a
+#  modules/custom/bpi/bpi.links.menu.yml: n/a
+#  modules/custom/bpi/bpi.routing.yml: n/a
+#  modules/custom/bpi/bpi.permissions.yml: n/a
+#  modules/custom/bpi/src/Controller/FormHandlers.php: n/a
+#  modules/custom/bpi/src/Form/ContentMappingForm.php: n/a
+#  modules/custom/bpi/src/Form/ServiceSettingsForm.php: n/a
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-01-02 12:00+0200\n"
+"PO-Revision-Date: 2018-01-02 12:23+0200\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.5\n"
+"Last-Translator: \n"
+"Language: da\n"
+
+#: modules/custom/bpi/bpi.module:24
+msgid "Biblioteks Produceret Indhold"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:37
+msgid "Send to BPI"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:64
+msgid "Category"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:72
+msgid "Audience"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:83
+msgid "Push with images"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:84
+msgid ""
+"You should have permission to publish the images before selecting this "
+"option."
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:90
+msgid "I want to be anonymous"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:91
+msgid "If checked, the content will be pushed as anonymous to BPI."
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:96
+msgid "Editable"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:97
+msgid ""
+"If checked, the content will be marked as non-editable. It is not enforced, "
+"but only recommended that the content is not changed after syndication."
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:328
+msgid "BPI: Similar resource already exists in the well."
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:332
+msgid ""
+"BPI: Trying to syndicate content by owner who already did that is not "
+"allowed."
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:336
+msgid ""
+"BPI: Failed to communicate with BPI service. Check your field mapping "
+"setting and/or service settings."
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:340
+msgid "BPI: Generic error. Check reports for more information."
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:367
+msgid "BPI settings"
+msgstr ""
+
+#: modules/custom/bpi/bpi.module:368
+msgid ""
+"BPI: In order to push this content to the well, please check @settings_url."
+msgstr ""
+
+#: modules/custom/bpi/bpi.info.yml:0;0 modules/custom/bpi/bpi.links.menu.yml:0
+#: modules/custom/bpi/bpi.routing.yml:0
+msgid "BPI"
+msgstr ""
+
+#: modules/custom/bpi/bpi.info.yml:0
+msgid "Provides integration with BPI services."
+msgstr ""
+
+#: modules/custom/bpi/bpi.links.menu.yml:0 modules/custom/bpi/bpi.routing.yml:0
+msgid "Service settings"
+msgstr ""
+
+#: modules/custom/bpi/bpi.links.menu.yml:0 modules/custom/bpi/bpi.routing.yml:0
+msgid "Content mapping"
+msgstr ""
+
+#: modules/custom/bpi/bpi.links.menu.yml:0
+msgid "BPI integration settings."
+msgstr ""
+
+#: modules/custom/bpi/bpi.links.menu.yml:0
+msgid "Map BPI fields to your content fields."
+msgstr ""
+
+#: modules/custom/bpi/bpi.permissions.yml:0
+msgid "Administer BPI settings"
+msgstr ""
+
+#: modules/custom/bpi/bpi.permissions.yml:0
+msgid "Set the web-service end-point and configure the service."
+msgstr ""
+
+#: modules/custom/bpi/bpi.permissions.yml:0
+msgid "Push content"
+msgstr ""
+
+#: modules/custom/bpi/bpi.permissions.yml:0
+msgid "Push content to the service."
+msgstr ""
+
+#: modules/custom/bpi/src/Controller/FormHandlers.php:34
+msgid "BPI: Node %title was already pushed to the well."
+msgstr ""
+
+#: modules/custom/bpi/src/Controller/FormHandlers.php:58
+msgid "BPI: Node %title was successfully pushed to the well."
+msgstr ""
+
+#: modules/custom/bpi/src/Controller/FormHandlers.php:61
+msgid "BPI: Error while pushing content to the well."
+msgstr ""
+
+#: modules/custom/bpi/src/Controller/FormHandlers.php:63
+msgid "An error occurred when pushing content to BPI."
+msgstr ""
+
+#: modules/custom/bpi/src/Controller/FormHandlers.php:88
+msgid "Category must be set when pushing to BPI."
+msgstr ""
+
+#: modules/custom/bpi/src/Controller/FormHandlers.php:93
+msgid "Audience must be set when pushing to BPI."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:37
+msgid "Content type"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:38
+msgid "Select a content type into which content from BPI will be syndicated."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:54
+msgid "Field mapping"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:55
+msgid ""
+"Define you custom mapping rules. Each dropdown maps BPI related fields to "
+"your content fields."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:62
+msgid "BPI title"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:63
+msgid "Titles are automatically assigned."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:64
+msgid "Title"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:76
+msgid "- None -"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:80
+msgid "BPI teaser"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:81
+msgid ""
+"The field to extract the teaser from. If the content type have a body "
+"summary, assign it to the body field."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:88
+msgid "BPI body"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:89
+msgid "Field to extract the main content from (body field)."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:96
+msgid "BPI tags"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:97
+msgid "Field used to get tags from."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:104
+msgid "BPI materials"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ContentMappingForm.php:105
+msgid "Field used to get reference to the T!NG data well."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:40
+msgid "BPI Service settings"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:45
+msgid "Agency ID"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:46
+msgid "The 6-digit code representing the library organization"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:53
+msgid "Service URL"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:54
+msgid "The location of the web-service (http://bpi1.inlead.dk)"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:61
+msgid "Secret key"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:68
+msgid "Public key"
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:81
+msgid "Please enter a valid url."
+msgstr ""
+
+#: modules/custom/bpi/src/Form/ServiceSettingsForm.php:95
+msgid "Failed to communicate with BPI service."
+msgstr ""

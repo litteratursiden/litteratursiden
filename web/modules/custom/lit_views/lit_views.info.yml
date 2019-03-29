@@ -1,0 +1,7 @@
+name: Litteratursiden views
+type: module
+description: Extends views for the Litteratursiden
+core: 8.x
+package: Litteratursiden
+dependencies:
+  - views

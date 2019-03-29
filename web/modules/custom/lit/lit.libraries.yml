@@ -1,0 +1,13 @@
+jquery.validate.command:
+  version: 1.x
+  js:
+    js/jquery-validate-command.js: {}
+  dependencies:
+    - clientside_validation_jquery/jquery.validate
+
+reload.page.command:
+  version: 1.x
+  js:
+    js/ajax-realod-page-command.js: {}
+  dependencies:
+    - core/jquery

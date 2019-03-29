@@ -1,0 +1,8 @@
+name: Litteratursiden Notifications Test
+type: module
+description: Provides functionality to assist with testing notifications
+core: 8.x
+package: Litteratursiden
+
+dependencies:
+  - lit_notifications

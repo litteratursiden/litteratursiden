@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Provides notifications functionality.
+ */
+
+/**
+ * Implements hook_mail_alter().
+ */
+function lit_notifications_test_mail_alter(&$message) {
+  _lit_notifications_test_save_mail_message($message);
+}
+
+/**
+ * Saves mail message into the queue.
+ *
+ * @param array $message
+ *   Array with the structure
+ *   identical to the $message argument in hook_mail_alter().
+ * @param bool $reset
+ *   Determines whether to reset mails queue.
+ *
+ * @return array
+ *   Array of mails.
+ */
+function _lit_notifications_test_save_mail_message($message = NULL, $reset = FALSE) {
+  $mails = &drupal_static(__FUNCTION__, []);
+
+  if ($reset) {
+    $mails = [];
+  }
+
+  if ($message) {
+    $mails[] = $message;
+  }
+
+  return $mails;
+}
+
+/**
+ * Returns a list of mails in queue.
+ *
+ * @return array
+ *   Array of mails that has the same structure as
+ *   $message argument in hook_mail_alter().
+ */
+function lit_notifications_test_get_mails() {
+  return _lit_notifications_test_save_mail_message();
+}

@@ -1,0 +1,35 @@
+id: lit_blog_upload
+label: Blog file uploads
+migration_group: node
+migration_tags:
+  - Drupal 6
+source:
+  plugin: lit_upload
+  node_type: blog
+process:
+  nid:
+    -
+      plugin: migration_lookup
+      migration: lit_blog_node
+      source: nid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  field_blog_files:
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      display: list
+      description: description
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - lit_file
+    - lit_blog_node

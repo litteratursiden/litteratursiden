@@ -1,0 +1,48 @@
+langcode: en
+status: true
+id: lit_user
+migration_tags: null
+migration_group: user
+label: Users
+source:
+  plugin: d6_user
+process:
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  status: status
+  timezone:
+    plugin: user_update_7002
+    source: timezone
+  langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: false
+  preferred_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+  preferred_admin_langcode:
+    plugin: user_langcode
+    source: language
+    fallback_to_site_default: true
+  init: init
+  roles:
+    plugin: static_map
+    source: roles
+    map:
+      3: editor
+      7: producer
+      8: super_admin
+      11: producer
+    default_value: ''
+destination:
+  plugin: 'entity:user'
+  md5_passwords: true
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

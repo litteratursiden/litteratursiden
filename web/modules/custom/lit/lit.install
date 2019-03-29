@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ * Contains lit.install.
+ */
+
+use Drupal\file\Entity\File;
+
+/**
+ * Implements hook_install().
+ */
+function lit_install() {
+  _setup_default_images();
+}
+
+/**
+ * Copy placeholder image.
+ */
+function lit_update_8001() {
+  _setup_default_images();
+}
+
+/**
+ * Uninstall 'Migrate' module with all dependents.
+ */
+function lit_update_8002() {
+  \Drupal::service('module_installer')->uninstall(['migrate']);
+}
+
+/**
+ * Set up default images.
+ */
+function _setup_default_images() {
+  $dir = 'public://default_images';
+  $placeholder = drupal_get_path('module', 'lit') . '/img/placeholder.png';
+
+  $uuids = [
+    '1654623a-2c96-4233-8f8f-b11c0bbe14e9',
+    '9ee89fbb-e735-455e-acda-523972b80850',
+    '4026d519-eca0-45c0-9fdb-c73da08acae0',
+    'f239899f-52cf-4bad-be57-5e887aba8cbc',
+    'e58ffaec-3b18-4593-ae88-5cc69d14403a',
+    'cc8f301e-a2ca-4d91-928f-87bd1abd480c',
+    'd8cfd6a8-27f6-4e9f-9425-b45f45df5def',
+    'b3b6392a-9472-4276-8fd8-b2d923d43214',
+    '75eda344-c3a9-4d90-a80e-3d4758ae4a3a',
+    'e9c5e434-bfaf-4a95-8c4d-d51710f6b370',
+    '6448fa19-3f6c-4b42-a800-bd495f697411',
+    '53b77982-dbde-4585-a764-e4e44291407a',
+    '755a5922-2462-4033-b437-f4343a6bd736',
+    'a8a0c1b9-dcf4-4ed7-9b64-4136d94b4656',
+    '892c2b5f-ff85-4bee-9cd0-c8239de08e61',
+    '61197720-058d-404a-b34d-5b80456ebfec',
+    '6169fc89-4315-435b-8492-0c663dc0e97a',
+  ];
+
+  if (file_prepare_directory($dir, FILE_CREATE_DIRECTORY)) {
+    foreach ($uuids as $uuid) {
+      $exist = (bool) \Drupal::entityQuery('file')
+        ->condition('uuid', $uuid)
+        ->execute();
+
+      if ($exist == FALSE) {
+        $uri = file_unmanaged_copy($placeholder, 'public://default_images/placeholder.png');
+        if ($uri) {
+          $file = File::create([
+            'uuid' => $uuid,
+            'uid' => 1,
+            'filename' => 'placeholder.jpg',
+            'uri' => $uri,
+            'status' => 1,
+          ]);
+          $file->save();
+        }
+      }
+    }
+  }
+}

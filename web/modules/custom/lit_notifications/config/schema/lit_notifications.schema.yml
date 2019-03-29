@@ -1,0 +1,16 @@
+lit_notifications.mail:
+ type: config_object
+ label: 'Email settings'
+ mapping:
+  comment_insert:
+    type: mail
+    label: 'Comment created'
+  comment_reply:
+    type: mail
+    label: 'Comment replay'
+  comment_update:
+    type: mail
+    label: 'Comment updated'
+  comment_delete:
+    type: mail
+    label: 'Comment deleted'

@@ -1,0 +1,49 @@
+langcode: en
+status: true
+id: lit_file
+migration_tags:
+  - 'Drupal 6'
+migration_group: file
+label: Files
+source:
+  plugin: d6_file
+  constants:
+    source_base_path: 'public://d6_files'
+process:
+  filename: filename
+  source_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/source_base_path
+        - filepath
+  destination_full_path:
+    plugin: file_uri
+    source:
+      - filepath
+      - file_directory_path
+      - temp_directory_path
+      - is_public
+  uri:
+    plugin: file_copy
+    source:
+      - '@source_full_path'
+      - '@destination_full_path'
+  filemime: filemime
+  status: status
+  changed: timestamp
+  uid:
+    plugin: migration_lookup
+    migration: lit_user
+    source: uid
+    no_stub: true
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  required:
+    - lit_user
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

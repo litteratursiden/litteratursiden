@@ -1,0 +1,12 @@
+{
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/inleadmedia/bpi-client"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "bpi/sdk": "4.2.x-dev"
+    }
+}

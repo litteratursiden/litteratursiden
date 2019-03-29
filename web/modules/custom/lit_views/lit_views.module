@@ -1,0 +1,131 @@
+<?php
+
+/**
+ * @file
+ * Contains lit_views.module.
+ */
+
+use Drupal\views\ViewExecutable;
+use Drupal\node\Entity\Node;
+use Drupal\views\Plugin\views\cache\CachePluginBase;
+use Drupal\Core\Database\Query\AlterableInterface;
+
+/**
+ * Implements hook_views_data().
+ */
+function lit_views_views_data() {
+  $data['views']['book_list_filter'] = [
+    'title' => t('Book list filter'),
+    'help' => t('Adds links for filtering books based on book list contextual filter.'),
+    'area' => [
+      'id' => 'book_list_filter',
+    ],
+  ];
+
+  $data['views']['lit_result'] = [
+    'title' => t('Advanced result summary'),
+    'help' => t('Shows advanced result summary, for example the items per page.'),
+    'area' => [
+      'id' => 'lit_result',
+    ],
+  ];
+
+  return $data;
+}
+
+/**
+ * Implements hook_views_post_render().
+ */
+function lit_views_views_post_render(ViewExecutable $view, &$output, CachePluginBase $cache) {
+  if ($view->id() == 'related_books' && $view->current_display == 'related_books_by_author_block') {
+
+    if ($author_node = Node::load(reset($view->args))) {
+      /** @var \Drupal\node\NodeInterface $node */
+      $node = \Drupal::routeMatch()->getParameter('node');
+
+      if ($node && $node->getType() == 'book') {
+        $view->setTitle(t('Other books by @author_name', ['@author_name' => $author_node->getTitle()]));
+      }
+      else {
+        $view->setTitle(t('Books by @author_name', ['@author_name' => $author_node->getTitle()]));
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_query_TAG_alter().
+ */
+function lit_views_query_views_related_content_block_alter(AlterableInterface $query) {
+  // In the 'related content' view contextual filters have to be grouped
+  // by 'OR' conjunction so the content was found either by tags OR by
+  // author portrait field in interview node.
+  $conditions = &$query->conditions();
+  $view_conditions = &$conditions[0]['field']->conditions();
+
+  $original_contextual = $view_conditions[0]['field'];
+
+  $field1 = clone $original_contextual;
+  $field1_conditions = &$field1->conditions();
+  $field1_conditions['#conjunction'] = 'OR';
+
+  $field2 = $field1_conditions[2]; unset($field1_conditions[2]);
+
+  $new_contextual_conditions = [];
+  $new_contextual_conditions['#conjunction'] = 'AND';
+  $new_contextual_conditions[0] = [
+    'field' => $field1,
+    'value' => null,
+    'operator' => '=',
+  ];
+  $new_contextual_conditions[1] = $field2;
+
+  $original_contextual_conditions = &$original_contextual->conditions();
+  $original_contextual_conditions = $new_contextual_conditions;
+}
+
+/**
+ * Implements hook_query_views_books_being_debated_alter().
+ */
+function lit_views_query_views_books_being_debated_alter(AlterableInterface $query) {
+  if (isset($query->alterMetaData['view'])) {
+    $query->innerJoin('comment_entity_statistics', 'comment_entity_statistics', "node_field_data.nid = comment_entity_statistics.entity_id AND comment_entity_statistics.entity_type = 'node' AND comment_entity_statistics.field_name = 'field_book_comments'");
+    $query->addField('comment_entity_statistics', 'last_comment_timestamp', 'comment_entity_statistics_last_comment_timestamp');
+    $query->orderBy('comment_entity_statistics_last_comment_timestamp', 'DESC');
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function lit_views_views_pre_render(ViewExecutable $view) {
+  if ($view->id() == 'comments' && $view->current_display == 'book_dabate_block') {
+    $node = $view->result[0]->_entity;
+
+    if ($node) {
+        $debates_field = $node->get('field_book_debates')->first();
+        $debates_enabled = $debates_field->get('status')->getValue();
+
+        if ($debates_enabled != 2) {
+            $view->result = [];
+        }
+    }
+  }
+}
+
+/**
+ * Implement template_preprocess_block()
+ */
+function lit_views_preprocess_block(&$variables) {
+    if (
+        $variables['base_plugin_id'] == 'views_block' &&
+        ($variables['plugin_id'] == 'views_block:front_article-block_front_article' || $variables['plugin_id'] == 'views_block:front_blog-block_front_blog')
+    ) {
+        $view = $variables['content']['#view'];
+
+        if (isset($view->result[0])) {
+            $node = $view->result[0]->_entity;
+            $variables['label'] = $node->type->entity->label();
+        }
+    }
+}

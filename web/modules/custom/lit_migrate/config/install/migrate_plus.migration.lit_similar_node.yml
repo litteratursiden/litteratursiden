@@ -1,0 +1,64 @@
+langcode: en
+status: true
+id: lit_similar_node
+migration_tags: null
+migration_group: node
+label: Something similar
+source:
+  plugin: lit_node
+  node_type: noget_der_ligner
+process:
+  type:
+    plugin: default_value
+    default_value: similar
+  title: title
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  uid:
+    plugin: migration_lookup
+    migration: lit_user
+    source: node_uid
+    no_stub: true
+  'field_similar_body/format':
+      plugin: default_value
+      default_value: 'full_html'
+  'field_similar_body/value': body
+  field_similar_cover_image:
+    plugin: iterator
+    source: field_cover_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+  field_similar_spotbox_image:
+    plugin: iterator
+    source: field_spotbox_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - lit_term
+    - lit_user
+    - lit_file
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

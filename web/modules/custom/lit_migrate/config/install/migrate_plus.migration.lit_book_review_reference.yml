@@ -1,0 +1,37 @@
+id: lit_book_review_reference
+label: Book review books relationships
+migration_group: node
+migration_tags:
+  - Drupal 6
+source:
+  plugin: lit_node
+  node_type: anbefaling
+process:
+  nid:
+    -
+      plugin: migration_lookup
+      migration: lit_book_review_node
+      source: nid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  field_review_reference_book:
+    plugin: iterator
+    source: field_reference_book
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_book_node
+        source: nid
+        no_stub: true
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - lit_book_review_node
+    - lit_book_node
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

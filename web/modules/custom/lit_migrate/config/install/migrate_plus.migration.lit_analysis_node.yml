@@ -1,0 +1,70 @@
+langcode: en
+status: true
+id: lit_analysis_node
+migration_tags: null
+migration_group: node
+label: Analysis
+source:
+  plugin: lit_node
+  node_type: analyse
+process:
+  type:
+    plugin: default_value
+    default_value: analysis
+  title: title
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  uid:
+    plugin: migration_lookup
+    migration: lit_user
+    source: node_uid
+    no_stub: true
+  'field_analysis_excerpt/format':
+    plugin: default_value
+    default_value: 'full_html'
+  'field_analysis_excerpt/value': body
+  field_analysis_cover_image:
+    plugin: iterator
+    source: field_cover_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+  field_analysis_spotbox_image:
+    plugin: iterator
+    source: field_spotbox_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+  field_analysis_external_link:
+    plugin: iterator
+    source: field_link_external
+    process:
+      uri: url
+      title: title
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - lit_term
+    - lit_user
+    - lit_file
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

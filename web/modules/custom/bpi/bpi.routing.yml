@@ -1,0 +1,23 @@
+bpi.service:
+  path: '/admin/config/bpi'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'BPI'
+  requirements:
+    _permission: 'administer bpi'
+
+bpi.settings:
+  path: '/admin/config/bpi/settings'
+  defaults:
+    _form: '\Drupal\bpi\Form\ServiceSettingsForm'
+    _title: 'Service settings'
+  requirements:
+    _permission: 'administer bpi'
+
+bpi.content_mapping:
+  path: '/admin/config/bpi/content_mapping'
+  defaults:
+    _form: '\Drupal\bpi\Form\ContentMappingForm'
+    _title: 'Content mapping'
+  requirements:
+    _permission: 'administer bpi'

@@ -1,0 +1,15 @@
+langcode: en
+status: true
+id: user
+label: 'User Imports'
+description: 'User imports.'
+source_type: 'Drupal 6'
+module: null
+shared_configuration:
+  source:
+    key: d6
+dependencies:
+  enforced:
+    module:
+      - user
+      - lit_migrate

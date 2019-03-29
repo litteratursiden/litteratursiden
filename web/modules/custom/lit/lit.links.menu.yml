@@ -1,0 +1,29 @@
+lit.add_page:
+  title: 'Add content'
+  route_name: node.add_page
+  menu_name: account
+  weight: -9
+
+lit.content:
+  title: 'Manage content'
+  route_name: view.content.page_1
+  menu_name: account
+  weight: -7
+
+lit.books:
+  title: 'Books'
+  route_name: lit.books
+  menu_name: main
+  weight: 5
+
+lit.authors:
+  title: 'Authors'
+  route_name: lit.authors
+  menu_name: main
+  weight: 7
+
+lit.comments:
+  title: 'Manage comments'
+  route_name: comment.admin
+  menu_name: account
+  weight: -6

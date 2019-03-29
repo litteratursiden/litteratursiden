@@ -1,0 +1,39 @@
+id: lit_topic_upload
+label: Topic file uploads
+migration_group: node
+migration_tags:
+  - Drupal 6
+source:
+  plugin: lit_upload
+  node_type: tema
+process:
+  nid:
+    -
+      plugin: migration_lookup
+      migration: lit_topic_node
+      source: nid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  field_topic_files:
+    plugin: iterator
+    source: upload
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      display: list
+      description: description
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - lit_topic_node
+    - lit_file
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

@@ -1,0 +1,186 @@
+<?php
+
+/**
+ * @file
+ * Contains lit_user.module.
+ */
+
+require_once __DIR__ . '/includes/lit_user.block.inc';
+require_once __DIR__ . '/includes/lit_user.form.inc';
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\user\UserInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\lit\Ajax\ShowErrorsCommand;
+use Drupal\user\Entity\Role;
+
+/**
+ * Implements hook_help().
+ */
+function lit_user_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lit_user module.
+    case 'help.page.lit_user':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Covers instegration with user system') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function lit_user_entity_extra_field_info() {
+  $extra['user']['user']['display']['roles'] = [
+    'label' => t('Roles'),
+    'description' => t('User roles.'),
+    'visible' => FALSE,
+  ];
+
+  $extra['user']['user']['display']['created'] = [
+    'label' => t('Created'),
+    'description' => t('Date when user was created.'),
+    'visible' => FALSE,
+  ];
+
+  $extra['user']['user']['display']['tools'] = [
+    'label' => t('Tools Menu'),
+    'description' => t('The tools menu.'),
+    'visible' => FALSE,
+  ];
+
+  $extra['user']['user']['display']['edit_profile_link'] = [
+    'label' => t('Profile edit link'),
+    'description' => t('The profile edit link.'),
+    'visible' => FALSE,
+  ];
+
+  $extra['user']['user']['display']['contact_link'] = [
+    'label' => t('Contact link'),
+    'description' => t('The user contact link.'),
+    'visible' => FALSE,
+  ];
+
+  return $extra;
+}
+
+/**
+ * Implements hook_user_view().
+ */
+function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('roles')) {
+    $roles_ids = $entity->getRoles(TRUE);
+    $roles_ids = array_unique($roles_ids);
+    $roles = [];
+
+    foreach ($roles_ids as $id) {
+      if ($role = Role::load($id)) {
+        $roles[] = $role->label();
+      }
+    }
+
+
+    $build['roles'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => ['user-roles'],
+      ],
+      '#markup' => implode(', ', $roles),
+    ];
+  }
+
+  if ($display->getComponent('created')) {
+    $created = \Drupal::service('date.formatter')->format($entity->get('created')->value, 'custom', 'd M.y');
+    $build['created'] = [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => ['user-created-date'],
+      ],
+      '#markup' => ucwords($created, "."),
+      '#cache' => [
+        'contexts' => [
+          'url',
+        ]
+      ]
+    ];
+  }
+
+  if ($display->getComponent('tools')) {
+    $menu_tree = \Drupal::menuTree();
+
+    // Build the typical default set of menu tree parameters.
+    $parameters = $menu_tree->getCurrentRouteMenuTreeParameters('tools');
+
+    // Load the tree based on this set of parameters.
+    $tree = $menu_tree->load('tools', $parameters);
+
+    // Transform the tree using the manipulators you want.
+    $manipulators = array(
+      // Only show links that are accessible for the current user.
+      array('callable' => 'menu.default_tree_manipulators:checkAccess'),
+      // Use the default sorting of menu links.
+      array('callable' => 'menu.default_tree_manipulators:generateIndexAndSort'),
+    );
+    $tree = $menu_tree->transform($tree, $manipulators);
+
+    // Finally, build a renderable array from the transformed tree.
+    $menu = $menu_tree->build($tree);
+
+    $build['tools'] = $menu;
+    $build['tools']['#access'] = \Drupal::currentUser()->id() == $entity->id();
+  }
+
+  if ($display->getComponent('edit_profile_link')) {
+    $url = \Drupal\Core\Url::fromRoute('entity.user.edit_form', ['user' => \Drupal::currentUser()->id()]);
+
+    $build['edit_profile_link'] = [
+      '#type' => 'link',
+      '#title' => t('Edit profile'),
+      '#url' => $url,
+      '#access' => \Drupal::currentUser()->id() == $entity->id() && $url->access(\Drupal::currentUser()),
+    ];
+  }
+
+  if ($display->getComponent('contact_link')) {
+    $url = \Drupal\Core\Url::fromRoute('entity.user.contact_form', ['user' => $entity->id()]);
+
+    $build['contact_link'] = [
+      '#type' => 'link',
+      '#title' => t('Contact link'),
+      '#url' => $url,
+      '#access' => $url->access(\Drupal::currentUser()),
+    ];
+  }
+}
+
+/**
+ * Implements hook_form_user_login_form_alter().
+ */
+function lit_user_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['actions']['submit']['#ajax'] = ['callback' => 'lit_user_login_form_ajax_submit'];
+}
+
+/**
+ * Ajax callback for submitting user login page.
+ */
+function lit_user_login_form_ajax_submit(array &$form, FormStateInterface $form_state) {
+  $ajax_response = new AjaxResponse();
+
+  if ($errors = $form_state->getErrors()) {
+    $ajax_response->addCommand(new ShowErrorsCommand('.user-login-form', $errors));
+
+    // Clearing error messages queue.
+    drupal_get_messages('error');
+  }
+  else {
+    $path = \Drupal::request()->getPathInfo();
+    $ajax_response->addCommand(new \Drupal\Core\Ajax\RedirectCommand($path));
+  }
+
+  return $ajax_response;
+}

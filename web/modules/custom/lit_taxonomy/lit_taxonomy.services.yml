@@ -1,0 +1,5 @@
+services:
+  lit_taxonomy.route_subscriber:
+    class: Drupal\lit_taxonomy\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

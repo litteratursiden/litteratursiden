@@ -1,0 +1,7 @@
+lit_search.autocomplete:
+  path: '/autocomplete'
+  defaults:
+    _controller: '\Drupal\lit_search\Controller\SearchController::autocomplete'
+    _format: json
+  requirements:
+    _access: 'TRUE'

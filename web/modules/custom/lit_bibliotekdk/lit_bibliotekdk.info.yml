@@ -1,0 +1,5 @@
+name: Litteratursiden Bibliotek
+type: module
+description: Covers integration with bibliotek.dk
+core: 8.x
+package: Litteratursiden

@@ -1,0 +1,4 @@
+bpi_node_form_alter:
+  css:
+    theme:
+      css/bpi_node_form_alter.css: {}

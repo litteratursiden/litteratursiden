@@ -1,0 +1,64 @@
+langcode: en
+status: true
+id: lit_book_list_node
+migration_tags: null
+migration_group: node
+label: Book list
+source:
+  plugin: lit_node
+  node_type: bogliste
+process:
+  type:
+    plugin: default_value
+    default_value: book_list
+  title: title
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  uid:
+    plugin: migration_lookup
+    migration: lit_user
+    source: node_uid
+    no_stub: true
+  'field_book_list_body/format':
+      plugin: default_value
+      default_value: 'full_html'
+  'field_book_list_body/value': body
+  field_book_list_cover_image:
+    plugin: iterator
+    source: field_cover_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+  field_book_list_spotbox_image:
+    plugin: iterator
+    source: field_spotbox_image
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration: lit_file
+        source: fid
+        no_stub: true
+      alt: alt
+      title: title
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - lit_term
+    - lit_user
+    - lit_file
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

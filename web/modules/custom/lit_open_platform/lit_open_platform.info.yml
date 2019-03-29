@@ -1,0 +1,6 @@
+name: Litteratursiden Open Platform
+type: module
+description: Integration with the Open Platform https://openplatform.dbc.dk
+core: 8.x
+package: Litteratursiden
+configure: lit_open_platform.settings

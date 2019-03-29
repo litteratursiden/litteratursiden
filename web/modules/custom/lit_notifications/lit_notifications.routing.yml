@@ -1,0 +1,12 @@
+lit_notifications.unsubscribe:
+  path: '/lit-notifications/unsubscribe/{user}/{node}/{hash}'
+  defaults:
+    _controller: '\Drupal\lit_notifications\Controller\UnsubscribeController::unsubscribe'
+  requirements:
+    _custom_access: '\Drupal\lit_notifications\Controller\UnsubscribeController::unsubscribeAccess'
+  options:
+    parameters:
+      user:
+        type: 'entity:user'
+      node:
+        type: 'entity:node'

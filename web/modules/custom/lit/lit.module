@@ -1,0 +1,495 @@
+<?php
+
+/**
+ * @file
+ * Contains lit.module.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\node\NodeInterface;
+use Drupal\node\Entity\NodeType;
+use Drupal\comment\CommentInterface;
+use Drupal\comment\Entity\CommentType;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\flag\Entity\Flag;
+use Drupal\node\NodeViewBuilder;
+
+/**
+ * Implements hook_theme().
+ */
+function lit_theme($existing, $type, $theme, $path) {
+  return [
+    'lit_book_lists_overview_page' => [
+      'variables' => [
+        'book_lists' => [],
+      ],
+    ],
+    'lit_books_without_image' => [
+      'variables' => [
+          'books' => [],
+          'offset' => 0,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function lit_entity_extra_field_info() {
+  $extra = [];
+
+  /** @var \Drupal\field\Entity\FieldConfig[] $book_fields_info */
+  $book_fields_info = \Drupal::getContainer()->get('entity_field.manager')->getFieldDefinitions('node', 'book');
+  $label_prefix = '[Book] ';
+
+  foreach (lit_get_book_review_extra_fields() as $field) {
+    if (empty($book_fields_info[$field])) {
+      continue;
+    }
+
+    $field_definition = $book_fields_info[$field];
+
+    $extra['node']['review']['display'][$field] = [
+      'label' => $label_prefix . $field_definition->getLabel(),
+      'description' => $field_definition->getDescription(),
+      'visible' => FALSE,
+    ];
+  }
+
+  $extra['node']['review']['display']['book_links'] = [
+    'label' => $label_prefix . 'Links',
+    'visible' => FALSE,
+  ];
+
+  $owner_field_info = [
+    'label' => t('Owner full name'),
+    'description' => t('The full name of the node creator.'),
+    'visible' => FALSE,
+  ];
+
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $extra['node'][$bundle->Id()]['display']['owner_full_name'] = $owner_field_info;
+
+    $extra['node'][$bundle->Id()]['display']['owner_portrait'] = [
+      'label' => t('Owner portrait'),
+      'description' => t('Shows entity owner portrait.'),
+      'visible' => FALSE,
+    ];
+
+    $extra['node'][$bundle->id()]['display']['posted'] = [
+      'label' => t('Posted'),
+      'description' => t('Date posted.'),
+      'visible' => TRUE,
+    ];
+  }
+
+  foreach (CommentType::loadMultiple() as $bundle) {
+    $extra['comment'][$bundle->Id()]['display']['owner_full_name'] = $owner_field_info;
+  }
+
+  $extra['node']['book']['display']['latest_review'] = [
+    'label' => t('Review'),
+    'description' => t('Shows latest review for the book.'),
+    'visible' => FALSE,
+  ];
+
+  $extra['node']['book']['display']['latest_analysis'] = [
+    'label' => t('Analysis'),
+    'description' => t('Shows latest analysis for the book.'),
+    'visible' => FALSE,
+  ];
+
+  $extra['node']['author_portrait']['display']['latest_reviewed_book'] = [
+    'label' => t('Latest reviewed book link'),
+    'description' => t('Show a link to the latest reviewed book.'),
+    'visible' => FALSE,
+  ];
+
+  return $extra;
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function lit_node_view(array &$build, NodeInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity->bundle() == 'review' && $book_node = $entity->get('field_review_reference_book')->entity) {
+
+    foreach (lit_get_book_review_extra_fields() as $field) {
+      if ($display->getComponent($field)) {
+        $build[$field] = $book_node->$field->view($view_mode);
+      }
+    }
+
+    $build['book_links'] = NodeViewBuilder::renderLinks($book_node->id(), $view_mode, $book_node->language()->getId(), $book_node->in_preview);
+  }
+
+  if ($display->getComponent('latest_review') && $review = lit_get_latest_book_review($entity->id())) {
+    $build['latest_review'] = node_view($review, 'additional_info');
+  }
+
+  if ($display->getComponent('posted')) {
+    $build['posted'] =  [
+      '#type' => 'item',
+      '#markup' => Drupal::service('date.formatter')->format($entity->getCreatedTime(), 'date_day_month_year')
+    ];
+  }
+
+  if ($display->getComponent('latest_analysis') && $analysis = lit_get_latest_book_analisys($entity->id())) {
+    $build['latest_analysis'] = node_view($analysis, 'additional_info');
+  }
+
+  if ($display->getComponent('latest_review') || $display->getComponent('latest_analysis')) {
+    // We need to make sure that new reviews and analysis
+    // will be added to a node.
+    $build['#cache']['tags'][] = 'node_list';
+  }
+
+  if ($display->getComponent('owner_portrait')) {
+    $build['owner_portrait'] = Drupal::entityTypeManager()->getViewBuilder('user')->view($entity->getOwner(), 'content_author');
+    $build['owner_portrait']['#attributes']['class'][] = 'content-owner-portrait';
+  }
+
+  if ($display->getComponent('latest_reviewed_book')) {
+    $book = lit_get_latest_reviewed_book($entity->id());
+
+    if ($book) {
+      $build['latest_reviewed_book'] = [
+        '#type' => 'link',
+        '#title' => t('Go to latest review'),
+        '#url' => \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $book]),
+        '#attributes' => [
+          'class' => 'author-portrait-latest-review',
+        ],
+      ];
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function lit_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity instanceof CommentInterface || $entity instanceof NodeInterface) {
+    if ($display->getComponent('owner_full_name')) {
+      $owner = $entity->getOwner();
+      $build['owner_full_name'] = [
+        '#type' => 'link',
+        '#title' => $owner->get('field_user_full_name')->value,
+        '#url' => $owner->toUrl(),
+      ];
+    }
+  }
+}
+
+/**
+ * Implements hook_node_links_alter().
+ */
+function lit_node_links_alter(array &$links, NodeInterface $entity, array &$context) {
+  $read_more_modes = ['slick_item', 'spot', 'favorite_content_teaser', 'internal_links_carousel'];
+  if (!empty($context['view_mode']) && in_array($context['view_mode'], $read_more_modes)) {
+    $node_title_stripped = strip_tags($entity->label());
+
+    $read_more_label = t('Read more<span class="visually-hidden"> about @title</span>', [
+        '@title' => $node_title_stripped,
+    ]);
+    if ($entity->getType() == 'book_list') {
+        $read_more_label = t('View the full list<span class="visually-hidden"> about @title</span>', [
+            '@title' => $node_title_stripped,
+        ]);
+    }
+    $links['node']['#links']['node-readmore'] = [
+      'title' => $read_more_label,
+      'url' => $entity->toUrl(),
+      'language' => $entity->language(),
+      'attributes' => [
+        'rel' => 'tag',
+        'title' => $node_title_stripped,
+        'class' => 'read-more',
+      ],
+    ];
+
+    if ($entity->getType() == 'book_list' || $entity->getType() == 'similar') {
+      $links['node']['#links']['node-all'] = [
+        'title'    => t('Show all booklists'),
+        'url'      => Drupal\Core\Url::fromRoute('lit.book_lists_overview'),
+        'language' => $entity->language(),
+        'attributes' => [
+          'title' => t('Show all booklists'),
+          'class' => 'read-more',
+        ],
+      ];
+    }
+  }
+}
+
+/**
+ * Gets a list of extra fields for 'review' node.
+ *
+ * Gets a field list of 'book' node
+ * that should be added as extra fields for 'review' node.
+ *
+ * @return array
+ *   Array of extra field machine names.
+ */
+function lit_get_book_review_extra_fields() {
+  return [
+    'field_book_author',
+    'field_book_reference_author',
+    'field_book_body',
+    'field_book_cover_image',
+    'field_book_original_title',
+  ];
+}
+
+/**
+ * Gets book's latest review.
+ *
+ * @param int $book_nid
+ *   Book node ID.
+ *
+ * @return NodeInterface:NULL
+ *   Loaded node of the review object if it exists. Otherwise NULL.
+ */
+function lit_get_latest_book_review($book_nid) {
+  $review_ids = Drupal::entityQuery('node')
+    ->condition('type', 'review')
+    ->condition('field_review_reference_book.target_id', $book_nid)
+    ->sort('created')
+    ->range(0, 1)
+    ->execute();
+
+  return empty($review_ids) ? NULL : Node::load(reset($review_ids));
+}
+
+/**
+ * Gets book's latest analysis.
+ *
+ * @param int $book_nid
+ *   Book node ID.
+ *
+ * @return NodeInterface:NULL
+ *   Loaded node of the analysis object if it exists. Otherwise NULL.
+ */
+function lit_get_latest_book_analisys($book_nid) {
+  $analysis_ids = Drupal::entityQuery('node')
+    ->condition('type', 'analysis')
+    ->condition('field_analysis_reference_book.target_id', $book_nid)
+    ->sort('created')
+    ->range(0, 1)
+    ->execute();
+
+  return empty($analysis_ids) ? NULL : Node::load(reset($analysis_ids));
+}
+
+/**
+ * Gets latest reviewed book of the author.
+ *
+ * @param int $nid
+ *   Author portrait node ID.
+ *
+ * @return integer:NULL
+ *   Returns book nid or NULL.
+ */
+function lit_get_latest_reviewed_book($nid) {
+  $books = Drupal::entityQuery('node')
+    ->condition('type', 'book')
+    ->condition('field_book_reference_author.target_id', $nid)
+    ->execute();
+
+  $reviews = [];
+  if ($books) {
+    $reviews = Drupal::entityQuery('node')
+      ->condition('type', 'review')
+      ->condition('field_review_reference_book.target_id', $books, 'IN')
+      ->sort('created', 'DESC')
+      ->range(0, 1)
+      ->execute();
+  }
+
+  return $reviews ? reset($reviews) : NULL;
+}
+
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function lit_preprocess_eu_cookie_compliance_popup_info(&$variables) {
+  $primary_class   = 'eu-cookie-compliance-default-button';
+  $secondary_class = 'eu-cookie-compliance-secondary-button';
+
+  $variables["primary_button_class"]   = str_replace($secondary_class, $primary_class, $variables["primary_button_class"]);
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function lit_library_info_alter(&$libraries, $extension) {
+  if ($extension == 'field_group') {
+    // Bug fix for field group accordion
+    // which doesn't work without 'field_group/core' library.
+    $libraries['formatter.accordion']['dependencies'][] = 'field_group/core';
+  }
+}
+
+/**
+ * Implements hook_preprocess_flag().
+ */
+function lit_preprocess_flag(&$variables) {
+  /** @var \Drupal\flag\Entity\Flag $flag */
+  $flag = $variables['flag'];
+  $entity = $variables['flaggable'];
+
+  if ($flag->getThirdPartySetting('lit', 'flag_counter')) {
+    $flags = \Drupal::service('flag.count')->getEntityFlagCounts($entity);
+    $variables['flag_counter'] = isset($flags[$flag->id()]) ? $flags[$flag->id()] : 0;
+  }
+
+  if ($flag->getThirdPartySetting('lit', 'checkbox')) {
+    $variables['checkbox_form'] = Drupal::formBuilder()->getForm('Drupal\lit\Form\FlagCheckboxForm', $flag, $entity);
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function lit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (in_array($form_id, ['flag_add_form', 'flag_edit_form'])) {
+    lit_alter_flag_forms($form, $form_state, $form_id);
+  }
+
+  if ($form_id == 'mailchimp_signup_subscribe_block_subscribe_to_newsletter_form') {
+    $form['mergevars']['EMAIL']['#title_display'] = 'invisible';
+    $form['mergevars']['EMAIL']['#attributes']['placeholder'] = t('Email address');
+  }
+}
+
+/**
+ * Alters flag add/edit forms.
+ */
+function lit_alter_flag_forms(&$form, FormStateInterface $form_state, $form_id) {
+  $flag = $form_state->getFormObject()->getEntity();
+
+  $form['other'] = [
+    '#type' => 'details',
+    '#open' => TRUE,
+    '#title' => t('Other options'),
+    '#weight' => 20,
+  ];
+
+  $form['other']['flag_counter'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Show flag counter'),
+    '#description' => t('Determines whether flag counter for the entity should be displayed.'),
+    '#default_value' => $flag->getThirdPartySetting('lit', 'flag_counter'),
+  ];
+
+  $form['other']['checkbox'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Add checkbox in template'),
+    '#description' => t('Adds a variable "checkbox_form" into flag template which allows to use checkbox instead of link for flagging content.'),
+    '#default_value' => $flag->getThirdPartySetting('lit', 'checkbox'),
+  ];
+
+  $form['#entity_builders'][] = 'lit_flag_add_form_builder';
+}
+
+/**
+ * Entity builder for the flag configuration entity.
+ */
+function lit_flag_add_form_builder($entity_type, Flag $flag, &$form, FormStateInterface $form_state) {
+  foreach (['flag_counter', 'checkbox'] as $setting_name) {
+    if ($form_state->getValue($setting_name)) {
+      $flag->setThirdPartySetting('lit', $setting_name, $form_state->getValue($setting_name));
+      continue;
+    }
+
+    $flag->unsetThirdPartySetting('lit', $setting_name);
+  }
+}
+
+/**
+ * Implements hook_block_build_alter().
+ */
+function lit_block_build_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+  if ($block->getPluginId() == 'broken') {
+    $user = \Drupal::currentUser();
+    if ($user->hasPermission('administer blocks') === FALSE) {
+      $build['#access'] = FALSE;
+    }
+  }
+}
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function lit_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+  if ($block->getPluginId() == 'facet_block:type') {
+    $build['#pre_render'][] = '_lit_facet_type_prerender';
+  }
+}
+
+/**
+ * Pre render block facet type.
+ */
+function _lit_facet_type_prerender(array $build) {
+  if (!isset($build['content'])) {
+    return $build;
+  }
+
+  $items = $build['content'][0]['#items'];
+
+
+  $sorted = [];
+  foreach ($items as $i => $item) {
+    switch ($item['#title']['#value']) {
+      case 'book':
+        $item['#title']['#value'] = t('Books');
+        $sorted[0] = $item;
+        unset($items[$i]);
+        break;
+
+      case 'author_portrait':
+        $item['#title']['#value'] = t('Author portraits');
+        $sorted[1] = $item;
+        unset($items[$i]);
+        break;
+
+      case 'topic':
+        $item['#title']['#value'] = t('Topics');
+        $sorted[2] = $item;
+        unset($items[$i]);
+        break;
+
+      case 'article':
+        $item['#title']['#value'] = t('Articles');
+        $sorted[3] = $item;
+        unset($items[$i]);
+        break;
+
+      case 'blog':
+        $item['#title']['#value'] = t('Blogs');
+        $sorted[4] = $item;
+        unset($items[$i]);
+        break;
+
+      case 'book_list':
+        $item['#title']['#value'] = t('Book lists');
+        $sorted[5] = $item;
+        unset($items[$i]);
+        break;
+
+      default:
+        break;
+    }
+  }
+
+  ksort($sorted);
+  $build['content'][0]['#items'] = array_merge($sorted, $items);
+  $build['content'][0]['#prefix'] = '<div class="facets-widget-checkbox">';
+  $build['content'][0]['#suffix'] = '</div>';
+
+  return $build;
+}

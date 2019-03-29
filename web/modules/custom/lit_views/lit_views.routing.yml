@@ -1,0 +1,7 @@
+lit_views.update_book_list_view:
+  path: '/update-book-list-view/{js}/{view_id}/{view_display_id}/{book_list_id}'
+  defaults:
+    _controller: '\Drupal\lit_views\Controller\ViewsBookListFilterController::updateBookListView'
+  requirements:
+    _permission: 'access content'
+    _custom_access: '\Drupal\lit_views\Controller\ViewsBookListFilterController::updateBookListViewAccess'

@@ -1,0 +1,40 @@
+id: lit_similar_similar
+label: Something similar book and author relationships
+migration_group: node
+migration_tags:
+  - Drupal 6
+source:
+  plugin: lit_node
+  node_type: noget_der_ligner
+process:
+  nid:
+    -
+      plugin: migration_lookup
+      migration: lit_similar_node
+      source: nid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  field_similar_reference:
+    plugin: iterator
+    source: field_book_author_alike
+    process:
+      target_id:
+        plugin: migration_lookup
+        migration:
+          - lit_author_portrait_node
+          - lit_book_node
+        source: nid
+        no_stub: true
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - lit_similar_node
+    - lit_author_portrait_node
+    - lit_book_node
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

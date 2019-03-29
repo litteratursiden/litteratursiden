@@ -1,0 +1,5 @@
+services:
+  lit.response_subscriber:
+    class: '\Drupal\lit\EventSubscriber\ResponseSubscriber'
+    tags:
+      - { name: 'event_subscriber' }

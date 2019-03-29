@@ -1,0 +1,19 @@
+lit_slider:
+  version: 1.x
+  js:
+    js/lit_slider.js: {}
+  dependencies:
+    - lit_slider/tiny_slider
+
+tiny_slider:
+  remote: https://github.com/ganlanyuan/tiny-slider/
+  version: 1.x
+  license:
+    name: MIT
+    url: https://github.com/ganlanyuan/tiny-slider/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/tiny-slider/dist/min/tiny-slider.js: { weight: -3, minified: true }
+  css:
+    base:
+      /libraries/tiny-slider/dist/tiny-slider.css: {}

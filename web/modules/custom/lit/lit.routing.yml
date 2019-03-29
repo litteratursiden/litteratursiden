@@ -1,0 +1,37 @@
+lit.front:
+  path: '/litteratursiden'
+  defaults:
+    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
+  requirements:
+    _permission: 'access content'
+
+lit.books:
+  path: '/books'
+  defaults:
+    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
+    _title: 'Books'
+  requirements:
+    _permission: 'access content'
+
+lit.authors:
+  path: '/authors'
+  defaults:
+    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
+    _title: 'Authors'
+  requirements:
+    _permission: 'access content'
+
+lit.book_lists_overview:
+  path: '/book-lists-overview'
+  defaults:
+    _controller: '\Drupal\lit\Controller\BookListsOverviewController::content'
+    _title: 'Book lists overview'
+  requirements:
+    _permission: 'access content'
+lit.books_without_images:
+  path: '/books-without-image'
+  defaults:
+    _controller: '\Drupal\lit\Controller\BooksController::withoutImagesList'
+    _title: 'Books without images'
+  requirements:
+    _permission: 'administer nodes'

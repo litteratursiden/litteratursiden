@@ -1,0 +1,33 @@
+uuid: 83b58953-7a6f-4b00-8ba2-49c89c6af5e1
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lit_notifications_comments
+    - node.type.lit_notifications_test
+  module:
+    - comment
+id: node.lit_notifications_test.field_lit_notifications_comments
+field_name: field_lit_notifications_comments
+entity_type: node
+bundle: lit_notifications_test
+label: 'Lit notifications comments'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 10
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

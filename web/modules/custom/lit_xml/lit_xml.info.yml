@@ -1,0 +1,9 @@
+name: Litteratursiden xml export
+type: module
+description: Makes it possible to export meta-data to XML.
+core: 8.x
+package: Litteratursiden
+
+dependencies:
+  # See issue 7146 'Deactivate XML module for deploy'
+  - dummy_module_to_prevent_enabling_on_live

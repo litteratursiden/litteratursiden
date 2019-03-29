@@ -1,0 +1,10 @@
+lit_comment_extra.load_more:
+  path: '/lit-comment-extra/load-more/{js}/{entity_type}/{entity}/{field_name}/{view_mode}/{last_comment_id}'
+  defaults:
+    _controller: '\Drupal\lit_comment_extra\Controller\CommentLoadMoreController::ajaxLoadMore'
+  requirements:
+    _custom_access: '\Drupal\lit_comment_extra\Controller\CommentLoadMoreController::ajaxLoadMoreAccess'
+  options:
+    parameters:
+      entity:
+        type: 'entity:{entity_type}'

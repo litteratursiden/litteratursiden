@@ -1,0 +1,5 @@
+lit_open_platform.settings:
+  title: Open platform
+  description: 'Configure the open platform system.'
+  parent: system.admin_config_services
+  route_name: lit_open_platform.settings

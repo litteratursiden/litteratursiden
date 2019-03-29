@@ -1,0 +1,36 @@
+id: lit_similar_tags
+label: Something similar tags relationships
+migration_group: term
+migration_tags:
+  - Drupal 6
+deriver: Drupal\taxonomy\Plugin\migrate\D6TermNodeDeriver
+source:
+  plugin: lit_term_node
+  vid: 1
+  node_type: noget_der_ligner
+process:
+  nid:
+    -
+      plugin: migration_lookup
+      migration: lit_similar_node
+      source: nid
+      no_stub: true
+    -
+      plugin: skip_on_empty
+      method: row
+  # The actual field name is dynamic and will be added by the builder.
+  field_similar_general_tags:
+    plugin: migration_lookup
+    migration: lit_term
+    source: tid
+    no_stub: true
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - lit_similar_node
+    - lit_term
+dependencies:
+  enforced:
+    module:
+      - lit_migrate

@@ -1,0 +1,17 @@
+name: Litteratursiden Migrate
+type: module
+description: Migration from old site
+core: 8.x
+package: Litteratursiden
+dependencies:
+  - migrate
+  - migrate_plus
+config_devel:
+  - migrate_plus.migration.lit_book_node
+  - migrate_plus.migration.lit_file
+  - migrate_plus.migration.lit_user
+  - migrate_plus.migration.lit_term
+  - migrate_plus.migration_group.file
+  - migrate_plus.migration_group.node
+  - migrate_plus.migration_group.user
+  - migrate_plus.migration_group.term

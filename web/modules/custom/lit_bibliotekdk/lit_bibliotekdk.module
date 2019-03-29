@@ -1,0 +1,76 @@
+<?php
+
+/**
+ * @file
+ * Contains lit_bibliotekdk.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+
+const BIBLIOTEK_DK_URL = 'https://bibliotek.dk/da/search/work/';
+
+/**
+ * Implements hook_help().
+ */
+function lit_bibliotekdk_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lit_bibliotekdk module.
+    case 'help.page.lit_bibliotekdk':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Covers integration with bibliotek.dk platform') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function lit_bibliotekdk_entity_extra_field_info() {
+  $extra = [];
+
+  // Add bibliotek.dk field to the book content type.
+  $extra['node']['book']['display']['field_bibliotekdk'] = [
+    'label' => t('Bibliotek.dk link'),
+    'description' => t('Link to the bibliotek.dk page.'),
+    'visible' => FALSE,
+  ];
+
+  return $extra;
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function lit_bibliotekdk_node_view(array &$build, NodeInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($entity->bundle() == 'book') {
+    // Display bibliotek.dk field on the book content type.
+    if ($display->getComponent('field_bibliotekdk')) {
+      $pid_value = $entity->get('field_book_pid')->getValue();
+      $pid = $pid_value[0]['value'] ?? NULL;
+
+      if ($pid) {
+        $url = Url::fromUri(BIBLIOTEK_DK_URL, [
+          'query' => [
+            'search_block_form' => $pid,
+            'fragment' => 'content',
+          ],
+          'absolute' => TRUE,
+          'attributes' => [
+            'target' => '_blank',
+          ],
+        ]);
+
+        $build['field_bibliotekdk'] = [
+          '#markup' => Link::fromTextAndUrl(t('Borrow at the library'), $url)->toString(),
+        ];
+      }
+    }
+  }
+}

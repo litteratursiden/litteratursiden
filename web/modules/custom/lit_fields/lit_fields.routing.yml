@@ -1,0 +1,10 @@
+lit_fields.render_entity_reference_tabs:
+  path: '/lit-fields/update-entity-reference-tabs/{entity_type}/{entity}/{mode}/{ajax_wrapper_id}'
+  defaults:
+    _controller: '\Drupal\lit_fields\Controller\EntityReferenceTabsController::ajaxUpdateTabs'
+  requirements:
+    _custom_access: '\Drupal\lit_fields\Controller\EntityReferenceTabsController::ajaxUpdateTabsAccess'
+  options:
+    parameters:
+      entity:
+        type: 'entity:{entity_type}'

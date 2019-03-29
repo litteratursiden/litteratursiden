@@ -1,0 +1,34 @@
+uuid: 467fc23e-d1ef-4585-8a1e-7596c62f4d3c
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.lit_notifications_test.field_lit_notifications_comments
+    - node.type.lit_notifications_test
+  module:
+    - comment
+    - user
+id: node.lit_notifications_test.default
+targetEntityType: node
+bundle: lit_notifications_test
+mode: default
+content:
+  field_lit_notifications_comments:
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
+  links:
+    weight: 100
+    region: content
+  social_media:
+    weight: null
+    region: content
+hidden:
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true

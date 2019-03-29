@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Exposes global functionality of the fields functionality.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function lit_fields_theme() {
+  return [
+    'like' => [
+      'variables' => [
+        'likes' => NULL,
+        'like_url' => NULL,
+      ],
+    ],
+    'entity_reference_tabs' => [
+      'render element' => 'element',
+      'template' => 'entity-reference-tabs',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for entity-reference-tabs.html.twig template.
+ */
+function template_preprocess_entity_reference_tabs(&$variables) {
+  $variables['attributes']['id'] = $variables['element']['#id'];
+}

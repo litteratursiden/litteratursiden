@@ -1,0 +1,21 @@
+<div class="container" style="padding-top: 25px;">
+    {% if books %}
+        <ul style="padding-left: 65px; padding-right: 65px;">
+            {% for book in books %}
+                <li>
+                    <a href="{{ path('entity.node.canonical', {'node': book.nid}) }}">{{ book.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div style="padding-left: 65px; padding-right: 65px;">
+            <a href="{{ path('lit.books_without_images', {'offset': offset}) }}">{{ 'Next page'|t }}</a>
+        </div>
+    {% else %}
+        <div style="padding-left: 65px; padding-right: 65px;">
+            {{ 'There is no more book without image.'|t }}
+        </div>
+        <div style="padding-left: 65px; padding-right: 65px;">
+            <a href="{{ path('lit.books_without_images', {'offset': offset}) }}">{{ 'Preview page'|t }}</a>
+        </div>
+    {% endif %}
+</div>

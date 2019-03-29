@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Exposes global functionality of the search functionality.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function lit_search_theme($existing, $type, $theme, $path) {
+  return [
+    'lit_search_autocomplete' => [
+      'variables' => [
+        'match' => '',
+        'books' => FALSE,
+        'authors' => FALSE,
+        "analyses" => FALSE,
+        "articles" => FALSE,
+        "blogs" => FALSE,
+        "debates" => FALSE,
+        "lists" => FALSE,
+        "interviews" => FALSE,
+        "reviews" => FALSE,
+        "similars" => FALSE,
+        "topics" => FALSE,
+      ],
+    ],
+  ];
+}

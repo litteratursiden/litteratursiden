@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies: {  }
+id: notifications
+label: Notifications
+bundles:
+  - analysis
+  - article
+  - blog
+  - book
+  - book_debate
+  - review
+  - topic
+entity_type: node
+global: false
+weight: 0
+flag_short: Notifications
+flag_long: ''
+flag_message: ''
+unflag_short: Notifications
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }
