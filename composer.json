@@ -220,7 +220,7 @@
         },
         "merge-plugin": {
             "include": [
-                "docroot/modules/custom/*/composer.json"
+                "web/modules/custom/*/composer.json"
             ]
         }
     }
