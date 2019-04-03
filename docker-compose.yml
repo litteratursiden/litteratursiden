@@ -50,6 +50,11 @@ services:
       - "1025"
       - "8025"
 
+  solr:
+    image: solr:6.6-alpine
+    ports:
+      - "8983"
+
   reverse-proxy:
     image: traefik  # The official Traefik docker image
     command: --api --docker  # Enables the web UI and tells Traefik to listen to docker

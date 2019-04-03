@@ -84,6 +84,8 @@
         "cweagans/composer-patches": "^1.6.5",
         "dinbror/blazy": "master",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/acquia_connector": "^1.16",
+        "drupal/acquia_purge": "^1.0@beta",
         "drupal/advagg": "^3.2",
         "drupal/block_exclude_pages": "^1.2",
         "drupal/bootstrap": "^3.5",
@@ -134,14 +136,14 @@
         "drupal/view_unpublished": "^1.0@alpha",
         "drupal/views_infinite_scroll": "^1.5",
         "drush/drush": "^9.0.0",
-        "vlucas/phpdotenv": "^2.4",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
         "kenwheeler/slick": "master",
+        "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "^8.6.0"
