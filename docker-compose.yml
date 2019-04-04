@@ -18,6 +18,8 @@ services:
       - PHP_XDEBUG_REMOTE_AUTOSTART=${PHP_XDEBUG_REMOTE_AUTOSTART:-0}
       - PHP_XDEBUG_REMOTE_HOST=${PHP_XDEBUG_REMOTE_HOST:-0.0.0.0}
       - PHP_XDEBUG_REMOTE_CONNECT_BACK=${PHP_XDEBUG_REMOTE_CONNECT_BACK:-0}
+      - PHP_MAX_EXECUTION_TIME=300
+      - PHP_MEMORY_LIMIT=512M
       # - PHP_MAIL=1 # Uncomment to enable mailhog
     depends_on:
       - mariadb
@@ -29,8 +31,6 @@ services:
     depends_on:
       - phpfpm
       - memcached
-    # ports:
-    #   - '80'
     volumes:
       - ${PWD}/.docker/vhost.conf:/etc/nginx/conf.d/default.conf:ro
       - ./:/app:delegated
