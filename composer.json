@@ -98,6 +98,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
         "drupal/devel": "^1.2",
+        "drupal/elasticsearch_connector": "^6.0@alpha",
         "drupal/email_registration": "1.0-rc5",
         "drupal/eu_cookie_compliance": "^1.2",
         "drupal/extrafield_views_integration": "^1.0",
