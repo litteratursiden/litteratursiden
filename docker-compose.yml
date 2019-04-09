@@ -51,10 +51,13 @@ services:
       - "1025"
       - "8025"
 
-  solr:
-    image: solr:6.6-alpine
+  es:
+    image: elasticsearch:6.7.0
+    environment:
+      - discovery.type=single-node
     ports:
-      - "8983"
+      - "9200"
+      - "9300"
 
   reverse-proxy:
     image: traefik

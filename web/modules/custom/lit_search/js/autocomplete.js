@@ -1,10 +1,9 @@
 (function ($, Drupal, drupalSettings) {
-
   'use strict';
 
   var length = 3;
 
-  var _delay = function () {
+  var _delay = function _delay() {
     var timer = 0;
     return function (callback, ms) {
       clearTimeout(timer);
@@ -18,8 +17,10 @@
         var el = $(this);
         var totalEl = el.parent().next('.lit-search-autocomplete-total');
         var resultsEl = totalEl.parent().next('.lit-search-autocomplete-results');
+
         el.parent().find('.loader').remove();
         el.parent().append('<div class="loader"></div>');
+
         _delay(function () {
           if (el.val() && el.val().length >= length) {
             jQuery.ajax({
@@ -32,8 +33,10 @@
                 resultsEl.html('');
                 el.parent().find('.loader').remove();
                 el.parent().addClass('active');
+
                 totalEl.html('(' + result.total + ')');
                 resultsEl.html('<div class="container">' + result.data + '</div>');
+
                 $(document).click(function(event) {
                   if ( !$(event.target).parents().hasClass('lit-search-autocomplete-results')) {
                     $(document).find('.lit-search-autocomplete-total').html('');

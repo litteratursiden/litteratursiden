@@ -3,10 +3,11 @@
 namespace Drupal\lit_search;
 
 /**
- * Class SolrGroup
+ * Class SearchGroup
+ *
  * @package Drupal\lit_search
  */
-class SolrGroup {
+class SearchGroup {
 
   /**
    * @var string
@@ -24,7 +25,7 @@ class SolrGroup {
   private $items = [];
 
   /**
-   * SolrGroup constructor.
+   * SearchGroup constructor.
    *
    * @param string $title
    */
