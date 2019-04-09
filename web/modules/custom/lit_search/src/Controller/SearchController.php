@@ -2,12 +2,11 @@
 
 namespace Drupal\lit_search\Controller;
 
+use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Controller\ControllerBase;
-use Drupal\facets\Exception\Exception;
 use Drupal\lit_search\SearchGroup;
 use Drupal\search_api\Entity\Index;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Zend\Diactoros\Response\JsonResponse;
 
 /**
@@ -44,46 +43,56 @@ class SearchController extends ControllerBase {
    */
   public function autocomplete(Request $request) {
     $match = $request->query->get('q');
-
     $total = 0;
-    $data = '';
 
     if ($match && strlen($match) >= 3) {
-      // Build query.
-      $query = $this->index->query();
-      $query->keys($match);
-      $results = $query->execute();
+      // Check if cached result exists.
+      $cid = 'lit_search_' . sha1($match);
+      $data = \Drupal::cache()->get($cid);
 
-      // Get groups from result.
-      $response = $results->getExtraData('elasticsearch_response', []);
-      $groups = $response['aggregations']['groups']['buckets'] ?? [];
+      if (!$data) {
+        // Build query.
+        $query = $this->index->query();
+        $query->keys($match);
+        $results = $query->execute();
 
-      // Get total number of result.
-      $total = $response['hits']['total'];
+        // Get groups from result.
+        $response = $results->getExtraData('elasticsearch_response', []);
+        $groups = $response['aggregations']['groups']['buckets'] ?? [];
 
-      // Create and theme response.
-      $items = $this->transformResults($groups);
-      $theme = [
-        '#theme' => 'lit_search_autocomplete',
-        '#match' => $match,
-        '#books' => isset($items['book']) ? $items['book']->setTitle(t('Books')) : $this->createGroup(t('Books')),
-        '#authors' => isset($items['authorportrait']) ? $items['authorportrait']->setTitle(t('Authors')) : $this->createGroup(t('Authors')),
-        "#analyses" => isset($items['analysis']) ? $items['analysis']->setTitle(t('Analyses')) : $this->createGroup(t('Analyses')),
-        "#articles" => isset($items['article']) ? $items['article']->setTitle(t('Articles')) : $this->createGroup(t('Articles')),
-        "#blogs" => isset($items['blog']) ? $items['blog']->setTitle(t('Blogs')) : $this->createGroup(t('Blogs')),
-        "#lists" => isset($items['booklist']) ? $items['booklist']->setTitle(t('Book lists')) : $this->createGroup(t('Book lists')),
-        "#interviews" => isset($items['interview']) ? $items['interview']->setTitle(t('Interviews')) : $this->createGroup(t('Interviews')),
-        "#reviews" => isset($items['review']) ? $items['review']->setTitle(t('Reviews')) : $this->createGroup(t('Reviews')),
-        "#similars" => isset($items['similar']) ? $items['similar']->setTitle(t('Something similars')) : $this->createGroup(t('Something similars')),
-        "#topics" => isset($items['topic']) ? $items['topic']->setTitle(t('Topics')) : $this->createGroup(t('Topics')),
-      ];
-      $data = render($theme);
+        // Get total number of result.
+        $total = $response['hits']['total'];
+
+        // Create and theme response.
+        $items = $this->transformResults($groups);
+        $theme = [
+          '#theme' => 'lit_search_autocomplete',
+          '#match' => $match,
+          '#books' => isset($items['book']) ? $items['book']->setTitle(t('Books')) : $this->createGroup(t('Books')),
+          '#authors' => isset($items['authorportrait']) ? $items['authorportrait']->setTitle(t('Authors')) : $this->createGroup(t('Authors')),
+          "#analyses" => isset($items['analysis']) ? $items['analysis']->setTitle(t('Analyses')) : $this->createGroup(t('Analyses')),
+          "#articles" => isset($items['article']) ? $items['article']->setTitle(t('Articles')) : $this->createGroup(t('Articles')),
+          "#blogs" => isset($items['blog']) ? $items['blog']->setTitle(t('Blogs')) : $this->createGroup(t('Blogs')),
+          "#lists" => isset($items['booklist']) ? $items['booklist']->setTitle(t('Book lists')) : $this->createGroup(t('Book lists')),
+          "#interviews" => isset($items['interview']) ? $items['interview']->setTitle(t('Interviews')) : $this->createGroup(t('Interviews')),
+          "#reviews" => isset($items['review']) ? $items['review']->setTitle(t('Reviews')) : $this->createGroup(t('Reviews')),
+          "#similars" => isset($items['similar']) ? $items['similar']->setTitle(t('Something similars')) : $this->createGroup(t('Something similars')),
+          "#topics" => isset($items['topic']) ? $items['topic']->setTitle(t('Topics')) : $this->createGroup(t('Topics')),
+        ];
+
+        $data = [
+          'total' => $total,
+          'data' => render($theme),
+        ];
+
+        \Drupal::cache()->set($cid, $data, \Drupal::time()->getRequestTime() + 300, ['search_autocomplete']);
+      }
+      else {
+        $data = $data->data;
+      }
    }
 
-    return new JsonResponse([
-      'total' => $total,
-      'data' => $data,
-    ]);
+    return new JsonResponse($data);
   }
 
   /**
