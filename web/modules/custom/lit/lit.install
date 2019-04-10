@@ -8,27 +8,6 @@
 use Drupal\file\Entity\File;
 
 /**
- * Implements hook_install().
- */
-function lit_install() {
-  _setup_default_images();
-}
-
-/**
- * Copy placeholder image.
- */
-function lit_update_8001() {
-  _setup_default_images();
-}
-
-/**
- * Uninstall 'Migrate' module with all dependents.
- */
-function lit_update_8002() {
-  \Drupal::service('module_installer')->uninstall(['migrate']);
-}
-
-/**
  * Set up default images.
  */
 function _setup_default_images() {
@@ -76,4 +55,40 @@ function _setup_default_images() {
       }
     }
   }
+}
+
+/**
+ * Implements hook_install().
+ */
+function lit_install() {
+  _setup_default_images();
+}
+
+/**
+ * Copy placeholder image.
+ */
+function lit_update_8001() {
+  _setup_default_images();
+}
+
+/**
+ * Uninstall 'Migrate' module with all dependents.
+ */
+function lit_update_8002() {
+  \Drupal::service('module_installer')->uninstall(['migrate']);
+}
+
+/**
+ * Remove old migration modules.
+ */
+function lit_update_8003() {
+  $query = \Drupal::database()->delete('key_value')
+    ->condition('collection', 'system.schema')
+    ->condition('name', 'migrate_tools')
+    ->execute();
+
+  $query = \Drupal::database()->delete('key_value')
+    ->condition('collection', 'system.schema')
+    ->condition('name', 'migrate_plus')
+    ->execute();
 }

@@ -40,30 +40,35 @@ function lit_user_entity_extra_field_info() {
     'label' => t('Roles'),
     'description' => t('User roles.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   $extra['user']['user']['display']['created'] = [
     'label' => t('Created'),
     'description' => t('Date when user was created.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   $extra['user']['user']['display']['tools'] = [
     'label' => t('Tools Menu'),
     'description' => t('The tools menu.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   $extra['user']['user']['display']['edit_profile_link'] = [
     'label' => t('Profile edit link'),
     'description' => t('The profile edit link.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   $extra['user']['user']['display']['contact_link'] = [
     'label' => t('Contact link'),
     'description' => t('The user contact link.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   return $extra;

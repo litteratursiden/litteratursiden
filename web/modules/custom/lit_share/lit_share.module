@@ -21,6 +21,7 @@ function lit_share_entity_extra_field_info() {
       $extra['node'][$bundle->id()]['display']['social_media'] = [
         'label' => t('Social media'),
         'visible' => TRUE,
+        'weight' => 0,
       ];
     }
   }

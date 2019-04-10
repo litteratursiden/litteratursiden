@@ -40,6 +40,7 @@ function lit_bibliotekdk_entity_extra_field_info() {
     'label' => t('Bibliotek.dk link'),
     'description' => t('Link to the bibliotek.dk page.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   return $extra;

@@ -56,6 +56,7 @@ function lit_entity_extra_field_info() {
       'label' => $label_prefix . $field_definition->getLabel(),
       'description' => $field_definition->getDescription(),
       'visible' => FALSE,
+      'weight' => 0,
     ];
   }
 
@@ -68,6 +69,7 @@ function lit_entity_extra_field_info() {
     'label' => t('Owner full name'),
     'description' => t('The full name of the node creator.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   foreach (NodeType::loadMultiple() as $bundle) {
@@ -77,12 +79,14 @@ function lit_entity_extra_field_info() {
       'label' => t('Owner portrait'),
       'description' => t('Shows entity owner portrait.'),
       'visible' => FALSE,
+      'weight' => 0,
     ];
 
     $extra['node'][$bundle->id()]['display']['posted'] = [
       'label' => t('Posted'),
       'description' => t('Date posted.'),
       'visible' => TRUE,
+      'weight' => 0,
     ];
   }
 
@@ -94,18 +98,21 @@ function lit_entity_extra_field_info() {
     'label' => t('Review'),
     'description' => t('Shows latest review for the book.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   $extra['node']['book']['display']['latest_analysis'] = [
     'label' => t('Analysis'),
     'description' => t('Shows latest analysis for the book.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   $extra['node']['author_portrait']['display']['latest_reviewed_book'] = [
     'label' => t('Latest reviewed book link'),
     'description' => t('Show a link to the latest reviewed book.'),
     'visible' => FALSE,
+    'weight' => 0,
   ];
 
   return $extra;

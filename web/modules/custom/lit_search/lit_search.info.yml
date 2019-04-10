@@ -3,3 +3,5 @@ type: module
 description: Extends search API for the Litteratursiden
 core: 8.x
 package: Litteratursiden
+dependencies:
+  - elasticsearch_connector
