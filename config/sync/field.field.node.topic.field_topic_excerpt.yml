@@ -1,0 +1,21 @@
+uuid: dec1ef2a-f610-42ae-8cae-e05faf6d8152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_excerpt
+    - node.type.topic
+  module:
+    - text
+id: node.topic.field_topic_excerpt
+field_name: field_topic_excerpt
+entity_type: node
+bundle: topic
+label: Excerpt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

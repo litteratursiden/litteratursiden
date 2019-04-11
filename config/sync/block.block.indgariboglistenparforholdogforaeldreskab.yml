@@ -1,0 +1,31 @@
+uuid: be011a23-429d-40fd-9fd4-00282e6d9622
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:35e4d0ec-bbc3-4c8b-9552-06cb80e8c22e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenparforholdogforaeldreskab
+theme: litteratursiden
+region: content
+weight: 598
+provider: null
+plugin: 'block_content:35e4d0ec-bbc3-4c8b-9552-06cb80e8c22e'
+settings:
+  id: 'block_content:35e4d0ec-bbc3-4c8b-9552-06cb80e8c22e'
+  label: 'Indgår i boglisten: Parforhold og forældreskab'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/modern-romance\r\n/boeger/kaerlighedens-gang\r\n/boeger/fortunately-milk\r\n/boeger/scummy-mummies\r\n/boeger/jag-ar-din-flickvan-nu\r\n/boeger/hver-dag-starter-det-forfra-en-slags-graphic-novel\r\n/boeger/mona\r\n/boeger/hurrah-gin\r\n/boeger/os-3\r\n/boeger/gemma-bovery\r\n/boeger/homo-metropolis\r\n/boeger/kama-sutra-0"
+    negate: false
+    context_mapping: {  }

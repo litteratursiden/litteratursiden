@@ -1,0 +1,31 @@
+uuid: c5568bd4-eaca-4089-8ce1-d6ee5a0d8139
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c1f1caa7-299e-4294-a7b1-429c0fc4bbf5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenholocaust
+theme: litteratursiden
+region: content
+weight: 254
+provider: null
+plugin: 'block_content:c1f1caa7-299e-4294-a7b1-429c0fc4bbf5'
+settings:
+  id: 'block_content:c1f1caa7-299e-4294-a7b1-429c0fc4bbf5'
+  label: 'Indgår i boglisten: Holocaust'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/feber-ved-daggry\r\n/boeger/maske-esther\r\n/boeger/mischling\r\n/boeger/de-udvalgte-1\r\n/boeger/de-fattige-i-lodz\r\n/boeger/vidnesbyrd\r\n/boeger/sarahs-nogle\r\n/boeger/brun-sne\r\n/boeger/i-hovedet-pa-bruno-schulz\r\n/boeger/jeg-hedder-ikke-miriam\r\n/boeger/pigen-fra-auschwitz\r\n/boeger/claras-krig\r\n"
+    negate: false
+    context_mapping: {  }

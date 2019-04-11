@@ -1,0 +1,31 @@
+uuid: 642f2b7b-fb09-4675-b948-555878c531f7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:24ad12da-c3a0-4169-8a60-d291d22d01e5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensorgiborneboger
+theme: litteratursiden
+region: content
+weight: 67
+provider: null
+plugin: 'block_content:24ad12da-c3a0-4169-8a60-d291d22d01e5'
+settings:
+  id: 'block_content:24ad12da-c3a0-4169-8a60-d291d22d01e5'
+  label: 'Indgår i boglisten: Sorg og død i børnebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/bezunk-og-egernet\r\n/boeger/brodrene-lovehjerte\r\n/boeger/snesosteren-en-julehistorie\r\n/boeger/nar-forst-man-har-sagt-ja\r\n/boeger/nar-jeg-savner-min-far\r\n/boeger/baglaensk\r\n/boeger/ellens-ark\r\n/boeger/annas-himmel\r\n/boeger/baglaensk\r\n/boeger/monster-2\r\n/boeger/ud-med-knud\r\n/boeger/langt-fra-det-hvide-hus\r\n/boeger/helikopter"
+    negate: false
+    context_mapping: {  }

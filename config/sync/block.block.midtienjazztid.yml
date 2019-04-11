@@ -1,0 +1,31 @@
+uuid: 55c7c159-096a-4ba8-9426-9c783bfe4894
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7006f678-b87c-48cc-88a5-9f54a258d0d9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: midtienjazztid
+theme: litteratursiden
+region: content
+weight: 627
+provider: null
+plugin: 'block_content:7006f678-b87c-48cc-88a5-9f54a258d0d9'
+settings:
+  id: 'block_content:7006f678-b87c-48cc-88a5-9f54a258d0d9'
+  label: 'Midt i en jazztid'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/knud-sonderby
+    negate: false
+    context_mapping: {  }

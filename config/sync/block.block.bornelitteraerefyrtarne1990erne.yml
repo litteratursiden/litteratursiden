@@ -1,0 +1,31 @@
+uuid: 32afd8c8-dd4d-478f-8644-d54a44dcd45f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:adf2ea07-f84c-4831-bc57-f427e6c3c5e7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: bornelitteraerefyrtarne1990erne
+theme: litteratursiden
+region: content
+weight: 685
+provider: null
+plugin: 'block_content:adf2ea07-f84c-4831-bc57-f427e6c3c5e7'
+settings:
+  id: 'block_content:adf2ea07-f84c-4831-bc57-f427e6c3c5e7'
+  label: 'Børnelitterære fyrtårne: 1990erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/bornelitteraere-fyrtarne-gennem-tiden
+    negate: false
+    context_mapping: {  }

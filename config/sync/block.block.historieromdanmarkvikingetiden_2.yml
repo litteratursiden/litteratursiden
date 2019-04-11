@@ -1,0 +1,31 @@
+uuid: 6ce6300b-552b-40a1-97a8-7ac644fda8ee
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:fb7028aa-f5e6-495d-b4b3-daa7a91d7425'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: historieromdanmarkvikingetiden_2
+theme: litteratursiden
+region: content
+weight: 349
+provider: null
+plugin: 'block_content:fb7028aa-f5e6-495d-b4b3-daa7a91d7425'
+settings:
+  id: 'block_content:fb7028aa-f5e6-495d-b4b3-daa7a91d7425'
+  label: 'Historier om Danmark: Vikingetiden'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/rode-orm-12\r\n/boeger/den-hellige-knud\r\n/boeger/den-sidste-valkyrie\r\n/boeger/hard-er-mit-lands-lov\r\n/boeger/vindenes-alter\r\n/boeger/valhalla-den-samlede-saga-bind-1\r\n/boeger/ragnhilds-saga\r\n/boeger/ragnhilds-faerd\r\n/boeger/erik-den-rode-skibet-og-svaerdet\r\n/boeger/sven-tveskaeg-danernes-sidste-viking\r\n/boeger/erik-menneskeson\r\n/boeger/oldtidssagaerne-bd-1-og-bind-2\r\n/boeger/kongen-der-sendte-paven-en-fugl"
+    negate: false
+    context_mapping: {  }

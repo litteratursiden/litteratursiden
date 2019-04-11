@@ -1,0 +1,31 @@
+uuid: abcfac7e-683a-483c-a2f5-1345febc86fd
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ea219eed-0956-4efe-b39a-0ef318775657'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: degodelinserfrastatoil.omhellehellenedtilhundene
+theme: litteratursiden
+region: content
+weight: 762
+provider: null
+plugin: 'block_content:ea219eed-0956-4efe-b39a-0ef318775657'
+settings:
+  id: 'block_content:ea219eed-0956-4efe-b39a-0ef318775657'
+  label: Artikel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/fokus-helle-helle
+    negate: false
+    context_mapping: {  }

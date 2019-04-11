@@ -1,0 +1,31 @@
+uuid: b01d2ee3-5a6e-4987-a40d-b8886e7740be
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:322812bd-9946-4a01-a482-19ee314d8ed5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendanskedebutanter2012
+theme: litteratursiden
+region: content
+weight: 381
+provider: null
+plugin: 'block_content:322812bd-9946-4a01-a482-19ee314d8ed5'
+settings:
+  id: 'block_content:322812bd-9946-4a01-a482-19ee314d8ed5'
+  label: 'Indgår i boglisten: Danske debutanter 2012'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/bid\r\n/boeger/viktor-horvsovsky\r\n/boeger/sa-vi-her\r\n/boeger/privat-skov\r\n/boeger/oksen-ligger-ved-traeets-fod\r\n/boeger/min-mor-siger\r\n/boeger/jeg-aeder-mig-selv-som-lyng\r\n/boeger/den-stjalne-vej\r\n/boeger/flex-death\r\n/boeger/uro\r\n/boeger/dunhammere-spidder-himlen\r\n/boeger/koordinater"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 2ceb3733-fdf5-414f-ba90-9c137f1a5068
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1fee192c-2cd2-4142-982c-d2a5be3b5743'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfantasy
+theme: litteratursiden
+region: content
+weight: 435
+provider: null
+plugin: 'block_content:1fee192c-2cd2-4142-982c-d2a5be3b5743'
+settings:
+  id: 'block_content:1fee192c-2cd2-4142-982c-d2a5be3b5743'
+  label: 'Indgår i boglisten: Fantasy'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/odinsbarn\r\n/boeger/morika-blodets-band\r\n/boeger/ravnenes-hvisken\r\n/boeger/morkets-son-2-graenselandet\r\n/boeger/runemagikeren\r\n/boeger/kampen-om-tronen\r\n/boeger/de-verdensforviste\r\n/boeger/revolvermanden\r\n/boeger/jonathan-strange-mr-norrell\r\n/boeger/eragon\r\n/boeger/shamran-den-som-kommer\r\n/boeger/froken-peregrines-hjem-saelsomme-born\r\n/boeger/harry-potter-og-de-vises-sten\r\n/boeger/hobbitten-0\r\n/boeger/eventyret-om-ringen-0\r\n/boeger/englen-angelologi\r\n/boeger/svovlild\r\n/boeger/stalets-vilje\r\n/boeger/gorlans-ruiner\r\n/boeger/djaevelens-laerling\r\n/boeger/den-fortabte-helt\r\n/boeger/den-rode-pyramide\r\n/boeger/neverwhere\r\n/boeger/lysets-hjerte-0\r\n"
+    negate: false
+    context_mapping: {  }

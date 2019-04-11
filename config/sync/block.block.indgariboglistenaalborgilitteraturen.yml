@@ -1,0 +1,31 @@
+uuid: e87e51fe-12d3-438a-bcd9-1ecdd7a3a1b4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1a469d16-fa7f-4031-9990-47916bb22611'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenaalborgilitteraturen
+theme: litteratursiden
+region: content
+weight: 795
+provider: null
+plugin: 'block_content:1a469d16-fa7f-4031-9990-47916bb22611'
+settings:
+  id: 'block_content:1a469d16-fa7f-4031-9990-47916bb22611'
+  label: 'Indgår i boglisten: Aalborg i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fuga-0\r\n/boeger/natportier\r\n/boeger/krigsfaren\r\n/boeger/rab-pa-lang-afstand\r\n/boeger/nedrullede-persienner\r\n/boeger/nordkraft\r\n/boeger/en-kvinde-med-hat\r\n/boeger/nederlagenes\r\n/boeger/ale-langskaegs-saga-livsbillede-fra-vikingetiden\r\n/boeger/sin-brors-vogter\r\n/boeger/tretten-er-ude\r\n/boeger/og-mennesket-vandt-den-hele-verden\r\n/boeger/tragedien-i-torvegade\r\n/boeger/sohaner\r\n/boeger/kaerlighedens-sommer-0\r\n/boeger/drejers-hotel\r\n/boeger/var-jeg-end-en-tabe\r\n/boeger/da-kaerligheden-kom-til-byen\r\n/boeger/stenen-i-strommen\r\n/boeger/nordlige-rytmer\r\n/boeger/traktorstedet-og-cafe-danmark\r\n/boeger/du-blinkende-klare-stjerne\r\n/boeger/dig-og-mig-ved-daggry\r\n/boeger/noget-du-skal-vide\r\n/boeger/jorgen-stein-torden-i-syd\r\n/boeger/kildespring\r\n/boeger/batmans-have\r\n/boeger/girafhuset\r\n/boeger/aalborgdage\r\n/boeger/drengene-fra-sankt-petri\r\n/boeger/reparation-af-spunsvaegge\r\n/boeger/fryd\r\n/boeger/ejnar\r\n/boeger/den-sene-host\r\n/boeger/godheden-selv\r\n/boeger/arbejdssky\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,72 @@
+uuid: 9d171d07-4482-43f3-bbff-a0ab6fff499e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.similar.field_similar_author
+    - field.field.node.similar.field_similar_body
+    - field.field.node.similar.field_similar_comments
+    - field.field.node.similar.field_similar_cover_image
+    - field.field.node.similar.field_similar_files
+    - field.field.node.similar.field_similar_general_tags
+    - field.field.node.similar.field_similar_reference
+    - field.field.node.similar.field_similar_reference_book
+    - field.field.node.similar.field_similar_reference_review
+    - field.field.node.similar.field_similar_spotbox_image
+    - image.style.search_index
+    - node.type.similar
+  module:
+    - image
+    - text
+    - user
+id: node.similar.search_index
+targetEntityType: node
+bundle: similar
+mode: search_index
+content:
+  field_similar_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_similar_cover_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: search_index
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_similar_general_tags:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  posted:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_similar_author: true
+  field_similar_comments: true
+  field_similar_files: true
+  field_similar_like: true
+  field_similar_reference: true
+  field_similar_reference_book: true
+  field_similar_reference_review: true
+  field_similar_spotbox_image: true
+  flag_bookmark: true
+  flag_like: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  social_media: true

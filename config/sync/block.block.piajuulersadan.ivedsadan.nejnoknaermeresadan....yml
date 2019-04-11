@@ -1,0 +1,31 @@
+uuid: 978cd727-a4ca-4b6f-afdd-7321aa71c0cc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:3fc7ceb5-126d-4ede-8eb1-c68925f49727'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: piajuulersadan.ivedsadan.nejnoknaermeresadan...
+theme: litteratursiden
+region: content
+weight: 876
+provider: null
+plugin: 'block_content:3fc7ceb5-126d-4ede-8eb1-c68925f49727'
+settings:
+  id: 'block_content:3fc7ceb5-126d-4ede-8eb1-c68925f49727'
+  label: 'Reportage '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/af-sted-til-stede\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 1cc2819a-7679-4837-afec-f23d070a401f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: sjovebogeratlaesesammen_2
+theme: litteratursiden
+region: content
+weight: 66
+provider: null
+plugin: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+settings:
+  id: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+  label: 'Indgår i: Sjove bøger at læse sammen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vitello-28-historier-fra-til\r\n/boeger/morgenthalers-abc\r\n/boeger/jorgen-og-else-laver-et-menneskebarn-eller\r\n/boeger/sallys-far-er-sygt-pinlig\r\n/boeger/bogen-om-pippi-langstrompe\r\n/boeger/villads-fra-valby\r\n/boeger/tro-hab-og-gorgonzola\r\n/boeger/iqbal-farooq-og-den-jyske-forbandelse\r\n/boeger/wimpy-kid-nedsmeltning\r\n/boeger/da-mumbo-jumbo-blev-kaempestor\r\n/boeger/godnat-og-sjov-godt\r\n/boeger/lasse-leif-og-de-hemmelige-kaeledyr\r\n/boeger/ternet-ninja"
+    negate: false
+    context_mapping: {  }

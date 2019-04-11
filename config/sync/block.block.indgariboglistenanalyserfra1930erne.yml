@@ -1,0 +1,31 @@
+uuid: df3da38d-615f-42a5-9ad9-8186b76409b3
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ba491e0c-52b4-4559-b752-9a9439f6b9d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra1930erne
+theme: litteratursiden
+region: content
+weight: 807
+provider: null
+plugin: 'block_content:ba491e0c-52b4-4559-b752-9a9439f6b9d6'
+settings:
+  id: 'block_content:ba491e0c-52b4-4559-b752-9a9439f6b9d6'
+  label: 'Indgår i boglisten: Analyser fra 1930érne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/melodien-der-blev-vaek-larsens-komedie-i-21-billeder\r\n/boeger/der-sidder-en-mand-i-en-sporvogn\r\n/boeger/haervaerk\r\n/boeger/det-underste-land\r\n/boeger/midt-i-en-jazztid\r\n"
+    negate: false
+    context_mapping: {  }

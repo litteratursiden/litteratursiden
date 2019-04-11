@@ -1,0 +1,31 @@
+uuid: ceceaebf-60a7-43f7-b630-5aebb2a000bb
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:3ef479ed-3ca0-48b7-86e0-fd363cb63c5d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: omdondelillodenfaldendemand
+theme: litteratursiden
+region: content
+weight: 667
+provider: null
+plugin: 'block_content:3ef479ed-3ca0-48b7-86e0-fd363cb63c5d'
+settings:
+  id: 'block_content:3ef479ed-3ca0-48b7-86e0-fd363cb63c5d'
+  label: 'Om Don DeLillo: Den faldende mand'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/den-faldende-mand
+    negate: false
+    context_mapping: {  }

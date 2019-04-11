@@ -1,0 +1,31 @@
+uuid: 0661b70d-7e93-4179-885a-28fbd30f612f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:90e6d132-6703-475e-8c21-a190358ca7ac'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenafrikanskeforfattere
+theme: litteratursiden
+region: content
+weight: 798
+provider: null
+plugin: 'block_content:90e6d132-6703-475e-8c21-a190358ca7ac'
+settings:
+  id: 'block_content:90e6d132-6703-475e-8c21-a190358ca7ac'
+  label: 'Indgår i boglisten: Afrikanske forfattere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/en-halv-gul-sol\r\n/boeger/yacoubians-hus\r\n/boeger/en-storm-kom-fra-paradiset\r\n/boeger/en-sang-i-rodt\r\n/boeger/ashanti-skonheden\r\n/boeger/regnbarnet\r\n/boeger/jeg-glemmer\r\n/boeger/vi-skal-have-nye-navne\r\n/boeger/drengear\r\n/boeger/ungdomsar\r\n/boeger/sommertid-1\r\n/boeger/sitas-voldtaegt\r\n/boeger/sovngaengerland\r\n/boeger/shahrazads-soster\r\n/boeger/forbindelser\r\n/boeger/til-minde-om-kaerligheden\r\n/boeger/paradis-2\r\n/boeger/tavshedens-o\r\n/boeger/om-min-mor\r\n/boeger/drengen-der-taemmede-vinden\r\n/boeger/allah-er-ikke-forpligtet\r\n/boeger/cafe-karnak\r\n/boeger/nilens-vor-frue\r\n/boeger/tre-staerke-kvinder\r\n/boeger/tiggernes-strejke\r\n/boeger/farlig-kaerlighed\r\n/boeger/stjernebogen\r\n/boeger/sultens-vej\r\n/boeger/jaime-bunda-hemmelig-agent\r\n/boeger/soldaterdreng\r\n/boeger/ga-vaek-ghana\r\n/boeger/ake\r\n/boeger/isara\r\n/boeger/uden-navn-0\r\n/boeger/opbrud-0\r\n/boeger/undervejs-afrika-fortaeller"
+    negate: false
+    context_mapping: {  }

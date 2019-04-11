@@ -1,0 +1,36 @@
+uuid: 4789d42b-59cc-46b1-bd4b-fe49cf03711a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spot
+    - field.field.block_content.spot.field_spot_content
+id: block_content.spot.default
+targetEntityType: block_content
+bundle: spot
+mode: default
+content:
+  field_spot_content:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

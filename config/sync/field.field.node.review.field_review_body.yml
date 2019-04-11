@@ -1,0 +1,21 @@
+uuid: dd07db91-d2b8-4cef-b6fd-2c88820650cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_body
+    - node.type.review
+  module:
+    - text
+id: node.review.field_review_body
+field_name: field_review_body
+entity_type: node
+bundle: review
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

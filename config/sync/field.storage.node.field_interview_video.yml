@@ -1,0 +1,19 @@
+uuid: f97c729b-91cb-4a05-81b4-5f8c9f2fb8f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - video_embed_field
+id: node.field_interview_video
+field_name: field_interview_video
+entity_type: node
+type: video_embed_field
+settings: {  }
+module: video_embed_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

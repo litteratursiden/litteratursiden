@@ -1,0 +1,31 @@
+uuid: 4dcdb4fe-6147-44de-ab88-97383c3ca03d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c3f0ab80-7f8a-473b-a268-4bb44a9e77ca'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensydstaterne
+theme: litteratursiden
+region: content
+weight: 105
+provider: null
+plugin: 'block_content:c3f0ab80-7f8a-473b-a268-4bb44a9e77ca'
+settings:
+  id: 'block_content:c3f0ab80-7f8a-473b-a268-4bb44a9e77ca'
+  label: 'Indgår i boglisten: Sydstaterne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/inden-vi-blev-jeres\r\n/boeger/syng-levende-og-dode-syng\r\n/boeger/den-underjordiske-jernbane\r\n/boeger/da-bunden-faldt-ud-af-himlen\r\n/boeger/kaerlighed-1\r\n/boeger/saet-en-vagtpost-ud\r\n/boeger/hjem-1\r\n/boeger/sov-som-de-dode\r\n/boeger/onkel-toms-hytte\r\n/boeger/arvesynder\r\n/boeger/en-regnbue-af-glas\r\n/boeger/beach-music\r\n/boeger/savannah\r\n/boeger/absalom-absalom\r\n/boeger/stegte-gronne-tomater\r\n/boeger/vejen-vaek-0\r\n/boeger/generalens-kvinde\r\n/boeger/rhett-butlers-fortaelling\r\n/boeger/ford-county\r\n/boeger/et-malet-hus\r\n/boeger/nord-og-syd\r\n/boeger/den-kendte-verden\r\n/boeger/hjertet-er-en-ensom-vandrer\r\n/boeger/borte-med-blaesten\r\n/boeger/alle-helgeners-fest\r\n/boeger/scarlett\r\n/boeger/minder-i-mol\r\n/boeger/sydens-lys\r\n/boeger/niceville\r\n/boeger/den-lille-ven\r\n/boeger/aegteskab-amatorer\r\n/boeger/farven-lilla\r\n/boeger/da-bunden-faldt-ud-af-himlen\r\n/boeger/lille-mands-dod\r\n/boeger/skaberfuglen\r\n/boeger/kviksand-overgang-og-novellerne-nella-larsens-samlede-vaerker\r\n/boeger/nej-roman\r\n/boeger/biernes-hemmelige-liv\r\n/boeger/havfruestolen"
+    negate: false
+    context_mapping: {  }

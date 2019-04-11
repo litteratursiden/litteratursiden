@@ -1,0 +1,31 @@
+uuid: 47420032-72fb-457a-9d94-c78d2d726b6d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:4384c033-c39d-4ad8-8ddc-d1a821e9e6aa'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfaedreogsonner
+theme: litteratursiden
+region: content
+weight: 461
+provider: null
+plugin: 'block_content:4384c033-c39d-4ad8-8ddc-d1a821e9e6aa'
+settings:
+  id: 'block_content:4384c033-c39d-4ad8-8ddc-d1a821e9e6aa'
+  label: 'Indgår i boglisten: Fædre og sønner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/marhund\r\n/boeger/girafhuset\r\n/boeger/en-uskyldig-familie\r\n/boeger/goat-mountain\r\n/boeger/niksen\r\n/boeger/et-lille-liv\r\n/boeger/land-i-datid\r\n/boeger/30-kilometer-i-sekundet\r\n/boeger/sonner-af-maend\r\n/boeger/instruktoren\r\n/boeger/sten-saks-papir\r\n/boeger/sorte-scener\r\n/boeger/stemmen\r\n/boeger/lillebror\r\n/boeger/sunset-park\r\n/boeger/ovenpa-er-der-stille\r\n/boeger/et-eventyr-0\r\n/boeger/submarino\r\n/boeger/bombaygryde\r\n/boeger/gud-taler-ud\r\n/boeger/telegraph-avenue\r\n/boeger/maskeblomstfamilien\r\n/boeger/snedage\r\n/boeger/mesteren-fra-petersborg\r\n/boeger/den-hvide-konge\r\n/boeger/springet-0\r\n/boeger/de-nogne-kvinders-o\r\n/boeger/andre-steder\r\n/boeger/sa-hojt-var-du-elsket\r\n/boeger/passionsfrugten\r\n/boeger/min-gronne-himmel\r\n/boeger/lido\r\n/boeger/finn-john-og-gregers\r\n/boeger/isaak-katedralen\r\n/boeger/en-amerikaners-lidelser\r\n/boeger/indtil-jeg-finder-dig\r\n/boeger/sidste-nat-i-twisted-river\r\n/boeger/hestenes-ojne\r\n/boeger/dommen-og-andre-fortaellinger\r\n/boeger/montecore\r\n/boeger/parlando\r\n/boeger/kongen-af-europa\r\n/boeger/min-kamp-1-bog\r\n/boeger/alle-himlens-farver\r\n/boeger/kalak\r\n/boeger/trefoldighedsbarn\r\n/boeger/vejen-2\r\n/boeger/retrograd\r\n/boeger/dage-med-far\r\n/boeger/faeroblues\r\n/boeger/stormesteren-0\r\n/boeger/kravl\r\n/boeger/den-gamle-mand-med-traekvognen\r\n/boeger/ud-og-stjaele-heste\r\n/boeger/jeg-naegter-0\r\n/boeger/gudfar\r\n/boeger/sorg-er-et-vaesen-med-fjer\r\n/boeger/kompagni-orheim\r\n/boeger/boys\r\n/boeger/gilead\r\n/boeger/hjemme\r\n/boeger/vindens-skygge\r\n/boeger/fader-vor-0\r\n/boeger/hjertet-slar-og-slar\r\n/boeger/almindelige-dodelige\r\n/boeger/udflytterne\r\n/boeger/violinbyggeren\r\n/boeger/min-fars-dagbog\r\n/boeger/faedre-og-sonner\r\n/boeger/fortidens-magt\r\n/boeger/som-tegnet-i-sand-med-en-kaep\r\n/boeger/sa-naer-sa-fjern\r\n"
+    negate: false
+    context_mapping: {  }

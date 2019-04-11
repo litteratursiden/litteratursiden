@@ -1,0 +1,31 @@
+uuid: 67e6b8ad-c193-4ce3-b7c6-7f8b04ca7601
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:748d7782-3b3e-4ec1-9fa6-a46b25a1c36b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: victoriatidenslondon
+theme: litteratursiden
+region: content
+weight: 773
+provider: null
+plugin: 'block_content:748d7782-3b3e-4ec1-9fa6-a46b25a1c36b'
+settings:
+  id: 'block_content:748d7782-3b3e-4ec1-9fa6-a46b25a1c36b'
+  label: 'Victoriatidens London'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/no-shit-sherlock
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: eac2d6ef-728c-4d0e-97b9-6858199b3d82
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c2f0653d-0674-4c4a-980d-09bf372ffef3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenmaendommaend
+theme: litteratursiden
+region: content
+weight: 582
+provider: null
+plugin: 'block_content:c2f0653d-0674-4c4a-980d-09bf372ffef3'
+settings:
+  id: 'block_content:c2f0653d-0674-4c4a-980d-09bf372ffef3'
+  label: 'Indgår i boglisten: Mænd om mænd'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kongskilde-ns-5100\r\n/boeger/frysende-vade-vejbaner\r\n/boeger/blodets-meridian\r\n/boeger/idraet\r\n/boeger/puls-0\r\n/boeger/i-nattens-mulm-en-skonne-dag\r\n/boeger/oscar-wildes-elevator\r\n/boeger/smafisk-og-guldmakreller\r\n/boeger/phase\r\n/boeger/fvonk\r\n/boeger/en-rigtig-bonderov\r\n/boeger/min-ukendte-bror\r\n/boeger/underdog\r\n/boeger/ydmygelsen\r\n/boeger/fryser-jeg\r\n/boeger/jernporten\r\n/boeger/album\r\n/boeger/high-fidelity\r\n/boeger/omkring-en-dreng\r\n/boeger/hjemmefronten\r\n/boeger/indtil-jeg-finder-dig\r\n/boeger/alle-mine-venner-er-superhelte\r\n/boeger/haervaerk\r\n/boeger/naiv-super\r\n/boeger/trefoldighedsbarn\r\n/boeger/vejen-0\r\n/boeger/sjak-nr-3\r\n/boeger/populaermusik-fra-vittula\r\n/boeger/skavanker\r\n/boeger/mand-og-dreng\r\n/boeger/syng-mig-sinatra\r\n/boeger/kaerlighed-i-modlys\r\n/boeger/enhver\r\n/boeger/mand-pa-vej\r\n/boeger/pindsvin-kan-ikke-svomme\r\n/boeger/nar-noget-slutter\r\n/boeger/en-skidt-knaegt-0\r\n/boeger/maend-er-fra-marstal\r\n/boeger/ryk-og-en-aflevering\r\n/boeger/kommando-villavej\r\n/boeger/sengen-er-giftig\r\n/boeger/moon-palace\r\n/boeger/den-svaevende-tankbestyrer\r\n/boeger/de-18-bedste\r\n/boeger/stoner\r\n/boeger/menneskekroppen\r\n/boeger/hele-byen-ved-det\r\n/boeger/dobbeltgaengeren"
+    negate: false
+    context_mapping: {  }

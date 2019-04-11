@@ -1,0 +1,31 @@
+uuid: 692b6058-5af9-4bed-85d0-065555f1f61f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:similar_content_tabs:660b8461-dffe-4b03-b3fb-cf1983fce29b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nogetde
+theme: litteratursiden
+region: content
+weight: 947
+provider: null
+plugin: 'block_content:660b8461-dffe-4b03-b3fb-cf1983fce29b'
+settings:
+  id: 'block_content:660b8461-dffe-4b03-b3fb-cf1983fce29b'
+  label: 'Noget der ligner Ida Jessen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/doktor-bagges-anagrammer\r\n/boeger/en-ny-tid\r\n/boeger/bibelhistorier\r\n/boeger/postkort-til-annie\r\n/boeger/ramt-af-ingenting\r\n/boeger/bornene\r\n/boeger/det-forste-jeg-taenker-pa\r\n/boeger/en-mand-kom-til-byen\r\n/boeger/den-der-lyver\r\n/boeger/ramt-af-ingenting\r\n\r\n"
+    negate: false
+    context_mapping: {  }

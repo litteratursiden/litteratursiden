@@ -1,0 +1,38 @@
+uuid: c5223bb1-4534-40e3-a036-27e583f88705
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_cover_image
+    - node.type.book
+  module:
+    - image
+id: node.book.field_book_cover_image
+field_name: field_book_cover_image
+entity_type: node
+bundle: book
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_cover_image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: d8cfd6a8-27f6-4e9f-9425-b45f45df5def
+    alt: ''
+    title: ''
+    width: 186
+    height: 287
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

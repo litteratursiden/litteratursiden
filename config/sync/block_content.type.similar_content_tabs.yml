@@ -1,0 +1,8 @@
+uuid: eb9bb992-a5d8-48d6-9571-5c9284fb20a1
+langcode: en
+status: true
+dependencies: {  }
+id: similar_content_tabs
+label: 'Similar content tabs'
+revision: 0
+description: ''

@@ -1,0 +1,31 @@
+uuid: 4297b03c-74e4-45ce-ab80-65882dbaa147
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:20a30bb1-b082-4946-9f62-09495d1a640c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraethenrikpontoppidan
+theme: litteratursiden
+region: content
+weight: 268
+provider: null
+plugin: 'block_content:20a30bb1-b082-4946-9f62-09495d1a640c'
+settings:
+  id: 'block_content:20a30bb1-b082-4946-9f62-09495d1a640c'
+  label: 'Forfatterportræt: Henrik Pontoppidan'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/henrik-pontoppidans-romantrilogi
+    negate: false
+    context_mapping: {  }

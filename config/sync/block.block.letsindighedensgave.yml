@@ -1,0 +1,31 @@
+uuid: 5836ead5-39da-4efa-a904-792dea4b7aec
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ca80c907-cc09-4471-91b7-960235d4c408'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: letsindighedensgave
+theme: litteratursiden
+region: content
+weight: 208
+provider: null
+plugin: 'block_content:ca80c907-cc09-4471-91b7-960235d4c408'
+settings:
+  id: 'block_content:ca80c907-cc09-4471-91b7-960235d4c408'
+  label: 'Letsindighedens gave'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

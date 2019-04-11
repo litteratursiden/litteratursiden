@@ -1,0 +1,31 @@
+uuid: 20da4d64-d391-4b2b-aef3-d4d0bf94752f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:89a334b2-69ed-48b3-b78a-66fe97aee6b3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: ingerchristensenhyldest_2
+theme: litteratursiden
+region: content
+weight: 56
+provider: null
+plugin: 'block_content:89a334b2-69ed-48b3-b78a-66fe97aee6b3'
+settings:
+  id: 'block_content:89a334b2-69ed-48b3-b78a-66fe97aee6b3'
+  label: 'Inger Christensen hyldest'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

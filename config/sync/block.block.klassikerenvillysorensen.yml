@@ -1,0 +1,31 @@
+uuid: 08e5c248-82df-48be-ac23-9ee516989ece
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:10c1d0a2-f89c-46ab-8821-519bb66bb1dd'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klassikerenvillysorensen
+theme: litteratursiden
+region: content
+weight: 867
+provider: null
+plugin: 'block_content:10c1d0a2-f89c-46ab-8821-519bb66bb1dd'
+settings:
+  id: 'block_content:10c1d0a2-f89c-46ab-8821-519bb66bb1dd'
+  label: 'Klassikeren Villy Sørensen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/villy-sorensen
+    negate: false
+    context_mapping: {  }

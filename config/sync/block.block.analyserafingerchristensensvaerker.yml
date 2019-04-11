@@ -1,0 +1,31 @@
+uuid: f77460df-6fed-4ebf-9d73-a3406fefd292
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:773b7757-7424-49fd-80e6-232a862d0a26'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analyserafingerchristensensvaerker
+theme: litteratursiden
+region: content
+weight: 159
+provider: null
+plugin: 'block_content:773b7757-7424-49fd-80e6-232a862d0a26'
+settings:
+  id: 'block_content:773b7757-7424-49fd-80e6-232a862d0a26'
+  label: 'Analyser af Inger Christensens værker'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/inger-christensen
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 35b6301b-d3d6-4f59-beef-fef709279485
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b141414b-00a3-40ab-8490-11e2d054ff2e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenutroskab
+theme: litteratursiden
+region: content
+weight: 207
+provider: null
+plugin: 'block_content:b141414b-00a3-40ab-8490-11e2d054ff2e'
+settings:
+  id: 'block_content:b141414b-00a3-40ab-8490-11e2d054ff2e'
+  label: 'Indgår i boglisten: Utroskab'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/forandringer-0\r\n/boeger/bedrag\r\n/boeger/mit-liv-som-mand\r\n/boeger/uden-personligt-ansvar\r\n/boeger/helt-perfekt\r\n/boeger/jeg-maler-mit-liv\r\n/boeger/den-anden-kvinde-0\r\n/boeger/dvaergkrukken\r\n/boeger/pa-graensen\r\n/boeger/en-kvindes-haevn\r\n/boeger/hvad-enhver-kvinde-bor-vide-om-utroskab\r\n/boeger/tilfaeldet-barbara\r\n/boeger/maggies-magelose-verden\r\n/boeger/der-fik-jeg-dig\r\n/boeger/washington-blues\r\n/boeger/utro\r\n/boeger/den-tomme-stol\r\n/boeger/jeg-har-elsket\r\n/boeger/med-alle-sanser\r\n/boeger/den-nogne-brud\r\n/boeger/livet-efter-dig\r\n/boeger/sommerferie-0\r\n/boeger/svommeproven\r\n/boeger/domino-0\r\n/boeger/barmhjertighedens-pris\r\n/boeger/sommeren-uden-maend\r\n/boeger/du-er-ikke-min\r\n/boeger/kvindelig\r\n/boeger/bondefanget-en-samlivsroman\r\n/boeger/nationens-tilstand\r\n/boeger/vandmelonen\r\n/boeger/bangebuks-2\r\n/boeger/alle-steder-ser-dig\r\n/boeger/kantate\r\n/boeger/andre-kvinder-0\r\n/boeger/dyb\r\n/boeger/intet-fortryde\r\n/boeger/konventioner\r\n/boeger/det-brogede-slor\r\n/boeger/gloria\r\n/boeger/det-sidste-brev-fra-din-elsker\r\n/boeger/sommervenner\r\n/boeger/det-eneste-rigtige\r\n/boeger/vildt-forelsket\r\n/boeger/hele-byen-ved-det\r\n/boeger/men-storst-af-alt\r\n/boeger/nar-tavshed-taler\r\n/boeger/champagnepigen\r\n/boeger/en-flirt-mellem-venner\r\n/boeger/syv-ar\r\n/boeger/langt-fra-mig\r\n/boeger/mellem-venner-0\r\n/boeger/kaere-lotte\r\n/boeger/kaerlighed-og-utroskab\r\n/boeger/jeg-ma-jo-have-et-hjem-et-sted\r\n/boeger/dagens-lys-0\r\n/boeger/ulmende-gloder\r\n/boeger/operasangerinden\r\n/boeger/giftes-med-elskerinden\r\n/boeger/det-vaerst-taenkelige\r\n/boeger/naer-og-fjern-0\r\n/boeger/sidespring\r\n/boeger/tennis"
+    negate: false
+    context_mapping: {  }

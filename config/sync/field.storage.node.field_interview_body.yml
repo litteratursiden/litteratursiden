@@ -1,0 +1,19 @@
+uuid: 676b9c4d-d7be-4a33-9520-579d1498e3c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_interview_body
+field_name: field_interview_body
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

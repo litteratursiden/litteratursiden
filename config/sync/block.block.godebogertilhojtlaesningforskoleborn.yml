@@ -1,0 +1,31 @@
+uuid: 710260a8-4131-4407-85f6-726651a4ab21
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:733050d5-fcc7-48be-a54a-12b025799b56'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: godebogertilhojtlaesningforskoleborn
+theme: litteratursiden
+region: content
+weight: 93
+provider: null
+plugin: 'block_content:733050d5-fcc7-48be-a54a-12b025799b56'
+settings:
+  id: 'block_content:733050d5-fcc7-48be-a54a-12b025799b56'
+  label: 'Gode bøger til højtlæsning'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/books\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,38 @@
+uuid: 528221b9-9a74-4a44-9c4c-1c8243c9b089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_list_cover_image
+    - node.type.book_list
+  module:
+    - image
+id: node.book_list.field_book_list_cover_image
+field_name: field_book_list_cover_image
+entity_type: node
+bundle: book_list
+label: Picture
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_book_list_cover_image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: e9c5e434-bfaf-4a95-8c4d-d51710f6b370
+    alt: ''
+    title: ''
+    width: 186
+    height: 287
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

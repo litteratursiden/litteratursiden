@@ -1,0 +1,31 @@
+uuid: 5788c722-cc4c-4472-9db7-16a6dbb5175a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:49627139-e956-4846-80ba-63a48b87bbcf'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendebrolende1920ereogdenfortabtegeneration
+theme: litteratursiden
+region: content
+weight: 396
+provider: null
+plugin: 'block_content:49627139-e956-4846-80ba-63a48b87bbcf'
+settings:
+  id: 'block_content:49627139-e956-4846-80ba-63a48b87bbcf'
+  label: 'Indgår i boglisten: De brølende 1920ere og den fortabte generation'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/brolet-og-vreden\r\n/boeger/historier-fra-jazztiden-noveller-1920-39\r\n/boeger/den-store-gatsby\r\n/boeger/solen-gar-sin-gang\r\n/boeger/fagre-nye-verden\r\n/boeger/ulysses\r\n/boeger/intet-nyt-fra-vestfronten\r\n/boeger/dagdriverbanden\r\n/boeger/vredens-druer\r\n/boeger/manhattan-transfer\r\n/boeger/waste-land-and-other-poems"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: e0f89716-b799-4876-ad6d-33eb405d2f88
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:5be56dd7-025f-46e7-99c5-6d040e33daa1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendenspanskeborgerkrig
+theme: litteratursiden
+region: content
+weight: 400
+provider: null
+plugin: 'block_content:5be56dd7-025f-46e7-99c5-6d040e33daa1'
+settings:
+  id: 'block_content:5be56dd7-025f-46e7-99c5-6d040e33daa1'
+  label: 'Indgår i boglisten: Den spanske borgerkrig'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/harmonikaspillerens-son\r\n/boeger/salamis-soldater\r\n/boeger/smedjen\r\n/boeger/min-broders-vogter\r\n/boeger/gustaf\r\n/boeger/hvem-ringer-klokkerne\r\n/boeger/bag-spaniens-bjerge\r\n/boeger/intet\r\n/boeger/dybhavsfisken\r\n/boeger/ulvemane\r\n/boeger/habet\r\n/boeger/beatus-ille\r\n/boeger/manevind-0\r\n/boeger/den-anden-son\r\n/boeger/diamantpladsen\r\n/boeger/sjaelemesse-en-spansk-bonde\r\n/boeger/hilmar-iversens-ensomhed\r\n/boeger/den-spanske-borgerkrig-1936-1939"
+    negate: false
+    context_mapping: {  }

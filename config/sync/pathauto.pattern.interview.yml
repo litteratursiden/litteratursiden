@@ -1,0 +1,22 @@
+uuid: e7d11b4b-6d06-4076-a7e5-2c2d402ea95d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: interview
+label: Interview
+type: 'canonical_entities:node'
+pattern: 'videoer/[node:title]'
+selection_criteria:
+  d6425b9a-69d8-41f6-870b-126a3f70dc17:
+    id: node_type
+    bundles:
+      interview: interview
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d6425b9a-69d8-41f6-870b-126a3f70dc17
+selection_logic: and
+weight: -5
+relationships: {  }

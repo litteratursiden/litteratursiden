@@ -1,0 +1,31 @@
+uuid: f213f13e-9a87-41f2-8c04-741201b84735
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:0cf1dc0b-c7ba-4bf6-b09f-accde2c21206'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: bogeromatskrivetema
+theme: litteratursiden
+region: content
+weight: 957
+provider: null
+plugin: 'block_content:0cf1dc0b-c7ba-4bf6-b09f-accde2c21206'
+settings:
+  id: 'block_content:0cf1dc0b-c7ba-4bf6-b09f-accde2c21206'
+  label: 'Indgår i tema'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/boger-om-skrive\r\n/boeger/hvorfor-skriver-jeg\r\n/boeger/til-det-naeste-artusind-amerikanske-forelaesninger\r\n/boeger/hengiven-om-skrive\r\n/boeger/om-skrive-0\r\n/boeger/skrive\r\n/boeger/breve-til-en-ung-digter-og-anden-prosa\r\n/boeger/ofte-stillede-sporgsmal\r\n/boeger/om-skrive\r\n/boeger/why-i-write\r\n"
+    negate: false
+    context_mapping: {  }

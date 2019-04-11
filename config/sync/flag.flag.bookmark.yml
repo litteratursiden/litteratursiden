@@ -1,0 +1,49 @@
+uuid: b205f8d2-3624-42d2-9c4d-b36d4e5c504e
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - flag_bookmark
+_core:
+  default_config_hash: FzsbWf8iNn1S7RwhYITqQQWA8Sy9geFb7z5DcT8PsEM
+id: bookmark
+label: Bookmark
+bundles:
+  - analysis
+  - article
+  - author_portrait
+  - blog
+  - book
+  - book_debate
+  - book_list
+  - interview
+  - review
+  - similar
+  - topic
+entity_type: node
+global: false
+weight: 0
+flag_short: 'Tilføj til favoritter'
+flag_long: 'Tilføj til dine favoritter'
+flag_message: 'Tilføjet til dine bogmærker'
+unflag_short: 'Fjern favorit'
+unflag_long: 'Remove this post from your bookmarks'
+unflag_message: 'Fjernet fra dine bogmærker'
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+  i18n: null
+linkTypeConfig:
+  flag_confirmation: 'Flag this content?'
+  unflag_confirmation: 'Unflag this content?'
+  flag_create_button: 'Create flagging'
+  flag_delete_button: 'Delete flagging'
+  form_behavior: default

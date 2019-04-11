@@ -1,0 +1,8 @@
+uuid: 8c94bec3-46b8-4b7a-b201-68b40955b69f
+langcode: da
+status: true
+dependencies: {  }
+id: node__book
+label: 'Indhold: Bog'
+tags:
+  og_description: '[node:field_book_body]'

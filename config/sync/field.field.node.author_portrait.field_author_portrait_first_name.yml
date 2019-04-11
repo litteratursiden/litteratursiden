@@ -1,0 +1,19 @@
+uuid: cd2ec775-8ea1-47c2-93ae-8169b0c64ff3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_portrait_first_name
+    - node.type.author_portrait
+id: node.author_portrait.field_author_portrait_first_name
+field_name: field_author_portrait_first_name
+entity_type: node
+bundle: author_portrait
+label: 'First names'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

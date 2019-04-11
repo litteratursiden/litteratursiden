@@ -1,0 +1,31 @@
+uuid: 7056f5b7-4903-4cfe-b2a7-f7e8ae01ef93
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:84677e5d-591c-47bd-b85e-dc08462dcd6e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: kierkegaardoglivetsmorkesider
+theme: litteratursiden
+region: content
+weight: 757
+provider: null
+plugin: 'block_content:84677e5d-591c-47bd-b85e-dc08462dcd6e'
+settings:
+  id: 'block_content:84677e5d-591c-47bd-b85e-dc08462dcd6e'
+  label: Artikel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/soren-kierkegaard
+    negate: false
+    context_mapping: {  }

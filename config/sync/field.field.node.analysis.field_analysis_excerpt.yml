@@ -1,0 +1,21 @@
+uuid: 0ec78c7b-b257-4cfc-b523-0e953c2bef92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_excerpt
+    - node.type.analysis
+  module:
+    - text
+id: node.analysis.field_analysis_excerpt
+field_name: field_analysis_excerpt
+entity_type: node
+bundle: analysis
+label: Excerpt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

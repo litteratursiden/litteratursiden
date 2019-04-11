@@ -1,0 +1,31 @@
+uuid: c2b396f1-fdd4-4064-a5c6-5fbe0b65ce60
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e8ba766f-bf1b-4bfc-afa6-ec920f5fc216'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenerotisklitteratureftermrgreyforforteos
+theme: litteratursiden
+region: content
+weight: 422
+provider: null
+plugin: 'block_content:e8ba766f-bf1b-4bfc-afa6-ec920f5fc216'
+settings:
+  id: 'block_content:e8ba766f-bf1b-4bfc-afa6-ec920f5fc216'
+  label: 'Indgår i boglisten: Erotisk litteratur - efter Mr Grey forførte os'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fifty-shades-fanget\r\n/boeger/fifty-shades-i-morket\r\n/boeger/fifty-shades-fri\r\n/boeger/grey\r\n/boeger/fifty-shades-i-morket-0\r\n/boeger/ti-lektioner-i-lyst\r\n/boeger/romerske-fantasier\r\n/boeger/det-blode-punkt\r\n/boeger/fra-skodet\r\n/boeger/disciplin\r\n/boeger/med-alle-sanser\r\n/boeger/den-nogne-brud\r\n/boeger/k-erotiske-noveller-af-kvinder\r\n/boeger/m-erotiske-noveller-af-maend\r\n/boeger/intet-fortryde\r\n/boeger/lystrejser\r\n/boeger/natonsket\r\n/boeger/julians-historie\r\n/boeger/zeemeermin-og-andre-erotiske-fortaellinger-kvinder\r\n/boeger/secret-0\r\n/boeger/secret-2\r\n/boeger/transit-0\r\n/boeger/italienske-naetter-venedig\r\n/boeger/italienske-naetter-rom\r\n/boeger/italienske-naetter-sicilien\r\n/boeger/gnist\r\n/boeger/glod\r\n/boeger/ild-0\r\n/boeger/slip-mig-fri\r\n/boeger/tag-mig\r\n/boeger/endelig-os\r\n/boeger/submissive\r\n/boeger/dominanten\r\n/boeger/oplaering\r\n/boeger/fristelsen-0\r\n/boeger/en-kvinde-gar-ind-pa-en-bar\r\n/boeger/saet-fri\r\n/boeger/giv-slip\r\n/boeger/tag-det-hele\r\n/boeger/modet-1\r\n/boeger/tvivlen-0\r\n/boeger/faldet-1\r\n/boeger/lykken-0\r\n/boeger/begyndelsen-0\r\n/boeger/juliette-selskabet\r\n/boeger/de-elskende-0\r\n/boeger/calendar-girl\r\n/boeger/calendar-girl-2\r\n/boeger/calendar-girl-3\r\n/boeger/aftalt-spil-0\r\n/boeger/lagt-pa\r\n/boeger/domt-ude\r\n/boeger/kamp-til-stregen-0\r\n/boeger/sukker\r\n/boeger/forbandede-kaerlighed\r\n/boeger/dublin-street\r\n/boeger/london-road\r\n/boeger/jamaica-lane\r\n/boeger/som-stjernerne-star\r\n/boeger/som-sendt-fra-himlen-0\r\n/boeger/som-du-ser-mig\r\n/boeger/arvingen-1\r\n/boeger/loftet-0\r\n/boeger/vovestykket\r\n/boeger/beautiful-bastard\r\n/boeger/beautiful-stranger\r\n/boeger/absolute-lovers\r\n/boeger/absolute-beginners\r\n/boeger/tangled\r\n/boeger/twisted-0\r\n/boeger/tamed\r\n/boeger/udvalgt\r\n/boeger/udfordret\r\n/boeger/udfriet-roman\r\n/boeger/hvide-logne-0\r\n/boeger/store-dromme\r\n/boeger/morke-hemmeligheder\r\n/boeger/blottet-dig\r\n/boeger/spejlet-i-dig\r\n/boeger/bundet-til-dig\r\n/boeger/fanget-af-dig\r\n/boeger/i-et-med-dig\r\n/boeger/bossman\r\n/boeger/ror-mig\r\n/boeger/archers-stemme\r\n/boeger/sendt-til-taelling\r\n/boeger/chancelos"
+    negate: false
+    context_mapping: {  }

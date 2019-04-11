@@ -1,0 +1,31 @@
+uuid: 9a706c88-f94a-41c0-9cfd-f78b5002a490
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:7b35e0a3-e590-478a-a8a7-350bd1b68015'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraturensfrisorer
+theme: litteratursiden
+region: content
+weight: 548
+provider: null
+plugin: 'block_content:7b35e0a3-e590-478a-a8a7-350bd1b68015'
+settings:
+  id: 'block_content:7b35e0a3-e590-478a-a8a7-350bd1b68015'
+  label: 'Indgår i boglisten: Litteraturens frisører'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-misundelige-frisor\r\n/boeger/liv-pa-alle-hylder\r\n/boeger/tre-engle-og-en-tung-krabat\r\n/boeger/dona-nicanoras-hattebutik\r\n/boeger/hjem-2\r\n/boeger/kvababbelser-0\r\n/boeger/om-fjorten-dage\r\n/boeger/kvinderne-i-kabul\r\n/boeger/kantslag\r\n/boeger/jeg-skal-gore-dig-sa-lykkelig\r\n/boeger/citronbordet\r\n/boeger/rejsens-mal\r\n/boeger/kapgang\r\n/boeger/den-svaere-toer\r\n/boeger/windy-fortaeller\r\n/boeger/americanah\r\n/boeger/drengedigte"
+    negate: false
+    context_mapping: {  }

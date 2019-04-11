@@ -1,0 +1,29 @@
+uuid: f8c98110-1fa6-4a03-aace-459f1d28ccd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.debate
+    - field.field.comment.debate.comment_body
+  module:
+    - text
+id: comment.debate.default
+targetEntityType: comment
+bundle: debate
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  owner_full_name: true

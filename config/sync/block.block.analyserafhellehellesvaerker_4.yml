@@ -1,0 +1,31 @@
+uuid: 72896f27-5de4-4336-b60b-3643310f3587
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:8d1d53e6-34dd-4fa4-9692-e962930313a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analyserafhellehellesvaerker_4
+theme: litteratursiden
+region: content
+weight: 752
+provider: null
+plugin: 'block_content:8d1d53e6-34dd-4fa4-9692-e962930313a1'
+settings:
+  id: 'block_content:8d1d53e6-34dd-4fa4-9692-e962930313a1'
+  label: 'Analyser af Helle Helles værker'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/de-gode-linser-fra-statoil-om-helle-helle-ned-til-hundene\r\n/artikler/helle-helle-virkelighedens-genkomst-om-hus-og-hjem"
+    negate: false
+    context_mapping: {  }

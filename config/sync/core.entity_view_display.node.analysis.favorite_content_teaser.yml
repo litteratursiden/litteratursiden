@@ -1,0 +1,68 @@
+uuid: 75ad1d4d-85a8-4140-a006-4750fbe73c3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.favorite_content_teaser
+    - field.field.node.analysis.field_analysis_comments
+    - field.field.node.analysis.field_analysis_cover_image
+    - field.field.node.analysis.field_analysis_excerpt
+    - field.field.node.analysis.field_analysis_external_link
+    - field.field.node.analysis.field_analysis_free_text
+    - field.field.node.analysis.field_analysis_general_tags
+    - field.field.node.analysis.field_analysis_internal_link
+    - field.field.node.analysis.field_analysis_reference_book
+    - field.field.node.analysis.field_analysis_spotbox_image
+    - image.style.medium
+    - node.type.analysis
+  module:
+    - image
+    - user
+id: node.analysis.favorite_content_teaser
+targetEntityType: node
+bundle: analysis
+mode: favorite_content_teaser
+content:
+  field_analysis_cover_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_full_name:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_analysis_comments: true
+  field_analysis_excerpt: true
+  field_analysis_external_link: true
+  field_analysis_free_text: true
+  field_analysis_general_tags: true
+  field_analysis_internal_link: true
+  field_analysis_reference_book: true
+  field_analysis_spotbox_image: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  owner_portrait: true
+  social_media: true

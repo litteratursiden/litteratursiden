@@ -1,0 +1,31 @@
+uuid: a5894ac4-dab1-4e52-bfe3-f2388d50e715
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:11a97a5c-9f06-4dbd-b54a-fa57cc4914c0'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfilmatiseredeboger
+theme: litteratursiden
+region: content
+weight: 440
+provider: null
+plugin: 'block_content:11a97a5c-9f06-4dbd-b54a-fa57cc4914c0'
+settings:
+  id: 'block_content:11a97a5c-9f06-4dbd-b54a-fa57cc4914c0'
+  label: 'Indgår i boglisten: Filmatiserede bøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/svinestierne\r\n/boeger/jeg-er-ikke-bange\r\n/boeger/balladen-om-marie-kroyer\r\n/boeger/yacoubians-hus\r\n/boeger/en-mand-der-hedder-ove\r\n/boeger/pindsvinets-elegance\r\n/boeger/nar-noget-slutter\r\n/boeger/dykkerklokken-og-sommerfuglen\r\n/boeger/submarino\r\n/boeger/drengen-i-den-stribede-pyjamas\r\n/boeger/u-bad\r\n/boeger/alt-forefaldende-arbejde\r\n/boeger/mildred-pierce\r\n/boeger/basketballdagbogen\r\n/boeger/maskeblomstfamilien\r\n/boeger/crazy-heart\r\n/boeger/veronika-beslutter-do\r\n/boeger/pave-johanne\r\n/boeger/timerne\r\n/boeger/rum-0\r\n/boeger/den-hvide-konge\r\n/boeger/den-danske-pige\r\n/boeger/nordkraft\r\n/boeger/uskrevne-regler\r\n/boeger/hvid-nerie\r\n/boeger/stegte-gronne-tomater\r\n/boeger/alt-bliver-oplyst\r\n/boeger/ekstremt-hojt-utrolig-taet-pa\r\n/boeger/jordens-sojler\r\n/boeger/tilbage-til-cold-mountain\r\n/boeger/outlander-den-engelske-kvinde\r\n/boeger/stranden-0\r\n/boeger/cranford\r\n/boeger/spis-bed-elsk\r\n/boeger/ondskaben\r\n/boeger/vejen-til-jerusalem-0\r\n/boeger/rodder\r\n/boeger/drageloberen\r\n/boeger/verden-ifolge-garp\r\n/boeger/aeblemostreglementet\r\n/boeger/enke-i-et-ar\r\n/boeger/enlig-herre\r\n/boeger/slip-mig-aldrig\r\n/boeger/biroller\r\n/boeger/kunsten-graede-i-kor\r\n/boeger/den-fuldkomne-storm\r\n/boeger/de-skaebnelose\r\n/boeger/ind-i-vildmarken\r\n/boeger/vejen-0\r\n/boeger/angelas-aske\r\n/boeger/ved-floden\r\n/boeger/pis-liv\r\n/boeger/kampen-om-tronen\r\n/boeger/skyatlas\r\n/boeger/biernes-hemmelige-liv\r\n/boeger/isslag-0\r\n/boeger/fight-club\r\n/boeger/eragon\r\n/boeger/true-grit\r\n/boeger/brokeback-mountain\r\n/boeger/min-sosters-skyld\r\n/boeger/de-urorlige-0\r\n/boeger/sidste-nyt-fra-havnen\r\n/boeger/det-gyldne-kompas\r\n/boeger/et-umuligt-valg\r\n/boeger/mig-og-yngve\r\n/boeger/sarahs-nogle\r\n/boeger/en-menneskelig-plet\r\n/boeger/indignation-0\r\n/boeger/precious\r\n/boeger/de-stenede-hende\r\n/boeger/her-fra-min-himmel\r\n/boeger/vi-er-nodt-til-tale-om-kevin\r\n/boeger/fem-sorte-hons\r\n/boeger/lyset-i-havet\r\n/boeger/prinsesse-af-blodet\r\n/boeger/tristram-shandys-levned-og-meninger\r\n/boeger/niceville\r\n/boeger/parfumen\r\n/boeger/brooklyn\r\n/boeger/ringenes-herre\r\n/boeger/million-dollar-baby\r\n/boeger/altings-bedrovelighed\r\n/boeger/han-er-tilbage\r\n/boeger/broerne\r\n/boeger/dinas-bog\r\n/boeger/djaevlen-gar-i-prada\r\n/boeger/prozac-nation\r\n/boeger/alting-og-ulla-vilstrup\r\n/boeger/klinkevals\r\n/boeger/du-forsvinder"
+    negate: false
+    context_mapping: {  }

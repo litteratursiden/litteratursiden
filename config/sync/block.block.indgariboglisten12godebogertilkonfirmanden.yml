@@ -1,0 +1,31 @@
+uuid: 2aac39b3-176f-45eb-82e9-b271a20ea0fb
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f6fa9f4c-75d8-4a39-996a-747f8f8c1eb0'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten12godebogertilkonfirmanden
+theme: litteratursiden
+region: content
+weight: 233
+provider: null
+plugin: 'block_content:f6fa9f4c-75d8-4a39-996a-747f8f8c1eb0'
+settings:
+  id: 'block_content:f6fa9f4c-75d8-4a39-996a-747f8f8c1eb0'
+  label: 'Indgår i boglisten: 12 gode bøger til konfirmanden'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/moskitoland-0\r\n/boeger/det-tidlige-forar\r\n/boeger/den-lille-prins-1\r\n/boeger/en-flaenge-i-himlen\r\n/boeger/skamlos\r\n/boeger/drengene-0\r\n/boeger/hate-u-give\r\n/boeger/piger-kan-leve-laenge-maske-evigt\r\n/boeger/ravnenes-hvisken\r\n/boeger/zam\r\n/boeger/odinsbarn"
+    negate: false
+    context_mapping: {  }

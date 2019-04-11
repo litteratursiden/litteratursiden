@@ -1,0 +1,31 @@
+uuid: a3f95d66-41b4-4591-a15c-c20a053b8c03
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:43512c5d-e45e-47bf-b0d7-0705411f4e10'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenintegrationidentitet
+theme: litteratursiden
+region: content
+weight: 495
+provider: null
+plugin: 'block_content:43512c5d-e45e-47bf-b0d7-0705411f4e10'
+settings:
+  id: 'block_content:43512c5d-e45e-47bf-b0d7-0705411f4e10'
+  label: 'Indgår i boglisten: Integration & identitet'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/paere-perker-dansk\r\n/boeger/vilde-sandheder\r\n/boeger/do-danska\r\n/boeger/yahya-hassan\r\n/boeger/muhamedaneren"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: 5425ffd8-c3bc-4999-aac6-f5f1aae1d517
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_excerpt
+    - node.type.review
+  module:
+    - text
+id: node.review.field_review_excerpt
+field_name: field_review_excerpt
+entity_type: node
+bundle: review
+label: Excerpt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

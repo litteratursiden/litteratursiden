@@ -1,0 +1,31 @@
+uuid: 797fce03-ae16-49b3-b25e-49bb15325518
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:c5b67e49-0d75-4000-a4b8-af071e7ec6af'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: 10arsfodselsdag
+theme: litteratursiden
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:c5b67e49-0d75-4000-a4b8-af071e7ec6af'
+settings:
+  id: 'block_content:c5b67e49-0d75-4000-a4b8-af071e7ec6af'
+  label: 'Nomineret til Nordisk Råds børne- og ungdomslitteraturpris 2019'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

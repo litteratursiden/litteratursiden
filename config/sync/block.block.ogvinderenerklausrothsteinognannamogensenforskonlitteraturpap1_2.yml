@@ -1,0 +1,31 @@
+uuid: acd7aa57-f4e2-42b6-872c-8c6eee2775f2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:140399f7-c8ab-44d8-bd8a-b5c4291fffd7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: ogvinderenerklausrothsteinognannamogensenforskonlitteraturpap1_2
+theme: litteratursiden
+region: content
+weight: 671
+provider: null
+plugin: 'block_content:140399f7-c8ab-44d8-bd8a-b5c4291fffd7'
+settings:
+  id: 'block_content:140399f7-c8ab-44d8-bd8a-b5c4291fffd7'
+  label: 'Læs også'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/traveling
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 3d0639e1-f7a3-4884-81d1-61590bba0de9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:06050041-7da2-45b7-a66e-670294874a97'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenaarhusilitteraturen_3
+theme: litteratursiden
+region: content
+weight: 191
+provider: null
+plugin: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
+settings:
+  id: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
+  label: 'Indgår i boglisten: Aarhus i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/superstar-krimi
+    negate: false
+    context_mapping: {  }

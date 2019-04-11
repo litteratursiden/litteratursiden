@@ -1,0 +1,31 @@
+uuid: 37309822-9c5c-4270-890a-674e67261033
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:deb22d9a-0ec1-49a6-b908-644fc9cd18bb'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenisraelskestemmer
+theme: litteratursiden
+region: content
+weight: 504
+provider: null
+plugin: 'block_content:deb22d9a-0ec1-49a6-b908-644fc9cd18bb'
+settings:
+  id: 'block_content:deb22d9a-0ec1-49a6-b908-644fc9cd18bb'
+  label: 'Indgår i boglisten: Israelske stemmer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/troskabseden\r\n/boeger/en-stille-glaede\r\n/boeger/gode-mennesker\r\n/boeger/efter-regnen-0\r\n/boeger/det-evige-folk-har-ingen-frygt\r\n/boeger/hvorfor-kom-du-ikke-krigen\r\n/boeger/vals-med-bashir\r\n/boeger/kvinde-pa-flugt-fra-meddelelse\r\n/boeger/en-god-arabers-bekendelser\r\n/boeger/8-af-ingenting\r\n/boeger/min-familie-pa-godt-og-ondt\r\n/boeger/din-nabos-son\r\n/boeger/abne-sar\r\n/boeger/en-fortaelling-om-kaerlighed-og-morke\r\n/boeger/limassol\r\n/boeger/det-bla-bjerg\r\n/boeger/blodappelsiner\r\n/boeger/hr-mani-0"
+    negate: false
+    context_mapping: {  }

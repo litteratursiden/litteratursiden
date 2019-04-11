@@ -1,0 +1,31 @@
+uuid: e0dae954-6704-437c-9188-67753e08bc2b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:d9ff5572-c180-403c-93da-41d24aada061'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: debutantprisvinderne2018_2
+theme: litteratursiden
+region: content
+weight: 351
+provider: null
+plugin: 'block_content:d9ff5572-c180-403c-93da-41d24aada061'
+settings:
+  id: 'block_content:d9ff5572-c180-403c-93da-41d24aada061'
+  label: 'Debutantprisvinderne 2018'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/danske-debutanter-2017-2018
+    negate: false
+    context_mapping: {  }

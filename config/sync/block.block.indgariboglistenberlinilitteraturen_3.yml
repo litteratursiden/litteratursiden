@@ -1,0 +1,31 @@
+uuid: 7be75d8c-3892-4c9a-81b7-be9fc3ddbd32
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:6ae5b101-1619-4f02-b8e3-056ec058b473'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenberlinilitteraturen_3
+theme: litteratursiden
+region: content
+weight: 280
+provider: null
+plugin: 'block_content:6ae5b101-1619-4f02-b8e3-056ec058b473'
+settings:
+  id: 'block_content:6ae5b101-1619-4f02-b8e3-056ec058b473'
+  label: Berlin
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/laesetips-til-storbyferien
+    negate: false
+    context_mapping: {  }

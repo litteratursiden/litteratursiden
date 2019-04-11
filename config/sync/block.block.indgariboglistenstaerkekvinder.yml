@@ -1,0 +1,31 @@
+uuid: 186cd23e-42b2-431a-80b4-7f3496024c41
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f200ada2-3511-4f3c-bb28-2036def03e62'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenstaerkekvinder
+theme: litteratursiden
+region: content
+weight: 352
+provider: null
+plugin: 'block_content:f200ada2-3511-4f3c-bb28-2036def03e62'
+settings:
+  id: 'block_content:f200ada2-3511-4f3c-bb28-2036def03e62'
+  label: 'Indgår i Boglisten: Stærke kvinder'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/kvinderoller-kvinden-som-forfatter
+    negate: false
+    context_mapping: {  }

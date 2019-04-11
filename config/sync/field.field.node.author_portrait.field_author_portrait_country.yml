@@ -1,0 +1,19 @@
+uuid: 7967c8ae-d22e-495a-bc37-1009e3a60ac4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_portrait_country
+    - node.type.author_portrait
+id: node.author_portrait.field_author_portrait_country
+field_name: field_author_portrait_country
+entity_type: node
+bundle: author_portrait
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

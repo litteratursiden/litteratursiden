@@ -1,0 +1,31 @@
+uuid: e8c56b92-8eb4-444c-8a23-13be0e4c93fc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:461572f0-7017-4a10-9214-20939b39cba8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: interviewmedsisseljogazan
+theme: litteratursiden
+region: content
+weight: 385
+provider: null
+plugin: 'block_content:461572f0-7017-4a10-9214-20939b39cba8'
+settings:
+  id: 'block_content:461572f0-7017-4a10-9214-20939b39cba8'
+  label: Interview
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/sissel-jo-gazan\r\n/boeger/dinosaurens-fjer"
+    negate: false
+    context_mapping: {  }

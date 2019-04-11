@@ -1,0 +1,31 @@
+uuid: 24241e10-2e7e-4f06-bf45-0a83a0aa45b8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:f60277a6-2525-435b-b12e-7e4d6a6d3248'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: maltidetsbetydning
+theme: litteratursiden
+region: content
+weight: 94
+provider: null
+plugin: 'block_content:f60277a6-2525-435b-b12e-7e4d6a6d3248'
+settings:
+  id: 'block_content:f60277a6-2525-435b-b12e-7e4d6a6d3248'
+  label: 'Måltidets betydning'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/litteraere-livretter-laes-dig-maet
+    negate: false
+    context_mapping: {  }

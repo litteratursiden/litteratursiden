@@ -1,0 +1,31 @@
+uuid: 9fdcc9d0-95f3-4a5e-894f-8699dff8b471
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ce536a0d-5c80-402c-aa08-bebc9282e524'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennyerefransklitteratur
+theme: litteratursiden
+region: content
+weight: 226
+provider: null
+plugin: 'block_content:ce536a0d-5c80-402c-aa08-bebc9282e524'
+settings:
+  id: 'block_content:ce536a0d-5c80-402c-aa08-bebc9282e524'
+  label: 'Indgår i boglisten: Nyere fransk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/pindsvinets-elegance\r\n/boeger/om-min-mor\r\n/boeger/en-saeson\r\n/boeger/andre-liv-end-mit\r\n/boeger/kaere-einstein\r\n/boeger/insekt\r\n/boeger/dod-pa-kredit\r\n/boeger/jeg-giver-slip\r\n/boeger/udgangstilladelse\r\n/boeger/tom-er-dod\r\n/boeger/vernon-subutex\r\n/boeger/laeseren-i-morgentoget\r\n/boeger/kaerligheden-krigen\r\n/boeger/elskeren-fra-nordkina\r\n/boeger/jeg-var-bag-dig\r\n/boeger/delikatesse\r\n/boeger/franske-stemmer\r\n/boeger/lykken-er-en-sjaelden-fugl\r\n/boeger/stjernetasten-en-roman-om-kvinder-der-elsker-livet-og-friheden\r\n/boeger/hvor-drommene-vender\r\n/boeger/med-daempet-stemme\r\n/boeger/underkastelse\r\n/boeger/svalerne-i-kabul\r\n/boeger/afrikaneren\r\n/boeger/vi-ses-deroppe\r\n/boeger/lindetrae\r\n/boeger/voldens-historie\r\n/boeger/verden-rundt\r\n/boeger/dora-bruder\r\n/boeger/tre-staerke-kvinder\r\n/boeger/krokodillens-gule-ojne\r\n/boeger/livet-en-brugsanvisning\r\n/boeger/fanden-tage-dostojevskij\r\n/boeger/det-rode-halsband\r\n/boeger/en-duft-af-lavendel\r\n/boeger/odette-toulemonde-andre-historier\r\n/boeger/arabisk-vemod\r\n/boeger/alt-ma-vige-natten\r\n/boeger/baseret-pa-en-sand-historie"
+    negate: false
+    context_mapping: {  }

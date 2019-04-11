@@ -1,0 +1,31 @@
+uuid: ebae80bc-5c6e-4253-b921-9ce786388176
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:96dede9a-eec2-467a-bc13-a2a92306aaa2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: tyskestemmer
+theme: litteratursiden
+region: content
+weight: 656
+provider: null
+plugin: 'block_content:96dede9a-eec2-467a-bc13-a2a92306aaa2'
+settings:
+  id: 'block_content:96dede9a-eec2-467a-bc13-a2a92306aaa2'
+  label: 'Tyske stemmer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/international-litteratur-i-aarhus\r\n/temaer/literaturexchange"
+    negate: false
+    context_mapping: {  }

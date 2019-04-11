@@ -1,0 +1,20 @@
+uuid: 0d30a376-c268-401f-a66d-63a3192e8aaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - color_field
+id: block_content.field_content_carousel_bg
+field_name: field_content_carousel_bg
+entity_type: block_content
+type: color_field_type
+settings:
+  format: '#HEXHEX'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

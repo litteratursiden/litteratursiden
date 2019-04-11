@@ -1,0 +1,31 @@
+uuid: f7e1ec8b-90b0-4510-acca-ad154b6d5057
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:44b3d958-9d7e-4133-8ef8-8fc6c626ff3c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: artikelhvorforerdersamangeforfatterepaisland
+theme: litteratursiden
+region: content
+weight: 708
+provider: null
+plugin: 'block_content:44b3d958-9d7e-4133-8ef8-8fc6c626ff3c'
+settings:
+  id: 'block_content:44b3d958-9d7e-4133-8ef8-8fc6c626ff3c'
+  label: Artikel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/nye-islandske-fortaellinger
+    negate: false
+    context_mapping: {  }

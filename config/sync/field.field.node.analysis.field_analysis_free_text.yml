@@ -1,0 +1,21 @@
+uuid: 49e00fc3-faaf-45fc-83db-b93dfce9ecf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_free_text
+    - node.type.analysis
+  module:
+    - text
+id: node.analysis.field_analysis_free_text
+field_name: field_analysis_free_text
+entity_type: node
+bundle: analysis
+label: 'Free text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

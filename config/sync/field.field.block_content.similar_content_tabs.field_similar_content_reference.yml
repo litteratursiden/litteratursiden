@@ -1,0 +1,28 @@
+uuid: 48446ef8-c98a-4b36-ab7b-ae562fa77078
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.similar_content_tabs
+    - field.storage.block_content.field_similar_content_reference
+    - node.type.similar
+id: block_content.similar_content_tabs.field_similar_content_reference
+field_name: field_similar_content_reference
+entity_type: block_content
+bundle: similar_content_tabs
+label: 'Content reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      similar: similar
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

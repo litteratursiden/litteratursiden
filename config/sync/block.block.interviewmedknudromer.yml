@@ -1,0 +1,31 @@
+uuid: d6ff8595-057d-4dc1-a65b-3674107104d5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:680019e4-4628-4ba2-81e8-113d04f5146e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: interviewmedknudromer
+theme: litteratursiden
+region: content
+weight: 19
+provider: null
+plugin: 'block_content:680019e4-4628-4ba2-81e8-113d04f5146e'
+settings:
+  id: 'block_content:680019e4-4628-4ba2-81e8-113d04f5146e'
+  label: 'Interview med Knud Romer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/knud-romer\r\n/boeger/kort-over-paradis"
+    negate: false
+    context_mapping: {  }

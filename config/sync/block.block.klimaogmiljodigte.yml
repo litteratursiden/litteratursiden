@@ -1,0 +1,31 @@
+uuid: 47366896-30a7-421c-b06a-304450089f65
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:53f2b415-7043-406e-9f76-ebeea64ad4ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klimaogmiljodigte
+theme: litteratursiden
+region: content
+weight: 742
+provider: null
+plugin: 'block_content:53f2b415-7043-406e-9f76-ebeea64ad4ae'
+settings:
+  id: 'block_content:53f2b415-7043-406e-9f76-ebeea64ad4ae'
+  label: 'Økopoesi - klima og miljø i lyrikken'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/klimaet-i-litteraturen\r\n/boeger/digte-2014\r\n/boeger/17-tipping-point\r\n/boeger/vi-er-her\r\n/boeger/teotwawki\r\n/boeger/guld-4"
+    negate: false
+    context_mapping: {  }

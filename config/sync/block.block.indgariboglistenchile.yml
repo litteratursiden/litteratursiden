@@ -1,0 +1,31 @@
+uuid: 6919c62e-d97a-4945-924f-135ddf752da3
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:da5bafe6-c29c-4577-89ee-efc11799a8f8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenchile
+theme: litteratursiden
+region: content
+weight: 845
+provider: null
+plugin: 'block_content:da5bafe6-c29c-4577-89ee-efc11799a8f8'
+settings:
+  id: 'block_content:da5bafe6-c29c-4577-89ee-efc11799a8f8'
+  label: 'Indgår i boglisten: Chile'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/eva-luna-fortaeller\r\n/boeger/kaerlighed-og-morke\r\n/boeger/mayas-dagbog\r\n/boeger/mit-opdigtede-land\r\n/boeger/2666\r\n/boeger/fjern-stjerne\r\n/boeger/nocturne-fra-chile\r\n/boeger/de-vilde-detektiver\r\n/boeger/den-sidste-tage-ligklaedt\r\n/boeger/landstedet\r\n/boeger/stedet-uden-graenser\r\n/boeger/enker\r\n/boeger/mit-livs-film\r\n/boeger/svomme-nogen\r\n/boeger/kvinden-i-mit-liv-0\r\n/boeger/firkantet-horisont-eiffeltarn\r\n/boeger/pigen-der-fortalte-film\r\n/boeger/elementaere-oder\r\n/boeger/hundrede-kaerlighedssonetter\r\n/boeger/jeg-bekender-jeg-har-levet\r\n/boeger/kaptajnens-vers\r\n/boeger/den-store-sang\r\n/boeger/den-gamle-mand-der-laeste-kaerlighedsromaner\r\n/boeger/historien-om-en-mage-og-om-katten-der-laerte-den-flyve\r\n/boeger/hotline\r\n/boeger/postboks-fem-ildlandet\r\n/boeger/jeg-dromte-sneen-braendte\r\n/boeger/postbudet\r\n/boeger/traeernes-privatliv\r\n/boeger/bonsai-0\r\n/boeger/bonsai-0"
+    negate: false
+    context_mapping: {  }

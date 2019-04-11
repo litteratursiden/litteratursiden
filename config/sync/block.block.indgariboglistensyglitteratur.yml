@@ -1,0 +1,31 @@
+uuid: 1861e3ac-c1fd-45e8-a202-c53147ce9062
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:a4e7f82f-2dc6-4c89-9829-bf3a971263cf'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensyglitteratur
+theme: litteratursiden
+region: content
+weight: 106
+provider: null
+plugin: 'block_content:a4e7f82f-2dc6-4c89-9829-bf3a971263cf'
+settings:
+  id: 'block_content:a4e7f82f-2dc6-4c89-9829-bf3a971263cf'
+  label: 'Indgår i boglisten: Syg litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/ludvigsbakke\r\n/boeger/kulden-en-isolation\r\n/boeger/gud-taler-ud\r\n/boeger/en-dodsnat-novellen-ved-lars-skraedders-sygeseng\r\n/boeger/skrevne-kys-nar-ikke-frem-kafka-og-kaerligheden\r\n/boeger/ansigterne\r\n/boeger/sa-hojt-elsket-var-du\r\n/boeger/der-bor-hollywoodstjerner-pa-vejen\r\n/boeger/hinsides-0\r\n/boeger/strange-days-indeed\r\n/boeger/tunu\r\n/boeger/trolddomsbjerget\r\n/boeger/vi-er-ikke-os-selv-0\r\n/boeger/min-far-er-en-tiger\r\n/boeger/indigo-0\r\n/boeger/33\r\n/boeger/ingenmandsland-0\r\n/boeger/endnu-er-der-hab\r\n/boeger/det-mangehovedede-uhyre"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 09be5e86-7bf0-4dd5-b530-7623ecf5a1f7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:9f4cdd84-2c93-4454-94b8-d4c5b0b44b19'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: mellemkrigstidenilitteraturen
+theme: litteratursiden
+region: content
+weight: 102
+provider: null
+plugin: 'block_content:9f4cdd84-2c93-4454-94b8-d4c5b0b44b19'
+settings:
+  id: 'block_content:9f4cdd84-2c93-4454-94b8-d4c5b0b44b19'
+  label: 'Indgår i tema'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /lister/mellemkrigstiden
+    negate: false
+    context_mapping: {  }

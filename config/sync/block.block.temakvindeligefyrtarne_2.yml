@@ -1,0 +1,31 @@
+uuid: 7d02f9b1-671c-4f33-a5e9-aa0ad9f5d8e6
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temakvindeligefyrtarne_2
+theme: litteratursiden
+region: content
+weight: 61
+provider: null
+plugin: 'block_content:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
+settings:
+  id: 'block_content:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
+  label: 'Tema: Kvindelige fyrtårne '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/kvindelige-fyrtarne-udvalgte-vaerker\r\n/temaer/kvinderoller-kvinden-som-forfatter"
+    negate: false
+    context_mapping: {  }

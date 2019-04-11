@@ -1,0 +1,31 @@
+uuid: fff2b9aa-9ece-40df-9c8b-83fc420c2098
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:43b297a6-fee8-4a2c-83df-a26d114243cf'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennordicnoir
+theme: litteratursiden
+region: content
+weight: 593
+provider: null
+plugin: 'block_content:43b297a6-fee8-4a2c-83df-a26d114243cf'
+settings:
+  id: 'block_content:43b297a6-fee8-4a2c-83df-a26d114243cf'
+  label: 'Indgår i boglisten: Nordic Noir'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/marco-effekten\r\n/boeger/en-sandsynlig-historie\r\n/boeger/morke-stromme\r\n/boeger/de-glemte-piger\r\n/boeger/misterioso\r\n/boeger/jeg-er-ikke-her\r\n/boeger/huset-ved-verdens-ende-0\r\n/boeger/jeg-kan-se-i-morke\r\n/boeger/fjeldgraven\r\n/boeger/skyggedod\r\n/boeger/vinterlukket\r\n/boeger/nordlys-1\r\n/boeger/bambi-0\r\n/boeger/leon\r\n/boeger/zack\r\n/boeger/hjemlos-0\r\n/boeger/sandmanden\r\n/boeger/livet-de-luxe\r\n/boeger/som-offer-til-molok\r\n/boeger/manden-i-vasaparken\r\n/boeger/handen-0\r\n/boeger/odeland\r\n/boeger/en-fortaelling-om-hr-roos\r\n/boeger/bjornedansen\r\n/boeger/pigen-uden-hud\r\n/boeger/roseanna\r\n/boeger/bye-bye-blackbird\r\n/boeger/sorte-far\r\n/boeger/den-andalusiske-ven\r\n/boeger/glaslegemer\r\n/boeger/sankt-psyko\r\n/boeger/healeren-0\r\n/boeger/fyrre-dage-uden-skygge\r\n/boeger/i-skjul-af-skyggerne\r\n/boeger/jeg-skal-huske-dig"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: b80afbac-7709-4b4b-85da-88315f8a0e5c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:29e4fe6c-f1ae-4b9c-8ce1-9e46a33330d9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analyserfra19101919
+theme: litteratursiden
+region: content
+weight: 909
+provider: null
+plugin: 'block_content:29e4fe6c-f1ae-4b9c-8ce1-9e46a33330d9'
+settings:
+  id: 'block_content:29e4fe6c-f1ae-4b9c-8ce1-9e46a33330d9'
+  label: 'Analyser fra 1910-1919'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/analyser-pa-litteratursiden\r\n/forfattere/marie-bregendahl\r\n/forfattere/emil-bonnelycke\r\n/forfattere/thit-jensen\r\n/forfattere/martin-andersen-nexo\r\n\r\n"
+    negate: false
+    context_mapping: {  }

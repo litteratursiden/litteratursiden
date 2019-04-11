@@ -1,0 +1,116 @@
+uuid: c4393c77-93a7-422a-bf5f-fbc7f4915994
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog.field_blog_body
+    - field.field.node.blog.field_blog_comments
+    - field.field.node.blog.field_blog_cover_image
+    - field.field.node.blog.field_blog_external_link
+    - field.field.node.blog.field_blog_files
+    - field.field.node.blog.field_blog_general_tags
+    - field.field.node.blog.field_blog_internal_link
+    - field.field.node.blog.field_blog_literature_type
+    - field.field.node.blog.field_blog_message_flag
+    - image.style.spot
+    - node.type.blog
+  module:
+    - file
+    - image
+    - link
+    - text
+    - user
+id: node.blog.default
+targetEntityType: node
+bundle: blog
+mode: default
+content:
+  field_blog_body:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_blog_cover_image:
+    type: image
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      image_style: spot
+      image_link: ''
+    third_party_settings: {  }
+  field_blog_external_link:
+    type: link
+    weight: 9
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_blog_files:
+    type: file_default
+    weight: 11
+    region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_blog_general_tags:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_blog_internal_link:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_like:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_portrait:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  social_media:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_blog_comments: true
+  field_blog_literature_type: true
+  field_blog_message_flag: true
+  flag_notifications: true
+  langcode: true
+  owner_full_name: true

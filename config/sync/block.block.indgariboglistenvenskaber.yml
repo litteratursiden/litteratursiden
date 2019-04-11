@@ -1,0 +1,31 @@
+uuid: a08feace-639a-4e23-b6b0-f8b7e12dd305
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:767d1313-d3ea-47f8-8ba1-4c49a82c08a9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenvenskaber
+theme: litteratursiden
+region: content
+weight: 353
+provider: null
+plugin: 'block_content:767d1313-d3ea-47f8-8ba1-4c49a82c08a9'
+settings:
+  id: 'block_content:767d1313-d3ea-47f8-8ba1-4c49a82c08a9'
+  label: 'Indgår i boglisten: Venskaber'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/alle-tapre-bliver-tilgivet\r\n/boeger/bogen-om-baltimore-familien\r\n/boeger/en-lille-god-gerning\r\n/boeger/min-geniale-veninde\r\n/boeger/himmelpletter\r\n/boeger/italiensvej\r\n/boeger/vores-sjaele-om-natten\r\n/boeger/pigen-uden-navn\r\n/boeger/et-spor-af-safran\r\n/boeger/hellere-dod-end-dement\r\n/boeger/godhavn\r\n/boeger/chokolade-til-morgenmad\r\n/boeger/vanvittig-skyldig\r\n/boeger/solsorten-synger\r\n/boeger/alle-de-liv\r\n/boeger/uforudsete-haendelser\r\n/boeger/naesedag\r\n/boeger/venskabets-historie\r\n/boeger/generthed-og-vaerdighed\r\n/boeger/freuds-soster\r\n/boeger/senseis-mappe-bind-1\r\n/boeger/joes-bog\r\n/boeger/sommerhus\r\n/boeger/tigermaelk-0\r\n/boeger/ventoux\r\n/boeger/den-svovlgule-himmel\r\n/boeger/sommer-ved-floden\r\n/boeger/et-ar-med-underfulde-moder\r\n/boeger/et-lille-liv"
+    negate: false
+    context_mapping: {  }

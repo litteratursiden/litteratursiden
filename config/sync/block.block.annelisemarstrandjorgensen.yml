@@ -1,0 +1,31 @@
+uuid: 280dc041-d17a-4aca-83e6-4a3fae81520b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:d8e09603-17dc-4374-a8bd-2ad0c5889dc4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: annelisemarstrandjorgensen
+theme: litteratursiden
+region: content
+weight: 302
+provider: null
+plugin: 'block_content:d8e09603-17dc-4374-a8bd-2ad0c5889dc4'
+settings:
+  id: 'block_content:d8e09603-17dc-4374-a8bd-2ad0c5889dc4'
+  label: 'Af Anne Lise Marstrand-Jørgensen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/takt-og-tone\r\n/forfattere/emma-gad"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 8db6df33-091a-4815-af74-37b24d71e4b7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:2f2b1504-5b89-4726-95af-5f3f19a09c39'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistencirkushistorier
+theme: litteratursiden
+region: content
+weight: 846
+provider: null
+plugin: 'block_content:2f2b1504-5b89-4726-95af-5f3f19a09c39'
+settings:
+  id: 'block_content:2f2b1504-5b89-4726-95af-5f3f19a09c39'
+  label: 'Indgår i boglisten: Cirkushistorier'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/en-klovns-opgor\r\n/boeger/i-det-magiske-cirkus\r\n/boeger/den-utrolige-historie-om-kavalier-clay\r\n/boeger/undernes-verden\r\n/boeger/vand-til-elefanterne\r\n/boeger/cirkus-manera\r\n/boeger/mabel-starks-sidste-bekendelse\r\n/boeger/den-stille-pige\r\n/boeger/barn-af-et-cirkus\r\n/boeger/nattens-cirkus\r\n/boeger/klovnens-rejse\r\n/boeger/klovnen-shalimar"
+    negate: false
+    context_mapping: {  }

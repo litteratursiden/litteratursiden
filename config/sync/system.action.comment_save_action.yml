@@ -1,0 +1,13 @@
+uuid: 41cc2e71-aa7b-4b7d-a1ad-8d34e71ef2c7
+langcode: da
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: TSkg_gUZvk-39yXFrIFnKjsxuEzO0qBH82TdDxOMMr4
+id: comment_save_action
+label: 'Gem kommentar'
+type: comment
+plugin: 'entity:save_action:comment'
+configuration: {  }

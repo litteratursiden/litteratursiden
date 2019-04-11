@@ -1,0 +1,31 @@
+uuid: 2f08a3d3-0e08-409a-92e3-7d211cb7bddc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:38602c94-cca6-452d-8bd9-157e17686f5f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenterror
+theme: litteratursiden
+region: content
+weight: 665
+provider: null
+plugin: 'block_content:38602c94-cca6-452d-8bd9-157e17686f5f'
+settings:
+  id: 'block_content:38602c94-cca6-452d-8bd9-157e17686f5f'
+  label: 'Indgår i boglisten: Terror'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vagenatten-0\r\n/boeger/ene-mand\r\n/boeger/gidsel-i-amman\r\n/boeger/martyr\r\n/boeger/jaget-vildt-0\r\n/boeger/braender-new-york\r\n/boeger/fjenden-i-spejlet\r\n/boeger/attentatet-3\r\n/boeger/den-faldende-mand\r\n/boeger/operation-brandstorm\r\n/boeger/se-pa-mig-0\r\n/boeger/den-ukendte-terrorist\r\n/boeger/ekstremt-hojt-utrolig-taet-pa\r\n/boeger/afghaneren\r\n/boeger/osamas-haevn\r\n/boeger/flygtningen-0\r\n/boeger/drager-over-kabul\r\n/boeger/gengaeldelsen\r\n/boeger/som-et-blik-fra-helvede\r\n/boeger/terror-uden-ansigt\r\n/boeger/attentatet-0\r\n/boeger/sirenerne-i-bagdad\r\n/boeger/protokollen\r\n/boeger/marionetten-0\r\n/boeger/sort-daggry\r\n/boeger/tribeca-sunset\r\n/boeger/operation-firefight\r\n/boeger/bin-laden-bag-sloret-0\r\n/boeger/moskvareglerne\r\n/boeger/terrorist\r\n/boeger/kapring-over-kairo\r\n/boeger/monumentet\r\n/boeger/rekviem-i-andalusien"
+    negate: false
+    context_mapping: {  }

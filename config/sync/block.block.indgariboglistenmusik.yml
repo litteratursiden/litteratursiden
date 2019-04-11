@@ -1,0 +1,31 @@
+uuid: c599a3f8-2208-4618-9b77-2edb75f75b17
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:730791f0-ae2f-4ddf-8780-875ac6aa0ef8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenmusik
+theme: litteratursiden
+region: content
+weight: 581
+provider: null
+plugin: 'block_content:730791f0-ae2f-4ddf-8780-875ac6aa0ef8'
+settings:
+  id: 'block_content:730791f0-ae2f-4ddf-8780-875ac6aa0ef8'
+  label: 'Indgår i boglisten: Musik'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n/boeger/havblik\r\n/boeger/tidens-stoj\r\n/boeger/hr-mozart-vagner-op\r\n/boeger/elven\r\n/boeger/kvinden-i-dalen\r\n/boeger/til-musikken\r\n/boeger/guitarsamleren\r\n/boeger/i-digterens-hus\r\n/boeger/shotgun-lovesongs\r\n/boeger/jeg-bekender\r\n/boeger/piano\r\n/boeger/beatles\r\n/boeger/taeskeholdet-banker-pa\r\n/boeger/beatlemanifestet\r\n/boeger/fordele-og-ulemper-ved-huske-roman\r\n/boeger/kontrapunkt-0\r\n/boeger/ojet-der-ser\r\n/boeger/honsehunde\r\n/boeger/salme-ved-rejsens-afslutning\r\n/boeger/maske-en-dag\r\n/boeger/high-fidelity\r\n/boeger/juliet-nogen\r\n/boeger/med-daempet-stemme\r\n/boeger/den-stille-pige\r\n/boeger/alt-i-verden\r\n/boeger/nocturner-fem-fortaellinger-om-musik-og-skumring\r\n/boeger/vaekkelse\r\n/boeger/backdoors\r\n/boeger/natjager\r\n/boeger/den-symfoniske-gade\r\n/boeger/eksil-pa-hovedgaden\r\n/boeger/sebastians-drom\r\n/boeger/lea\r\n/boeger/ukulele-jam\r\n/boeger/sadan-opfinder-man-en-pige\r\n/boeger/faero-blues-trilogien\r\n/boeger/populaermusik-fra-vittula\r\n/boeger/draeb-dine-venner\r\n/boeger/fortidens-tage\r\n/boeger/soster-og-bror-0\r\n/boeger/sange-i-tid-og-rum\r\n/boeger/abenbaringen\r\n/boeger/den-eneste-musik\r\n/boeger/nar-solen-er-begravet\r\n/boeger/musik-og-stilhed\r\n/boeger/forellekvintetten\r\n/boeger/glasborgen\r\n/boeger/gudernes-tusmorke\r\n/boeger/jordbaerbid\r\n/boeger/fjeldstigning\r\n/boeger/ultramarin\r\n"
+    negate: false
+    context_mapping: {  }

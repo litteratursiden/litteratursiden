@@ -1,0 +1,31 @@
+uuid: a95a8a05-c8ae-410f-a819-bb17b4621e9c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:84c1b8c8-55a1-470d-b897-25853312dbb4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: aretsbedsteromaner2018
+theme: litteratursiden
+region: content
+weight: 157
+provider: null
+plugin: 'block_content:84c1b8c8-55a1-470d-b897-25853312dbb4'
+settings:
+  id: 'block_content:84c1b8c8-55a1-470d-b897-25853312dbb4'
+  label: 'Årets bedste romaner og noveller'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/arets-bedste-boger-2018
+    negate: false
+    context_mapping: {  }

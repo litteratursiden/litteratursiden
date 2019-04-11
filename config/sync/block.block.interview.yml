@@ -1,0 +1,31 @@
+uuid: 033cc8c3-e0ee-4525-99fe-800933bda0a1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:68c7f7c9-1d52-40f1-93bb-4c8b7d0075d8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: interview
+theme: litteratursiden
+region: content
+weight: 466
+provider: null
+plugin: 'block_content:68c7f7c9-1d52-40f1-93bb-4c8b7d0075d8'
+settings:
+  id: 'block_content:68c7f7c9-1d52-40f1-93bb-4c8b7d0075d8'
+  label: Interview
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/merete-pryds-helle
+    negate: false
+    context_mapping: {  }

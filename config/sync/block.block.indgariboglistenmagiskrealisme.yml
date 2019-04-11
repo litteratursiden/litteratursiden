@@ -1,0 +1,31 @@
+uuid: 64502206-2e56-473a-b13f-73fef50191ae
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f2d50d9a-2497-43b0-a4b2-203b6baf42c2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenmagiskrealisme
+theme: litteratursiden
+region: content
+weight: 856
+provider: null
+plugin: 'block_content:f2d50d9a-2497-43b0-a4b2-203b6baf42c2'
+settings:
+  id: 'block_content:f2d50d9a-2497-43b0-a4b2-203b6baf42c2'
+  label: 'Indgår i boglisten: magisk realisme'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/spogelserne\r\n/boeger/havana-min-elskede\r\n/gonzalez-datter-transport-co-en-road-novel-med-litteraere-friheder\r\n/boeger/100-ars-ensomhed\r\n/boeger/mellem-traeerne\r\n/boeger/de-fortabte-spillemaend\r\n/boeger/skrive-pa-hjertets-sider\r\n/sommerlys-og-sa-kommer-natten\r\n/boeger/chronic-city\r\n/boeger/tangosangeren\r\n/boeger/en-anden-sol\r\n/boeger/hardboiled-wonderland-og-verdens-ende\r\n/boeger/1q84-bog-1\r\n/boeger/tigerens-kone\r\n/boeger/stjernebogen\r\n/boeger/borgmesterens-tunge\r\n/boeger/fortryllersken-fra-firenze\r\n/boeger/tusmorkeundere\r\n/tiden-haenger-pa-traeerne\r\n/boeger/harzen-sanger\r\n\r\n\r\n\r\n"
+    negate: false
+    context_mapping: {  }

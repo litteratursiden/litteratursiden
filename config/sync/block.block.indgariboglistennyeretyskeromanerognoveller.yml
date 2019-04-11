@@ -1,0 +1,31 @@
+uuid: 30b76263-e48e-4807-ba55-a79e6e0e66e1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:5f834d27-0260-41fb-835a-3498b2b5f927'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennyeretyskeromanerognoveller
+theme: litteratursiden
+region: content
+weight: 230
+provider: null
+plugin: 'block_content:5f834d27-0260-41fb-835a-3498b2b5f927'
+settings:
+  id: 'block_content:5f834d27-0260-41fb-835a-3498b2b5f927'
+  label: 'Indgår i boglisten: Nyere tyske romaner og noveller'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/syv-naetter\r\n/boeger/du-skulle-vaere-gaet\r\n/boeger/lettipark\r\n/boeger/pafugleoen\r\n/boeger/i-den-korte-ende-af-sonnenallee\r\n/boeger/middagsfruen\r\n/boeger/lykkebarn-med-far\r\n/boeger/svommeren\r\n/boeger/sa-siger-den-ene\r\n/boeger/i-hans-tidlige-barndom-en-have\r\n/boeger/jeg-roman\r\n/boeger/modstanderens-dod\r\n/boeger/i-vinterens-lob\r\n/boeger/crazy\r\n/boeger/dykkeren\r\n/boeger/vaerelset\r\n/boeger/dengang-vi-dromte\r\n/boeger/min-mors-elskede\r\n/boeger/i-tider-med-aftagende-lys\r\n/boeger/tarnet-historie-fra-et-sunket-land\r\n/boeger/fortiden-er-ikke-hvad-den-har-vaeret\r\n/boeger/mens-alligatoren-griner\r\n/boeger/i-live-0\r\n/boeger/nultid"
+    negate: false
+    context_mapping: {  }

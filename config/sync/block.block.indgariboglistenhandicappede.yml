@@ -1,0 +1,31 @@
+uuid: e4260ebe-9a0c-42e0-b5e5-89c510276b87
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ef28ab0c-943b-47f9-b2c3-58c658a74bbf'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenhandicappede
+theme: litteratursiden
+region: content
+weight: 480
+provider: null
+plugin: 'block_content:ef28ab0c-943b-47f9-b2c3-58c658a74bbf'
+settings:
+  id: 'block_content:ef28ab0c-943b-47f9-b2c3-58c658a74bbf'
+  label: 'Indgår i boglisten: Handicappede'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/autisten-og-brevduen\r\n/boeger/nanna-et-andet-liv\r\n/boeger/dvaergens-bog\r\n/boeger/violas-barn\r\n/boeger/aprilheksen\r\n/boeger/det-store-onde\r\n/boeger/freak-love\r\n/boeger/billede-af-et-barn\r\n/boeger/freaks\r\n/boeger/zarens-dvaerg\r\n/boeger/doden-korer-audi\r\n/boeger/hvor-skal-vi-hen-far\r\n/boeger/et-helt-nyt-liv-0\r\n/boeger/den-mystiske-sag-om-hunden-i-natten\r\n/boeger/lyset-bag-dine-ojne\r\n/boeger/modvind-og-medbor\r\n/boeger/hullet-0\r\n/boeger/erindringens-faengsel\r\n/boeger/chokoladedoden\r\n/boeger/alle-vore-huse\r\n/boeger/mallos-0\r\n/boeger/dores-bibel\r\n/boeger/skynd-dem-kom-og-se\r\n/boeger/mig-dig\r\n/boeger/soster-og-bror-0\r\n/boeger/ordene-de-ikke-siger-til-mig\r\n/boeger/pigen-og-soldaten\r\n/boeger/hyrder\r\n/boeger/historien-om-smukke-pige\r\n/boeger/kort-over-verden\r\n/boeger/dyrets-folk\r\n/boeger/skygge-baldur\r\n/boeger/lene-0\r\n/boeger/den-usynlige-ivan-isaenko\r\n/boeger/en-stor-dag\r\n/boeger/den-evige-son\r\n/boeger/den-vidunderlige-kaerligheds-historie\r\n/boeger/joe-speedbad\r\n/boeger/hjertets-utalmodighed"
+    negate: false
+    context_mapping: {  }

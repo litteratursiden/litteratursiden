@@ -1,0 +1,31 @@
+uuid: 7e305e94-6f62-484f-b028-f8f1ac2e5dfe
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:562a46c4-3fc2-4822-bab9-bd8c31777725'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: erlendloe
+theme: litteratursiden
+region: content
+weight: 323
+provider: null
+plugin: 'block_content:562a46c4-3fc2-4822-bab9-bd8c31777725'
+settings:
+  id: 'block_content:562a46c4-3fc2-4822-bab9-bd8c31777725'
+  label: 'Erlend Loe'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/en-mands-opgor-med-det-moderne-liv-om-erlend-loes-doppler\r\n/artikler/den-norske-natur-om-doppler-af-erlend-loe"
+    negate: false
+    context_mapping: {  }

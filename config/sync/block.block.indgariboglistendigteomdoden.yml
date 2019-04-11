@@ -1,0 +1,31 @@
+uuid: ba14a909-628c-48fb-8646-a678446a6b60
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:4837b132-cd01-47ef-9640-58b83180db62'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendigteomdoden
+theme: litteratursiden
+region: content
+weight: 408
+provider: null
+plugin: 'block_content:4837b132-cd01-47ef-9640-58b83180db62'
+settings:
+  id: 'block_content:4837b132-cd01-47ef-9640-58b83180db62'
+  label: 'Indgår i boglisten: Digte om døden'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/boothill\r\n/boeger/mexicocitydigte\r\n/boeger/evigt-borte\r\n/boeger/jeg-skyder-genvej-forbi-doden\r\n/boeger/en-aften-med-ulrikka-s-gernes\r\n/boeger/kamikaze\r\n/boeger/vore-modre-dor\r\n/boeger/tvivlen\r\n/boeger/den-sidste-lygte\r\n/boeger/med-udsigt-til-livet\r\n/boeger/det-her-er-hjertet\r\n/boeger/skar-0\r\n/boeger/sorgdigte\r\n/boeger/tider\r\n/boeger/den-hvide-rose-0\r\n/boeger/min-lillebror"
+    negate: false
+    context_mapping: {  }

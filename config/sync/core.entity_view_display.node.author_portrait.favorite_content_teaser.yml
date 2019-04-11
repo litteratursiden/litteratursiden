@@ -1,0 +1,60 @@
+uuid: 5400db17-ee49-42e8-8c05-4e6fe13d89e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.favorite_content_teaser
+    - field.field.node.author_portrait.field_author_portrait_body
+    - field.field.node.author_portrait.field_author_portrait_country
+    - field.field.node.author_portrait.field_author_portrait_ext_link
+    - field.field.node.author_portrait.field_author_portrait_first_name
+    - field.field.node.author_portrait.field_author_portrait_image
+    - field.field.node.author_portrait.field_author_portrait_int_links
+    - field.field.node.author_portrait.field_author_portrait_lit_type
+    - field.field.node.author_portrait.field_author_portrait_surname
+    - field.field.node.author_portrait.field_author_portrait_tags
+    - image.style.medium
+    - node.type.author_portrait
+  module:
+    - image
+    - user
+id: node.author_portrait.favorite_content_teaser
+targetEntityType: node
+bundle: author_portrait
+mode: favorite_content_teaser
+content:
+  field_author_portrait_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_author_portrait_body: true
+  field_author_portrait_country: true
+  field_author_portrait_ext_link: true
+  field_author_portrait_first_name: true
+  field_author_portrait_int_links: true
+  field_author_portrait_lit_type: true
+  field_author_portrait_surname: true
+  field_author_portrait_tags: true
+  flag_like: true
+  langcode: true
+  latest_reviewed_book: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  social_media: true

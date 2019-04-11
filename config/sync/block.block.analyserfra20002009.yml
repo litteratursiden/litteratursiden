@@ -1,0 +1,31 @@
+uuid: cf5cc2aa-acd0-4ca2-99c0-692e4fe93d13
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:48639ac9-deb8-46e7-8994-da514b647aab'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analyserfra20002009
+theme: litteratursiden
+region: content
+weight: 730
+provider: null
+plugin: 'block_content:48639ac9-deb8-46e7-8994-da514b647aab'
+settings:
+  id: 'block_content:48639ac9-deb8-46e7-8994-da514b647aab'
+  label: 'Analyser fra 2000-2009'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/peter-adolphsen\r\n/forfattere/ursula-andkjaer-olsen\r\n/forfattere/jonas-t-bengtsson\r\n/forfattere/jens-blendstrup\r\n/forfattere/jakob-ejersbo\r\n/forfattere/inge-eriksen\r\n/forfattere/niels-frank\r\n/forfattere/lars-frost\r\n/forfattere/simon-grotrian\r\n/forfattere/kirsten-hammann\r\n/forfattere/helle-helle\r\n/forfattere/merete-pryds-helle\r\n/forfattere/benn-q-holm\r\n/forfattere/hanne-vibeke-holst\r\n/forfattere/hojholt\r\n/forfattere/lone-horslev\r\n/forfattere/kristian-ditlev-jensen\r\n/forfattere/erling-jepsen\r\n/forfattere/ida-jessen\r\n/forfattere/christian-jungersen\r\n/forfattere/pia-juul\r\n/forfattere/jette-kaarsbol\r\n/forfattere/henning-mortensen\r\n/forfattere/morten-ramsland\r\n/forfattere/bjarne-reuter\r\n/forfattere/astrid-saalbach\r\n/forfattere/hanne-marie-svendsen\r\n/forfattere/morten-sondergaard\r\n/forfattere/soren-ulrik-thomsen\r\n/forfattere/charlotte-weitze\r\n/forfattere/dorrit-willumsen\r\n <06-10>\r\n/forfattere/naja-marie-aidt\r\n/forfattere/ursula-andkjaer-olsen\r\n/forfattere/kim-blaesbjerg\r\n/forfattere/julia-butschkow\r\n/forfattere/christian-dorph\r\n/forfattere/simon-pasternak\r\n/forfattere/jakob-ejersbo\r\n/forfattere/lars-frost\r\n/forfattere/sissel-jo-gazan\r\n/forfattere/trisse-gejl\r\n/forfattere/jens-christian-grondahl\r\n/forfattere/katrine-marie-guldager\r\n/forfattere/kirsten-hammann\r\n/forfattere/helle-helle\r\n/forfattere/merete-pryds-helle\r\n/forfattere/maria-helleberg\r\n/forfattere/lone-horslev\r\n/forfattere/carsten-jensen\r\n/forfattere/ida-jessen\r\n/forfattere/pia-juul\r\n/forfattere/hans-otto-jorgensen\r\n/forfattere/janina-katz\r\n/forfattere/rune-t-kidde\r\n/forfattere/marianne-larsen\r\n/forfattere/kim-leine\r\n/forfattere/svend-age-madsen\r\n/forfattere/ib-michael\r\n/forfattere/knud-romer\r\n/forfattere/morten-sabroe\r\n/forfattere/jens-smaerup-sorensen\r\n/forfattere/pia-tafdrup\r\n/forfattere/kirsten-thorup\r\n/forfattere/robert-zola-christensen\r\n"
+    negate: false
+    context_mapping: {  }

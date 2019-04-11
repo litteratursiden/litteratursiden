@@ -1,0 +1,31 @@
+uuid: 9211462a-40ba-4ed5-82a7-fa17aa163430
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:28db9114-ee48-4063-93cf-09e3b406e1ea'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenkampenfordetgodeliv
+theme: litteratursiden
+region: content
+weight: 512
+provider: null
+plugin: 'block_content:28db9114-ee48-4063-93cf-09e3b406e1ea'
+settings:
+  id: 'block_content:28db9114-ee48-4063-93cf-09e3b406e1ea'
+  label: 'Indgår i boglisten: Kampen for det gode liv'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/melodien-der-blev-vaek-larsens-komedie-i-21-billeder\r\n/boeger/haablose-slaegter\r\n/boeger/submarino\r\n/boeger/under-himlens-daekke\r\n/boeger/i-den-korte-ende-af-sonnenallee\r\n/boeger/fodt-i-skyggernes-tid\r\n/boeger/barndommens-gade\r\n/boeger/doppler\r\n/boeger/nordkraft\r\n/boeger/liberty\r\n/boeger/madame-bovary\r\n/boeger/frihed\r\n/boeger/siden-blev-det-paent\r\n/boeger/ravnen\r\n/boeger/arvingen\r\n/boeger/sult\r\n/boeger/hvis-det-er\r\n/boeger/ned-til-hundene\r\n/boeger/erobring\r\n/boeger/niels-klims-underjordiske-reise\r\n/boeger/album\r\n/boeger/under-en-stralende-sol\r\n/boeger/mit-venskab-med-jesus-kristus\r\n/boeger/et-dukkehjem\r\n/boeger/niels-lyhne\r\n/boeger/stygge-krumpen\r\n/boeger/luft-under-vingerne\r\n/boeger/biernes-hemmelige-liv\r\n/boeger/daglejerne\r\n/boeger/fragmenter-af-en-dagbog\r\n/boeger/kalak\r\n/boeger/profeterne-i-evighedsfjorden\r\n/boeger/dengang-vi-dromte\r\n/boeger/magiske-fro\r\n/boeger/barndom-laereaar\r\n/boeger/en-bedre-verden\r\n/boeger/lykke-1\r\n/boeger/den-stjalne-vej\r\n/boeger/shantaram\r\n/boeger/constance-ring\r\n\r\n"
+    negate: false
+    context_mapping: {  }

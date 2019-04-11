@@ -1,0 +1,31 @@
+uuid: 1e45f54e-3d53-4c2e-a070-30bc0e077ed0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:e4348170-5ac8-4f5b-a712-bb7c9cd6b2d3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: beatgenerationenforfatterne_2
+theme: litteratursiden
+region: content
+weight: 693
+provider: null
+plugin: 'block_content:e4348170-5ac8-4f5b-a712-bb7c9cd6b2d3'
+settings:
+  id: 'block_content:e4348170-5ac8-4f5b-a712-bb7c9cd6b2d3'
+  label: 'Beatgenerationen - forfatterne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/vejene
+    negate: false
+    context_mapping: {  }

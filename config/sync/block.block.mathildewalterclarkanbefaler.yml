@@ -1,0 +1,31 @@
+uuid: a6fda52d-7819-42ce-b532-32f12ff3f904
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:43092fe9-cf50-43b3-a484-b8d3c91a94ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: mathildewalterclarkanbefaler
+theme: litteratursiden
+region: content
+weight: 965
+provider: null
+plugin: 'block_content:43092fe9-cf50-43b3-a484-b8d3c91a94ae'
+settings:
+  id: 'block_content:43092fe9-cf50-43b3-a484-b8d3c91a94ae'
+  label: 'Mathilde Walter Clark anbefaler'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/mathilde-walter-clark
+    negate: false
+    context_mapping: {  }

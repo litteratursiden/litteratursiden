@@ -1,0 +1,31 @@
+uuid: ba199956-e7b1-4d09-ba50-f079d7a5ad7f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:4ec1fd40-29d2-4a2f-a778-7ac309fa68b2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: theisorntoftforfatterartikel
+theme: litteratursiden
+region: content
+weight: 274
+provider: null
+plugin: 'block_content:4ec1fd40-29d2-4a2f-a778-7ac309fa68b2'
+settings:
+  id: 'block_content:4ec1fd40-29d2-4a2f-a778-7ac309fa68b2'
+  label: 'Theis Ørntoft forfatter'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/theis-orntoft-anbefaler
+    negate: false
+    context_mapping: {  }

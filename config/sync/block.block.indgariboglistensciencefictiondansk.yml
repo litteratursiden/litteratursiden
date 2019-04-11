@@ -1,0 +1,31 @@
+uuid: 36f2091f-a158-479f-90b7-d29a8d94ba94
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:0d616dbb-99d5-4a2c-a596-04e8f10206e6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensciencefictiondansk
+theme: litteratursiden
+region: content
+weight: 150
+provider: null
+plugin: 'block_content:0d616dbb-99d5-4a2c-a596-04e8f10206e6'
+settings:
+  id: 'block_content:0d616dbb-99d5-4a2c-a596-04e8f10206e6'
+  label: 'Indgår i boglisten: Science Fiction - dansk'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/daemonens-bagdor\r\n/boeger/de-ansatte\r\n/boeger/rumhavne\r\n/boeger/algernon-fremtidsroman\r\n/boeger/rynkekneppesygen\r\n/boeger/ar-9-efter-loopet\r\n/boeger/manebase-rodhaette-og-andre-sf-noveller\r\n/boeger/happy-nation\r\n/boeger/7-sydost\r\n/boeger/destin-ii-snefuglen\r\n/boeger/destin-seerkrystallen\r\n/boeger/universets-hersker\r\n/boeger/mitose\r\n/boeger/berlin-404\r\n/boeger/langs-smertegraensen\r\n/boeger/den-danske-borgerkrig-2018-24\r\n/boeger/mount-kobenhavn\r\n/boeger/glitch\r\n/boeger/kode-2112-skyggerne\r\n/boeger/colombia\r\n/boeger/exilium-de-fejlfodte\r\n/boeger/hans-broges-bakker\r\n/boeger/laenge-leve-alfa-generationen\r\n/boeger/forar-pa-ansar\r\n/boeger/syndfloden-og-storbyen\r\n/boeger/mimesis\r\n/boeger/rejsen-til-skyway\r\n/boeger/solar\r\n/boeger/akerons-porte\r\n/boeger/eksperiment-eros\r\n/boeger/fort-europa\r\n/boeger/bloddyr\r\n/boeger/verdensfortaellerne\r\n/boeger/drom\r\n/boeger/det-kinesiske-vaerelse\r\n/boeger/minerne-pa-orthomyx-og-andre-sf-noveller\r\n/boeger/universet-der-slingrede\r\n/boeger/kolonien-0\r\n/boeger/samlemappe-no-1\r\n/boeger/faderens-sonner-og-andre-sf-noveller\r\n/boeger/ambrosia-live\r\n/boeger/mediatropolis\r\n/boeger/kali-0\r\n/boeger/bla-lys\r\n/boeger/den-afskyelige\r\n/boeger/tropika-ainukka-heikkinens-forandring\r\n/boeger/tidsfordaerv-og-andre-sf-noveller\r\n/boeger/urmunden-og-andre-sf-noveller"
+    negate: false
+    context_mapping: {  }

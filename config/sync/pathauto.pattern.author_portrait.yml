@@ -1,0 +1,22 @@
+uuid: d6164243-643d-415c-bba2-e2f20b4b9e99
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: author_portrait
+label: 'Author portrait'
+type: 'canonical_entities:node'
+pattern: 'forfattere/[node:title]'
+selection_criteria:
+  c5e2b7c5-7f60-460d-abc0-ef38ef295aac:
+    id: node_type
+    bundles:
+      author_portrait: author_portrait
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c5e2b7c5-7f60-460d-abc0-ef38ef295aac
+selection_logic: and
+weight: -5
+relationships: {  }

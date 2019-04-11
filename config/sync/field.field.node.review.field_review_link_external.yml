@@ -1,0 +1,23 @@
+uuid: 7e51920a-1cc4-4144-a70e-b4311281400b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_link_external
+    - node.type.review
+  module:
+    - link
+id: node.review.field_review_link_external
+field_name: field_review_link_external
+entity_type: node
+bundle: review
+label: 'External links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,31 @@
+uuid: b130f365-1add-490b-b916-f4bc0908c487
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c5afacbe-0dc2-4309-ae15-ecb16d37315b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbosseroglesbiske
+theme: litteratursiden
+region: content
+weight: 364
+provider: null
+plugin: 'block_content:c5afacbe-0dc2-4309-ae15-ecb16d37315b'
+settings:
+  id: 'block_content:c5afacbe-0dc2-4309-ae15-ecb16d37315b'
+  label: 'Indgår i boglisten: Bøsser og lesbiske'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/pa-fast-grund\r\n/boeger/svaner-bliver-ikke-skilt\r\n/boeger/mikael\r\n/boeger/bedemandens-datter\r\n/boeger/bedemandens-datter\r\n/boeger/baggard\r\n/boeger/anderledes\r\n/boeger/stjerner-uden-svimlen\r\n/boeger/weekend-0\r\n/boeger/krokodillesuppe\r\n/boeger/vi-ses-i-helvede\r\n/boeger/blink-blink\r\n/boeger/efterklange\r\n/boeger/maurice\r\n/boeger/sma-guder\r\n/boeger/tor-aldrig-tarer-bort-uden-handsker\r\n/boeger/tor-aldrig-tarer-bort-uden-handsker-2-sygdommen\r\n/boeger/tor-aldrig-tarer-bort-uden-handsker-3-doden\r\n/boeger/mor-og-busser\r\n/boeger/padder-og-krybdyr\r\n/boeger/et-aegteskabs-mangel-pa-skarphed\r\n/boeger/mellem-jasminer\r\n/boeger/solvmanden\r\n/boeger/forbudt-kaerlighed-0\r\n/boeger/kvababbelser-0\r\n/boeger/i-skonhedens-tjeneste\r\n/boeger/i-spaend\r\n/boeger/mea-culpa\r\n/boeger/fornemmelser\r\n/boeger/homo-sapienne\r\n/boeger/konrad-og-poul\r\n/boeger/forhud\r\n/boeger/mens-england-sover\r\n/boeger/nowhere\r\n/boeger/krummeklubbens-skamlose-sostre\r\n/boeger/faerdig-med-eddy-bellegueule\r\n/boeger/pa-den-forkerte-side\r\n/boeger/alt-er-mit\r\n/boeger/brombaerar\r\n/boeger/svans\r\n/boeger/doden-i-venedig\r\n/boeger/mysteriet-i-cyanide-wells\r\n/boeger/nielsine\r\n/boeger/bandit\r\n/boeger/nar-maend-elsker-maend-og-kvinder-elsker-kvinder\r\n/boeger/baby-jane\r\n/boeger/noget-du-skal-vide\r\n/boeger/brokeback-mountain\r\n/boeger/rejsen-med-den-lille-pige\r\n/boeger/simon-elsker-ogsa-kvinder\r\n/boeger/huden-er-det-elastiske-hylster-der-omgiver-hele-legemet\r\n/boeger/kaerlighed-uden-modstand\r\n/boeger/hundehjerte\r\n/boeger/et-strejf-af-rosmarin\r\n/boeger/fordrivelsen\r\n/boeger/mellem-verdener-0\r\n/boeger/silhuet-af-en-synder\r\n/boeger/pige-moder-dreng\r\n/boeger/forlad-os-vor-skyld-0\r\n/boeger/arabisk-vemod\r\n/boeger/elegance\r\n/boeger/nattens-historie\r\n/boeger/en-skjult-affaere\r\n/boeger/tilnaermelser\r\n/boeger/pa-sikker-afstand\r\n/boeger/frontloberen\r\n/boeger/sjaelesostre\r\n/boeger/nattevagt-1\r\n/boeger/ingen-nat-lang\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: b9116c94-de75-425c-b809-78e7ba275531
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:9ff09c3d-f4f3-4e30-af6e-bce5c3fc4280'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenteater
+theme: litteratursiden
+region: content
+weight: 169
+provider: null
+plugin: 'block_content:9ff09c3d-f4f3-4e30-af6e-bce5c3fc4280'
+settings:
+  id: 'block_content:9ff09c3d-f4f3-4e30-af6e-bce5c3fc4280'
+  label: 'Indgår i boglisten: Teater'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/syv-mod-theben\r\n/boeger/et-dukkehjem\r\n/boeger/hvem-er-bange-virginia-woolf\r\n/boeger/don-juan-eller-stengaesten\r\n/boeger/samlede-skuespil-bind-1\r\n/boeger/samlede-skuespil-iv\r\n/boeger/niels-klims-underjordiske-reise"
+    negate: false
+    context_mapping: {  }

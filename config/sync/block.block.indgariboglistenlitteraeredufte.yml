@@ -1,0 +1,31 @@
+uuid: 12c15025-e02b-4b08-b365-90a93e395420
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:88ef45b9-c321-4ecb-b20b-e2d69464a534'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraeredufte
+theme: litteratursiden
+region: content
+weight: 552
+provider: null
+plugin: 'block_content:88ef45b9-c321-4ecb-b20b-e2d69464a534'
+settings:
+  id: 'block_content:88ef45b9-c321-4ecb-b20b-e2d69464a534'
+  label: 'Indgår i boglisten: Litterære dufte'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-duftende-have\r\n/boeger/en-saeson\r\n/boeger/jeg-kommer-til-lobe\r\n/boeger/rodby-puttgarden\r\n/boeger/parfumekongens-dotre\r\n/boeger/tyren-ferdinand\r\n/boeger/duften-af-kaffe\r\n/boeger/magisk-karma\r\n/boeger/en-naturlig-forklaring\r\n/boeger/duft-af-vild-lavendel\r\n/boeger/en-duft-af-frihed\r\n/boeger/parfumen\r\n/boeger/velduft-fra-et-fremmed-bjerg\r\n/boeger/asfaltblomstens-duft\r\n/boeger/plys-folger-naesen"
+    negate: false
+    context_mapping: {  }

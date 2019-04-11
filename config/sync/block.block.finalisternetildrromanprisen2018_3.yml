@@ -1,0 +1,31 @@
+uuid: 0ea381a5-5e37-476e-af21-dbadd32fa396
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:b27d1d20-3c3f-4526-b064-342963eb573b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: finalisternetildrromanprisen2018_3
+theme: litteratursiden
+region: content
+weight: 326
+provider: null
+plugin: 'block_content:b27d1d20-3c3f-4526-b064-342963eb573b'
+settings:
+  id: 'block_content:b27d1d20-3c3f-4526-b064-342963eb573b'
+  label: 'Finalisterne til DR Romanprisen 2018'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/hvem-vinder-dr-romanprisen-2018
+    negate: false
+    context_mapping: {  }

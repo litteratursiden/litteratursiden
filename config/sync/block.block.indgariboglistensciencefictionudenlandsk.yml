@@ -1,0 +1,31 @@
+uuid: 841418e8-293a-40b8-aa56-596997fd02d0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e0693748-bf83-411d-b466-270981d803c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensciencefictionudenlandsk
+theme: litteratursiden
+region: content
+weight: 151
+provider: null
+plugin: 'block_content:e0693748-bf83-411d-b466-270981d803c6'
+settings:
+  id: 'block_content:e0693748-bf83-411d-b466-270981d803c6'
+  label: 'Indgår i boglisten: Science Fiction - udenlandsk'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/armada-spillet-om-jorden\r\n/boeger/blar\r\n/boeger/udslettelse-0\r\n/boeger/hos-glasmaneterne-roman\r\n/boeger/solvvinden\r\n/boeger/gylden-son\r\n/boeger/rod-opstand\r\n/boeger/soheste-pa-mars\r\n/boeger/patience-0\r\n/boeger/dark-matter-0\r\n/boeger/i-kamp-mod-tiden\r\n/boeger/det-tredje-testamente-hvad-hvis-din-fremtid-allerede-har-fundet-sted\r\n/boeger/darlah\r\n/boeger/hvad-fluffy-vidste\r\n/boeger/diabolik\r\n/boeger/nano-kommer-til-clifford-falls\r\n/boeger/illuminae\r\n/boeger/solaris\r\n/boeger/under-mars\r\n/boeger/hvem-er-bange-wolf-359\r\n/boeger/sandkonger\r\n/boeger/sejlvaeveren\r\n/boeger/tidsparken\r\n/boeger/orbital-1-naerkontakt-skrevet-af-sylvain-runberg-og-illustreret-af-serge-pelle\r\n/boeger/ildkamp\r\n/boeger/stalhjerte\r\n/boeger/station-11\r\n/boeger/den-store-science-fiction-bog\r\n/boeger/ranx\r\n/boeger/houston-houston-kan-i-hore-os\r\n/boeger/langsomme-fugle\r\n/boeger/martian\r\n/boeger/tidsmaskinen-og-tidens-argonauter\r\n/boeger/den-sidste-stjerne-0"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,34 @@
+uuid: ceec8de3-c2bf-4744-bdca-5b380a7c6d5e
+langcode: da
+status: true
+dependencies: {  }
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access user contact forms'
+  - 'access user profiles'
+  - 'create book_debate content'
+  - 'delete own book_debate content'
+  - 'display eu cookie compliance popup'
+  - 'edit own book_debate content'
+  - 'edit own comments'
+  - 'flag bookmark'
+  - 'flag comment_like'
+  - 'flag like'
+  - 'flag notifications'
+  - 'post comments'
+  - 'schedule publishing of nodes'
+  - 'skip comment approval'
+  - 'unflag bookmark'
+  - 'unflag comment_like'
+  - 'unflag like'
+  - 'unflag notifications'
+  - 'use text format filtered_html'
+  - 'use text format mailchimp_campaign'
+  - 'view own unpublished content'
+  - 'view own unpublished taxonomy term'

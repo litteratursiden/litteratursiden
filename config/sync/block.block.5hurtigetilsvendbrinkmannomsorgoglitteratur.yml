@@ -1,0 +1,31 @@
+uuid: 9a0dab8c-3d7b-4600-a6cb-eb0ab684f1dc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b577f0fd-c592-4628-adfe-94a95e1e4aeb'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: 5hurtigetilsvendbrinkmannomsorgoglitteratur
+theme: litteratursiden
+region: content
+weight: 15
+provider: null
+plugin: 'block_content:b577f0fd-c592-4628-adfe-94a95e1e4aeb'
+settings:
+  id: 'block_content:b577f0fd-c592-4628-adfe-94a95e1e4aeb'
+  label: '5 hurtige til Svend Brinkmann om sorg og litteratur'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/sorg\r\n<front>"
+    negate: false
+    context_mapping: {  }

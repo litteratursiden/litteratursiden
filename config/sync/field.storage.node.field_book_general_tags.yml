@@ -1,0 +1,20 @@
+uuid: 366bc658-6600-4b3f-bee3-d7323bafc825
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_book_general_tags
+field_name: field_book_general_tags
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

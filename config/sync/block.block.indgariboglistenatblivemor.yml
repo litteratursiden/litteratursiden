@@ -1,0 +1,31 @@
+uuid: 17f95361-ca07-4b6b-ae1f-7a7541b63f21
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b53f4b3c-ebd5-467f-8aaa-1b62a867a444'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenatblivemor
+theme: litteratursiden
+region: content
+weight: 822
+provider: null
+plugin: 'block_content:b53f4b3c-ebd5-467f-8aaa-1b62a867a444'
+settings:
+  id: 'block_content:b53f4b3c-ebd5-467f-8aaa-1b62a867a444'
+  label: 'Indgår i boglisten: At blive mor'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/baby-0\r\n/boeger/smutteren\r\n/boeger/omstaendigheder\r\n/boeger/omstaendigheder\r\n/boeger/det-bla-sengetaeppe\r\n/boeger/shopaholic-baby\r\n/boeger/nyfodt\r\n/boeger/handbog-ravnemodre\r\n/boeger/projekt-baby\r\n/boeger/minus-ni-til-et\r\n/boeger/reporter-i-chok-gravid\r\n/boeger/moderkaerlighed\r\n/boeger/den-lykkelige-husmor\r\n/boeger/kroppen-er-vand\r\n/boeger/sma-jordskaelv\r\n/boeger/en-stor-familie\r\n/boeger/stovbold\r\n/boeger/reporter-i-chok-gravid"
+    negate: false
+    context_mapping: {  }

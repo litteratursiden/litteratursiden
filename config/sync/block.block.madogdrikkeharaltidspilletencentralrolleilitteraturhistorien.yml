@@ -1,0 +1,31 @@
+uuid: d83cdac7-7565-4fab-832a-f12f3c08e73f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:42eee0cf-e405-4599-9864-114bc08a75f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: madogdrikkeharaltidspilletencentralrolleilitteraturhistorien
+theme: litteratursiden
+region: content
+weight: 86
+provider: null
+plugin: 'block_content:42eee0cf-e405-4599-9864-114bc08a75f0'
+settings:
+  id: 'block_content:42eee0cf-e405-4599-9864-114bc08a75f0'
+  label: 'Mad og drikke har altid spillet en central rolle i litteraturhistorien '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/litteraere-livretter-laes-dig-maet
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: b0fb4e6f-7cc2-44b4-8eea-74ba14488f0a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:51e52bc1-5a94-44d0-a2e2-78f63585d6d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenurbanfantasy
+theme: litteratursiden
+region: content
+weight: 205
+provider: null
+plugin: 'block_content:51e52bc1-5a94-44d0-a2e2-78f63585d6d6'
+settings:
+  id: 'block_content:51e52bc1-5a94-44d0-a2e2-78f63585d6d6'
+  label: 'Indgår i boglisten: Urban fantasy'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/jernfeen\r\n/boeger/sjaelesluger\r\n/boeger/daemonernes\r\n/boeger/urvaerksenglen\r\n/boeger/vildvaesner-kragetaleren\r\n/boeger/en-anden-virkelighed\r\n/boeger/uskyldigt-blod-0\r\n/boeger/heksejagt-0\r\n"
+    negate: false
+    context_mapping: {  }

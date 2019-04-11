@@ -1,0 +1,31 @@
+uuid: 5681f3d0-27de-4921-864d-6f956df90e75
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:92bc7078-03e1-4fc5-a204-755152c8ded5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: omsadetgaelder
+theme: litteratursiden
+region: content
+weight: 6
+provider: null
+plugin: 'block_content:92bc7078-03e1-4fc5-a204-755152c8ded5'
+settings:
+  id: 'block_content:92bc7078-03e1-4fc5-a204-755152c8ded5'
+  label: 'DR Romanklubben'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/hanne-richardt-beck\r\n<front>"
+    negate: false
+    context_mapping: {  }

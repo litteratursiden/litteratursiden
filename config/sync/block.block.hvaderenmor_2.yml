@@ -1,0 +1,31 @@
+uuid: 3333e1f5-1b5b-48f2-8bcf-43dded4e0b48
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:377e46cd-c9bc-4623-a19b-69b50d211454'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: hvaderenmor_2
+theme: litteratursiden
+region: content
+weight: 311
+provider: null
+plugin: 'block_content:377e46cd-c9bc-4623-a19b-69b50d211454'
+settings:
+  id: 'block_content:377e46cd-c9bc-4623-a19b-69b50d211454'
+  label: Artikel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-der-lyver\r\n/boeger/bornene\r\n/boeger/det-forste-jeg-taenker-pa"
+    negate: false
+    context_mapping: {  }

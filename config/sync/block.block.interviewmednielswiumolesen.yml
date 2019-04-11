@@ -1,0 +1,31 @@
+uuid: 468b193d-fb98-4fe4-913b-c3165f294b31
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:a5d337db-d645-4b4c-8bcf-6653634370e9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: interviewmednielswiumolesen
+theme: litteratursiden
+region: content
+weight: 949
+provider: null
+plugin: 'block_content:a5d337db-d645-4b4c-8bcf-6653634370e9'
+settings:
+  id: 'block_content:a5d337db-d645-4b4c-8bcf-6653634370e9'
+  label: 'Interview med Niels Wium Olesen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/niels-wium-olesen\r\n/boeger/de-danske-ministerier-1972-1993-del-2-poul-schluters-tid-1982-1993"
+    negate: false
+    context_mapping: {  }

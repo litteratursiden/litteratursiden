@@ -1,0 +1,62 @@
+uuid: b2d078de-4897-482b-9ed2-4026d4becff3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.favorite_content_teaser
+    - field.field.node.article.field_article_body
+    - field.field.node.article.field_article_comments
+    - field.field.node.article.field_article_cover_image
+    - field.field.node.article.field_article_general_tags
+    - field.field.node.article.field_article_internal_link
+    - field.field.node.article.field_article_link_external
+    - image.style.medium
+    - node.type.article
+  module:
+    - image
+    - user
+id: node.article.favorite_content_teaser
+targetEntityType: node
+bundle: article
+mode: favorite_content_teaser
+content:
+  field_article_cover_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_full_name:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_article_body: true
+  field_article_comments: true
+  field_article_general_tags: true
+  field_article_internal_link: true
+  field_article_link_external: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  owner_portrait: true
+  social_media: true

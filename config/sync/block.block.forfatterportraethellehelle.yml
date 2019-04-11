@@ -1,0 +1,31 @@
+uuid: 7384f91e-a69c-4232-b775-e5f3f23dfca7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b3741d58-a7f7-41d4-a20a-3bb3528d36c7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraethellehelle
+theme: litteratursiden
+region: content
+weight: 740
+provider: null
+plugin: 'block_content:b3741d58-a7f7-41d4-a20a-3bb3528d36c7'
+settings:
+  id: 'block_content:b3741d58-a7f7-41d4-a20a-3bb3528d36c7'
+  label: Forfatterportræt
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/fokus-helle-helle\r\n/index.php/videoer/helle-helle-jeg-besluttede-alt-skulle-vaere-anderledes\r\n"
+    negate: false
+    context_mapping: {  }

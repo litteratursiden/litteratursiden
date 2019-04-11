@@ -1,0 +1,31 @@
+uuid: a1a6862e-e71a-443e-8fdd-9e4bf0879b10
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:705d461e-c899-4c20-b0bb-15bf81929ab5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendethaenderiromanerne
+theme: litteratursiden
+region: content
+weight: 407
+provider: null
+plugin: 'block_content:705d461e-c899-4c20-b0bb-15bf81929ab5'
+settings:
+  id: 'block_content:705d461e-c899-4c20-b0bb-15bf81929ab5'
+  label: 'Indgår i boglisten: Det´ hænder i romanerne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-fjerde-hand\r\n/boeger/den-anden-hand\r\n/boeger/delhis-smukkeste-haender\r\n/boeger/kolde-haender\r\n/boeger/de-urene-haender\r\n/boeger/hvafor-en-hand-vil-du-ha\r\n/boeger/katrines-hand\r\n/boeger/hand-i-handske\r\n/boeger/fatimas-hand-0\r\n/boeger/handen-0\r\n/boeger/rode-haender\r\n/boeger/haender\r\n/boeger/marions-slor\r\n/boeger/sne-i-september\r\n/boeger/ariel-0\r\n/boeger/dagene-skifter-haender\r\n/boeger/ved-floden-piedra-satte-jeg-mig-og-graed\r\n/boeger/med-handen-pa-biblen\r\n/boeger/i-den-korte-ende-af-sonnenallee\r\n/boeger/vildfarne-elskende\r\n/boeger/priapus\r\n/boeger/arsenalet\r\n/boeger/pigen-med-de-ni-fingre"
+    negate: false
+    context_mapping: {  }

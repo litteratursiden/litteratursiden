@@ -1,0 +1,25 @@
+uuid: bfd2c3cd-0af4-49e6-ab6d-2545c673d9aa
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_basic_background
+  module:
+    - color_field
+id: block_content.basic.field_basic_background
+field_name: field_basic_background
+entity_type: block_content
+bundle: basic
+label: Background
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#3a3b3d'
+    opacity: '1'
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

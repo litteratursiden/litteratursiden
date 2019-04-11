@@ -1,0 +1,31 @@
+uuid: d46e64a1-31d9-493a-833f-eb48fe2945cf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:175a5208-fd3e-4f35-8a8d-32631ca121a5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenudenlandskhorrorefter2009
+theme: litteratursiden
+region: content
+weight: 196
+provider: null
+plugin: 'block_content:175a5208-fd3e-4f35-8a8d-32631ca121a5'
+settings:
+  id: 'block_content:175a5208-fd3e-4f35-8a8d-32631ca121a5'
+  label: 'Indgår i boglisten: Udenlandsk horror efter 2009'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/rovdyrenes-klub-bogeyman\r\n/boeger/menneskehavn\r\n/boeger/blodrus-1\r\n/boeger/hostens-engle\r\n/boeger/world-war-z-0\r\n/boeger/de-tolv\r\n/boeger/den-forste\r\n/boeger/ghost-house-20\r\n/boeger/den-sidste-varulv\r\n/boeger/ting-vi-mistede-i-ilden\r\n/boeger/splinten\r\n/boeger/forskanset-bag-muren\r\n/boeger/de-forste-dage\r\n/boeger/nattens-skygge\r\n/boeger/heksenat-0\r\n/boeger/dodt-lob-0\r\n/boeger/darlah\r\n/boeger/horn\r\n/boeger/kvinden-i-sort\r\n/boeger/johannes-cabal-nekromantikeren\r\n/boeger/vaekkelse\r\n/boeger/doktor-sovn\r\n/boeger/de-uskyldige-1\r\n/boeger/en-bon-til-odd\r\n/boeger/aske-og-odelaeggelse\r\n/boeger/rad-og-fordaerv\r\n/boeger/den-store-gud-pan-og-andre-saere-fortaellinger\r\n/boeger/feberdrom-0\r\n/boeger/i-morgen-er-alt-morkt-brages-historie\r\n/boeger/syge-sjaele\r\n/boeger/ud-af-morket\r\n/boeger/septembers-lys-0\r\n/boeger/midnatspaladset\r\n/boeger/stallo\r\n/boeger/hojlandet\r\n/boeger/faergen\r\n/boeger/den-evige-nat\r\n/boeger/blodslaven\r\n/boeger/jeg-skal-huske-dig"
+    negate: false
+    context_mapping: {  }

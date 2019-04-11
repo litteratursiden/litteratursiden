@@ -1,0 +1,31 @@
+uuid: 11ac6138-0c91-48c9-999f-3bb6f5b28844
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f7250a3e-e4a9-45c6-b4cd-76109caf683a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenerotisklitteraturklassikerne_4
+theme: litteratursiden
+region: content
+weight: 324
+provider: null
+plugin: 'block_content:f7250a3e-e4a9-45c6-b4cd-76109caf683a'
+settings:
+  id: 'block_content:f7250a3e-e4a9-45c6-b4cd-76109caf683a'
+  label: 'Erotisk litteratur - klassikerne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/giovanni-boccaccio\r\n/boeger/det-bedste-fra-dekameron\r\n/boeger/fanny-hill-0\r\n/forfattere/donatien-alphonse-francois-de-sade\r\n/boeger/justine-0\r\n/forfattere/anais-nin\r\n/artikler/erotisk-litteratur-erotiske-klassikere\r\n/artikler/erotiske-forfattere-laes-de-uomgaengelige"
+    negate: false
+    context_mapping: {  }

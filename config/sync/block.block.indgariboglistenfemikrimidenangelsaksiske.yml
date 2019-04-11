@@ -1,0 +1,31 @@
+uuid: 7dbb76e5-cf8a-478e-aa6e-964b06ba81ae
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:dd150587-c651-4c1a-9d62-1b2160f9c967'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfemikrimidenangelsaksiske
+theme: litteratursiden
+region: content
+weight: 438
+provider: null
+plugin: 'block_content:dd150587-c651-4c1a-9d62-1b2160f9c967'
+settings:
+  id: 'block_content:dd150587-c651-4c1a-9d62-1b2160f9c967'
+  label: 'Indgår i boglisten: Femikrimi (den angelsaksiske)'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/ren-vodka\r\n/boeger/efter-stormen-1\r\n/boeger/skjulte-dybder\r\n/boeger/dodens-havn\r\n/boeger/som-i-et-spejl-0\r\n/boeger/dobbeltgaengeren-0\r\n/boeger/t-tillid\r\n/boeger/kropskontakt\r\n/boeger/betaendt-fortid\r\n/boeger/de-smukkeste\r\n/boeger/kaldet\r\n   "
+    negate: false
+    context_mapping: {  }

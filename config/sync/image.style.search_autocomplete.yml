@@ -1,0 +1,16 @@
+uuid: db7c983a-ea26-4a58-b59b-d311233d0288
+langcode: en
+status: true
+dependencies: {  }
+name: search_autocomplete
+label: 'Search autocomplete'
+effects:
+  493bec32-f260-47ec-ac0f-3ffe2ed30690:
+    uuid: 493bec32-f260-47ec-ac0f-3ffe2ed30690
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 60
+      height: 95
+      anchor: center-center
+pipeline: compress

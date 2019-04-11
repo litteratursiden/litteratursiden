@@ -1,0 +1,31 @@
+uuid: 27804286-ca3d-4a00-8fd2-14117cb4ceb2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b413058a-1371-4bf1-ae5a-151b11ee9bae'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra1970erne
+theme: litteratursiden
+region: content
+weight: 814
+provider: null
+plugin: 'block_content:b413058a-1371-4bf1-ae5a-151b11ee9bae'
+settings:
+  id: 'block_content:b413058a-1371-4bf1-ae5a-151b11ee9bae'
+  label: 'Indgår i boglisten: Analyser fra 1970''erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/svantes-viser\r\n/boeger/hold-kaeft-og-vaer-smuk \r\n/boeger/kaerestesorg\r\n/boeger/bevisets-stilling\r\n/boeger/eline-bessers-laeretid\r\n/boeger/creme-fraiche\r\n/boeger/salthandlerskens-hus\r\n/boeger/en-fridag-til-fru-larsen\r\n/boeger/vilhelms-vaerelse\r\n/boeger/hvad-taenkte-egentlig-arendse\r\n/boeger/victoria-og-verdensrevolutionen\r\n/boeger/visse-hensyn\r\n/boeger/anarkotika\r\n/boeger/tilbage-til-anholt\r\n/boeger/tugt-og-utugt-i-mellemtiden\r\n/boeger/kritik-af-tavsheden\r\n/boeger/le-roman\r\n/boeger/fodboldenglen\r\n/boeger/ballader-om-vold-og-omhed\r\n/boeger/louises-hus\r\n/boeger/argumenter-benadning\r\n/boeger/medloberen\r\n/boeger/livets-hastighed\r\n/boeger/baby\r\n/boeger/vinterborn\r\n/boeger/vangede-billeder\r\n/boeger/arbejdssky\r\n"
+    negate: false
+    context_mapping: {  }

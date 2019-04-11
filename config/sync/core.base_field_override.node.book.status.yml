@@ -1,0 +1,22 @@
+uuid: 3f8e7ae9-40b7-4063-bd37-4f7f6e4de326
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.book
+id: node.book.status
+field_name: status
+entity_type: node
+bundle: book
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

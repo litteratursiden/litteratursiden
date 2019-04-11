@@ -1,0 +1,31 @@
+uuid: d9eb8e2e-f237-4668-981e-7954106cf0dd
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:99e52662-6345-4554-83a8-1485af9d41bc'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbornelitteraerefyrtarne1960erne
+theme: litteratursiden
+region: content
+weight: 357
+provider: null
+plugin: 'block_content:99e52662-6345-4554-83a8-1485af9d41bc'
+settings:
+  id: 'block_content:99e52662-6345-4554-83a8-1485af9d41bc'
+  label: 'Indgår i boglisten: Børnelitterære fyrtårne: 1960erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/drengen-i-manen\r\n/boeger/cykelmyggen-egon\r\n/boeger/halfdans-abc\r\n/boeger/lille-virgil\r\n/boeger/massa-peter\r\n/boeger/silas-og-den-sorte-hoppe\r\n/boeger/snovsen\r\n/boeger/modsatterne-og-omvendterne\r\n/boeger/krummerne"
+    negate: false
+    context_mapping: {  }

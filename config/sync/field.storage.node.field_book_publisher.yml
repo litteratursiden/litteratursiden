@@ -1,0 +1,21 @@
+uuid: 553327e1-03de-443b-a7ff-ee3148062ee7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_book_publisher
+field_name: field_book_publisher
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

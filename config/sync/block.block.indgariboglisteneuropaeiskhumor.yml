@@ -1,0 +1,31 @@
+uuid: bca90fbf-5032-4aa2-b721-29e142a79259
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:68e933f5-4170-47bc-be46-bb99afbe3a09'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisteneuropaeiskhumor
+theme: litteratursiden
+region: content
+weight: 432
+provider: null
+plugin: 'block_content:68e933f5-4170-47bc-be46-bb99afbe3a09'
+settings:
+  id: 'block_content:68e933f5-4170-47bc-be46-bb99afbe3a09'
+  label: 'Indgår i boglisten: Europæisk humor'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/koter-0\r\n/boeger/velkommen-til-festen\r\n/boeger/britt-marie-var-her\r\n/boeger/en-mand-der-hedder-ove\r\n/boeger/ander\r\n/boeger/gud-taler-ud\r\n/boeger/luskefisefortaellinger\r\n/boeger/kaeledyrene\r\n/boeger/de-kosmikomiske-historier\r\n/boeger/storm\r\n/boeger/delikatesse\r\n/boeger/doden-korer-audi\r\n/boeger/hvor-skal-vi-hen-far\r\n/boeger/hvor-drommene-vender\r\n/boeger/potensgiverne\r\n/boeger/sirile-gentlemen-soges\r\n/boeger/hjemmefronten\r\n/boeger/sameland\r\n/boeger/med-kup-og-kaffelikor\r\n/boeger/analfabeten-der-kunne-regne\r\n/boeger/den-hundredarige-der-kravlede-ud-ad-vinduet-og-forsvandt\r\n/boeger/opmalingen-af-verden\r\n/boeger/doppler\r\n/boeger/fvonk\r\n/boeger/pigen-i-cementblanderen\r\n/boeger/planen-til-sikring-af-fuld-beskaeftigelse\r\n/boeger/munchhausens-eventyr\r\n/boeger/en-utjekket-mors-hemmelige-liv\r\n/boeger/den-hylende-moller\r\n/boeger/nar-guder-er-vaerst\r\n/boeger/den-utrolige-historie-om-fakiren-der-sad-fast-i-et-ikea-skab\r\n/boeger/ved-profetens-skaeg\r\n/boeger/naesedag\r\n/boeger/27-eller-doden-skaber-kunstneren\r\n/boeger/hulen-0\r\n/boeger/min-mors-sidste-dage\r\n/boeger/kvinder-pa-kur\r\n/boeger/hotel-problemski\r\n/boeger/under-i-september\r\n\r\n"
+    negate: false
+    context_mapping: {  }

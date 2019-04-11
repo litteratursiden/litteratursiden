@@ -1,0 +1,10 @@
+uuid: 503bd6e8-c50a-4046-9655-c22a9a902184
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.spot
+label: Spot
+targetEntityType: node
+cache: true

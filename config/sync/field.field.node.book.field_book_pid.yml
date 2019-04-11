@@ -1,0 +1,19 @@
+uuid: a5015a11-4624-408c-b487-3eaf52e8bec7
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_pid
+    - node.type.book
+id: node.book.field_book_pid
+field_name: field_book_pid
+entity_type: node
+bundle: book
+label: Pid
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

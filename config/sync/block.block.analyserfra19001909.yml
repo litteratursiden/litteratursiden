@@ -1,0 +1,31 @@
+uuid: 7a889e43-806a-443c-b41e-86074416ea5b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:9f9dd250-68a1-4aaf-a7ec-36a44809b5b9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analyserfra19001909
+theme: litteratursiden
+region: content
+weight: 912
+provider: null
+plugin: 'block_content:9f9dd250-68a1-4aaf-a7ec-36a44809b5b9'
+settings:
+  id: 'block_content:9f9dd250-68a1-4aaf-a7ec-36a44809b5b9'
+  label: 'Analyser fra 1900-1909'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/analyser-pa-litteratursiden\r\n/forfattere/martin-andersen-nexo\r\n/forfattere/johan-skjoldborg\r\n/forfattere/jeppe-aakjaer\r\n/forfattere/jakob-knudsen\r\n/forfattere/johannes-v-jensen\r\n\r\n"
+    negate: false
+    context_mapping: {  }

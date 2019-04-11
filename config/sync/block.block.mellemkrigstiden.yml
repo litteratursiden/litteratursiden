@@ -1,0 +1,31 @@
+uuid: b5cc3c05-7694-44ff-b04c-2db9aae40ad6
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:044d6e98-0eef-4528-87b3-ff13dfe8b123'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: mellemkrigstiden
+theme: litteratursiden
+region: content
+weight: 163
+provider: null
+plugin: 'block_content:044d6e98-0eef-4528-87b3-ff13dfe8b123'
+settings:
+  id: 'block_content:044d6e98-0eef-4528-87b3-ff13dfe8b123'
+  label: Mellemkrigstiden
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/mellemkrigstiden-i-litteraturen
+    negate: false
+    context_mapping: {  }

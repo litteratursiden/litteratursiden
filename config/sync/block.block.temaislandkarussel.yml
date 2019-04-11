@@ -1,0 +1,31 @@
+uuid: 5fc57535-d82d-47db-997b-22a50d90fb12
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:cfaf37a8-7093-41d0-8e60-a89ab9ac287d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temaislandkarussel
+theme: litteratursiden
+region: content
+weight: 933
+provider: null
+plugin: 'block_content:cfaf37a8-7093-41d0-8e60-a89ab9ac287d'
+settings:
+  id: 'block_content:cfaf37a8-7093-41d0-8e60-a89ab9ac287d'
+  label: 'Nye islandske fortællinger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/nye-islandske-fortaellinger
+    negate: false
+    context_mapping: {  }

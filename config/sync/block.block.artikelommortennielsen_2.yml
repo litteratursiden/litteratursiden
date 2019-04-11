@@ -1,0 +1,31 @@
+uuid: 7a2515d6-a59e-4547-9e4b-f398fb00148c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:532024fd-06f9-4726-a895-e9c1819d3aba'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: artikelommortennielsen_2
+theme: litteratursiden
+region: content
+weight: 767
+provider: null
+plugin: 'block_content:532024fd-06f9-4726-a895-e9c1819d3aba'
+settings:
+  id: 'block_content:532024fd-06f9-4726-a895-e9c1819d3aba'
+  label: 'Artikel om Morten Nielsen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/morten-nielsen
+    negate: false
+    context_mapping: {  }

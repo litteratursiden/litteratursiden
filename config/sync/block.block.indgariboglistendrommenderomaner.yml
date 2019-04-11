@@ -1,0 +1,31 @@
+uuid: 4897c46d-fd76-4798-bbd2-1860563fc0a4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3744557c-c0fb-4f18-91a9-770e208af678'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendrommenderomaner
+theme: litteratursiden
+region: content
+weight: 411
+provider: null
+plugin: 'block_content:3744557c-c0fb-4f18-91a9-770e208af678'
+settings:
+  id: 'block_content:3744557c-c0fb-4f18-91a9-770e208af678'
+  label: 'Indgår i boglisten: Drømmende romaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/akaciedromme\r\n/boeger/dromme-pa-jorden\r\n/boeger/drommefakultetet\r\n/boeger/drommen-om-amerika\r\n/boeger/drommen-om-havet\r\n/boeger/drom-og-virkelighed\r\n/boeger/dromme-om-storhed\r\n/boeger/drommefald\r\n/boeger/drommen-om-byen-bag-murene\r\n/boeger/drommen-om-en-kvinde\r\n/boeger/en-droms-anatomi\r\n/boeger/drommenes-labyrint\r\n/boeger/drommenes-land-0\r\n/boeger/fra-drommenes-bog"
+    negate: false
+    context_mapping: {  }

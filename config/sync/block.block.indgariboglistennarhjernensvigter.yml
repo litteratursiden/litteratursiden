@@ -1,0 +1,31 @@
+uuid: 888565a6-909e-4f79-9df8-5e59428739bf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:63f7b621-6496-408d-b2a4-96e92221d6a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennarhjernensvigter
+theme: litteratursiden
+region: content
+weight: 597
+provider: null
+plugin: 'block_content:63f7b621-6496-408d-b2a4-96e92221d6a1'
+settings:
+  id: 'block_content:63f7b621-6496-408d-b2a4-96e92221d6a1'
+  label: 'Indgår i boglisten: Når hjernen svigter'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/hjerneskaelv\r\n/boeger/du-forsvinder\r\n/boeger/fordrivelsen\r\n/boeger/karensminde\r\n/boeger/en-fremmed-i-huset\r\n/boeger/chokoladedoden\r\n/boeger/en-lille-god-gerning\r\n/boeger/den-hemmelige-kvinde\r\n/boeger/jeg-lukker-ojnene\r\n/boeger/det-hun-glemte\r\n/boeger/indkredsning-roman"
+    negate: false
+    context_mapping: {  }

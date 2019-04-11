@@ -1,0 +1,25 @@
+uuid: 0cc08c57-e685-41ae-93a7-2061d493a360
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.book_list_carousel
+    - field.storage.block_content.field_book_list_carousel_bg
+  module:
+    - color_field
+id: block_content.book_list_carousel.field_book_list_carousel_bg
+field_name: field_book_list_carousel_bg
+entity_type: block_content
+bundle: book_list_carousel
+label: Background
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#3a3b3d'
+    opacity: '1'
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

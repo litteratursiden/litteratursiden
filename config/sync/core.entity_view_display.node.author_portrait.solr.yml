@@ -1,0 +1,77 @@
+uuid: 005a303d-3e68-4117-9fcf-e748f9dbdb60
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.solr
+    - field.field.node.author_portrait.field_author_portrait_body
+    - field.field.node.author_portrait.field_author_portrait_country
+    - field.field.node.author_portrait.field_author_portrait_ext_link
+    - field.field.node.author_portrait.field_author_portrait_first_name
+    - field.field.node.author_portrait.field_author_portrait_image
+    - field.field.node.author_portrait.field_author_portrait_int_links
+    - field.field.node.author_portrait.field_author_portrait_lit_type
+    - field.field.node.author_portrait.field_author_portrait_surname
+    - field.field.node.author_portrait.field_author_portrait_tags
+    - node.type.author_portrait
+  module:
+    - text
+    - user
+id: node.author_portrait.solr
+targetEntityType: node
+bundle: author_portrait
+mode: solr
+content:
+  field_author_portrait_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_author_portrait_country:
+    type: string
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_author_portrait_first_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_author_portrait_surname:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_author_portrait_tags:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_author_portrait_ext_link: true
+  field_author_portrait_image: true
+  field_author_portrait_int_links: true
+  field_author_portrait_lit_type: true
+  flag_bookmark: true
+  flag_like: true
+  langcode: true
+  latest_reviewed_book: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  social_media: true

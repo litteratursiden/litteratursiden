@@ -1,0 +1,31 @@
+uuid: 8097aefd-f701-4bc9-92e2-c0c9b6ac945c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8c097992-2e4f-4806-b82d-48a318e5bd63'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: filmatiseredebogerommad
+theme: litteratursiden
+region: content
+weight: 143
+provider: null
+plugin: 'block_content:8c097992-2e4f-4806-b82d-48a318e5bd63'
+settings:
+  id: 'block_content:8c097992-2e4f-4806-b82d-48a318e5bd63'
+  label: 'Filmatiserede bøger om mad'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/litteraere-livretter-laes-dig-maet
+    negate: false
+    context_mapping: {  }

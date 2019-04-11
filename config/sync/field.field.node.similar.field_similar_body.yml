@@ -1,0 +1,21 @@
+uuid: 0a8c5409-f6c9-4220-b1e8-2b2fab4b71ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_similar_body
+    - node.type.similar
+  module:
+    - text
+id: node.similar.field_similar_body
+field_name: field_similar_body
+entity_type: node
+bundle: similar
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

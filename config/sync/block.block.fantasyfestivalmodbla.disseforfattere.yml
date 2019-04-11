@@ -1,0 +1,31 @@
+uuid: 021f540d-8501-4d40-b5a8-a8082ec17ba5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:40658239-8769-4857-9413-bf465f8581ad'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: fantasyfestivalmodbla.disseforfattere
+theme: litteratursiden
+region: content
+weight: 264
+provider: null
+plugin: 'block_content:40658239-8769-4857-9413-bf465f8581ad'
+settings:
+  id: 'block_content:40658239-8769-4857-9413-bf465f8581ad'
+  label: 'Fantasyfestival: Mød blandt andre disse forfattere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/fantasyfestival-i-esbjerg-15-16-september-2018
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 1a0fe868-7e1f-4587-bb37-0d79c0660d6b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:f1839123-12da-4747-8dd3-4998d3a76f47'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: interviewmedannecathrineriebnitzsky
+theme: litteratursiden
+region: content
+weight: 17
+provider: null
+plugin: 'block_content:f1839123-12da-4747-8dd3-4998d3a76f47'
+settings:
+  id: 'block_content:f1839123-12da-4747-8dd3-4998d3a76f47'
+  label: 'Interview med Anne-Cathrine Riebnitzsky'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/anne-cathrine-riebnitzsky\r\n/boeger/smaragdsliberen"
+    negate: false
+    context_mapping: {  }

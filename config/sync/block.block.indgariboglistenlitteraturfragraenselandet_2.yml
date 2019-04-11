@@ -1,0 +1,31 @@
+uuid: 75f79954-75de-4731-ab09-f8e5a7d8e70a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraturfragraenselandet_2
+theme: litteratursiden
+region: content
+weight: 519
+provider: null
+plugin: 'block_content:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
+settings:
+  id: 'block_content:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
+  label: 'Indgår i boglisten: Litteratur fra Grænselandet'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/erna-i-krig
+    negate: false
+    context_mapping: {  }

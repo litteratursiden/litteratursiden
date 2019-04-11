@@ -1,0 +1,31 @@
+uuid: 33a8ab83-b093-4896-b54b-6fc8febfe7a7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8d03fe02-cc28-40ce-983b-dc27ab4eae9b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenamerikanskeudkanter
+theme: litteratursiden
+region: content
+weight: 803
+provider: null
+plugin: 'block_content:8d03fe02-cc28-40ce-983b-dc27ab4eae9b'
+settings:
+  id: 'block_content:8d03fe02-cc28-40ce-983b-dc27ab4eae9b'
+  label: 'Indgår i boglisten: Amerikanske udkanter'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/sandets-sprog\r\n/boeger/helt-ud-og-lidt-laengere\r\n/boeger/swan-peak-0\r\n/boeger/bryd-tavsheden\r\n/boeger/dogtown\r\n/boeger/de-levende\r\n/boeger/absalom-absalom\r\n/boeger/canada\r\n/boeger/kvinden-der-forsvandt-0\r\n/boeger/jordemoderen-fra-hope-river\r\n/boeger/ford-county\r\n/boeger/biernes-hemmelige-liv\r\n/boeger/duma-key\r\n/boeger/blodets-meridian\r\n/boeger/ikke-et-land-gamle-maend\r\n/boeger/voldsmaend-river-det-til-sig\r\n/boeger/true-grit\r\n/boeger/brokeback-mountain\r\n/boeger/serena\r\n/boeger/gilead\r\n/boeger/empire-falls\r\n/boeger/andernes-rige\r\n/boeger/svigt\r\n/boeger/vredens-druer-0\r\n/boeger/niceville\r\n/boeger/olive-kitteridge\r\n/boeger/huset-ved-havet-1\r\n/boeger/broerne-i-madison-county\r\n/boeger/utaemmet-liv\r\n/boeger/caribou-island\r\n/boeger/hvad-reddes-kan\r\n/boeger/de-smukke-vilde\r\n/boeger/narrenes-fest\r\n/boeger/snebarnet\r\n/boeger/hjem-1"
+    negate: false
+    context_mapping: {  }

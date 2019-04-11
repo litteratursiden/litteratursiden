@@ -1,0 +1,8 @@
+uuid: a9ab3140-1ae5-4597-af83-7df7bb115caf
+langcode: da
+status: true
+dependencies: {  }
+id: node__interview
+label: 'Indhold: Interview'
+tags:
+  og_description: '[node:field_interview_body]'

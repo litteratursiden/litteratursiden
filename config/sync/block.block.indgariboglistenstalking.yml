@@ -1,0 +1,31 @@
+uuid: 52dbd0c9-06a4-4929-8aeb-61153c143ae4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:2d14bafe-29b6-48a6-8643-e9b541c7b9a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenstalking
+theme: litteratursiden
+region: content
+weight: 85
+provider: null
+plugin: 'block_content:2d14bafe-29b6-48a6-8643-e9b541c7b9a1'
+settings:
+  id: 'block_content:2d14bafe-29b6-48a6-8643-e9b541c7b9a1'
+  label: 'Indgår i boglisten: Stalking'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/stalkeren\r\n/boeger/begaer-0\r\n/boeger/al-kaerligheds-begyndelse\r\n/boeger/forfolgerne\r\n/boeger/bogen-om-dig-0\r\n/boeger/stalker-0\r\n/boeger/du\r\n/boeger/kom-tag-min-hand\r\n/boeger/hypnotisorens-kaerlighed\r\n/boeger/intet-nummer"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,48 @@
+uuid: 0d2cf0b8-ec7b-4f2f-a5b8-fe97e25d3a74
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.content_carousel
+    - field.field.block_content.content_carousel.field_content_carousel_bg
+    - field.field.block_content.content_carousel.field_content_carousel_icon
+    - field.field.block_content.content_carousel.field_content_carousel_reference
+    - image.style.slick_icon
+  module:
+    - color_field
+    - image
+    - lit_slider
+id: block_content.content_carousel.default
+targetEntityType: block_content
+bundle: content_carousel
+mode: default
+content:
+  field_content_carousel_bg:
+    weight: 5
+    label: hidden
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_content_carousel_icon:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: slick_icon
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_content_carousel_reference:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: slick_item
+      link: false
+    third_party_settings: {  }
+    type: slider_entity_reference
+    region: content
+hidden:
+  langcode: true

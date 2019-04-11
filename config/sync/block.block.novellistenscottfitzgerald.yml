@@ -1,0 +1,31 @@
+uuid: c6046b69-9065-40e0-af1f-1a2927721671
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b8512384-3f18-4106-bed1-8a773d849097'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: novellistenscottfitzgerald
+theme: litteratursiden
+region: content
+weight: 426
+provider: null
+plugin: 'block_content:b8512384-3f18-4106-bed1-8a773d849097'
+settings:
+  id: 'block_content:b8512384-3f18-4106-bed1-8a773d849097'
+  label: 'Novellisten Scott Fitzgerald'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/f-scott-fitzgerald\r\n/boeger/den-store-gatsby\r\n/boeger/historier-fra-jazztiden-noveller-1920-39"
+    negate: false
+    context_mapping: {  }

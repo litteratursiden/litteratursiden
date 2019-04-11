@@ -1,0 +1,22 @@
+uuid: bbeaaad5-fb36-44b6-9bc7-6df6a61d36eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: something_similar
+label: 'Something similar'
+type: 'canonical_entities:node'
+pattern: 'noget-der-ligner/[node:title]'
+selection_criteria:
+  0a98b513-125a-4973-844d-8fa7dd4b3a75:
+    id: node_type
+    bundles:
+      similar: similar
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 0a98b513-125a-4973-844d-8fa7dd4b3a75
+selection_logic: and
+weight: -5
+relationships: {  }

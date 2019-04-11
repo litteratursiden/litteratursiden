@@ -1,0 +1,16 @@
+uuid: 7406a95f-e54a-442f-bb31-183f2b789a93
+langcode: da
+status: true
+dependencies: {  }
+name: search_index
+label: 'Search index'
+effects:
+  1923205f-d8e7-4b52-a3c4-abe7776e92a8:
+    uuid: 1923205f-d8e7-4b52-a3c4-abe7776e92a8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 130
+      height: 210
+      anchor: center-center
+pipeline: compress

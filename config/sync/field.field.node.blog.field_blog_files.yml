@@ -1,0 +1,27 @@
+uuid: ade9adb1-0584-4db7-ba19-956ee1d216b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_files
+    - node.type.blog
+  module:
+    - file
+id: node.blog.field_blog_files
+field_name: field_blog_files
+entity_type: node
+bundle: blog
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_blog_files
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: 5MB
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

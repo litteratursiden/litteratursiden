@@ -1,0 +1,47 @@
+uuid: 12dbe4f9-3eee-4b6c-887f-84f599164bb6
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.book_list_carousel
+    - field.field.block_content.book_list_carousel.field_book_list_carousel_bg
+    - field.field.block_content.book_list_carousel.field_book_list_carousel_content
+    - field.field.block_content.book_list_carousel.field_book_list_carousel_icon
+    - image.style.slick_icon
+  module:
+    - color_field
+    - image
+    - lit_fields
+id: block_content.book_list_carousel.default
+targetEntityType: block_content
+bundle: book_list_carousel
+mode: default
+content:
+  field_book_list_carousel_bg:
+    weight: 0
+    label: hidden
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_book_list_carousel_content:
+    weight: 2
+    label: hidden
+    settings:
+      mode: slick_item
+    third_party_settings: {  }
+    type: entity_reference_tab_formatter
+    region: content
+  field_book_list_carousel_icon:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: slick_icon
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  langcode: true

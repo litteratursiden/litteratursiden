@@ -1,0 +1,31 @@
+uuid: e1bfe73a-fe2d-4347-9a91-c570d902fbe1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: sjovebogeratlaesesammen_3
+theme: litteratursiden
+region: content
+weight: 149
+provider: null
+plugin: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+settings:
+  id: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+  label: 'Sjove bøger at læse sammen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/villads-fra-valby-fylder-10-ar
+    negate: false
+    context_mapping: {  }

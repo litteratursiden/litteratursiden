@@ -1,0 +1,31 @@
+uuid: 16c7a4d8-fd1c-4f1b-817c-bee09eec982e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1ab168f5-e9f6-4c4f-8a68-4ac8e693f6f6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbarnloshed
+theme: litteratursiden
+region: content
+weight: 826
+provider: null
+plugin: 'block_content:1ab168f5-e9f6-4c4f-8a68-4ac8e693f6f6'
+settings:
+  id: 'block_content:1ab168f5-e9f6-4c4f-8a68-4ac8e693f6f6'
+  label: 'Indgår i boglisten: Barnløshed'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/laengsel\r\n/boeger/utro\r\n/boeger/venskab-livet\r\n/boeger/kalksten-og-ler\r\n/boeger/passionsfrugten\r\n/boeger/tirsdagsbrevene\r\n/boeger/brunstkalenderen\r\n/boeger/forestillingen-om-et-ukompliceret-liv-med-en-mand\r\n/boeger/projekt-baby\r\n/boeger/det-eneste-rigtige\r\n/boeger/den-store-drom\r\n/boeger/en-fugl-foruden-vinger\r\n/boeger/der-er-ingen-steder-graede-her\r\n/boeger/aeglosning\r\n/boeger/sa-kom-du\r\n/boeger/stik"
+    negate: false
+    context_mapping: {  }

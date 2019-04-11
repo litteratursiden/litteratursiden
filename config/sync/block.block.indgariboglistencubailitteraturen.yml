@@ -1,0 +1,31 @@
+uuid: ceaf759e-8406-4510-90f6-ef6a20fbe38d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1507cae3-4145-4c32-9b41-d221b592117b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistencubailitteraturen
+theme: litteratursiden
+region: content
+weight: 848
+provider: null
+plugin: 'block_content:1507cae3-4145-4c32-9b41-d221b592117b'
+settings:
+  id: 'block_content:1507cae3-4145-4c32-9b41-d221b592117b'
+  label: 'Indgår i boglisten: Cuba i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/pa-udkig-efter-hemingway\r\n/boeger/pa-udkig-efter-hemingway\r\n/boeger/pa-den-sikre-side\r\n/boeger/dit-er-riget\r\n/boeger/cubanske-dromme\r\n/boeger/sostrene-aguero\r\n/boeger/havana-moon\r\n/boeger/den-gamle-mand-og-havet\r\n/boeger/lev-om-natten\r\n/boeger/made-cuba\r\n/boeger/blodpenge\r\n/boeger/farligt-mode-i-havanna\r\n/boeger/adios-hemingway\r\n/boeger/cubansk-efterarslandskab\r\n/boeger/forarsblaest-over-havana\r\n/boeger/slangens-hale\r\n/boeger/den-ulastelige-cubaner\r\n/boeger/drommehjerte\r\n/boeger/kvinder-i-hvidt\r\n/boeger/svindelforetagendet\r\n/boeger/den-cubanske-faelde"
+    negate: false
+    context_mapping: {  }

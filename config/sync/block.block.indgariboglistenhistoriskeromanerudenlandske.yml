@@ -1,0 +1,31 @@
+uuid: 2c77a447-89c5-4292-9ebd-22c9c20acacb
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c0c3d0fd-632d-40cd-b0d6-3cf7f757be4e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenhistoriskeromanerudenlandske
+theme: litteratursiden
+region: content
+weight: 485
+provider: null
+plugin: 'block_content:c0c3d0fd-632d-40cd-b0d6-3cf7f757be4e'
+settings:
+  id: 'block_content:c0c3d0fd-632d-40cd-b0d6-3cf7f757be4e'
+  label: 'Indgår i boglisten: Historiske romaner (udenlandske)'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/katarina-den-store\r\n/boeger/kaos-og-ojeblikkets-renhed\r\n/boeger/tyvenes\r\n/boeger/drommen-om-amerika\r\n/boeger/morkets-dronning-0\r\n/boeger/braendende-ild\r\n/boeger/azincourt\r\n/boeger/haevnerens-fortaelling\r\n/boeger/nefertiti-dodebogen\r\n/boeger/baudolino\r\n/boeger/nordlys-0\r\n/boeger/havets-katedral\r\n/boeger/giganternes-fald\r\n/boeger/verdens-tag\r\n/boeger/bedragerne\r\n/boeger/catalaneren\r\n/boeger/imperium\r\n/boeger/caesar\r\n/boeger/opmalingen-af-verden\r\n/boeger/jeg-vil-give-dig-verden\r\n/boeger/de-velvillige\r\n/boeger/de-otte\r\n/boeger/over-morke-vande\r\n/boeger/fortryllersken-fra-firenze"
+    negate: false
+    context_mapping: {  }

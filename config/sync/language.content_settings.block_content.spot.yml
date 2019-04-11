@@ -1,0 +1,11 @@
+uuid: 15c6103b-f3db-4e35-9c56-aa66e98deb96
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spot
+id: block_content.spot
+target_entity_type_id: block_content
+target_bundle: spot
+default_langcode: site_default
+language_alterable: false

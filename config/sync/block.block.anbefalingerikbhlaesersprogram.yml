@@ -1,0 +1,31 @@
+uuid: 89cd2c52-5394-487b-be1c-0f5b33113894
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:542ea826-df15-4806-8482-6361f0bcb4ef'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: anbefalingerikbhlaesersprogram
+theme: litteratursiden
+region: content
+weight: 926
+provider: null
+plugin: 'block_content:542ea826-df15-4806-8482-6361f0bcb4ef'
+settings:
+  id: 'block_content:542ea826-df15-4806-8482-6361f0bcb4ef'
+  label: 'Anbefalinger i KBH Læsers program'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/manifest
+    negate: false
+    context_mapping: {  }

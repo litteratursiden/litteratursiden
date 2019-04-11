@@ -1,0 +1,31 @@
+uuid: e9c6b9d1-5b66-42d2-af78-2963061cddfd
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:cba30b94-936b-4161-b025-6aa3f88c8080'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenperu
+theme: litteratursiden
+region: content
+weight: 215
+provider: null
+plugin: 'block_content:cba30b94-936b-4161-b025-6aa3f88c8080'
+settings:
+  id: 'block_content:cba30b94-936b-4161-b025-6aa3f88c8080'
+  label: 'Indgår i boglisten: Peru'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/de-dybe-floder\r\n/boeger/den-sorte-herold\r\n/boeger/bukkens-fest\r\n/boeger/byen-og-hundene\r\n/boeger/don-rigobertos-haefter\r\n/boeger/hvem-draebte-palomino-molero\r\n/boeger/krigen-ved-verdens-ende\r\n/boeger/lituma-i-andesbjergene\r\n/boeger/stedmoderens-pris\r\n/boeger/tante-julia-og-poeten"
+    negate: false
+    context_mapping: {  }

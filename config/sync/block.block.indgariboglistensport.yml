@@ -1,0 +1,31 @@
+uuid: 46f1a3e0-ce80-47a3-a5ad-762aee3342e6
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e0318b5c-b765-4cce-8864-20103a4e0066'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensport
+theme: litteratursiden
+region: content
+weight: 82
+provider: null
+plugin: 'block_content:e0318b5c-b765-4cce-8864-20103a4e0066'
+settings:
+  id: 'block_content:e0318b5c-b765-4cce-8864-20103a4e0066'
+  label: 'Indgår i boglisten: Sport'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/beskyttelseszonen\r\n/boeger/bjorneby\r\n/boeger/fejltagelsernes-bog\r\n/boeger/spillet-om-spilleren-en-fodboldsatire\r\n/boeger/fast-gear-fortaelling\r\n/boeger/guld-2\r\n/boeger/tourens-helte\r\n/boeger/den-usynlige-mil\r\n/boeger/lob-0\r\n/boeger/svaekling\r\n/boeger/saet-og-match\r\n/boeger/skaebnespil\r\n/boeger/i-blinde-0\r\n/boeger/touchdown\r\n/boeger/jachymov\r\n/boeger/hafnia-punk\r\n/boeger/sudden-death\r\n/boeger/fodboldfeber-1\r\n/boeger/guds-hand\r\n/boeger/januarvinduet\r\n/boeger/football-factory\r\n/boeger/udbryderne\r\n/boeger/litteraere-fortaellinger-om-idraet-i-norden\r\n/boeger/fodboldenglen\r\n/boeger/voksenvaerk\r\n/boeger/sort-sondag-0\r\n/boeger/gudfar\r\n/boeger/en-kernesund-dod\r\n/boeger/golden-boys\r\n/boeger/hojt-spil-0\r\n/boeger/petit-petit\r\n/boeger/million-dollar-baby\r\n/boeger/sidste-omgang-0\r\n/boeger/frontloberen\r\n/boeger/kampdag-roman\r\n/boeger/en-tre-nu\r\n/boeger/mellemvaegt"
+    negate: false
+    context_mapping: {  }

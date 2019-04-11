@@ -1,0 +1,31 @@
+uuid: 9aa5f545-dce4-40f3-bec9-4b2df7db3253
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:220626d0-5b48-422f-9880-d4a79f3ca726'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenrumaenien
+theme: litteratursiden
+region: content
+weight: 70
+provider: null
+plugin: 'block_content:220626d0-5b48-422f-9880-d4a79f3ca726'
+settings:
+  id: 'block_content:220626d0-5b48-422f-9880-d4a79f3ca726'
+  label: 'Indgår i boglisten: Rumænien'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/uden-nade\r\n/boeger/mod-sivenes-land\r\n/boeger/dekanens-december\r\n/boeger/hvor-var-du-adam\r\n/boeger/den-hvide-konge\r\n/boeger/inkognito-0\r\n/boeger/den-femogtyvende-time\r\n/boeger/piazza-bucarest\r\n/boeger/faestekontoret\r\n/boeger/huset-thuringer\r\n/boeger/kyra-kyralina\r\n/boeger/tidslerne-pa-baragan\r\n/boeger/violinens-historie\r\n/boeger/musikken-og-kaerligheden-er-sjaelens-vinger\r\n/boeger/dyret-i-hjertet\r\n/boeger/raeven-var-allerede-dengang-jaegeren\r\n/boeger/oksen-0\r\n/boeger/nattens-born\r\n/boeger/djaevelens-plovfure\r\n/boeger/jeg-elskede-dig-sa-hojt\r\n/boeger/sigojnerstammen\r\n/boeger/udrejseansogning\r\n/boeger/det-befriede-rumaenien\r\n/boeger/haendelser-fra-den-umiddelbare-uvirkelighed\r\n/boeger/alt-hvad-jeg-har-baerer-jeg-hos-mig\r\n/boeger/nostalgi\r\n/boeger/mennesket-er-en-stor-fasan-i-verden\r\n/boeger/i-dag-havde-jeg-helst-ikke-modt-mig-selv\r\n/boeger/de-befriedes-land\r\n/boeger/djaevleborn-roman"
+    negate: false
+    context_mapping: {  }

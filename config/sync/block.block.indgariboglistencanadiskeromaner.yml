@@ -1,0 +1,31 @@
+uuid: 3aa38841-c451-4ad9-bc6e-e6c177434358
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8a8f39de-81c5-4c20-89e3-fad1a08dbc87'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistencanadiskeromaner
+theme: litteratursiden
+region: content
+weight: 842
+provider: null
+plugin: 'block_content:8a8f39de-81c5-4c20-89e3-fad1a08dbc87'
+settings:
+  id: 'block_content:8a8f39de-81c5-4c20-89e3-fad1a08dbc87'
+  label: 'Indgår i boglisten: Canadiske romaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fjendskab-venskab-aegteskab\r\n/boeger/barndom-0\r\n/boeger/i-tilfaelde-af-dod-ved-lynnedslag\r\n/boeger/alias-grace\r\n/boeger/den-blinde-morder\r\n/boeger/roverbruden-0\r\n/boeger/abras-historie\r\n/boeger/bryllupskager-rotter-og-rodeodronninger\r\n/boeger/yndlingslegen\r\n/boeger/hej-nostradamus\r\n/boeger/en-sondag-ved-svommebassinet-i-kigali\r\n/boeger/nar-uglen-kalder\r\n/boeger/en-klog-mand\r\n/boeger/pianomandens-datter\r\n/boeger/engles-fald\r\n/boeger/ost-bjergene\r\n/boeger/kamouraska\r\n/boeger/en-drom-som-min\r\n/boeger/dit-hus-star-i-flammer\r\n/boeger/crow-lake\r\n/boeger/hemmelighedernes-hus\r\n/boeger/rejse-gennem-ukendt-land\r\n/boeger/ingen-storre-ulykke\r\n/boeger/braendende-begaer\r\n/boeger/pis-liv\r\n/boeger/sortkabe\r\n/boeger/pigeliv-kvindeliv\r\n/boeger/i-lovens-skind\r\n/boeger/sidste-nyt-fra-havnen\r\n/boeger/station-street\r\n/boeger/kaerlighedens-republik\r\n/boeger/forladt"
+    negate: false
+    context_mapping: {  }

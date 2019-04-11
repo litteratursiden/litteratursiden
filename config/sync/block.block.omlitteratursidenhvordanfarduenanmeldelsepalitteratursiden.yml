@@ -1,0 +1,31 @@
+uuid: 8eb52e19-d2c1-43e2-8f1d-d6a7ed959dda
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ed9343af-97fd-43d5-8bbd-56b0a8051196'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: omlitteratursidenhvordanfarduenanmeldelsepalitteratursiden
+theme: litteratursiden
+region: content
+weight: 921
+provider: null
+plugin: 'block_content:ed9343af-97fd-43d5-8bbd-56b0a8051196'
+settings:
+  id: 'block_content:ed9343af-97fd-43d5-8bbd-56b0a8051196'
+  label: 'Om litteratursiden: hvordan får du en anmeldelse på litteratursiden'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /om-litteratursiden
+    negate: false
+    context_mapping: {  }

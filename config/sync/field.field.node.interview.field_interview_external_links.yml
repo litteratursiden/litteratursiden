@@ -1,0 +1,23 @@
+uuid: 5b57a2d6-6ed9-445c-901d-715b5ab73669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interview_external_links
+    - node.type.interview
+  module:
+    - link
+id: node.interview.field_interview_external_links
+field_name: field_interview_external_links
+entity_type: node
+bundle: interview
+label: 'External links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

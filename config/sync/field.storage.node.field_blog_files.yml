@@ -1,0 +1,23 @@
+uuid: f8b7b01b-77b6-415e-89f3-29fe5efa0c66
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_blog_files
+field_name: field_blog_files
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

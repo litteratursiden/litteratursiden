@@ -1,0 +1,31 @@
+uuid: a8ff602d-8133-491a-a278-3fb453f1e17d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraturfragraenselandet
+theme: litteratursiden
+region: content
+weight: 545
+provider: null
+plugin: 'block_content:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
+settings:
+  id: 'block_content:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
+  label: 'Indgår i boglisten: Litteratur fra Grænselandet'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/graensegaenger\r\n/boeger/snedage\r\n/boeger/stemte-ser\r\n/boeger/over-stregen-en-flensborg-kronike\r\n/boeger/hitler-min-far-og-mig\r\n/boeger/befrielse\r\n/boeger/sydslesvigpige\r\n/boeger/sydslesvigkvinde\r\n/boeger/hjemsted\r\n/boeger/historier-fra-bollerup\r\n/boeger/christas-forlovelser\r\n/boeger/men-himlen-lukker-sine-ojne\r\n/boeger/sneglens-hus\r\n/boeger/knacker\r\n/boeger/der-mangler-en-sang-om-solsorten"
+    negate: false
+    context_mapping: {  }

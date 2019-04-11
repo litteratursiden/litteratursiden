@@ -1,0 +1,31 @@
+uuid: 4826c6d5-4fc0-44d0-9f14-798cbf179e92
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ce8241da-7b7f-4f87-ac3a-5877390d6e59'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: bornelitteraerefyrtarne1970erne
+theme: litteratursiden
+region: content
+weight: 696
+provider: null
+plugin: 'block_content:ce8241da-7b7f-4f87-ac3a-5877390d6e59'
+settings:
+  id: 'block_content:ce8241da-7b7f-4f87-ac3a-5877390d6e59'
+  label: 'Børnelitterære fyrtårne: 1970erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/bornelitteraere-fyrtarne-gennem-tiden
+    negate: false
+    context_mapping: {  }

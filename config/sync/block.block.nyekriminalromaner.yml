@@ -1,0 +1,31 @@
+uuid: a98aa185-a030-4485-8fbb-4fe6c283b99d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ce8218dc-0e45-4432-9e4a-3c4e5d71b67a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nyekriminalromaner
+theme: litteratursiden
+region: content
+weight: 777
+provider: null
+plugin: 'block_content:ce8218dc-0e45-4432-9e4a-3c4e5d71b67a'
+settings:
+  id: 'block_content:ce8218dc-0e45-4432-9e4a-3c4e5d71b67a'
+  label: 'Nye kriminalromaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/no-shit-sherlock
+    negate: false
+    context_mapping: {  }

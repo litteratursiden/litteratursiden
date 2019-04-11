@@ -1,0 +1,16 @@
+uuid: ec0c6491-e1fd-4d05-9d51-87993b14c973
+langcode: en
+status: true
+dependencies: {  }
+name: super_large
+label: 'Super large (800x800)'
+effects:
+  5b3080a0-ce3d-4339-8f48-c6e920b69eaa:
+    uuid: 5b3080a0-ce3d-4339-8f48-c6e920b69eaa
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: 800
+      upscale: false
+pipeline: compress

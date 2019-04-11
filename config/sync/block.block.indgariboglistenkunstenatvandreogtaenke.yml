@@ -1,0 +1,31 @@
+uuid: fb390b9d-eac2-4cf5-944d-fa4620013721
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b4a99e34-a58d-41e4-a426-40d86fa787c1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenkunstenatvandreogtaenke
+theme: litteratursiden
+region: content
+weight: 539
+provider: null
+plugin: 'block_content:b4a99e34-a58d-41e4-a426-40d86fa787c1'
+settings:
+  id: 'block_content:b4a99e34-a58d-41e4-a426-40d86fa787c1'
+  label: 'Indgår i boglisten: Kunsten at vandre og tænke'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/af-glas\r\n/boeger/aben-0\r\n/boeger/gaende\r\n/boeger/under-uret\r\n/boeger/ga-eller-kunsten-leve-et-vildt-og-poetisk-liv\r\n/boeger/l\r\n/boeger/hannah-0\r\n/boeger/en-fodrejse-fra-rostock-til-syrakus\r\n/boeger/vandreren-0\r\n/boeger/dengang-jeg-var-ghib\r\n/boeger/den-evige-jode-0\r\n/boeger/sult\r\n/boeger/isola\r\n/boeger/kobenhavns-mysterier\r\n/boeger/drommespor\r\n/boeger/etta-and-otto-and-russell-and-james\r\n/boeger/fodreise-fra-holmens-canal-til-ostpynten-af-amager-i-aarene-1828-og-1829-0\r\n/boeger/harold-frys-usandsynlige-pilgrimsfaerd\r\n/boeger/evas-ekko\r\n/boeger/ind-0\r\n/boeger/vejen-0\r\n/boeger/det-aegte-folk\r\n/boeger/zen-og-kunsten-vedligeholde-en-motorcykel\r\n/boeger/det-yderste-europa\r\n/boeger/broder-jacob\r\n/boeger/manden-der-gar-tur\r\n/boeger/storby-blues\r\n/boeger/historien-om-joseph-andrews-og-hans-ven-pastor-abraham-adams-oplevelser\r\n/boeger/rejser-med-herodot\r\n/boeger/osteuropa-til-fods\r\n/boeger/sneleoparden-0\r\n/boeger/fodrejser-pa-langeland\r\n/boeger/vandringer-med-robert-walser\r\n/boeger/dommedags-bog\r\n/boeger/dantes-guddommelige-komedie\r\n/boeger/eventyr-paa-fodrejsen\r\n/boeger/den-store-vaever-fra-kashmir\r\n/boeger/fodnoter-traek-af-vandringens-historie\r\n/boeger/en-dansk-students-eventyr-og-laegdsgaarden-i-olsebye-magle\r\n/boeger/om-vandre-0\r\n/boeger/samlede-skrifter-0\r\n/boeger/labyrinten-eller-reise-giennem-tydskland-schweitz-og-frankerig\r\n/boeger/den-ensomme-vandrers-drommerier\r\n/boeger/tyskland-en-rejse\r\n/boeger/haefte\r\n/boeger/gyldendals-bog-om-pilgrimme-og-pilgrimsrejser\r\n/boeger/pilgrimsspor\r\n/boeger/santiago-1000-ars-kulturrejse-gennem-europa\r\n/boeger/veje-til-nidaros\r\n/boeger/pilgrimsrejsen\r\n/boeger/mig-og-caminoen-om-finde-sig-selv-og-de-andre-pa-camino-de-santiago\r\n/boeger/om-ga-i\r\n/boeger/marias-laere\r\n/boeger/pilgrim-1\r\n/boeger/en-rejse-til-trieste\r\n/boeger/berlin-moskva"
+    negate: false
+    context_mapping: {  }

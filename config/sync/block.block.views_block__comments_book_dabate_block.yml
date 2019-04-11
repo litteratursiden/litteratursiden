@@ -1,0 +1,39 @@
+uuid: f9cad10f-8639-4d16-99bf-a819266af599
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.comments
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - litteratursiden
+id: views_block__comments_book_dabate_block
+theme: litteratursiden
+region: content
+weight: 9
+provider: null
+plugin: 'views_block:comments-book_dabate_block'
+settings:
+  id: 'views_block:comments-book_dabate_block'
+  label: 'Deltag i debatten'
+  provider: views
+  label_display: visible
+  views_label: 'Deltag i debatten'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      book: book
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/node/*/*'
+    negate: true
+    context_mapping: {  }

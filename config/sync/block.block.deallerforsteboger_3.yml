@@ -1,0 +1,31 @@
+uuid: e96a19f9-b73c-4615-86dd-e6c65949fe3a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:20b2def4-662d-4c0d-bda1-96ac19e7d3c4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: deallerforsteboger_3
+theme: litteratursiden
+region: content
+weight: 291
+provider: null
+plugin: 'block_content:20b2def4-662d-4c0d-bda1-96ac19e7d3c4'
+settings:
+  id: 'block_content:20b2def4-662d-4c0d-bda1-96ac19e7d3c4'
+  label: 'De allerførste bøger 0-3 år'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/hojtlaesning-giver-naervaer-og-appetit-pa-laesning
+    negate: false
+    context_mapping: {  }

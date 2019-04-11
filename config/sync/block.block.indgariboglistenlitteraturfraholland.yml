@@ -1,0 +1,31 @@
+uuid: 246b856d-fb33-40a3-b671-7a62567b8a4f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c2fa5a3f-a2be-4d14-914d-fe9cabcd9238'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraturfraholland
+theme: litteratursiden
+region: content
+weight: 546
+provider: null
+plugin: 'block_content:c2fa5a3f-a2be-4d14-914d-fe9cabcd9238'
+settings:
+  id: 'block_content:c2fa5a3f-a2be-4d14-914d-fe9cabcd9238'
+  label: 'Indgår i boglisten: Litteratur fra Holland'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/juni\r\n/boeger/ovenpa-er-der-stille\r\n/boeger/i-digterens-hus\r\n/boeger/hele-verdens-vrede\r\n/boeger/den-sorte-med-det-hvide-hjerte\r\n/boeger/i-lucias-ojne\r\n/boeger/et-tilfaelde\r\n/boeger/proceduren\r\n/boeger/allesjaele\r\n/boeger/den-folgende-historie\r\n/boeger/i-de-hollandske-alper\r\n/boeger/ritualer\r\n/boeger/det-tabte-paradis-0\r\n/boeger/i-min-brors-ojne\r\n/boeger/close\r\n/boeger/udsendingen\r\n/boeger/middagen\r\n/boeger/en-slags-kaerlighed\r\n/boeger/pa-den-anden-side-0\r\n/boeger/vandreren-0\r\n/boeger/knaeler-mellem-stedmoderblomster\r\n/boeger/nye-naboer\r\n/boeger/kabbalisten\r\n/boeger/den-nye-mand\r\n/boeger/taspidssko\r\n/boeger/skyggebarn\r\n/boeger/hokwerdas-datter\r\n/boeger/ultramarin\r\n/boeger/den-nye-mand"
+    negate: false
+    context_mapping: {  }

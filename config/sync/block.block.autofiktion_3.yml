@@ -1,0 +1,31 @@
+uuid: e9886bb5-c49e-486f-97e8-9c671cf2ec69
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:343cc4bf-1442-44bd-b63d-662ebbd69636'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: autofiktion_3
+theme: litteratursiden
+region: content
+weight: 30
+provider: null
+plugin: 'block_content:343cc4bf-1442-44bd-b63d-662ebbd69636'
+settings:
+  id: 'block_content:343cc4bf-1442-44bd-b63d-662ebbd69636'
+  label: Autofiktion
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

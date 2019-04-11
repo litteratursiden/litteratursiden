@@ -1,0 +1,31 @@
+uuid: 2619ba08-4676-45c1-b61c-946f4ee4e679
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:185a3f8f-fdf4-4660-9098-bad5deb1ce4f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: laesogsanyereislandsklitteratur_2
+theme: litteratursiden
+region: content
+weight: 596
+provider: null
+plugin: 'block_content:185a3f8f-fdf4-4660-9098-bad5deb1ce4f'
+settings:
+  id: 'block_content:185a3f8f-fdf4-4660-9098-bad5deb1ce4f'
+  label: 'Indgår i boglisten: Nyere islandsk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/kata
+    negate: false
+    context_mapping: {  }

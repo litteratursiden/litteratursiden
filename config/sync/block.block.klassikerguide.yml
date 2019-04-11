@@ -1,0 +1,31 @@
+uuid: 9de07ea6-48fd-4183-96ab-574209488bdf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:b88bff2b-2d6f-41bf-a6e9-8a3497917ae5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klassikerguide
+theme: litteratursiden
+region: content
+weight: 874
+provider: null
+plugin: 'block_content:b88bff2b-2d6f-41bf-a6e9-8a3497917ae5'
+settings:
+  id: 'block_content:b88bff2b-2d6f-41bf-a6e9-8a3497917ae5'
+  label: Klassikerguide
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/hans-scherfig
+    negate: false
+    context_mapping: {  }

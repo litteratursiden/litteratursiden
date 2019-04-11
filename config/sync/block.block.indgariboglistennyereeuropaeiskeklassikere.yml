@@ -1,0 +1,31 @@
+uuid: 6b1a6570-8cc7-4625-ba0f-f0119e7d2fd8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:6de78bfd-b0cf-47d0-b566-8b1b04a4c002'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennyereeuropaeiskeklassikere
+theme: litteratursiden
+region: content
+weight: 225
+provider: null
+plugin: 'block_content:6de78bfd-b0cf-47d0-b566-8b1b04a4c002'
+settings:
+  id: 'block_content:6de78bfd-b0cf-47d0-b566-8b1b04a4c002'
+  label: 'Indgår i boglisten: Nyere europæiske klassikere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/skaebne-anekdoter\r\n/boeger/hvis-en-vinternat-en-rejsende\r\n/boeger/den-fremmede\r\n/boeger/rejse-til-nattens-ende-0\r\n/boeger/halvbroderen\r\n/boeger/den-hvide-konge\r\n/boeger/rosens-navn\r\n/boeger/reykjavik-trilogien\r\n/boeger/liberty\r\n/boeger/haendelser-ved-vand\r\n/boeger/bliktrommen\r\n/boeger/barbara\r\n/boeger/dublinfolk\r\n/boeger/ulysses\r\n/boeger/kornel-esti\r\n/boeger/tilvaerelsens-ulidelige-lethed\r\n/boeger/tysktime\r\n/boeger/gron-var-min-barndoms-dal\r\n/boeger/graesset-synger\r\n/boeger/buddenbrooks\r\n/boeger/doden-i-venedig\r\n/boeger/nattog-til-lissabon\r\n/boeger/renselse\r\n/boeger/pa-sporet-af-den-tabte-tid\r\n/boeger/radetzkymarch-0\r\n/boeger/en-fortaelling-om-blindhed\r\n/boeger/sigojnerstammen\r\n/boeger/zenos-bekendelser\r\n/boeger/juleoratoriet\r\n/boeger/til-fyret"
+    negate: false
+    context_mapping: {  }

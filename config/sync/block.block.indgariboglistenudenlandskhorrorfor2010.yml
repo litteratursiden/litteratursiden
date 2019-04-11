@@ -1,0 +1,31 @@
+uuid: 2bd8194c-9675-419d-8170-0ffff3c8f4c4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:2fc0cf1b-88fd-4673-996d-753fc7490b35'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenudenlandskhorrorfor2010
+theme: litteratursiden
+region: content
+weight: 197
+provider: null
+plugin: 'block_content:2fc0cf1b-88fd-4673-996d-753fc7490b35'
+settings:
+  id: 'block_content:2fc0cf1b-88fd-4673-996d-753fc7490b35'
+  label: 'Indgår i boglisten: Udenlandsk horror før 2010'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/lad-den-rette-komme-ind\r\n/boeger/ulvebid\r\n/boeger/blodets-arv\r\n/boeger/den-anden-mand-0\r\n/boeger/forbandelsen-0\r\n/boeger/dodens-jagt\r\n/boeger/ondskabens-hotel\r\n/boeger/cujo\r\n/boeger/det-onde\r\n/boeger/eksperimentet-0\r\n/boeger/skygger-1\r\n/boeger/huset-0\r\n/boeger/monster-1\r\n/boeger/kold-hud\r\n/boeger/dodebogen\r\n/boeger/blackwood-farm\r\n/boeger/taltos\r\n/boeger/morkeraed\r\n/boeger/morkets-datter\r\n/boeger/skyggernes-hus-1\r\n/boeger/ring\r\n/boeger/skumringstimen-0\r\n/boeger/varulv-i-g-streng\r\n/boeger/fuldmanens-magt\r\n/boeger/skyggelandet-0"
+    negate: false
+    context_mapping: {  }

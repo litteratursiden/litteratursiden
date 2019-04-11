@@ -1,0 +1,31 @@
+uuid: 8aad010a-2c87-43e2-b612-ece59bb089fb
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:147260e1-6e3b-4dbe-a53c-8d3ecd9cee98'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenchicklit
+theme: litteratursiden
+region: content
+weight: 601
+provider: null
+plugin: 'block_content:147260e1-6e3b-4dbe-a53c-8d3ecd9cee98'
+settings:
+  id: 'block_content:147260e1-6e3b-4dbe-a53c-8d3ecd9cee98'
+  label: 'Indgår i boglisten: chick-lit'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/ps-jeg-elsker-dig-0\r\n/boeger/one-fifth-avenue\r\n/boeger/bridget-jones-dagbog\r\n/boeger/flokdyr\r\n/boeger/ideen-om-os\r\n/boeger/sushi-begyndere\r\n/boeger/en-shopaholic-i-new-york\r\n/boeger/nynnes-dagbog-det-hele\r\n/boeger/fra-og-med-dig\r\n/boeger/hypnotisorens-kaerlighed\r\n/boeger/elsker-elsker-ikke-0\r\n/boeger/ude-af-drift\r\n/boeger/nyforelskelse-og-andre-cykelstyrt\r\n/boeger/i-dine-sko\r\n/boeger/djaevlen-gar-i-prada"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 82d5e231-79e3-4b76-a071-a58d9da99e84
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f4ffae39-36fd-4d74-b79e-8a2f52310fba'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenrockmusikerenyerebiografier
+theme: litteratursiden
+region: content
+weight: 120
+provider: null
+plugin: 'block_content:f4ffae39-36fd-4d74-b79e-8a2f52310fba'
+settings:
+  id: 'block_content:f4ffae39-36fd-4d74-b79e-8a2f52310fba'
+  label: 'Indgår i boglisten: Rockmusikere - nyere biografier '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kim-larsen-mine-unge-ar\r\n/boeger/i-wont-cut-my-hair\r\n/boeger/bowie\r\n/boeger/david-bowie-0\r\n/boeger/david-bowie-starman-1947-2016\r\n/boeger/nick-cave-en-biografi\r\n/boeger/im-your-man-0\r\n/boeger/balladen-om-bob-dylan\r\n/boeger/dagen-vejen-fuglene\r\n/boeger/girl-band\r\n/boeger/george-harrison\r\n/boeger/solisten\r\n/boeger/lennons-laengsel\r\n/boeger/dromme-og-daemoner\r\n/boeger/testamentet-0\r\n/boeger/den-sande-historie-om-paul-mccartney\r\n/boeger/paul-mccartney\r\n/boeger/nattegn\r\n/boeger/natasja\r\n/boeger/tilfaeldigt-strejfet\r\n/boeger/lou-reed\r\n/boeger/sebastian-0\r\n/boeger/eik-skaloe\r\n/boeger/just-kids\r\n/boeger/born-run-0\r\n/boeger/bruce-springsteen-0"
+    negate: false
+    context_mapping: {  }

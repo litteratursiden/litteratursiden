@@ -1,0 +1,31 @@
+uuid: 483ddc73-cd1e-44f0-b92e-cc81d8a54dab
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:27d2563a-9136-435a-97ac-d26eacf1d6c0'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: digitallitteraturogcomputerensomlitteraermaskine
+theme: litteratursiden
+region: content
+weight: 760
+provider: null
+plugin: 'block_content:27d2563a-9136-435a-97ac-d26eacf1d6c0'
+settings:
+  id: 'block_content:27d2563a-9136-435a-97ac-d26eacf1d6c0'
+  label: 'Digital litteratur og computeren som litterær maskine'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/digital-litteratur
+    negate: false
+    context_mapping: {  }

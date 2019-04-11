@@ -1,0 +1,31 @@
+uuid: e53aab61-2eb5-4cec-990b-6d734ff924ed
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e6e1eb92-5091-4428-ae15-bdfd42e72b1f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendoden
+theme: litteratursiden
+region: content
+weight: 415
+provider: null
+plugin: 'block_content:e6e1eb92-5091-4428-ae15-bdfd42e72b1f'
+settings:
+  id: 'block_content:e6e1eb92-5091-4428-ae15-bdfd42e72b1f'
+  label: 'Indgår i boglisten: Døden'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/har-doden-taget-noget-fra-dig-sa-giv-det-tilbage\r\n/boeger/til-sidst\r\n/boeger/en-pige-og-en-dreng\r\n/boeger/soldaten-og-jenny\r\n/boeger/som-om-hun-bare-lagde-roret-pa-og-forsvandt\r\n/boeger/det-sker-kun-naboen\r\n/boeger/efter-bea\r\n/boeger/dod-og-begravet\r\n/boeger/kadaverkvad\r\n/boeger/begravelsen-0\r\n/boeger/stilhed-0\r\n/boeger/pendul\r\n/boeger/liv-noveller\r\n/boeger/en-andens-hjerte\r\n/boeger/hos-hades\r\n/boeger/alt-forladt\r\n/boeger/tornedans\r\n/boeger/jordfald\r\n/boeger/chokoladedoden\r\n/boeger/selvmord-0\r\n/boeger/katrines-hand\r\n/boeger/velsignelser\r\n/boeger/historien-om-en-mor\r\n/boeger/min-far-er-en-tiger\r\n/boeger/lykkebo-lukker\r\n/boeger/kaiser\r\n/boeger/transfervindue-fortaellinger-om-de-raskes-fejl\r\n/boeger/farvel-eva\r\n/boeger/dreng\r\n/boeger/rose-0\r\n/boeger/gaesten-0\r\n/boeger/nimby\r\n/boeger/et-dogn-pa-jorden\r\n/boeger/den-anden-bred\r\n/boeger/hendes-nye-dag\r\n/boeger/over-revet-langt-ude\r\n/boeger/skabet\r\n/boeger/efter-rosinen"
+    negate: false
+    context_mapping: {  }

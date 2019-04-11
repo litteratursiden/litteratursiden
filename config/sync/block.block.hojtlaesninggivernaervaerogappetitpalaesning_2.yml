@@ -1,0 +1,31 @@
+uuid: c1644361-2bf0-4f51-95b7-a46da68f5a5f
+langcode: da
+status: false
+dependencies:
+  content:
+    - 'block_content:spot:3c2400e6-fc11-48a4-a664-66ad03da213c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: hojtlaesninggivernaervaerogappetitpalaesning_2
+theme: litteratursiden
+region: content
+weight: 980
+provider: null
+plugin: 'block_content:3c2400e6-fc11-48a4-a664-66ad03da213c'
+settings:
+  id: 'block_content:3c2400e6-fc11-48a4-a664-66ad03da213c'
+  label: 'Læs sammen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

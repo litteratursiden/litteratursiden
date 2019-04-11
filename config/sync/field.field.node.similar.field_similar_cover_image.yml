@@ -1,0 +1,38 @@
+uuid: c083bb13-5b0a-44b8-bf39-269942a5b136
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_similar_cover_image
+    - node.type.similar
+  module:
+    - image
+id: node.similar.field_similar_cover_image
+field_name: field_similar_cover_image
+entity_type: node
+bundle: similar
+label: 'Cover Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_similar_cover_image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: a8a0c1b9-dcf4-4ed7-9b64-4136d94b4656
+    alt: ''
+    title: ''
+    width: 186
+    height: 287
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

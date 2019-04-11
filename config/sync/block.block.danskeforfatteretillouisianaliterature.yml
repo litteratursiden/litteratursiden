@@ -1,0 +1,31 @@
+uuid: 05f12771-3abd-48b5-aafa-87256481179b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:3d040af8-e605-419f-9d53-cd7fabd18f1c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskeforfatteretillouisianaliterature
+theme: litteratursiden
+region: content
+weight: 793
+provider: null
+plugin: 'block_content:3d040af8-e605-419f-9d53-cd7fabd18f1c'
+settings:
+  id: 'block_content:3d040af8-e605-419f-9d53-cd7fabd18f1c'
+  label: 'Danske forfattere til Louisiana Literature'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/her-er-forfatterne-du-ikke-ma-ga-glip-af-pa-louisiana-literature
+    negate: false
+    context_mapping: {  }

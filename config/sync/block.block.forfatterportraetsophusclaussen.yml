@@ -1,0 +1,31 @@
+uuid: b2af7283-e2e0-4fc6-afe4-e6866085e2c0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:52b5a7c7-0041-4de2-a44f-b74e5aa3589a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraetsophusclaussen
+theme: litteratursiden
+region: content
+weight: 344
+provider: null
+plugin: 'block_content:52b5a7c7-0041-4de2-a44f-b74e5aa3589a'
+settings:
+  id: 'block_content:52b5a7c7-0041-4de2-a44f-b74e5aa3589a'
+  label: 'Forfatterportræt Sophus Claussen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: retroanmeldelser-sophus-claussen
+    negate: false
+    context_mapping: {  }

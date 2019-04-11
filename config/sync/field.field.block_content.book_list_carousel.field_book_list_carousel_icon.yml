@@ -1,0 +1,38 @@
+uuid: d3e8a899-ec45-4585-b8d0-e270c413941c
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.book_list_carousel
+    - field.storage.block_content.field_book_list_carousel_icon
+  module:
+    - image
+id: block_content.book_list_carousel.field_book_list_carousel_icon
+field_name: field_book_list_carousel_icon
+entity_type: block_content
+bundle: book_list_carousel
+label: Icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

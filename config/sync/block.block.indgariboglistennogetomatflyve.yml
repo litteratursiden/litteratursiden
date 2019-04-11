@@ -1,0 +1,31 @@
+uuid: a29ab3c8-6222-49f9-9c18-cb071d783741
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:5bec57c8-963d-497d-b291-924d8e5189d7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennogetomatflyve
+theme: litteratursiden
+region: content
+weight: 588
+provider: null
+plugin: 'block_content:5bec57c8-963d-497d-b291-924d8e5189d7'
+settings:
+  id: 'block_content:5bec57c8-963d-497d-b291-924d8e5189d7'
+  label: 'Indgår i boglisten: Noget om at flyve'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-lille-prins\r\n/boeger/fra-lufthavn-til-lufthavn-og-andre-indvandrerfortaellinger\r\n/boeger/faldet-ud-af-himlen-saint-exupery-som-pilot\r\n/boeger/jetlag\r\n/boeger/zeppeliner\r\n/boeger/helikopter-igen\r\n/boeger/under-engelsk-himmel\r\n/boeger/alfabethuset\r\n/boeger/luftkrig-og-litteratur\r\n/boeger/kapring-over-kairo"
+    negate: false
+    context_mapping: {  }

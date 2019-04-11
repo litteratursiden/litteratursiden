@@ -1,0 +1,31 @@
+uuid: c6c0368f-1bd0-4ef1-a101-ad56adbe1888
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:30b5a1a7-aea9-4d5b-a440-d95031978d6f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: femforfatterepashortlistentildebutantpris_3
+theme: litteratursiden
+region: content
+weight: 780
+provider: null
+plugin: 'block_content:30b5a1a7-aea9-4d5b-a440-d95031978d6f'
+settings:
+  id: 'block_content:30b5a1a7-aea9-4d5b-a440-d95031978d6f'
+  label: 'Fem forfattere på shortlisten til debutantpris'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/de-bedste-danske-debutanter-2016-2017
+    negate: false
+    context_mapping: {  }

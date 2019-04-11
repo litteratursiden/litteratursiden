@@ -1,0 +1,21 @@
+uuid: 0049e947-41d0-4fcc-a3ba-0634d95d2b0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.debate
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.debate.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: debate
+label: Indlæg
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

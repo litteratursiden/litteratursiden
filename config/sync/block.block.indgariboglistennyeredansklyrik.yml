@@ -1,0 +1,31 @@
+uuid: db267ca9-2206-44d2-b25d-04ef3742e17d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:fde73d41-b307-47f8-ac86-2f2cb2236358'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennyeredansklyrik
+theme: litteratursiden
+region: content
+weight: 250
+provider: null
+plugin: 'block_content:fde73d41-b307-47f8-ac86-2f2cb2236358'
+settings:
+  id: 'block_content:fde73d41-b307-47f8-ac86-2f2cb2236358'
+  label: 'Indgår i boglisten: Nyere dansk lyrik'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/sporgsmalene\r\n/boeger/det-3-artusindes-hjerte\r\n/boeger/have-og-helvede-digt\r\n/boeger/hesteaederne-digte\r\n/boeger/sa-efterlades-alt-flaeskende\r\n/boeger/inden-april\r\n/boeger/vi-er-ikke-konger\r\n/boeger/37-postkort\r\n/boeger/dod-og-status\r\n/boeger/yahya-hassan\r\n/boeger/man-tror-man-samler-sig-til-hele-livet-efterladte-og-ikke-bogforte-digte-1976-2008\r\n/boeger/umulighedsportal-i-ubestemt-engangslys\r\n/boeger/sig-mig-et-underjordisk-trae-med-vindens-udtale\r\n/boeger/jeglose-digte\r\n/boeger/do-logn-do\r\n/boeger/3-12-d\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/jeg-aeder-mig-selv-som-lyng\r\n/boeger/i-civil\r\n/boeger/hjem-er-en-retning\r\n/boeger/odefabrikanten\r\n/boeger/salamandersol\r\n/boeger/rystet-spejl\r\n/boeger/eva-adolf\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/fremmed-under-samme-hud\r\n/boeger/endnu-ikke-allerede\r\n/boeger/romerske-naetter\r\n/boeger/det-er-hyklerisk-sige-fra\r\n/boeger/digte-2014"
+    negate: false
+    context_mapping: {  }

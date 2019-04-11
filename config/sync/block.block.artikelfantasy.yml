@@ -1,0 +1,31 @@
+uuid: 1dd193fe-f449-4c7d-936e-f30c4082d14c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:44747e02-9031-4e53-8c42-c3b2b4b92971'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: artikelfantasy
+theme: litteratursiden
+region: content
+weight: 265
+provider: null
+plugin: 'block_content:44747e02-9031-4e53-8c42-c3b2b4b92971'
+settings:
+  id: 'block_content:44747e02-9031-4e53-8c42-c3b2b4b92971'
+  label: Fantasy
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/fantasyfestival-i-esbjerg-15-16-september-2018
+    negate: false
+    context_mapping: {  }

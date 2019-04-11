@@ -1,0 +1,18 @@
+uuid: d583e9d6-78e5-470f-9239-1dc5fdbc0e1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.author_portrait
+id: node.author_portrait.title
+field_name: title
+entity_type: node
+bundle: author_portrait
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

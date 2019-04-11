@@ -1,0 +1,22 @@
+uuid: 0e753d6c-4140-4c17-bf8a-ea7e6dfcd462
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: topic
+label: Topic
+type: 'canonical_entities:node'
+pattern: 'temaer/[node:title]'
+selection_criteria:
+  a602d988-b934-499a-91f2-4fd1520b501c:
+    id: node_type
+    bundles:
+      topic: topic
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a602d988-b934-499a-91f2-4fd1520b501c
+selection_logic: and
+weight: -5
+relationships: {  }

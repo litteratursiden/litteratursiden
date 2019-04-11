@@ -1,0 +1,40 @@
+uuid: d75d41cf-e29e-4f59-9128-f2eee94cae4c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f20fbfd1-3c53-4c24-89cc-d1aa02d548d4'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - litteratursiden
+id: introteksttilaaboglister
+theme: litteratursiden
+region: content
+weight: 664
+provider: null
+plugin: 'block_content:f20fbfd1-3c53-4c24-89cc-d1aa02d548d4'
+settings:
+  id: 'block_content:f20fbfd1-3c53-4c24-89cc-d1aa02d548d4'
+  label: 'Intro tekst til A-Å boglister'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /lister/a-aa-alfabetisk-oversigt
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      editor: editor
+      superadmin: superadmin
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

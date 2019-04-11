@@ -1,0 +1,31 @@
+uuid: 3e89a97e-90ea-4209-9a15-56b7ffc26eb2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:94330c73-badd-4efd-b4f7-d8a372863d97'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistentheinternationaldublinliteraryaward
+theme: litteratursiden
+region: content
+weight: 173
+provider: null
+plugin: 'block_content:94330c73-badd-4efd-b4f7-d8a372863d97'
+settings:
+  id: 'block_content:94330c73-badd-4efd-b4f7-d8a372863d97'
+  label: 'Indgår i boglisten: The International DUBLIN Literary Award'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/lyden-af-ting-der-falder\r\n/boeger/lad-kun-verden-tumle-sig\r\n/boeger/ovenpa-er-der-stille\r\n/boeger/russisk-roulette-i-beirut\r\n/boeger/ud-og-stjaele-heste\r\n/boeger/mesteren\r\n/boeger/den-kendte-verden\r\n/boeger/mit-navn-er-rod\r\n/boeger/elementarpartikler\r\n/boeger/ingen-storre-ulykke\r\n/boeger/vidt-aben\r\n/boeger/sindrig-smerte\r\n/boeger/dyret-i-hjertet"
+    negate: false
+    context_mapping: {  }

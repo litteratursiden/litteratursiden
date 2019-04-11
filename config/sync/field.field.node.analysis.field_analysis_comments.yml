@@ -1,0 +1,33 @@
+uuid: ef5d129c-4b33-4b89-9a06-1e1c0ce5791a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_comments
+    - node.type.analysis
+  module:
+    - comment
+id: node.analysis.field_analysis_comments
+field_name: field_analysis_comments
+entity_type: node
+bundle: analysis
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 20
+  anonymous: 0
+  form_location: true
+  preview: 0
+field_type: comment

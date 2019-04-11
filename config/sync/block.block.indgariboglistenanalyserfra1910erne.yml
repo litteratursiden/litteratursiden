@@ -1,0 +1,31 @@
+uuid: e0f3d4d8-9061-4881-bf47-b6813edf53f4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:fc365a94-c4bf-459c-9451-b13c20a134cb'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra1910erne
+theme: litteratursiden
+region: content
+weight: 805
+provider: null
+plugin: 'block_content:fc365a94-c4bf-459c-9451-b13c20a134cb'
+settings:
+  id: 'block_content:fc365a94-c4bf-459c-9451-b13c20a134cb'
+  label: 'Indgår i boglisten: Analyser fra 1910''erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/en-dodsnat\r\n/boeger/asfaltens-sange\r\n/boeger/den-erotiske-hamster\r\n/boeger/ditte-menneskebarn\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: bddaeebe-b76f-4e62-b7d8-142a66a0d3a8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:cb701496-3db7-476c-b10f-dbee239f87d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskedebutanter20172018temavindere
+theme: litteratursiden
+region: content
+weight: 316
+provider: null
+plugin: 'block_content:cb701496-3db7-476c-b10f-dbee239f87d6'
+settings:
+  id: 'block_content:cb701496-3db7-476c-b10f-dbee239f87d6'
+  label: 'Danske debutanter 2017-2018 tema vindere'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/emma-bess-og-joakim-vilandt-far-debutantpriser
+    negate: false
+    context_mapping: {  }

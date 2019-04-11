@@ -1,0 +1,31 @@
+uuid: 756488e5-67a8-4108-9101-652b52cb132b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b8d6b9df-2670-46d7-8419-66d80125fb04'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: digterenlonehorslev
+theme: litteratursiden
+region: content
+weight: 335
+provider: null
+plugin: 'block_content:b8d6b9df-2670-46d7-8419-66d80125fb04'
+settings:
+  id: 'block_content:b8d6b9df-2670-46d7-8419-66d80125fb04'
+  label: 'Digteren Lone Hørslev'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/lone-horslev
+    negate: false
+    context_mapping: {  }

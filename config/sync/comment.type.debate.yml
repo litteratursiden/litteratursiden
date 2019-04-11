@@ -1,0 +1,8 @@
+uuid: 7502b0b8-5229-4424-bdf2-0b39de6b1eb0
+langcode: en
+status: true
+dependencies: {  }
+id: debate
+label: Debate
+target_entity_type_id: node
+description: ''

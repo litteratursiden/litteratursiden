@@ -1,0 +1,31 @@
+uuid: c0f1624a-72a5-441f-affc-8c4095368336
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8fa89ad0-a261-42ec-b8c4-3a7e50f11566'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengraphicnovelsfor2015
+theme: litteratursiden
+region: content
+weight: 472
+provider: null
+plugin: 'block_content:8fa89ad0-a261-42ec-b8c4-3a7e50f11566'
+settings:
+  id: 'block_content:8fa89ad0-a261-42ec-b8c4-3a7e50f11566'
+  label: 'Indgår i boglisten: Graphic novels før 2015'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/almaegtig\r\n/boeger/af-glas-0\r\n/boeger/i-skovens-dybe-stille-ro\r\n/boeger/sort-hul\r\n/boeger/kiki-fra-montparnasse\r\n/boeger/tourens-helte\r\n/boeger/det-store-onde\r\n/boeger/logicomix\r\n/boeger/war-stories-vol-1\r\n/boeger/vals-med-bashir\r\n/boeger/no-pasaran\r\n/boeger/alans-krig-alan-ingram-copes-erindringer\r\n/boeger/velkommen-til-palomar\r\n/boeger/speedy-ortiz-dor\r\n/boeger/sortmund\r\n/boeger/mona\r\n/boeger/et-kinesisk-liv-faderens-tid\r\n/boeger/beach-boys\r\n/boeger/bandekrig-145\r\n/boeger/over-muren\r\n/boeger/asterios-polyp\r\n/boeger/sin-city\r\n/boeger/300\r\n/boeger/abne-sar\r\n/boeger/daytripper\r\n/boeger/hell\r\n/boeger/v-vendetta\r\n/boeger/watchmen\r\n/boeger/kvinden-der-ikke-kunne-huske\r\n/boeger/lille-miss-nobody\r\n/boeger/desertor\r\n/boeger/persepolis-bd-1-2-af-marjane-satrapi\r\n/boeger/fremtidens-araber-en-barndom-i-mellemosten-1984-1985\r\n/boeger/aske-1\r\n/boeger/morderens-mestervaerk\r\n/boeger/gemma-bovery\r\n/boeger/maus-0\r\n/boeger/kensington\r\n/boeger/ankomsten-0\r\n/boeger/min-fjerne-barndomsby\r\n/boeger/folkets-rost\r\n/boeger/en-dyne-af-sne\r\n/boeger/kom-hjem\r\n/boeger/normandiet\r\n/boeger/saga-vol-1\r\n/boeger/horen-h-kaster-handsken\r\n/boeger/jimmy-corrigan-den-klogeste-dreng-i-verden\r\n/boeger/de-gale-0"
+    negate: false
+    context_mapping: {  }

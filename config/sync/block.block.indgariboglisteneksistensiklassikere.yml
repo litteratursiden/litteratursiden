@@ -1,0 +1,31 @@
+uuid: 9abeea8f-8d63-40ce-901e-712e68d0f0e7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1dd74aa9-f4bd-4718-b361-fe51488e6752'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisteneksistensiklassikere
+theme: litteratursiden
+region: content
+weight: 417
+provider: null
+plugin: 'block_content:1dd74aa9-f4bd-4718-b361-fe51488e6752'
+settings:
+  id: 'block_content:1dd74aa9-f4bd-4718-b361-fe51488e6752'
+  label: 'Indgår i boglisten: Eksistens i Klassikere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/de-andres-blod\r\n/boeger/molloy\r\n/boeger/mercier-og-camier\r\n/boeger/sidste-fortaellinger\r\n/boeger/syv-fantastiske-fortaellinger\r\n/boeger/eksil-og-kongedomme-0\r\n/boeger/faldet\r\n/boeger/den-fremmede\r\n/boeger/under-foregivende\r\n/boeger/onde-ander-0\r\n/boeger/idioten\r\n/boeger/kaeldermennesket\r\n/boeger/homo-faber\r\n/boeger/den-unge-werthers-lidelser\r\n/boeger/sult-0\r\n/boeger/logneren-0\r\n/boeger/glasperlespillet\r\n/boeger/mogens-og-andre-noveller-0\r\n/boeger/niels-lyhne\r\n/boeger/myter-og-digte-i-udvalg\r\n/boeger/processen\r\n/boeger/enten-eller\r\n/boeger/haervaerk\r\n/boeger/den-bla-engel\r\nboeger/jorgen-stein\r\n/boeger/lykke-1\r\n/boeger/malte-laurids-brigges-optegnelser\r\n/boeger/en-flygtning-krydser-sit-spor\r\nboeger/ensom-blandt-mennesker\r\n/boeger/terningerne-er-kastet\r\n/boeger/hyrder\r\n/boeger/samlede-noveller-1\r\n/boeger/en-dag-i-ivan-denisovitjs-liv\r\n/boeger/perlen\r\n/boeger/saere-historier\r\n/boeger/stoner\r\n"
+    negate: false
+    context_mapping: {  }

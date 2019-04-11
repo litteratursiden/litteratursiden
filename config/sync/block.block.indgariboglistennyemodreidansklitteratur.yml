@@ -1,0 +1,31 @@
+uuid: 16d8cf64-332e-457c-add9-9ba3812ede70
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:7a19b253-a3e6-4016-b21d-397e3acc8a39'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennyemodreidansklitteratur
+theme: litteratursiden
+region: content
+weight: 234
+provider: null
+plugin: 'block_content:7a19b253-a3e6-4016-b21d-397e3acc8a39'
+settings:
+  id: 'block_content:7a19b253-a3e6-4016-b21d-397e3acc8a39'
+  label: 'Indgår i boglisten: Nye mødre i dansk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/stormskader\r\n/boeger/pa-traek-0\r\n/boeger/mado\r\n/boeger/mor-0\r\n/boeger/ulvekvinten\r\n/boeger/erindring-om-kaerligheden\r\n/boeger/sortedam\r\n/boeger/som-om"
+    negate: false
+    context_mapping: {  }

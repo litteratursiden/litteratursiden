@@ -1,0 +1,74 @@
+uuid: 7654ce92-c409-4efd-86c3-a6d7aef5f750
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.solr
+    - field.field.node.topic.field_topic_body
+    - field.field.node.topic.field_topic_comments
+    - field.field.node.topic.field_topic_cover_image
+    - field.field.node.topic.field_topic_excerpt
+    - field.field.node.topic.field_topic_files
+    - field.field.node.topic.field_topic_general_tags
+    - field.field.node.topic.field_topic_internal_link
+    - field.field.node.topic.field_topic_link_external
+    - field.field.node.topic.field_topic_spotbox_image
+    - field.field.node.topic.field_topic_theme_body_text
+    - node.type.topic
+  module:
+    - text
+    - user
+id: node.topic.solr
+targetEntityType: node
+bundle: topic
+mode: solr
+content:
+  field_topic_body:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_topic_excerpt:
+    type: text_default
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_topic_general_tags:
+    weight: 3
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_topic_theme_body_text:
+    type: text_default
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_topic_comments: true
+  field_topic_cover_image: true
+  field_topic_files: true
+  field_topic_internal_link: true
+  field_topic_link_external: true
+  field_topic_spotbox_image: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  social_media: true

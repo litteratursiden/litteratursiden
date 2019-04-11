@@ -1,0 +1,28 @@
+uuid: 51a06f99-b903-4f10-92d5-090f95e97524
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_portrait_tags
+    - node.type.author_portrait
+    - taxonomy.vocabulary.general_tags
+id: node.author_portrait.field_author_portrait_tags
+field_name: field_author_portrait_tags
+entity_type: node
+bundle: author_portrait
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      general_tags: general_tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

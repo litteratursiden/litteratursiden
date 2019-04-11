@@ -1,0 +1,31 @@
+uuid: d9fc5d45-bef5-4e8f-b02e-1280ac10b9ab
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:fa18759a-3afc-41b5-8bf7-724a5d33330f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: johanrosdahl
+theme: litteratursiden
+region: content
+weight: 859
+provider: null
+plugin: 'block_content:fa18759a-3afc-41b5-8bf7-724a5d33330f'
+settings:
+  id: 'block_content:fa18759a-3afc-41b5-8bf7-724a5d33330f'
+  label: 'Johan Rosdahl'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/murakamis-magiske-univers\r\n"
+    negate: false
+    context_mapping: {  }

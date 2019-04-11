@@ -1,0 +1,31 @@
+uuid: 697df476-b8f3-4dde-9f6c-721872578b8b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:016c2621-7e03-488a-8f04-c89cc9ac3b5c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: ludvigholberg
+theme: litteratursiden
+region: content
+weight: 862
+provider: null
+plugin: 'block_content:016c2621-7e03-488a-8f04-c89cc9ac3b5c'
+settings:
+  id: 'block_content:016c2621-7e03-488a-8f04-c89cc9ac3b5c'
+  label: 'Ludvig Holberg'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/ludvig-holberg
+    negate: false
+    context_mapping: {  }

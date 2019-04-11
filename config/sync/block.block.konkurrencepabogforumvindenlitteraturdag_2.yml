@@ -1,0 +1,31 @@
+uuid: 68395064-53cf-4438-8494-2c01faf532ba
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:6211cfbc-aa4f-4663-849e-73f05ad40b4c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: konkurrencepabogforumvindenlitteraturdag_2
+theme: litteratursiden
+region: content
+weight: 17
+provider: null
+plugin: 'block_content:6211cfbc-aa4f-4663-849e-73f05ad40b4c'
+settings:
+  id: 'block_content:6211cfbc-aa4f-4663-849e-73f05ad40b4c'
+  label: 'Sorg og bøger'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/sorg\r\n<front>"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 8d44d9f0-aa9a-4b97-9631-9d5a8f138626
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:b214bce2-8497-42f0-94e1-6bcb4ac35d37'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: mortenpapeanbefalerhansabsolutteyndlingsboger_2
+theme: litteratursiden
+region: content
+weight: 967
+provider: null
+plugin: 'block_content:b214bce2-8497-42f0-94e1-6bcb4ac35d37'
+settings:
+  id: 'block_content:b214bce2-8497-42f0-94e1-6bcb4ac35d37'
+  label: 'Morten Pape anbefaler'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/morten-pape
+    negate: false
+    context_mapping: {  }

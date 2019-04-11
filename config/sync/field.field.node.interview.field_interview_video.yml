@@ -1,0 +1,26 @@
+uuid: bed94fef-e22f-48f5-9a73-2744df2bea66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interview_video
+    - node.type.interview
+  module:
+    - video_embed_field
+id: node.interview.field_interview_video
+field_name: field_interview_video
+entity_type: node
+bundle: interview
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    html_5: html_5
+    youtube_playlist: '0'
+field_type: video_embed_field

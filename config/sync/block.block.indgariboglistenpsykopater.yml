@@ -1,0 +1,31 @@
+uuid: f2c381c5-0c95-4c48-8f7b-45ffb73e10e0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:69f5bd75-5f0e-4a56-85c8-b8e38e2107cf'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenpsykopater
+theme: litteratursiden
+region: content
+weight: 164
+provider: null
+plugin: 'block_content:69f5bd75-5f0e-4a56-85c8-b8e38e2107cf'
+settings:
+  id: 'block_content:69f5bd75-5f0e-4a56-85c8-b8e38e2107cf'
+  label: 'Indgår i boglisten: Psykopater'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/samtalerummet\r\n/boeger/tvillingerne-0\r\n/boeger/bangebuks-1\r\n/boeger/sov-sodt\r\n/boeger/psycho\r\n/boeger/clockwork-orange\r\n/boeger/sophie-0\r\n/boeger/laengsel-efter-omhed\r\n/boeger/sporfund\r\n/boeger/american-psycho\r\n/boeger/verdens-heldigste-pige\r\n/boeger/haevnens-vej\r\n/boeger/jonas-eckel\r\n/boeger/offer-en-samler\r\n/boeger/ondskabens-ansigt-0\r\n/boeger/dodelig-besaettelse\r\n/boeger/noget-noget-0\r\n/boeger/gal-mands-vaerk\r\n/boeger/dukkeforeren\r\n/boeger/hannibal-trilogien\r\n/boeger/koldt-lys\r\n/boeger/farligt-mode\r\n/boeger/tom-ripleys-talent\r\n/boeger/sagde-du-noget-kaelling\r\n/boeger/hokwerdas-datter\r\n/boeger/i-gaeld-til-nydelsen\r\n/boeger/rodhaette-0\r\n/boeger/strengen-i-blodet\r\n/boeger/blind-panik\r\n/boeger/glem-mig-aldrig\r\n/boeger/i-misosuppen\r\n/boeger/marionetternes-magt\r\n/boeger/morgengaven-0\r\n/boeger/edderkoppens-spind\r\n/boeger/delvecchios-dom\r\n/boeger/mord-i-vente\r\n/boeger/udyret\r\n/boeger/morkets-mareridt\r\n/boeger/skytsenglen-0\r\n/boeger/close\r\n/boeger/vaebneren-0\r\n/boeger/pa-sporet-af-en-skygge"
+    negate: false
+    context_mapping: {  }

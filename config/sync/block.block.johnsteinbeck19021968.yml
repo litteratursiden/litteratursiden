@@ -1,0 +1,31 @@
+uuid: 1bd3483c-7ab7-4fd9-83c9-66bb8598c201
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b8c3260b-e3fd-4237-8684-4b4dcc38e98d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: johnsteinbeck19021968
+theme: litteratursiden
+region: content
+weight: 248
+provider: null
+plugin: 'block_content:b8c3260b-e3fd-4237-8684-4b4dcc38e98d'
+settings:
+  id: 'block_content:b8c3260b-e3fd-4237-8684-4b4dcc38e98d'
+  label: 'John Steinbeck 1902-1968'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/john-steinbeck
+    negate: false
+    context_mapping: {  }

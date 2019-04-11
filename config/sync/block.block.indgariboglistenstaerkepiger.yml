@@ -1,0 +1,31 @@
+uuid: ff365ca8-74a1-4b4d-9efa-a61c83c4e1ce
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f836088f-6476-4290-bfaa-3255553e1964'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenstaerkepiger
+theme: litteratursiden
+region: content
+weight: 272
+provider: null
+plugin: 'block_content:f836088f-6476-4290-bfaa-3255553e1964'
+settings:
+  id: 'block_content:f836088f-6476-4290-bfaa-3255553e1964'
+  label: 'Indgår i boglisten: Stærke piger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kammas-kjoler\r\n/boeger/allerbedste-betty\r\n/boeger/drommestenen\r\n/boeger/skyggefugl\r\n/boeger/ronja-roverdatter\r\n/boeger/bogen-om-pippi-langstrompe-samlet-udgave-med-alle-historierne-om-pippi-langstrompe-ved-kina\r\n/boeger/alene-i-london\r\n/pigen-som-ville-redde-bogerne\r\n/boeger/malmanden-og-havet\r\n/boeger/vildheks-ildproven\r\n/boeger/skammerens-datter\r\n/godnathistorier-rebelske-piger-1-2\r\n/boeger/ravnenes-hvisken\r\n/boeger/nofret-af-sussi-bech\r\n/boeger/skamlos\r\n/boeger/krystalskibet\r\n/alice-i-eventyrland-gennem-spejlet"
+    negate: false
+    context_mapping: {  }

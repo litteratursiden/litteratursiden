@@ -1,0 +1,28 @@
+uuid: b91a38cf-8a6c-436c-b1e0-0d3d6dfa5f03
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_general_tags
+    - node.type.topic
+    - taxonomy.vocabulary.general_tags
+id: node.topic.field_topic_general_tags
+field_name: field_topic_general_tags
+entity_type: node
+bundle: topic
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      general_tags: general_tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,31 @@
+uuid: 06b5bfa3-61f5-4145-919e-4e1d548a65f5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c30c2db9-a8be-4c27-b09a-2cb5cc53555b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenjodedom_2
+theme: litteratursiden
+region: content
+weight: 212
+provider: null
+plugin: 'block_content:c30c2db9-a8be-4c27-b09a-2cb5cc53555b'
+settings:
+  id: 'block_content:c30c2db9-a8be-4c27-b09a-2cb5cc53555b'
+  label: 'Indgår i boglisten: Jødedom'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/mit-halve-liv\r\n/boeger/smaragdsliberen\r\n/boeger/morke-dybe-skove\r\n/boeger/stillezone\r\n/boeger/pontius-pilatus"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 6e0b84b1-7ba1-45e9-8f36-29b942b8860b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:06050041-7da2-45b7-a66e-670294874a97'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenaarhusilitteraturen_2
+theme: litteratursiden
+region: content
+weight: 194
+provider: null
+plugin: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
+settings:
+  id: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
+  label: 'Indgår i boglisten: Aarhus i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/pige-under-vand-krimi
+    negate: false
+    context_mapping: {  }

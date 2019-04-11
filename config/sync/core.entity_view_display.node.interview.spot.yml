@@ -1,0 +1,59 @@
+uuid: dc67c277-370b-49c6-b3ce-7c848e85b687
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.spot
+    - field.field.node.interview.field_interview_body
+    - field.field.node.interview.field_interview_external_links
+    - field.field.node.interview.field_interview_images
+    - field.field.node.interview.field_interview_internal_lin
+    - field.field.node.interview.field_interview_reference_author
+    - field.field.node.interview.field_interview_video
+    - field.field.node.interview.field_interview_video_text
+    - image.style.spot
+    - node.type.interview
+  module:
+    - image
+    - text
+    - user
+id: node.interview.spot
+targetEntityType: node
+bundle: interview
+mode: spot
+content:
+  field_interview_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+  field_interview_images:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: spot
+      image_link: ''
+    third_party_settings: {  }
+  posted:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_interview_external_links: true
+  field_interview_internal_lin: true
+  field_interview_reference_author: true
+  field_interview_video: true
+  field_interview_video_text: true
+  flag_bookmark: true
+  flag_like: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  social_media: true

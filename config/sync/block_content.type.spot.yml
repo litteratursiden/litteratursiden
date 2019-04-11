@@ -1,0 +1,8 @@
+uuid: 5ff25e75-4812-4417-ba31-10f718c16b1c
+langcode: en
+status: true
+dependencies: {  }
+id: spot
+label: Spot
+revision: 0
+description: ''

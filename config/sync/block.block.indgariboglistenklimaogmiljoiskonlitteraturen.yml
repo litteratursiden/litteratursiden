@@ -1,0 +1,31 @@
+uuid: b5df87d5-bfd3-4f92-8011-5a9699278ea8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e4493f8b-abcf-4c00-bca3-1f42b0975a66'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenklimaogmiljoiskonlitteraturen
+theme: litteratursiden
+region: content
+weight: 526
+provider: null
+plugin: 'block_content:e4493f8b-abcf-4c00-bca3-1f42b0975a66'
+settings:
+  id: 'block_content:e4493f8b-abcf-4c00-bca3-1f42b0975a66'
+  label: 'Indgår i boglisten: Klima og miljø i skønlitteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/skruenoglebanden\r\n/boeger/oryx-og-crake\r\n/boeger/syndflodens-ar-0\r\n/boeger/bla-2\r\n/boeger/genvej-til-paradis\r\n/boeger/naesten-ander-i-morket\r\n/boeger/luftens-farve\r\n/boeger/animalz\r\n/boeger/u-233\r\n/boeger/vildfaren\r\n/boeger/epimetheus\r\n/boeger/oversvommelsen\r\n/boeger/klimakonspirationen\r\n/boeger/de-rode-hestes-nat\r\n/boeger/caruso-synger-ikke-mere\r\n/boeger/frygtens-ansigt\r\n/boeger/stormflod-0\r\n/boeger/solstorm-0\r\n/boeger/drommer-androider-om-elektriske-far\r\n/boeger/glitch\r\n/boeger/hallo-jeg-er-vejret\r\n/boeger/fimbulsommer\r\n/boeger/og-den-store-flugt\r\n/boeger/tsunami\r\n/boeger/jagten-pa-graevling\r\n/boeger/korsmesse\r\n/boeger/varslet\r\n/boeger/tegnet\r\n/boeger/frodig-sommer\r\n/boeger/fanget-i-isen\r\n/boeger/mara-og-dann\r\n/boeger/jeg-elsker-naturen-og-alt-omkring-mig\r\n/boeger/korsveje-i-nord-roman-fra-gronland\r\n/boeger/hos-glasmaneterne-roman\r\n/boeger/solar-0\r\n/boeger/biernes-historie\r\n/boeger/vejen-0\r\n/boeger/manifest\r\n/boeger/fort-europa\r\n/boeger/du-morke\r\n/boeger/hvalernes-sang\r\n/boeger/mengele-zoo\r\n/boeger/morgendagens-odds\r\n/boeger/7-sydost\r\n/boeger/antarktis\r\n/boeger/baga-road\r\n/boeger/setans-porte\r\n/boeger/den-femte-dag\r\n/boeger/dyrets-folk\r\n/boeger/frosne-beviser\r\n/boeger/uvejr\r\n/boeger/pa-ryggen-af-en-tyr\r\n/boeger/bitre-blomster\r\n/boeger/vi-skal-hoste-vinden\r\n/boeger/sandet-i-sarasvati\r\n/boeger/syndfloden-0\r\n/boeger/isbrud\r\n/boeger/healeren-0\r\n/boeger/miraklernes-tid-0\r\n/boeger/den-afskyelige\r\n/boeger/nar-havet-graner\r\n/boeger/blodbjerget\r\n/boeger/effekten-af-susan"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: fe9dce80-03f1-4681-88ab-1c0765fec302
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:20738563-25c3-4ba6-b1ce-308a0a44ade3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: laesogsaafkattensbordafmichaelondaatje
+theme: litteratursiden
+region: content
+weight: 613
+provider: null
+plugin: 'block_content:20738563-25c3-4ba6-b1ce-308a0a44ade3'
+settings:
+  id: 'block_content:20738563-25c3-4ba6-b1ce-308a0a44ade3'
+  label: 'Læs også af Kattens bord af Michael Ondaatje'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/den-engelske-patient-af-michael-ondaatje
+    negate: false
+    context_mapping: {  }

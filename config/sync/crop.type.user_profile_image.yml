@@ -1,0 +1,12 @@
+uuid: 8f47ad2a-d7eb-4a93-bafc-b6ebcf7a6b75
+langcode: en
+status: true
+dependencies: {  }
+label: 'User profile image'
+id: user_profile_image
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: 155
+soft_limit_height: 155
+hard_limit_width: 155
+hard_limit_height: 155

@@ -1,0 +1,31 @@
+uuid: 472e19d5-9d19-4712-ba1c-168a98f8056e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e8f2276d-dcd5-49bd-8392-7af562386a3a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfirhjulederomaner
+theme: litteratursiden
+region: content
+weight: 449
+provider: null
+plugin: 'block_content:e8f2276d-dcd5-49bd-8392-7af562386a3a'
+settings:
+  id: 'block_content:e8f2276d-dcd5-49bd-8392-7af562386a3a'
+  label: 'Indgår i boglisten: Firhjulede romaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/om-en-buick-8\r\n/boeger/biler-og-dyr\r\n/boeger/den-lille-hvide-bil\r\n/boeger/om-jeg-korer-godt\r\n/boeger/volvo-lastvagnar\r\n/boeger/hestekraefter-0\r\n/boeger/der-var-engang-en-mand\r\n/boeger/smukke-biler-efter-krigen\r\n/boeger/under-nul\r\n/boeger/sne-vil-falde-pa-sne-som-faldt\r\n/boeger/denne-historie\r\n/boeger/hvor-skal-vi-hen-far\r\n/boeger/ove-gasser-op\r\n/boeger/doden-korer-audi\r\n/boeger/forste-indtryk"
+    negate: false
+    context_mapping: {  }

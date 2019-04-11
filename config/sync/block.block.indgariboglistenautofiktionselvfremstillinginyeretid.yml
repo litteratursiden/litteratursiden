@@ -1,0 +1,31 @@
+uuid: 9791e156-1661-4819-9314-143179b550ec
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3cd9bbd8-2e76-47b2-890a-33a277d92eca'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenautofiktionselvfremstillinginyeretid
+theme: litteratursiden
+region: content
+weight: 823
+provider: null
+plugin: 'block_content:3cd9bbd8-2e76-47b2-890a-33a277d92eca'
+settings:
+  id: 'block_content:3cd9bbd8-2e76-47b2-890a-33a277d92eca'
+  label: 'Indgår i boglisten: Autofiktion'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/hannah-0\r\n/boeger/fotexsoen\r\n/boeger/jeg-ved-ikke-om-den-slags-tanker-er-normale\r\n/boeger/deadline-0\r\n/boeger/apropos-opa\r\n/boeger/det-uperfekte-menneske-12\r\n/boeger/min-kamp-1-bog\r\n/boeger/kapgang\r\n/boeger/kunsten-graede-i-kor\r\n/boeger/stigninger-og-fald\r\n/boeger/kalak\r\n/boeger/trefoldighedsbarn\r\n/boeger/texas-rose\r\n/boeger/et-velsignet-barn-0\r\n/boeger/yahya-hassan\r\n/boeger/den-perfekte-mand-en-selvbiografi-roman\r\n/boeger/ga-eller-kunsten-leve-et-vildt-og-poetisk-liv\r\n/boeger/sig-du-lyver\r\n/boeger/gud-taler-ud\r\n/boeger/claus-beck-nielsen-1963-2001\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/fader-vor-0\r\n/boeger/du-som-er-i-himlen\r\n/boeger/hundstein\r\n/boeger/huden-er-det-elastiske-hylster-der-omgiver-hele-legemet\r\n/boeger/do-danska\r\n/boeger/de-maske-egnede\r\n/boeger/sex-rouge\r\n/boeger/brun-mands-byrde\r\n/boeger/den-som-blinker-er-bange-doden"
+    negate: false
+    context_mapping: {  }

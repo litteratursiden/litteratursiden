@@ -1,0 +1,31 @@
+uuid: 3910ae7f-cf49-4663-8643-966d5484e0f1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:18c5bb11-3554-43c3-b6d3-f6d46efd7ce1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenitalienskkrimiogspaending
+theme: litteratursiden
+region: content
+weight: 505
+provider: null
+plugin: 'block_content:18c5bb11-3554-43c3-b6d3-f6d46efd7ce1'
+settings:
+  id: 'block_content:18c5bb11-3554-43c3-b6d3-f6d46efd7ce1'
+  label: 'Indgår i boglisten: Italiensk krimi og spænding'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/edderkoppens-talmodighed\r\n/boeger/hedebolge-i-august\r\n/boeger/papirmanen\r\n/boeger/hvem-er-lou-sciortino\r\n/boeger/mysteriet-mangiabarche\r\n/boeger/sandheden-om-alligatoren\r\n/boeger/efter-al-sandsynlighed\r\n/boeger/den-kolde-sommer\r\n/boeger/pa-kanten-af-sandheden\r\n/boeger/forvandleren\r\n/boeger/du-er-det-onde\r\n/boeger/krokodillen-0\r\n/boeger/bravo\r\n/boeger/skaebnespil\r\n/boeger/lysmordene\r\n/boeger/den-femte-spiller\r\n/boeger/det-forkerte-kort\r\n/boeger/kaetteren\r\n/boeger/999\r\n/boeger/sort-sondag-0\r\n/boeger/en-grim-lille-historie"
+    negate: false
+    context_mapping: {  }

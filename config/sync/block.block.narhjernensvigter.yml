@@ -1,0 +1,31 @@
+uuid: 78e92919-04c3-49a2-9915-2fb069a1b473
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:cc5d1f2a-749c-4ed6-a395-ae4259cdc772'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: narhjernensvigter
+theme: litteratursiden
+region: content
+weight: 917
+provider: null
+plugin: 'block_content:cc5d1f2a-749c-4ed6-a395-ae4259cdc772'
+settings:
+  id: 'block_content:cc5d1f2a-749c-4ed6-a395-ae4259cdc772'
+  label: 'Når hjernen svigter'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/kroppen-i-litteraturen
+    negate: false
+    context_mapping: {  }

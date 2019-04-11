@@ -1,0 +1,31 @@
+uuid: 9b42a701-27d5-41ec-93d9-d887505305d1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:4a71789e-060e-4f37-8d9f-3eeb863bd6d3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraeternesthemingway
+theme: litteratursiden
+region: content
+weight: 345
+provider: null
+plugin: 'block_content:4a71789e-060e-4f37-8d9f-3eeb863bd6d3'
+settings:
+  id: 'block_content:4a71789e-060e-4f37-8d9f-3eeb863bd6d3'
+  label: 'Forfatterportræt: Ernest Hemingway '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/ernest-hemingway-og-novellerne\r\n/artikler/appetit-pa-livet-maltidets-betydning-i-ernest-hemingways-moveable-feast\r\n/artikler/mestervaerk-af-sladder-hemingway-og-kunstens-mekka"
+    negate: false
+    context_mapping: {  }

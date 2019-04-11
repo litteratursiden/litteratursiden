@@ -1,0 +1,31 @@
+uuid: 14a330c0-e0b4-4cb9-a35a-f5fcec57fb90
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1c639edc-a76b-4153-a9c5-6dd77deaaba5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra1980erne
+theme: litteratursiden
+region: content
+weight: 815
+provider: null
+plugin: 'block_content:1c639edc-a76b-4153-a9c5-6dd77deaaba5'
+settings:
+  id: 'block_content:1c639edc-a76b-4153-a9c5-6dd77deaaba5'
+  label: 'Indgår i boglisten: Analyser fra 1980''erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/hvafor-en-hand-vil-du-ha\r\n/boeger/alfabet\r\n/boeger/dansen-med-regitze\r\n/boeger/nani\r\n/boeger/rosens-veje\r\n/boeger/den-blanke-sol\r\n/boeger/praeludier\r\n/boeger/gittes-monologer\r\n/boeger/dystopia\r\n/boeger/som-landet-ligger\r\n/boeger/gaet-hvem-der-elsker-dig\r\n/boeger/martin-victoria\r\n/boeger/fortaelle-menneskene\r\nboeger/kilroy-kilroy\r\n/boeger/84-digte\r\n/boeger/standset-aften\r\n/boeger/nar-snerlen-blomstrer\r\n/boeger/om-fjorten-dage\r\n/boeger/vejen-til-lagoa-santa\r\n/boeger/lille-menneske\r\n/boeger/vi-folder-drommens-faner-ud\r\n/boeger/marginaljord\r\n/boeger/springflod\r\n/boeger/city-slang\r\n/boeger/himmel-og-helvede\r\n/boeger/marie-0\r\n"
+    negate: false
+    context_mapping: {  }

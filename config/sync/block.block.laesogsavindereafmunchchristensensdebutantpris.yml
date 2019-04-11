@@ -1,0 +1,31 @@
+uuid: 05b16e3b-a76e-4c53-b5ae-9468e36914ec
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8a94c857-e6e8-4bd5-a17d-b70b8346f96e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: laesogsavindereafmunchchristensensdebutantpris
+theme: litteratursiden
+region: content
+weight: 900
+provider: null
+plugin: 'block_content:8a94c857-e6e8-4bd5-a17d-b70b8346f96e'
+settings:
+  id: 'block_content:8a94c857-e6e8-4bd5-a17d-b70b8346f96e'
+  label: 'Læs også: Vindere af Munch-Christensens debutantpris'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/vindere-af-laesernes-bogpris\r\n/lister/vindere-af-de-gyldne-laurbaer\r\n/lister/vindere-af-dr-romanprisen\r\n"
+    negate: false
+    context_mapping: {  }

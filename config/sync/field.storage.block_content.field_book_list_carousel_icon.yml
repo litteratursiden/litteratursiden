@@ -1,0 +1,30 @@
+uuid: eba44b8d-f87f-43cc-80f0-807f21a0034c
+langcode: da
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_book_list_carousel_icon
+field_name: field_book_list_carousel_icon
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

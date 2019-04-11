@@ -1,0 +1,31 @@
+uuid: 30e8df03-28d8-41ca-ad11-64d5e54a1fa2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ea422979-f0c6-4c98-b09f-21558e2e6dc7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensorg
+theme: litteratursiden
+region: content
+weight: 138
+provider: null
+plugin: 'block_content:ea422979-f0c6-4c98-b09f-21558e2e6dc7'
+settings:
+  id: 'block_content:ea422979-f0c6-4c98-b09f-21558e2e6dc7'
+  label: 'Indgår i boglisten: Sorg'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/forsvindingsnumre-0\r\n/boeger/det-sorgende-dyr-om-sorgen-selvet-og-samfundet\r\n/boeger/de\r\n/boeger/de-naermeste\r\n/boeger/du-ma-ikke-tage-imod-slik-fra-fremmede\r\n/boeger/digt-om-doden-en-bog-om-min-far\r\n/boeger/du-forsvinder-0\r\n/boeger/pludselig-falder-ting-fra-himlen\r\n/boeger/den-rode-adressebog-roman\r\n/boeger/ravnens-dag-og-tiden-efter-roman\r\n/boeger/lincoln-i-bardo-roman\r\n/boeger/ud-af-ensomheden\r\n/boeger/har-doden-taget-noget-fra-dig-sa-giv-det-tilbage\r\n/boeger/salt\r\n/boeger/velsignelser\r\n/boeger/det-jeg-mister\r\n/boeger/en-duft-af-roser\r\n/boeger/sporene-efter-ines\r\n/boeger/sommergraes-vinterorm\r\n/boeger/sorg-er-et-vaesen-med-fjer\r\n/boeger/tit-er-jeg-glad\r\n/boeger/i-far-ikke-mit-had\r\n/boeger/perla-0\r\n/boeger/om-et-klaver\r\n/boeger/har-du-selv-haft-en-familie\r\n/boeger/himmelpletter\r\n/boeger/falde-ud-af-tiden\r\n/boeger/de-savnede\r\n/boeger/i-hvert-ojeblik-er-vi-stadig-i-live\r\n/boeger/havhesten\r\n/boeger/pa-den-anden-side-er-marts\r\n/boeger/hun-som-sluger-solen\r\n/boeger/gennem-natten-0\r\n/boeger/bellmans-guitar\r\n/boeger/lad-os-habe-pa-det-bedste\r\n/boeger/alle-vil-hjem-ingen-vil-tilbage"
+    negate: false
+    context_mapping: {  }

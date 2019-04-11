@@ -1,0 +1,31 @@
+uuid: f4879528-bfab-41e9-be7b-cf66de6c32f8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:3ea365a0-99cd-4ad0-b788-9e291b646fa1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: hermanbang_2
+theme: litteratursiden
+region: content
+weight: 282
+provider: null
+plugin: 'block_content:3ea365a0-99cd-4ad0-b788-9e291b646fa1'
+settings:
+  id: 'block_content:3ea365a0-99cd-4ad0-b788-9e291b646fa1'
+  label: 'Herman Bang'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/herman-bang
+    negate: false
+    context_mapping: {  }

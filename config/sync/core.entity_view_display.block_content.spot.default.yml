@@ -1,0 +1,23 @@
+uuid: e27b5b52-927e-4ecf-9c41-5f83026ff609
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spot
+    - field.field.block_content.spot.field_spot_content
+id: block_content.spot.default
+targetEntityType: block_content
+bundle: spot
+mode: default
+content:
+  field_spot_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: spot
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  langcode: true

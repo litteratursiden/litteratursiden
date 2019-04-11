@@ -1,0 +1,21 @@
+uuid: 8f647807-2c47-497b-8222-a69a70833b8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_list_body
+    - node.type.book_list
+  module:
+    - text
+id: node.book_list.field_book_list_body
+field_name: field_book_list_body
+entity_type: node
+bundle: book_list
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

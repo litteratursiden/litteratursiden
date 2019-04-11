@@ -1,0 +1,31 @@
+uuid: 7cc19e53-b27c-4c9c-84c3-187058aa3f91
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:83c0ea67-9029-4af7-ad26-7f9794b1ba88'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: martina.hansenlogneren
+theme: litteratursiden
+region: content
+weight: 901
+provider: null
+plugin: 'block_content:83c0ea67-9029-4af7-ad26-7f9794b1ba88'
+settings:
+  id: 'block_content:83c0ea67-9029-4af7-ad26-7f9794b1ba88'
+  label: 'Martin A. Hansen Løgneren'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/svig-pa-sando-mennesket-kaerligheden-og-naturen-i-logneren
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,30 @@
+uuid: 2998360a-1014-4044-80ba-b790121f8786
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_book_cover_image
+field_name: field_book_cover_image
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 057fdaf1-2f38-4fa8-9dfd-4d927488a36f
+    alt: 'Bogens forside'
+    title: 'Bogens forside'
+    width: 100
+    height: 150
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: dae739de-08fd-44c3-baa9-811b26551132
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.slick_item
+label: 'Slick item'
+targetEntityType: node
+cache: true

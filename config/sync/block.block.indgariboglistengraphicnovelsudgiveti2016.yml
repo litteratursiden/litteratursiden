@@ -1,0 +1,31 @@
+uuid: 3fe585b8-eb91-4892-aa58-b79cd8598a68
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c69896bc-ec39-4469-82eb-9d8516238cb8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengraphicnovelsudgiveti2016
+theme: litteratursiden
+region: content
+weight: 475
+provider: null
+plugin: 'block_content:c69896bc-ec39-4469-82eb-9d8516238cb8'
+settings:
+  id: 'block_content:c69896bc-ec39-4469-82eb-9d8516238cb8'
+  label: 'Indgår i boglisten: Graphic novels udgivet i 2016'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/morf\r\n/boeger/fatale-habe-pa-regn\r\n/boeger/chok-dagbog-fra-fortiden\r\n/boeger/vand-til-blod-0\r\n/boeger/det-cubanske-efterar\r\n/boeger/den-ensomme-gourmet-0\r\n/boeger/pussyland-express-en-graphic-novel-i-tre-dele\r\n/boeger/simpelthen-samuel\r\n/boeger/stalins-dod-en-sand-historie-fra-kreml\r\n/boeger/dromme-i-tynd-luft\r\n/boeger/lasesmedsfilerne\r\n/boeger/dansker\r\n/boeger/englestotte\r\n/boeger/fremtidens-araber-en-barndom-i-mellemosten-1984-1985\r\n/boeger/vincent\r\n/boeger/supermutant-magic-academy\r\n/boeger/den-her-sommer\r\n/boeger/ranx\r\n/boeger/den-femte-beatle\r\n/boeger/saga-vol-4\r\n/boeger/diego-dolly"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 10a977e2-d97d-4d37-ac94-30b7b29dd1fc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:2d4b08cb-58f3-4b8a-b00e-d08c9ea80b5b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendublinilitteraturen_2
+theme: litteratursiden
+region: content
+weight: 277
+provider: null
+plugin: 'block_content:2d4b08cb-58f3-4b8a-b00e-d08c9ea80b5b'
+settings:
+  id: 'block_content:2d4b08cb-58f3-4b8a-b00e-d08c9ea80b5b'
+  label: Dublin
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/laesetips-til-storbyferien
+    negate: false
+    context_mapping: {  }

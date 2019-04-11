@@ -1,0 +1,31 @@
+uuid: 3abe013d-5824-423e-b11d-5554c0096035
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:27d3f495-6596-4ac0-ab9a-7239aa47a83d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenchicklitdeklassiske
+theme: litteratursiden
+region: content
+weight: 843
+provider: null
+plugin: 'block_content:27d3f495-6596-4ac0-ab9a-7239aa47a83d'
+settings:
+  id: 'block_content:27d3f495-6596-4ac0-ab9a-7239aa47a83d'
+  label: 'Indgår i boglisten: Chick lit - de klassiske'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/bridget-jones-samlet\r\n/boeger/sex-and-city\r\n/boeger/sushi-begyndere\r\n/boeger/nynnes-dagbog-det-hele\r\n/boeger/pigernes-handbog-i-jagt-og-fiskeri\r\n/boeger/lipgloss-junglen\r\n/boeger/djaevlen-gar-i-prada\r\n/boeger/en-shopaholic-i-new-york\r\n/boeger/shopaholic-i-medgang-og-modgang\r\n/boeger/shopaholic-baby\r\n/boeger/mini-shopaholic\r\n/boeger/michael-laudrups-taender\r\n/boeger/ps-jeg-elsker-dig\r\n/boeger/ser-jeg-tyk-ud-i-det-her\r\n/boeger/i-dine-sko\r\n/boeger/i-spaend\r\n/boeger/i-tvivl\r\n/boeger/4-blondiner\r\n/boeger/rachels-ferie\r\n/boeger/engle-0\r\n/boeger/tre-skridt-fra-livet\r\n/boeger/ellens-elevator\r\n/boeger/hvis-du-ku-se-mig-nu\r\n/boeger/sidste-udkald-0\r\n/boeger/de-nye-koners-klub\r\n/boeger/en-utjekket-mors-hemmelige-liv\r\n/boeger/nyforelskelse-og-andre-cykelstyrt\r\n/boeger/singleton-0\r\n/boeger/mit-livs-ojeblik\r\n/boeger/dagbog-fra-i-morgen\r\n/boeger/skydykker-uden-faldskaerm\r\n/boeger/pige-i-tyverne\r\n/boeger/hvem-er-jeg-0"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 37a8a702-41c4-48d2-9fc5-cc5c2c12e308
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:99cbad96-1931-4e5e-a8ce-6ffa4160924e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraetselma
+theme: litteratursiden
+region: content
+weight: 945
+provider: null
+plugin: 'block_content:99cbad96-1931-4e5e-a8ce-6ffa4160924e'
+settings:
+  id: 'block_content:99cbad96-1931-4e5e-a8ce-6ffa4160924e'
+  label: Forfatterportræt
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/mure-af-guld-og-porte-af-gennemsigtigt-glas-om-selma-lagerlofs-jerusalem\r\n/artikler/selma-lagerlof-moderne-realisme-eventyrlige-universer-og-offerhelten\r\n/artikler/selma-lagerlofs-kristuslegender"
+    negate: false
+    context_mapping: {  }

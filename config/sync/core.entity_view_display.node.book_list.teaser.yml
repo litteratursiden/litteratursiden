@@ -1,0 +1,63 @@
+uuid: 668302ac-6ee5-4e7b-a6d7-4b2db6cd5a1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.book_list.field_book_list_body
+    - field.field.node.book_list.field_book_list_comments
+    - field.field.node.book_list.field_book_list_cover_image
+    - field.field.node.book_list.field_book_list_files
+    - field.field.node.book_list.field_book_list_general_tags
+    - field.field.node.book_list.field_book_list_reference_book
+    - field.field.node.book_list.field_book_list_reference_review
+    - field.field.node.book_list.field_book_list_spotbox_image
+    - node.type.book_list
+  module:
+    - text
+    - user
+id: node.book_list.teaser
+targetEntityType: node
+bundle: book_list
+mode: teaser
+content:
+  field_book_list_body:
+    type: text_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  flag_like:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_full_name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_book_list_comments: true
+  field_book_list_cover_image: true
+  field_book_list_files: true
+  field_book_list_general_tags: true
+  field_book_list_reference_book: true
+  field_book_list_reference_review: true
+  field_book_list_spotbox_image: true
+  flag_bookmark: true
+  langcode: true
+  owner_portrait: true
+  social_media: true

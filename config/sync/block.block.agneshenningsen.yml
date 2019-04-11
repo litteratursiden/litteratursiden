@@ -1,0 +1,31 @@
+uuid: de945258-ae3b-425e-9125-877d86ee8cf2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7f979f83-e1df-4b5f-9de4-3de44e341db6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: agneshenningsen
+theme: litteratursiden
+region: content
+weight: 751
+provider: null
+plugin: 'block_content:7f979f83-e1df-4b5f-9de4-3de44e341db6'
+settings:
+  id: 'block_content:7f979f83-e1df-4b5f-9de4-3de44e341db6'
+  label: 'Agnes Henningsen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/agnes-henningsen
+    negate: false
+    context_mapping: {  }

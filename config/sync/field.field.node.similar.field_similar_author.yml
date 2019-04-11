@@ -1,0 +1,29 @@
+uuid: e1c4a8b3-15e1-4439-97c8-ff4171683c7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_similar_author
+    - node.type.author_portrait
+    - node.type.similar
+id: node.similar.field_similar_author
+field_name: field_similar_author
+entity_type: node
+bundle: similar
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      author_portrait: author_portrait
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

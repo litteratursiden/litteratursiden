@@ -1,0 +1,30 @@
+uuid: ac5cc482-43cf-4f9e-8325-c92d6637c3bc
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.content_carousel
+    - field.storage.block_content.field_content_carousel_reference
+    - node.type.author_portrait
+    - node.type.book
+id: block_content.content_carousel.field_content_carousel_reference
+field_name: field_content_carousel_reference
+entity_type: block_content
+bundle: content_carousel
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      author_portrait: author_portrait
+      book: book
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: author_portrait
+field_type: entity_reference

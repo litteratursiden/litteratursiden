@@ -1,0 +1,28 @@
+uuid: 3eefd16b-2669-494f-a49f-33ced22331ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_literature_type
+    - node.type.review
+    - taxonomy.vocabulary.literature_type
+id: node.review.field_review_literature_type
+field_name: field_review_literature_type
+entity_type: node
+bundle: review
+label: 'Literature types'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      literature_type: literature_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

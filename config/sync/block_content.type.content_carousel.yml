@@ -1,0 +1,8 @@
+uuid: a65ef957-b6b4-48ff-9b9d-d77213f5b257
+langcode: da
+status: true
+dependencies: {  }
+id: content_carousel
+label: 'Content carousel'
+revision: 0
+description: ''

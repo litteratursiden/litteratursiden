@@ -1,0 +1,31 @@
+uuid: ecb0f733-493e-402c-bd8b-5b333b8d64a1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:4ef8db31-39ac-4e6c-abf4-cc2314bf3ee2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendanskedebutanter2016
+theme: litteratursiden
+region: content
+weight: 386
+provider: null
+plugin: 'block_content:4ef8db31-39ac-4e6c-abf4-cc2314bf3ee2'
+settings:
+  id: 'block_content:4ef8db31-39ac-4e6c-abf4-cc2314bf3ee2'
+  label: 'Indgår i boglisten: Danske debutanter 2016'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/om-et-klaver\r\n/boeger/oer-af-rakel-haslund-gjerrild\r\n/boeger/o-1\r\n/boeger/techno\r\n/boeger/hjerneskaelv\r\n/boeger/jubilaeum\r\n/boeger/piger-kan-leve-laenge-maske-evigt\r\n/boeger/jeg-over-mig-i-vaere-glad\r\n/boeger/fryden\r\n/boeger/jeg-unica\r\n/boeger/forestillinger-om-ana-ivan\r\n/boeger/min-lille-horror"
+    negate: false
+    context_mapping: {  }

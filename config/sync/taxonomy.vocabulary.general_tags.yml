@@ -1,0 +1,9 @@
+uuid: 5e31d658-3b54-4476-a98a-fcc4deab4eba
+langcode: da
+status: true
+dependencies: {  }
+name: 'General tags'
+vid: general_tags
+description: ''
+hierarchy: 0
+weight: 0

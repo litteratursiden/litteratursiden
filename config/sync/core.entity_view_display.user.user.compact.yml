@@ -1,0 +1,48 @@
+uuid: b36116d5-5674-451d-9326-07310e1eead2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_user_birth
+    - field.field.user.user.field_user_body
+    - field.field.user.user.field_user_full_name
+    - field.field.user.user.field_user_homepage
+    - field.field.user.user.field_user_picture
+    - image.style.avatar
+  module:
+    - image
+    - user
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  field_user_full_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_user_picture:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: avatar
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  contact_link: true
+  created: true
+  edit_profile_link: true
+  field_user_birth: true
+  field_user_body: true
+  field_user_homepage: true
+  langcode: true
+  member_for: true
+  roles: true
+  tools: true

@@ -1,0 +1,31 @@
+uuid: 9cc4c0d5-6d95-4f44-92d4-02326417e84e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:d00bb31b-89fa-4a7b-8f6c-7f936ba34a48'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra19001909
+theme: litteratursiden
+region: content
+weight: 804
+provider: null
+plugin: 'block_content:d00bb31b-89fa-4a7b-8f6c-7f936ba34a48'
+settings:
+  id: 'block_content:d00bb31b-89fa-4a7b-8f6c-7f936ba34a48'
+  label: 'Indgår i boglisten: Analyser fra 1900-1909'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kongens-fald\r\n/boeger/gjaering-afklaring\r\n/boeger/pelle-erobreren-bind-1-2\r\n/boeger/gyldholm\r\n/boeger/rugens-sange\r\n/boeger/vredens-born-0\r\n"
+    negate: false
+    context_mapping: {  }

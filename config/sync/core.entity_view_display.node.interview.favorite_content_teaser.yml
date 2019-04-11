@@ -1,0 +1,63 @@
+uuid: ae223539-f336-4442-9e41-8c32457ed78e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.favorite_content_teaser
+    - field.field.node.interview.field_interview_body
+    - field.field.node.interview.field_interview_external_links
+    - field.field.node.interview.field_interview_images
+    - field.field.node.interview.field_interview_internal_lin
+    - field.field.node.interview.field_interview_reference_author
+    - field.field.node.interview.field_interview_video
+    - field.field.node.interview.field_interview_video_text
+    - image.style.medium
+    - node.type.interview
+  module:
+    - image
+    - user
+id: node.interview.favorite_content_teaser
+targetEntityType: node
+bundle: interview
+mode: favorite_content_teaser
+content:
+  field_interview_images:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_full_name:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_interview_body: true
+  field_interview_external_links: true
+  field_interview_internal_lin: true
+  field_interview_reference_author: true
+  field_interview_video: true
+  field_interview_video_text: true
+  flag_like: true
+  langcode: true
+  owner_portrait: true
+  social_media: true

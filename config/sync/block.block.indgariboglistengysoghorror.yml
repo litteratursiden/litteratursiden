@@ -1,0 +1,31 @@
+uuid: 7a1209be-defd-4c4c-a25f-ce2fbd24ebac
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:00bfcc68-a0c7-42fb-8e42-d9bf81f4c19c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengysoghorror
+theme: litteratursiden
+region: content
+weight: 479
+provider: null
+plugin: 'block_content:00bfcc68-a0c7-42fb-8e42-d9bf81f4c19c'
+settings:
+  id: 'block_content:00bfcc68-a0c7-42fb-8e42-d9bf81f4c19c'
+  label: 'Indgår i boglisten: Gys og Horror'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/gengaeldelsens-veje\r\n/boeger/black-out-1\r\n/boeger/daemoner-2\r\n/boeger/kadavermarch\r\n/boeger/hospitalet\r\n/boeger/samlerne-0\r\n/boeger/ondskabens-hotel\r\n/boeger/alt-det-hun-ville-onske-hun-ikke-forstod\r\n/boeger/hemmelighedsfulde-fortaellinger\r\n/boeger/frankenstein-eller-den-moderne-prometheus\r\n/boeger/den-ejendommelige-sag-om-dr-jekyll-og-mr-hyde\r\n/boeger/rosemarys-baby-0\r\n/boeger/american-psycho\r\n/boeger/dorian-grays-billede"
+    negate: false
+    context_mapping: {  }

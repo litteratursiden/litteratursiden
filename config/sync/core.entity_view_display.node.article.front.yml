@@ -1,0 +1,48 @@
+uuid: 91460eae-efbe-4d12-8a23-3533f3c3e2ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.front
+    - field.field.node.article.field_article_body
+    - field.field.node.article.field_article_comments
+    - field.field.node.article.field_article_cover_image
+    - field.field.node.article.field_article_general_tags
+    - field.field.node.article.field_article_internal_link
+    - field.field.node.article.field_article_link_external
+    - node.type.article
+  module:
+    - text
+    - user
+id: node.article.front
+targetEntityType: node
+bundle: article
+mode: front
+content:
+  field_article_body:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_article_comments: true
+  field_article_cover_image: true
+  field_article_general_tags: true
+  field_article_internal_link: true
+  field_article_link_external: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  social_media: true

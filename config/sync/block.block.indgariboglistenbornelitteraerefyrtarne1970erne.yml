@@ -1,0 +1,31 @@
+uuid: e9b88483-6803-4eb8-a9f6-df2c1d46ef65
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:5e1e121f-ec98-4da3-9bb2-1550ef3bdceb'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbornelitteraerefyrtarne1970erne
+theme: litteratursiden
+region: content
+weight: 359
+provider: null
+plugin: 'block_content:5e1e121f-ec98-4da3-9bb2-1550ef3bdceb'
+settings:
+  id: 'block_content:5e1e121f-ec98-4da3-9bb2-1550ef3bdceb'
+  label: 'Indgår i boglisten: Børnelitterære fyrtårne: 1970erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/mads-og-milalik\r\n/boeger/hodja-fra-pjort\r\n/boeger/busters-verden\r\n/boeger/katamaranen\r\n/boeger/zappa\r\n/boeger/stakkels-krumme\r\n/boeger/sadan-far-man-et-barn\r\n/boeger/lasse-pedersen\r\n/boeger/musen-malle"
+    negate: false
+    context_mapping: {  }

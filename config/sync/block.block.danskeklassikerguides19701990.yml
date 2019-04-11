@@ -1,0 +1,31 @@
+uuid: 69931946-91ad-4d5d-ab5f-b7e6870e9787
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:ae2fbdfc-d5d6-48b1-a3c7-f0be34deb9f3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskeklassikerguides19701990
+theme: litteratursiden
+region: content
+weight: 491
+provider: null
+plugin: 'block_content:ae2fbdfc-d5d6-48b1-a3c7-f0be34deb9f3'
+settings:
+  id: 'block_content:ae2fbdfc-d5d6-48b1-a3c7-f0be34deb9f3'
+  label: 'Danske klassikerguides: 1970-1990'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/80ernes-litteratur\r\n/temaer/staerke-stemmer-fra-70erne"
+    negate: false
+    context_mapping: {  }

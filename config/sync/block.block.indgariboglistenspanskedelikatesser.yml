@@ -1,0 +1,31 @@
+uuid: c9d85fb6-6c98-4436-94b3-f7e0c61e7363
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:58d09f96-a8c2-4904-9c1e-4f86bf88a076'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenspanskedelikatesser
+theme: litteratursiden
+region: content
+weight: 139
+provider: null
+plugin: 'block_content:58d09f96-a8c2-4904-9c1e-4f86bf88a076'
+settings:
+  id: 'block_content:58d09f96-a8c2-4904-9c1e-4f86bf88a076'
+  label: 'Indgår i boglisten: Spanske delikatesser'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/hvis-en-engel\r\n/boeger/platons-hule\r\n/boeger/harmonikaspillerens-son\r\n/boeger/passager-0\r\n/boeger/bukkens-fest\r\n/boeger/den-ulastelige-cubaner\r\n/boeger/salamis-soldater\r\n/boeger/bloddryppende\r\n/boeger/pedro-paramo\r\n/boeger/tangosangeren\r\n/boeger/pascual-duartes-familie\r\n/boeger/arene-med-laura-diaz\r\n/boeger/lykkeridderne\r\n/boeger/manevind-0\r\n/boeger/mit-livs-film\r\n/boeger/cubansk-efterarslandskab\r\n/boeger/englens-spil\r\n/boeger/blodbryllup\r\n/boeger/sadan-var-ensomheden\r\n/boeger/conquistadoren\r\n/boeger/den-utalmodige-alkymist"
+    negate: false
+    context_mapping: {  }

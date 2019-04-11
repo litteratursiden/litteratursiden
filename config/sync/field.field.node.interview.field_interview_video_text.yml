@@ -1,0 +1,21 @@
+uuid: 33ee7c57-cbc7-401f-bfc2-e96b6c4f574c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interview_video_text
+    - node.type.interview
+  module:
+    - text
+id: node.interview.field_interview_video_text
+field_name: field_interview_video_text
+entity_type: node
+bundle: interview
+label: 'Video text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,31 @@
+uuid: b4ef26ff-320f-4459-ae91-1376dc945910
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:48480f95-6342-4db2-b9cc-630c20aa9d25'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraettoveditlevsen
+theme: litteratursiden
+region: content
+weight: 670
+provider: null
+plugin: 'block_content:48480f95-6342-4db2-b9cc-630c20aa9d25'
+settings:
+  id: 'block_content:48480f95-6342-4db2-b9cc-630c20aa9d25'
+  label: Forfatterportræt
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/tove-ditlevsen\r\n/artikler/klassikerdagen-har-valgt-store-tove\r\n/analyser/ditlevsen-tove-barndommens-gade\r\n/analyser/ditlevsen-tove-ansigterne\r\n/analyser/ditlevsen-tove-vilhelms-vaerelse\r\n/analyser/ditlevsen-tove-kvindesind\r\n/anmeldelser/jeg-ville-vaere-enke-og-jeg-ville-vaere-digter-af-tove-ditlevsen\r\n/anmeldelser/vilhelms-vaerelse-af-tove-ditlevsen\r\n/anmeldelser/det-tidlige-forar-barndom-og-ungdom-af-tove-ditlevsen\r\n/anmeldelser/gift-af-tove-ditlevsen\r\n/anmeldelser/pigesind-af-tove-ditlevsen\r\n/anmeldelser/barnets-skyld-af-tove-ditlevsen\r\n/anmeldelser/vi-har-kun-hinanden-af-tove-ditlevsen\r\n/artikler/ekspert-i-ulykke-om-som-elsker-hinanden-af-tove-ditlevsen\r\n/artikler/selvmordet-som-skrivekrise-om-tove-ditlevsen\r\n/boeger/vilhelms-vaerelse-0\r\n"
+    negate: false
+    context_mapping: {  }

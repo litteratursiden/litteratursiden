@@ -1,0 +1,31 @@
+uuid: 1ef5b3ff-dab0-4488-87f3-1c21c8b88492
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:7a897f1f-591a-484e-8486-58de18a3020a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendansk70er80erlitteratur
+theme: litteratursiden
+region: content
+weight: 368
+provider: null
+plugin: 'block_content:7a897f1f-591a-484e-8486-58de18a3020a'
+settings:
+  id: 'block_content:7a897f1f-591a-484e-8486-58de18a3020a'
+  label: 'Indgår i boglisten: Dansk 70''er & 80''er litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/creme-fraiche\r\n/boeger/tryghedsnark\r\n/boeger/vinterborn\r\n/boeger/lille-menneske\r\n/boeger/city-slang\r\n/boeger/samlede-strunge\r\n/boeger/kannibalerne\r\n/boeger/en-fugl-foruden-vinger\r\n/boeger/slangen-i-brystet\r\n/boeger/hvafor-en-hand-vil-du-ha\r\n/boeger/tone\r\n/boeger/manden-der-ville-vaere-skyldig\r\n/boeger/naeste-kaerlighed\r\n/boeger/vangede-billeder\r\n/boeger/karma-cowboy\r\n/boeger/sma-hop-pa-stedet-roman\r\n/boeger/nar-der-gar-hul-pa-en-engel-intetfang-den-inderste-zone-digte-1981-83\r\n/boeger/springflod-hvid-feber-sekundernes-bro-digte-1984-88\r\n/boeger/ud-af-natten\r\n/boeger/vi-folder-drommens-faner-ud\r\n/boeger/livets-hastighed\r\n/boeger/sjaelen-er-gul\r\n/boeger/slaraffenland-roman-ved-birgitte-hesselaa\r\n/boeger/skyggernes-bog\r\n/boeger/nu-og-aldrig\r\n/boeger/rapport-fra-havbunden\r\n/boeger/eline-bessers-laeretid\r\n/boeger/en-gris-som-har-vaeret-oppe-slas-kan-man-ikke-stege\r\n/boeger/ja\r\n/boeger/graes-digte\r\n/boeger/alfabet-0\r\n/boeger/vi-elsker-mere\r\n/boeger/sunshine\r\n/boeger/engle\r\n/boeger/nok-til-hele-ugen\r\n/boeger/om-vaere-sig-selv\r\n/boeger/gyldne-lofter\r\n/boeger/lene-roman\r\n/boeger/den-indre\r\n/boeger/aftenstjernen\r\n/boeger/morgengaven\r\n/boeger/skibet-i-flasken\r\n/boeger/naesten-kun-om-kaerlighed\r\n/boeger/nar-vi-alle-bliver-modre\r\n/boeger/giv-mig-solen\r\n/boeger/braendte-born\r\n/boeger/nye-digte-1\r\n/boeger/verdensson-0"
+    negate: false
+    context_mapping: {  }

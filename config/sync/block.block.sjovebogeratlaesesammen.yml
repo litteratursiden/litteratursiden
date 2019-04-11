@@ -1,0 +1,31 @@
+uuid: 29b6cab7-ca22-416b-a86f-1822a3f4e709
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: sjovebogeratlaesesammen
+theme: litteratursiden
+region: content
+weight: 24
+provider: null
+plugin: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+settings:
+  id: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
+  label: 'Sjove bøger at læse sammen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/books\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 689543d4-6d29-4899-848b-45be7f2e9ed5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:9106ff35-d321-43f9-a63d-ec72d2cec4a9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten80erklassikerefraglemmebogen
+theme: litteratursiden
+region: content
+weight: 728
+provider: null
+plugin: 'block_content:9106ff35-d321-43f9-a63d-ec72d2cec4a9'
+settings:
+  id: 'block_content:9106ff35-d321-43f9-a63d-ec72d2cec4a9'
+  label: 'Indgår i boglisten: 80''er klassikere fra glemmebogen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/andernes-hus\r\n/boeger/dekanens-december\r\n/boeger/dansen-med-regitze\r\n/boeger/historien-om-michael-k\r\n/boeger/kaerlighed-i-koleraens-tid\r\n/boeger/resten-af-dagen\r\n/boeger/tilvaerelsens-ulidelige-lethed\r\n/boeger/byens-lys-0\r\n/boeger/klub-held-og-glaede\r\n/boeger/farven-lilla\r\n/boeger/huset-med-den-blinde-glasveranda\r\n/boeger/forfaengelighedens-bal"
+    negate: false
+    context_mapping: {  }

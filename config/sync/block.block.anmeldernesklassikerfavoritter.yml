@@ -1,0 +1,31 @@
+uuid: d92d63e3-a24d-47cd-97e4-c15e238934e8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:da890674-cbf7-46ca-89b0-a1dad503f848'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: anmeldernesklassikerfavoritter
+theme: litteratursiden
+region: content
+weight: 649
+provider: null
+plugin: 'block_content:da890674-cbf7-46ca-89b0-a1dad503f848'
+settings:
+  id: 'block_content:da890674-cbf7-46ca-89b0-a1dad503f848'
+  label: 'Anmeldernes klassikerfavoritter'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /lister/min-yndlingsklassiker
+    negate: false
+    context_mapping: {  }

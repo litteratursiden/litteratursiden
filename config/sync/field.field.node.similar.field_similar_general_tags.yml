@@ -1,0 +1,28 @@
+uuid: 4476477d-8295-406d-8611-593f1dcfc858
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_similar_general_tags
+    - node.type.similar
+    - taxonomy.vocabulary.general_tags
+id: node.similar.field_similar_general_tags
+field_name: field_similar_general_tags
+entity_type: node
+bundle: similar
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      general_tags: general_tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

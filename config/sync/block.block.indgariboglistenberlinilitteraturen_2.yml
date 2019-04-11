@@ -1,0 +1,31 @@
+uuid: c5c25dc2-d5eb-4817-a729-26a652d61618
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:6ae5b101-1619-4f02-b8e3-056ec058b473'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenberlinilitteraturen_2
+theme: litteratursiden
+region: content
+weight: 644
+provider: null
+plugin: 'block_content:6ae5b101-1619-4f02-b8e3-056ec058b473'
+settings:
+  id: 'block_content:6ae5b101-1619-4f02-b8e3-056ec058b473'
+  label: 'Indgår i boglisten: Berlin i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/nye-tyske-stemmer
+    negate: false
+    context_mapping: {  }

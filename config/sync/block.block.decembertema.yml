@@ -1,0 +1,31 @@
+uuid: 885a6531-39bb-4f73-adb6-add14a8bd699
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:2a5d6658-902a-46ba-a5c5-eda978ad3356'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: decembertema
+theme: litteratursiden
+region: content
+weight: 953
+provider: null
+plugin: 'block_content:2a5d6658-902a-46ba-a5c5-eda978ad3356'
+settings:
+  id: 'block_content:2a5d6658-902a-46ba-a5c5-eda978ad3356'
+  label: 'Indgår i tema'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/nye-tendenser-i-den-danske-bornelitteratur\r\n/artikler/1967-et-tidehverv-dansk-bornelitteratur\r\n/lister/bornelitteraere-fyrtarne-1960erne\r\n/lister/bornelitteraere-fyrtarne-1970erne\r\n/boeger/vikingesagn-de-20-allerbedste-fortaellinger-fra-danmarks-oldtid\r\n/lister/bornelitteraere-fyrtarne-1980erne\r\n/lister/bornelitteraere-fyrtarne-1990erne\r\n/lister/bornelitteraere-fyrtarne-2000erne\r\n/lister/bornelitteraere-fyrtarne-2010erne\r\n/lister/julefavoritter-born\r\n/boeger/lille-krokodille-bloder\r\n/boeger/nivemaskinen\r\n/boeger/traeet-dyrene-og-os\r\n/boeger/bettinas-badekar\r\n/boeger/vitello-28-historier-fra-til\r\n/boeger/pigen-der-kunne-tale-med-hunde\r\n/boeger/lasse-leif-byens-bedste-stromer\r\n/boeger/lille-virgil\r\n/boeger/anton-og-den-tungeste-byrde\r\n/boeger/hest-horse-pferd-cheval-love\r\n/boeger/harry-potter-og-fangen-fra-azkaban-illustreret-udgave\r\n/boeger/de-forunderlige-boger-om-amaia-og-gustau\r\n/boeger/alene-i-london\r\n/artikler/bornelitteraere-fyrtarne-gennem-tiden\r\n/artikler/litteraere-borne-apps\r\n"
+    negate: false
+    context_mapping: {  }

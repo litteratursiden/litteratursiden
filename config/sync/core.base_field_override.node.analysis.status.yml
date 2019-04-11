@@ -1,0 +1,22 @@
+uuid: b6e9a9ce-d540-4b3e-b7bc-c2e07414bc7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.analysis
+id: node.analysis.status
+field_name: status
+entity_type: node
+bundle: analysis
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

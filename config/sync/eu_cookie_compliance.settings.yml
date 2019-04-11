@@ -1,0 +1,60 @@
+cookie_lifetime: 100
+domain: ''
+domains_option: 1
+domains_list: ''
+eu_only: null
+eu_only_js: null
+exclude_paths: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
+exclude_admin_theme: false
+langcode: da
+popup_agreed:
+  value: "<h2>Tak for dit samtykke</h2>\r\n\r\n<p>Du kan nu skjule denne besked eller læse mere om cookies.</p>\r\n"
+  format: full_html
+popup_agree_button_message: 'OK, jeg er enig'
+popup_agreed_enabled: true
+popup_bg_hex: 131b1e
+popup_clicking_confirmation: false
+popup_scrolling_confirmation: false
+popup_delay: 1000
+show_disagree_button: true
+popup_disagree_button_message: 'Læs mere'
+popup_enabled: true
+popup_find_more_button_message: 'Læs mere'
+popup_height: null
+popup_hide_agreed: false
+popup_hide_button_message: Skjul
+popup_info:
+  value: "<h2>Vi gør brug af cookies på denne side for at forbedre din brugeroplevelse</h2>\r\n\r\n<p>Ved at klikke på hvilket som helst link på denne side, giver du dit samtykke til at vi må bruge cookies.</p>\r\n"
+  format: full_html
+mobile_popup_info:
+  value: ''
+  format: full_html
+mobile_breakpoint: 768
+popup_link: /privacy-policy
+popup_link_new_window: true
+popup_position: false
+fixed_top_position: true
+popup_text_hex: ffffff
+popup_width: 100%
+use_bare_css: false
+disagree_do_not_show_popup: false
+reload_page: false
+cookie_name: ''
+exclude_uid_1: false
+better_support_for_screen_readers: false
+use_mobile_message: false
+method: opt_in
+disagree_button_label: 'Nej, giv mig mere info'
+disabled_javascripts: ''
+whitelisted_cookies: ''
+consent_storage_method: do_not_store
+withdraw_message:
+  value: "<h2><font style=\"vertical-align: inherit;\"><font style=\"vertical-align: inherit;\">We use cookies on this site to enhance your user experience</font></font></h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  format: full_html
+withdraw_action_button_label: 'Withdraw consent'
+withdraw_tab_button_label: 'Privacy settings'
+withdraw_enabled: false
+_core:
+  default_config_hash: m9leru0wVmD_yCnIJzIkZ9YhvEp3luuqLEx5Sr9CmRk
+cookie_session: 0
+popup_info_template: new

@@ -1,0 +1,31 @@
+uuid: bda828bb-01ec-4998-853b-fc9cbce73625
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:dfeec220-705b-4a0b-9671-9611d28d08ec'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: mureafguldogporteafgennemsigtigtglas.omselmalagerlofsjerusalem
+theme: litteratursiden
+region: content
+weight: 616
+provider: null
+plugin: 'block_content:dfeec220-705b-4a0b-9671-9611d28d08ec'
+settings:
+  id: 'block_content:dfeec220-705b-4a0b-9671-9611d28d08ec'
+  label: 'Mure af guld og porte af gennemsigtigt glas. Om Selma Lagerlöfs Jerusalem'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/fra-bog-til-film-lykke
+    negate: false
+    context_mapping: {  }

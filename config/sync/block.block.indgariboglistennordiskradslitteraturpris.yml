@@ -1,0 +1,31 @@
+uuid: 97a2ac0c-bbff-4728-b0a8-516bf7acfd39
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:acef80c4-55e9-4e45-be8d-3680e99cb5b2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennordiskradslitteraturpris
+theme: litteratursiden
+region: content
+weight: 594
+provider: null
+plugin: 'block_content:acef80c4-55e9-4e45-be8d-3680e99cb5b2'
+settings:
+  id: 'block_content:acef80c4-55e9-4e45-be8d-3680e99cb5b2'
+  label: 'Indgår i boglisten: Nordisk Råds Litteraturpris'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/ar-1\r\n/boeger/erindring-om-kaerligheden\r\n/boeger/kveldsvaevd\r\n/boeger/luftspejling-38\r\n/boeger/profeterne-i-evighedsfjorden\r\n/boeger/dage-i-stilhedens-historie\r\n/boeger/mellem-traeerne\r\n/boeger/renselse\r\n/boeger/jeg-forbander-tidens-flod\r\n/boeger/bavian\r\n/boeger/drommefakultetet\r\n/boeger/skygge-baldur\r\n/boeger/hjemmefronten\r\n/boeger/ribbensbyerne\r\n/boeger/halvbroderen\r\n/boeger/opdageren\r\n/boeger/drommebroer\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,33 @@
+uuid: 54a6b221-84b3-4ba2-9fe6-7fb9b7d1509d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_debates
+    - node.type.book
+  module:
+    - comment
+id: node.book.field_book_debates
+field_name: field_book_debates
+entity_type: node
+bundle: book
+label: Debates
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 1
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 20
+  anonymous: 0
+  form_location: true
+  preview: 0
+field_type: comment

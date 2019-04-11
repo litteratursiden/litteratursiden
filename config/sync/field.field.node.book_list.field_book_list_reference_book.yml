@@ -1,0 +1,29 @@
+uuid: 70c089bf-3231-4e38-a6c3-6618038383c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_list_reference_book
+    - node.type.book
+    - node.type.book_list
+id: node.book_list.field_book_list_reference_book
+field_name: field_book_list_reference_book
+entity_type: node
+bundle: book_list
+label: Books
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      book: book
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

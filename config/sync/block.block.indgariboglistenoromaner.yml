@@ -1,0 +1,31 @@
+uuid: 7da3525a-3b5d-4f9c-a3c5-47d9ad2be40e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8aea8012-64d6-4ce8-8e41-802ed4a54ae2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenoromaner
+theme: litteratursiden
+region: content
+weight: 256
+provider: null
+plugin: 'block_content:8aea8012-64d6-4ce8-8e41-802ed4a54ae2'
+settings:
+  id: 'block_content:8aea8012-64d6-4ce8-8e41-802ed4a54ae2'
+  label: 'Indgår i boglisten: Ø-romaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-graenselose\r\n/boeger/journal-64\r\n/boeger/dromme-og-forlis-eller-baronen-pa-laeso\r\n/boeger/granitgraven\r\n/boeger/jubeljomfru\r\n/boeger/huset-og-slottet\r\n/boeger/opdagelsen\r\n/boeger/oer-af-rakel-haslund-gjerrild\r\n/boeger/folkets-skonhed\r\n/boeger/yndigt-land\r\n/boeger/vi-de-druknede\r\n/boeger/genfaerd-0\r\n/boeger/nancy-0\r\n/boeger/nexo-trawl\r\n/boeger/oen-og-landet\r\n/boeger/mordet-pa-oen\r\n/boeger/den-gale-mand-fra-arnsted\r\n/boeger/tilbage-til-anholt\r\n/boeger/skygger-fra-sprogo\r\n/boeger/burgundia\r\n/boeger/jelne\r\n/boeger/cicerone\r\n/boeger/cicerones-datter\r\n/boeger/keldby-slagteren\r\n/boeger/russerunge\r\n/boeger/hirsholmene\r\n/boeger/de-torstige\r\n/boeger/mando\r\n/boeger/en-bedre-verden"
+    negate: false
+    context_mapping: {  }

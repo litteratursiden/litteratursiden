@@ -1,0 +1,31 @@
+uuid: d506a2ba-c397-47ca-bb4e-919af5f9f2d8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:06b47bce-c3d1-473a-96fd-b248509de0f2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenvindereafdegyldnelaurbaer
+theme: litteratursiden
+region: content
+weight: 241
+provider: null
+plugin: 'block_content:06b47bce-c3d1-473a-96fd-b248509de0f2'
+settings:
+  id: 'block_content:06b47bce-c3d1-473a-96fd-b248509de0f2'
+  label: 'Indgår i boglisten: Vindere af De Gyldne Laurbær'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/en-anden-gren\r\n/boeger/folkets-skonhed\r\n/boeger/aisha\r\n/boeger/kvinden-de-meldte-savnet\r\n/boeger/forbandede-yngel\r\n/boeger/profeterne-i-evighedsfjorden\r\n/boeger/dette-burde-skrives-i-nutid\r\n/boeger/journal-64\r\n/boeger/bornene\r\n/boeger/dronningeofret\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/hundehoved\r\n/boeger/undtagelsen\r\n/boeger/den-lukkede-bog\r\n/boeger/nordkraft\r\n/boeger/kaerlighedens-rum\r\n/boeger/genspejlet\r\n/boeger/lucca\r\n/boeger/colorado-dromme\r\n/boeger/jeg-har-set-verden-begynde\r\n/boeger/ormene-ved-himlens-port\r\n/boeger/de-maske-egnede\r\n/boeger/den-sidste-spion\r\n/boeger/rejsen-til-ribe\r\n/boeger/kilroy-kilroy\r\n/boeger/dansen-med-regitze\r\n/boeger/christine\r\n/boeger/marias-barn-drengen-manden\r\n/boeger/hold-kaeft-og-vaer-smuk\r\n/boeger/logn-over-logn"
+    negate: false
+    context_mapping: {  }

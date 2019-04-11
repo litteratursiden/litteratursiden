@@ -1,0 +1,31 @@
+uuid: 41fc29d1-c9d0-4306-a8aa-330d76bc590e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:8d1d53e6-34dd-4fa4-9692-e962930313a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analyserafhellehellesvaerker_5
+theme: litteratursiden
+region: content
+weight: 692
+provider: null
+plugin: 'block_content:8d1d53e6-34dd-4fa4-9692-e962930313a1'
+settings:
+  id: 'block_content:8d1d53e6-34dd-4fa4-9692-e962930313a1'
+  label: 'Analyser af Helle Helles værker'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/de
+    negate: false
+    context_mapping: {  }

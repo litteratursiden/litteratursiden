@@ -1,0 +1,31 @@
+uuid: 912eec8c-30a3-4b47-b17d-ea8bd1bb0aa5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:e3c16ed5-0a3f-46ee-8901-4743333df7da'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: komplottetmodamerika
+theme: litteratursiden
+region: content
+weight: 702
+provider: null
+plugin: 'block_content:e3c16ed5-0a3f-46ee-8901-4743333df7da'
+settings:
+  id: 'block_content:e3c16ed5-0a3f-46ee-8901-4743333df7da'
+  label: 'Komplottet mod Amerika'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/philip-roth
+    negate: false
+    context_mapping: {  }

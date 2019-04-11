@@ -1,0 +1,31 @@
+uuid: 503cc203-fbbd-4a0d-b72b-5045c19ad5be
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:e8fddaa0-8249-41b9-94c1-9e668645e137'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: afropolitanskeforfattere
+theme: litteratursiden
+region: content
+weight: 928
+provider: null
+plugin: 'block_content:e8fddaa0-8249-41b9-94c1-9e668645e137'
+settings:
+  id: 'block_content:e8fddaa0-8249-41b9-94c1-9e668645e137'
+  label: 'Afropolitanske forfattere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/afropolitanske-forfattere\r\n/artikler/afropolitanisme-afropolitter-og-afrikansk-samtidslitteratur\r\n/artikler/under-huden-pa-det-fremmede"
+    negate: false
+    context_mapping: {  }

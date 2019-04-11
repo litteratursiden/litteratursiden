@@ -1,0 +1,31 @@
+uuid: ba35aa11-1f62-471a-904c-5a9682edf7c7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c0dea815-9952-4b5a-b4b5-e97a14c95ffd'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraereroadmovies
+theme: litteratursiden
+region: content
+weight: 563
+provider: null
+plugin: 'block_content:c0dea815-9952-4b5a-b4b5-e97a14c95ffd'
+settings:
+  id: 'block_content:c0dea815-9952-4b5a-b4b5-e97a14c95ffd'
+  label: 'Indgår i boglisten: Litterære roadmovies'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/flugten-fra-frank\r\n/boeger/dametur\r\n/boeger/udflugten-0\r\n/boeger/doden-korer-audi\r\n/boeger/wonderboys\r\n/boeger/kom-igen-til-mandalay\r\n/boeger/den-gamle-verden\r\n/boeger/tjick"
+    negate: false
+    context_mapping: {  }

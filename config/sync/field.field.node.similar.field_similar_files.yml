@@ -1,0 +1,27 @@
+uuid: e6e96e80-8d17-49c4-9bfd-69d02c91fb64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_similar_files
+    - node.type.similar
+  module:
+    - file
+id: node.similar.field_similar_files
+field_name: field_similar_files
+entity_type: node
+bundle: similar
+label: Files
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_similar_files
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: 5MB
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

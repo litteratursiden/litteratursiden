@@ -1,0 +1,31 @@
+uuid: 380e6cee-b3b9-4693-bdd0-8a1c71888e1c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e6566923-267f-49fc-9830-944e5a8bae4b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbornelitteraerefyrtarne2000erne
+theme: litteratursiden
+region: content
+weight: 362
+provider: null
+plugin: 'block_content:e6566923-267f-49fc-9830-944e5a8bae4b'
+settings:
+  id: 'block_content:e6566923-267f-49fc-9830-944e5a8bae4b'
+  label: 'Indgår i boglisten: Børnelitterære fyrtårne: 2000erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/himmelbronden\r\n/boeger/store-tudse-og-mutter-spidsmus\r\n/boeger/axel-elsker-biler\r\n/boeger/vitello-gor-en-god-gerning\r\n/boeger/iqbal-farooq-og-den-sorte-pjerrot\r\n/boeger/skammerens-datter\r\n/boeger/djaevelens-laerling\r\n/boeger/lille-bussers-mareridt\r\n/boeger/gnub-en-gnu"
+    negate: false
+    context_mapping: {  }

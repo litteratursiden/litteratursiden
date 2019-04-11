@@ -1,0 +1,31 @@
+uuid: 019242cf-37f4-4849-a852-4d2b7d4f3a57
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ac3f56f8-9018-4d8e-bdaf-68ab8ebb9b93'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: kongensfald
+theme: litteratursiden
+region: content
+weight: 869
+provider: null
+plugin: 'block_content:ac3f56f8-9018-4d8e-bdaf-68ab8ebb9b93'
+settings:
+  id: 'block_content:ac3f56f8-9018-4d8e-bdaf-68ab8ebb9b93'
+  label: 'Kongens fald'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/johannes-v-jensen
+    negate: false
+    context_mapping: {  }

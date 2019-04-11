@@ -1,0 +1,31 @@
+uuid: 57cfd070-fa8e-42c6-8cde-a3158868360a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:d62f3c19-883b-4164-80e9-7aa0bef74e1a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten10europaeiskeklassikere
+theme: litteratursiden
+region: content
+weight: 74
+provider: null
+plugin: 'block_content:d62f3c19-883b-4164-80e9-7aa0bef74e1a'
+settings:
+  id: 'block_content:d62f3c19-883b-4164-80e9-7aa0bef74e1a'
+  label: 'Indgår i boglisten: 10 europæiske klassikere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/idioten\r\n/boeger/samlede-skuespil-bind-1\r\n/boeger/krig-og-fred\r\n/boeger/den-klogtige-adelsmand-don-quijote-af-la-mancha\r\n/boeger/dantes-guddommelige-komedie\r\n/boeger/middlemarch\r\n/boeger/madame-bovary\r\n/boeger/gosta-berlings-saga\r\n/boeger/buddenbrooks\r\n/boeger/pa-sporet-af-den-tabte-tid"
+    negate: false
+    context_mapping: {  }

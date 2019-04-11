@@ -1,0 +1,31 @@
+uuid: 46bdbe40-1baf-4a97-bccc-cb1da5cb6005
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:6bb5a334-0b27-47bc-9b9f-4ba0d454fccd'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: theisorntoftanbefaler
+theme: litteratursiden
+region: content
+weight: 271
+provider: null
+plugin: 'block_content:6bb5a334-0b27-47bc-9b9f-4ba0d454fccd'
+settings:
+  id: 'block_content:6bb5a334-0b27-47bc-9b9f-4ba0d454fccd'
+  label: 'Theis Ørntoft anbefaler'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/theis-orntoft-anbefaler\r\n/forfattere/theis-orntoft"
+    negate: false
+    context_mapping: {  }

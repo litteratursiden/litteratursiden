@@ -1,0 +1,31 @@
+uuid: 62b0d129-b728-444a-a1bf-0a6ec6c1980b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:6a56a84f-647b-4f41-b47b-ec9e9db0fb73'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbemaerkelsesvaerdigefaedreilitteraturen
+theme: litteratursiden
+region: content
+weight: 828
+provider: null
+plugin: 'block_content:6a56a84f-647b-4f41-b47b-ec9e9db0fb73'
+settings:
+  id: 'block_content:6a56a84f-647b-4f41-b47b-ec9e9db0fb73'
+  label: 'Indgår i boglisten: Bemærkelsesværdige fædre i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kong-lear\r\n/boeger/far-goriot\r\n/boeger/lille-dorrit\r\n/boeger/faedre-og-sonner\r\n/boeger/gud-taler-ud\r\n/boeger/huse-uden-faedre\r\n/boeger/knud-den-store-0\r\n/boeger/pa-den-anden-side-0\r\n/boeger/hvis-der-skulle-komme-et-menneske-forbi\r\n/boeger/saet-en-vagtpost-ud\r\n/boeger/padre-padrone\r\n/boeger/de-urolige"
+    negate: false
+    context_mapping: {  }

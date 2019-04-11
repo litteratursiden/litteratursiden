@@ -1,0 +1,31 @@
+uuid: 25a2ff42-f266-4b51-b1b6-302dc0e249f8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:8b85b55c-99ae-425c-9df6-d8c89aad8fa6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: detfolkeligegennembrud19001920
+theme: litteratursiden
+region: content
+weight: 281
+provider: null
+plugin: 'block_content:8b85b55c-99ae-425c-9df6-d8c89aad8fa6'
+settings:
+  id: 'block_content:8b85b55c-99ae-425c-9df6-d8c89aad8fa6'
+  label: 'Det folkelige gennembrud 1900-1920'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n/forfattere/jeppe-aakjaer\r\n/forfattere/johannes-v-jensen\r\n/forfattere/martin-andersen-nexo\r\n/forfattere/thit-jensen\r\n/forfattere/jakob-knudsen-1\r\n/forfattere/marie-bregendahl\r\n/forfattere/johan-skjoldborg\r\n"
+    negate: false
+    context_mapping: {  }

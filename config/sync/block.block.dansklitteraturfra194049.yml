@@ -1,0 +1,31 @@
+uuid: 3ba55709-9184-4a54-ba52-db4986df236d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:1965e342-c41e-4304-a5b3-2c81f706bb14'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: dansklitteraturfra194049
+theme: litteratursiden
+region: content
+weight: 892
+provider: null
+plugin: 'block_content:1965e342-c41e-4304-a5b3-2c81f706bb14'
+settings:
+  id: 'block_content:1965e342-c41e-4304-a5b3-2c81f706bb14'
+  label: 'Dansk litteratur fra 1940-49'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/analyser-pa-litteratursiden\r\n/forfattere/thorkild-bjornvig\r\n/forfattere/karen-blixen\r\n/forfattere/tove-ditlevsen\r\n/forfattere/william-heinesen\r\n/forfattere/morten-nielsen\r\n/forfattere/hans-scherfig"
+    negate: false
+    context_mapping: {  }

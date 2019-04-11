@@ -1,0 +1,31 @@
+uuid: cbe4241b-56d1-4dc1-828d-a14fcc37c5fc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:9ea1632a-097d-423e-8722-e77211c2c040'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temaautofiktion
+theme: litteratursiden
+region: content
+weight: 30
+provider: null
+plugin: 'block_content:9ea1632a-097d-423e-8722-e77211c2c040'
+settings:
+  id: 'block_content:9ea1632a-097d-423e-8722-e77211c2c040'
+  label: 'Tema: Autofiktion'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: 'https://litteratursiden.dk/temaer/autofiktion'
+    negate: false
+    context_mapping: {  }

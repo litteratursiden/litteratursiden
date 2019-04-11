@@ -1,0 +1,31 @@
+uuid: f4b26627-d496-491f-9896-115b83a6921c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:29bc93a3-d118-4b93-acaf-3e89d036a98a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenromanerpaskinner
+theme: litteratursiden
+region: content
+weight: 79
+provider: null
+plugin: 'block_content:29bc93a3-d118-4b93-acaf-3e89d036a98a'
+settings:
+  id: 'block_content:29bc93a3-d118-4b93-acaf-3e89d036a98a'
+  label: 'Indgår i boglisten: Romaner på skinner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/banedanmark\r\n/boeger/kupe-nr-6\r\n/boeger/skiftespor\r\n/boeger/sidste-tog-fra-ligurien\r\n/boeger/nattog-til-innsbruck\r\n/boeger/nattog-til-lissabon\r\n/boeger/ved-vejen\r\n/boeger/lovekvinden\r\n/boeger/der-sidder-en-mand-i-en-sporvogn\r\n/boeger/sidste-sporvogn-til-elysian-fields\r\n/boeger/sporvognen\r\n/boeger/her-sker-aldrig-noget\r\n/boeger/afsporet\r\n/boeger/pa-vildspor\r\n/boeger/jeg-korer-en-omvej-hjem-gennem-skoven\r\n/boeger/sidste-tog\r\n/boeger/alef-0\r\n/boeger/af-sted-til-stede\r\n/boeger/sunde-tanker-fra-en-syg-sjael\r\n/boeger/damekupeen\r\n/boeger/ord-i-orientekspressen\r\n/boeger/mordet-i-orient-ekspressen\r\n/boeger/bhowani-ekspressen\r\n/boeger/brobyggerne\r\n/boeger/i-dag-havde-jeg-helst-ikke-modt-mig-selv\r\n/boeger/der-hvor-solen-star-hojest\r\n/boeger/kattens-anatomi\r\n/boeger/skaebner-undervejs\r\n/boeger/barndommens-kupe\r\n/boeger/mr-norris-skifter-tog-farvel-til-berlin\r\n/boeger/en-sommer-i-baden-baden\r\n/boeger/der-sidder-en-mand-i-en-sporvogn\r\n/boeger/skyggear\r\n/boeger/officerens-datter\r\n/boeger/som-sma-soldater\r\n/boeger/fut-fut-fut-digte\r\n/boeger/forsvindinger-0"
+    negate: false
+    context_mapping: {  }

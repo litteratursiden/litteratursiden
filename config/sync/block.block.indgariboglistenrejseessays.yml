@@ -1,0 +1,31 @@
+uuid: c9d14af1-4bc5-40b9-b5c1-8235b2682de6
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ffb3c104-7cee-4796-8975-c323b5e84ec6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenrejseessays
+theme: litteratursiden
+region: content
+weight: 855
+provider: null
+plugin: 'block_content:ffb3c104-7cee-4796-8975-c323b5e84ec6'
+settings:
+  id: 'block_content:ffb3c104-7cee-4796-8975-c323b5e84ec6'
+  label: Rejseessays
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/berlin-moskva\r\n/boeger/hjemme-i-europa\r\n/boeger/en-i-rusland-essays\r\n/boeger/gennem-gyngende-landskaber-rejser-kunst-og-mennesker-personlige-essays-1925-67\r\n/boeger/horisonter-0\r\n/boeger/ud-carsten-jensen\r\n/boeger/ord-i-orientekspressen\r\n/boeger/den-gotiske-renaissance\r\n/boeger/kunsten-ga-pa-gaden\r\n/boeger/donau\r\n/boeger/hjertets-hemmeligheder-0\r\n/boeger/det-airconditionerede-mareridt\r\n/boeger/det-der-var-seattle-new-york-1982\r\n/boeger/rejsen-de-aldrig-kom-hjem-fra-et-essay-om-en-ekspedition\r\n/boeger/hjemme-ude-75-ar-pa-kloden"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: aa552da6-47be-41a6-bbb3-47662366c970
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_theme_body_text
+    - node.type.topic
+  module:
+    - text
+id: node.topic.field_topic_theme_body_text
+field_name: field_topic_theme_body_text
+entity_type: node
+bundle: topic
+label: 'Theme body text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

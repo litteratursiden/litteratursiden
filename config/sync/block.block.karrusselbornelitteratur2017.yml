@@ -1,0 +1,31 @@
+uuid: 58c59927-41e8-4cef-a8e4-3d04891f8a95
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:e09b5a11-85a8-4f05-b5f4-10532f9ed239'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: karrusselbornelitteratur2017
+theme: litteratursiden
+region: content
+weight: 701
+provider: null
+plugin: 'block_content:e09b5a11-85a8-4f05-b5f4-10532f9ed239'
+settings:
+  id: 'block_content:e09b5a11-85a8-4f05-b5f4-10532f9ed239'
+  label: 'Børnelitteratur 2017'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/bennys-bukser-braender-stadig-50-aret-den-moderne-bornelitteratur\r\n/boeger/vikingesagn-de-20-allerbedste-fortaellinger-fra-danmarks-oldtid"
+    negate: false
+    context_mapping: {  }

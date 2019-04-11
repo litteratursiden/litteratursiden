@@ -1,0 +1,31 @@
+uuid: 39cc1ce3-d527-4389-a335-28418f3348c8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:5e7c0076-c47b-4972-a0d6-43dbc7876f93'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: erotiskeforfatterelaesdeuomgaengelige
+theme: litteratursiden
+region: content
+weight: 325
+provider: null
+plugin: 'block_content:5e7c0076-c47b-4972-a0d6-43dbc7876f93'
+settings:
+  id: 'block_content:5e7c0076-c47b-4972-a0d6-43dbc7876f93'
+  label: 'Erotiske forfattere - læs de uomgængelige'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/erotisk-litteratur-klassikerne\r\n/forfattere/giovanni-boccaccio\r\n/boeger/det-bedste-fra-dekameron\r\n/boeger/fanny-hill-0\r\n/forfattere/donatien-alphonse-francois-de-sade\r\n/boeger/justine-0\r\n/forfattere/anais-nin\r\n/boeger/venusdeltaet\r\n/boeger/de-sma-fugle-0"
+    negate: false
+    context_mapping: {  }

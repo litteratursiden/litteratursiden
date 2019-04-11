@@ -1,0 +1,31 @@
+uuid: 40d1eaa1-f179-4106-8225-97aeb6536c79
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:cc627a64-8e66-4ede-a0ee-85fb58af822a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraeth.candersen
+theme: litteratursiden
+region: content
+weight: 340
+provider: null
+plugin: 'block_content:cc627a64-8e66-4ede-a0ee-85fb58af822a'
+settings:
+  id: 'block_content:cc627a64-8e66-4ede-a0ee-85fb58af822a'
+  label: 'Forfatterportræt H.C Andersen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/hovmod-og-satire
+    negate: false
+    context_mapping: {  }

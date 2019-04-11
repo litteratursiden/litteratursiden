@@ -1,0 +1,27 @@
+uuid: 15097ff4-990a-4bb1-b0c4-871602147759
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_files
+    - node.type.topic
+  module:
+    - file
+id: node.topic.field_topic_files
+field_name: field_topic_files
+entity_type: node
+bundle: topic
+label: 'Attached files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_topic_files
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: 5MB
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

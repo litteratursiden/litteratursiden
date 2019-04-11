@@ -1,0 +1,19 @@
+uuid: 4ec2d294-c508-4713-9c9e-d66fce781dc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_review_reference_book
+field_name: field_review_reference_book
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

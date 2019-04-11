@@ -1,0 +1,28 @@
+uuid: 6fa9dc4b-9913-4178-946c-b13ae71db87d
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.book_list_carousel
+    - field.storage.block_content.field_book_list_carousel_content
+    - node.type.book_list
+id: block_content.book_list_carousel.field_book_list_carousel_content
+field_name: field_book_list_carousel_content
+entity_type: block_content
+bundle: book_list_carousel
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      book_list: book_list
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

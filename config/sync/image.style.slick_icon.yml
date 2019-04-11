@@ -1,0 +1,16 @@
+uuid: 40dff2b3-b763-4c92-9e65-b82bed37388b
+langcode: en
+status: true
+dependencies: {  }
+name: slick_icon
+label: 'Slick icon'
+effects:
+  8897750f-e941-47bb-a1f8-3aa12aca4fce:
+    uuid: 8897750f-e941-47bb-a1f8-3aa12aca4fce
+    id: image_scale
+    weight: 1
+    data:
+      width: 83
+      height: 83
+      upscale: false
+pipeline: compress

@@ -1,0 +1,22 @@
+uuid: e175792e-891a-444f-ac58-7a409008ad9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.review
+id: node.review.status
+field_name: status
+entity_type: node
+bundle: review
+label: 'Publishing status'
+description: 'A boolean indicating the published state.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

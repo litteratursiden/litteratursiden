@@ -1,0 +1,31 @@
+uuid: b986bd5d-9794-4bc8-8df1-3e8aac5ccd58
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:dc859c22-bfbc-43c4-9d27-d2d24d744f4d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: blodetumoralskoprabi1920ernesdanmark
+theme: litteratursiden
+region: content
+weight: 239
+provider: null
+plugin: 'block_content:dc859c22-bfbc-43c4-9d27-d2d24d744f4d'
+settings:
+  id: 'block_content:dc859c22-bfbc-43c4-9d27-d2d24d744f4d'
+  label: 'Læs også:'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/mellemkrigstiden-i-litteraturen
+    negate: false
+    context_mapping: {  }

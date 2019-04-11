@@ -1,0 +1,11 @@
+uuid: ee458676-1605-4d4b-9a7e-cd92670b62ae
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.review
+id: node.review
+target_entity_type_id: node
+target_bundle: review
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: 81cd0cc4-a200-4d55-8b06-7e71aee64417
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:06e0226c-0720-4e81-a70e-683cb6a1bb29'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenerotisklitteraturformrgreyvilleseos
+theme: litteratursiden
+region: content
+weight: 424
+provider: null
+plugin: 'block_content:06e0226c-0720-4e81-a70e-683cb6a1bb29'
+settings:
+  id: 'block_content:06e0226c-0720-4e81-a70e-683cb6a1bb29'
+  label: 'Indgår i boglisten: Erotisk litteratur - før Mr Grey ville se os'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/forste-kaerlighed\r\n/boeger/elleve-minutter\r\n/boeger/lolas-erotiske-dromme\r\n/boeger/hella-hells-bekendelser\r\n/boeger/elskeren-fra-nordkina\r\n/boeger/jeg-kalder-dig-fredag\r\n/boeger/zebraen\r\n/boeger/lyst\r\n/boeger/spillelaererinden\r\n/boeger/fanny-eller-den-sandfaerdige-historie-om-fanny-hackabout-jones-og-hendes-eventyrlige\r\n/boeger/i-disse-arme\r\n/boeger/9-12-uge\r\n/boeger/mandelen\r\n/boeger/duften-af-dig\r\n/boeger/100-tag-med-harborsten-sengetid\r\n/boeger/til-min-elsker\r\n/boeger/slagteren\r\n/boeger/shanghai-baby\r\n/boeger/os-historie\r\n/boeger/en-forelsket-pige-efterfulgt-af-o-vender-tilbage\r\n/boeger/lolita\r\n"
+    negate: false
+    context_mapping: {  }

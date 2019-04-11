@@ -1,0 +1,16 @@
+uuid: 992c6db8-fe49-4796-98e4-80f85f89c01c
+langcode: da
+status: true
+dependencies: {  }
+name: book_cover
+label: 'Book cover (360x585)'
+effects:
+  160a3f93-5d1d-4b67-bd10-84ce14fccb3d:
+    uuid: 160a3f93-5d1d-4b67-bd10-84ce14fccb3d
+    id: image_scale
+    weight: 1
+    data:
+      width: 360
+      height: 585
+      upscale: false
+pipeline: compress

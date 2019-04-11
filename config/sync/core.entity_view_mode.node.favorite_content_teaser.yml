@@ -1,0 +1,10 @@
+uuid: 4a39aaf3-525d-4233-bfc4-dbb429e24fef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.favorite_content_teaser
+label: 'Favorite content teaser'
+targetEntityType: node
+cache: true

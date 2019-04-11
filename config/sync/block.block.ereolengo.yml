@@ -1,0 +1,31 @@
+uuid: c9585452-5379-47e6-862f-41aecd220a49
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:e040f6e5-affd-461b-a4b7-e2a743fdba60'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: ereolengo
+theme: litteratursiden
+region: content
+weight: 49
+provider: null
+plugin: 'block_content:e040f6e5-affd-461b-a4b7-e2a743fdba60'
+settings:
+  id: 'block_content:e040f6e5-affd-461b-a4b7-e2a743fdba60'
+  label: 'eReolen Go!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,26 @@
+uuid: 83634403-3a0e-4e9a-98db-b68a01c191d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.user_profile_image
+  module:
+    - crop
+name: avatar
+label: 'Avatar (155x155)'
+effects:
+  e85dc0e9-1a31-4f46-8cba-9cc46f44dfc8:
+    uuid: e85dc0e9-1a31-4f46-8cba-9cc46f44dfc8
+    id: crop_crop
+    weight: 2
+    data:
+      crop_type: user_profile_image
+  b08d6089-7337-4627-b62d-5e2284c315b2:
+    uuid: b08d6089-7337-4627-b62d-5e2284c315b2
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 155
+      height: 155
+      anchor: center-center
+pipeline: compress

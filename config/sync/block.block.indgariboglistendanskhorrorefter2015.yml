@@ -1,0 +1,31 @@
+uuid: dd3ef978-7a7a-4a0f-a7eb-504ddd2861fa
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:4e454a89-aa7f-4e37-997a-38a6bd3aaf05'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendanskhorrorefter2015
+theme: litteratursiden
+region: content
+weight: 372
+provider: null
+plugin: 'block_content:4e454a89-aa7f-4e37-997a-38a6bd3aaf05'
+settings:
+  id: 'block_content:4e454a89-aa7f-4e37-997a-38a6bd3aaf05'
+  label: 'Indgår i boglisten: Dansk horror efter 2015'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-nat-vi-skulle-have-set-vampyros-lesbos\r\n/boeger/skyggen-over-mundstrup\r\n/boeger/black-out-1\r\n/boeger/julebestiariet\r\n/boeger/absentia\r\n/boeger/dagbog-fra-zombieland\r\n/boeger/nyctophilia\r\n/boeger/rakelsminde\r\n/boeger/syndefald\r\n/boeger/saledes-forgar-alverdens-herlighed\r\n/boeger/o-0\r\n/boeger/castra-damnatorum\r\n/boeger/sex-gotiske-fortaellinger\r\n/boeger/stonelegenderne\r\n/boeger/eternal-darkray-0\r\n/boeger/kvaernen-0\r\n/boeger/afsind\r\n/boeger/en-sag-luckner-den-samlede-portefolje-1973-2017\r\n/boeger/those-who-are-asleep\r\n/boeger/dr-wunderkammers-oversaettelser\r\n/boeger/frygt-filerne-iii\r\n/boeger/rummets-guder-den-mystiske-eneboer\r\n/boeger/det-sidste-hus"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,16 @@
+uuid: b4c6a0ea-a1c7-4238-b157-4969e506bb85
+langcode: en
+status: true
+dependencies: {  }
+name: author
+label: Author
+effects:
+  fd82567c-481a-49ef-b613-9b17b0b0e1b8:
+    uuid: fd82567c-481a-49ef-b613-9b17b0b0e1b8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 250
+      anchor: center-center
+pipeline: compress

@@ -1,0 +1,31 @@
+uuid: 0938723d-1373-4618-97d5-4fbe0b59a18a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:60751e64-30d2-4c80-a061-938ab850c836'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: laesogsanyeretyskeromanerognoveller
+theme: litteratursiden
+region: content
+weight: 622
+provider: null
+plugin: 'block_content:60751e64-30d2-4c80-a061-938ab850c836'
+settings:
+  id: 'block_content:60751e64-30d2-4c80-a061-938ab850c836'
+  label: 'Læs også: Nyere tyske romaner og noveller'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/laesetips-til-storbyferien
+    negate: false
+    context_mapping: {  }

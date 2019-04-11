@@ -1,0 +1,31 @@
+uuid: 2c08e3f1-5765-4b58-b76d-25f91a673d52
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:f0cdcf9a-e4fc-463d-ac6c-943944492226'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: debutantpristaletilemmabess
+theme: litteratursiden
+region: content
+weight: 329
+provider: null
+plugin: 'block_content:f0cdcf9a-e4fc-463d-ac6c-943944492226'
+settings:
+  id: 'block_content:f0cdcf9a-e4fc-463d-ac6c-943944492226'
+  label: 'Debutantpristale til Emma Bess'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/modre-dotre-sostre
+    negate: false
+    context_mapping: {  }

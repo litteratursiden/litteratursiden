@@ -1,0 +1,28 @@
+uuid: 6374eb12-9df9-45c2-989b-336610da8d25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_general_tags
+    - node.type.book
+    - taxonomy.vocabulary.general_tags
+id: node.book.field_book_general_tags
+field_name: field_book_general_tags
+entity_type: node
+bundle: book
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      general_tags: general_tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

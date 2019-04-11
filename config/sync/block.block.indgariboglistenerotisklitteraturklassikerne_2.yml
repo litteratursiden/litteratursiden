@@ -1,0 +1,31 @@
+uuid: aeee224a-a101-432e-82e6-a65c85e0d7e3
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f7250a3e-e4a9-45c6-b4cd-76109caf683a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenerotisklitteraturklassikerne_2
+theme: litteratursiden
+region: content
+weight: 614
+provider: null
+plugin: 'block_content:f7250a3e-e4a9-45c6-b4cd-76109caf683a'
+settings:
+  id: 'block_content:f7250a3e-e4a9-45c6-b4cd-76109caf683a'
+  label: 'Læs også: Erotisk litteratur - klassikerne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/giovanni-boccaccio
+    negate: false
+    context_mapping: {  }

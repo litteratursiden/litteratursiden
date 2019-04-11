@@ -1,0 +1,31 @@
+uuid: 340cffa5-4055-4b5c-8e11-a59ca5b59581
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:5c9ffa5e-a532-4043-af86-16fdf152761b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenklassiskeudenlandskenoveller
+theme: litteratursiden
+region: content
+weight: 524
+provider: null
+plugin: 'block_content:5c9ffa5e-a532-4043-af86-16fdf152761b'
+settings:
+  id: 'block_content:5c9ffa5e-a532-4043-af86-16fdf152761b'
+  label: 'Indgår i boglisten: Klassiske udenlandske noveller'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fiktioner-og-andre-fiktioner\r\n/boeger/eksil-og-kongedomme-0\r\n/boeger/begyndere\r\n/boeger/passager-0\r\n/boeger/et-svagt-hjerte-en-fatal-historie-en-andens-kone-aegtemanden-under-sengen\r\n/boeger/sherlock-holmes-eventyr\r\n/boeger/byen\r\n/boeger/septembertorke-og-andre-noveller\r\n/boeger/historier-fra-jazztiden-noveller-1920-39\r\n/boeger/ojenvidnet-og-andre-historier\r\n/boeger/praestens-sorte-slor-og-andre-fortaellinger\r\n/boeger/ernest-hemingway-samlede-noveller\r\n/boeger/fortaellinger-1-2-0\r\n/boeger/fortaellinger-1-2\r\n/boeger/selma-lagerlof-fortaellinger-legender-essays-og-taler\r\n/boeger/sene-fortaellinger-1919-1953\r\n/boeger/tidlige-fortaellinger-1893-1912\r\n/boeger/havefesten-udvalgte-noveller\r\n/boeger/en-nat-i-florens-0\r\n/boeger/juvelerne-og-andre-noveller\r\n/boeger/billy-budd-og-veranda-fortaellinger\r\n/boeger/venusdeltaet\r\n/boeger/samlede-fortaellinger-i-ii\r\n/boeger/om-kaerligheden-og-andre-noveller\r\n/boeger/den-sorte-munk-og-andre-fortaellinger\r\n/boeger/skaknovelle-praterforar"
+    negate: false
+    context_mapping: {  }

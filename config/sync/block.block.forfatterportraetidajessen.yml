@@ -1,0 +1,31 @@
+uuid: dfe10672-6c85-47da-b3f9-8940c41f2068
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:5d3d58a7-5dae-45c9-9480-271064965c3a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraetidajessen
+theme: litteratursiden
+region: content
+weight: 338
+provider: null
+plugin: 'block_content:5d3d58a7-5dae-45c9-9480-271064965c3a'
+settings:
+  id: 'block_content:5d3d58a7-5dae-45c9-9480-271064965c3a'
+  label: Forfatterportræt
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/en-uperfekt-kvinde\r\n/artikler/hvad-er-en-mor-om-ida-jessens-hvium-trilogi\r\n/artikler/manden-der-kom-til-byen"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: ea2c4c42-288b-4193-8b9f-622faffd5d09
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b941f8d6-a600-469e-9493-df0a35f4bb5d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenudenlandskeromaneromdoden
+theme: litteratursiden
+region: content
+weight: 198
+provider: null
+plugin: 'block_content:b941f8d6-a600-469e-9493-df0a35f4bb5d'
+settings:
+  id: 'block_content:b941f8d6-a600-469e-9493-df0a35f4bb5d'
+  label: 'Indgår i boglisten: Udenlandske romaner om døden'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/postkort-fra-de-dode\r\n/boeger/de-efterlod-os-alt\r\n/boeger/eksemplariske-bortgange\r\n/boeger/ud-af-ensomheden\r\n/boeger/enon\r\n/boeger/de-fem-du-moder-i-himlen\r\n/boeger/en-dag-mere\r\n/boeger/om-min-mor\r\n/boeger/og-vejret-skiftede-og-det-blev-sommer-og-sa-videre\r\n/boeger/glemslens-flod\r\n/boeger/jeg-giver-slip\r\n/boeger/tom-er-dod\r\n/boeger/kontrapunkt-0\r\n/boeger/aret-0\r\n/boeger/efterladt-0\r\n/boeger/sa-hojt-var-du-elsket\r\n/boeger/stadig-alice\r\n/boeger/en-flaenge-i-himlen\r\n/boeger/falde-ud-af-tiden\r\n/boeger/alice\r\n/boeger/den-begravede-kaempe\r\n/boeger/en-slags-kaerlighed\r\n/boeger/i-hvert-ojeblik-er-vi-stadig-i-live\r\n/boeger/fortabt\r\n/boeger/daytripper\r\n/boeger/monster-2\r\n/boeger/efterdonninger\r\n/boeger/til-mine-dotre\r\n/boeger/tre-kvinder-0\r\n/boeger/moderkaerlighed\r\n/boeger/sorg-er-et-vaesen-med-fjer\r\n/boeger/graensen-0\r\n/boeger/rekonstruktion-0\r\n/boeger/tid-til-sige-farvel\r\n/boeger/noget-sort\r\n/boeger/manens-skygge\r\n/boeger/33\r\n/boeger/monstermenneske\r\n/boeger/jo-hurtigere-jeg-gar-jo-mindre-er-jeg\r\n/boeger/den-usynlige-ivan-isaenko\r\n/boeger/gennem-natten-0\r\n/boeger/sma-udsving\r\n/boeger/anna-min-elskede\r\n/boeger/i-den-sidste-regn\r\n/boeger/alt-ma-vige-natten\r\n/boeger/det-mangehovedede-uhyre\r\n/boeger/natten-der-kommer\r\n/boeger/den-syvende-dag"
+    negate: false
+    context_mapping: {  }

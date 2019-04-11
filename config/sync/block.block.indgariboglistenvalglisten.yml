@@ -1,0 +1,31 @@
+uuid: e1828f50-4ae8-47be-a574-77cbc7bda403
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:fd7fa071-e667-46cd-838d-c4f1351c6fa1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenvalglisten
+theme: litteratursiden
+region: content
+weight: 251
+provider: null
+plugin: 'block_content:fd7fa071-e667-46cd-838d-c4f1351c6fa1'
+settings:
+  id: 'block_content:fd7fa071-e667-46cd-838d-c4f1351c6fa1'
+  label: 'Indgår i boglisten: Valglisten'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/imod-valg-til-forsvar-demokratiet\r\n/boeger/helle-magten\r\n/boeger/lars-lokke\r\n/boeger/kronprinsessen\r\n/boeger/pligt-og-ret-ret-og-pligt\r\n/boeger/borgen-0\r\n/boeger/den-hemmelige-socialdemokrat\r\n/boeger/kongekabale\r\n/boeger/da-spin-erobrede-danmark\r\n/boeger/politik-der-forandrede-danmark\r\n/boeger/den-danske-borgerkrig-2018-24\r\n/boeger/falske-stemmer"
+    negate: false
+    context_mapping: {  }

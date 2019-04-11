@@ -1,0 +1,31 @@
+uuid: 63c0623c-c77d-4502-ae63-1489bf6f78b7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:312e63cb-705a-411d-8051-0b0bb35a8941'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klassikerengustavwied
+theme: litteratursiden
+region: content
+weight: 860
+provider: null
+plugin: 'block_content:312e63cb-705a-411d-8051-0b0bb35a8941'
+settings:
+  id: 'block_content:312e63cb-705a-411d-8051-0b0bb35a8941'
+  label: 'Klassikeren Gustav Wied'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/gustav-wied
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: fde50ebd-414a-4fb9-a9a5-e72f406aa10b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:db4a8a38-b4fe-4ab1-a24b-fe660c73b4e5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenkobenhavnilitteraturen
+theme: litteratursiden
+region: content
+weight: 542
+provider: null
+plugin: 'block_content:db4a8a38-b4fe-4ab1-a24b-fe660c73b4e5'
+settings:
+  id: 'block_content:db4a8a38-b4fe-4ab1-a24b-fe660c73b4e5'
+  label: 'Indgår i boglisten: København i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kongens-kobenhavn\r\n/boeger/gud-er-bare-hund-stavet-bagfra\r\n/boeger/koordinater\r\n/boeger/kys-0\r\n/boeger/lasten\r\n/boeger/operation-dacapo\r\n/boeger/submarino\r\n/boeger/sortedam\r\n/boeger/westend\r\n/boeger/sengen-er-giftig\r\n/boeger/mount-kobenhavn\r\n/boeger/danmarks-stemmer\r\n/boeger/superego\r\n/boeger/stormen-i-99\r\n/boeger/haltefanden\r\n/boeger/porcelaenskvinden\r\n/boeger/drengen-pa-stentrappen\r\n/boeger/kobenhavn\r\n/boeger/fra-smorhullet\r\n/boeger/bombardement\r\n/boeger/druknehuset\r\n/boeger/album\r\n/boeger/kobenhavns-mysterier\r\n/boeger/singleslinger\r\n/boeger/kobenhavnerpigen-under-besaettelsen\r\n/boeger/vaben-til-kobenhavn\r\n/boeger/storby-stodder\r\n/boeger/han-danser-pa-sin-sons-grav-syv-noveller\r\n/boeger/den-lukkede-bog\r\n/boeger/den-store-tid\r\n/boeger/nynnes-dagbog\r\n/boeger/serafia\r\n/boeger/sodoma\r\n/boeger/bebop-bar\r\n/boeger/tordenkaffe\r\n/boeger/lowenlandet\r\n/boeger/skyerne-over-vesterbro\r\n/boeger/om-atomkrigens-betydning-vilhelm-funks-ungdom\r\n/boeger/radiator-trilogien\r\n/boeger/nyforelskelse-og-andre-cykelstyrt\r\n/boeger/musik-og-stilhed\r\n/boeger/glasborgen"
+    negate: false
+    context_mapping: {  }

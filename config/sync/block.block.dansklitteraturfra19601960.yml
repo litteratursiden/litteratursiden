@@ -1,0 +1,31 @@
+uuid: ecaf3fe6-5076-4830-b6dd-353d084709c0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:4a4f826f-8ca5-40bb-8663-940369d2dd71'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: dansklitteraturfra19601960
+theme: litteratursiden
+region: content
+weight: 861
+provider: null
+plugin: 'block_content:4a4f826f-8ca5-40bb-8663-940369d2dd71'
+settings:
+  id: 'block_content:4a4f826f-8ca5-40bb-8663-940369d2dd71'
+  label: 'Dansk litteratur fra 1960-1960'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/analyser-pa-litteratursiden\r\n/forfattere/thorkild-bjornvig\r\n/forfattere/jorgen-gustava-brandt\r\n/forfattere/cecil-bodker\r\n/forfattere/inger-christensen\r\n/forfattere/benny-andersen\r\n/forfattere/hojholt\r\n/forfattere/thorkild-hansen\r\n/forfattere/anders-bodelsen\r\n/forfattere/tove-ditlevsen\r\n\r\n/forfattere/leif-panduro\r\n/forfattere/klaus-rifbjerg\r\n/forfattere/william-heinesen\r\n/forfattere/anna-ladegaard\r\n/forfattere/hans-scherfig\r\n/forfattere/ole-sarvig\r\n/forfattere/erik-aalbaek-jensen\r\n/forfattere/ivan-malinowski\r\n/forfattere/sven-holm\r\n\r\n"
+    negate: false
+    context_mapping: {  }

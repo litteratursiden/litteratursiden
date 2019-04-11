@@ -1,0 +1,47 @@
+uuid: d4445f45-d261-40ec-a90a-2dd4491413d7
+langcode: en
+status: true
+dependencies: {  }
+id: producer
+label: Producer
+weight: 2
+is_admin: null
+permissions:
+  - 'administer comments'
+  - 'bpi push content'
+  - 'create analysis content'
+  - 'create article content'
+  - 'create author_portrait content'
+  - 'create blog content'
+  - 'create book content'
+  - 'create book_debate content'
+  - 'create book_list content'
+  - 'create interview content'
+  - 'create review content'
+  - 'create similar content'
+  - 'create topic content'
+  - 'delete own analysis content'
+  - 'delete own article content'
+  - 'delete own author_portrait content'
+  - 'delete own blog content'
+  - 'delete own book content'
+  - 'delete own book_debate content'
+  - 'delete own book_list content'
+  - 'delete own interview content'
+  - 'delete own review content'
+  - 'delete own similar content'
+  - 'delete own topic content'
+  - 'edit any review content'
+  - 'edit own analysis content'
+  - 'edit own article content'
+  - 'edit own author_portrait content'
+  - 'edit own blog content'
+  - 'edit own book content'
+  - 'edit own book_debate content'
+  - 'edit own book_list content'
+  - 'edit own interview content'
+  - 'edit own similar content'
+  - 'edit own topic content'
+  - 'skip comment approval'
+  - 'use text format filtered_html'
+  - 'use text format full_html'

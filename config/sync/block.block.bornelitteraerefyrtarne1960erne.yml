@@ -1,0 +1,31 @@
+uuid: 12e4b07f-629b-4c4e-8c82-f50ab467c571
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e7167dd1-c371-4dc7-a28d-ebcc81b2b5a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: bornelitteraerefyrtarne1960erne
+theme: litteratursiden
+region: content
+weight: 699
+provider: null
+plugin: 'block_content:e7167dd1-c371-4dc7-a28d-ebcc81b2b5a8'
+settings:
+  id: 'block_content:e7167dd1-c371-4dc7-a28d-ebcc81b2b5a8'
+  label: 'Børnelitterære fyrtårne: 1960erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/bornelitteraere-fyrtarne-gennem-tiden
+    negate: false
+    context_mapping: {  }

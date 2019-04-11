@@ -1,0 +1,27 @@
+uuid: 3c4a7d47-88cd-4264-ae2c-78222fc97e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_list_files
+    - node.type.book_list
+  module:
+    - file
+id: node.book_list.field_book_list_files
+field_name: field_book_list_files
+entity_type: node
+bundle: book_list
+label: 'Attached files'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_book_list_files
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: 5MB
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

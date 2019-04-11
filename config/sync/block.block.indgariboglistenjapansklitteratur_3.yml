@@ -1,0 +1,31 @@
+uuid: 063c85b5-4e42-44e3-bb69-4d9a04b3c5ee
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3d17541c-ef2e-4320-ade7-17c2d668b8ad'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenjapansklitteratur_3
+theme: litteratursiden
+region: content
+weight: 958
+provider: null
+plugin: 'block_content:3d17541c-ef2e-4320-ade7-17c2d668b8ad'
+settings:
+  id: 'block_content:3d17541c-ef2e-4320-ade7-17c2d668b8ad'
+  label: 'Japansk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/murakamis-magiske-univers
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,13 @@
+uuid: 707a9b6e-e016-4022-b0b6-0540761e8271
+langcode: en
+status: true
+dependencies: {  }
+id: literature
+label: 'Spørg om litteratur'
+recipients:
+  - litteratursiden@mkb.aarhus.dk
+  - thvgl@vejle.dk
+reply: ''
+weight: 0
+message: "Tak for dit spørgsmål!\r\n\r\nLitteratursiden har kontakt til adskillige eksperter indenfor litteratur, og dit spørgsmål vil blive behandlet hurtigst muligt."
+redirect: ''

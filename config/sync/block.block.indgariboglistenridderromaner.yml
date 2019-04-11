@@ -1,0 +1,31 @@
+uuid: 063d15d4-3aa0-41ac-b91d-fd9b4a3811f8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1eda328c-2573-43a2-ac3b-d8511c7170b2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenridderromaner
+theme: litteratursiden
+region: content
+weight: 118
+provider: null
+plugin: 'block_content:1eda328c-2573-43a2-ac3b-d8511c7170b2'
+settings:
+  id: 'block_content:1eda328c-2573-43a2-ac3b-d8511c7170b2'
+  label: 'Indgår i boglisten: Ridderromaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/den-herrelose-ridder\r\n/boeger/gralens-vogter\r\n/boeger/stormfugl-rosekrigene-forste-bog-1443-1453\r\n/boeger/blat-blod-1461-1469\r\n/boeger/treenighed\r\n/boeger/flammesol-1470-1485-roman\r\n/boeger/baudolino\r\n/boeger/normannerne\r\n/boeger/den-sindrige-ridder-don-quixote-de-la-mancha\r\n/boeger/landevejens-riddere\r\n/boeger/loveridderen\r\n/boeger/guds-fjende\r\n/boeger/vinterkongen\r\n/boeger/rosens-haevn\r\n/boeger/vejen-til-jerusalem-0\r\n/boeger/tempelridderen\r\n/boeger/riget-ved-vejens-ende\r\n/boeger/arven-efter-arn\r\n/boeger/arthur-kongen-i-stenen\r\n/boeger/arn-vejen-til-jerusalem\r\n/boeger/sagnet-om-nibelungerne\r\n/boeger/holger-danske\r\n/boeger/ivanhoe\r\n/boeger/kong-arthur-pa-camelot-merlyns-bog\r\n/boeger/broderskabet-0\r\n/boeger/korstog\r\n/boeger/den-klogtige-adelsmand-don-quijote-af-la-mancha"
+    negate: false
+    context_mapping: {  }

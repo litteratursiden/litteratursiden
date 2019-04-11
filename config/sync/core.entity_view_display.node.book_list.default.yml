@@ -1,0 +1,84 @@
+uuid: f8cd0e89-8cfe-499a-80c2-4a7d5adb8dee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.book_list.field_book_list_body
+    - field.field.node.book_list.field_book_list_comments
+    - field.field.node.book_list.field_book_list_cover_image
+    - field.field.node.book_list.field_book_list_files
+    - field.field.node.book_list.field_book_list_general_tags
+    - field.field.node.book_list.field_book_list_reference_book
+    - field.field.node.book_list.field_book_list_reference_review
+    - field.field.node.book_list.field_book_list_spotbox_image
+    - node.type.book_list
+  module:
+    - file
+    - text
+    - user
+id: node.book_list.default
+targetEntityType: node
+bundle: book_list
+mode: default
+content:
+  field_book_list_body:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_book_list_files:
+    type: file_default
+    weight: 8
+    region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_book_list_general_tags:
+    weight: 7
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  flag_bookmark:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_like:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_portrait:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  social_media:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_book_list_comments: true
+  field_book_list_cover_image: true
+  field_book_list_reference_book: true
+  field_book_list_reference_review: true
+  field_book_list_spotbox_image: true
+  langcode: true
+  owner_full_name: true

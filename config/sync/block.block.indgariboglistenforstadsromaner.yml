@@ -1,0 +1,31 @@
+uuid: a52c917f-a3d2-4787-a84f-b669fb903a05
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:974c99b7-84f5-45a3-9924-d05b24ac7896'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenforstadsromaner
+theme: litteratursiden
+region: content
+weight: 455
+provider: null
+plugin: 'block_content:974c99b7-84f5-45a3-9924-d05b24ac7896'
+settings:
+  id: 'block_content:974c99b7-84f5-45a3-9924-d05b24ac7896'
+  label: 'Indgår i boglisten: Forstadsromaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/faellesarealer\r\n/boeger/kettys-blues\r\n/boeger/hvad-man-ikke-ved\r\n/boeger/revolutionary-road\r\n/boeger/retrograd\r\n/boeger/den-svaere-toer\r\n/boeger/stillevejen\r\n/boeger/sumobrodre\r\n/boeger/album\r\n/boeger/en-forstadsbuddha\r\n/boeger/uro-i-forstaederne-og-andre-noveller\r\n/boeger/mand-i-parcelhus\r\n/boeger/vangede-billeder\r\n/boeger/hus-forbi\r\n/boeger/det-hvide-kvarter\r\n/boeger/borgerligt-tusmorke\r\n/boeger/termin-af-henrik-nor-hansen"
+    negate: false
+    context_mapping: {  }

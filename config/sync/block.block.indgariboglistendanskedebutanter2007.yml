@@ -1,0 +1,31 @@
+uuid: b9eeeab2-a9bd-4b09-9478-fba087369e15
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:a9db5e8f-9562-4a4c-9218-56e812834529'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendanskedebutanter2007
+theme: litteratursiden
+region: content
+weight: 376
+provider: null
+plugin: 'block_content:a9db5e8f-9562-4a4c-9218-56e812834529'
+settings:
+  id: 'block_content:a9db5e8f-9562-4a4c-9218-56e812834529'
+  label: 'Indgår i boglisten: Danske debutanter 2007'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/libri-di-luca\r\n/boeger/havet-i-theresienstadt\r\n/boeger/forsvindingsnummer-0\r\n/boeger/lykkejaegere\r\n/boeger/sofa\r\n/boeger/her-star-du\r\n/boeger/stormen-1\r\n/boeger/kalak\r\n/boeger/jegfortaellinger\r\n/boeger/jelne"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 0877603e-643b-43d3-a2fa-7bbb0e9e66c9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:70271540-c850-4ac1-82d0-3752049deb4f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbowiesboger
+theme: litteratursiden
+region: content
+weight: 835
+provider: null
+plugin: 'block_content:70271540-c850-4ac1-82d0-3752049deb4f'
+settings:
+  id: 'block_content:70271540-c850-4ac1-82d0-3752049deb4f'
+  label: 'Indgår i boglisten: Bowies bøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/1984\r\n/boeger/lolita\r\n/boeger/flauberts-papegoje\r\n/boeger/wonder-boys\r\n/boeger/oscar-wao-hans-korte-og-forunderlige-liv\r\n/boeger/den-fremmede\r\n/boeger/clockwork-orange\r\n/boeger/madame-bovary\r\n/boeger/den-store-gatsby\r\n"
+    negate: false
+    context_mapping: {  }

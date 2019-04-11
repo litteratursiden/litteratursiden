@@ -1,0 +1,31 @@
+uuid: 6cf1a0d2-b64c-4a4e-81cf-7a942afaf369
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:54851e58-5517-4d0d-b2b8-8b99ece99bf5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: ingerchristensenfindes
+theme: litteratursiden
+region: content
+weight: 122
+provider: null
+plugin: 'block_content:54851e58-5517-4d0d-b2b8-8b99ece99bf5'
+settings:
+  id: 'block_content:54851e58-5517-4d0d-b2b8-8b99ece99bf5'
+  label: 'Inger Christensen findes'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/inger-christensen
+    negate: false
+    context_mapping: {  }

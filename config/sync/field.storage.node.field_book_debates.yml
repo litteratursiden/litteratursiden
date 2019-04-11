@@ -1,0 +1,20 @@
+uuid: 6a607c77-7567-41aa-85da-5eaf0960037a
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_book_debates
+field_name: field_book_debates
+entity_type: node
+type: comment
+settings:
+  comment_type: debate
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

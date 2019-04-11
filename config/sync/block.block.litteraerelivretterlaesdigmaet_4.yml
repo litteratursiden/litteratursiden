@@ -1,0 +1,31 @@
+uuid: 81396174-bd3c-4418-9f4e-d0d6bd95c634
+langcode: da
+status: false
+dependencies:
+  content:
+    - 'block_content:spot:95ff491c-3659-4d87-8e32-09f27ad450d4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: litteraerelivretterlaesdigmaet_4
+theme: litteratursiden
+region: content
+weight: 977
+provider: null
+plugin: 'block_content:95ff491c-3659-4d87-8e32-09f27ad450d4'
+settings:
+  id: 'block_content:95ff491c-3659-4d87-8e32-09f27ad450d4'
+  label: 'Litterære livretter - læs dig mæt'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

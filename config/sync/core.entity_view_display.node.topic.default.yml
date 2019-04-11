@@ -1,0 +1,118 @@
+uuid: 7930accf-3301-4519-8948-ecda408e3bc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.topic.field_topic_body
+    - field.field.node.topic.field_topic_comments
+    - field.field.node.topic.field_topic_cover_image
+    - field.field.node.topic.field_topic_excerpt
+    - field.field.node.topic.field_topic_files
+    - field.field.node.topic.field_topic_general_tags
+    - field.field.node.topic.field_topic_internal_link
+    - field.field.node.topic.field_topic_link_external
+    - field.field.node.topic.field_topic_spotbox_image
+    - field.field.node.topic.field_topic_theme_body_text
+    - image.style.super_large
+    - node.type.topic
+  module:
+    - file
+    - image
+    - link
+    - text
+    - user
+id: node.topic.default
+targetEntityType: node
+bundle: topic
+mode: default
+content:
+  field_topic_body:
+    type: text_default
+    weight: 7
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_topic_cover_image:
+    weight: 6
+    label: hidden
+    settings:
+      image_style: super_large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_topic_files:
+    type: file_default
+    weight: 11
+    region: content
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_topic_general_tags:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_topic_internal_link:
+    type: entity_reference_label
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_topic_link_external:
+    type: link
+    weight: 10
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_like:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_portrait:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  social_media:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_topic_comments: true
+  field_topic_excerpt: true
+  field_topic_spotbox_image: true
+  field_topic_theme_body_text: true
+  flag_notifications: true
+  langcode: true
+  owner_full_name: true

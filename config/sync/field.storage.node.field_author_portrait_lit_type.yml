@@ -1,0 +1,20 @@
+uuid: 51de9c99-faea-4b5f-a2cb-e7ddf91aa166
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_author_portrait_lit_type
+field_name: field_author_portrait_lit_type
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

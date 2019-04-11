@@ -1,0 +1,31 @@
+uuid: 77dcf041-dec8-4dcc-82dc-efcd7c3e8676
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:5f834d27-0260-41fb-835a-3498b2b5f927'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennyeretyskeromanerognoveller_2
+theme: litteratursiden
+region: content
+weight: 15
+provider: null
+plugin: 'block_content:5f834d27-0260-41fb-835a-3498b2b5f927'
+settings:
+  id: 'block_content:5f834d27-0260-41fb-835a-3498b2b5f927'
+  label: 'Indgår i boglisten: Nyere tyske romaner og noveller'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/oostende-1936-stefan-zweig-og-joseph-roth-sommeren-morket-faldt-pa\r\n/boeger/pigen-med-fingerbollet\r\n/boeger/lykkebarn-med-far"
+    negate: false
+    context_mapping: {  }

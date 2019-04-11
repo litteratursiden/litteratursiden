@@ -1,0 +1,13 @@
+uuid: cab79eaa-219b-4400-b54b-c1112ff8a1a7
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Zx0jD1Klh5tZaGJy8uOeR_2MCu9FDM4xg7TaUJUEbkI
+id: node_delete_action
+label: 'Slet indhold'
+type: node
+plugin: 'entity:delete_action:node'
+configuration: {  }

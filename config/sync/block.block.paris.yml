@@ -1,0 +1,31 @@
+uuid: 49eb38c9-b09a-4878-909d-b40060101355
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:36641528-5925-42cb-b2a1-d9c5f608b04d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: paris
+theme: litteratursiden
+region: content
+weight: 292
+provider: null
+plugin: 'block_content:36641528-5925-42cb-b2a1-d9c5f608b04d'
+settings:
+  id: 'block_content:36641528-5925-42cb-b2a1-d9c5f608b04d'
+  label: Paris
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/laesetips-til-storbyferien
+    negate: false
+    context_mapping: {  }

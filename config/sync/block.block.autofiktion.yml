@@ -1,0 +1,31 @@
+uuid: 8c093343-c0c9-4abd-b246-a7181b4a78ff
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:00036600-9748-4b14-93a2-f1dd353ca0a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: autofiktion
+theme: litteratursiden
+region: content
+weight: 771
+provider: null
+plugin: 'block_content:00036600-9748-4b14-93a2-f1dd353ca0a8'
+settings:
+  id: 'block_content:00036600-9748-4b14-93a2-f1dd353ca0a8'
+  label: Autofiktion
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/planen\r\n/boeger/kalak\r\n/boeger/brun-mands-byrde\r\n/boeger/min-kamp-1-bog\r\n/boeger/vor-tids-helt-0\r\n/boeger/der-bor-hollywoodstjerner-pa-vejen\r\n/boeger/det-uperfekte-menneske-12\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/apropos-opa\r\n/boeger/frit-flet\r\n/boeger/yahya-hassan\r\n/boeger/hun-er-vred\r\n/boeger/det-nemme-og-det-ensomme"
+    negate: false
+    context_mapping: {  }

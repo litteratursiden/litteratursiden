@@ -1,0 +1,31 @@
+uuid: 79960858-ef11-49ff-a2cc-fd282d26234e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:853682ac-66ea-46b2-b76b-5437721f233c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensydafrikailitteraturen
+theme: litteratursiden
+region: content
+weight: 104
+provider: null
+plugin: 'block_content:853682ac-66ea-46b2-b76b-5437721f233c'
+settings:
+  id: 'block_content:853682ac-66ea-46b2-b76b-5437721f233c'
+  label: 'Indgår i boglisten: Sydafrika i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/med-hensyn-til-harry-og-andre-fortaellinger\r\n/boeger/attentatet\r\n/boeger/philida\r\n/boeger/jeg-glemmer\r\n/boeger/en-tor-hvid-arstid\r\n/boeger/drengear\r\n/boeger/ungdomsar\r\n/boeger/sommertid-1\r\n/boeger/vanaere\r\n/boeger/staerkere-end-skaebnen\r\n/boeger/tik\r\n/boeger/zulu\r\n/boeger/forsoning\r\n/boeger/ladysmith\r\n/boeger/et-andet-land\r\n/boeger/et-naturens-lune\r\n/boeger/ingen-folges-med\r\n/boeger/min-sons-historie\r\n/boeger/analfabeten-der-kunne-regne\r\n/boeger/kvinden-i-det-rode-mudder\r\n/boeger/eftertanker\r\n/boeger/den-hvide-lovinde\r\n/boeger/jaegerens-bytte\r\n/boeger/syv-dage\r\n/boeger/tretten-timer\r\n/boeger/vaerelse-207\r\n/boeger/fars-pige-0\r\n/boeger/slaegten-i-vindalen\r\n/boeger/men-landet-er-smukt\r\n/boeger/den-braendende-kyst\r\n/boeger/diamantjaegerne\r\n/boeger/solfuglen"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,8 @@
+uuid: 8e6dd385-6499-4c89-9593-ce29960115f0
+langcode: da
+status: true
+dependencies: {  }
+id: book_list_carousel
+label: 'Book list carousel'
+revision: 0
+description: ''

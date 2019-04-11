@@ -1,0 +1,31 @@
+uuid: 1cad9a7c-e434-469d-8646-ffeea0c27155
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3f63eb9e-2fb3-4765-bea5-497f4443cacc'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenensomhed
+theme: litteratursiden
+region: content
+weight: 419
+provider: null
+plugin: 'block_content:3f63eb9e-2fb3-4765-bea5-497f4443cacc'
+settings:
+  id: 'block_content:3f63eb9e-2fb3-4765-bea5-497f4443cacc'
+  label: 'Indgår i boglisten: Ensomhed'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/og-tilsidst-gar-verden-under\r\n/boeger/ovenpa-er-der-stille\r\n/boeger/ensomheden-i-lydia-ernemans-liv\r\n/boeger/jesu-barndom\r\n/boeger/aben-0\r\n/boeger/bergeners\r\n/boeger/pigtopia\r\n/boeger/kaerlighedstjener-0\r\n/boeger/paraplypigen\r\n/boeger/min-gronne-himmel\r\n/boeger/ved-sandaen\r\n/boeger/sult-0\r\n/boeger/hvis-det-er\r\n/boeger/nar-jeg-ikke-er-til-stede\r\n/boeger/postkort-til-annie\r\n/boeger/senseis-mappe\r\n/boeger/helioskatastrofen\r\n/boeger/kirsebaertiden\r\n/boeger/gulddreng-smaragdpige\r\n/boeger/det-herlige-land\r\n/boeger/svenske-gummistovler\r\n/boeger/eventuelle-parorende\r\n/boeger/levende-og-dode-i-winsford\r\n/boeger/solsorten-synger\r\n/boeger/mellem-venner-3\r\n/boeger/ariel-0\r\n/boeger/senseis-mappe-bind-1\r\n/boeger/den-lyse-side"
+    negate: false
+    context_mapping: {  }

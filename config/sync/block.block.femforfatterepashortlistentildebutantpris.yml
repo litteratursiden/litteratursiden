@@ -1,0 +1,31 @@
+uuid: 4ab3a706-c6f7-40e3-a0ee-f5370676a396
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:30b5a1a7-aea9-4d5b-a440-d95031978d6f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: femforfatterepashortlistentildebutantpris
+theme: litteratursiden
+region: content
+weight: 972
+provider: null
+plugin: 'block_content:30b5a1a7-aea9-4d5b-a440-d95031978d6f'
+settings:
+  id: 'block_content:30b5a1a7-aea9-4d5b-a440-d95031978d6f'
+  label: Artikel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/sophia-handler
+    negate: false
+    context_mapping: {  }

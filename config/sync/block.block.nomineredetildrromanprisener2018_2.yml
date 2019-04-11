@@ -1,0 +1,31 @@
+uuid: 8f50f19a-df57-4792-b9d7-92910574e0be
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:c614ee03-4052-4ce8-90ad-7eb7625f664c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nomineredetildrromanprisener2018_2
+theme: litteratursiden
+region: content
+weight: 951
+provider: null
+plugin: 'block_content:c614ee03-4052-4ce8-90ad-7eb7625f664c'
+settings:
+  id: 'block_content:c614ee03-4052-4ce8-90ad-7eb7625f664c'
+  label: 'Nominerede til DR Romanprisen er 2018'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/laes-om-de-nominerede-boger-til-dr-romanprisen-2018
+    negate: false
+    context_mapping: {  }

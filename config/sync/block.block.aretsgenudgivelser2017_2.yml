@@ -1,0 +1,31 @@
+uuid: 2a99d7e1-7d56-4b0a-b12c-9620da12b6ff
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b1e9969e-0288-492b-b4b9-d6aebf2c270f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: aretsgenudgivelser2017_2
+theme: litteratursiden
+region: content
+weight: 707
+provider: null
+plugin: 'block_content:b1e9969e-0288-492b-b4b9-d6aebf2c270f'
+settings:
+  id: 'block_content:b1e9969e-0288-492b-b4b9-d6aebf2c270f'
+  label: 'Indgår i boglisten: Årets genudgivelser 2017'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fuglene-0\r\n/anmeldelser/fuglene-af-tarjei-vesaas\r\n/anmeldelser/tjenerindens-fortaelling-af-margaret-atwood-0\r\n/boeger/tjenerindens-fortaelling\r\n/boeger/der-bor-en-ung-pige-i-mig-som-ikke-vil-do\r\n/anmeldelser/katherine-mansfield-havefesten-og-andre-fortaellinger\r\n/boeger/havefesten-og-andre-fortaellinger-noveller\r\n/anmeldelser/farvel-til-vabnene-af-ernest-hemingway\r\n/boeger/farvel-til-vabnene\r\n"
+    negate: false
+    context_mapping: {  }

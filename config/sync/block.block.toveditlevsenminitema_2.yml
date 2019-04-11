@@ -1,0 +1,31 @@
+uuid: 487f3b35-fdd3-4106-9542-20dd9ccd2f6d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:2157ccae-c4f5-47d0-81b2-7e171c6597a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: toveditlevsenminitema_2
+theme: litteratursiden
+region: content
+weight: 952
+provider: null
+plugin: 'block_content:2157ccae-c4f5-47d0-81b2-7e171c6597a8'
+settings:
+  id: 'block_content:2157ccae-c4f5-47d0-81b2-7e171c6597a8'
+  label: 'Indgår i tema'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/barndommens-gade\r\n/boeger/ansigterne \r\n/boeger/vilhelms-vaerelse\r\n/artikler/ekspert-i-ulykke-om-som-elsker-hinanden-af-tove-ditlevsen\r\n/artikler/selvmordet-som-skrivekrise-om-tove-ditlevsen\r\n/temaer/staerke-stemmer-fra-70erne\r\n/boeger/kvindesind\r\n/blogs/barbara-rugholm-hessellund/tillykke-tove\r\n/boeger/pigesind\r\n/boeger/der-bor-en-ung-pige-i-mig-som-ikke-vil-do\r\n/boeger/gift-2\r\n/boeger/det-tidlige-forar-barndom-ungdom\r\n/boeger/jeg-ville-vaere-enke-og-jeg-ville-vaere-digter\r\n/boeger/det-tidlige-forar\r\n/boeger/gift-2\r\n/forfattere/tove-ditlevsen\r\n/boeger/barnets-skyld\r\n/boeger/vi-har-kun-hinanden\r\n"
+    negate: false
+    context_mapping: {  }

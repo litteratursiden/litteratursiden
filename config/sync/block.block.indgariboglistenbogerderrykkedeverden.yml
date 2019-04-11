@@ -1,0 +1,31 @@
+uuid: 87f72aa4-d214-44d0-9637-894b9a29f548
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b73359e1-a45a-4153-a7fb-d8082255f5d4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbogerderrykkedeverden
+theme: litteratursiden
+region: content
+weight: 791
+provider: null
+plugin: 'block_content:b73359e1-a45a-4153-a7fb-d8082255f5d4'
+settings:
+  id: 'block_content:b73359e1-a45a-4153-a7fb-d8082255f5d4'
+  label: 'Indgår i boglisten: Bøger der rykkede verden'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/syndens-blomster\r\n/boeger/arsagen\r\n/boeger/clockwork-orange\r\n/boeger/american-psycho\r\n/boeger/madame-bovary\r\n/boeger/i-morgen-er-det-slut\r\n/boeger/christiane-f\r\n/boeger/den-unge-werthers-lidelser\r\n/boeger/bliktrommen\r\n/boeger/glasperlespillet\r\n/boeger/udvidelse-af-kampzonen\r\n/boeger/et-dukkehjem\r\n/boeger/gogereden\r\n/boeger/fagre-nye-verden\r\n/boeger/min-kamp-1-bog\r\n/boeger/lady-chatterleys-elsker\r\n/boeger/1984\r\n/boeger/lolita\r\n/boeger/de-sataniske-vers\r\n/boeger/vredens-druer\r\n/boeger/onkel-toms-hytte\r\n/boeger/sit-eget-vaerelse\r\n"
+    negate: false
+    context_mapping: {  }

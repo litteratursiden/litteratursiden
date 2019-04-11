@@ -1,0 +1,31 @@
+uuid: 534bdec2-36f8-4527-b0db-20114e8392a4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:93fc83e9-82a0-4f28-8f2f-eec999ddaea7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: vangedebillederomturellsopdagelseafpublikum
+theme: litteratursiden
+region: content
+weight: 743
+provider: null
+plugin: 'block_content:93fc83e9-82a0-4f28-8f2f-eec999ddaea7'
+settings:
+  id: 'block_content:93fc83e9-82a0-4f28-8f2f-eec999ddaea7'
+  label: 'Artikel om Dan Turèll'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/dan-turell
+    negate: false
+    context_mapping: {  }

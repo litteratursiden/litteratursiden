@@ -1,0 +1,96 @@
+uuid: 02db761b-6583-465c-9a16-cf86f2aa3091
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.spot
+    - field.field.node.book.field_book_author
+    - field.field.node.book.field_book_body
+    - field.field.node.book.field_book_comments
+    - field.field.node.book.field_book_cover_image
+    - field.field.node.book.field_book_debates
+    - field.field.node.book.field_book_general_tags
+    - field.field.node.book.field_book_graphic
+    - field.field.node.book.field_book_isbn
+    - field.field.node.book.field_book_language
+    - field.field.node.book.field_book_literature_type
+    - field.field.node.book.field_book_number_of_pages
+    - field.field.node.book.field_book_old_library_key
+    - field.field.node.book.field_book_original_title
+    - field.field.node.book.field_book_pid
+    - field.field.node.book.field_book_published_year
+    - field.field.node.book.field_book_publisher
+    - field.field.node.book.field_book_reference_author
+    - field.field.node.book.field_book_secondary_title
+    - field.field.node.book.field_book_spotbox_image
+    - field.field.node.book.field_book_subject_number
+    - field.field.node.book.field_book_translater
+    - image.style.spot
+    - node.type.book
+  module:
+    - image
+    - text
+    - user
+id: node.book.spot
+targetEntityType: node
+bundle: book
+mode: spot
+content:
+  field_book_body:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+  field_book_spotbox_image:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: spot
+      image_link: ''
+    third_party_settings: {  }
+  latest_revew:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_bibliotekdk: true
+  field_book_author: true
+  field_book_comments: true
+  field_book_cover_image: true
+  field_book_debates: true
+  field_book_general_tags: true
+  field_book_graphic: true
+  field_book_isbn: true
+  field_book_language: true
+  field_book_literature_type: true
+  field_book_number_of_pages: true
+  field_book_old_library_key: true
+  field_book_original_title: true
+  field_book_pid: true
+  field_book_published_year: true
+  field_book_publisher: true
+  field_book_reference_author: true
+  field_book_secondary_title: true
+  field_book_subject_number: true
+  field_book_translater: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  latest_analysis: true
+  latest_review: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  social_media: true

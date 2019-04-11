@@ -1,0 +1,31 @@
+uuid: 85391d77-3d2b-41ac-b7bb-5b38c0da104e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:12691196-cfd7-4617-959c-7539523a0bd0'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra20062009
+theme: litteratursiden
+region: content
+weight: 818
+provider: null
+plugin: 'block_content:12691196-cfd7-4617-959c-7539523a0bd0'
+settings:
+  id: 'block_content:12691196-cfd7-4617-959c-7539523a0bd0'
+  label: 'Indgår i boglisten: Analyser fra 2006-2009'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/bavian\r\n/boeger/havet-er-en-scene\r\n/boeger/radhusklatreren\r\n/boeger/apropos-opa\r\n/boeger/afgrundens-rand\r\n/boeger/liberty\r\n/boeger/ubevidst-rodgang\r\n/boeger/dinosaurens-fjer\r\n/boeger/patriarken\r\n/boeger/fire-dage-i-marts\r\n/boeger/kobenhavn-noveller\r\n/boeger/en-drabe-i-havet\r\n/boeger/ned-til-hundene\r\n/boeger/hej-menneske\r\n/boeger/oh-romeo\r\n/boeger/dagmar-0\r\n/boeger/jeg-ved-ikke-om-den-slags-tanker-er-normale\r\n/boeger/vi-de-druknede\r\n/boeger/bornene\r\n/boeger/mordet-pa-halland\r\n/boeger/hestenes-ojne\r\n/boeger/laengsel-pa-bestilling\r\n/boeger/julius-afsind\r\n/boeger/den-forelskede-unge\r\n/boeger/valdemarsdag\r\n/boeger/mange-saere-ting\r\n/boeger/bla-bror\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/du-som-er-i-himlen\r\n/boeger/maerkedage\r\n/boeger/tarkovskijs-heste\r\n/boeger/forkrigstid\r\n/boeger/aldrig-sa-jeg-sa-dejligt-et-bjerg\r\n"
+    negate: false
+    context_mapping: {  }

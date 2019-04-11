@@ -1,0 +1,31 @@
+uuid: d92a5da9-7e89-4c5a-8ee9-2b937eda71b8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3ee82c56-a58e-44c7-8b5f-d940f1ed7bc5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistentheedgarawards
+theme: litteratursiden
+region: content
+weight: 172
+provider: null
+plugin: 'block_content:3ee82c56-a58e-44c7-8b5f-d940f1ed7bc5'
+settings:
+  id: 'block_content:3ee82c56-a58e-44c7-8b5f-d940f1ed7bc5'
+  label: 'Indgår i boglisten: The Edgar Awards'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/faldet-3\r\n/boeger/mercedesmanden\r\n/boeger/lev-om-natten\r\n/boeger/vaek\r\n/boeger/eksperten\r\n/boeger/det-sidste-barn\r\n/boeger/blue-heaven\r\n/boeger/rodt-vand\r\n/boeger/janitshartraeet\r\n/boeger/morkemaend"
+    negate: false
+    context_mapping: {  }

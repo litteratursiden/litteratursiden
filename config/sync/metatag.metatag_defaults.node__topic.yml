@@ -1,0 +1,8 @@
+uuid: b915c654-9a47-4a1e-9440-ea66f6d402a7
+langcode: da
+status: true
+dependencies: {  }
+id: node__topic
+label: 'Indhold: Tema'
+tags:
+  og_description: '[node:field_topic_body]'

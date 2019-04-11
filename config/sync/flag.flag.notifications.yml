@@ -1,0 +1,41 @@
+uuid: 50e6f747-1a30-4e29-83c5-00253b9246aa
+langcode: da
+status: true
+dependencies:
+  module:
+    - lit
+third_party_settings:
+  lit:
+    checkbox: 1
+_core:
+  default_config_hash: NXuCiEFkf9xaC4tIubZSRmqdWNEF80zzcAf8Q823IxQ
+id: notifications
+label: Notifikationer
+bundles:
+  - analysis
+  - article
+  - blog
+  - book
+  - book_debate
+  - review
+  - topic
+entity_type: node
+global: false
+weight: 0
+flag_short: Notifikationer
+flag_long: ''
+flag_message: ''
+unflag_short: Notifikationer
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links: {  }
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

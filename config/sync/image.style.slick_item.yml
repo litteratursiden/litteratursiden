@@ -1,0 +1,16 @@
+uuid: 0026dc0b-87fb-4601-bec7-31e69b9ac5ae
+langcode: da
+status: true
+dependencies: {  }
+name: slick_item
+label: 'Slick item (188х289)'
+effects:
+  ae036559-cd2c-45cf-9a28-9d1fedd74a0d:
+    uuid: ae036559-cd2c-45cf-9a28-9d1fedd74a0d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 188
+      height: 289
+      anchor: center-center
+pipeline: compress

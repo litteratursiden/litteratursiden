@@ -1,0 +1,31 @@
+uuid: 68010af5-a439-430d-95a8-da0f5fd5d5be
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c8927a8e-76e2-4014-81ab-c6514f893e83'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenstorepersonlighederihistorien
+theme: litteratursiden
+region: content
+weight: 89
+provider: null
+plugin: 'block_content:c8927a8e-76e2-4014-81ab-c6514f893e83'
+settings:
+  id: 'block_content:c8927a8e-76e2-4014-81ab-c6514f893e83'
+  label: 'Indgår i boglisten: Store personligheder i historien'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fugt-din-aske\r\n/boeger/det-bla-lys-0\r\n/boeger/lille-wienervals\r\n/boeger/goulds-bog-om-fisk\r\n/boeger/jupiters-time\r\n/boeger/fribytteren-0\r\n/boeger/tunnelmageren\r\n/boeger/opmalingen-af-verden\r\n/boeger/det-periodiske-system\r\n/boeger/einsteins-dromme\r\n/boeger/wolf-hall\r\n/boeger/madame-mao\r\n/boeger/kongens-komediant\r\n/boeger/lisinka\r\n/boeger/elske\r\n/boeger/verdenssamleren\r\n/boeger/professoren-og-galningen"
+    negate: false
+    context_mapping: {  }

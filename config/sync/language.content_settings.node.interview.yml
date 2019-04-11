@@ -1,0 +1,11 @@
+uuid: f7c7bf8d-bba7-453c-8bd5-4b478a00fac9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.interview
+id: node.interview
+target_entity_type_id: node
+target_bundle: interview
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: 6425667f-27a8-480e-812d-ff758362e013
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:153681f6-70b4-408e-9c4b-ceb82befa50e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennytfrausa
+theme: litteratursiden
+region: content
+weight: 232
+provider: null
+plugin: 'block_content:153681f6-70b4-408e-9c4b-ceb82befa50e'
+settings:
+  id: 'block_content:153681f6-70b4-408e-9c4b-ceb82befa50e'
+  label: 'Indgår i boglisten: Nyt fra USA'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/tavshedens-smerte\r\n/boeger/tyvenes\r\n/boeger/en-fortaelling-om-glemme\r\n/boeger/stormen-udenfor\r\n/boeger/oscar-wao-hans-korte-og-forunderlige-liv\r\n/boeger/sum\r\n/boeger/hvad-er-dette-hvad\r\n/boeger/ministeriet-specielle-anliggender\r\n/boeger/max-tivoli\r\n/boeger/abehuset\r\n/boeger/vand-til-elefanterne\r\n/boeger/de-sma-ting\r\n/boeger/den-naeste-verden\r\n/boeger/det-store-hus\r\n/boeger/en-helt-almindelig-han\r\n/boeger/midt-imellem\r\n/boeger/udvalgte-vaerker-af-ts-spivet-vest-rejsen-ost\r\n/boeger/gulddreng-smaragdpige\r\n/boeger/de-hjemlose-0\r\n/boeger/escortchaufforen\r\n/boeger/en-forsvindens-anatomi\r\n/boeger/maendenes-land\r\n/boeger/hvordan-man-tyder-luften\r\n/boeger/tigerens-kone\r\n/boeger/borgmesterens-tunge\r\n/boeger/aften-hele-dagen\r\n/boeger/absurdistan\r\n/boeger/super-sorgelig-sand-kaerlighedshistorie\r\n/boeger/en-kvinde-tre-maend-og-en-psykolog\r\n/boeger/alting-plyndret-alting-braendt\r\n/boeger/om-spise-dyr\r\n/boeger/amerika-under-huden-et-roadtrip\r\n/boeger/historier-om-amerika\r\n/boeger/min-amerikanske-drom\r\n/boeger/med-jacob-holdt-i-amerika\r\n/boeger/new-york-0\r\n/boeger/come-america"
+    negate: false
+    context_mapping: {  }

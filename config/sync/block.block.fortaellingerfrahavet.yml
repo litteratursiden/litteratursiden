@@ -1,0 +1,31 @@
+uuid: 9e1b0088-d39e-46c7-a2e5-d194114cbfb6
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:d038da37-4083-4be6-bf7f-502d4219408b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: fortaellingerfrahavet
+theme: litteratursiden
+region: content
+weight: 603
+provider: null
+plugin: 'block_content:d038da37-4083-4be6-bf7f-502d4219408b'
+settings:
+  id: 'block_content:d038da37-4083-4be6-bf7f-502d4219408b'
+  label: 'Indgår i tema'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/mikkel-beha-erichsen-og-litteraturen\r\n/artikler/litteraturen-og-havet\r\n/lister/gamle-sofortaellinger\r\n/artikler/troels-klovedal-og-litteraturen"
+    negate: false
+    context_mapping: {  }

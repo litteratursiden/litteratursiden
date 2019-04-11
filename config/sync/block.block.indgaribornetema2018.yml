@@ -1,0 +1,31 @@
+uuid: 551d1d93-cc9a-429e-bf8f-7ed8507df2b1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:77353b66-ab28-4436-8cc7-ba7c9fd2b23a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgaribornetema2018
+theme: litteratursiden
+region: content
+weight: 473
+provider: null
+plugin: 'block_content:77353b66-ab28-4436-8cc7-ba7c9fd2b23a'
+settings:
+  id: 'block_content:77353b66-ab28-4436-8cc7-ba7c9fd2b23a'
+  label: 'Indgår i børnetema 2018'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/international-litteraturfestival-born-og-unge\r\n/artikler/bornenes-bogpris-2018"
+    negate: false
+    context_mapping: {  }

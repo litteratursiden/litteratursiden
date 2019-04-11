@@ -1,0 +1,31 @@
+uuid: 14bf3e51-4c52-4cd0-8db0-6c73a661d1b5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:31a796a1-fe5c-4596-8ea2-a94a95c4bf79'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: jonathansafranfoer_2
+theme: litteratursiden
+region: content
+weight: 677
+provider: null
+plugin: 'block_content:31a796a1-fe5c-4596-8ea2-a94a95c4bf79'
+settings:
+  id: 'block_content:31a796a1-fe5c-4596-8ea2-a94a95c4bf79'
+  label: Artikel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/jonathan-safran-foer
+    negate: false
+    context_mapping: {  }

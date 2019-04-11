@@ -1,0 +1,31 @@
+uuid: 9bf5bbe9-501b-43df-adc8-7003110176d9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:93f861cc-0c72-4737-958c-32c92271a065'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistentelefonenringer
+theme: litteratursiden
+region: content
+weight: 170
+provider: null
+plugin: 'block_content:93f861cc-0c72-4737-958c-32c92271a065'
+settings:
+  id: 'block_content:93f861cc-0c72-4737-958c-32c92271a065'
+  label: 'Indgår i boglisten: Telefonen ringer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/froken-klokken\r\n/boeger/manden-i-telefonen\r\n/boeger/telefon-om-sondagen\r\n/boeger/telefon-til-afdode\r\n/boeger/telefon\r\n/boeger/geim\r\n/boeger/puls\r\n/boeger/jeg-har-dit-nummer\r\n/boeger/traekopfuglens-kronike\r\n/boeger/fluen-og-evigheden\r\n/boeger/kettys-blues\r\n/boeger/altid-om-lordagen\r\n/boeger/en-enkelt-afbrydelse\r\n/boeger/den-niende-kreds\r\n/boeger/skadestuen"
+    negate: false
+    context_mapping: {  }

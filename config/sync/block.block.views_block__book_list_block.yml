@@ -1,0 +1,31 @@
+uuid: ddca42cc-0862-4323-a676-c057dc575d37
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.book_list
+  module:
+    - system
+    - views
+  theme:
+    - litteratursiden
+id: views_block__book_list_block
+theme: litteratursiden
+region: content
+weight: 5
+provider: null
+plugin: 'views_block:book_list-book_list_block'
+settings:
+  id: 'views_block:book_list-book_list_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

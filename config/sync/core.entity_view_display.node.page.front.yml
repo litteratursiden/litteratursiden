@@ -1,0 +1,35 @@
+uuid: 0c118776-48c4-4266-881e-fd7dfce24547
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.front
+    - field.field.node.page.body
+    - node.type.page
+  module:
+    - text
+    - user
+id: node.page.front
+targetEntityType: node
+bundle: page
+mode: front
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 0
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  social_media: true

@@ -1,0 +1,31 @@
+uuid: ba94823c-48d0-46cf-a44f-5c5e16ad7aef
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:982484fe-dd75-4911-9fbd-1ce5b6a42462'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendanskekvindestemmeranno20152016
+theme: litteratursiden
+region: content
+weight: 388
+provider: null
+plugin: 'block_content:982484fe-dd75-4911-9fbd-1ce5b6a42462'
+settings:
+  id: 'block_content:982484fe-dd75-4911-9fbd-1ce5b6a42462'
+  label: 'Indgår i boglisten: Danske kvindestemmer anno 2015/2016'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/ulvekvinten\r\n/boeger/italiensvej\r\n/boeger/stormskader\r\n/boeger/alene-hjemme-0\r\n/boeger/folkets-skonhed\r\n/boeger/kvinderne-fra-thy\r\n/boeger/pa-traek-0\r\n/boeger/en-ny-tid\r\n/boeger/new-forest\r\n/boeger/mor-0\r\n/boeger/karensminde\r\n/boeger/spejl-skulder-blink\r\n/boeger/lejlighedssange\r\n/boeger/uforudsete-haendelser\r\n/boeger/som-om\r\n/boeger/fordi\r\n/boeger/ildens-dogn\r\n/boeger/erindring-om-kaerligheden\r\n/boeger/mado\r\n/boeger/naer-og-fjern-0"
+    negate: false
+    context_mapping: {  }

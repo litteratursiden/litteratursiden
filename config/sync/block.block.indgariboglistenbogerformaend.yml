@@ -1,0 +1,31 @@
+uuid: 1134951e-15f2-4a25-85bd-abb0e27f4891
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:72ee012c-0953-4659-8d45-31686b9989c8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbogerformaend
+theme: litteratursiden
+region: content
+weight: 841
+provider: null
+plugin: 'block_content:72ee012c-0953-4659-8d45-31686b9989c8'
+settings:
+  id: 'block_content:72ee012c-0953-4659-8d45-31686b9989c8'
+  label: 'Indgår i boglisten: Bøger for mænd'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/beskyttelseszonen\r\n/boeger/medskyld\r\n/boeger/doden-korer-audi\r\n/boeger/hestehoved-tagen\r\n/boeger/tysk-mesterskab\r\n/boeger/den-der-bliver-tilbage-har-ret\r\n/boeger/stormen-udenfor\r\n/boeger/en-pige-og-en-dreng\r\n/boeger/william-sidis-perfekte-liv\r\n/boeger/ild-og-blod\r\n/boeger/slagtebaenk-dybbol\r\n/boeger/dommedag-als\r\n/boeger/en-regnbue-af-glas\r\n/boeger/begyndere\r\n/boeger/stemte-ser\r\n/boeger/pa-udkig-efter-hemingway\r\n/boeger/patriarkens-haendelige-dod\r\n/boeger/moonwalk-med-einstein\r\n/boeger/canada\r\n/boeger/claus-bo-larsen\r\n/boeger/vildnisset-0\r\n/boeger/alle-de-brugte-dage\r\n/boeger/i-stalstormen\r\n/boeger/221163\r\n/boeger/min-kamp-1-bog\r\n/boeger/sos-wilhelm-gustloff\r\n/boeger/kongekabale\r\n/boeger/lev-om-natten\r\n/boeger/mallos-0\r\n/boeger/oproret-0\r\n/boeger/doppler\r\n/boeger/kennedys-hjerne\r\n/boeger/tudors-historien-om-europas-mest-berygtede-kongehus\r\n/boeger/jerusalem-0\r\n/boeger/new-york-karma\r\n/boeger/jeg-naegter-0\r\n/boeger/de-ufuldkomne\r\n/boeger/i-tider-med-aftagende-lys\r\n/boeger/andernes-rige\r\n/boeger/golden-boys\r\n/boeger/nowhere-kid\r\n/boeger/hippie-1-tre-ar-og-74-dage-der-forandrede-danmark\r\n/boeger/hippie-2-den-sidste-sommer\r\n/boeger/tyskerens-landsby-0\r\n/boeger/slagtehal-fem\r\n"
+    negate: false
+    context_mapping: {  }

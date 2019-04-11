@@ -1,0 +1,28 @@
+uuid: c30a491d-1d87-471b-b170-996f38f5439d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_generel_tags
+    - node.type.review
+    - taxonomy.vocabulary.general_tags
+id: node.review.field_review_generel_tags
+field_name: field_review_generel_tags
+entity_type: node
+bundle: review
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      general_tags: general_tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

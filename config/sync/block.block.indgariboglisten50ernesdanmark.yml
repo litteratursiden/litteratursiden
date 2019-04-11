@@ -1,0 +1,31 @@
+uuid: 1ddc0b20-36ba-462b-9f60-4ab9440dc73c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:9eae3a4e-fc71-4bd3-8638-b10aaf68ac38'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten50ernesdanmark
+theme: litteratursiden
+region: content
+weight: 65
+provider: null
+plugin: 'block_content:9eae3a4e-fc71-4bd3-8638-b10aaf68ac38'
+settings:
+  id: 'block_content:9eae3a4e-fc71-4bd3-8638-b10aaf68ac38'
+  label: 'Indgår i boglisten: 50''ernes Danmark'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/slutspillet\r\n/boeger/det-er-tilladt-smile\r\n/boeger/af-jord\r\n/boeger/klassen-0\r\n/boeger/guldbaeltet\r\n/boeger/lido\r\n/boeger/det-halve-barn\r\n/boeger/rakkerpakhuset\r\n/boeger/en-saga-blot\r\n/boeger/hverdage\r\n/boeger/ej-sa-svaert\r\n/boeger/den-forelskede-unge\r\n/boeger/cicerones-datter\r\n/boeger/vandspejlet-0\r\n/boeger/johnny-hurrycanes\r\n/boeger/evig-troskab\r\n/boeger/i-sjaelens-spejl\r\n/boeger/anna-oceania\r\n/boeger/bare-vi-har-hinanden\r\n/boeger/lille-jonna\r\n/boeger/magtens-folk\r\n/boeger/saerlige-vilkar"
+    negate: false
+    context_mapping: {  }

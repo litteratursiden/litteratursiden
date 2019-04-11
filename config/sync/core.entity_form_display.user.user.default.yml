@@ -1,0 +1,97 @@
+uuid: 3ca72a64-4d3c-4c35-8553-4c0c04379790
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_user_birth
+    - field.field.user.user.field_user_body
+    - field.field.user.user.field_user_full_name
+    - field.field.user.user.field_user_homepage
+    - field.field.user.user.field_user_picture
+    - image.style.avatar
+  module:
+    - datetime
+    - image_widget_crop
+    - link
+    - path
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_user_birth:
+    weight: 8
+    settings:
+      date_order: DMY
+      time_type: none
+      increment: 15
+    third_party_settings: {  }
+    type: datetime_datelist
+    region: content
+  field_user_body:
+    weight: 10
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_user_full_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_user_homepage:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_user_picture:
+    weight: 11
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: avatar
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - user_profile_image
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  language:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  timezone:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

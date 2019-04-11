@@ -1,0 +1,31 @@
+uuid: 91c6d5c6-00ce-49de-8f2b-f8a9b342bdf4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:73fe218e-2283-466f-ac12-21208a12b8d3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennovellernaturligvis
+theme: litteratursiden
+region: content
+weight: 295
+provider: null
+plugin: 'block_content:73fe218e-2283-466f-ac12-21208a12b8d3'
+settings:
+  id: 'block_content:73fe218e-2283-466f-ac12-21208a12b8d3'
+  label: 'Indgår i boglisten: Noveller naturligvis'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vinternoveller\r\n/boeger/banedanmark\r\n/boeger/postkort-til-annie\r\n/boeger/meget-lykke\r\n/boeger/mount-kobenhavn\r\n/boeger/han-danser-pa-sin-sons-grav-syv-noveller\r\n/boeger/nu-er-vi-sa-her\r\n/boeger/jeg-ville-onske-der-var-en-der-ventede-pa-mig-et-eller-andet-sted\r\n/boeger/mellem-venner-3\r\n/boeger/bavian\r\n/boeger/radiator-noveller\r\n/boeger/saere-historier\r\n/boeger/forvandlingen-0\r\n/boeger/velsignelser\r\n/boeger/samlede-noveller-3\r\n/boeger/en-landsbydegns-dagbog-forord-af-ida-jessen"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: 5a57cfe2-00fd-4535-b27a-dd105081bb04
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: book_debate
+label: 'Book debate'
+type: 'canonical_entities:node'
+pattern: 'debat/[node:title]'
+selection_criteria:
+  266b77e9-0fd2-41df-99ae-46cc1d30e3f7:
+    id: node_type
+    bundles:
+      book_debate: book_debate
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 266b77e9-0fd2-41df-99ae-46cc1d30e3f7
+selection_logic: and
+weight: -9
+relationships: {  }

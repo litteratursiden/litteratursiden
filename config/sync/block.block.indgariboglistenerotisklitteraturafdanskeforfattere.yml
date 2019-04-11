@@ -1,0 +1,31 @@
+uuid: 7fe34553-cd6c-48db-83da-8b74a2e009bc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:607ae678-b9aa-4af1-a4d5-fc0de045e94d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenerotisklitteraturafdanskeforfattere
+theme: litteratursiden
+region: content
+weight: 421
+provider: null
+plugin: 'block_content:607ae678-b9aa-4af1-a4d5-fc0de045e94d'
+settings:
+  id: 'block_content:607ae678-b9aa-4af1-a4d5-fc0de045e94d'
+  label: 'Indgår i boglisten: Erotisk litteratur - af danske forfattere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/sloret-eventyrdigt\r\n/boeger/smerten-selv\r\n/boeger/smagen-af-dig\r\n/boeger/det-blode-punkt\r\n/boeger/blot-til-lyst-0\r\n/boeger/udfordringen-0\r\n/boeger/proverummet\r\n/boeger/sicilien-sitrer\r\n/boeger/sexdronning\r\n/boeger/horisontale-historier\r\n/boeger/k-erotiske-noveller-af-kvinder\r\n/boeger/hallerne\r\n/boeger/kys-nr\r\n/boeger/kontrakten\r\n/boeger/lysten\r\n/boeger/m-erotiske-noveller-af-maend\r\n/boeger/ellevild\r\n/boeger/romerske-fantasier\r\n/boeger/libido\r\n/boeger/saft\r\n/boeger/anelser\r\n/boeger/et-kod\r\n/boeger/bloksbjerg\r\n/boeger/himmelfalden\r\n/boeger/360deg\r\n/boeger/de-elskende-0\r\n/boeger/vidunderlige-skam\r\n/boeger/de-elskende-0\r\n/boeger/sukker\r\n/boeger/absolute-beginners\r\n/boeger/absolute-lovers\r\n/boeger/ror-mig"
+    negate: false
+    context_mapping: {  }

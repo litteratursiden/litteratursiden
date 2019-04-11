@@ -1,0 +1,31 @@
+uuid: 33484cfc-1074-4e7f-95cf-e8107ab0b44c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:65b5b6e8-3aa7-4dad-8669-b6d1c1ffc243'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgaritemasherlock
+theme: litteratursiden
+region: content
+weight: 686
+provider: null
+plugin: 'block_content:65b5b6e8-3aa7-4dad-8669-b6d1c1ffc243'
+settings:
+  id: 'block_content:65b5b6e8-3aa7-4dad-8669-b6d1c1ffc243'
+  label: 'Indgår i tema: NO SHIT, SHERLOCK! '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/arthur-conan-doyle
+    negate: false
+    context_mapping: {  }

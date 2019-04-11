@@ -1,0 +1,31 @@
+uuid: 5492473b-d5f4-4f9d-9364-4ee2e024a86a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d40f7ac1-d156-414c-b059-094b282f597a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forening_2
+theme: litteratursiden
+region: content
+weight: 915
+provider: null
+plugin: 'block_content:d40f7ac1-d156-414c-b059-094b282f597a'
+settings:
+  id: 'block_content:d40f7ac1-d156-414c-b059-094b282f597a'
+  label: Forening
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /om-litteratursiden
+    negate: false
+    context_mapping: {  }

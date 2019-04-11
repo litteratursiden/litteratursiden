@@ -1,0 +1,31 @@
+uuid: d45540c9-ab49-4378-a92d-2f462f50e506
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:fc9c27ce-7f4c-42fc-b1c2-b7ecfdcf2d99'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: manedenstemaaretsbedsteboger2018_3
+theme: litteratursiden
+region: content
+weight: 884
+provider: null
+plugin: 'block_content:fc9c27ce-7f4c-42fc-b1c2-b7ecfdcf2d99'
+settings:
+  id: 'block_content:fc9c27ce-7f4c-42fc-b1c2-b7ecfdcf2d99'
+  label: 'Indgår i'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/arets-bedste-romaner-og-noveller-2018\r\n/lister/arets-bedste-lyrik-2018\r\n/artikler/der-er-altid-mere-arets-boghost-udsat-mejetaersker-og-straforkorter\r\n/artikler/staerke-kandidater-til-dr-romanprisen-2019"
+    negate: false
+    context_mapping: {  }

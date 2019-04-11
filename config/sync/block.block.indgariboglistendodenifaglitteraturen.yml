@@ -1,0 +1,31 @@
+uuid: e292b1cf-3ee7-4d32-b24a-6ac97937bfb8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c14409ab-b949-487a-8040-62f304ea61c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendodenifaglitteraturen
+theme: litteratursiden
+region: content
+weight: 416
+provider: null
+plugin: 'block_content:c14409ab-b949-487a-8040-62f304ea61c6'
+settings:
+  id: 'block_content:c14409ab-b949-487a-8040-62f304ea61c6'
+  label: 'Indgår i boglisten: Døden - i faglitteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/det-ender-godt\r\n/boeger/gennem-sorgen-en-kaerlighedshistorie\r\n/boeger/rejse-sig-efter-en-rystelse\r\n/boeger/bla-timer\r\n/boeger/bliver-jeg-glad-igen\r\n/boeger/sorgbogen\r\n/boeger/vil-du-leve-til-du-dor\r\n/boeger/nar-vi-skal-do\r\n/boeger/ventevaerelset\r\n/boeger/sa-er-thomas-vaek-om-miste-en-aegtefaelle-og-meget-mere-end-det\r\n/boeger/vi-er-her-endnu\r\n/boeger/min-mor-er-dod\r\n/boeger/kaere-parorende\r\n/boeger/vi-ses-i-morgen-0\r\n/boeger/den-fortrolige-dod\r\n/boeger/doden-naer-0\r\n/boeger/du-er-ikke-alene-0\r\n/boeger/da-marie-dode-mosaik-om-en-14-arig\r\n/boeger/min-mand-dode-min-kone-dode\r\n/boeger/mit-barn-dode-25-foraeldre-skriver-om-miste-et-barn\r\n/boeger/livet-doden\r\n/boeger/jeg-skulle-have-sagt-jeg-elsker-dig\r\n/boeger/efter-sara\r\n/boeger/himmelmor\r\n/boeger/born-om-mors-og-fars-dod\r\n/boeger/min-soster-dode-min-bror-dode\r\n/boeger/hospice-dage\r\n/boeger/stille-dod\r\n/boeger/kaerligst\r\n/boeger/jeg-gar-i-mine-fars-stovler\r\n/boeger/de-5-ting-doende-fortryder-mest"
+    negate: false
+    context_mapping: {  }

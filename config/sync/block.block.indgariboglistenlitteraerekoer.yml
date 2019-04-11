@@ -1,0 +1,31 @@
+uuid: 1f960345-a584-40c6-9bbc-2987ff7ba206
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:4c704ba7-f36e-4e1b-9eb3-6761010a9d82'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraerekoer
+theme: litteratursiden
+region: content
+weight: 558
+provider: null
+plugin: 'block_content:4c704ba7-f36e-4e1b-9eb3-6761010a9d82'
+settings:
+  id: 'block_content:4c704ba7-f36e-4e1b-9eb3-6761010a9d82'
+  label: 'Indgår i boglisten: Litterære køer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/syge-koer\r\n/boeger/stalins-koer\r\n/boeger/som-det-ligger\r\n/boeger/med-plads-til-hundrede-koer\r\n/boeger/i-forlaengelse-af-koens-horn\r\n/boeger/himmelkoen\r\n/boeger/patterson-sort-ko-hvid-maelk\r\n/boeger/maelkemanden-tewje\r\n/boeger/et-glas-maelk-tak\r\n/boeger/brunstkalenderen\r\n/boeger/knivsaeg-0\r\n/boeger/frygtelig-lykkelig-roman\r\n/boeger/tyren-ferdinand\r\n/boeger/farmerhjerte\r\n/boeger/serpentine"
+    negate: false
+    context_mapping: {  }

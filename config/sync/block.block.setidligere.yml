@@ -1,0 +1,31 @@
+uuid: 13b0f4cc-628d-4532-acad-e2d08f98ad0c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:012617a9-f93b-4d20-bfa8-e78d711db17f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: setidligere
+theme: litteratursiden
+region: content
+weight: 935
+provider: null
+plugin: 'block_content:012617a9-f93b-4d20-bfa8-e78d711db17f'
+settings:
+  id: 'block_content:012617a9-f93b-4d20-bfa8-e78d711db17f'
+  label: 'Årets litteraturformidler 2017'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/blixenpris-til-arets-bedste-litteraturformidler
+    negate: false
+    context_mapping: {  }

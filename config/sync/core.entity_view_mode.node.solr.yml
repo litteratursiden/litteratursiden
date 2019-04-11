@@ -1,0 +1,10 @@
+uuid: ce2947ed-df4b-4944-861f-01568ce35bd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.solr
+label: Solr
+targetEntityType: node
+cache: true

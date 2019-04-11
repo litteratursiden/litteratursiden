@@ -1,0 +1,25 @@
+uuid: e8b2d9a1-b51d-464d-a47d-5f5c851e3c8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.similar_content_tabs
+    - field.storage.block_content.field_similar_content_bg
+  module:
+    - color_field
+id: block_content.similar_content_tabs.field_similar_content_bg
+field_name: field_similar_content_bg
+entity_type: block_content
+bundle: similar_content_tabs
+label: Background
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#3a3b3d'
+    opacity: '1'
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

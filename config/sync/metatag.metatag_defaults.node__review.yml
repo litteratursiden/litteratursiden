@@ -1,0 +1,8 @@
+uuid: c761cdad-524d-4fe0-9688-fb4fd668b8fb
+langcode: da
+status: true
+dependencies: {  }
+id: node__review
+label: 'Indhold: Anmeldelse'
+tags:
+  og_description: '[node:field_review_body]'

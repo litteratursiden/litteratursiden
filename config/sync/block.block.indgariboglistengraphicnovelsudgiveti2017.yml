@@ -1,0 +1,31 @@
+uuid: f0510294-4dba-4c21-ad84-091de69dc9c5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f6e736b9-391d-48d3-bf69-53f912ce251d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengraphicnovelsudgiveti2017
+theme: litteratursiden
+region: content
+weight: 476
+provider: null
+plugin: 'block_content:f6e736b9-391d-48d3-bf69-53f912ce251d'
+settings:
+  id: 'block_content:f6e736b9-391d-48d3-bf69-53f912ce251d'
+  label: 'Indgår i boglisten: Graphic novels udgivet i 2017'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fuck-facebook\r\n/boeger/alena\r\n/boeger/atomvinterborn\r\n/boeger/skaebnemageren\r\n/boeger/ekstraordinaere-rejser-i-tid-og-rum-et-hyldestalbum-med-linda-og-valentin\r\n/boeger/overlober-0\r\n/boeger/forvandlingen-graphic-novel\r\n/boeger/den-sidste-gode-mand-graphic-novel\r\n/boeger/hver-dag-starter-det-forfra-en-slags-graphic-novel\r\n/boeger/styrelsen\r\n/boeger/martin\r\n/boeger/metrozone\r\n/boeger/lovinden-et-portraet\r\n/boeger/morkets-skonhed"
+    negate: false
+    context_mapping: {  }

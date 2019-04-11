@@ -1,0 +1,263 @@
+uuid: 3c21749d-ed84-46dc-95d8-0922e049060c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.book.field_book_author
+    - field.field.node.book.field_book_body
+    - field.field.node.book.field_book_comments
+    - field.field.node.book.field_book_cover_image
+    - field.field.node.book.field_book_debates
+    - field.field.node.book.field_book_general_tags
+    - field.field.node.book.field_book_graphic
+    - field.field.node.book.field_book_isbn
+    - field.field.node.book.field_book_language
+    - field.field.node.book.field_book_literature_type
+    - field.field.node.book.field_book_number_of_pages
+    - field.field.node.book.field_book_old_library_key
+    - field.field.node.book.field_book_original_title
+    - field.field.node.book.field_book_pid
+    - field.field.node.book.field_book_published_year
+    - field.field.node.book.field_book_publisher
+    - field.field.node.book.field_book_reference_author
+    - field.field.node.book.field_book_secondary_title
+    - field.field.node.book.field_book_spotbox_image
+    - field.field.node.book.field_book_subject_number
+    - field.field.node.book.field_book_translater
+    - image.style.book_cover
+    - node.type.book
+  module:
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_additional_info:
+      children:
+        - group_book_review
+        - group_book_analysis
+        - group_book_details
+      parent_name: ''
+      weight: 12
+      format_type: accordion
+      format_settings:
+        label: 'Additional info'
+        effect: none
+        id: book-additional-info
+        classes: book-additional-info
+      label: 'Additional info'
+    group_book_details:
+      children:
+        - field_book_secondary_title
+        - field_book_publisher
+        - field_book_translater
+        - field_book_old_library_key
+        - field_book_graphic
+        - field_book_isbn
+        - field_book_number_of_pages
+      parent_name: group_additional_info
+      weight: 11
+      format_type: accordion_item
+      format_settings:
+        label: 'Book details'
+        formatter: closed
+        id: book-additional-info-details
+        classes: book-details
+      label: 'Book details'
+    group_book_review:
+      children:
+        - latest_review
+      parent_name: group_additional_info
+      weight: 9
+      format_type: accordion_item
+      format_settings:
+        label: Review
+        formatter: closed
+        id: book-additional-info-review
+        classes: book-review
+      label: Review
+    group_book_analysis:
+      children:
+        - latest_analysis
+      parent_name: group_additional_info
+      weight: 10
+      format_type: accordion_item
+      format_settings:
+        label: Analysis
+        formatter: closed
+        id: book-additional-info-analysis
+        classes: book-analysis
+      label: Analysis
+id: node.book.default
+targetEntityType: node
+bundle: book
+mode: default
+content:
+  field_bibliotekdk:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_book_author:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_book_body:
+    weight: 10
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_book_cover_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: book_cover
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_book_general_tags:
+    weight: 11
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_book_graphic:
+    type: string
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_book_isbn:
+    type: string
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_book_number_of_pages:
+    type: number_integer
+    weight: 11
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_book_old_library_key:
+    type: string
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_book_original_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_book_published_year:
+    weight: 4
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_book_publisher:
+    type: string
+    weight: 6
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_book_reference_author:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_book_secondary_title:
+    type: string
+    weight: 4
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_book_translater:
+    type: string
+    weight: 7
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_like:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  latest_analysis:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  latest_revew:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  latest_review:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  social_media:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_book_comments: true
+  field_book_debates: true
+  field_book_language: true
+  field_book_literature_type: true
+  field_book_pid: true
+  field_book_spotbox_image: true
+  field_book_subject_number: true
+  flag_notifications: true
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true

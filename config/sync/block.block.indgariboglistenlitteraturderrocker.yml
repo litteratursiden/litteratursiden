@@ -1,0 +1,31 @@
+uuid: 4e79e89e-cdee-4aec-8838-9bc6bd3e29e7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:49a4830e-cadb-499b-a2d2-612fd115c308'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraturderrocker
+theme: litteratursiden
+region: content
+weight: 547
+provider: null
+plugin: 'block_content:49a4830e-cadb-499b-a2d2-612fd115c308'
+settings:
+  id: 'block_content:49a4830e-cadb-499b-a2d2-612fd115c308'
+  label: 'Indgår i boglisten: Litteratur, der rocker'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/flugten-1\r\n/boeger/shotgun-lovesongs\r\n/boeger/beatles\r\n/boeger/vernon-subutex\r\n/boeger/taeskeholdet-banker-pa\r\n/boeger/lykkens-land\r\n/boeger/beatlemanifestet\r\n/boeger/honsehunde\r\n/boeger/high-fidelity\r\n/boeger/juliet-nogen\r\n/boeger/ukulele-jam\r\n/boeger/populaermusik-fra-vittula\r\n/boeger/kettys-blues\r\n/boeger/27-eller-doden-skaber-kunstneren\r\n/boeger/nowhere-kid\r\n/boeger/den-femte-beatle"
+    negate: false
+    context_mapping: {  }

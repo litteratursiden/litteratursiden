@@ -1,0 +1,19 @@
+uuid: 80b52d96-5773-408c-80c6-dd339e47830b
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_topic_link_external
+field_name: field_topic_link_external
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

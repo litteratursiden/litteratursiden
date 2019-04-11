@@ -1,0 +1,31 @@
+uuid: f9583406-acc8-4dd9-9057-8b36fc1aeeae
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:fcad6156-2478-4688-a148-fc48138529c3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfraburnstilrankinnedslagiskotsklitteratur
+theme: litteratursiden
+region: content
+weight: 456
+provider: null
+plugin: 'block_content:fcad6156-2478-4688-a148-fc48138529c3'
+settings:
+  id: 'block_content:fcad6156-2478-4688-a148-fc48138529c3'
+  label: 'Indgår i boglisten: Fra Burns til Rankin - nedslag i skotsk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/hvornar-kommer-der-en-god-nyhed\r\n/boeger/medskyld\r\n/boeger/engang-en-sommer\r\n/boeger/stormvarsel-0\r\n/boeger/outlander-den-engelske-kvinde\r\n/boeger/outlander-guldsmed-i-rav\r\n/boeger/de-forsvundne-og-de-dode\r\n/boeger/hilsner-fra-de-dode\r\n/boeger/filosofisk-sondagsklub\r\n/boeger/forlosning\r\n/boeger/gamle-fjender\r\n/boeger/vilde-kotere\r\n/boeger/glasgow-kysset\r\n/boeger/kidnappet\r\n/boeger/catriona\r\n/boeger/ligroverne\r\n/boeger/i-den-kolde-jord\r\n/boeger/afskum\r\n/boeger/det-skjulte-rum\r\n/boeger/kongerige\r\n/boeger/overlober\r\n"
+    negate: false
+    context_mapping: {  }

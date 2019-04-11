@@ -1,0 +1,31 @@
+uuid: 4b5467cc-d92e-45d5-ad39-06458d96c475
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:cc1bda3a-4c55-43ec-8dd7-e97b081a8751'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: aretsbedstelitteraturformidlere_2
+theme: litteratursiden
+region: content
+weight: 313
+provider: null
+plugin: 'block_content:cc1bda3a-4c55-43ec-8dd7-e97b081a8751'
+settings:
+  id: 'block_content:cc1bda3a-4c55-43ec-8dd7-e97b081a8751'
+  label: 'Blixenprisen 2018'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/og-vinderen-er-klaus-rothstein-og-nanna-mogensen-skonlitteratur-pa-p1
+    negate: false
+    context_mapping: {  }

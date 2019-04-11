@@ -1,0 +1,31 @@
+uuid: 724d9400-145e-4f00-b83f-47a5074834d6
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:049764db-837e-470b-adab-9a3c638ceca4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenskak
+theme: litteratursiden
+region: content
+weight: 141
+provider: null
+plugin: 'block_content:049764db-837e-470b-adab-9a3c638ceca4'
+settings:
+  id: 'block_content:049764db-837e-470b-adab-9a3c638ceca4'
+  label: 'Indgår i boglisten: Skak'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/tyvenes\r\n/boeger/slutspillet\r\n/boeger/abningen\r\n/boeger/tagemandens-dod\r\n/boeger/skakmat-0\r\n/boeger/kandidaten-0\r\n/boeger/tabspartiet\r\n/boeger/stormesteren\r\n/boeger/en-besaettelse\r\n/boeger/skakautomaten\r\n/boeger/luneburg-varianten\r\n/boeger/det-sidste-traek\r\n/boeger/slangens-nat\r\n/boeger/de-otte\r\n/boeger/det-flamske-maleri\r\n/boeger/tyven-der-kom-til-middag\r\n/boeger/dronninggambit\r\n/boeger/skaknovelle\r\n/boeger/slaget-i-caissa\r\n/boeger/den-sorte-dronning\r\n/boeger/elfenbenselefanten"
+    negate: false
+    context_mapping: {  }

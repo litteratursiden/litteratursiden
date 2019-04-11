@@ -1,0 +1,16 @@
+uuid: aa44a0dc-d46b-4486-b719-837c818e537f
+langcode: da
+status: true
+dependencies: {  }
+name: topic_teaser
+label: 'Topic teaser (370x155)'
+effects:
+  918e9c62-83a7-4911-9fb0-4587ec2040df:
+    uuid: 918e9c62-83a7-4911-9fb0-4587ec2040df
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 370
+      height: 155
+      anchor: center-center
+pipeline: compress

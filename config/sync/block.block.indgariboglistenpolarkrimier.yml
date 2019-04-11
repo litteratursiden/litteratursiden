@@ -1,0 +1,31 @@
+uuid: 54dd4fc7-b540-46bd-9945-2da5d1ed6821
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:9d0b5231-d765-4080-a03f-0fc5268cb092'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenpolarkrimier
+theme: litteratursiden
+region: content
+weight: 216
+provider: null
+plugin: 'block_content:9d0b5231-d765-4080-a03f-0fc5268cb092'
+settings:
+  id: 'block_content:9d0b5231-d765-4080-a03f-0fc5268cb092'
+  label: 'Indgår i boglisten: POLARKRIMIER'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vinterbyen\r\n/boeger/stille-storm\r\n/boeger/de-dodes-fjord\r\n/boeger/froken-smillas-fornemmelse-sne\r\n/boeger/den-dode-i-barentsburg\r\n/boeger/som-offer-til-molok\r\n/boeger/fyrre-dage-uden-skygge\r\n/boeger/skyggerne-vender-tilbage\r\n/boeger/ulvespor\r\n/boeger/operation-hoje-nord\r\n/boeger/kulde\r\n/boeger/i-blodet"
+    negate: false
+    context_mapping: {  }

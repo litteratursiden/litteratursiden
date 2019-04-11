@@ -1,0 +1,44 @@
+uuid: 6bbe1d4b-ec9a-42d2-b1a9-78f8458e026c
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.related_books
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - litteratursiden
+id: views_block__related_books_by_author_block
+theme: litteratursiden
+region: content
+weight: 27
+provider: null
+plugin: 'views_block:related_books-related_books_by_author_block'
+settings:
+  id: 'views_block:related_books-related_books_by_author_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      analysis: analysis
+      article: article
+      author_portrait: author_portrait
+      book: book
+      interview: interview
+      review: review
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/node/*/*'
+    negate: true
+    context_mapping: {  }

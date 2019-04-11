@@ -1,0 +1,31 @@
+uuid: 02112b84-4723-4228-a0dc-a68abfc54c55
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:a5f1806c-a121-4cd0-9f7e-dc3330c2a04b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: atskrivedanskpaengelsk.omvintereventyrafkarenblixen
+theme: litteratursiden
+region: content
+weight: 941
+provider: null
+plugin: 'block_content:a5f1806c-a121-4cd0-9f7e-dc3330c2a04b'
+settings:
+  id: 'block_content:a5f1806c-a121-4cd0-9f7e-dc3330c2a04b'
+  label: 'At skrive dansk på engelsk. Om ''Vinter-Eventyr'' af Karen Blixen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vinter-eventyr\r\n/forfattere/karen-blixen"
+    negate: false
+    context_mapping: {  }

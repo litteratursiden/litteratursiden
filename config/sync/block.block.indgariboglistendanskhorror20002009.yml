@@ -1,0 +1,31 @@
+uuid: 8a61b40f-5a0a-4861-a049-503d72947ec2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:7d8f6e76-d526-4e18-a423-bd65ab9e622c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendanskhorror20002009
+theme: litteratursiden
+region: content
+weight: 370
+provider: null
+plugin: 'block_content:7d8f6e76-d526-4e18-a423-bd65ab9e622c'
+settings:
+  id: 'block_content:7d8f6e76-d526-4e18-a423-bd65ab9e622c'
+  label: 'Indgår i boglisten: Dansk horror 2000-2009'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/natskygge\r\n/boeger/host\r\n/boeger/den-gamle-biograf\r\n/boeger/kodets-afveje\r\n/boeger/sov-som-de-dode\r\n/boeger/vandringer-i-morke\r\n/boeger/kadaverjagt\r\n/boeger/abattoir\r\n/boeger/fem\r\n/boeger/professor-sterns-kontor\r\n/boeger/den-gode-amerikaner\r\n/boeger/bid-0\r\n/boeger/pontifex\r\n/boeger/hvor-skyggen-falder"
+    negate: false
+    context_mapping: {  }

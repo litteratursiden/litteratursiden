@@ -1,0 +1,23 @@
+uuid: ef9575e7-79ba-47d2-b229-d6fe0084484b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic_link_external
+    - node.type.topic
+  module:
+    - link
+id: node.topic.field_topic_link_external
+field_name: field_topic_link_external
+entity_type: node
+bundle: topic
+label: 'External links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

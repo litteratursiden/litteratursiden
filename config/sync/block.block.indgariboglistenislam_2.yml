@@ -1,0 +1,31 @@
+uuid: 6657ad5c-d17f-4568-a51f-919d6a42b83a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:0c8369f6-04cb-466b-aee9-868f9d904558'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenislam_2
+theme: litteratursiden
+region: content
+weight: 211
+provider: null
+plugin: 'block_content:0c8369f6-04cb-466b-aee9-868f9d904558'
+settings:
+  id: 'block_content:0c8369f6-04cb-466b-aee9-868f9d904558'
+  label: 'Indgår i boglisten: Islam'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/smaragdsliberen\r\n/boeger/ministeriet-den-ypperste-lykke\r\n/boeger/de-vil-drukne-i-deres-modres-tarer-roman\r\n/boeger/vores-elskede\r\n/boeger/jihad-jane-roman\r\n"
+    negate: false
+    context_mapping: {  }

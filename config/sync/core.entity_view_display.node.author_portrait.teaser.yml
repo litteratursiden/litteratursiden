@@ -1,0 +1,72 @@
+uuid: 52b458d8-410e-48d3-aa1e-77318aa8a725
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.author_portrait.field_author_portrait_body
+    - field.field.node.author_portrait.field_author_portrait_country
+    - field.field.node.author_portrait.field_author_portrait_ext_link
+    - field.field.node.author_portrait.field_author_portrait_first_name
+    - field.field.node.author_portrait.field_author_portrait_image
+    - field.field.node.author_portrait.field_author_portrait_int_links
+    - field.field.node.author_portrait.field_author_portrait_lit_type
+    - field.field.node.author_portrait.field_author_portrait_surname
+    - field.field.node.author_portrait.field_author_portrait_tags
+    - image.style.large
+    - node.type.author_portrait
+  module:
+    - image
+    - user
+id: node.author_portrait.teaser
+targetEntityType: node
+bundle: author_portrait
+mode: teaser
+content:
+  article_date:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_author_portrait_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  field_author_portrait_tags:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  social_media:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_author_portrait_body: true
+  field_author_portrait_country: true
+  field_author_portrait_ext_link: true
+  field_author_portrait_first_name: true
+  field_author_portrait_int_links: true
+  field_author_portrait_lit_type: true
+  field_author_portrait_surname: true
+  flag_bookmark: true
+  flag_like: true
+  langcode: true
+  latest_reviewed_book: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true

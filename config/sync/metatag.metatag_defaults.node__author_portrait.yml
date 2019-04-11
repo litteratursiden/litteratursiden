@@ -1,0 +1,8 @@
+uuid: 4b405f5e-4b0d-4664-a779-f7c32f1019b5
+langcode: da
+status: true
+dependencies: {  }
+id: node__author_portrait
+label: 'Indhold: Forfatter'
+tags:
+  og_description: '[node:field_author_portrait_body]'

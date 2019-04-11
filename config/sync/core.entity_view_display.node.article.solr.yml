@@ -1,0 +1,50 @@
+uuid: 6e5b6a38-2c8f-4c97-98bd-c39f0711db65
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.solr
+    - field.field.node.article.field_article_body
+    - field.field.node.article.field_article_comments
+    - field.field.node.article.field_article_cover_image
+    - field.field.node.article.field_article_general_tags
+    - field.field.node.article.field_article_internal_link
+    - field.field.node.article.field_article_link_external
+    - node.type.article
+  module:
+    - text
+    - user
+id: node.article.solr
+targetEntityType: node
+bundle: article
+mode: solr
+content:
+  field_article_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_article_general_tags:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  field_article_comments: true
+  field_article_cover_image: true
+  field_article_internal_link: true
+  field_article_link_external: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  social_media: true

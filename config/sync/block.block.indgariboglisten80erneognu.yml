@@ -1,0 +1,31 @@
+uuid: 9a83b6e5-78f1-440c-9971-293f7447bdd7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:065b1ade-1ab9-490f-b720-54fd1ca34389'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten80erneognu
+theme: litteratursiden
+region: content
+weight: 356
+provider: null
+plugin: 'block_content:065b1ade-1ab9-490f-b720-54fd1ca34389'
+settings:
+  id: 'block_content:065b1ade-1ab9-490f-b720-54fd1ca34389'
+  label: 'Indgår i boglisten: 80''erne og nu'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/handmaids-tale\r\n/boeger/flauberts-papegoje\r\n/boeger/hvid-stoj\r\n/boeger/commitments\r\n/boeger/rosens-navn\r\n/boeger/misery\r\n/boeger/blodets-meridian\r\n/boeger/watchmen\r\n/boeger/norwegian-wood\r\n/boeger/midnatsborn\r\n/boeger/turist-ved-et-tilfaelde"
+    negate: false
+    context_mapping: {  }

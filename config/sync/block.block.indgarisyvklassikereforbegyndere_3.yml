@@ -1,0 +1,31 @@
+uuid: 7523d0a9-c093-48ca-8c75-23e83dcc951f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:0a6f46d2-c087-4988-941e-6c276a3bdf6f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgarisyvklassikereforbegyndere_3
+theme: litteratursiden
+region: content
+weight: 624
+provider: null
+plugin: 'block_content:0a6f46d2-c087-4988-941e-6c276a3bdf6f'
+settings:
+  id: 'block_content:0a6f46d2-c087-4988-941e-6c276a3bdf6f'
+  label: 'Læs også: Syv klassikere for begyndere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/min-yndlingsklassiker
+    negate: false
+    context_mapping: {  }

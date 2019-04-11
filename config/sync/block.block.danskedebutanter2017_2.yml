@@ -1,0 +1,31 @@
+uuid: 8412ef51-bfae-4cf7-9216-608779c054e7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:6ea721ff-3357-49d0-a825-7ba555c231fa'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskedebutanter2017_2
+theme: litteratursiden
+region: content
+weight: 850
+provider: null
+plugin: 'block_content:6ea721ff-3357-49d0-a825-7ba555c231fa'
+settings:
+  id: 'block_content:6ea721ff-3357-49d0-a825-7ba555c231fa'
+  label: 'Indgår i boglisten: Danske debutanter 2017'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/sophia-handler
+    negate: false
+    context_mapping: {  }

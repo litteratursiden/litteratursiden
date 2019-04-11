@@ -1,0 +1,31 @@
+uuid: 74ae3ca2-5740-432c-b416-ff99c3b6864d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b6821651-42aa-405e-8623-91138cbb33e3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: fransksprogedevaerkeroguniverserpadansk
+theme: litteratursiden
+region: content
+weight: 121
+provider: null
+plugin: 'block_content:b6821651-42aa-405e-8623-91138cbb33e3'
+settings:
+  id: 'block_content:b6821651-42aa-405e-8623-91138cbb33e3'
+  label: 'Fransksprogede værker og universer på dansk'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/franske-fiktioner
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 7163ee5a-14ec-4df2-9194-0714e66a335f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ad47c45e-eeda-411f-b703-5cfb6c19f204'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: podcastomborneboger
+theme: litteratursiden
+region: content
+weight: 423
+provider: null
+plugin: 'block_content:ad47c45e-eeda-411f-b703-5cfb6c19f204'
+settings:
+  id: 'block_content:ad47c45e-eeda-411f-b703-5cfb6c19f204'
+  label: 'Podcast om børnebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

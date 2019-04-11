@@ -1,0 +1,19 @@
+uuid: d269f31c-3c8d-476b-91d1-9ce13e7bb5fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_book_reference_author
+field_name: field_book_reference_author
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: 87f29ffc-3df7-432e-a66d-bf4f1a954e9c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:88e5c3e4-b839-4b0b-931e-03879bdf73b4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbogerderforegarienboghandel
+theme: litteratursiden
+region: content
+weight: 840
+provider: null
+plugin: 'block_content:88e5c3e4-b839-4b0b-931e-03879bdf73b4'
+settings:
+  id: 'block_content:88e5c3e4-b839-4b0b-931e-03879bdf73b4'
+  label: 'Indgår i boglisten: Bøger der foregår i en boghandel'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/himlens-fange\r\n/boeger/historien-om-j-fikrys-liv\r\n/boeger/det-litteraere-apotek\r\n/boeger/den-uendelige-historie\r\n/boeger/den-rode-jord-i-mzuzu\r\n/boeger/tempelriddernes-arv\r\n/boeger/libri-di-luca\r\n/boeger/laeserne-i-broken-wheel-anbefaler\r\n/boeger/en-besynderlig-periode-i-noah-v-bjergs-liv\r\n/boeger/den-der-hvisker-lyver-0\r\n/boeger/ella-er-mit-navn-vil-du-kobe-det\r\n/boeger/saksehand\r\n/boeger/dewey-bibliotekskatten-der-aendrede-verden\r\n/boeger/dumas-klubben\r\n/boeger/storhed-og-fald\r\n/boeger/helt-skudt-i-mads-mikkelsen\r\n/boeger/kaerlighedsbrevet\r\n/boeger/hr-penumbras-dognabne-bogbutik\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,34 @@
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'https://acquiaprod.litteratursiden.dk/themes/custom/litteratursiden/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  litteratursiden: 8000
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  user_dropdown: ''
+  header: ''
+  sub_header: ''
+  highlighted: ''
+  help: ''
+  sidebar: ''
+  content: ''
+  footer: ''
+table_responsive: '-1'
+table: ''
+background_path: 'public://maren_uthaug_topbillede_0.jpg'
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: false
+logo:
+  path: ''
+  url: ''
+  use_default: true
+langcode: da

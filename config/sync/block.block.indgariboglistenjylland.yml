@@ -1,0 +1,31 @@
+uuid: c7363eb6-68d7-443c-b509-acde1ddda0aa
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:904d2478-d80c-44cd-aecb-bb9b94c4cfba'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenjylland
+theme: litteratursiden
+region: content
+weight: 509
+provider: null
+plugin: 'block_content:904d2478-d80c-44cd-aecb-bb9b94c4cfba'
+settings:
+  id: 'block_content:904d2478-d80c-44cd-aecb-bb9b94c4cfba'
+  label: 'Indgår i boglisten: Jylland'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/en-landsbydegns-dagbog-forord-af-ida-jessen\r\n/boeger/nordkraft\r\n/boeger/lido\r\n/boeger/byen-og-verden\r\n/boeger/sorg-og-camping\r\n/boeger/frygtelig-lykkelig-roman\r\n/boeger/bornene\r\n/boeger/hestenes-ojne\r\n/boeger/fiskerne\r\n/boeger/stigninger-og-fald\r\n/boeger/de-gode-mennesker-i-arhus\r\n/boeger/naeb-og-kloer\r\n/boeger/maerkedage\r\n/boeger/digterne-omkring-limfjorden\r\n/boeger/rundt-omkring\r\n"
+    negate: false
+    context_mapping: {  }

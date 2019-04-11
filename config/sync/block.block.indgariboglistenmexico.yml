@@ -1,0 +1,31 @@
+uuid: a80a92c9-9b15-4a45-acce-d1a1c36a90fa
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c4224afb-a058-4bae-a963-91903cc8e744'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenmexico
+theme: litteratursiden
+region: content
+weight: 576
+provider: null
+plugin: 'block_content:c4224afb-a058-4bae-a963-91903cc8e744'
+settings:
+  id: 'block_content:c4224afb-a058-4bae-a963-91903cc8e744'
+  label: 'Indgår i boglisten: Mexico'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/de-ni-vogtere\r\n/boeger/gonzalez-datter-transport-co-en-road-novel-med-litteraere-friheder\r\n/boeger/hjerter-i-chili\r\n/boeger/kaerlighedens-lov\r\n/boeger/inez\r\n/boeger/kristoffer-ufodt\r\n/boeger/arene-med-laura-diaz\r\n/boeger/besat-af-kaerlighed\r\n/boeger/tag-mit-liv\r\n/boeger/ensomhedens-labyrint\r\n/boeger/klarhedens-skrift\r\n/boeger/den-voldsomme-arstid\r\n/boeger/pedro-paramo\r\n/boeger/sletten-braender\r\n/boeger/mexicos-stemme"
+    negate: false
+    context_mapping: {  }

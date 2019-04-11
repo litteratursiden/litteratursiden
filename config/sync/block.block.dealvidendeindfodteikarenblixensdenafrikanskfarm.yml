@@ -1,0 +1,31 @@
+uuid: ca840700-c3aa-46e6-9607-04a2ae5da3ef
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:4f775443-9faf-43b1-a01c-d422cbb49ace'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: dealvidendeindfodteikarenblixensdenafrikanskfarm
+theme: litteratursiden
+region: content
+weight: 971
+provider: null
+plugin: 'block_content:4f775443-9faf-43b1-a01c-d422cbb49ace'
+settings:
+  id: 'block_content:4f775443-9faf-43b1-a01c-d422cbb49ace'
+  label: 'DE ALVIDENDE INDFØDTE I KAREN BLIXENS DEN AFRIKANSK FARM'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/karen-blixen
+    negate: false
+    context_mapping: {  }

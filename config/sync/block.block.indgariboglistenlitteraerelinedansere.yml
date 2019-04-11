@@ -1,0 +1,31 @@
+uuid: 11eb5827-534a-4755-a593-a8c9c8cc2e9a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e6ee7d16-0249-4804-bbe2-0945059d0177'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenlitteraerelinedansere
+theme: litteratursiden
+region: content
+weight: 559
+provider: null
+plugin: 'block_content:e6ee7d16-0249-4804-bbe2-0945059d0177'
+settings:
+  id: 'block_content:e6ee7d16-0249-4804-bbe2-0945059d0177'
+  label: 'Indgår i boglisten: Litterære linedansere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/i-glimt-0\r\n/boeger/lad-kun-verden-tumle-sig\r\n/boeger/mr-vertigo\r\n/boeger/hellige-taber\r\n/boeger/chikitin-co"
+    negate: false
+    context_mapping: {  }

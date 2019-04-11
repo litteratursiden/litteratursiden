@@ -1,0 +1,31 @@
+uuid: e44de301-3c03-49b4-8620-291b506413ca
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:be9de7de-3f27-4ee3-afe1-a0c299cf4d11'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskedebutanter20172018
+theme: litteratursiden
+region: content
+weight: 604
+provider: null
+plugin: 'block_content:be9de7de-3f27-4ee3-afe1-a0c299cf4d11'
+settings:
+  id: 'block_content:be9de7de-3f27-4ee3-afe1-a0c299cf4d11'
+  label: 'Indgår i tema '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/danske-debutanter-2017-2018\r\n"
+    negate: false
+    context_mapping: {  }

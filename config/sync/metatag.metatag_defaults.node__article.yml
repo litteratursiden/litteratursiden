@@ -1,0 +1,8 @@
+uuid: aeed93d5-6179-45d6-a667-05848c102208
+langcode: da
+status: true
+dependencies: {  }
+id: node__article
+label: 'Indhold: Artikel'
+tags:
+  og_description: '[node:field_article_body]'

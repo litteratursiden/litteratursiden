@@ -1,0 +1,31 @@
+uuid: 6328b7dc-2aec-42fc-a672-24d58e6196dd
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:a6b3abaf-ddda-4507-9f4b-272c2cf731ba'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: laessophusclaussen
+theme: litteratursiden
+region: content
+weight: 872
+provider: null
+plugin: 'block_content:a6b3abaf-ddda-4507-9f4b-272c2cf731ba'
+settings:
+  id: 'block_content:a6b3abaf-ddda-4507-9f4b-272c2cf731ba'
+  label: 'Læs Sophus Claussen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/sophus-claussen
+    negate: false
+    context_mapping: {  }

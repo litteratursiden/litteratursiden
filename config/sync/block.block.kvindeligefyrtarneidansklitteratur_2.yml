@@ -1,0 +1,31 @@
+uuid: 87c4252f-a813-41d5-8eb0-5f041df5982b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:d1baacf6-bf09-4e08-9ab4-76924c6e91e5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: kvindeligefyrtarneidansklitteratur_2
+theme: litteratursiden
+region: content
+weight: 956
+provider: null
+plugin: 'block_content:d1baacf6-bf09-4e08-9ab4-76924c6e91e5'
+settings:
+  id: 'block_content:d1baacf6-bf09-4e08-9ab4-76924c6e91e5'
+  label: 'Kvindelige fyrtårne i dansk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/agnes-henningsen\r\n/authors"
+    negate: false
+    context_mapping: {  }

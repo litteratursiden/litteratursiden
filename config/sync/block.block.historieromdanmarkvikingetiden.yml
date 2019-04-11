@@ -1,0 +1,31 @@
+uuid: b6297bf5-a3f7-4e2f-8f20-3d3cb388156c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:fb7028aa-f5e6-495d-b4b3-daa7a91d7425'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: historieromdanmarkvikingetiden
+theme: litteratursiden
+region: content
+weight: 600
+provider: null
+plugin: 'block_content:fb7028aa-f5e6-495d-b4b3-daa7a91d7425'
+settings:
+  id: 'block_content:fb7028aa-f5e6-495d-b4b3-daa7a91d7425'
+  label: 'Indgår i boglisten: Vikingetiden'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/rode-orm-12
+    negate: false
+    context_mapping: {  }

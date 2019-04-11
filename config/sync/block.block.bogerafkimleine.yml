@@ -1,0 +1,31 @@
+uuid: 95ad4a77-fe33-4466-a895-809df52f3dc9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:c7b7ae76-9661-42e1-a444-835991b6ec03'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: bogerafkimleine
+theme: litteratursiden
+region: content
+weight: 711
+provider: null
+plugin: 'block_content:c7b7ae76-9661-42e1-a444-835991b6ec03'
+settings:
+  id: 'block_content:c7b7ae76-9661-42e1-a444-835991b6ec03'
+  label: 'Bøger af Kim Leine'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/fokus-kim-leine
+    negate: false
+    context_mapping: {  }

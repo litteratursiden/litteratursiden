@@ -1,0 +1,31 @@
+uuid: f2b98cd0-f4e5-406a-aa1f-747352ae54a9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:348e87d9-95b0-48ac-ae2d-fb5b372320f2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: verdensdagforselvmordsforebyggelse
+theme: litteratursiden
+region: content
+weight: 266
+provider: null
+plugin: 'block_content:348e87d9-95b0-48ac-ae2d-fb5b372320f2'
+settings:
+  id: 'block_content:348e87d9-95b0-48ac-ae2d-fb5b372320f2'
+  label: 'Verdensdag for selvmordsforebyggelse'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<books>'
+    negate: false
+    context_mapping: {  }

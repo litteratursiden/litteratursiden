@@ -1,0 +1,31 @@
+uuid: cd249c6f-b1c6-4193-8c83-b76e64facf26
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:82ab5138-699c-44cc-bd8e-f08d7722f498'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfilmatiseredebogerommad
+theme: litteratursiden
+region: content
+weight: 441
+provider: null
+plugin: 'block_content:82ab5138-699c-44cc-bd8e-f08d7722f498'
+settings:
+  id: 'block_content:82ab5138-699c-44cc-bd8e-f08d7722f498'
+  label: 'Indgår i boglisten: Filmatiserede bøger om mad'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/babettes-gaestebud\r\n/boeger/paddington\r\n/boeger/timerne\r\n/boeger/charlie-og-chokoladefabrikken\r\n/boeger/hjerter-i-chili\r\n/boeger/stegte-gronne-tomater\r\n/boeger/spis-bed-elsk\r\n/boeger/chocolat\r\n/boeger/aeblemostreglementet\r\n/boeger/et-hus-i-toscana\r\n/boeger/hundredefodsrejsen\r\n/boeger/niceville\r\n/boeger/sideways\r\n/boeger/julie-julia-my-year-cooking-dangerously\r\n/boeger/klub-held-og-glaede\r\n\r\n"
+    negate: false
+    context_mapping: {  }

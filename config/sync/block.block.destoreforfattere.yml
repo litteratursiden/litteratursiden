@@ -1,0 +1,31 @@
+uuid: e52d4537-9677-431c-9d25-7b357e71c044
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:f33d103c-9fcc-4954-828e-0652c943ac90'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: destoreforfattere
+theme: litteratursiden
+region: content
+weight: 778
+provider: null
+plugin: 'block_content:f33d103c-9fcc-4954-828e-0652c943ac90'
+settings:
+  id: 'block_content:f33d103c-9fcc-4954-828e-0652c943ac90'
+  label: 'De store forfattere '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/de-store-forfattere-klassikerne
+    negate: false
+    context_mapping: {  }

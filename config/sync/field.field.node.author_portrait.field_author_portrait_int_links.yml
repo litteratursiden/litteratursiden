@@ -1,0 +1,46 @@
+uuid: bf102afa-e68c-48e6-81ba-4b8a79d5143d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_portrait_int_links
+    - node.type.analysis
+    - node.type.article
+    - node.type.author_portrait
+    - node.type.blog
+    - node.type.book
+    - node.type.book_list
+    - node.type.interview
+    - node.type.review
+    - node.type.similar
+    - node.type.topic
+id: node.author_portrait.field_author_portrait_int_links
+field_name: field_author_portrait_int_links
+entity_type: node
+bundle: author_portrait
+label: 'Internal links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      analysis: analysis
+      article: article
+      author_portrait: author_portrait
+      blog: blog
+      book: book
+      book_list: book_list
+      topic: topic
+      interview: interview
+      review: review
+      similar: similar
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: book
+field_type: entity_reference

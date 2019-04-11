@@ -1,0 +1,31 @@
+uuid: d156b480-bf8f-45e9-ba88-0bf27f64db02
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8ad0e471-eace-4155-aedc-67950f282759'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: vision
+theme: litteratursiden
+region: content
+weight: 920
+provider: null
+plugin: 'block_content:8ad0e471-eace-4155-aedc-67950f282759'
+settings:
+  id: 'block_content:8ad0e471-eace-4155-aedc-67950f282759'
+  label: VIsion
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /om-litteratursiden
+    negate: false
+    context_mapping: {  }

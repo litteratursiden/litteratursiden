@@ -1,0 +1,31 @@
+uuid: 94fc6612-10bc-435d-99e8-ce94c478d15e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:013eaf71-bcbf-468d-bc1b-51a9dbcf7573'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraethermanbang
+theme: litteratursiden
+region: content
+weight: 342
+provider: null
+plugin: 'block_content:013eaf71-bcbf-468d-bc1b-51a9dbcf7573'
+settings:
+  id: 'block_content:013eaf71-bcbf-468d-bc1b-51a9dbcf7573'
+  label: 'Forfatterportræt Herman Bang'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/kunstnere-i-herman-bangs-forfatterskab
+    negate: false
+    context_mapping: {  }

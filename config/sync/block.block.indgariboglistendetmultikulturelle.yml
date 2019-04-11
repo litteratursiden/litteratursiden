@@ -1,0 +1,31 @@
+uuid: 5dbca553-5a4e-4147-858f-00c7e608243b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:19cd9360-1d33-4a41-ba7c-67a40f9dba54'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendetmultikulturelle
+theme: litteratursiden
+region: content
+weight: 403
+provider: null
+plugin: 'block_content:19cd9360-1d33-4a41-ba7c-67a40f9dba54'
+settings:
+  id: 'block_content:19cd9360-1d33-4a41-ba7c-67a40f9dba54'
+  label: 'Indgår i boglisten: Det multikulturelle'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fotexsoen\r\n/boeger/americanah\r\n/boeger/det-du-har-om-halsen\r\n/boeger/alting-blinker\r\n/boeger/solvstov-og-guldstov\r\n/boeger/tavshedens-smerte\r\n/boeger/chicago\r\n/boeger/brick-lane\r\n/boeger/kun-i-london\r\n/boeger/var-det-godt\r\n/boeger/vildfarne-elskende\r\n/boeger/kald-det-hvad-fanden-du-vil\r\n/boeger/dodens-port\r\n/boeger/hjem-0\r\n/boeger/ildens-bytte-allahs-son\r\n/boeger/under-morbaertraeets-skygge\r\n/boeger/morkets-hjerte\r\n/boeger/safrankokkenet\r\n/boeger/fugle-uden-vinger\r\n/boeger/sort-te-med-tre-stykker-sukker\r\n/boeger/langt-borte-taet-pa\r\n/boeger/det-tabte-land\r\n/boeger/haver-af-vand\r\n/boeger/liberty\r\n/boeger/som-en-drabe-i-norden\r\n/boeger/tidens-uven\r\n/boeger/de-gode-graed\r\n/boeger/fuglevingen\r\n/boeger/sene-opdagelser-sma-sejre\r\n/boeger/glaspaladset\r\n/boeger/et-andet-land\r\n/boeger/kiffe-kiffe-i-morgen\r\n/boeger/white-girl\r\n/boeger/skriften-i-min-pande\r\n/boeger/den-modvillige-fundamentalist\r\n/boeger/yahya-hassan\r\n/boeger/oh-romeo\r\n/boeger/indvandreren\r\n/boeger/drageloberen\r\n/boeger/europaeerne\r\n/boeger/jakob-et-menneske-verdener\r\n/boeger/ogsa-pa-jorden\r\n/boeger/attentatet-0\r\n/boeger/som-dag-folger-nat\r\n/boeger/montecore\r\n/boeger/et-oje-rodt\r\n/boeger/saltstotten\r\n/boeger/nattens-rygrad\r\n/boeger/en-forstadsbuddha\r\n/boeger/gabriels-gave\r\n/boeger/det-sorte-album\r\n/boeger/navnefaellen\r\n/boeger/tolken\r\n/boeger/profeterne-i-evighedsfjorden\r\n/boeger/i-giftefaerdig-alder\r\n/boeger/det-engelske-harem\r\n/boeger/londonstani\r\n/boeger/lyden-af-bier\r\n/boeger/den-syriske-garage\r\n/boeger/halality\r\n/boeger/mellem-gode-mennesker\r\n/boeger/stammens-aere\r\n/boeger/taeppehandleren\r\n/boeger/ankomstens-gade\r\n/boeger/et-halvt-liv\r\n/boeger/muhamedaneren\r\n/boeger/der-hvor-solen-star-hojest\r\n/boeger/brevet-til-danmark\r\n/boeger/fra-lufthavn-til-lufthavn-og-andre-indvandrerfortaellinger\r\n/boeger/manear\r\n/boeger/brun-mands-byrde\r\n/boeger/paere-perker-dansk\r\n/boeger/du-lovede-vi-skulle-hje\r\n/boeger/i-min-brors-ojne\r\n/boeger/klovnen-shalimar\r\n/boeger/maurerens-sidste-suk\r\n/boeger/midnatsborn\r\n/boeger/ost-vest\r\n/boeger/tid-til-opbrud-nordpa\r\n/boeger/ga-vaek-ghana\r\n/boeger/braendte-skygger\r\n/boeger/en-uanstaendig-kaerlighed\r\n/boeger/hvide-taender\r\n/boeger/kokken\r\n/boeger/projekt-paradis\r\n/boeger/tilfaeldets-gud\r\n/boeger/brooklyn\r\n/boeger/og-hvor-har-du-sa-hjemme\r\n/boeger/terrorist\r\n/boeger/kopenhaga\r\n/boeger/de-renes-land\r\n/boeger/hvor-kommer-du-fra\r\n/boeger/hjemme-i-kairo\r\n/boeger/bror-hvad-er-det-du-gor\r\n/boeger/nutidens-paradis\r\n/boeger/kurs-syd-mod-nord\r\n/boeger/ayaan\r\n/boeger/khaderdk\r\n/boeger/i-morgen-skal-vi-hjem\r\n/boeger/forbandede-aere\r\n/boeger/et-loft-af-sloret\r\n/boeger/noglen-til-mit-nye-land\r\n/boeger/sibel\r\n/boeger/pige-i-verdener"
+    negate: false
+    context_mapping: {  }

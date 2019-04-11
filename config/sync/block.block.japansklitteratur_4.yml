@@ -1,0 +1,31 @@
+uuid: 0312fadc-5ae2-4330-a325-6f9e7ff95610
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:6f0ad295-9844-40d4-9273-121ec9f0967c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: japansklitteratur_4
+theme: litteratursiden
+region: content
+weight: 672
+provider: null
+plugin: 'block_content:6f0ad295-9844-40d4-9273-121ec9f0967c'
+settings:
+  id: 'block_content:6f0ad295-9844-40d4-9273-121ec9f0967c'
+  label: 'Læs også: Japansk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/mordet-pa-kommandanten
+    negate: false
+    context_mapping: {  }

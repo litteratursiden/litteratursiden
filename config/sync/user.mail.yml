@@ -1,0 +1,30 @@
+cancel_confirm:
+  body: "[user:display-name],\r\n\r\nEn anmodning om at annullere din konto er foretaget.\r\n\r\nDu kan nu annullere din konto på [site:url-brief] ved at klikke på dette link eller kopiere og indsætte det i din browser:\r\n\r\n[user:cancel-url]\r\n\r\nBEMÆRK: Annulleringen af din konto er ikke reversibel.\r\n\r\nDette link udløber på en dag, og intet vil ske, hvis det ikke bruges.\r\n\r\n"
+  subject: 'Anmodning om annullering af konto for [user:display-name]'
+password_reset:
+  body: "Hello [user:display-name],\r\n<br><br>\r\nEn anmodning om at nulstille adgangskoden til din konto er blevet foretaget.\r\n<br><br>\r\nDu kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser:\r\n<br><br>\r\n<a href=\"[user:one-time-login-url]\">Log ind</a>\r\n<br><br>\r\nDette link kan kun bruges en gang til at logge ind og fører dig til en side, hvor du kan angive din adgangskode. Den udløber efter en dag, og intet vil ske, hvis det ikke bruges.\r\n<br><br>\r\n"
+  subject: 'Udskiftning login information for [user:display-name]'
+register_admin_created:
+  body: "[user:display-name],\r\n\r\nEn administrator har oprettet en konto til dig. Du kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nDette link kan kun bruges en gang til at logge ind og fører dig til en side, hvor du kan angive din adgangskode.\r\n\r\nNår du har indstillet din adgangskode, vil du kunne logge ind på [site:login-url] i fremtiden bruger:\r\n\r\nbrugernavn: [user:account-name]\r\nadgangskode: Din kode\r\n\r\n"
+  subject: 'En administrator har oprettet en konto til dig på [site:name]'
+register_no_approval_required:
+  body: "[user:display-name],\r\n\r\nTak fordi du har registreret dig hos [site:name]. Du kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nDette link kan kun bruges en gang til at logge ind og fører dig til en side, hvor du kan angive din adgangskode.\r\n\r\nNår du har indstillet din adgangskode, vil du kunne logge ind på [site:login-url] i fremtiden bruger:\r\n\r\nbrugernavn: [user:account-name]\r\nadgangskode: Din kode\r\n\r\n"
+  subject: 'Kontooplysninger for [user:display-name] på [site:name]'
+register_pending_approval:
+  body: "[user:display-name],\r\n\r\nTak fordi du har registreret dig hos [site:name]. Din ansøgning om en konto afventer i øjeblikket godkendelse. Når det er blevet godkendt, vil du modtage en anden e-mail med oplysninger om, hvordan du logger ind, angiv dit kodeord og andre detaljer.\r\n\r\n\r\n"
+  subject: 'Kontooplysninger for [user:display-name] på [site:name] (afventer administrativ godkendelse)'
+register_pending_approval_admin:
+  body: "[user:display-name] har ansøgt om en konto.\r\n\r\n[user:edit-url]"
+  subject: 'Kontooplysninger for [user:display-name] på [site:name] (afventer administrativ godkendelse)'
+status_activated:
+  body: "[user:display-name],\r\n\r\nDin konto på [site:name] er blevet aktiveret.\r\n\r\nDu kan nu logge ind ved at klikke på dette link eller kopiere og indsætte det i din browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nDette link kan kun bruges en gang til at logge ind og fører dig til en side, hvor du kan angive din adgangskode.\r\n\r\nNår du har angivet dit kodeord, kan du logge ind på [site:login-url] i fremtiden bruger:\r\n\r\nbrugernavn: [user:account-name]\r\nadgangskode: Din kode\r\n\r\n"
+  subject: 'Kontooplysninger for [user:display-name] på [site:name] (godkendt)'
+status_blocked:
+  body: "[user:display-name],\r\n\r\nDin konto på [site:name] er blevet blokeret.\r\n\r\n"
+  subject: 'Kontooplysninger for [user:display-name] på [site:name] (blokeret)'
+status_canceled:
+  body: "[user:display-name],\r\n\r\nDin konto er blevet annulleret.\r\n\r\n"
+  subject: 'Kontooplysninger for [user:display-name] at [site:name] (annulleret)'
+langcode: da
+_core:
+  default_config_hash: m4J3ROov32OEquRYGLbx3SpdDGuqx9l_zJtNvihqdCg

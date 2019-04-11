@@ -1,0 +1,31 @@
+uuid: 7e3eefd0-445b-435b-b36f-a7b9feeea7de
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:624418b6-22c2-4057-b256-a12308833f14'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenkristendom
+theme: litteratursiden
+region: content
+weight: 537
+provider: null
+plugin: 'block_content:624418b6-22c2-4057-b256-a12308833f14'
+settings:
+  id: 'block_content:624418b6-22c2-4057-b256-a12308833f14'
+  label: 'Indgår i boglisten: Kristendom'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/lilla-hibiscus\r\n/boeger/en-landsbypraests-dagbog\r\n/boeger/kvinden-fra-alexandria\r\n/boeger/haefte\r\n/boeger/ved-floden-piedra-satte-jeg-mig-og-graed\r\n/boeger/underet\r\n/boeger/rosens-navn\r\n/boeger/rabbiens-sidste-dage\r\n/boeger/ojeblikkets-evighed\r\n/boeger/huset-med-de-bla-vinduer\r\n/boeger/fatimas-hand-0\r\n/boeger/kystsanatoriet\r\n/boeger/flugten-fra-golgatha\r\n/boeger/gennem-den-kulsorte-sky\r\n/boeger/regine\r\n/boeger/isaak-katedralen\r\n/boeger/mit-navn-er-legion\r\n/boeger/en-tid-til-helbredelse\r\n/boeger/barmhjertighedens-pris\r\n/boeger/den-svaere-tilgivelse\r\n/boeger/ensomheden-0\r\n/boeger/som-fanden-laeser-bibelen\r\n/boeger/den-forste-sten\r\n/boeger/persona-non-grata\r\n/boeger/en-cyklende-dame-i-kashgar\r\n/boeger/f\r\n/boeger/fiskerne\r\n/boeger/roser-i-sne\r\n/boeger/skylden\r\n/boeger/jerusalem-i-ii\r\n/boeger/habets-ar\r\n/boeger/blodets-lov\r\n/boeger/skovenes-dyb\r\n/boeger/vindenes-alter\r\n/boeger/gudernes-dod\r\n/boeger/vibens-skrig\r\n/boeger/profeterne-i-evighedsfjorden\r\n/boeger/rod-mandsort-mand\r\n/boeger/mange-saere-ting\r\n/boeger/glansbilledsamlerne\r\n/boeger/klogt-blod\r\n/boeger/voldsmaend-river-det-til-sig\r\n/boeger/det-forjaettede-land-0\r\n/boeger/det-gode-menneske-jesus-og-skurken-kristus\r\n/boeger/jesus-hjemkomsten-fra-egypten\r\n/boeger/jesus-vejen-til-kanaan\r\n/boeger/da-jeg-var-barn-laeste-jeg-boger\r\n/boeger/gilead\r\n/boeger/hjemme\r\n/boeger/lila-1\r\n/boeger/jesusevangeliet\r\n/boeger/kain\r\n/boeger/knaeler-mellem-stedmoderblomster\r\n/boeger/broder-jacob\r\n/boeger/onkel-toms-hytte-ved-benny-kloth-jorgensen\r\n/boeger/iseskrog-roman\r\n/boeger/marias-testamente\r\n/boeger/forbandelsen-2\r\n/boeger/tjener-den-store-general\r\n/boeger/syner-og-fristelser\r\n/boeger/gensyn-med-brideshead\r\n/boeger/christa-pa-fire-hjul\r\n/boeger/da-bunden-faldt-ud-af-himlen\r\n/boeger/hytten\r\n"
+    negate: false
+    context_mapping: {  }

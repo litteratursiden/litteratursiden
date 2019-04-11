@@ -1,0 +1,11 @@
+uuid: a905a111-3b3d-4144-8554-21146fd6c92f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.literature_type
+id: taxonomy_term.literature_type
+target_entity_type_id: taxonomy_term
+target_bundle: literature_type
+default_langcode: site_default
+language_alterable: false

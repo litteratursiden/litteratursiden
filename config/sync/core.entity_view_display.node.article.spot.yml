@@ -1,0 +1,58 @@
+uuid: 69370626-3aaa-41ee-90a9-87cd6392f9a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.spot
+    - field.field.node.article.field_article_body
+    - field.field.node.article.field_article_comments
+    - field.field.node.article.field_article_cover_image
+    - field.field.node.article.field_article_general_tags
+    - field.field.node.article.field_article_internal_link
+    - field.field.node.article.field_article_link_external
+    - image.style.spot
+    - node.type.article
+  module:
+    - image
+    - text
+    - user
+id: node.article.spot
+targetEntityType: node
+bundle: article
+mode: spot
+content:
+  field_article_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+  field_article_cover_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: spot
+      image_link: ''
+    third_party_settings: {  }
+  posted:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_article_comments: true
+  field_article_general_tags: true
+  field_article_internal_link: true
+  field_article_link_external: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  social_media: true

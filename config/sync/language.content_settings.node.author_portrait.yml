@@ -1,0 +1,11 @@
+uuid: 0e9c22aa-9396-4885-817b-e9bddd967b65
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.author_portrait
+id: node.author_portrait
+target_entity_type_id: node
+target_bundle: author_portrait
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,31 @@
+uuid: e04ca879-e10b-427f-8ce1-8a525e5f46d2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:987da0f2-64eb-4e17-8303-2daac541cb43'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten.denamerikanskeborgerkrig
+theme: litteratursiden
+region: content
+weight: 355
+provider: null
+plugin: 'block_content:987da0f2-64eb-4e17-8303-2daac541cb43'
+settings:
+  id: 'block_content:987da0f2-64eb-4e17-8303-2daac541cb43'
+  label: 'Indgår i boglisten. Den amerikanske borgerkrig'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/hvide-duer-ved-daggry\r\n/boeger/modets-rode-kokarde\r\n/boeger/marchen\r\n/boeger/borger-tom-paine\r\n/boeger/havets-gra-kanoner\r\n/boeger/tilbage-til-cold-mountain\r\n/boeger/shamanen\r\n/boeger/lincolns-bla-soldat\r\n/boeger/i-hemmelig-tjeneste\r\n/boeger/nord-og-syd\r\n/boeger/i-sandhedens-tjeneste\r\n/boeger/illinois\r\n/boeger/alt-bliver-nyt\r\n/boeger/skaberfuglen\r\n/boeger/rhett-butlers-fortaelling\r\n/boeger/borte-med-blaesten\r\n/boeger/guvernorens-hustru\r\n/boeger/i-min-faders-hus\r\n/boeger/new-york\r\n/boeger/den-sandfaerdige-beretning-om-lidie-newtons-rejser\r\n/boeger/onkel-toms-hytte\r\n/boeger/faerten-af-dod"
+    negate: false
+    context_mapping: {  }

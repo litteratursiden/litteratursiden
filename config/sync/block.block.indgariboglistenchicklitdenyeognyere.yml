@@ -1,0 +1,31 @@
+uuid: 82bb1e45-acd0-41dd-9e6e-11536befc7bf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8a6a8057-2a53-40d6-b310-cc126e9eba17'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenchicklitdenyeognyere
+theme: litteratursiden
+region: content
+weight: 844
+provider: null
+plugin: 'block_content:8a6a8057-2a53-40d6-b310-cc126e9eba17'
+settings:
+  id: 'block_content:8a6a8057-2a53-40d6-b310-cc126e9eba17'
+  label: 'Indgår i boglisten: Chick lit - de nye og nyere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/one-fifth-avenue\r\n/boeger/prospect-park-west\r\n/boeger/svommeproven\r\n/boeger/i-en-anden-del-af-byen\r\n/boeger/jaja-jeg-skal-nok-redde-jer-nar-jeg-lige-har-drukket-min-rom-cola\r\n/boeger/jagten-pa-harry-winston\r\n/boeger/den-store-kaerlighed\r\n/boeger/en-chance-til\r\n/boeger/dette-er-livet\r\n/boeger/jeg-har-dit-nummer\r\n/boeger/til-manen-og-tilbage\r\n/boeger/celebutantes\r\n/boeger/evigt-og-altid\r\n/boeger/rygtet-vil-vide\r\n/boeger/cleo-og-kaerligheden\r\n/boeger/et-sted-i-naerheden\r\n/boeger/gips\r\n/boeger/den-klareste-stjerne/boeger/hvem-er-jeg-0\r\n/boeger/der-fik-jeg-dig\r\n/boeger/ladies\r\n/boeger/jylland-turretur\r\n/boeger/evigt-og-altid\r\n/boeger/det-lille-frokenfirma\r\n/boeger/den-rette-beslutning\r\n/boeger/mini-shopaholic\r\n/boeger/et-tilbud-du-ikke-kan-afsla\r\n/boeger/en-chance-til\r\n/boeger/det-er-altsa-mit-liv\r\n/boeger/en-kvinde-tre-maend\r\n/boeger/satans-yngel\r\n/boeger/livet-let-ovede\r\n/boeger/reporter-i-chok-gravid\r\n/boeger/charlie-hotel-oscar-kilo\r\n/boeger/lykkelig-pa-landet\r\n/boeger/send-mere-sex\r\n/boeger/send-flere-born\r\n/boeger/nyskilt-pa-forste-klasse\r\n/boeger/skiftedag\r\n/boeger/alle-var-der\r\n/boeger/ind-i-kampen\r\n/boeger/seje-piger\r\n/boeger/sa-kom-du\r\n/boeger/fra-smorhullet\r\n/boeger/pigerne-fra-riyadh\r\n/boeger/intet-mindre-end-alt\r\n/boeger/en-dag-skinner-solen-ogsa-pa-en-hunds-rov\r\n/boeger/det-modsatte-af-kaerlighed\r\n/boeger/michael-laudrups-taender\r\n/boeger/hoje-haele-og-laktaske\r\n/boeger/brunstkalenderen\r\n/boeger/lykkens-cafe\r\n/boeger/sma-jordskaelv\r\n/boeger/modregruppen\r\n/boeger/kvinder-kan-ikke-grille\r\n/boeger/i-spaend\r\n/boeger/i-tvivl\r\n/boeger/honningtunger\r\n/boeger/wonder-spot-0\r\n/boeger/tilfaeldet-barbara\r\n/boeger/tre-skridt-fra-livet\r\n/boeger/ingen-sang-om-kaerlighed\r\n/boeger/under-tojet\r\n/boeger/elegance\r\n/boeger/de-siger-man-kan-elske-uden-fa-born\r\n/boeger/krummeklubbens-skamlose-sostre\r\n/boeger/hun-har-det-hele\r\n/boeger/de-frie-kvinders-klub\r\n/boeger/en-flirt-mellem-venner\r\n/boeger/hvem-er-jeg-0\r\n/boeger/hvad-min-bedste-veninde-gjorde\r\n/boeger/se-pa-mig\r\n/boeger/single-anden-gang\r\n/boeger/intet-mindre-end-alt\r\n/boeger/duften-af-kaffe\r\n/boeger/i-en-anden-del-af-byen\r\n/boeger/sma-gule-citroner\r\n/boeger/flokdyr\r\n/boeger/vintageprinsessen\r\n/boeger/bedste-venner-0\r\n/boeger/jenny-s\r\n/boeger/flugten-0\r\n/boeger/det-ender-sadan-her\r\n\r\n"
+    negate: false
+    context_mapping: {  }

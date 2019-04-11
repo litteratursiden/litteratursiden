@@ -1,0 +1,42 @@
+uuid: af22e80f-7086-4592-b711-de2f8e4f903a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spot
+    - field.storage.block_content.field_spot_content
+    - node.type.analysis
+    - node.type.article
+    - node.type.author_portrait
+    - node.type.blog
+    - node.type.book
+    - node.type.interview
+    - node.type.review
+    - node.type.topic
+id: block_content.spot.field_spot_content
+field_name: field_spot_content
+entity_type: block_content
+bundle: spot
+label: 'Spot content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      analysis: analysis
+      review: review
+      article: article
+      blog: blog
+      book: book
+      author_portrait: author_portrait
+      interview: interview
+      topic: topic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: analysis
+field_type: entity_reference

@@ -1,0 +1,16 @@
+uuid: 355390d7-ea26-4e9f-822a-89e1f74a3f48
+langcode: en
+status: true
+dependencies: {  }
+name: user_icon
+label: 'User icon'
+effects:
+  708a508e-dc2b-4ad9-8019-e9a89c692e62:
+    uuid: 708a508e-dc2b-4ad9-8019-e9a89c692e62
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 36
+      height: 36
+      anchor: center-center
+pipeline: compress

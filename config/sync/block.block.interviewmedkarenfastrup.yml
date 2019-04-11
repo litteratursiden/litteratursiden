@@ -1,0 +1,31 @@
+uuid: 822045cf-390b-4cb0-80b9-fdbf54e3dca7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:76dc33b7-d1b0-4000-ae03-ddd8c03389f1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: interviewmedkarenfastrup
+theme: litteratursiden
+region: content
+weight: 63
+provider: null
+plugin: 'block_content:76dc33b7-d1b0-4000-ae03-ddd8c03389f1'
+settings:
+  id: 'block_content:76dc33b7-d1b0-4000-ae03-ddd8c03389f1'
+  label: 'Interview med Karen Fastrup'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/mine-syvogtyve-sansers-elskede
+    negate: false
+    context_mapping: {  }

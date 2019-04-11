@@ -1,0 +1,31 @@
+uuid: 3ec81211-af5c-4fb5-baa0-a376f40e5a48
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:69012ea1-76f0-4c6e-8941-6b95a4ac6eef'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klassikerguide1950erne_2
+theme: litteratursiden
+region: content
+weight: 607
+provider: null
+plugin: 'block_content:69012ea1-76f0-4c6e-8941-6b95a4ac6eef'
+settings:
+  id: 'block_content:69012ea1-76f0-4c6e-8941-6b95a4ac6eef'
+  label: 'Klassikerguide: 1950''erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: 'https://litteratursiden.dk/artikler/dansk-litteratur-fra-1900-1909'
+    negate: false
+    context_mapping: {  }

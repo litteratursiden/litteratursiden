@@ -1,0 +1,22 @@
+uuid: 5fbdfef4-aef1-4685-bfff-39f5385f41eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: book_list
+label: 'Book list'
+type: 'canonical_entities:node'
+pattern: 'lister/[node:title]'
+selection_criteria:
+  36024126-2744-4f77-bd9e-e74c02b4e4d5:
+    id: node_type
+    bundles:
+      book_list: book_list
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 36024126-2744-4f77-bd9e-e74c02b4e4d5
+selection_logic: and
+weight: -8
+relationships: {  }

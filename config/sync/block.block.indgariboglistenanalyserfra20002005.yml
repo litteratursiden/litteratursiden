@@ -1,0 +1,31 @@
+uuid: 9f4f524b-cc87-4d8e-9770-12f631b0f73d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3585e1fc-ac6b-46f1-988a-5e8886e0d40f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra20002005
+theme: litteratursiden
+region: content
+weight: 817
+provider: null
+plugin: 'block_content:3585e1fc-ac6b-46f1-988a-5e8886e0d40f'
+settings:
+  id: 'block_content:3585e1fc-ac6b-46f1-988a-5e8886e0d40f'
+  label: 'Indgår i boglisten: Analyser fra 2000-2005'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/brummstein\r\n/boeger/aegteskabet-mellem-vejen-og-udvejen\r\n/boeger/aminas-breve\r\n/boeger/gud-taler-ud\r\n/boeger/selvmordsaktionen\r\n/boeger/nordkraft\r\n/boeger/en-kvinde-med-hat\r\n/boeger/en-vej\r\n/boeger/smukke-biler-efter-krigen\r\n/boeger/melatonin\r\n/boeger/fra-smorhullet\r\n/boeger/rodby-puttgarden\r\n/boeger/fiske-i-livets-flod\r\n/boeger/album\r\n/boeger/kongemordet\r\n/boeger/auricula\r\n/boeger/tak\r\n/boeger/livret\r\n/boeger/kunsten-graede-i-kor\r\n/boeger/det-forste-jeg-taenker-pa\r\n/boeger/undtagelsen\r\n/boeger/dengang-med-hunden\r\n/boeger/den-lukkede-bog\r\n/boeger/naeb-og-kloer\r\n/boeger/hundehoved\r\n/boeger/lognhalsen-fra-umbrien\r\n/boeger/fingeren-i-flammen\r\n/boeger/unn-fra-stjernestene\r\n/boeger/vinci-senere\r\n/boeger/det-vaerste-og-det-bedste\r\n/boeger/brevbaereren\r\n/boeger/bruden-fra-gent\r\n"
+    negate: false
+    context_mapping: {  }

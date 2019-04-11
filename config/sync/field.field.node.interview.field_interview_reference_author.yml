@@ -1,0 +1,29 @@
+uuid: 73a6a221-3e9d-4a69-9dab-77d27bf54019
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interview_reference_author
+    - node.type.author_portrait
+    - node.type.interview
+id: node.interview.field_interview_reference_author
+field_name: field_interview_reference_author
+entity_type: node
+bundle: interview
+label: 'Author portrait'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      author_portrait: author_portrait
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

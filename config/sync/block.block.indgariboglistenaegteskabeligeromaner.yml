@@ -1,0 +1,31 @@
+uuid: 144ec82e-d53c-41b4-b911-de0aa6f681e4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:cc0d3d8a-2292-4fb2-858f-1ebfe828d594'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenaegteskabeligeromaner
+theme: litteratursiden
+region: content
+weight: 253
+provider: null
+plugin: 'block_content:cc0d3d8a-2292-4fb2-858f-1ebfe828d594'
+settings:
+  id: 'block_content:cc0d3d8a-2292-4fb2-858f-1ebfe828d594'
+  label: 'Indgår i boglisten: Ægteskabelige romaner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/hvordan-man-er-et-godt-menneske\r\n/boeger/fanden-og-hans-pumpestok\r\n/boeger/den-evige-aegtemand\r\n/boeger/sma-krige\r\n/boeger/den-tomme-stol\r\n/boeger/der-er-ingen-steder-graede-her\r\n/boeger/forandringer-0\r\n/boeger/stille-dage-i-mixing-part\r\n/boeger/en-pige-og-en-dreng"
+    negate: false
+    context_mapping: {  }

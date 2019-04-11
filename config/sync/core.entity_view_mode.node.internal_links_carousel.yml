@@ -1,0 +1,10 @@
+uuid: f429c556-b87a-4c17-809a-35b0a547cec9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.internal_links_carousel
+label: 'Internal links carousel'
+targetEntityType: node
+cache: true

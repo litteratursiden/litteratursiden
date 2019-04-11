@@ -1,0 +1,31 @@
+uuid: 6820ffa8-d752-49da-8c4f-ac77773904f4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:d9d2fcc3-2d6f-4668-a6f1-ab55a62f4fe5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra1950erne
+theme: litteratursiden
+region: content
+weight: 809
+provider: null
+plugin: 'block_content:d9d2fcc3-2d6f-4668-a6f1-ab55a62f4fe5'
+settings:
+  id: 'block_content:d9d2fcc3-2d6f-4668-a6f1-ab55a62f4fe5'
+  label: 'Indgår i boglisten: Analyser fra 1950''erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/babettes-gaestebud\r\n/boeger/kvindesind\r\n/boeger/logneren\r\n/boeger/de-fortabte-spillemaend\r\n/boeger/den-unge-jaegers-lidelser\r\n/boeger/rend-mig-i-traditionerne\r\n/boeger/den-kroniske-uskyld\r\n/boeger/fugls-fode\r\n/boeger/de-nogne-traeer\r\n/boeger/saere-historier\r\n"
+    negate: false
+    context_mapping: {  }

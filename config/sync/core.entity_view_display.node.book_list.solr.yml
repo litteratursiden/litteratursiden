@@ -1,0 +1,64 @@
+uuid: f65a8f77-f2bf-4aa1-8c25-cf2f56ffc256
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.solr
+    - field.field.node.book_list.field_book_list_body
+    - field.field.node.book_list.field_book_list_comments
+    - field.field.node.book_list.field_book_list_cover_image
+    - field.field.node.book_list.field_book_list_files
+    - field.field.node.book_list.field_book_list_general_tags
+    - field.field.node.book_list.field_book_list_reference_book
+    - field.field.node.book_list.field_book_list_reference_review
+    - field.field.node.book_list.field_book_list_spotbox_image
+    - node.type.book_list
+  module:
+    - text
+    - user
+id: node.book_list.solr
+targetEntityType: node
+bundle: book_list
+mode: solr
+content:
+  field_book_list_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_book_list_general_tags:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_book_list_reference_book:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  posted:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_book_list_comments: true
+  field_book_list_cover_image: true
+  field_book_list_files: true
+  field_book_list_reference_review: true
+  field_book_list_spotbox_image: true
+  flag_bookmark: true
+  flag_like: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  social_media: true

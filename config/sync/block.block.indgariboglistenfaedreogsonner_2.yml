@@ -1,0 +1,31 @@
+uuid: 9ffe5a51-d0cc-42a1-a71d-719384340bf2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:4384c033-c39d-4ad8-8ddc-d1a821e9e6aa'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenfaedreogsonner_2
+theme: litteratursiden
+region: content
+weight: 133
+provider: null
+plugin: 'block_content:4384c033-c39d-4ad8-8ddc-d1a821e9e6aa'
+settings:
+  id: 'block_content:4384c033-c39d-4ad8-8ddc-d1a821e9e6aa'
+  label: 'Indgår i boglisten: Fædre og sønner'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vaelde-vokse-vakle-visne\r\n/boeger/kort-over-paradis\r\n/boeger/de-otte-bjerge\r\n/boeger/mig-og-sam\r\n/boeger/lincoln-i-bardo-roman\r\n/boeger/maends-hjerter\r\n/boeger/de-dode-0"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: c15adab2-fb5d-45b7-abb2-e358032b0e84
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:2e2f322b-88ef-4e2f-bd75-94c0d83a46bf'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: fodboldogidentitetihansjorgennielsensfodboldenglen
+theme: litteratursiden
+region: content
+weight: 332
+provider: null
+plugin: 'block_content:2e2f322b-88ef-4e2f-bd75-94c0d83a46bf'
+settings:
+  id: 'block_content:2e2f322b-88ef-4e2f-bd75-94c0d83a46bf'
+  label: 'Fodbold og identitet i Hans-Jørgen Nielsens Fodboldenglen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /boeger/fodboldenglen
+    negate: false
+    context_mapping: {  }

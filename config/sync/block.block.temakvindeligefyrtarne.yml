@@ -1,0 +1,31 @@
+uuid: d87c2a51-f478-43e1-8a73-8917c7b6b8a0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temakvindeligefyrtarne
+theme: litteratursiden
+region: content
+weight: 43
+provider: null
+plugin: 'block_content:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
+settings:
+  id: 'block_content:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
+  label: 'Tema: Kvindelige fyrtårne '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/kvindelige-fyrtarne-i-dansk-litteratur\r\n/forfattere/leonora-christina-ulfeldt\r\n/forfattere/thomasine-gyllembourg\r\n/forfattere/amalie-skram\r\n/forfattere/agnes-henningsen\r\n/forfattere/marie-bregendahl\r\n/forfattere/karin-michaelis\r\n/forfattere/thit-jensen\r\n/forfattere/karen-blixen\r\n/forfattere/tove-ditlevsen\r\n/forfattere/dorrit-willumsen\r\n/forfattere/kirsten-thorup\r\n/forfattere/suzanne-brogger\r\n/forfattere/inger-christensen\r\n/forfattere/dea-trier-morch\r\n/lister/staerke-kvinder\r\n/lister/staerke-piger\r\n/artikler/forfatteraben"
+    negate: false
+    context_mapping: {  }

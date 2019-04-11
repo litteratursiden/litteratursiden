@@ -1,0 +1,20 @@
+uuid: bec1b769-e0b5-432d-a79c-577a678d4a05
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.field_book_list_comments
+field_name: field_book_list_comments
+entity_type: node
+type: comment
+settings:
+  comment_type: comment
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

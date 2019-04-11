@@ -1,0 +1,23 @@
+uuid: 40457826-9211-49a8-88a9-a9815d4e9ad3
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - facets
+  theme:
+    - litteratursiden
+id: type
+theme: litteratursiden
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: 'Filtrer efter indhold'
+  provider: facets
+  label_display: visible
+  block_id: type
+visibility: {  }

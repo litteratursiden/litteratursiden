@@ -1,0 +1,23 @@
+uuid: 7c41c3c2-c75e-4bab-9187-0942cd3aac95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_link_external
+    - node.type.article
+  module:
+    - link
+id: node.article.field_article_link_external
+field_name: field_article_link_external
+entity_type: node
+bundle: article
+label: 'External links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

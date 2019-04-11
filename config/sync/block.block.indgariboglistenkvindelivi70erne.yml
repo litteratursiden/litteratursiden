@@ -1,0 +1,31 @@
+uuid: 807b3102-6d34-4249-b192-aea535c5714c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:5e8e9aca-7011-4795-8ea9-2ec4307bc43b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenkvindelivi70erne
+theme: litteratursiden
+region: content
+weight: 540
+provider: null
+plugin: 'block_content:5e8e9aca-7011-4795-8ea9-2ec4307bc43b'
+settings:
+  id: 'block_content:5e8e9aca-7011-4795-8ea9-2ec4307bc43b'
+  label: 'Indgår i boglisten: Kvindeliv i 70''erne'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/tryghedsnarkomaner-hold-kaeft-og-vaer-smuk\r\n/boeger/kun-noget-levende\r\n/boeger/creme-fraiche\r\n/boeger/fri-os-fra-kaerligheden\r\n/boeger/kaerlighedens-veje-vildveje\r\n/boeger/brud\r\n/boeger/sostrene-1\r\n/boeger/hvad-taenkte-egentlig-arendse\r\n/boeger/kaellinger-i-danmark\r\n/boeger/pa-andre-tanker\r\n/boeger/kvinde-kend-din-krop\r\n/boeger/den-frygtelige-sandhed\r\n/boeger/le\r\n/boeger/konen-og-aeggene\r\n/boeger/vinterborn\r\n/boeger/al-den-logn-om-kvinders-svaghed\r\n/boeger/rode-trade"
+    negate: false
+    context_mapping: {  }

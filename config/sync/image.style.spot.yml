@@ -1,0 +1,16 @@
+uuid: 56406f81-9d94-422e-8251-482c4b1a3432
+langcode: en
+status: true
+dependencies: {  }
+name: spot
+label: 'Spot (1050x900)'
+effects:
+  b1f10796-f7ab-4aba-bcd1-edac7932ccb3:
+    uuid: b1f10796-f7ab-4aba-bcd1-edac7932ccb3
+    id: image_scale
+    weight: 1
+    data:
+      width: 1050
+      height: 900
+      upscale: false
+pipeline: compress

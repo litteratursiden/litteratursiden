@@ -1,0 +1,31 @@
+uuid: aa1a8f8f-51c1-444a-8631-4d2aae1b13fc
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8c4d6bac-0bd9-45d3-b110-9130ef855374'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenanalyserfra20102015
+theme: litteratursiden
+region: content
+weight: 819
+provider: null
+plugin: 'block_content:8c4d6bac-0bd9-45d3-b110-9130ef855374'
+settings:
+  id: 'block_content:8c4d6bac-0bd9-45d3-b110-9130ef855374'
+  label: 'Indgår i boglisten: Analyser fra 2010-2015'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/politisk-roman\r\n/boeger/sten-saks-papir\r\n/boeger/beskyttelseszonen\r\n/boeger/og-tilsidst-gar-verden-under\r\n/boeger/et-eventyr-0\r\n/boeger/bombaygryde\r\n/boeger/det-du-mister\r\n/boeger/mitose\r\n/boeger/den-danske-borgerkrig-2018-24\r\n/boeger/det-bla-lys-0\r\n/boeger/doden-korer-audi\r\n/boeger/siden-blev-det-paent\r\n/boeger/ud-i-det-u-lose\r\n/boeger/vi-siger-farvel\r\n/boeger/ulven-0\r\n/boeger/yahya-hassan\r\n/boeger/hvis-det-er\r\n/boeger/kongens-kvinder-0\r\n/boeger/indvandreren\r\n/boeger/midt-i-den-blanke-nat\r\n/boeger/pa-traek-0\r\n/boeger/effekten-af-susan\r\n/boeger/sorg-og-camping\r\n/boeger/den-sonderjyske-farm\r\n/boeger/en-ny-tid\r\n/boeger/hallerne\r\n/boeger/om-morke\r\n/boeger/homo-sapienne\r\n/boeger/det-dobbelte-land\r\n/boeger/profeterne-i-evighedsfjorden\r\n/boeger/mor-0\r\n/boeger/hildegard-0\r\n/boeger/godhavn\r\n/boeger/kvinden-i-korshaeren\r\n/boeger/nielsine\r\n/boeger/sommerbarn\r\n/boeger/burgundia\r\n/boeger/begravelsen-1\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/kantslag\r\n/boeger/min-mor-siger\r\n/boeger/brun-mands-byrde\r\n/boeger/huden-er-det-elastiske-hylster-der-omgiver-hele-legemet\r\n/boeger/koordinater\r\n/boeger/tilfaeldets-gud\r\n/boeger/gavrilo-princip\r\n/boeger/forbandede-yngel\r\n/boeger/den-stjalne-vej\r\n/boeger/harpiks\r\n/boeger/flex-death\r\n/boeger/vor-tids-helt-0\r\n/boeger/i-civil\r\n/boeger/hjertet-slar-og-slar\r\n/boeger/han\r\n/boeger/og-sadan-blev-det\r\n/boeger/det-syvende-barn-0\r\n/boeger/opland\r\n/boeger/et-liv-i-almindelighed\r\n/boeger/stoner\r\n/boeger/naer-og-fjern-0\r\n/boeger/digte-2014\r\n/boeger/den-forste-sten-0\r\n\r\n"
+    negate: false
+    context_mapping: {  }

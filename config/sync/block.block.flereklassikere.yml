@@ -1,0 +1,31 @@
+uuid: ace051b2-fd49-46b8-b8ca-0f5d88465055
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:d5239f53-48f4-4ade-8ea9-b4d783a6a6bd'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: flereklassikere
+theme: litteratursiden
+region: content
+weight: 331
+provider: null
+plugin: 'block_content:d5239f53-48f4-4ade-8ea9-b4d783a6a6bd'
+settings:
+  id: 'block_content:d5239f53-48f4-4ade-8ea9-b4d783a6a6bd'
+  label: 'Flere klassikere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/min-yndlingsklassiker
+    negate: false
+    context_mapping: {  }

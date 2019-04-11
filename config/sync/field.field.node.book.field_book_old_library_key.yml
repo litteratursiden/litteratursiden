@@ -1,0 +1,19 @@
+uuid: e04a76c3-854a-4535-99f2-106680567d46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_old_library_key
+    - node.type.book
+id: node.book.field_book_old_library_key
+field_name: field_book_old_library_key
+entity_type: node
+bundle: book
+label: Faustnummer
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

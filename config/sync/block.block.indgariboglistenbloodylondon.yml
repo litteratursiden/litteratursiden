@@ -1,0 +1,31 @@
+uuid: 49524157-11ba-41da-9676-0295f364f27d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:37cb7269-602a-44c7-969a-5327ff3d90d4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenbloodylondon
+theme: litteratursiden
+region: content
+weight: 54
+provider: null
+plugin: 'block_content:37cb7269-602a-44c7-969a-5327ff3d90d4'
+settings:
+  id: 'block_content:37cb7269-602a-44c7-969a-5327ff3d90d4'
+  label: 'Indgår i boglisten: "Bloody London"'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fra-de-dode\r\n/boeger/sa-godt-som-dod\r\n/boeger/rodt-lys-stop\r\n/boeger/under-jorden-0\r\n/boeger/bertrams-hotel\r\n/boeger/lad-de-sma-born\r\n/boeger/en-studie-i-rodt\r\n/boeger/en-uskyldig-logn\r\n/boeger/bedragets-rodder\r\n/boeger/det-sidste-sakramente\r\n/boeger/bla-mandag-0\r\n/boeger/gogens-kalden\r\n/boeger/silkeorm\r\n/boeger/dette-dodens-legeme\r\n/boeger/kvinden-i-toget\r\n/boeger/morke-afkroge\r\n/boeger/mordsalen\r\n/boeger/guds-hand\r\n/boeger/januarvinduet\r\n/boeger/dodelig-hensigt\r\n/boeger/himlen-over-london\r\n/boeger/jack-ripper\r\n/boeger/slagteren-0\r\n/boeger/syv-sma-soldater\r\n/boeger/tretten-trin-ned\r\n/boeger/sort-ild\r\n/boeger/et-lig-lidt\r\n/boeger/miss-penhows-blodende-hjerte\r\n/boeger/borgiaringen"
+    negate: false
+    context_mapping: {  }

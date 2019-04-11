@@ -1,0 +1,14 @@
+uuid: 59bdb807-909b-4e1b-bd55-e9f0c056e2a8
+langcode: da
+status: '1'
+dependencies: {  }
+cluster_id: local
+name: Local
+url: 'http://es:9200'
+options:
+  multiple_nodes_connection: false
+  use_authentication: 0
+  authentication_type: Basic
+  username: ''
+  password: ''
+  timeout: '3'

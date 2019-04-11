@@ -1,0 +1,31 @@
+uuid: 1af36874-b21b-4f93-b831-e0a761b82ad8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:017a6b99-161c-461c-a2a6-ce4a3706006e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: newyork
+theme: litteratursiden
+region: content
+weight: 285
+provider: null
+plugin: 'block_content:017a6b99-161c-461c-a2a6-ce4a3706006e'
+settings:
+  id: 'block_content:017a6b99-161c-461c-a2a6-ce4a3706006e'
+  label: 'New York'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/laesetips-til-storbyferien
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 8fed28b7-c901-4daa-8811-90dba8ff38a2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ea0b86c3-1064-4e26-94cc-3f7c6615db8b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten1864
+theme: litteratursiden
+region: content
+weight: 75
+provider: null
+plugin: 'block_content:ea0b86c3-1064-4e26-94cc-3f7c6615db8b'
+settings:
+  id: 'block_content:ea0b86c3-1064-4e26-94cc-3f7c6615db8b'
+  label: 'Indgår i boglisten: 1864'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/1864-og-historiens-lange-skygger\r\n/boeger/anden-slesvigske-krig-1864\r\n/boeger/erindringssteder-i-danmark\r\n/boeger/1864-i-billeder\r\n/boeger/dommedag-als\r\n/boeger/ild-og-blod\r\n/boeger/slagtebaenk-dybbol\r\n/boeger/1864-fra-helstat-til-nationalstat\r\n/boeger/krigen-1864\r\n/boeger/fra-altona-til-dybbol\r\n/boeger/1864\r\n/boeger/johanne-luise-heiberg-og-krigen-1864\r\n/boeger/kampen-ved-skanse-v-den-18-april-1864\r\n/boeger/1864-en-guide-i-krigens-fodspor\r\n/boeger/krigen-1864-de-sa-det-ske\r\n/boeger/da-danmark-blev-danmark\r\n/boeger/1864-da-europa-gik-af-lave\r\n/boeger/en-dansk-husars-dagbog\r\n/boeger/paradokset-4-division\r\n/boeger/en-lojtnant-fra-1864\r\n/boeger/general-de-meza-og-den-dansk-tyske-krig-1864\r\n/boeger/1864-0\r\n/boeger/tiden-er-en-ild\r\n/boeger/den-tomme-stat\r\n/boeger/det-danske-rytteri\r\n/boeger/breve-mellem-front-og-hjem-1864\r\n/boeger/aaroes-strejfkorps-en-dansk-specialenhed-i-1864"
+    negate: false
+    context_mapping: {  }

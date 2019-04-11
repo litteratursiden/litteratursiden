@@ -1,0 +1,314 @@
+uuid: d738c8f2-3b1d-4564-9a64-3a9eced13196
+langcode: da
+status: true
+dependencies:
+  config:
+    - search_api.index.content
+  module:
+    - lit_views
+    - search_api
+id: search
+label: Search
+module: views
+description: ''
+tag: ''
+base_table: search_api_index_content
+base_field: search_api_id
+core: 8.x
+display:
+  default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
+    display_options:
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: none
+        options: {  }
+      query:
+        type: views_query
+        options:
+          bypass_access: false
+          skip_access: false
+      exposed_form:
+        type: lit_views_advanced
+        options:
+          submit_button: Udfør
+          reset_button: 0
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sorter efter:'
+          expose_sort_order: 1
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          expose_filter_display: hidden
+          expose_sort_display: links
+      pager:
+        type: full
+        options:
+          items_per_page: 10
+          offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 4
+      style:
+        type: default
+      row:
+        type: search_api
+        options:
+          view_modes:
+            'entity:node':
+              analysis: search_index
+              article: search_index
+              author_portrait: search_index
+              blog: search_index
+              book: search_index
+              book_debate: search_index
+              book_list: search_index
+              interview: search_index
+              review: search_index
+              similar: search_index
+              topic: search_index
+            'entity:group':
+              book_club: search_index
+      fields:
+        title:
+          table: search_api_index_content
+          field: title
+          id: title
+          entity_type: null
+          entity_field: null
+          plugin_id: search_api_field
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            multi_separator: ', '
+      filters:
+        search_api_fulltext:
+          id: search_api_fulltext
+          table: search_api_index_content
+          field: search_api_fulltext
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: and
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: search_api_fulltext_op
+            label: Søg
+            description: ''
+            use_operator: false
+            operator: search_api_fulltext_op
+            identifier: search
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              producer: '0'
+              editor: '0'
+              superadmin: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          parse_mode: terms
+          min_length: 3
+          fields: {  }
+          plugin_id: search_api_fulltext
+      sorts:
+        lit_entity_bundle_type_weight:
+          id: lit_entity_bundle_type_weight
+          table: search_api_index_content
+          field: lit_entity_bundle_type_weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: 'Type weight'
+          plugin_id: search_api
+        search_api_relevance:
+          id: search_api_relevance
+          table: search_api_index_content
+          field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: true
+          expose:
+            label: Relevans
+          plugin_id: search_api
+        lit_entity_label:
+          id: lit_entity_label
+          table: search_api_index_content
+          field: lit_entity_label
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: Titel
+          plugin_id: search_api
+        lit_entity_authored_by:
+          id: lit_entity_authored_by
+          table: search_api_index_content
+          field: lit_entity_authored_by
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: true
+          expose:
+            label: Forfatter
+          plugin_id: search_api
+      title: Søg
+      header:
+        lit_result:
+          id: lit_result
+          table: views
+          field: lit_result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          content: 'Viser @total resultater for <b>''@search_query''</b>'
+          plugin_id: lit_result
+      footer: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'Intet fundet.'
+            format: full_html
+          plugin_id: text
+      relationships: {  }
+      arguments: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
+      tags: {  }
+  search:
+    display_plugin: page
+    id: search
+    display_title: Page
+    position: 1
+    display_options:
+      display_extenders: {  }
+      path: search
+      cache:
+        type: none
+      defaults:
+        cache: false
+      exposed_block: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
+      tags: {  }

@@ -1,0 +1,31 @@
+uuid: f299bff0-0565-4384-a6b5-720e99e8379b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:eb65fc7c-36cd-4794-81ac-a3880c8f5693'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: besoghosmr.sherlockholmes
+theme: litteratursiden
+region: content
+weight: 775
+provider: null
+plugin: 'block_content:eb65fc7c-36cd-4794-81ac-a3880c8f5693'
+settings:
+  id: 'block_content:eb65fc7c-36cd-4794-81ac-a3880c8f5693'
+  label: Artikel
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/no-shit-sherlock
+    negate: false
+    context_mapping: {  }

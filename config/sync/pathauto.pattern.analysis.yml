@@ -1,0 +1,22 @@
+uuid: 84eee6e5-5047-46c0-b23d-0c5ec3035af3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: analysis
+label: Analysis
+type: 'canonical_entities:node'
+pattern: 'analyser/[node:title]'
+selection_criteria:
+  ca6af088-8280-42db-8481-66dfab21c8a5:
+    id: node_type
+    bundles:
+      analysis: analysis
+    negate: false
+    context_mapping:
+      node: node
+    uuid: ca6af088-8280-42db-8481-66dfab21c8a5
+selection_logic: and
+weight: -4
+relationships: {  }

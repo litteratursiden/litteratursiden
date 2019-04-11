@@ -1,0 +1,31 @@
+uuid: 542a873b-5e05-40be-905a-5da0d6357904
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:cd4175dc-35e1-4083-90d3-f9280391ce15'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendenindustriellerevolution
+theme: litteratursiden
+region: content
+weight: 399
+provider: null
+plugin: 'block_content:cd4175dc-35e1-4083-90d3-f9280391ce15'
+settings:
+  id: 'block_content:cd4175dc-35e1-4083-90d3-f9280391ce15'
+  label: 'Indgår i boglisten: Den industrielle revolution'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/alias-grace\r\n/boeger/eline-bessers-laeretid\r\n/boeger/dannebrogvalfarten\r\n/boeger/forunderlige-skabninger\r\n/boeger/hekseringene\r\n/boeger/dogtown\r\n/boeger/musikanternes-udtog\r\n/boeger/den-rode-blomst-den-hvide-blomst\r\n/boeger/savn-0\r\n/boeger/howards-end\r\n/boeger/fata-morgana-0\r\n/boeger/brobyggerne\r\n/boeger/druknehuset\r\n/boeger/frihedens-dragt\r\n/boeger/kamma-0\r\n/boeger/den-glitrende-o\r\n/boeger/de-elendige\r\n/boeger/kobenhavnerpigen-og-kongemaleren\r\n/boeger/daglejerne\r\n/boeger/i-spejlet\r\n/boeger/den-lukkede-bog\r\n/boeger/salka-valka\r\n/boeger/hvem-leger-bedst\r\n/boeger/dotre-og-elskerinder\r\n/boeger/gron-var-min-barndoms-dal\r\n/boeger/else-med-en-engels-ansigt\r\n/boeger/barndom-laereaar\r\n/boeger/graspurv-i-guldramme\r\n/boeger/manden-pa-oen\r\n/boeger/flora-tristan\r\n/boeger/nu-er-det-laenge-siden\r\n/boeger/junglen\r\n/boeger/mary\r\n/boeger/karen-0\r\n/boeger/dodemandsbjerget\r\n/boeger/johanna-fra-smaland\r\n/boeger/marie-0\r\n/boeger/germinal\r\n/boeger/en-passende-aftale"
+    negate: false
+    context_mapping: {  }

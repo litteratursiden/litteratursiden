@@ -1,0 +1,11 @@
+uuid: 52b7382a-4f4a-4a91-b315-56382c039bcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.book_list
+id: node.book_list
+target_entity_type_id: node
+target_bundle: book_list
+default_langcode: site_default
+language_alterable: false

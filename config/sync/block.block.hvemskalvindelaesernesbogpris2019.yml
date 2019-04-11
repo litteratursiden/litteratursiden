@@ -1,0 +1,31 @@
+uuid: a9c6a43c-5096-4f8c-b705-374e75f15159
+langcode: da
+status: false
+dependencies:
+  content:
+    - 'block_content:spot:2564a5b7-5ec1-4349-a046-73cff7c1ee0e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: hvemskalvindelaesernesbogpris2019
+theme: litteratursiden
+region: content
+weight: 975
+provider: null
+plugin: 'block_content:2564a5b7-5ec1-4349-a046-73cff7c1ee0e'
+settings:
+  id: 'block_content:2564a5b7-5ec1-4349-a046-73cff7c1ee0e'
+  label: 'Nu kan du stemme'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

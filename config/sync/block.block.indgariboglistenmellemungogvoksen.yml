@@ -1,0 +1,31 @@
+uuid: d4cc10eb-644d-4818-b35f-536a1340f713
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:01319473-0195-4908-8dfb-f5096ffa4142'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenmellemungogvoksen
+theme: litteratursiden
+region: content
+weight: 573
+provider: null
+plugin: 'block_content:01319473-0195-4908-8dfb-f5096ffa4142'
+settings:
+  id: 'block_content:01319473-0195-4908-8dfb-f5096ffa4142'
+  label: 'Indgår i boglisten: Mellem ung og voksen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/samtaler-med-venner\r\n/boeger/knivens-stemme\r\n/boeger/hvis-der-skulle-komme-et-menneske-forbi\r\n/boeger/en-dag-vil-vi-grine-af-det\r\n/boeger/manhattan-beach\r\n/boeger/min-familie-0\r\n/boeger/skovbrand-en-historie-om-katastrofer-og-venskab\r\n/boeger/louis-liv\r\n/boeger/dode-piger-lyver-ikke\r\n/boeger/mit-lorteliv\r\n/boeger/simon-vs-verdens-forventninger\r\n/boeger/eksil-0\r\n/boeger/stranden-0\r\n/boeger/shotgun-lovesongs\r\n/boeger/en-flaenge-i-himlen\r\n/boeger/ondskaben\r\n/boeger/peggyfriend-og-andre-ojeblikke\r\n/boeger/elefantpassernes-born\r\n/boeger/aeblemostreglementet\r\n/boeger/stjerneskaelv\r\n/boeger/kaerlighedsbreve-fra-store-maend\r\n/boeger/tjenerindens-fortaelling\r\n/boeger/muleum\r\n/boeger/ukulele-jam\r\n/boeger/mig-dig\r\n/boeger/arangutang\r\n/boeger/dig-og-mig-ved-daggry\r\n/boeger/dodsspillet-1\r\n/boeger/skyd-appelsinen\r\n/boeger/min-mor-siger\r\n/boeger/eleanor-og-park\r\n/boeger/den-enes-dod-2\r\n/boeger/den-statistiske-sandsynlighed-kaerlighed-ved-forste-blik\r\n/boeger/radiator\r\n/boeger/kaere-dodsbog\r\n/boeger/bogtyven-0\r\n/boeger/amerikanske-guder\r\n/boeger/kaerlighedsbreve-til-de-dode\r\n/boeger/nattergalen-0\r\n/boeger/dodevaskeren"
+    negate: false
+    context_mapping: {  }

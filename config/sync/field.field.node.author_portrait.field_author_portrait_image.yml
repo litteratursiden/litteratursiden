@@ -1,0 +1,38 @@
+uuid: c4e59f5e-10f7-4cb6-a2ab-dcf9e479498a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_author_portrait_image
+    - node.type.author_portrait
+  module:
+    - image
+id: node.author_portrait.field_author_portrait_image
+field_name: field_author_portrait_image
+entity_type: node
+bundle: author_portrait
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: field_author_portrait_image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: e58ffaec-3b18-4593-ae88-5cc69d14403a
+    alt: ''
+    title: ''
+    width: 186
+    height: 287
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

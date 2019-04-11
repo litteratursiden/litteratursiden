@@ -1,0 +1,26 @@
+uuid: 761a0ed5-760d-4084-8453-cfbc29a6438b
+langcode: da
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+    - system
+  theme:
+    - litteratursiden
+id: mailchimpsubscriptionformsubscribetonewsletter
+theme: litteratursiden
+region: content
+weight: 962
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:subscribe_to_newsletter'
+settings:
+  id: 'mailchimp_signup_subscribe_block:subscribe_to_newsletter'
+  label: 'Hold dig opdateret'
+  provider: mailchimp_signup
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

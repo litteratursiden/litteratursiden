@@ -1,0 +1,9 @@
+uuid: f752602e-c7bb-451c-ac9d-7ee1ec875c50
+langcode: da
+status: true
+dependencies: {  }
+name: 'Literature types'
+vid: literature_type
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,31 @@
+uuid: 68ccfe7d-138a-42d1-a685-d90dc5d90215
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:66834436-9954-4cd2-a4c7-254a929de114'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forsteverdenskrigiskonlitteraturen
+theme: litteratursiden
+region: content
+weight: 227
+provider: null
+plugin: 'block_content:66834436-9954-4cd2-a4c7-254a929de114'
+settings:
+  id: 'block_content:66834436-9954-4cd2-a4c7-254a929de114'
+  label: 'Første Verdenskrig i skønlitteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/forste-verdenskrig
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,10 @@
+uuid: 48cf1114-5701-4571-9bdc-c5fe19afda40
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.additional_info
+label: 'Additional Info'
+targetEntityType: node
+cache: true

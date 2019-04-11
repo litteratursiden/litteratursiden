@@ -1,0 +1,118 @@
+uuid: 3dbf2310-9cc3-4121-8c46-6827f0111a6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.review.field_review_body
+    - field.field.node.review.field_review_comments
+    - field.field.node.review.field_review_cover_image
+    - field.field.node.review.field_review_excerpt
+    - field.field.node.review.field_review_generel_tags
+    - field.field.node.review.field_review_internal_link
+    - field.field.node.review.field_review_link_external
+    - field.field.node.review.field_review_literature_type
+    - field.field.node.review.field_review_reference_book
+    - field.field.node.review.field_review_spotbox_image
+    - image.style.spot
+    - node.type.review
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.review.default
+targetEntityType: node
+bundle: review
+mode: default
+content:
+  field_review_body:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_review_cover_image:
+    type: image
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      image_style: spot
+      image_link: ''
+    third_party_settings: {  }
+  field_review_excerpt:
+    type: text_default
+    weight: 7
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_review_generel_tags:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_review_internal_link:
+    type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_review_link_external:
+    type: link
+    weight: 9
+    region: content
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  flag_bookmark:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  flag_like:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  owner_portrait:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  social_media:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  book_links: true
+  field_book_author: true
+  field_book_body: true
+  field_book_cover_image: true
+  field_book_original_title: true
+  field_book_reference_author: true
+  field_review_comments: true
+  field_review_literature_type: true
+  field_review_reference_book: true
+  field_review_spotbox_image: true
+  flag_notifications: true
+  langcode: true
+  links: true
+  owner_full_name: true

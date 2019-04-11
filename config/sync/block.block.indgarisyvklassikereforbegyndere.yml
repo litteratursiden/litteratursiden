@@ -1,0 +1,31 @@
+uuid: dae300b6-2be2-4433-8ad6-dc1116f52cee
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:0a6f46d2-c087-4988-941e-6c276a3bdf6f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgarisyvklassikereforbegyndere
+theme: litteratursiden
+region: content
+weight: 938
+provider: null
+plugin: 'block_content:0a6f46d2-c087-4988-941e-6c276a3bdf6f'
+settings:
+  id: 'block_content:0a6f46d2-c087-4988-941e-6c276a3bdf6f'
+  label: 'Indgår i: Syv klassikere for begyndere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fahrenheit-451\r\n/boeger/mus-og-maend\r\n/boeger/frankenstein-eller-den-moderne-prometheus\r\n/boeger/den-unge-werthers-lidelser\r\n/boeger/draeb-ikke-en-sangfugl-0\r\n/boeger/kammerat-napoleon\r\n/boeger/dorian-grays-billede"
+    negate: false
+    context_mapping: {  }

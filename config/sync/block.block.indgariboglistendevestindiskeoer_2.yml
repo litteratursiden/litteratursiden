@@ -1,0 +1,31 @@
+uuid: 234d3350-91d0-43e2-a9ad-7ebbc91e9403
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:d113a1f4-29ee-433b-bd59-f74ee7e56403'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendevestindiskeoer_2
+theme: litteratursiden
+region: content
+weight: 11
+provider: null
+plugin: 'block_content:d113a1f4-29ee-433b-bd59-f74ee7e56403'
+settings:
+  id: 'block_content:d113a1f4-29ee-433b-bd59-f74ee7e56403'
+  label: 'Indgår i boglisten: De Vestindiske Øer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/krebsens-slot-en-slaegtsroman\r\n/boeger/i-slagtemaneden-roman\r\n/boeger/saligia-mit-vestindiske-liv-roman"
+    negate: false
+    context_mapping: {  }

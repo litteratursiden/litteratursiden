@@ -1,0 +1,10 @@
+uuid: 83d9f02b-298a-49cc-a416-25fda587eb33
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.content_author
+label: 'Content author'
+targetEntityType: user
+cache: true

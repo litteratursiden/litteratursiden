@@ -1,0 +1,8 @@
+uuid: c0752e6d-ab7c-41d5-9d63-a9d367dd6e42
+langcode: und
+status: true
+dependencies: {  }
+id: my-content
+label: 'My content'
+description: ''
+locked: false

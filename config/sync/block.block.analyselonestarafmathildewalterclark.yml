@@ -1,0 +1,31 @@
+uuid: df25ec8c-647d-4952-a389-128118736677
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:51cb9f66-efe2-4a87-af2e-381ec14fb128'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analyselonestarafmathildewalterclark
+theme: litteratursiden
+region: content
+weight: 124
+provider: null
+plugin: 'block_content:51cb9f66-efe2-4a87-af2e-381ec14fb128'
+settings:
+  id: 'block_content:51cb9f66-efe2-4a87-af2e-381ec14fb128'
+  label: Analyse
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/autofiktion
+    negate: false
+    context_mapping: {  }

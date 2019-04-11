@@ -1,0 +1,31 @@
+uuid: 5726e306-303e-414f-8b44-77c7ab7f513f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:2e05ac69-80cf-49aa-a0d0-e00d1bf17210'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenboliviaparaguayuruguayogvenezuela
+theme: litteratursiden
+region: content
+weight: 832
+provider: null
+plugin: 'block_content:2e05ac69-80cf-49aa-a0d0-e00d1bf17210'
+settings:
+  id: 'block_content:2e05ac69-80cf-49aa-a0d0-e00d1bf17210'
+  label: 'Indgår i boglisten: Bolivia, Paraguay, Uruguay og Venezuela'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/flygtige-flod\r\n/boeger/du-menneskeson\r\n/boeger/fristen\r\n/boeger/pedro-og-kaptajnen\r\n/boeger/ildens-erindring\r\n/boeger/omfavnelsernes-bog\r\n/boeger/ord-der-vandrer\r\n/boeger/koncerten-og-andre-fortaellinger\r\n/boeger/ligsamler\r\n/boeger/en-elsket-i-bangkok\r\n/boeger/greven-af-molukkerne\r\n"
+    negate: false
+    context_mapping: {  }

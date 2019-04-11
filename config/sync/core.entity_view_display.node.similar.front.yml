@@ -1,0 +1,59 @@
+uuid: f71c7dac-6ad4-4e1b-a18c-4c3c5346fbb4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.front
+    - field.field.node.similar.field_similar_author
+    - field.field.node.similar.field_similar_body
+    - field.field.node.similar.field_similar_comments
+    - field.field.node.similar.field_similar_cover_image
+    - field.field.node.similar.field_similar_files
+    - field.field.node.similar.field_similar_general_tags
+    - field.field.node.similar.field_similar_reference
+    - field.field.node.similar.field_similar_reference_book
+    - field.field.node.similar.field_similar_reference_review
+    - field.field.node.similar.field_similar_spotbox_image
+    - node.type.similar
+  module:
+    - text
+    - user
+id: node.similar.front
+targetEntityType: node
+bundle: similar
+mode: front
+content:
+  field_similar_body:
+    type: text_trimmed
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  posted:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_similar_author: true
+  field_similar_comments: true
+  field_similar_cover_image: true
+  field_similar_files: true
+  field_similar_general_tags: true
+  field_similar_reference: true
+  field_similar_reference_book: true
+  field_similar_reference_review: true
+  field_similar_spotbox_image: true
+  flag_bookmark: true
+  flag_like: true
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true
+  social_media: true

@@ -1,0 +1,31 @@
+uuid: fd6b35f6-e86d-473a-878e-a8c3e06b99d4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:71f8798f-cdb0-4e82-a424-5d1a50eaf08d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: rundtommurakami_2
+theme: litteratursiden
+region: content
+weight: 811
+provider: null
+plugin: 'block_content:71f8798f-cdb0-4e82-a424-5d1a50eaf08d'
+settings:
+  id: 'block_content:71f8798f-cdb0-4e82-a424-5d1a50eaf08d'
+  label: 'Rundt om Murakami'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /lister/japansk-litteratur
+    negate: false
+    context_mapping: {  }

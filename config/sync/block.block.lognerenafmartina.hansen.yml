@@ -1,0 +1,31 @@
+uuid: 753aeda0-80cb-463a-a340-d227a6b736d4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:f5e7112f-0e54-431d-b193-c646b94d36cb'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: lognerenafmartina.hansen
+theme: litteratursiden
+region: content
+weight: 703
+provider: null
+plugin: 'block_content:f5e7112f-0e54-431d-b193-c646b94d36cb'
+settings:
+  id: 'block_content:f5e7112f-0e54-431d-b193-c646b94d36cb'
+  label: 'Løgneren af Martin A. Hansen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/martin-hansen
+    negate: false
+    context_mapping: {  }

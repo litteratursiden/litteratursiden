@@ -1,0 +1,25 @@
+uuid: 455b8601-52b7-4194-a566-b89af275eddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_carousel
+    - field.storage.block_content.field_content_carousel_bg
+  module:
+    - color_field
+id: block_content.content_carousel.field_content_carousel_bg
+field_name: field_content_carousel_bg
+entity_type: block_content
+bundle: content_carousel
+label: Background
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#3a3b3d'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

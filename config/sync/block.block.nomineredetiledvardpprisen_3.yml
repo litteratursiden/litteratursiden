@@ -1,0 +1,31 @@
+uuid: 1878a70d-7110-4fa2-a72a-d6652745af20
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:302d18db-522b-4e72-9da1-4930ad4cf937'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nomineredetiledvardpprisen_3
+theme: litteratursiden
+region: content
+weight: 310
+provider: null
+plugin: 'block_content:302d18db-522b-4e72-9da1-4930ad4cf937'
+settings:
+  id: 'block_content:302d18db-522b-4e72-9da1-4930ad4cf937'
+  label: 'Nominerede til Edvard P Prisen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/hvem-skal-vinde-edvard-p-prisen
+    negate: false
+    context_mapping: {  }

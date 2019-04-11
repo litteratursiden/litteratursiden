@@ -1,0 +1,31 @@
+uuid: d6a7d781-c3de-48f4-b697-0710644dfa39
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:570522b4-3f01-47fc-bfbf-4df3666520d8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistendetvildevesten
+theme: litteratursiden
+region: content
+weight: 405
+provider: null
+plugin: 'block_content:570522b4-3f01-47fc-bfbf-4df3666520d8'
+settings:
+  id: 'block_content:570522b4-3f01-47fc-bfbf-4df3666520d8'
+  label: 'Indgår i boglisten: Det vilde vesten'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/loveless-hjemkomst\r\n/boeger/loveless-mord-i-blackwater\r\n/boeger/danser-med-ulve\r\n/boeger/drommen-om-amerika\r\n/boeger/brodrene-sisters\r\n/boeger/de-levende\r\n/boeger/shamanen\r\n/boeger/alle-de-smukke-heste\r\n/boeger/byerne-pa-sletten\r\n/boeger/over-graensen-1\r\n/boeger/fort-humboldt\r\n/boeger/brokeback-mountain\r\n/boeger/true-grit\r\n/boeger/fort-wheeling\r\n/boeger/shane-den-tavse-rytter\r\n/boeger/sorte-maske-og-tonto-slas-i-himlen\r\n/boeger/koterne-dor-om-vinteren\r\n/boeger/mine-ord\r\n/boeger/utaemmet-liv\r\n/boeger/isens-greb\r\n/boeger/butchers-crossing"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,79 @@
+uuid: 55353308-168a-453c-bd36-e28e1d5a25bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.review.field_review_body
+    - field.field.node.review.field_review_comments
+    - field.field.node.review.field_review_cover_image
+    - field.field.node.review.field_review_excerpt
+    - field.field.node.review.field_review_generel_tags
+    - field.field.node.review.field_review_internal_link
+    - field.field.node.review.field_review_link_external
+    - field.field.node.review.field_review_literature_type
+    - field.field.node.review.field_review_reference_book
+    - field.field.node.review.field_review_spotbox_image
+    - image.style.search_index
+    - node.type.review
+  module:
+    - image
+    - text
+    - user
+id: node.review.search_index
+targetEntityType: node
+bundle: review
+mode: search_index
+content:
+  field_review_body:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 190
+    third_party_settings: {  }
+    type: text_trimmed
+    region: content
+  field_review_cover_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: search_index
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_review_generel_tags:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  posted:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  book_links: true
+  field_book_author: true
+  field_book_body: true
+  field_book_cover_image: true
+  field_book_original_title: true
+  field_book_reference_author: true
+  field_review_comments: true
+  field_review_excerpt: true
+  field_review_internal_link: true
+  field_review_link_external: true
+  field_review_literature_type: true
+  field_review_reference_book: true
+  field_review_spotbox_image: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  social_media: true

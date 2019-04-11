@@ -1,0 +1,29 @@
+uuid: 8b6c7742-3739-4036-94c1-2762ab936e25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_reference_book
+    - node.type.analysis
+    - node.type.book
+id: node.analysis.field_analysis_reference_book
+field_name: field_analysis_reference_book
+entity_type: node
+bundle: analysis
+label: Book
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      book: book
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

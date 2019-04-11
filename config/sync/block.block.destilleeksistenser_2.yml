@@ -1,0 +1,31 @@
+uuid: e181546b-b362-4258-bdd5-9b0f7a9045eb
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:954e836d-8eac-442c-81ba-d13e8d13505b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: destilleeksistenser_2
+theme: litteratursiden
+region: content
+weight: 930
+provider: null
+plugin: 'block_content:954e836d-8eac-442c-81ba-d13e8d13505b'
+settings:
+  id: 'block_content:954e836d-8eac-442c-81ba-d13e8d13505b'
+  label: 'Indgår i boglisten: De stille eksistenser'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/stoner\r\n/boeger/de-usynlige-1\r\n/boeger/hvidt-hav\r\n/boeger/et-helt-liv\r\n/boeger/laeseren-i-morgentoget\r\n/boeger/is\r\n/boeger/sent-bryllup\r\n/boeger/en-ny-tid\r\n/boeger/over-det-kinesiske-hav\r\n/boeger/willums-veje\r\n/boeger/kvinden-i-korshaeren\r\n/boeger/noget-om-grace\r\n/boeger/nora-webster\r\n/boeger/sa-hojt-var-du-elsket\r\n/boeger/ovenpa-er-der-stille\r\n/boeger/illusionernes-bog\r\n/boeger/traekopfuglens-kronike\r\n/boeger/det-daglige-brod\r\n/boeger/kirsebaerlandet\r\n"
+    negate: false
+    context_mapping: {  }

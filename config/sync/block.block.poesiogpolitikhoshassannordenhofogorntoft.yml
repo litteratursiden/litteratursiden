@@ -1,0 +1,31 @@
+uuid: c1469672-aba2-4fba-87a4-770bfdf8de7d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:3a08cfca-c958-4418-b5a7-53a1c04a5e1e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: poesiogpolitikhoshassannordenhofogorntoft
+theme: litteratursiden
+region: content
+weight: 873
+provider: null
+plugin: 'block_content:3a08cfca-c958-4418-b5a7-53a1c04a5e1e'
+settings:
+  id: 'block_content:3a08cfca-c958-4418-b5a7-53a1c04a5e1e'
+  label: 'Poesi og politik – hos Hassan, Nordenhof og Ørntoft'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/yahya-hassan\r\n/forfattere/yahya-hassan\r\n/boeger/det-nemme-og-det-ensomme\r\n/forfattere/asta-olivia-nordenhof\r\n/boeger/digte-2014\r\n/forfattere/theis-orntoft\r\n"
+    negate: false
+    context_mapping: {  }

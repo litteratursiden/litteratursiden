@@ -1,0 +1,13 @@
+uuid: 52e740da-26c9-4048-95a1-7a114a366efd
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.comment_like.unflag
+label: Unlike
+type: comment
+plugin: 'flag_action:comment_like.unflag'
+configuration:
+  flag_id: comment_like
+  flag_action: unflag

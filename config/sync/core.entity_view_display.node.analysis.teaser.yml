@@ -1,0 +1,54 @@
+uuid: ecbad796-e5ba-48e7-8f04-533c5244ddf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.analysis.field_analysis_comments
+    - field.field.node.analysis.field_analysis_cover_image
+    - field.field.node.analysis.field_analysis_excerpt
+    - field.field.node.analysis.field_analysis_external_link
+    - field.field.node.analysis.field_analysis_free_text
+    - field.field.node.analysis.field_analysis_general_tags
+    - field.field.node.analysis.field_analysis_internal_link
+    - field.field.node.analysis.field_analysis_reference_book
+    - field.field.node.analysis.field_analysis_spotbox_image
+    - node.type.analysis
+  module:
+    - text
+    - user
+id: node.analysis.teaser
+targetEntityType: node
+bundle: analysis
+mode: teaser
+content:
+  field_analysis_excerpt:
+    type: text_trimmed
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_analysis_comments: true
+  field_analysis_cover_image: true
+  field_analysis_external_link: true
+  field_analysis_free_text: true
+  field_analysis_general_tags: true
+  field_analysis_internal_link: true
+  field_analysis_reference_book: true
+  field_analysis_spotbox_image: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  social_media: true
