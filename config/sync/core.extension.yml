@@ -4,7 +4,6 @@ module:
   advagg_css_minify: 0
   advagg_ext_minify: 0
   advagg_js_minify: 0
-  basic_auth: 0
   block: 0
   block_content: 0
   block_exclude_pages: 0
@@ -72,6 +71,12 @@ module:
   override_node_options: 0
   page_cache: 0
   path: 0
+  purge: 0
+  purge_drush: 0
+  purge_processor_cron: 0
+  purge_queuer_coretags: 0
+  purge_tokens: 0
+  purge_ui: 0
   reroute_email: 0
   scheduler: 0
   search_api: 0
@@ -88,6 +93,8 @@ module:
   update: 0
   user: 0
   user_registrationpassword: 0
+  varnish_purge_tags: 0
+  varnish_purger: 0
   video_embed_field: 0
   video_embed_html5: 0
   video_embed_wysiwyg: 0
