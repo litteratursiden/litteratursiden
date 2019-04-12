@@ -13,7 +13,7 @@ scheme: http
 verify: '1'
 headers:
   -
-    field: Purge-Cache-Tags
+    field: Cache-Tags
     value: '[invalidation:expression]'
 body: null
 body_content_type: null
