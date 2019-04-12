@@ -6,7 +6,7 @@ id: ad8a7a7937
 name: Varnish
 invalidationtype: tag
 hostname: varnish
-port: 80
+port: 6081
 path: /
 request_method: BAN
 scheme: http
