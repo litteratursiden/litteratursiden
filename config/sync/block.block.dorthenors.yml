@@ -12,7 +12,7 @@ dependencies:
 id: dorthenors
 theme: litteratursiden
 region: content
-weight: 336
+weight: 334
 provider: null
 plugin: 'block_content:db6e9502-de4b-4907-8d44-9fdd7b8af9cd'
 settings:

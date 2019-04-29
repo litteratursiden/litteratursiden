@@ -1,6 +1,6 @@
 uuid: 4ef6e48c-8964-47d8-90dd-b6a4fd9d3dfb
 langcode: da
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:spot:9ea1632a-097d-423e-8722-e77211c2c040'
@@ -12,7 +12,7 @@ dependencies:
 id: temaautofiktionny
 theme: litteratursiden
 region: content
-weight: 32
+weight: 968
 provider: null
 plugin: 'block_content:9ea1632a-097d-423e-8722-e77211c2c040'
 settings:

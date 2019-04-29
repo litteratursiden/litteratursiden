@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhundeilitteraturen
 theme: litteratursiden
 region: content
-weight: 489
+weight: 486
 provider: null
 plugin: 'block_content:0891c2c6-58b5-4529-b96a-a7e7eab83faf'
 settings:

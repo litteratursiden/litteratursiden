@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlondonidet20.og21.arhundrede
 theme: litteratursiden
 region: content
-weight: 567
+weight: 564
 provider: null
 plugin: 'block_content:7ee56cec-7e85-41a2-8ca4-6d22f698ff05'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: underhudenpadetfremmede
 theme: litteratursiden
 region: content
-weight: 706
+weight: 702
 provider: null
 plugin: 'block_content:c579ea9e-72ab-4b32-8cc6-330304ff83ee'
 settings:

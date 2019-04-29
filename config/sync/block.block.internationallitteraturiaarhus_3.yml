@@ -12,7 +12,7 @@ dependencies:
 id: internationallitteraturiaarhus_3
 theme: litteratursiden
 region: content
-weight: 612
+weight: 609
 provider: null
 plugin: 'block_content:34ed8eef-234a-4302-8758-44af9deb7e93'
 settings:

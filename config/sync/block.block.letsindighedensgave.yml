@@ -12,7 +12,7 @@ dependencies:
 id: letsindighedensgave
 theme: litteratursiden
 region: content
-weight: 208
+weight: 210
 provider: null
 plugin: 'block_content:ca80c907-cc09-4471-91b7-960235d4c408'
 settings:

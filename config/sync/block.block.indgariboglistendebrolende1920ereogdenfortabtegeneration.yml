@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendebrolende1920ereogdenfortabtegeneration
 theme: litteratursiden
 region: content
-weight: 396
+weight: 394
 provider: null
 plugin: 'block_content:49627139-e956-4846-80ba-63a48b87bbcf'
 settings:

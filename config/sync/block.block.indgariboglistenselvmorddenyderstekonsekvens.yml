@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenselvmorddenyderstekonsekvens
 theme: litteratursiden
 region: content
-weight: 154
+weight: 156
 provider: null
 plugin: 'block_content:6c1332fa-e147-4bfa-8f25-893232aec2ad'
 settings:

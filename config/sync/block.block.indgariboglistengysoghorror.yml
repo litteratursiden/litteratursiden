@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistengysoghorror
 theme: litteratursiden
 region: content
-weight: 479
+weight: 476
 provider: null
 plugin: 'block_content:00bfcc68-a0c7-42fb-8e42-d9bf81f4c19c'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: fortaellingerfrahavet
 theme: litteratursiden
 region: content
-weight: 603
+weight: 600
 provider: null
 plugin: 'block_content:d038da37-4083-4be6-bf7f-502d4219408b'
 settings:

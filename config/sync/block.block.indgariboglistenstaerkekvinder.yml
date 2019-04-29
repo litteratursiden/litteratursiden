@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenstaerkekvinder
 theme: litteratursiden
 region: content
-weight: 352
+weight: 350
 provider: null
 plugin: 'block_content:f200ada2-3511-4f3c-bb28-2036def03e62'
 settings:

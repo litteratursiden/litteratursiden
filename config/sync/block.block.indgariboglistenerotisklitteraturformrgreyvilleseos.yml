@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenerotisklitteraturformrgreyvilleseos
 theme: litteratursiden
 region: content
-weight: 424
+weight: 422
 provider: null
 plugin: 'block_content:06e0226c-0720-4e81-a70e-683cb6a1bb29'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: maltidetsbetydning
 theme: litteratursiden
 region: content
-weight: 94
+weight: 98
 provider: null
 plugin: 'block_content:f60277a6-2525-435b-b12e-7e4d6a6d3248'
 settings:

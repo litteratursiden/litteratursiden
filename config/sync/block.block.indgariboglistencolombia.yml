@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistencolombia
 theme: litteratursiden
 region: content
-weight: 847
+weight: 842
 provider: null
 plugin: 'block_content:5c69a2e8-a30b-4c35-a1c7-b0150cd4cb3d'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: hovmodogsatireih.c.andersenseventyr
 theme: litteratursiden
 region: content
-weight: 789
+weight: 784
 provider: null
 plugin: 'block_content:ee4f9d7e-2242-4b1c-93af-038cfd78d342'
 settings:

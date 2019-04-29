@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenvindereafdegyldnelaurbaer
 theme: litteratursiden
 region: content
-weight: 241
+weight: 242
 provider: null
 plugin: 'block_content:06b47bce-c3d1-473a-96fd-b248509de0f2'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: omlitteratursidenhvordanfarduenanmeldelsepalitteratursiden
 theme: litteratursiden
 region: content
-weight: 921
+weight: 915
 provider: null
 plugin: 'block_content:ed9343af-97fd-43d5-8bbd-56b0a8051196'
 settings:

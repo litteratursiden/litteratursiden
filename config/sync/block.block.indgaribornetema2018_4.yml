@@ -12,7 +12,7 @@ dependencies:
 id: indgaribornetema2018_4
 theme: litteratursiden
 region: content
-weight: 655
+weight: 652
 provider: null
 plugin: 'block_content:77353b66-ab28-4436-8cc7-ba7c9fd2b23a'
 settings:

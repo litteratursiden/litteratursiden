@@ -12,7 +12,7 @@ dependencies:
 id: minkamp
 theme: litteratursiden
 region: content
-weight: 186
+weight: 188
 provider: null
 plugin: 'block_content:f7d31443-6bb7-44ce-bdc1-ac13597f5bbe'
 settings:

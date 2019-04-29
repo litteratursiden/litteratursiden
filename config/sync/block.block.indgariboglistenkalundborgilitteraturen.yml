@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkalundborgilitteraturen
 theme: litteratursiden
 region: content
-weight: 511
+weight: 508
 provider: null
 plugin: 'block_content:cb3becf5-ab24-4df6-80ac-57410c26dc9a'
 settings:

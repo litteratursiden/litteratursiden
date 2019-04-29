@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenklassiskeessays
 theme: litteratursiden
 region: content
-weight: 518
+weight: 515
 provider: null
 plugin: 'block_content:ef6d907e-9252-4861-8faf-84beada11d83'
 settings:

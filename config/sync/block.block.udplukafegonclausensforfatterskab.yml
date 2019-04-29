@@ -12,7 +12,7 @@ dependencies:
 id: udplukafegonclausensforfatterskab
 theme: litteratursiden
 region: content
-weight: 908
+weight: 902
 provider: null
 plugin: 'block_content:a2125103-3739-4ad5-8144-40528c8beb42'
 settings:

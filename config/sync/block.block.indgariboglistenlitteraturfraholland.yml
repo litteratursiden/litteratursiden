@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraturfraholland
 theme: litteratursiden
 region: content
-weight: 546
+weight: 543
 provider: null
 plugin: 'block_content:c2fa5a3f-a2be-4d14-914d-fe9cabcd9238'
 settings:

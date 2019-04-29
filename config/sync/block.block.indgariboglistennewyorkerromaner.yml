@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennewyorkerromaner
 theme: litteratursiden
 region: content
-weight: 586
+weight: 583
 provider: null
 plugin: 'block_content:d2cb608d-938a-4d5f-86f9-2698671d1186'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfaengslendeberetninger
 theme: litteratursiden
 region: content
-weight: 462
+weight: 459
 provider: null
 plugin: 'block_content:9ed3b711-f209-4eda-987f-3db206d49be1'
 settings:

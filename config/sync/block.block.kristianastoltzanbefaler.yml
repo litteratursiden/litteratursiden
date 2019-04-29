@@ -12,7 +12,7 @@ dependencies:
 id: kristianastoltzanbefaler
 theme: litteratursiden
 region: content
-weight: 112
+weight: 116
 provider: null
 plugin: 'block_content:1e53d60b-8cc7-4ffc-90c3-840f5a68bd7a'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentraeerneshemmeligeliv
 theme: litteratursiden
 region: content
-weight: 183
+weight: 185
 provider: null
 plugin: 'block_content:cecaff6f-6b84-40a7-afb4-67f1e4e419ae'
 settings:

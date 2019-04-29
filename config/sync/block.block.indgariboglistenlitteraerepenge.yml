@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraerepenge
 theme: litteratursiden
 region: content
-weight: 562
+weight: 559
 provider: null
 plugin: 'block_content:522924e2-3bff-4c96-8dbe-2257ec218abe'
 settings:

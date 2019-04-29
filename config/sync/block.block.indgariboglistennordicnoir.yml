@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennordicnoir
 theme: litteratursiden
 region: content
-weight: 593
+weight: 590
 provider: null
 plugin: 'block_content:43b297a6-fee8-4a2c-83df-a26d114243cf'
 settings:

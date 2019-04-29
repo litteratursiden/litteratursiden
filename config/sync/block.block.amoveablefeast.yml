@@ -12,7 +12,7 @@ dependencies:
 id: amoveablefeast
 theme: litteratursiden
 region: content
-weight: 317
+weight: 315
 provider: null
 plugin: 'block_content:a83cddde-e052-45c5-81ac-95b7ccd6fa7d'
 settings:

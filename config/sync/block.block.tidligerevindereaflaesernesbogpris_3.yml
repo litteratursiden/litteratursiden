@@ -12,7 +12,7 @@ dependencies:
 id: tidligerevindereaflaesernesbogpris_3
 theme: litteratursiden
 region: content
-weight: 875
+weight: 22
 provider: null
 plugin: 'block_content:91332ed6-79d3-4353-a638-aca39bb822b0'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /artikler/hvem-skal-vinde-laesernes-bogpris-2019
+    pages: "/artikler/hvem-skal-vinde-laesernes-bogpris-2019\r\n/artikler/forfatter-om-kim-larsen-det-var-et-manedlangt-trip-der-fra-start-til-slut-ogsa-foltes-som\r\n/authors"
     negate: false
     context_mapping: {  }

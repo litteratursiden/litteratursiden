@@ -13,7 +13,7 @@ dependencies:
 id: views_block__related_books_by_author_block
 theme: litteratursiden
 region: content
-weight: 27
+weight: 33
 provider: null
 plugin: 'views_block:related_books-related_books_by_author_block'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: lyrikibyen
 theme: litteratursiden
 region: content
-weight: 864
+weight: 859
 provider: null
 plugin: 'block_content:f4dd367c-04e9-4e16-ab32-e4630e6e9275'
 settings:

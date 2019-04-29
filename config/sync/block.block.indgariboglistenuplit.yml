@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenuplit
 theme: litteratursiden
 region: content
-weight: 204
+weight: 206
 provider: null
 plugin: 'block_content:33c952b7-ec22-4949-a5e4-9885a613d18d'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/happy-family\r\n/boeger/ar-1\r\n/boeger/om\r\n/boeger/eleanor-oliphant-har-det-helt-fint\r\n/boeger/forsog-pa-fa-noget-ud-af-livet\r\n/boeger/en-lille-god-gerning\r\n/boeger/etta-og-otto-og-russell-og-james\r\n/boeger/os-mod-jer\r\n/boeger/harold-frys-usandsynlige-pilgrimsfaerd\r\n/boeger/en-mand-der-hedder-ove\r\n/boeger/analfabeten-der-kunne-regne"
+    pages: "/boeger/happy-family\r\n/boeger/ar-1\r\n/boeger/om\r\n/boeger/eleanor-oliphant-har-det-helt-fint\r\n/boeger/forsog-pa-fa-noget-ud-af-livet\r\n/boeger/en-lille-god-gerning\r\n/boeger/etta-og-otto-og-russell-og-james\r\n/boeger/os-mod-jer\r\n/boeger/harold-frys-usandsynlige-pilgrimsfaerd\r\n/boeger/en-mand-der-hedder-ove\r\n/boeger/analfabeten-der-kunne-regne\r\n/boeger/historien-om-arthur-truluv"
     negate: false
     context_mapping: {  }

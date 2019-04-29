@@ -12,7 +12,7 @@ dependencies:
 id: bragenderomandebuter
 theme: litteratursiden
 region: content
-weight: 391
+weight: 389
 provider: null
 plugin: 'block_content:35284c4a-e06e-451e-99f2-dd9201655e9e'
 settings:

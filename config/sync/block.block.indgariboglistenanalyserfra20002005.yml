@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra20002005
 theme: litteratursiden
 region: content
-weight: 817
+weight: 812
 provider: null
 plugin: 'block_content:3585e1fc-ac6b-46f1-988a-5e8886e0d40f'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: ingerchristensenhyldest_2
 theme: litteratursiden
 region: content
-weight: 56
+weight: 60
 provider: null
 plugin: 'block_content:89a334b2-69ed-48b3-b78a-66fe97aee6b3'
 settings:

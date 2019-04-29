@@ -12,7 +12,7 @@ dependencies:
 id: filmatiseringerafbilleaugust
 theme: litteratursiden
 region: content
-weight: 289
+weight: 287
 provider: null
 plugin: 'block_content:bfd2c5dc-f387-4022-9619-62feca91393e'
 settings:

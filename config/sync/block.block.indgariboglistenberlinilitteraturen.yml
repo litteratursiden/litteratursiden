@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenberlinilitteraturen
 theme: litteratursiden
 region: content
-weight: 829
+weight: 824
 provider: null
 plugin: 'block_content:6ae5b101-1619-4f02-b8e3-056ec058b473'
 settings:

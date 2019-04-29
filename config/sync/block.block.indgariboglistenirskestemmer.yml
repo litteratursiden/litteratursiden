@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenirskestemmer
 theme: litteratursiden
 region: content
-weight: 497
+weight: 494
 provider: null
 plugin: 'block_content:76622e32-cb51-4451-92e7-a092f678460a'
 settings:

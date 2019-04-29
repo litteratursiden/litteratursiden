@@ -12,7 +12,7 @@ dependencies:
 id: aretsgenudgivelser2017_2
 theme: litteratursiden
 region: content
-weight: 707
+weight: 703
 provider: null
 plugin: 'block_content:b1e9969e-0288-492b-b4b9-d6aebf2c270f'
 settings:

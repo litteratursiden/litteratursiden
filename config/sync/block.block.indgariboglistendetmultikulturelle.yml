@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendetmultikulturelle
 theme: litteratursiden
 region: content
-weight: 403
+weight: 401
 provider: null
 plugin: 'block_content:19cd9360-1d33-4a41-ba7c-67a40f9dba54'
 settings:

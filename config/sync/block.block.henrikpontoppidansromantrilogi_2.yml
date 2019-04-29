@@ -12,7 +12,7 @@ dependencies:
 id: henrikpontoppidansromantrilogi_2
 theme: litteratursiden
 region: content
-weight: 470
+weight: 467
 provider: null
 plugin: 'block_content:95c04ea7-a89b-4690-a154-c9e4188c8969'
 settings:

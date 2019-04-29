@@ -12,7 +12,7 @@ dependencies:
 id: aretsbedsteromaner2018
 theme: litteratursiden
 region: content
-weight: 157
+weight: 159
 provider: null
 plugin: 'block_content:84c1b8c8-55a1-470d-b897-25853312dbb4'
 settings:

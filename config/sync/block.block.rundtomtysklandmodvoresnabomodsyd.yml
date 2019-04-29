@@ -12,7 +12,7 @@ dependencies:
 id: rundtomtysklandmodvoresnabomodsyd
 theme: litteratursiden
 region: content
-weight: 654
+weight: 651
 provider: null
 plugin: 'block_content:0cf17e36-7404-4084-96f0-877ca485ef27'
 settings:

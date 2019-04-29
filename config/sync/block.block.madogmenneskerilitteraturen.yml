@@ -12,7 +12,7 @@ dependencies:
 id: madogmenneskerilitteraturen
 theme: litteratursiden
 region: content
-weight: 41
+weight: 46
 provider: null
 plugin: 'block_content:261682a1-75a5-426f-94de-1ec857dfa9fa'
 settings:

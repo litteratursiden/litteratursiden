@@ -12,7 +12,7 @@ dependencies:
 id: afrikatrilogien
 theme: litteratursiden
 region: content
-weight: 700
+weight: 696
 provider: null
 plugin: 'block_content:821c2ed8-2bbf-4eee-bd83-2dfbb7838fd7'
 settings:

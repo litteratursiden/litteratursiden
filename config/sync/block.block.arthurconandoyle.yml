@@ -12,7 +12,7 @@ dependencies:
 id: arthurconandoyle
 theme: litteratursiden
 region: content
-weight: 697
+weight: 693
 provider: null
 plugin: 'block_content:5e21741c-1e8d-4ef5-bc8e-ce3499f892eb'
 settings:

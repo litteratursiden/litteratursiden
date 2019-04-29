@@ -12,7 +12,7 @@ dependencies:
 id: laesogsavindereafdegyldnelaurbaer
 theme: litteratursiden
 region: content
-weight: 889
+weight: 883
 provider: null
 plugin: 'block_content:37fa5386-b992-418c-ad90-a14a93ba4334'
 settings:

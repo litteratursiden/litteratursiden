@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistencanadiskeromaner
 theme: litteratursiden
 region: content
-weight: 842
+weight: 837
 provider: null
 plugin: 'block_content:8a8f39de-81c5-4c20-89e3-fad1a08dbc87'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: laesbogenforfilmen
 theme: litteratursiden
 region: content
-weight: 287
+weight: 285
 provider: null
 plugin: 'block_content:1e867039-2a1a-4793-b050-81751e0ede17'
 settings:

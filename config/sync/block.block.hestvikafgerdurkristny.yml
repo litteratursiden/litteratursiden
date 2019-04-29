@@ -12,7 +12,7 @@ dependencies:
 id: hestvikafgerdurkristny
 theme: litteratursiden
 region: content
-weight: 934
+weight: 927
 provider: null
 plugin: 'block_content:383a6c5f-bfdc-41ba-8c3d-7b7ee23fa568'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenamerikanskeudkanter
 theme: litteratursiden
 region: content
-weight: 803
+weight: 798
 provider: null
 plugin: 'block_content:8d03fe02-cc28-40ce-983b-dc27ab4eae9b'
 settings:

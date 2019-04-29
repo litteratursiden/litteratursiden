@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenafrikanskeforfattere
 theme: litteratursiden
 region: content
-weight: 798
+weight: 793
 provider: null
 plugin: 'block_content:90e6d132-6703-475e-8c21-a190358ca7ac'
 settings:

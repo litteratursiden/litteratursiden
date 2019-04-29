@@ -12,7 +12,7 @@ dependencies:
 id: dodenforbornomdetmaerkeligeefterlivibrodrenelovehjerte
 theme: litteratursiden
 region: content
-weight: 130
+weight: 17
 provider: null
 plugin: 'block_content:620f36b8-9e33-402b-a4d4-11c18b4c0912'
 settings:

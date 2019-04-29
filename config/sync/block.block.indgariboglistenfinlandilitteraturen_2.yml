@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfinlandilitteraturen_2
 theme: litteratursiden
 region: content
-weight: 617
+weight: 614
 provider: null
 plugin: 'block_content:e6458163-6418-4f04-9fa5-2f482705a169'
 settings:

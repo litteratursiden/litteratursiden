@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten2.verdenskrig
 theme: litteratursiden
 region: content
-weight: 60
+weight: 64
 provider: null
 plugin: 'block_content:5cd2a951-e1e1-46f0-85c5-7da5e0f66a0e'
 settings:

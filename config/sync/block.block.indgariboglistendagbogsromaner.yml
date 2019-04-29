@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendagbogsromaner
 theme: litteratursiden
 region: content
-weight: 849
+weight: 844
 provider: null
 plugin: 'block_content:32a1d8a8-e525-40e9-b6ed-eb0e9ba64103'
 settings:

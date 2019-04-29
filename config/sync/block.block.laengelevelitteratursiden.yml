@@ -12,7 +12,7 @@ dependencies:
 id: laengelevelitteratursiden
 theme: litteratursiden
 region: content
-weight: 726
+weight: 722
 provider: null
 plugin: 'block_content:dbd3cab8-0300-42b3-93d1-6d51967aa956'
 settings:

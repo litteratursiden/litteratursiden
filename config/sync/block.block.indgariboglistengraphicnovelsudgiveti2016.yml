@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistengraphicnovelsudgiveti2016
 theme: litteratursiden
 region: content
-weight: 475
+weight: 472
 provider: null
 plugin: 'block_content:c69896bc-ec39-4469-82eb-9d8516238cb8'
 settings:

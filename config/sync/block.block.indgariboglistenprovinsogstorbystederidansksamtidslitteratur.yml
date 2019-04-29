@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenprovinsogstorbystederidansksamtidslitteratur
 theme: litteratursiden
 region: content
-weight: 187
+weight: 189
 provider: null
 plugin: 'block_content:638e71f9-a3c9-438d-b364-696abf1235e0'
 settings:

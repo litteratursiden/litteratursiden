@@ -12,7 +12,7 @@ dependencies:
 id: redaktionen
 theme: litteratursiden
 region: content
-weight: 924
+weight: 918
 provider: null
 plugin: 'block_content:4babee14-9fc8-457a-a3cf-80c6eee27541'
 settings:

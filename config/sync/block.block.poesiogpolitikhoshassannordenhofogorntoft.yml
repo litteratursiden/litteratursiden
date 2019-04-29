@@ -12,7 +12,7 @@ dependencies:
 id: poesiogpolitikhoshassannordenhofogorntoft
 theme: litteratursiden
 region: content
-weight: 873
+weight: 868
 provider: null
 plugin: 'block_content:3a08cfca-c958-4418-b5a7-53a1c04a5e1e'
 settings:

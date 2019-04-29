@@ -12,7 +12,7 @@ dependencies:
 id: eventyrforsmaogstore
 theme: litteratursiden
 region: content
-weight: 50
+weight: 56
 provider: null
 plugin: 'block_content:97116019-da26-4b28-be95-e34570923835'
 settings:

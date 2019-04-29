@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilmatiseredegysere
 theme: litteratursiden
 region: content
-weight: 442
+weight: 440
 provider: null
 plugin: 'block_content:643f4851-a2d8-4660-87e7-4d84ca838a18'
 settings:

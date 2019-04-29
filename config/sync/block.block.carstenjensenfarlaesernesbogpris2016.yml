@@ -12,7 +12,7 @@ dependencies:
 id: carstenjensenfarlaesernesbogpris2016
 theme: litteratursiden
 region: content
-weight: 899
+weight: 893
 provider: null
 plugin: 'block_content:699258dc-3819-4260-aae6-db0989adea3a'
 settings:

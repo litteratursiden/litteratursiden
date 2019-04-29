@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilmatiseredekaerlighedsromaner
 theme: litteratursiden
 region: content
-weight: 446
+weight: 444
 provider: null
 plugin: 'block_content:aadd7eb3-ee32-4275-8751-296f22ac3b9d'
 settings:

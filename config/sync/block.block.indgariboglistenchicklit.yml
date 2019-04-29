@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenchicklit
 theme: litteratursiden
 region: content
-weight: 601
+weight: 598
 provider: null
 plugin: 'block_content:147260e1-6e3b-4dbe-a53c-8d3ecd9cee98'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhinduisme_2
 theme: litteratursiden
 region: content
-weight: 210
+weight: 212
 provider: null
 plugin: 'block_content:4fb9e943-a662-4f11-a0a8-0e1dfedd538e'
 settings:

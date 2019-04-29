@@ -12,7 +12,7 @@ dependencies:
 id: tillykketove
 theme: litteratursiden
 region: content
-weight: 931
+weight: 924
 provider: null
 plugin: 'block_content:b529d85a-8385-4e5d-bf54-9e61b09621be'
 settings:

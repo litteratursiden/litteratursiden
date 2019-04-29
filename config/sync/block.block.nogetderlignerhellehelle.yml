@@ -12,7 +12,7 @@ dependencies:
 id: nogetderlignerhellehelle
 theme: litteratursiden
 region: content
-weight: 886
+weight: 880
 provider: null
 plugin: 'block_content:fbe86a8e-220b-42f2-b75b-583ebf626e5b'
 settings:

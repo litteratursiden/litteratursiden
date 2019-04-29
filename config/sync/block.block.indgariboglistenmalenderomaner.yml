@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmalenderomaner
 theme: litteratursiden
 region: content
-weight: 572
+weight: 569
 provider: null
 plugin: 'block_content:4f2e8336-f7c3-4cc0-b16a-87df46c09294'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenennybegyndelse
 theme: litteratursiden
 region: content
-weight: 418
+weight: 416
 provider: null
 plugin: 'block_content:ee972991-4b57-4f59-81b9-78a58d7a8107'
 settings:

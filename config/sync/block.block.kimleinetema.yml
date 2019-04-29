@@ -12,7 +12,7 @@ dependencies:
 id: kimleinetema
 theme: litteratursiden
 region: content
-weight: 911
+weight: 905
 provider: null
 plugin: 'block_content:2020d692-ec07-46af-9686-a90d72c781a2'
 settings:

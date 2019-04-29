@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhistoriskekrimier
 theme: litteratursiden
 region: content
-weight: 812
+weight: 807
 provider: null
 plugin: 'block_content:c83f0cc3-5212-4922-994c-890936c20b70'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenitalienskkrimiogspaending
 theme: litteratursiden
 region: content
-weight: 505
+weight: 502
 provider: null
 plugin: 'block_content:18c5bb11-3554-43c3-b6d3-f6d46efd7ce1'
 settings:

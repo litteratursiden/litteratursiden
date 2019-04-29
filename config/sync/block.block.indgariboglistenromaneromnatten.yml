@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenromaneromnatten
 theme: litteratursiden
 region: content
-weight: 78
+weight: 82
 provider: null
 plugin: 'block_content:98827565-7266-4433-962b-7ac9b4c8e4bb'
 settings:

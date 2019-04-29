@@ -12,7 +12,7 @@ dependencies:
 id: medpulsenpatiden
 theme: litteratursiden
 region: content
-weight: 637
+weight: 634
 provider: null
 plugin: 'block_content:1ab0a861-f9cb-41b8-996f-7ed682eb994e'
 settings:

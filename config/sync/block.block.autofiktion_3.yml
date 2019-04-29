@@ -12,7 +12,7 @@ dependencies:
 id: autofiktion_3
 theme: litteratursiden
 region: content
-weight: 30
+weight: 36
 provider: null
 plugin: 'block_content:343cc4bf-1442-44bd-b63d-662ebbd69636'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /authors
     negate: false
     context_mapping: {  }

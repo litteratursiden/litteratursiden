@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyemodreidansklitteratur
 theme: litteratursiden
 region: content
-weight: 234
+weight: 235
 provider: null
 plugin: 'block_content:7a19b253-a3e6-4016-b21d-397e3acc8a39'
 settings:

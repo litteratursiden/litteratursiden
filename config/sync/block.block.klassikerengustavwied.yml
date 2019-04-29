@@ -12,7 +12,7 @@ dependencies:
 id: klassikerengustavwied
 theme: litteratursiden
 region: content
-weight: 860
+weight: 855
 provider: null
 plugin: 'block_content:312e63cb-705a-411d-8051-0b0bb35a8941'
 settings:

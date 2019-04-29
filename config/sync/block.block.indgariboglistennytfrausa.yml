@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennytfrausa
 theme: litteratursiden
 region: content
-weight: 232
+weight: 233
 provider: null
 plugin: 'block_content:153681f6-70b4-408e-9c4b-ceb82befa50e'
 settings:

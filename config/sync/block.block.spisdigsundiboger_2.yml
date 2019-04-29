@@ -12,7 +12,7 @@ dependencies:
 id: spisdigsundiboger_2
 theme: litteratursiden
 region: content
-weight: 354
+weight: 352
 provider: null
 plugin: 'block_content:2713f6a4-26ae-4c08-bec7-bc54ef06d6c3'
 settings:

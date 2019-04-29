@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenafropolitanskestemmer
 theme: litteratursiden
 region: content
-weight: 799
+weight: 794
 provider: null
 plugin: 'block_content:18e125c7-5869-45e4-9cea-26e2a2eb047b'
 settings:

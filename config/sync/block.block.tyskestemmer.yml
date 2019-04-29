@@ -12,7 +12,7 @@ dependencies:
 id: tyskestemmer
 theme: litteratursiden
 region: content
-weight: 656
+weight: 653
 provider: null
 plugin: 'block_content:96dede9a-eec2-467a-bc13-a2a92306aaa2'
 settings:

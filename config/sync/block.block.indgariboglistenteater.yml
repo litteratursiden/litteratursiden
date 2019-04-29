@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenteater
 theme: litteratursiden
 region: content
-weight: 169
+weight: 171
 provider: null
 plugin: 'block_content:9ff09c3d-f4f3-4e30-af6e-bce5c3fc4280'
 settings:

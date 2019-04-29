@@ -12,7 +12,7 @@ dependencies:
 id: kunstenatvandreogtaenke_2
 theme: litteratursiden
 region: content
-weight: 660
+weight: 657
 provider: null
 plugin: 'block_content:5152f168-3693-4063-8042-c68c002b4e6a'
 settings:

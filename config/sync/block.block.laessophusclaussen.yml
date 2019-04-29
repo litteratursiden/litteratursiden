@@ -12,7 +12,7 @@ dependencies:
 id: laessophusclaussen
 theme: litteratursiden
 region: content
-weight: 872
+weight: 867
 provider: null
 plugin: 'block_content:a6b3abaf-ddda-4507-9f4b-272c2cf731ba'
 settings:

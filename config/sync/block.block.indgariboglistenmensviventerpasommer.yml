@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmensviventerpasommer
 theme: litteratursiden
 region: content
-weight: 575
+weight: 572
 provider: null
 plugin: 'block_content:3206d7f5-9de3-4127-8e0b-357e0274e807'
 settings:

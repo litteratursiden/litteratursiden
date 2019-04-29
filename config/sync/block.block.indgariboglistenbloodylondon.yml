@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbloodylondon
 theme: litteratursiden
 region: content
-weight: 54
+weight: 58
 provider: null
 plugin: 'block_content:37cb7269-602a-44c7-969a-5327ff3d90d4'
 settings:

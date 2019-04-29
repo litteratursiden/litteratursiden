@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisteneuropailitteraturenpolitiskfiktion
 theme: litteratursiden
 region: content
-weight: 429
+weight: 427
 provider: null
 plugin: 'block_content:c1a04bad-5105-4a27-9041-3eec93f1cb97'
 settings:

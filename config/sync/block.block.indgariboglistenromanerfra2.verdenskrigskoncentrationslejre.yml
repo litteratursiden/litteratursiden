@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenromanerfra2.verdenskrigskoncentrationslejre
 theme: litteratursiden
 region: content
-weight: 111
+weight: 115
 provider: null
 plugin: 'block_content:9f8befb0-708c-4be6-b99b-4fc2e6f0d02b'
 settings:

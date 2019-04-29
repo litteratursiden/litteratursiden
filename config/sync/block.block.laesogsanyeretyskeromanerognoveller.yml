@@ -12,7 +12,7 @@ dependencies:
 id: laesogsanyeretyskeromanerognoveller
 theme: litteratursiden
 region: content
-weight: 622
+weight: 619
 provider: null
 plugin: 'block_content:60751e64-30d2-4c80-a061-938ab850c836'
 settings:

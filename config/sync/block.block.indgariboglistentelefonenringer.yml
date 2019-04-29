@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentelefonenringer
 theme: litteratursiden
 region: content
-weight: 170
+weight: 172
 provider: null
 plugin: 'block_content:93f861cc-0c72-4737-958c-32c92271a065'
 settings:

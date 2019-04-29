@@ -12,7 +12,7 @@ dependencies:
 id: fantastiskfantasy
 theme: litteratursiden
 region: content
-weight: 52
+weight: 129
 provider: null
 plugin: 'block_content:e5b885a7-96a8-413a-9f8a-98c80298f249'
 settings:

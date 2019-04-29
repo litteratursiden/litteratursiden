@@ -12,7 +12,7 @@ dependencies:
 id: litteraturenoghavet
 theme: litteratursiden
 region: content
-weight: 610
+weight: 607
 provider: null
 plugin: 'block_content:412ed3da-5158-4c6e-bf03-aaa4023adcb5'
 settings:

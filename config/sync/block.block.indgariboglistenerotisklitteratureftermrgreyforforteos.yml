@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenerotisklitteratureftermrgreyforforteos
 theme: litteratursiden
 region: content
-weight: 422
+weight: 420
 provider: null
 plugin: 'block_content:e8ba766f-bf1b-4bfc-afa6-ec920f5fc216'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennovellernaturligvis
 theme: litteratursiden
 region: content
-weight: 295
+weight: 293
 provider: null
 plugin: 'block_content:73fe218e-2283-466f-ac12-21208a12b8d3'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisteneuropaeiskhumor
 theme: litteratursiden
 region: content
-weight: 432
+weight: 430
 provider: null
 plugin: 'block_content:68e933f5-4170-47bc-be46-bb99afbe3a09'
 settings:

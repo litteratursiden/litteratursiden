@@ -12,7 +12,7 @@ dependencies:
 id: denomineredetildrromanprisen2018
 theme: litteratursiden
 region: content
-weight: 927
+weight: 920
 provider: null
 plugin: 'block_content:ce7e3e4e-f95e-47a4-adf5-acbbee736e8d'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: analysehungerhjerteafkarenfastrup
 theme: litteratursiden
 region: content
-weight: 153
+weight: 155
 provider: null
 plugin: 'block_content:5eabc043-45f2-47ff-a84c-d1b9e3186739'
 settings:

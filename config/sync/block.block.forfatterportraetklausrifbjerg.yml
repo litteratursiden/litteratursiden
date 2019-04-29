@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraetklausrifbjerg
 theme: litteratursiden
 region: content
-weight: 781
+weight: 776
 provider: null
 plugin: 'block_content:6eb52504-e3e3-4f83-b71c-e4667956da83'
 settings:

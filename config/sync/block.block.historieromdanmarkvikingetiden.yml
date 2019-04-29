@@ -12,7 +12,7 @@ dependencies:
 id: historieromdanmarkvikingetiden
 theme: litteratursiden
 region: content
-weight: 600
+weight: 597
 provider: null
 plugin: 'block_content:fb7028aa-f5e6-495d-b4b3-daa7a91d7425'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenskilsmisse
 theme: litteratursiden
 region: content
-weight: 142
+weight: 145
 provider: null
 plugin: 'block_content:28ecbcbf-3835-4915-8b18-c480570bb13c'
 settings:

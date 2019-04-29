@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten12godebogertilkonfirmanden
 theme: litteratursiden
 region: content
-weight: 233
+weight: 234
 provider: null
 plugin: 'block_content:f6fa9f4c-75d8-4a39-996a-747f8f8c1eb0'
 settings:

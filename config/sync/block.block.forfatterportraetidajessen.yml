@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraetidajessen
 theme: litteratursiden
 region: content
-weight: 338
+weight: 336
 provider: null
 plugin: 'block_content:5d3d58a7-5dae-45c9-9480-271064965c3a'
 settings:

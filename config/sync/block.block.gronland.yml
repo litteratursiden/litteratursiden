@@ -12,7 +12,7 @@ dependencies:
 id: gronland
 theme: litteratursiden
 region: content
-weight: 937
+weight: 930
 provider: null
 plugin: 'block_content:44fb488a-ae53-42e2-8b40-1176d8fff49f'
 settings:

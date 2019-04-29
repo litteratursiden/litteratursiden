@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlaengslenefteretsommerhus
 theme: litteratursiden
 region: content
-weight: 569
+weight: 566
 provider: null
 plugin: 'block_content:99c425e5-7feb-4c1b-9506-7effb40a5b9f'
 settings:

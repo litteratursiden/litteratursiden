@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenalkoholiskeromaner
 theme: litteratursiden
 region: content
-weight: 801
+weight: 796
 provider: null
 plugin: 'block_content:962477a6-e513-402c-8530-24fe87b1177c'
 settings:

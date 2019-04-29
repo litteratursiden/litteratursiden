@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanmarkshistorier
 theme: litteratursiden
 region: content
-weight: 44
+weight: 49
 provider: null
 plugin: 'block_content:9559aaf9-c19b-4621-b61d-7027b29c6e75'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: vindereafnordiskradslitteraturpris
 theme: litteratursiden
 region: content
-weight: 813
+weight: 808
 provider: null
 plugin: 'block_content:a00c988a-db2c-460a-aca6-f570b60041dc'
 settings:

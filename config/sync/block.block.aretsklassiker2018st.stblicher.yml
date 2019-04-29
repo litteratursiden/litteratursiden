@@ -12,7 +12,7 @@ dependencies:
 id: aretsklassiker2018st.stblicher
 theme: litteratursiden
 region: content
-weight: 636
+weight: 633
 provider: null
 plugin: 'block_content:adb4b237-9622-4b2c-b8ad-470dced02cda'
 settings:

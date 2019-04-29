@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennarhjernensvigter
 theme: litteratursiden
 region: content
-weight: 597
+weight: 594
 provider: null
 plugin: 'block_content:63f7b621-6496-408d-b2a4-96e92221d6a1'
 settings:

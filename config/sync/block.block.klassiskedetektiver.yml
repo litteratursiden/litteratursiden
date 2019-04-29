@@ -12,7 +12,7 @@ dependencies:
 id: klassiskedetektiver
 theme: litteratursiden
 region: content
-weight: 769
+weight: 764
 provider: null
 plugin: 'block_content:3989e229-2d57-40e1-98bd-e6a8ab5c6017'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: ludvigholberg
 theme: litteratursiden
 region: content
-weight: 862
+weight: 857
 provider: null
 plugin: 'block_content:016c2621-7e03-488a-8f04-c89cc9ac3b5c'
 settings:

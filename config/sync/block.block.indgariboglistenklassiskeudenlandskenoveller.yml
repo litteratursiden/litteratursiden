@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenklassiskeudenlandskenoveller
 theme: litteratursiden
 region: content
-weight: 524
+weight: 521
 provider: null
 plugin: 'block_content:5c9ffa5e-a532-4043-af86-16fdf152761b'
 settings:

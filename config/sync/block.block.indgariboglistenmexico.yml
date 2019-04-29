@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmexico
 theme: litteratursiden
 region: content
-weight: 576
+weight: 573
 provider: null
 plugin: 'block_content:c4224afb-a058-4bae-a963-91903cc8e744'
 settings:

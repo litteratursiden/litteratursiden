@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyeudenlandskenoveller
 theme: litteratursiden
 region: content
-weight: 247
+weight: 248
 provider: null
 plugin: 'block_content:bf032604-b90f-4efc-968f-f25483a64a06'
 settings:

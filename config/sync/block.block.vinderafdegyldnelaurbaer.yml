@@ -12,7 +12,7 @@ dependencies:
 id: vinderafdegyldnelaurbaer
 theme: litteratursiden
 region: content
-weight: 200
+weight: 202
 provider: null
 plugin: 'block_content:024a391a-a091-4dd9-b6db-8d01be97ce25'
 settings:

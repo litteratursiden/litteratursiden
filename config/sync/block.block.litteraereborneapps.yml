@@ -12,7 +12,7 @@ dependencies:
 id: litteraereborneapps
 theme: litteratursiden
 region: content
-weight: 946
+weight: 939
 provider: null
 plugin: 'block_content:66914178-f15a-435f-8724-ce4848e4c4f7'
 settings:

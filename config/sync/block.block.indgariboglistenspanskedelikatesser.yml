@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenspanskedelikatesser
 theme: litteratursiden
 region: content
-weight: 139
+weight: 142
 provider: null
 plugin: 'block_content:58d09f96-a8c2-4904-9c1e-4f86bf88a076'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: livnimandduvaanbefaler
 theme: litteratursiden
 region: content
-weight: 430
+weight: 428
 provider: null
 plugin: 'block_content:61a1bd8b-7235-4f2b-ba64-f8f3bfef4060'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: staerkekvinder
 theme: litteratursiden
 region: content
-weight: 328
+weight: 326
 provider: null
 plugin: 'block_content:4e3d0d99-48dd-4332-97a1-942fb0acba90'
 settings:

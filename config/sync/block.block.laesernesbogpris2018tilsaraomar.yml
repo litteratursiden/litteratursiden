@@ -12,7 +12,7 @@ dependencies:
 id: laesernesbogpris2018tilsaraomar
 theme: litteratursiden
 region: content
-weight: 720
+weight: 716
 provider: null
 plugin: 'block_content:852f1e8e-0e9c-4889-9ec9-d5ba0e81c4a3'
 settings:

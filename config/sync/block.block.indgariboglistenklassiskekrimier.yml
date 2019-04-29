@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenklassiskekrimier
 theme: litteratursiden
 region: content
-weight: 523
+weight: 520
 provider: null
 plugin: 'block_content:6e1b82ae-171b-4248-bf34-7f6b8d80a064'
 settings:

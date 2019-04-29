@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenparanormalromance
 theme: litteratursiden
 region: content
-weight: 220
+weight: 222
 provider: null
 plugin: 'block_content:e7d33e42-82cd-4cad-88c5-9069399b60c4'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennewyorkromanerforar2000
 theme: litteratursiden
 region: content
-weight: 585
+weight: 582
 provider: null
 plugin: 'block_content:027cca7a-d8ed-42f2-871d-38d1bf86af51'
 settings:

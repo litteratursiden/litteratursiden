@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenseriemordere
 theme: litteratursiden
 region: content
-weight: 158
+weight: 160
 provider: null
 plugin: 'block_content:82db0887-9866-49ba-8223-5f4d3e51c8e3'
 settings:

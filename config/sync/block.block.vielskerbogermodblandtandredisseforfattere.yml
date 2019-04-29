@@ -12,7 +12,7 @@ dependencies:
 id: vielskerbogermodblandtandredisseforfattere
 theme: litteratursiden
 region: content
-weight: 444
+weight: 442
 provider: null
 plugin: 'block_content:d1cd5297-5f1f-4899-8f04-6e3ed7459033'
 settings:

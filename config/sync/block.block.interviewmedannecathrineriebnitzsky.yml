@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedannecathrineriebnitzsky
 theme: litteratursiden
 region: content
-weight: 17
+weight: 23
 provider: null
 plugin: 'block_content:f1839123-12da-4747-8dd3-4998d3a76f47'
 settings:

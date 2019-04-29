@@ -12,7 +12,7 @@ dependencies:
 id: afropolitanskeforfattere
 theme: litteratursiden
 region: content
-weight: 928
+weight: 921
 provider: null
 plugin: 'block_content:e8fddaa0-8249-41b9-94c1-9e668645e137'
 settings:

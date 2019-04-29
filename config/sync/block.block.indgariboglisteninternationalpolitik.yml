@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisteninternationalpolitik
 theme: litteratursiden
 region: content
-weight: 496
+weight: 493
 provider: null
 plugin: 'block_content:8677f3cb-9e51-41a3-a593-4d6131484b73'
 settings:

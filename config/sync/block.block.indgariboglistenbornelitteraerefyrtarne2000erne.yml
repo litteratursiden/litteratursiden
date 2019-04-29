@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbornelitteraerefyrtarne2000erne
 theme: litteratursiden
 region: content
-weight: 362
+weight: 360
 provider: null
 plugin: 'block_content:e6566923-267f-49fc-9830-944e5a8bae4b'
 settings:

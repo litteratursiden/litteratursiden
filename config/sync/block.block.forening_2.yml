@@ -12,7 +12,7 @@ dependencies:
 id: forening_2
 theme: litteratursiden
 region: content
-weight: 915
+weight: 909
 provider: null
 plugin: 'block_content:d40f7ac1-d156-414c-b059-094b282f597a'
 settings:

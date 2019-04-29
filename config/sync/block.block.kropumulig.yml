@@ -12,7 +12,7 @@ dependencies:
 id: kropumulig
 theme: litteratursiden
 region: content
-weight: 719
+weight: 715
 provider: null
 plugin: 'block_content:45e78523-0254-4dd2-9906-2dd42eca549d'
 settings:

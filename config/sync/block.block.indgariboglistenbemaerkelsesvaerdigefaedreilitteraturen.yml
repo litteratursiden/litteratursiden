@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbemaerkelsesvaerdigefaedreilitteraturen
 theme: litteratursiden
 region: content
-weight: 828
+weight: 823
 provider: null
 plugin: 'block_content:6a56a84f-647b-4f41-b47b-ec9e9db0fb73'
 settings:

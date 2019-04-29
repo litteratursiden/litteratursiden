@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfantasy_2
 theme: litteratursiden
 region: content
-weight: 499
+weight: 496
 provider: null
 plugin: 'block_content:1fee192c-2cd2-4142-982c-d2a5be3b5743'
 settings:
