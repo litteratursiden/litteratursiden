@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenjylland
 theme: litteratursiden
 region: content
-weight: 509
+weight: 506
 provider: null
 plugin: 'block_content:904d2478-d80c-44cd-aecb-bb9b94c4cfba'
 settings:

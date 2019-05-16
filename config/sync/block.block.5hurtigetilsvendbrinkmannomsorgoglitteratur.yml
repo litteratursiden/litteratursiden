@@ -12,7 +12,7 @@ dependencies:
 id: 5hurtigetilsvendbrinkmannomsorgoglitteratur
 theme: litteratursiden
 region: content
-weight: 15
+weight: 19
 provider: null
 plugin: 'block_content:b577f0fd-c592-4628-adfe-94a95e1e4aeb'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/temaer/sorg\r\n<front>"
+    pages: "/temaer/sorg\r\n/boeger/det-sorgende-dyr-om-sorgen-selvet-og-samfundet\r\n/forfattere/svend-brinkmann\r\n/artikler/svend-brinkmann-der-er-noget-livsbekraeftende-i-reflektere-over-livets-korthed-og\r\n<front>"
     negate: false
     context_mapping: {  }

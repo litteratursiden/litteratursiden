@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfemikrimidenangelsaksiske
 theme: litteratursiden
 region: content
-weight: 438
+weight: 436
 provider: null
 plugin: 'block_content:dd150587-c651-4c1a-9d62-1b2160f9c967'
 settings:

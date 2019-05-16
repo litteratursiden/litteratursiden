@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyerenorskeromaner
 theme: litteratursiden
 region: content
-weight: 228
+weight: 229
 provider: null
 plugin: 'block_content:0dae2236-49fc-41ea-a046-bd4e29e21b83'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/vinterfortet\r\n/boeger/magnet\r\n/boeger/max-mischa-tet-offensiven\r\n/nord-1\r\n/boeger/vaer-god-ved-dyrene\r\n/boeger/begyndelser-0\r\n/boeger/i-hans-arme\r\n/boeger/storefjeld\r\n/boeger/mors-gaver\r\n/boeger/aret-0\r\n/boeger/jeg-kunne-finde-hjem-i-blinde\r\n/boeger/en-dare-fri\r\n/boeger/jeg-braender-ned\r\n/boeger/sameland\r\n/boeger/min-kamp-4bog\r\n/boeger/min-kamp-2-bog\r\n/boeger/der-vokser-et-trae-i-mostamagg\r\n/boeger/hjem-til-mig\r\n/boeger/svom-med-dem-som-drukner\r\n/boeger/arv-og-miljo\r\n/boeger/jeg-naegter-0\r\n/boeger/charlotte-isabel-hansen\r\n/boeger/jeg-skal-gore-dig-sa-lykkelig\r\n/boeger/kold-dag-i-helvede\r\n/boeger/ekspeditricen\r\n/boeger/monstermenneske\r\n/boeger/helt-skudt-i-mads-mikkelsen\r\n/boeger/det-dyrebare\r\n/boeger/der-findes-en-stor-aben-plads-i-bordeaux\r\n/boeger/fordi-jeg-elsker-dig\r\n/boeger/den-der-ser\r\n/boeger/hvidt-hav\r\n/boeger/rigels-ojne\r\n/boeger/hyaenerne\r\n/boeger/de-urolige\r\n/boeger/hills-roman\r\n/boeger/elsken"
+    pages: "/boeger/se-pa-os-nu-roman\r\n/boeger/vinterfortet\r\n/boeger/magnet\r\n/boeger/max-mischa-tet-offensiven\r\n/nord-1\r\n/boeger/vaer-god-ved-dyrene\r\n/boeger/begyndelser-0\r\n/boeger/i-hans-arme\r\n/boeger/storefjeld\r\n/boeger/mors-gaver\r\n/boeger/aret-0\r\n/boeger/jeg-kunne-finde-hjem-i-blinde\r\n/boeger/en-dare-fri\r\n/boeger/jeg-braender-ned\r\n/boeger/sameland\r\n/boeger/min-kamp-4bog\r\n/boeger/min-kamp-2-bog\r\n/boeger/der-vokser-et-trae-i-mostamagg\r\n/boeger/hjem-til-mig\r\n/boeger/svom-med-dem-som-drukner\r\n/boeger/arv-og-miljo\r\n/boeger/jeg-naegter-0\r\n/boeger/charlotte-isabel-hansen\r\n/boeger/jeg-skal-gore-dig-sa-lykkelig\r\n/boeger/kold-dag-i-helvede\r\n/boeger/ekspeditricen\r\n/boeger/monstermenneske\r\n/boeger/helt-skudt-i-mads-mikkelsen\r\n/boeger/det-dyrebare\r\n/boeger/der-findes-en-stor-aben-plads-i-bordeaux\r\n/boeger/fordi-jeg-elsker-dig\r\n/boeger/den-der-ser\r\n/boeger/hvidt-hav\r\n/boeger/rigels-ojne\r\n/boeger/hyaenerne\r\n/boeger/de-urolige\r\n/boeger/hills-roman\r\n/boeger/elsken"
     negate: false
     context_mapping: {  }

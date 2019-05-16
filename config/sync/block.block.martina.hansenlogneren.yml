@@ -12,7 +12,7 @@ dependencies:
 id: martina.hansenlogneren
 theme: litteratursiden
 region: content
-weight: 901
+weight: 895
 provider: null
 plugin: 'block_content:83c0ea67-9029-4af7-ad26-7f9794b1ba88'
 settings:

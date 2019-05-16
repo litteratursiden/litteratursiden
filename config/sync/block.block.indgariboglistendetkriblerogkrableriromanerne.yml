@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendetkriblerogkrableriromanerne
 theme: litteratursiden
 region: content
-weight: 402
+weight: 400
 provider: null
 plugin: 'block_content:864e73eb-c84a-4f5d-b061-6d966bf0eea2'
 settings:

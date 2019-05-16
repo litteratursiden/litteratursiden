@@ -12,7 +12,7 @@ dependencies:
 id: mathildewalterclarkanbefaler
 theme: litteratursiden
 region: content
-weight: 965
+weight: 958
 provider: null
 plugin: 'block_content:43092fe9-cf50-43b3-a484-b8d3c91a94ae'
 settings:

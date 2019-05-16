@@ -12,7 +12,7 @@ dependencies:
 id: dereraltidmere
 theme: litteratursiden
 region: content
-weight: 218
+weight: 220
 provider: null
 plugin: 'block_content:b95ac49a-64f2-4325-9a9a-8f48fb969699'
 settings:

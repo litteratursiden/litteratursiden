@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenromanermedskaeg
 theme: litteratursiden
 region: content
-weight: 114
+weight: 118
 provider: null
 plugin: 'block_content:e02cca12-298a-4324-8520-425f9f8915b2'
 settings:

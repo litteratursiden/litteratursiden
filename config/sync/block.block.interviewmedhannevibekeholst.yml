@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedhannevibekeholst
 theme: litteratursiden
 region: content
-weight: 35
+weight: 40
 provider: null
 plugin: 'block_content:a0eb76c3-3cb1-4d03-a043-d078a619f01e'
 settings:

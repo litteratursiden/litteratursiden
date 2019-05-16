@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraeremysterier
 theme: litteratursiden
 region: content
-weight: 560
+weight: 557
 provider: null
 plugin: 'block_content:2c51839d-4fa1-41a6-8542-1a06d6712ae6'
 settings:

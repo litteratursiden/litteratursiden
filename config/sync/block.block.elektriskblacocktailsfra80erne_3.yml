@@ -12,7 +12,7 @@ dependencies:
 id: elektriskblacocktailsfra80erne_3
 theme: litteratursiden
 region: content
-weight: 779
+weight: 774
 provider: null
 plugin: 'block_content:2bd331fb-1c8a-4277-b80b-7f9a245a9230'
 settings:

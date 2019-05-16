@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenvindereafdrromanprisen
 theme: litteratursiden
 region: content
-weight: 240
+weight: 241
 provider: null
 plugin: 'block_content:dbd65e40-b414-4a2c-bf8a-4a2f444edc1d'
 settings:

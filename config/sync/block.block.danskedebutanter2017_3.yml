@@ -12,7 +12,7 @@ dependencies:
 id: danskedebutanter2017_3
 theme: litteratursiden
 region: content
-weight: 776
+weight: 771
 provider: null
 plugin: 'block_content:6ea721ff-3357-49d0-a825-7ba555c231fa'
 settings:

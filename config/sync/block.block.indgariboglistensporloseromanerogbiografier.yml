@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensporloseromanerogbiografier
 theme: litteratursiden
 region: content
-weight: 81
+weight: 85
 provider: null
 plugin: 'block_content:3998d909-3b65-4a0e-be8a-344751e4f5a0'
 settings:

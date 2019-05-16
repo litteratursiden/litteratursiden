@@ -12,7 +12,7 @@ dependencies:
 id: nogetderlignerhaervaerk
 theme: litteratursiden
 region: content
-weight: 834
+weight: 829
 provider: null
 plugin: 'block_content:2276ac28-92b6-4790-8af0-616a61122313'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: sorgilitteraturen
 theme: litteratursiden
 region: content
-weight: 12
+weight: 16
 provider: null
 plugin: 'block_content:c6c40ea0-5d52-42ee-a319-3a4325eb87dd'
 settings:

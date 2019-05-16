@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendetvildevesten
 theme: litteratursiden
 region: content
-weight: 405
+weight: 403
 provider: null
 plugin: 'block_content:570522b4-3f01-47fc-bfbf-4df3666520d8'
 settings:

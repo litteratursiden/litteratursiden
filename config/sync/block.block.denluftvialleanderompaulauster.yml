@@ -12,7 +12,7 @@ dependencies:
 id: denluftvialleanderompaulauster
 theme: litteratursiden
 region: content
-weight: 897
+weight: 891
 provider: null
 plugin: 'block_content:f2a5644c-0755-475f-9b2e-ad28c6c00a29'
 settings:

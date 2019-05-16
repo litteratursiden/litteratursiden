@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlyrikfra1980erne
 theme: litteratursiden
 region: content
-weight: 568
+weight: 565
 provider: null
 plugin: 'block_content:a1541954-ed6d-483f-92e2-deb8719a322c'
 settings:

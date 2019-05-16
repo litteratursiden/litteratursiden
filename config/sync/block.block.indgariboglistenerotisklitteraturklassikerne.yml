@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenerotisklitteraturklassikerne
 theme: litteratursiden
 region: content
-weight: 425
+weight: 423
 provider: null
 plugin: 'block_content:f7250a3e-e4a9-45c6-b4cd-76109caf683a'
 settings:

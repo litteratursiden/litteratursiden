@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenrummetshistorier
 theme: litteratursiden
 region: content
-weight: 71
+weight: 75
 provider: null
 plugin: 'block_content:066782da-439f-4ae2-91c9-c2d6940e90b0'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: newyork
 theme: litteratursiden
 region: content
-weight: 285
+weight: 283
 provider: null
 plugin: 'block_content:017a6b99-161c-461c-a2a6-ce4a3706006e'
 settings:

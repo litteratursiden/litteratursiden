@@ -12,7 +12,7 @@ dependencies:
 id: karloveknausgardforfatterportraet_2
 theme: litteratursiden
 region: content
-weight: 48
+weight: 54
 provider: null
 plugin: 'block_content:3251f4a9-74e5-490b-b934-dafbdb955588'
 settings:

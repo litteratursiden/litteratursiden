@@ -12,7 +12,7 @@ dependencies:
 id: bevaegelserogvandringerilitteraturen
 theme: litteratursiden
 region: content
-weight: 653
+weight: 650
 provider: null
 plugin: 'block_content:b900f513-0a3e-4702-97b3-e7bd1bc5e1bf'
 settings:

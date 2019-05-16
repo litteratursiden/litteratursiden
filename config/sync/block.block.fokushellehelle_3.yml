@@ -12,7 +12,7 @@ dependencies:
 id: fokushellehelle_3
 theme: litteratursiden
 region: content
-weight: 712
+weight: 708
 provider: null
 plugin: 'block_content:88c5dbc7-2e64-43ec-903a-26ac639383d8'
 settings:

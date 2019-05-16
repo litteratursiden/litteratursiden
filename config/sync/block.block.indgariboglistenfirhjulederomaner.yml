@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfirhjulederomaner
 theme: litteratursiden
 region: content
-weight: 449
+weight: 447
 provider: null
 plugin: 'block_content:e8f2276d-dcd5-49bd-8392-7af562386a3a'
 settings:

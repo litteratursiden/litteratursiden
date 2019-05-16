@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenstorepersonlighederihistorien
 theme: litteratursiden
 region: content
-weight: 89
+weight: 93
 provider: null
 plugin: 'block_content:c8927a8e-76e2-4014-81ab-c6514f893e83'
 settings:

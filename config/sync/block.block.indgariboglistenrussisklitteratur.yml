@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenrussisklitteratur
 theme: litteratursiden
 region: content
-weight: 881
+weight: 875
 provider: null
 plugin: 'block_content:97d9d354-eff5-47fd-bd79-bfbb425d1bb0'
 settings:

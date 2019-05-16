@@ -12,7 +12,7 @@ dependencies:
 id: laesogsakvindeligefyrtarneidansklitteratur_2
 theme: litteratursiden
 region: content
-weight: 72
+weight: 76
 provider: null
 plugin: 'block_content:2187da29-6d3c-41ec-8c2e-1983a9000c2a'
 settings:

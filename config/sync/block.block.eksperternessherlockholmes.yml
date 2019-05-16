@@ -12,7 +12,7 @@ dependencies:
 id: eksperternessherlockholmes
 theme: litteratursiden
 region: content
-weight: 770
+weight: 765
 provider: null
 plugin: 'block_content:cf58545a-ac88-46b7-b57a-9e3b6cae7a0e'
 settings:

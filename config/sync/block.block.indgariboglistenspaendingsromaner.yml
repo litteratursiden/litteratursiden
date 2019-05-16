@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenspaendingsromaner
 theme: litteratursiden
 region: content
-weight: 84
+weight: 88
 provider: null
 plugin: 'block_content:3dbf0447-5bc4-434f-8487-1de1aa78ab5a'
 settings:

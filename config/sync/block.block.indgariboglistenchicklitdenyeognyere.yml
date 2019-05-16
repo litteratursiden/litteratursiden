@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenchicklitdenyeognyere
 theme: litteratursiden
 region: content
-weight: 844
+weight: 839
 provider: null
 plugin: 'block_content:8a6a8057-2a53-40d6-b310-cc126e9eba17'
 settings:

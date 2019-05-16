@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyerefransklitteratur
 theme: litteratursiden
 region: content
-weight: 226
+weight: 227
 provider: null
 plugin: 'block_content:ce536a0d-5c80-402c-aa08-bebc9282e524'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenchile
 theme: litteratursiden
 region: content
-weight: 845
+weight: 840
 provider: null
 plugin: 'block_content:da5bafe6-c29c-4577-89ee-efc11799a8f8'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennogetderlignernickhornbyskrevetfor2010
 theme: litteratursiden
 region: content
-weight: 37
+weight: 42
 provider: null
 plugin: 'block_content:a31f172c-6c44-4de3-856e-87df904df756'
 settings:

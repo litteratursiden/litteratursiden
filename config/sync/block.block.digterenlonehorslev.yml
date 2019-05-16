@@ -12,7 +12,7 @@ dependencies:
 id: digterenlonehorslev
 theme: litteratursiden
 region: content
-weight: 335
+weight: 333
 provider: null
 plugin: 'block_content:b8d6b9df-2670-46d7-8419-66d80125fb04'
 settings:

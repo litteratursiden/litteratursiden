@@ -12,7 +12,7 @@ dependencies:
 id: anmelderfavoritter
 theme: litteratursiden
 region: content
-weight: 306
+weight: 304
 provider: null
 plugin: 'block_content:30d54bd4-022e-4952-bb7a-74ba8a7bb86f'
 settings:

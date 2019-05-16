@@ -12,7 +12,7 @@ dependencies:
 id: danskeforfatteretillouisianaliterature
 theme: litteratursiden
 region: content
-weight: 793
+weight: 788
 provider: null
 plugin: 'block_content:3d040af8-e605-419f-9d53-cd7fabd18f1c'
 settings:

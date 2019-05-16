@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraereroadmovies
 theme: litteratursiden
 region: content
-weight: 563
+weight: 560
 provider: null
 plugin: 'block_content:c0dea815-9952-4b5a-b4b5-e97a14c95ffd'
 settings:

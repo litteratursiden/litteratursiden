@@ -12,7 +12,7 @@ dependencies:
 id: retningslinjerforbrugerkabtindhold
 theme: litteratursiden
 region: content
-weight: 919
+weight: 913
 provider: null
 plugin: 'block_content:069758fe-14f6-4c4a-8494-b49a98fcf719'
 settings:

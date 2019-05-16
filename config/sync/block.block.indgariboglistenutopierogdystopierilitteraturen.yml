@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenutopierogdystopierilitteraturen
 theme: litteratursiden
 region: content
-weight: 206
+weight: 208
 provider: null
 plugin: 'block_content:18b93def-f46d-46d1-ba1a-abfb7b67b178'
 settings:

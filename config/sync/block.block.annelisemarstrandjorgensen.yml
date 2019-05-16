@@ -12,7 +12,7 @@ dependencies:
 id: annelisemarstrandjorgensen
 theme: litteratursiden
 region: content
-weight: 302
+weight: 300
 provider: null
 plugin: 'block_content:d8e09603-17dc-4374-a8bd-2ad0c5889dc4'
 settings:

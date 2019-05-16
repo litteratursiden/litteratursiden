@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennewyorkkrimier
 theme: litteratursiden
 region: content
-weight: 854
+weight: 849
 provider: null
 plugin: 'block_content:41128517-4049-44f1-83da-12d65cb77b3b'
 settings:

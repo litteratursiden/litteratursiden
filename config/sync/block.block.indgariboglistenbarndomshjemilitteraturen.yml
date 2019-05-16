@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbarndomshjemilitteraturen
 theme: litteratursiden
 region: content
-weight: 825
+weight: 820
 provider: null
 plugin: 'block_content:52d1c5df-cc53-4ade-968a-bfc38112f8de'
 settings:

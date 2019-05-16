@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbornelitteraerefyrtarne1980erne
 theme: litteratursiden
 region: content
-weight: 360
+weight: 358
 provider: null
 plugin: 'block_content:36f6005a-6413-4cbc-b06e-144cde5cd57e'
 settings:

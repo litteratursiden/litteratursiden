@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistencubailitteraturen
 theme: litteratursiden
 region: content
-weight: 848
+weight: 843
 provider: null
 plugin: 'block_content:1507cae3-4145-4c32-9b41-d221b592117b'
 settings:

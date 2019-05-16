@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpsykologiskethrillers
 theme: litteratursiden
 region: content
-weight: 162
+weight: 164
 provider: null
 plugin: 'block_content:6b29ad70-e83d-4a56-91b4-3b5a916abe8d'
 settings:

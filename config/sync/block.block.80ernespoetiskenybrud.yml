@@ -12,7 +12,7 @@ dependencies:
 id: 80ernespoetiskenybrud
 theme: litteratursiden
 region: content
-weight: 750
+weight: 745
 provider: null
 plugin: 'block_content:884e3b61-bdb5-4216-bdf6-a2ae7534c852'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: setidligere
 theme: litteratursiden
 region: content
-weight: 935
+weight: 928
 provider: null
 plugin: 'block_content:012617a9-f93b-4d20-bfa8-e78d711db17f'
 settings:

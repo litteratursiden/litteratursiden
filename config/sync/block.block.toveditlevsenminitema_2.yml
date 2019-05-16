@@ -12,7 +12,7 @@ dependencies:
 id: toveditlevsenminitema_2
 theme: litteratursiden
 region: content
-weight: 952
+weight: 945
 provider: null
 plugin: 'block_content:2157ccae-c4f5-47d0-81b2-7e171c6597a8'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedknudromer
 theme: litteratursiden
 region: content
-weight: 19
+weight: 25
 provider: null
 plugin: 'block_content:680019e4-4628-4ba2-81e8-113d04f5146e'
 settings:

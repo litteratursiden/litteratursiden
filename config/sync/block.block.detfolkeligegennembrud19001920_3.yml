@@ -12,7 +12,7 @@ dependencies:
 id: detfolkeligegennembrud19001920_3
 theme: litteratursiden
 region: content
-weight: 500
+weight: 497
 provider: null
 plugin: 'block_content:8b85b55c-99ae-425c-9df6-d8c89aad8fa6'
 settings:

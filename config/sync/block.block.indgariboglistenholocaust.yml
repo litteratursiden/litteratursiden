@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenholocaust
 theme: litteratursiden
 region: content
-weight: 254
+weight: 255
 provider: null
 plugin: 'block_content:c1f1caa7-299e-4294-a7b1-429c0fc4bbf5'
 settings:

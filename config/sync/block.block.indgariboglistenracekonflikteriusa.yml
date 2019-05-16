@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenracekonflikteriusa
 theme: litteratursiden
 region: content
-weight: 166
+weight: 168
 provider: null
 plugin: 'block_content:9b96ab14-9131-454f-9722-6b5264e60457'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: analyserafingerchristensensvaerker
 theme: litteratursiden
 region: content
-weight: 159
+weight: 161
 provider: null
 plugin: 'block_content:773b7757-7424-49fd-80e6-232a862d0a26'
 settings:

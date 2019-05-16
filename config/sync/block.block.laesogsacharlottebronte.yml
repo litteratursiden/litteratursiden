@@ -12,7 +12,7 @@ dependencies:
 id: laesogsacharlottebronte
 theme: litteratursiden
 region: content
-weight: 611
+weight: 608
 provider: null
 plugin: 'block_content:1db08216-0768-4ce8-9e4b-30a57b233190'
 settings:

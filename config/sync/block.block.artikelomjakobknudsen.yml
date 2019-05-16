@@ -12,7 +12,7 @@ dependencies:
 id: artikelomjakobknudsen
 theme: litteratursiden
 region: content
-weight: 877
+weight: 871
 provider: null
 plugin: 'block_content:c39ac0ab-f257-42be-b003-3b0e646a9ab8'
 settings:

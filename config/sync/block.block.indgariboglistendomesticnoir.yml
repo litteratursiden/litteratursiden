@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendomesticnoir
 theme: litteratursiden
 region: content
-weight: 409
+weight: 407
 provider: null
 plugin: 'block_content:d687e423-4baf-4b00-841c-d064e406d82a'
 settings:

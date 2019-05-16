@@ -12,7 +12,7 @@ dependencies:
 id: podcastomborneboger
 theme: litteratursiden
 region: content
-weight: 423
+weight: 421
 provider: null
 plugin: 'block_content:ad47c45e-eeda-411f-b703-5cfb6c19f204'
 settings:

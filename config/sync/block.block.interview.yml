@@ -12,7 +12,7 @@ dependencies:
 id: interview
 theme: litteratursiden
 region: content
-weight: 466
+weight: 463
 provider: null
 plugin: 'block_content:68c7f7c9-1d52-40f1-93bb-4c8b7d0075d8'
 settings:

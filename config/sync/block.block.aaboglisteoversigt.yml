@@ -13,7 +13,7 @@ dependencies:
 id: aaboglisteoversigt
 theme: litteratursiden
 region: content
-weight: 966
+weight: 959
 provider: null
 plugin: 'block_content:e64da2d1-3883-482b-ad68-d4a8372ddbab'
 settings:

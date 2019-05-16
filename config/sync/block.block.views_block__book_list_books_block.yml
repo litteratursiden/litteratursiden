@@ -13,7 +13,7 @@ dependencies:
 id: views_block__book_list_books_block
 theme: litteratursiden
 region: content
-weight: 7
+weight: 5
 provider: null
 plugin: 'views_block:books-book_list_books_block'
 settings:

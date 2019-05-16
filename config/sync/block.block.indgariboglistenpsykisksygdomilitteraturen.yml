@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpsykisksygdomilitteraturen
 theme: litteratursiden
 region: content
-weight: 599
+weight: 596
 provider: null
 plugin: 'block_content:87e1b6fd-29bc-42c9-b306-5b198524a68b'
 settings:

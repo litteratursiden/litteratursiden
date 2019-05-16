@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensverigenyeresvensklitteratur
 theme: litteratursiden
 region: content
-weight: 99
+weight: 103
 provider: null
 plugin: 'block_content:353555ea-177d-4448-a77d-9d116c72826e'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilmatiseredebogerommad
 theme: litteratursiden
 region: content
-weight: 441
+weight: 439
 provider: null
 plugin: 'block_content:82ab5138-699c-44cc-bd8e-f08d7722f498'
 settings:

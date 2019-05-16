@@ -12,7 +12,7 @@ dependencies:
 id: selvfremstillingromanermedautofiktivetendenser
 theme: litteratursiden
 region: content
-weight: 180
+weight: 182
 provider: null
 plugin: 'block_content:3ba52719-3181-45d5-a271-03fe801e1426'
 settings:

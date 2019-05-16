@@ -12,7 +12,7 @@ dependencies:
 id: rundtommurakami_3
 theme: litteratursiden
 region: content
-weight: 107
+weight: 111
 provider: null
 plugin: 'block_content:71f8798f-cdb0-4e82-a424-5d1a50eaf08d'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/forfattere/haruki-murakami\r\n/artikler/haruki-christian-andersen-en-eventyrlig-pris-til-en-magisk-fortaeller\r\n/artikler/murakami-og-originaliteten\r\n"
+    pages: "/forfattere/haruki-murakami\r\n/artikler/haruki-christian-andersen-en-eventyrlig-pris-til-en-magisk-fortaeller\r\n/artikler/murakami-og-originaliteten\r\n/boeger/mordet-pa-kommandanten"
     negate: false
     context_mapping: {  }

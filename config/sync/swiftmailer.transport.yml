@@ -1,4 +1,4 @@
-transport: smtp
+transport: native
 smtp_host: smtp.mandrillapp.com
 smtp_port: 587
 smtp_encryption: tls

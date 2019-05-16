@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenperu
 theme: litteratursiden
 region: content
-weight: 215
+weight: 217
 provider: null
 plugin: 'block_content:cba30b94-936b-4161-b025-6aa3f88c8080'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenparis
 theme: litteratursiden
 region: content
-weight: 221
+weight: 223
 provider: null
 plugin: 'block_content:c09f6ab7-3928-4c0b-a299-4f7cc8b52cac'
 settings:

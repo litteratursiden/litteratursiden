@@ -12,7 +12,7 @@ dependencies:
 id: albusfestival.modblandtandredisseforfattere
 theme: litteratursiden
 region: content
-weight: 286
+weight: 284
 provider: null
 plugin: 'block_content:4cab9af9-0a7d-4465-a736-08f87ad73cfb'
 settings:

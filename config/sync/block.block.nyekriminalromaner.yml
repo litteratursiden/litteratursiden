@@ -12,7 +12,7 @@ dependencies:
 id: nyekriminalromaner
 theme: litteratursiden
 region: content
-weight: 777
+weight: 772
 provider: null
 plugin: 'block_content:ce8218dc-0e45-4432-9e4a-3c4e5d71b67a'
 settings:

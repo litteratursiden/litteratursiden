@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendigteomdoden
 theme: litteratursiden
 region: content
-weight: 408
+weight: 406
 provider: null
 plugin: 'block_content:4837b132-cd01-47ef-9640-58b83180db62'
 settings:

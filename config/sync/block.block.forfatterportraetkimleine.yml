@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraetkimleine
 theme: litteratursiden
 region: content
-weight: 714
+weight: 710
 provider: null
 plugin: 'block_content:03ccf54f-9247-424a-b57e-6143a72cac2d'
 settings:

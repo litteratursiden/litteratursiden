@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenslaegtsromanerfraheleverden
 theme: litteratursiden
 region: content
-weight: 135
+weight: 138
 provider: null
 plugin: 'block_content:20d1efe4-c915-4f1b-9784-ebb774947810'
 settings:

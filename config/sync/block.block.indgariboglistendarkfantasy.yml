@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendarkfantasy
 theme: litteratursiden
 region: content
-weight: 394
+weight: 392
 provider: null
 plugin: 'block_content:b821c9d5-36fb-4733-91c4-173d34c2826b'
 settings:

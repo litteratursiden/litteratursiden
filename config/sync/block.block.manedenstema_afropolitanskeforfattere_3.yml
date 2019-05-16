@@ -12,7 +12,7 @@ dependencies:
 id: manedenstema_afropolitanskeforfattere_3
 theme: litteratursiden
 region: content
-weight: 922
+weight: 916
 provider: null
 plugin: 'block_content:a1c64cc7-f319-43d3-a991-84979796f611'
 settings:

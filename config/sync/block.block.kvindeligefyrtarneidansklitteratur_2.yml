@@ -12,7 +12,7 @@ dependencies:
 id: kvindeligefyrtarneidansklitteratur_2
 theme: litteratursiden
 region: content
-weight: 956
+weight: 949
 provider: null
 plugin: 'block_content:d1baacf6-bf09-4e08-9ab4-76924c6e91e5'
 settings:

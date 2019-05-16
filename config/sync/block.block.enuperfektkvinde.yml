@@ -12,7 +12,7 @@ dependencies:
 id: enuperfektkvinde
 theme: litteratursiden
 region: content
-weight: 322
+weight: 320
 provider: null
 plugin: 'block_content:a9d1ca4c-ba3d-42ef-a713-0fe89ab7818d'
 settings:

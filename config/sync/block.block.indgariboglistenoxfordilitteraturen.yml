@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenoxfordilitteraturen
 theme: litteratursiden
 region: content
-weight: 213
+weight: 215
 provider: null
 plugin: 'block_content:9c9f46a1-1a77-4be5-a73d-5e83a5410e34'
 settings:

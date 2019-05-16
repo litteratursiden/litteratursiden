@@ -12,7 +12,7 @@ dependencies:
 id: erlendloe
 theme: litteratursiden
 region: content
-weight: 323
+weight: 321
 provider: null
 plugin: 'block_content:562a46c4-3fc2-4822-bab9-bd8c31777725'
 settings:

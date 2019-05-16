@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedmalenesolvsten
 theme: litteratursiden
 region: content
-weight: 21
+weight: 27
 provider: null
 plugin: 'block_content:395fba24-d570-4357-b018-a173812185bb'
 settings:

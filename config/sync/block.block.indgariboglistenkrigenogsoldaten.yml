@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkrigenogsoldaten
 theme: litteratursiden
 region: content
-weight: 535
+weight: 532
 provider: null
 plugin: 'block_content:b0373c9a-7421-432f-9fe8-562173f3e483'
 settings:

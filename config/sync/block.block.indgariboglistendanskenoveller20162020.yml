@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanskenoveller20162020
 theme: litteratursiden
 region: content
-weight: 392
+weight: 390
 provider: null
 plugin: 'block_content:2668dfb2-32ee-42f1-8e47-2e0a6cc1e51a'
 settings:

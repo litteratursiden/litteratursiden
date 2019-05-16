@@ -12,7 +12,7 @@ dependencies:
 id: novellistenscottfitzgerald
 theme: litteratursiden
 region: content
-weight: 426
+weight: 424
 provider: null
 plugin: 'block_content:b8512384-3f18-4106-bed1-8a773d849097'
 settings:

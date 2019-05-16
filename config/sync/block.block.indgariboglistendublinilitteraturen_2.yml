@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendublinilitteraturen_2
 theme: litteratursiden
 region: content
-weight: 277
+weight: 275
 provider: null
 plugin: 'block_content:2d4b08cb-58f3-4b8a-b00e-d08c9ea80b5b'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkatteilitteraturen
 theme: litteratursiden
 region: content
-weight: 513
+weight: 510
 provider: null
 plugin: 'block_content:c898633b-9e48-4e03-8f6e-dabef87778f0'
 settings:

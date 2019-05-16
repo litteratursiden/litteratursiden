@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenjulefavoritterforborn
 theme: litteratursiden
 region: content
-weight: 508
+weight: 505
 provider: null
 plugin: 'block_content:2a56b75d-b9c2-41fc-b274-b27213623820'
 settings:

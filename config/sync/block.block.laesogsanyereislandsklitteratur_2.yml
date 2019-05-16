@@ -12,7 +12,7 @@ dependencies:
 id: laesogsanyereislandsklitteratur_2
 theme: litteratursiden
 region: content
-weight: 596
+weight: 593
 provider: null
 plugin: 'block_content:185a3f8f-fdf4-4660-9098-bad5deb1ce4f'
 settings:

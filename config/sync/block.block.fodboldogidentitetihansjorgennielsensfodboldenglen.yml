@@ -12,7 +12,7 @@ dependencies:
 id: fodboldogidentitetihansjorgennielsensfodboldenglen
 theme: litteratursiden
 region: content
-weight: 332
+weight: 330
 provider: null
 plugin: 'block_content:2e2f322b-88ef-4e2f-bd75-94c0d83a46bf'
 settings:

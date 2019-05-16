@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensciencefiction
 theme: litteratursiden
 region: content
-weight: 152
+weight: 154
 provider: null
 plugin: 'block_content:494e482a-b9c6-4873-a8a7-ba765da0cdbb'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenflygtninge
 theme: litteratursiden
 region: content
-weight: 450
+weight: 448
 provider: null
 plugin: 'block_content:d267a6fe-9c40-4c2f-b9c1-0fefff0079b7'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: destoreforfattere_2
 theme: litteratursiden
 region: content
-weight: 739
+weight: 734
 provider: null
 plugin: 'block_content:f33d103c-9fcc-4954-828e-0652c943ac90'
 settings:

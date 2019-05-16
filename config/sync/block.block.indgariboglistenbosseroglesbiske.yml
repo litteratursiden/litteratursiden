@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbosseroglesbiske
 theme: litteratursiden
 region: content
-weight: 364
+weight: 362
 provider: null
 plugin: 'block_content:c5afacbe-0dc2-4309-ae15-ecb16d37315b'
 settings:

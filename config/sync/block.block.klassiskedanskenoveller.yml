@@ -12,7 +12,7 @@ dependencies:
 id: klassiskedanskenoveller
 theme: litteratursiden
 region: content
-weight: 516
+weight: 513
 provider: null
 plugin: 'block_content:60d608e6-4875-4d40-ac2b-75fe4f38b808'
 settings:

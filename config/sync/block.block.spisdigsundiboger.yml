@@ -7,13 +7,12 @@ dependencies:
   module:
     - block_content
     - system
-    - user
   theme:
     - litteratursiden
 id: spisdigsundiboger
 theme: litteratursiden
 region: content
-weight: 260
+weight: 35
 provider: null
 plugin: 'block_content:2713f6a4-26ae-4c08-bec7-bc54ef06d6c3'
 settings:
@@ -30,10 +29,3 @@ visibility:
     pages: '<front>'
     negate: false
     context_mapping: {  }
-  user_role:
-    id: user_role
-    roles:
-      editor: editor
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennordiskradslitteraturpris
 theme: litteratursiden
 region: content
-weight: 594
+weight: 591
 provider: null
 plugin: 'block_content:acef80c4-55e9-4e45-be8d-3680e99cb5b2'
 settings:

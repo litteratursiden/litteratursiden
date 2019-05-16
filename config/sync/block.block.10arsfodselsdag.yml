@@ -12,7 +12,7 @@ dependencies:
 id: 10arsfodselsdag
 theme: litteratursiden
 region: content
-weight: 0
+weight: 9
 provider: null
 plugin: 'block_content:c5b67e49-0d75-4000-a4b8-af071e7ec6af'
 settings:

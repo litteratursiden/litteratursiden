@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenparoadtrip
 theme: litteratursiden
 region: content
-weight: 222
+weight: 224
 provider: null
 plugin: 'block_content:4eccf126-4908-457d-bb77-50509992e64a'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: afropolitanismeafropolitterogafrikansksamtidslitteratur
 theme: litteratursiden
 region: content
-weight: 929
+weight: 922
 provider: null
 plugin: 'block_content:fd33e82c-9a15-451c-908b-8ec066842f36'
 settings:

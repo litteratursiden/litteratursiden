@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbiografierfra2.verdenskrigdanmark
 theme: litteratursiden
 region: content
-weight: 831
+weight: 826
 provider: null
 plugin: 'block_content:a6b3fd2e-b8c7-48f8-93c7-da4dc1910335'
 settings:

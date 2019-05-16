@@ -12,7 +12,7 @@ dependencies:
 id: klassiskkvindelitteratur
 theme: litteratursiden
 region: content
-weight: 515
+weight: 512
 provider: null
 plugin: 'block_content:aa591948-194f-4a8d-b0c0-c70a6bba2ccc'
 settings:

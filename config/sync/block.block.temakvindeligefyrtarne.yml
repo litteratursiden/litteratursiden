@@ -12,7 +12,7 @@ dependencies:
 id: temakvindeligefyrtarne
 theme: litteratursiden
 region: content
-weight: 43
+weight: 48
 provider: null
 plugin: 'block_content:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbogerderforegarienboghandel
 theme: litteratursiden
 region: content
-weight: 840
+weight: 835
 provider: null
 plugin: 'block_content:88e5c3e4-b839-4b0b-931e-03879bdf73b4'
 settings:

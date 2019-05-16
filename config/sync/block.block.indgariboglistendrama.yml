@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendrama
 theme: litteratursiden
 region: content
-weight: 410
+weight: 408
 provider: null
 plugin: 'block_content:6facb364-8967-4ee0-91bd-4cce94718b01'
 settings:

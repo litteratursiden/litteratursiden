@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpsykopater
 theme: litteratursiden
 region: content
-weight: 164
+weight: 166
 provider: null
 plugin: 'block_content:69f5bd75-5f0e-4a56-85c8-b8e38e2107cf'
 settings:

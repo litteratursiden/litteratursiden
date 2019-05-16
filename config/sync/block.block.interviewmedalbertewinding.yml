@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedalbertewinding
 theme: litteratursiden
 region: content
-weight: 948
+weight: 941
 provider: null
 plugin: 'block_content:de1b8e2b-1d34-456f-8e4b-f967b2eedd95'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: h.candersenseventyr
 theme: litteratursiden
 region: content
-weight: 865
+weight: 860
 provider: null
 plugin: 'block_content:791f475c-549c-440a-999c-dd411bb5a24e'
 settings:

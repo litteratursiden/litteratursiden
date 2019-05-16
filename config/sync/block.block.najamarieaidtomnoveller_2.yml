@@ -12,7 +12,7 @@ dependencies:
 id: najamarieaidtomnoveller_2
 theme: litteratursiden
 region: content
-weight: 628
+weight: 625
 provider: null
 plugin: 'block_content:0794611f-9d06-46a7-9f28-3d710c52f29a'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenvindereafmunchchristensensdebutantpris
 theme: litteratursiden
 region: content
-weight: 243
+weight: 244
 provider: null
 plugin: 'block_content:983ebc37-ea82-4a7c-af47-1185d43790e7'
 settings:

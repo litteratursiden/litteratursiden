@@ -12,7 +12,7 @@ dependencies:
 id: rettentilattaleogskrivefrit
 theme: litteratursiden
 region: content
-weight: 659
+weight: 656
 provider: null
 plugin: 'block_content:5a3d89d8-be6a-4dd8-888d-56771fad14c8'
 settings:

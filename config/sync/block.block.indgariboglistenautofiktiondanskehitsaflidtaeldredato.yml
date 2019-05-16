@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenautofiktiondanskehitsaflidtaeldredato
 theme: litteratursiden
 region: content
-weight: 39
+weight: 44
 provider: null
 plugin: 'block_content:88ea0017-0222-40c9-bdb7-c3b84994501e'
 settings:

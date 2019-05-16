@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmiddelalderen
 theme: litteratursiden
 region: content
-weight: 577
+weight: 574
 provider: null
 plugin: 'block_content:015b3c85-9818-4744-a078-3572a0f0320e'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhumoristiskekvinderbogeroggraphicnovels
 theme: litteratursiden
 region: content
-weight: 488
+weight: 485
 provider: null
 plugin: 'block_content:d5d63336-ca2a-4caf-81e4-215ba810dacb'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkrimimedmere
 theme: litteratursiden
 region: content
-weight: 536
+weight: 533
 provider: null
 plugin: 'block_content:54bb401f-c044-4efd-b1b2-933fe8207703'
 settings:

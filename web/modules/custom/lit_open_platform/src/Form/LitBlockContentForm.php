@@ -5,14 +5,12 @@ namespace Drupal\lit_open_platform\Form;
 use Drupal\block_content\BlockContentForm;
 use Drupal\Component\Datetime\TimeInterface;
 use Drupal\Core\Entity\EntityInterface;
-use Drupal\Core\Entity\EntityManagerInterface;
+use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Session\AccountInterface;
 use Drupal\lit_open_platform\Api\SearchClient as Client;
 use Drupal\lit_open_platform\Transformers\WorkTransformer;
 use Drupal\node\Entity\Node;
-use Drupal\user\PrivateTempStoreFactory;
 
 /**
  * Form handler for the node edit forms.
@@ -29,8 +27,8 @@ class LitBlockContentForm extends BlockContentForm {
   /**
    * @inheritdoc
    */
-  public function __construct(EntityManagerInterface $entity_manager, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL) {
-    parent::__construct($entity_manager, $entity_type_bundle_info, $time);
+  public function __construct(EntityRepositoryInterface $entity_repository, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL) {
+    parent::__construct($entity_repository, $entity_type_bundle_info, $time);
 
     // Get module config.
     $config = \Drupal::config('lit_open_platform.settings');

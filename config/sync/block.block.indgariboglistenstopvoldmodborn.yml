@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenstopvoldmodborn
 theme: litteratursiden
 region: content
-weight: 88
+weight: 92
 provider: null
 plugin: 'block_content:4f2ed6bf-9190-4aea-ae45-afce5bab13cb'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: temaislandkarussel
 theme: litteratursiden
 region: content
-weight: 933
+weight: 926
 provider: null
 plugin: 'block_content:cfaf37a8-7093-41d0-8e60-a89ab9ac287d'
 settings:

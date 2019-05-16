@@ -12,7 +12,7 @@ dependencies:
 id: forsteverdenskrigifaglitteraturen
 theme: litteratursiden
 region: content
-weight: 494
+weight: 491
 provider: null
 plugin: 'block_content:c87b819c-b945-4f0b-b3bc-ba6a8e4569bb'
 settings:

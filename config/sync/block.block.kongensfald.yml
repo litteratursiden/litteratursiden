@@ -12,7 +12,7 @@ dependencies:
 id: kongensfald
 theme: litteratursiden
 region: content
-weight: 869
+weight: 864
 provider: null
 plugin: 'block_content:ac3f56f8-9018-4d8e-bdaf-68ab8ebb9b93'
 settings:

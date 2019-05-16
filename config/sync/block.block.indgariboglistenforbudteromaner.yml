@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenforbudteromaner
 theme: litteratursiden
 region: content
-weight: 453
+weight: 451
 provider: null
 plugin: 'block_content:96529ebe-4b33-46d1-b2d0-d57847063bb8'
 settings:

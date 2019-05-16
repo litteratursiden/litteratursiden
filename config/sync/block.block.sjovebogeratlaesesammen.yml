@@ -12,7 +12,7 @@ dependencies:
 id: sjovebogeratlaesesammen
 theme: litteratursiden
 region: content
-weight: 24
+weight: 52
 provider: null
 plugin: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
 settings:

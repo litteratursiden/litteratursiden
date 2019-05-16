@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpersonligeessays
 theme: litteratursiden
 region: content
-weight: 214
+weight: 216
 provider: null
 plugin: 'block_content:c270ab60-37bd-479c-a72a-74fad968e7de'
 settings:

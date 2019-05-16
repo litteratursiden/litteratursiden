@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten.denamerikanskeborgerkrig
 theme: litteratursiden
 region: content
-weight: 355
+weight: 353
 provider: null
 plugin: 'block_content:987da0f2-64eb-4e17-8303-2daac541cb43'
 settings:
