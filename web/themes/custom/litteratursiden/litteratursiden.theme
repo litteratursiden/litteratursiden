@@ -108,13 +108,16 @@ function litteratursiden_preprocess_node(&$variables) {
       case 'author_portrait':
         $suffix = 'image';
         break;
-      case 'article':
+
+        case 'article':
       case 'blog':
         $suffix = 'cover_image';
         break;
-      case 'interview':
+
+        case 'interview':
         $suffix = 'images';
         break;
+
       default:
         $suffix = 'spotbox_image';
         break;
@@ -132,6 +135,9 @@ function litteratursiden_preprocess_node(&$variables) {
 
           $variables['spotbox_image'] = ImageStyle::load('spot')
             ->buildUrl($spotbox_image_original_uri);
+
+          // Ensure URL is relative to make https work.
+          $variables['spotbox_image'] = file_url_transform_relative($variables['spotbox_image']);
         }
       }
     }
