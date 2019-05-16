@@ -82,6 +82,9 @@ function litteratursiden_preprocess_page(&$variables) {
   $data = $config->getRawData();
   if ($data['background_path']) {
     $variables['header_bg_image'] = file_create_url($data['background_path']);
+
+    // Fix that the URL handles http vs. https.
+    $variables['header_bg_image'] = file_url_transform_relative($variables['header_bg_image']);
   }
 }
 
