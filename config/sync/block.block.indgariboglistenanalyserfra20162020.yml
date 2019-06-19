@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra20162020
 theme: litteratursiden
 region: content
-weight: 815
+weight: 810
 provider: null
 plugin: 'block_content:fc4d64f0-60d2-495a-9abe-8e9ff327229c'
 settings:

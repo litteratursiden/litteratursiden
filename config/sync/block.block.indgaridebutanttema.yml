@@ -12,7 +12,7 @@ dependencies:
 id: indgaridebutanttema
 theme: litteratursiden
 region: content
-weight: 295
+weight: 307
 provider: null
 plugin: 'block_content:129e31e1-3e33-4eee-b096-52b4d650df89'
 settings:

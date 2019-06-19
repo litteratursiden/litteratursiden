@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenprisvindendetysksprogetlitteratur_2
 theme: litteratursiden
 region: content
-weight: 629
+weight: 628
 provider: null
 plugin: 'block_content:3faf8198-0ab5-4405-8131-4ab485811d88'
 settings:

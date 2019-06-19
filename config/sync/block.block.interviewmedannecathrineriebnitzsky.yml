@@ -12,20 +12,20 @@ dependencies:
 id: interviewmedannecathrineriebnitzsky
 theme: litteratursiden
 region: content
-weight: 23
+weight: 44
 provider: null
 plugin: 'block_content:f1839123-12da-4747-8dd3-4998d3a76f47'
 settings:
   id: 'block_content:f1839123-12da-4747-8dd3-4998d3a76f47'
-  label: 'Interview med Anne-Cathrine Riebnitzsky'
+  label: 'Blixenprisen børn'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/forfattere/anne-cathrine-riebnitzsky\r\n/boeger/smaragdsliberen"
+    pages: /books
     negate: false
     context_mapping: {  }

@@ -12,12 +12,12 @@ dependencies:
 id: artikeltilforfatterportraetjanguillousverigesfarligstevaben
 theme: litteratursiden
 region: content
-weight: 948
+weight: 939
 provider: null
 plugin: 'block_content:02634e48-3066-4af9-a14f-133b310a712d'
 settings:
   id: 'block_content:02634e48-3066-4af9-a14f-133b310a712d'
-  label: 'Artikel: Jan Guillou: Sveriges farligste våben'
+  label: '6 hurtige til Lotte Garbers om erotisk litteatur'
   provider: block_content
   label_display: '0'
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /forfattere/jan-guillou
+    pages: "/temaer/lummer-litteratur\r\n/artikler/lusket-og-lummer-om-slaegten-af-gustav-wied"
     negate: false
     context_mapping: {  }

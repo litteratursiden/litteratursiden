@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbarnloshed
 theme: litteratursiden
 region: content
-weight: 821
+weight: 816
 provider: null
 plugin: 'block_content:1ab168f5-e9f6-4c4f-8a68-4ac8e693f6f6'
 settings:

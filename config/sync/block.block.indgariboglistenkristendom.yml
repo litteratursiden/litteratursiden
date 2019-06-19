@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkristendom
 theme: litteratursiden
 region: content
-weight: 534
+weight: 538
 provider: null
 plugin: 'block_content:624418b6-22c2-4057-b256-a12308833f14'
 settings:

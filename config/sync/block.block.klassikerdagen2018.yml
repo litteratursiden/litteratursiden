@@ -12,7 +12,7 @@ dependencies:
 id: klassikerdagen2018
 theme: litteratursiden
 region: content
-weight: 259
+weight: 270
 provider: null
 plugin: 'block_content:26ce68ea-64b6-43a5-b9c3-ba85d08c13ab'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: decembertema
 theme: litteratursiden
 region: content
-weight: 946
+weight: 937
 provider: null
 plugin: 'block_content:2a5d6658-902a-46ba-a5c5-eda978ad3356'
 settings:

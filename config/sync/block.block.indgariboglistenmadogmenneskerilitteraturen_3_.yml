@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmadogmenneskerilitteraturen_3_
 theme: litteratursiden
 region: content
-weight: 973
+weight: 968
 provider: null
 plugin: 'block_content:3810d4c9-45ca-43bf-89af-09e0faf1f884'
 settings:

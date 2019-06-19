@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistengotiskeromaner
 theme: litteratursiden
 region: content
-weight: 468
+weight: 469
 provider: null
 plugin: 'block_content:08d4ee11-c3ad-4344-93b8-abbc7ee4e393'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/fra-drommenes-bog\r\n/boeger/stenskoven-roman\r\n/boeger/den-lille-sorte-bog\r\n/boeger/jonathan-strange-mr-norrell\r\n/boeger/kvinden-i-hvidt\r\n/boeger/baskervilles-hund\r\n/boeger/rebecca\r\n/boeger/eloise\r\n/boeger/jeg-skal-vise-jer-frygten\r\n/boeger/gotiske-gysere\r\n/boeger/sov-mit-barn\r\n/boeger/praestens-sorte-slor-og-andre-fortaellinger\r\n/boeger/fortaellinger-1-2-0\r\n/boeger/nattetimen\r\n/boeger/skruen-strammes\r\n/boeger/nicholas-marners-hemmelighed\r\n/boeger/martha-peake\r\n/boeger/samlede-fortaellinger-i-ii\r\n/boeger/vampyren\r\n/boeger/den-trettende-fortaelling\r\n/boeger/frankenstein\r\n/boeger/silhuet-af-en-synder\r\n/boeger/dr-jekyll-og-mr-hyde\r\n/boeger/dracula\r\n/boeger/de-underjordiske-0\r\n/boeger/glasborgen\r\n/boeger/minotauros\r\n/boeger/raenkespil\r\n/boeger/sjaelesostre\r\n/boeger/lille-fremmede\r\n/boeger/slottet-i-otranto\r\n/boeger/guds-oje"
+    pages: "/boeger/fra-drommenes-bog\r\n/boeger/stenskoven-roman\r\n/boeger/den-lille-sorte-bog\r\n/boeger/vi-har-altid-boet-pa-slottet\r\n/boeger/jonathan-strange-mr-norrell\r\n/boeger/kvinden-i-hvidt\r\n/boeger/baskervilles-hund\r\n/boeger/rebecca\r\n/boeger/eloise\r\n/boeger/jeg-skal-vise-jer-frygten\r\n/boeger/gotiske-gysere\r\n/boeger/sov-mit-barn\r\n/boeger/praestens-sorte-slor-og-andre-fortaellinger\r\n/boeger/fortaellinger-1-2-0\r\n/boeger/nattetimen\r\n/boeger/skruen-strammes\r\n/boeger/nicholas-marners-hemmelighed\r\n/boeger/martha-peake\r\n/boeger/samlede-fortaellinger-i-ii\r\n/boeger/vampyren\r\n/boeger/den-trettende-fortaelling\r\n/boeger/frankenstein\r\n/boeger/silhuet-af-en-synder\r\n/boeger/dr-jekyll-og-mr-hyde\r\n/boeger/dracula\r\n/boeger/de-underjordiske-0\r\n/boeger/glasborgen\r\n/boeger/minotauros\r\n/boeger/raenkespil\r\n/boeger/sjaelesostre\r\n/boeger/lille-fremmede\r\n/boeger/slottet-i-otranto\r\n/boeger/guds-oje"
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: nogetde
 theme: litteratursiden
 region: content
-weight: 940
+weight: 931
 provider: null
 plugin: 'block_content:660b8461-dffe-4b03-b3fb-cf1983fce29b'
 settings:

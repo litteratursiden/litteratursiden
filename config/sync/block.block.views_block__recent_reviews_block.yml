@@ -12,7 +12,7 @@ dependencies:
 id: views_block__recent_reviews_block
 theme: litteratursiden
 region: content
-weight: 3
+weight: 14
 provider: null
 plugin: 'views_block:recent_reviews-block_recent_reviews'
 settings:

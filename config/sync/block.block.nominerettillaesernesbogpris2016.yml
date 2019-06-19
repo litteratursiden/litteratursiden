@@ -12,7 +12,7 @@ dependencies:
 id: nominerettillaesernesbogpris2016
 theme: litteratursiden
 region: content
-weight: 487
+weight: 489
 provider: null
 plugin: 'block_content:ad471c9e-dff5-43ae-96a3-caef20611e7d'
 settings:

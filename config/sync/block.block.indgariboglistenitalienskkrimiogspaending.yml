@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenitalienskkrimiogspaending
 theme: litteratursiden
 region: content
-weight: 502
+weight: 507
 provider: null
 plugin: 'block_content:18c5bb11-3554-43c3-b6d3-f6d46efd7ce1'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/edderkoppens-talmodighed\r\n/boeger/hedebolge-i-august\r\n/boeger/papirmanen\r\n/boeger/hvem-er-lou-sciortino\r\n/boeger/mysteriet-mangiabarche\r\n/boeger/sandheden-om-alligatoren\r\n/boeger/efter-al-sandsynlighed\r\n/boeger/den-kolde-sommer\r\n/boeger/pa-kanten-af-sandheden\r\n/boeger/forvandleren\r\n/boeger/du-er-det-onde\r\n/boeger/krokodillen-0\r\n/boeger/bravo\r\n/boeger/skaebnespil\r\n/boeger/lysmordene\r\n/boeger/den-femte-spiller\r\n/boeger/det-forkerte-kort\r\n/boeger/kaetteren\r\n/boeger/999\r\n/boeger/sort-sondag-0\r\n/boeger/en-grim-lille-historie"
+    pages: "/boeger/edderkoppens-talmodighed\r\n/boeger/hedebolge-i-august\r\n/boeger/papirmanen\r\n/boeger/hvem-er-lou-sciortino\r\n/boeger/mysteriet-mangiabarche\r\n/boeger/sandheden-om-alligatoren\r\n/boeger/efter-al-sandsynlighed\r\n/boeger/den-kolde-sommer\r\n/boeger/pa-kanten-af-sandheden\r\n/boeger/forvandleren\r\n/boeger/du-er-det-onde\r\n/boeger/krokodillen-0\r\n/boeger/bravo\r\n/boeger/skaebnespil\r\n/boeger/lysmordene\r\n/boeger/den-femte-spiller\r\n/boeger/det-forkerte-kort\r\n/boeger/kaetteren\r\n/boeger/999\r\n/boeger/sort-sondag-0\r\n/boeger/en-grim-lille-historie\r\n/boeger/amerikaneren"
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennogetomfotografer
 theme: litteratursiden
 region: content
-weight: 586
+weight: 587
 provider: null
 plugin: 'block_content:a54f0524-d3fb-4c9b-99a4-99dad2551791'
 settings:

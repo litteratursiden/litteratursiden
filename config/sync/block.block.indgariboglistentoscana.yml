@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistentoscana
 theme: litteratursiden
 region: content
-weight: 184
+weight: 206
 provider: null
 plugin: 'block_content:d1ed101d-59f3-48c9-b853-4b187e17162d'
 settings:
   id: 'block_content:d1ed101d-59f3-48c9-b853-4b187e17162d'
-  label: 'Indgår i boglisten: Toscana'
+  label: 'Nyere erotisk litteratur'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/kaere-mai\r\n/boeger/mit-toscana\r\n/boeger/heat\r\n/boeger/de-elskende-i-toscana\r\n/boeger/toscana-i-mit-hjerte\r\n/boeger/dora\r\n/boeger/purpur\r\n/boeger/himlen-over-toscana\r\n/boeger/et-hus-i-toscana\r\n/boeger/bella-toscana\r\n/boeger/den-italienske-have\r\n/boeger/lykkelige-enker\r\n/boeger/familien-medici\r\n/boeger/fortryllersken-fra-firenze"
+    pages: "/temaer/lummer-litteratur\r\n/artikler/lusket-og-lummer-om-slaegten-af-gustav-wied"
     negate: false
     context_mapping: {  }

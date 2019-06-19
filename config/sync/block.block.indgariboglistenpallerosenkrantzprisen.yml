@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpallerosenkrantzprisen
 theme: litteratursiden
 region: content
-weight: 221
+weight: 236
 provider: null
 plugin: 'block_content:c2a77f7a-59fe-4606-81a1-f2d45d9334e0'
 settings:

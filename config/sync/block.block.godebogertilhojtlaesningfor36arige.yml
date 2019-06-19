@@ -12,7 +12,7 @@ dependencies:
 id: godebogertilhojtlaesningfor36arige
 theme: litteratursiden
 region: content
-weight: 10
+weight: 49
 provider: null
 plugin: 'block_content:9cd3e65b-fdc3-49b2-9e0b-3f569b69f2bd'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/artikler/hojtlaesning-giver-naervaer-og-appetit-pa-laesning\r\n/books"
+    pages: "/artikler/hojtlaesning-giver-naervaer-og-appetit-pa-laesning\r\n"
     negate: false
     context_mapping: {  }

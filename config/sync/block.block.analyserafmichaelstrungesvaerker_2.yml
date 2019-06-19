@@ -12,7 +12,7 @@ dependencies:
 id: analyserafmichaelstrungesvaerker_2
 theme: litteratursiden
 region: content
-weight: 748
+weight: 744
 provider: null
 plugin: 'block_content:afbdbf3f-bc3c-4c7f-86a0-f8bf659cbd75'
 settings:

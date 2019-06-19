@@ -13,21 +13,21 @@ dependencies:
 id: anbefalingerikbhlaesersprogram
 theme: litteratursiden
 region: content
-weight: 11
+weight: 54
 provider: null
 plugin: 'block_content:542ea826-df15-4806-8482-6361f0bcb4ef'
 settings:
   id: 'block_content:542ea826-df15-4806-8482-6361f0bcb4ef'
-  label: 'Malene Sølvsten'
+  label: 'Geir Gulliksen'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /books
+    pages: "/boeger/se-pa-os-nu-roman\r\n/forfattere/geir-gulliksen"
     negate: false
     context_mapping: {  }
   user_role:

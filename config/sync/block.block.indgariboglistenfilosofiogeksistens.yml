@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilosofiogeksistens
 theme: litteratursiden
 region: content
-weight: 446
+weight: 448
 provider: null
 plugin: 'block_content:3b8fc320-6b5e-41ae-b4f5-412e40b4560b'
 settings:

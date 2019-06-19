@@ -12,7 +12,7 @@ dependencies:
 id: bogeromatskrive
 theme: litteratursiden
 region: content
-weight: 910
+weight: 904
 provider: null
 plugin: 'block_content:3f075e85-7963-4410-bba3-67d194348200'
 settings:

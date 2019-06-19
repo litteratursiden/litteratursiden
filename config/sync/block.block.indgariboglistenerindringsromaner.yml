@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenerindringsromaner
 theme: litteratursiden
 region: content
-weight: 418
+weight: 425
 provider: null
 plugin: 'block_content:50fe7c23-cdc5-4d3a-bffc-61c80295e570'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbiografierfra1.verdenskrig
 theme: litteratursiden
 region: content
-weight: 825
+weight: 819
 provider: null
 plugin: 'block_content:5e82bb45-3430-43d8-8fcc-f08d1e27c929'
 settings:

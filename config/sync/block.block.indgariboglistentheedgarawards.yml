@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentheedgarawards
 theme: litteratursiden
 region: content
-weight: 174
+weight: 196
 provider: null
 plugin: 'block_content:3ee82c56-a58e-44c7-8b5f-d940f1ed7bc5'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: literaturwurstdenuspiseligebog
 theme: litteratursiden
 region: content
-weight: 127
+weight: 153
 provider: null
 plugin: 'block_content:633853f9-c3dd-4bd0-af9d-202a1b7ffd88'
 settings:

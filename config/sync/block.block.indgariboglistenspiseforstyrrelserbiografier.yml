@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenspiseforstyrrelserbiografier
 theme: litteratursiden
 region: content
-weight: 132
+weight: 157
 provider: null
 plugin: 'block_content:5e947cb2-600f-4b19-8e6b-c218eedd01f9'
 settings:

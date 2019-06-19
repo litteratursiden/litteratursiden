@@ -12,7 +12,7 @@ dependencies:
 id: nyeanmeldelser_2
 theme: litteratursiden
 region: content
-weight: 977
+weight: 972
 provider: null
 plugin: 'block_content:87567c6e-f114-4463-a6aa-ecd6912f4741'
 settings:

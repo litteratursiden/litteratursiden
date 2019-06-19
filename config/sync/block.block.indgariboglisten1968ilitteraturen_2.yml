@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten1968ilitteraturen_2
 theme: litteratursiden
 region: content
-weight: 62
+weight: 91
 provider: null
 plugin: 'block_content:2da40cc8-28d7-403b-8626-b616cd02f85f'
 settings:

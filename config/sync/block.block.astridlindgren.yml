@@ -12,7 +12,7 @@ dependencies:
 id: astridlindgren
 theme: litteratursiden
 region: content
-weight: 434
+weight: 436
 provider: null
 plugin: 'block_content:5d060ed6-ad66-40d4-a55c-9cd47a3eab56'
 settings:

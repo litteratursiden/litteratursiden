@@ -12,7 +12,7 @@ dependencies:
 id: midtienjazztid
 theme: litteratursiden
 region: content
-weight: 624
+weight: 623
 provider: null
 plugin: 'block_content:7006f678-b87c-48cc-88a5-9f54a258d0d9'
 settings:

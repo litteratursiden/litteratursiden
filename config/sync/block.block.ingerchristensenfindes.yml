@@ -12,7 +12,7 @@ dependencies:
 id: ingerchristensenfindes
 theme: litteratursiden
 region: content
-weight: 126
+weight: 152
 provider: null
 plugin: 'block_content:54851e58-5517-4d0d-b2b8-8b99ece99bf5'
 settings:

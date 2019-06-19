@@ -12,14 +12,14 @@ dependencies:
 id: ereolengo
 theme: litteratursiden
 region: content
-weight: 55
+weight: 87
 provider: null
 plugin: 'block_content:e040f6e5-affd-461b-a4b7-e2a743fdba60'
 settings:
   id: 'block_content:e040f6e5-affd-461b-a4b7-e2a743fdba60'
-  label: 'eReolen Go!'
+  label: 'Gode bøger til børn'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

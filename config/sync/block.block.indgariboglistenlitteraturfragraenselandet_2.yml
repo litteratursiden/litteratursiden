@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraturfragraenselandet_2
 theme: litteratursiden
 region: content
-weight: 516
+weight: 522
 provider: null
 plugin: 'block_content:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /boeger/erna-i-krig
+    pages: "/boeger/om-hundrede-ar\r\n/boeger/erna-i-krig\r\n/boeger/der-mangler-en-sang-om-solsorten\r\n/boeger/snedage\r\n/boeger/stemte-ser\r\n/boeger/fortiden-er-ikke-hvad-den-har-vaeret\r\n/boeger/christas-forlovelser\r\n/boeger/over-stregen-en-flensborg-kronike\r\n/boeger/i-graenselandet-rejsebreve-fra-sydslesvig\r\n/boeger/men-himlen-lukker-sine-ojne\r\n/boeger/de-faderlose-en-roman-om-sydslesvig-1937-1950\r\n/boeger/sydslesvigpige\r\n/boeger/sydslesvigkvinde\r\n/boeger/befrielse\r\n/boeger/oproret-0\r\n/boeger/graensegaenger\r\n/boeger/knacker"
     negate: false
     context_mapping: {  }

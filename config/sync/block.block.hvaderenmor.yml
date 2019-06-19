@@ -12,12 +12,12 @@ dependencies:
 id: hvaderenmor
 theme: litteratursiden
 region: content
-weight: 310
+weight: 322
 provider: null
 plugin: 'block_content:377e46cd-c9bc-4623-a19b-69b50d211454'
 settings:
   id: 'block_content:377e46cd-c9bc-4623-a19b-69b50d211454'
-  label: Artikel
+  label: 'Artikel om Ida Jessen'
   provider: block_content
   label_display: visible
   status: true

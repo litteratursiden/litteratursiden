@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmennesketsforholdtilnaturen
 theme: litteratursiden
 region: content
-weight: 571
+weight: 572
 provider: null
 plugin: 'block_content:74417474-1d1a-49cd-905b-f792b423bbd3'
 settings:

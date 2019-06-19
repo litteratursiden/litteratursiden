@@ -12,7 +12,7 @@ dependencies:
 id: thomasg.bagge
 theme: litteratursiden
 region: content
-weight: 643
+weight: 640
 provider: null
 plugin: 'block_content:96c2b4bf-c5f3-4288-8d5c-7549afce4897'
 settings:

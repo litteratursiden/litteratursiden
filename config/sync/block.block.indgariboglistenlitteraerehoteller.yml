@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraerehoteller
 theme: litteratursiden
 region: content
-weight: 553
+weight: 555
 provider: null
 plugin: 'block_content:8da8b6c9-c7fd-42bd-aca3-44b218fc0a18'
 settings:

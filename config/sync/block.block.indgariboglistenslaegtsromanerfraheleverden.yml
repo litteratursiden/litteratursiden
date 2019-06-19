@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenslaegtsromanerfraheleverden
 theme: litteratursiden
 region: content
-weight: 138
+weight: 162
 provider: null
 plugin: 'block_content:20d1efe4-c915-4f1b-9784-ebb774947810'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/lystaegteskabet-roman\r\n/boeger/huset-ved-moskeen\r\n/boeger/det-bla-mellem-himmel-og-hav-af-susan-abulhawa\r\n/boeger/morgen-i-jenin\r\n/boeger/en-engel-bag-oret\r\n/boeger/portraet-i-sepia\r\n/boeger/havana-min-elskede\r\n/boeger/den-sidste-konkubine\r\n/boeger/saltstotter\r\n/boeger/drommen-om-byen-bag-murene\r\n/boeger/arene-med-laura-diaz\r\n/boeger/glaspaladset\r\n/boeger/hjemfaerd\r\n/boeger/skriften-i-min-pande\r\n/boeger/de-sma-gule-sko\r\n/boeger/og-bjergene-gav-genlyd\r\n/boeger/nattens-rygrad\r\n/boeger/dansende-pafugle\r\n/boeger/rismoderen\r\n/boeger/damekupeen\r\n/boeger/og-vi-kom-over-havet\r\n/boeger/slaegten-pa-jamaica\r\n/boeger/du-lovede-vi-skulle-hjem\r\n/boeger/midnatsborn\r\n/boeger/aften-hele-dagen\r\n/boeger/sneblomst-og-den-hemmelige-vifte\r\n/boeger/braendte-skygger\r\n/boeger/benbrudslaegens-datter\r\n/boeger/faedre-og-sonner\r\n/boeger/knivens-aeg-0\r\n/boeger/argentineren-der-kom-sejlende-pa-en-cedertraesplanke\r\n/boeger/laengslernes-oer\r\n/boeger/de-gronne-skove\r\n/boeger/smeltediglen-0"
+    pages: "/boeger/lystaegteskabet-roman\r\n/boeger/huset-ved-moskeen\r\n/boeger/pachinko\r\n/boeger/vita\r\n/boeger/det-bla-mellem-himmel-og-hav-af-susan-abulhawa\r\n/boeger/morgen-i-jenin\r\n/boeger/en-engel-bag-oret\r\n/boeger/portraet-i-sepia\r\n/boeger/havana-min-elskede\r\n/boeger/den-sidste-konkubine\r\n/boeger/saltstotter\r\n/boeger/drommen-om-byen-bag-murene\r\n/boeger/arene-med-laura-diaz\r\n/boeger/glaspaladset\r\n/boeger/hjemfaerd\r\n/boeger/skriften-i-min-pande\r\n/boeger/de-sma-gule-sko\r\n/boeger/og-bjergene-gav-genlyd\r\n/boeger/nattens-rygrad\r\n/boeger/dansende-pafugle\r\n/boeger/rismoderen\r\n/boeger/damekupeen\r\n/boeger/og-vi-kom-over-havet\r\n/boeger/slaegten-pa-jamaica\r\n/boeger/du-lovede-vi-skulle-hjem\r\n/boeger/midnatsborn\r\n/boeger/aften-hele-dagen\r\n/boeger/sneblomst-og-den-hemmelige-vifte\r\n/boeger/braendte-skygger\r\n/boeger/benbrudslaegens-datter\r\n/boeger/faedre-og-sonner\r\n/boeger/knivens-aeg-0\r\n/boeger/argentineren-der-kom-sejlende-pa-en-cedertraesplanke\r\n/boeger/laengslernes-oer\r\n/boeger/de-gronne-skove\r\n/boeger/smeltediglen-0"
     negate: false
     context_mapping: {  }

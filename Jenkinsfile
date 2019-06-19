@@ -20,21 +20,6 @@ pipeline {
         }
         stage('Deployment') {
             parallel {
-                stage('Litteratursiden - develop') {
-                    when {
-                        branch 'develop'
-                    }
-                    steps {
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git clean -d --force'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git checkout ${BRANCH_NAME}'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git fetch'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git reset origin/${BRANCH_NAME} --hard'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; composer install'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs/web; drush updb -y'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs/web; drush entup -y'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs/web; drush cr'"
-                    }
-                }
                 stage('Litteratursiden - staging') {
                     when {
                         branch 'release'

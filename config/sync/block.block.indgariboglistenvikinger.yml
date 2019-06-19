@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenvikinger
 theme: litteratursiden
 region: content
-weight: 238
+weight: 250
 provider: null
 plugin: 'block_content:d9594685-c488-43c1-bd65-b54bd95e678e'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/lodbrogsonnernes-haevn\r\n/boeger/lodbrogsonnernes-ran\r\n/boeger/det-sidste-kongerige\r\n/boeger/volvens-datter\r\n/boeger/arnulf\r\n/boeger/jomsvikingen\r\n/boeger/sovejen\r\n/boeger/den-hellige-knud\r\n/boeger/freja-0\r\n/boeger/til-vikingernes-land\r\n/boeger/frost-0\r\n/boeger/kongens-hunde\r\n/boeger/ravneflugt\r\n/boeger/skibet\r\n/boeger/vindenes-alter\r\n/boeger/de-edsvorne\r\n/boeger/ragnhilds-saga\r\n/boeger/vikingebroen\r\n/boeger/fimbulvinter\r\n/boeger/erik-den-rode-skibet-og-svaerdet\r\n/boeger/sven-tveskaeg-danernes-sidste-viking\r\n/boeger/kongen-der-sendte-paven-en-fugl"
+    pages: "/boeger/1000-arsriget\r\n/boeger/lodbrogsonnernes-haevn\r\n/boeger/det-sidste-kongerige\r\n/boeger/volvens-datter\r\n/boeger/arnulf\r\n/boeger/jomsvikingen\r\n/boeger/sovejen\r\n/boeger/den-hellige-knud\r\n/boeger/freja-0\r\n/boeger/til-vikingernes-land\r\n/boeger/frost-0\r\n/boeger/kongens-hunde\r\n/boeger/ravneflugt\r\n /boeger/skibet\r\n/boeger/vindenes-alter\r\n/boeger/de-edsvorne\r\n/boeger/ragnhilds-saga\r\n/boeger/vikingebroen\r\n/boeger/fimbulvinter\r\n/boeger/erik-den-rode-skibet-og-svaerdet\r\n/boeger/sven-tveskaeg-danernes-sidste-viking\r\n/boeger/kongen-der-sendte-paven-en-fugl"
     negate: false
     context_mapping: {  }

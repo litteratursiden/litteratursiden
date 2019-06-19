@@ -12,7 +12,7 @@ dependencies:
 id: litteraturogkvindeskaebner
 theme: litteratursiden
 region: content
-weight: 655
+weight: 651
 provider: null
 plugin: 'block_content:9e6b0226-293a-4d0e-872a-50650a521b23'
 settings:

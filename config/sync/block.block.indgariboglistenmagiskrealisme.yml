@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmagiskrealisme
 theme: litteratursiden
 region: content
-weight: 851
+weight: 848
 provider: null
 plugin: 'block_content:f2d50d9a-2497-43b0-a4b2-203b6baf42c2'
 settings:

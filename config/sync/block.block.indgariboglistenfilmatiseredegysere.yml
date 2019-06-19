@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilmatiseredegysere
 theme: litteratursiden
 region: content
-weight: 440
+weight: 442
 provider: null
 plugin: 'block_content:643f4851-a2d8-4660-87e7-4d84ca838a18'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/lad-den-rette-komme-ind\r\n/boeger/dodens-gab\r\n/boeger/exorcisten\r\n/boeger/psycho\r\n/boeger/world-war-z-0\r\n/boeger/baskervilles-hund\r\n/boeger/american-psycho\r\n/boeger/mennesker-uden-sjael\r\n/boeger/offer-en-samler\r\n/boeger/coraline\r\n/boeger/dod-indtil-solnedgang\r\n/boeger/den-rode-drage\r\n/boeger/ondskabens-ojne\r\n/boeger/hannibal-vagner\r\n/boeger/kvinden-i-sort\r\n/boeger/skruen-strammes\r\n/boeger/sidste-time\r\n/boeger/morkeleg\r\n/boeger/puls\r\n/boeger/dyrekirkegarden\r\n/boeger/misery\r\n/boeger/det-onde\r\n/boeger/odd-thomas\r\n/boeger/intensitet\r\n/boeger/skygger-1\r\n/boeger/kat\r\n/boeger/rosemarys-baby-0\r\n/boeger/raedslen-fra-dunwich\r\n/boeger/ondskabens-saed\r\n/boeger/hjemsogt-af-et-ekko\r\n/boeger/jeg-er-den-sidste\r\n/boeger/twilight\r\n/boeger/hellboy-ondskabens-fro\r\n/boeger/hell\r\n/boeger/nat-i-30-dage\r\n/boeger/dumas-klubben\r\n/boeger/huset-0\r\n/boeger/dyr\r\n/boeger/farezone-4\r\n/boeger/forbandelsen-1\r\n/boeger/en-vampyrs-bekendelser\r\n/boeger/ondt-blod\r\n/boeger/frankenstein\r\n/boeger/ulvetid\r\n/boeger/dr-jekyll-og-mr-hyde\r\n/boeger/blodet-fra-mumiens-gravkammer\r\n/boeger/dracula\r\n/boeger/varulvenaetter\r\n/boeger/ring\r\n/boeger/blod-0\r\n/boeger/doktor-moreaus-o\r\n/boeger/den-usynlige-mand\r\n/boeger/djaevelen-rider-ud\r\n/boeger/billedet-af-dorian-gray\r\n/boeger/da-trifitterne-kom\r\n"
+    pages: "/boeger/lad-den-rette-komme-ind\r\n/boeger/dodens-gab\r\n/boeger/exorcisten\r\n/boeger/psycho\r\n/boeger/world-war-z-0\r\n/boeger/baskervilles-hund\r\n/boeger/american-psycho\r\n/boeger/mennesker-uden-sjael\r\n/boeger/offer-en-samler\r\n/boeger/coraline\r\n/boeger/dod-indtil-solnedgang\r\n/boeger/den-rode-drage\r\n/boeger/ondskabens-ojne\r\n/boeger/hannibal-vagner\r\n/boeger/kvinden-i-sort\r\n/boeger/skruen-strammes\r\n/boeger/sidste-time\r\n/boeger/morkeleg\r\n/boeger/puls\r\n/boeger/dyrekirkegarden\r\n/boeger/misery\r\n/boeger/det-onde\r\n/boeger/odd-thomas\r\n/boeger/intensitet\r\n/boeger/skygger-1\r\n/boeger/kat\r\n/boeger/rosemarys-baby-0\r\n/boeger/raedslen-fra-dunwich\r\n/boeger/ondskabens-saed\r\n/boeger/hjemsogt-af-et-ekko\r\n/boeger/jeg-er-den-sidste\r\n/boeger/twilight\r\n/boeger/hellboy-ondskabens-fro\r\n/boeger/hell\r\n/boeger/nat-i-30-dage\r\n/boeger/dumas-klubben\r\n/boeger/huset-0\r\n/boeger/dyr\r\n/boeger/farezone-4\r\n/boeger/forbandelsen-1\r\n/boeger/en-vampyrs-bekendelser\r\n/boeger/ondt-blod\r\n/boeger/frankenstein\r\n/boeger/ulvetid\r\n/boeger/dr-jekyll-og-mr-hyde\r\n/boeger/blodet-fra-mumiens-gravkammer\r\n/boeger/dracula\r\n/boeger/varulvenaetter\r\n/boeger/ring\r\n/boeger/blod-0\r\n/boeger/doktor-moreaus-o\r\n/boeger/den-usynlige-mand\r\n/boeger/djaevelen-rider-ud\r\n/boeger/billedet-af-dorian-gray\r\n/boeger/da-trifitterne-kom"
     negate: false
     context_mapping: {  }

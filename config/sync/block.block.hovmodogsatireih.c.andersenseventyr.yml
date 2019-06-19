@@ -12,20 +12,20 @@ dependencies:
 id: hovmodogsatireih.c.andersenseventyr
 theme: litteratursiden
 region: content
-weight: 784
+weight: 781
 provider: null
 plugin: 'block_content:ee4f9d7e-2242-4b1c-93af-038cfd78d342'
 settings:
   id: 'block_content:ee4f9d7e-2242-4b1c-93af-038cfd78d342'
-  label: 'Hovmod og satire i H. C. Andersens eventyr'
+  label: 'Sådan har jeg aldrig fået den før...'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: forfattere/h-c-andersen
+    pages: /temaer/lummer-litteratur
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: narhjernensvigter
 theme: litteratursiden
 region: content
-weight: 911
+weight: 905
 provider: null
 plugin: 'block_content:cc5d1f2a-749c-4ed6-a395-ae4259cdc772'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentilbagetil1980erne
 theme: litteratursiden
 region: content
-weight: 179
+weight: 201
 provider: null
 plugin: 'block_content:0a442093-6a21-4eca-981f-99d64d837952'
 settings:

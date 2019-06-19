@@ -12,7 +12,7 @@ dependencies:
 id: ytringsfrihedogterror
 theme: litteratursiden
 region: content
-weight: 658
+weight: 654
 provider: null
 plugin: 'block_content:2f088b10-8227-4bb8-a873-64439b826ec3'
 settings:

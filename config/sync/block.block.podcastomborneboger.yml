@@ -12,14 +12,14 @@ dependencies:
 id: podcastomborneboger
 theme: litteratursiden
 region: content
-weight: 421
+weight: 426
 provider: null
 plugin: 'block_content:ad47c45e-eeda-411f-b703-5cfb6c19f204'
 settings:
   id: 'block_content:ad47c45e-eeda-411f-b703-5cfb6c19f204'
-  label: 'Podcast om børnebøger'
+  label: 'Læsning styrker sproget'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

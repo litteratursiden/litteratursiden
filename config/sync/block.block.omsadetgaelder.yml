@@ -1,6 +1,6 @@
 uuid: 5681f3d0-27de-4921-864d-6f956df90e75
 langcode: da
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:spot:92bc7078-03e1-4fc5-a204-755152c8ded5'
@@ -12,7 +12,7 @@ dependencies:
 id: omsadetgaelder
 theme: litteratursiden
 region: content
-weight: 6
+weight: 961
 provider: null
 plugin: 'block_content:92bc7078-03e1-4fc5-a204-755152c8ded5'
 settings:

@@ -12,12 +12,12 @@ dependencies:
 id: retningslinjerforbrugerkabtindhold
 theme: litteratursiden
 region: content
-weight: 913
+weight: 907
 provider: null
 plugin: 'block_content:069758fe-14f6-4c4a-8494-b49a98fcf719'
 settings:
   id: 'block_content:069758fe-14f6-4c4a-8494-b49a98fcf719'
-  label: 'Om Litteratursiden: Retningslinjer for brugerkabt indhold'
+  label: 'Om Litteratursiden: Retningslinjer for brugerskabt indhold'
   provider: block_content
   label_display: '0'
   status: true

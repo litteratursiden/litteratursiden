@@ -12,7 +12,7 @@ dependencies:
 id: orhanpamukfarnobelprisenilitteratur2006_2
 theme: litteratursiden
 region: content
-weight: 626
+weight: 625
 provider: null
 plugin: 'block_content:016cf56b-7bb3-4e40-b6ee-8d838ec3c43f'
 settings:

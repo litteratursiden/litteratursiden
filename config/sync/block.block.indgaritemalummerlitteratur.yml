@@ -1,0 +1,31 @@
+uuid: 0bb755a8-c186-4f51-8b9d-ba409ae50b33
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:9bcd6ed9-3bc1-43ae-a17b-f3958e76f3bc'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgaritemalummerlitteratur
+theme: litteratursiden
+region: content
+weight: 510
+provider: null
+plugin: 'block_content:9bcd6ed9-3bc1-43ae-a17b-f3958e76f3bc'
+settings:
+  id: 'block_content:9bcd6ed9-3bc1-43ae-a17b-f3958e76f3bc'
+  label: 'Indgår i tema: Lummer litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/smerten-selv\r\n/boeger/proverummet\r\n/boeger/sexdronning\r\n/boeger/hallerne\r\n/boeger/sloret-eventyrdigt\r\n/boeger/et-kod\r\n/boeger/libido\r\n/boeger/fifty-shades-fanget\r\n/boeger/grey\r\n/boeger/blottet-dig\r\n/boeger/lystrejser\r\n/boeger/zeemeermin-og-andre-erotiske-fortaellinger-kvinder\r\n/boeger/en-kvinde-gar-ind-pa-en-bar\r\n/boeger/forbandede-kaerlighed\r\n/boeger/calendar-girl\r\n/boeger/beautiful-bastard\r\n/boeger/beautiful-stranger\r\n/boeger/sendt-til-taelling\r\n/boeger/slagplanen\r\n/boeger/chancelos\r\n/boeger/kollision-0\r\n/boeger/love-war-1-scarletts-historie\r\n/boeger/elleve-minutter\r\n/boeger/mandelen\r\n/boeger/pussyland-express-en-graphic-novel-i-tre-dele\r\n/boeger/sonden-graensen-og-vesten-solen\r\n/boeger/det-skjulte-rum\r\n/boeger/endelig-os\r\n/boeger/forste-gang-0\r\n/boeger/laengsel-pa-bestilling\r\n/boeger/fremmed-under-samme-hud\r\n/boeger/sodme-og-vildskab"
+    negate: false
+    context_mapping: {  }

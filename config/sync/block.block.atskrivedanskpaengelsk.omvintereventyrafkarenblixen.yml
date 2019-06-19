@@ -12,7 +12,7 @@ dependencies:
 id: atskrivedanskpaengelsk.omvintereventyrafkarenblixen
 theme: litteratursiden
 region: content
-weight: 934
+weight: 925
 provider: null
 plugin: 'block_content:a5f1806c-a121-4cd0-9f7e-dc3330c2a04b'
 settings:

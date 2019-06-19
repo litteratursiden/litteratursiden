@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbarndomshjemilitteraturen
 theme: litteratursiden
 region: content
-weight: 820
+weight: 815
 provider: null
 plugin: 'block_content:52d1c5df-cc53-4ade-968a-bfc38112f8de'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/pa-broen\r\n/boeger/get-life\r\n/boeger/det-hvide-hus\r\n/boeger/det-daglige-brod\r\n/boeger/et-eventyr-0\r\n/boeger/gud-taler-ud\r\n/boeger/om-lidt-er-vi-borte-0\r\n/boeger/en-vrangmaske-i-vorherres-strikketoj\r\n/boeger/barndommens-gade\r\n/boeger/det-halve-barn\r\n/boeger/hostgildet-og-andre-fortaellinger\r\n/boeger/traeer-sar-sig-selv\r\n/boeger/midt-i-en-klunketid\r\n/boeger/kunsten-graede-i-kor\r\n/boeger/kapgang\r\n/boeger/vanillepigen\r\n/boeger/barndom-laereaar\r\n/boeger/ditte-menneskebarn\r\n/boeger/og-det-var-det\r\n/boeger/drengene\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/min-farmors-hus\r\n/boeger/lille-jonna\r\n/boeger/vangede-billeder\r\n"
+    pages: "/boeger/pa-broen\r\n/boeger/get-life\r\n/boeger/det-hvide-hus\r\n/boeger/ditte-menneskebarn-1-2\r\n/boeger/det-daglige-brod\r\n/boeger/et-eventyr-0\r\n/boeger/gud-taler-ud\r\n/boeger/om-lidt-er-vi-borte-0\r\n/boeger/en-vrangmaske-i-vorherres-strikketoj\r\n/boeger/barndommens-gade\r\n/boeger/det-halve-barn\r\n/boeger/hostgildet-og-andre-fortaellinger\r\n/boeger/traeer-sar-sig-selv\r\n/boeger/midt-i-en-klunketid\r\n/boeger/kunsten-graede-i-kor\r\n/boeger/kapgang\r\n/boeger/vanillepigen\r\n/boeger/barndom-laereaar\r\n/boeger/ditte-menneskebarn\r\n/boeger/og-det-var-det\r\n/boeger/drengene\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/min-farmors-hus\r\n/boeger/lille-jonna\r\n/boeger/vangede-billeder\r\n"
     negate: false
     context_mapping: {  }

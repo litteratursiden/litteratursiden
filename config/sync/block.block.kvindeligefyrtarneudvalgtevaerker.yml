@@ -12,7 +12,7 @@ dependencies:
 id: kvindeligefyrtarneudvalgtevaerker
 theme: litteratursiden
 region: content
-weight: 104
+weight: 132
 provider: null
 plugin: 'block_content:3c950c89-84a9-413b-8dbd-ea5546cca943'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenatblivemor
 theme: litteratursiden
 region: content
-weight: 817
+weight: 812
 provider: null
 plugin: 'block_content:b53f4b3c-ebd5-467f-8aaa-1b62a867a444'
 settings:

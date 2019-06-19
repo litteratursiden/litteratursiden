@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenautofiktionselvfremstillinginyeretid
 theme: litteratursiden
 region: content
-weight: 818
+weight: 813
 provider: null
 plugin: 'block_content:3cd9bbd8-2e76-47b2-890a-33a277d92eca'
 settings:

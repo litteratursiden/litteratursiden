@@ -12,7 +12,7 @@ dependencies:
 id: debutantprisvinderne2018
 theme: litteratursiden
 region: content
-weight: 245
+weight: 257
 provider: null
 plugin: 'block_content:d9ff5572-c180-403c-93da-41d24aada061'
 settings:

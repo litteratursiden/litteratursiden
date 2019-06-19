@@ -5,8 +5,7 @@ ignored_config_entities:
   6: '*.mail'
   8: 'contact.form.*'
   10: litteratursiden.settings
-  24: acquia_connector.settings
-  26: search_api.server.acquia_search_server
+  12: lit_open_platform.settings
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: da

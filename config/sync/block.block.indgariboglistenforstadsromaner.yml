@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenforstadsromaner
 theme: litteratursiden
 region: content
-weight: 453
+weight: 454
 provider: null
 plugin: 'block_content:974c99b7-84f5-45a3-9924-d05b24ac7896'
 settings:

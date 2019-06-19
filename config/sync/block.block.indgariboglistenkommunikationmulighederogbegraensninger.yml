@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkommunikationmulighederogbegraensninger
 theme: litteratursiden
 region: content
-weight: 525
+weight: 529
 provider: null
 plugin: 'block_content:70495330-e6f1-4ac4-960f-2f8613297f96'
 settings:

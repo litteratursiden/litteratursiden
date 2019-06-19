@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbogerformaend_2
 theme: litteratursiden
 region: content
-weight: 957
+weight: 947
 provider: null
 plugin: 'block_content:72ee012c-0953-4659-8d45-31686b9989c8'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/guds-bedste-born\r\n/boeger/en-dag-vil-vi-grine-af-det\r\n/boeger/det-ensomme-hjerte\r\n/boeger/bz-du-har-ikke-en-chance-tag-den-af-peter-ovig-knudsen\r\n/boeger/ofrene-0\r\n/boeger/den-forste-sten-0\r\n/boeger/empire-falls\r\n/boeger/nordhavet\r\n/boeger/shotgun-lovesongs\r\n/boeger/kan-man-do-gange-en-roman-om-en-forbrydelse\r\n/boeger/djaevelen-i-hullet\r\n/boeger/kald-mig-frank\r\n/boeger/en-uskyldig-familie"
+    pages: "/boeger/en-dag-vil-vi-grine-af-det\r\n/boeger/det-ensomme-hjerte\r\n/boeger/bz-du-har-ikke-en-chance-tag-den-af-peter-ovig-knudsen\r\n/boeger/ofrene-0\r\n/boeger/den-forste-sten-0\r\n/boeger/empire-falls\r\n/boeger/nordhavet\r\n/boeger/shotgun-lovesongs\r\n/boeger/kan-man-do-gange-en-roman-om-en-forbrydelse\r\n/boeger/djaevelen-i-hullet\r\n/boeger/kald-mig-frank\r\n/boeger/en-uskyldig-familie"
     negate: false
     context_mapping: {  }
