@@ -12,7 +12,7 @@ dependencies:
 id: janeaustenpafilmigen
 theme: litteratursiden
 region: content
-weight: 298
+weight: 310
 provider: null
 plugin: 'block_content:0eab8996-f184-4505-92e3-b3cbaaca216b'
 settings:

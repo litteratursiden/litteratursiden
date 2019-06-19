@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenromanerom1.verdenskrig
 theme: litteratursiden
 region: content
-weight: 80
+weight: 111
 provider: null
 plugin: 'block_content:d2ef11ad-113e-49c9-af45-46a5aa273d62'
 settings:

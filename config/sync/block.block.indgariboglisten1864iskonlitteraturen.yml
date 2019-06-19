@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten1864iskonlitteraturen
 theme: litteratursiden
 region: content
-weight: 61
+weight: 90
 provider: null
 plugin: 'block_content:414fbef9-f721-48ea-a526-4a1f0c8e2133'
 settings:

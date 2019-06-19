@@ -12,12 +12,12 @@ dependencies:
 id: laesogsanyereislandsklitteratur_2
 theme: litteratursiden
 region: content
-weight: 593
+weight: 594
 provider: null
 plugin: 'block_content:185a3f8f-fdf4-4660-9098-bad5deb1ce4f'
 settings:
   id: 'block_content:185a3f8f-fdf4-4660-9098-bad5deb1ce4f'
-  label: 'Indgår i boglisten: Nyere islandsk litteratur'
+  label: 'Nye islandske fortællinger'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /boeger/kata
+    pages: "/boeger/codex-1962-af-sjon\r\n/boeger/snaren-spaendingsroman\r\n/temaer/nye-islandske-fortaellinger\r\n/boeger/smarties\r\n/boeger/faelden-1\r\n/boeger/pasfotos\r\n/boeger/omstrejferen\r\n/boeger/vinduet-mod-syd\r\n/boeger/kata\r\n/boeger/hestvik\r\n/boeger/ar-1\r\n/boeger/dem-i-kaelderen\r\n/boeger/livstorst\r\n/boeger/historien-om-asta\r\n/boeger/stiklingen\r\n/boeger/svaner-bliver-ikke-skilt\r\n/boeger/et-landskab-er-aldrig-tabeligt\r\n/boeger/heksens-tid\r\n/boeger/svar-pa-helgas-brev\r\n/boeger/ambassadoren\r\n/boeger/raseri-0\r\n/boeger/beatlemanifestet\r\n/boeger/hundedage-0\r\n/boeger/islandske-konger\r\n/boeger/sindets-tremmer\r\n/boeger/tre-mand-vendte-tilbage-roman\r\n/boeger/valeyri-valsen\r\n/boeger/ved-sandaen\r\n/boeger/islands-forfatter\r\n/boeger/kvinden-ved-1000deg\r\n/boeger/sosyg-i-munchen\r\n/boeger/bornene-i-dimmuvik\r\n/boeger/himmerige-og-helvede\r\n/boeger/nogenlunde-pa-storrelse-med-universet\r\n/boeger/sommerlys-og-sa-kommer-natten\r\n/boeger/fra-hus-til-hus\r\n/boeger/havblik\r\n/boeger/kantate\r\n/boeger/karitas-uden-titel\r\n/boeger/en-roman-om-jon-og-hans-breve-til-sin-gravide-kone-da-han-opholdt-sig-i-en-grotte-hen-over\r\n/boeger/manesten\r\n/boeger/skygge-baldur\r\n/boeger/fortaellinger-fra-holmanes\r\n/boeger/hojlandet\r\n/boeger/den-gode-elsker\r\n/boeger/solskinshest\r\n/boeger/tavsheden"
     negate: false
     context_mapping: {  }

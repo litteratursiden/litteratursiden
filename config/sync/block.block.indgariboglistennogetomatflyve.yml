@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennogetomatflyve
 theme: litteratursiden
 region: content
-weight: 585
+weight: 586
 provider: null
 plugin: 'block_content:5bec57c8-963d-497d-b291-924d8e5189d7'
 settings:

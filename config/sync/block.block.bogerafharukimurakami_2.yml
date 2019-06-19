@@ -12,7 +12,7 @@ dependencies:
 id: bogerafharukimurakami_2
 theme: litteratursiden
 region: content
-weight: 636
+weight: 634
 provider: null
 plugin: 'block_content:4d878bb0-75e3-4d5a-9e6c-896fb9addf52'
 settings:

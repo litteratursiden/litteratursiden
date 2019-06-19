@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenutopierogdystopierilitteraturen
 theme: litteratursiden
 region: content
-weight: 208
+weight: 224
 provider: null
 plugin: 'block_content:18b93def-f46d-46d1-ba1a-abfb7b67b178'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/ar-9-efter-loopet\r\n/boeger/tjenerindens-fortaelling\r\n/boeger/i-det-sidstes-land\r\n/boeger/kallocain\r\n/boeger/fahrenheit-451\r\n/boeger/nogen-frokost\r\n/boeger/mitose\r\n/boeger/2060\r\n/boeger/okotopia\r\n/boeger/den-danske-borgerkrig-2018-24\r\n/boeger/vejen-0\r\n/boeger/dodsspillet-0\r\n/boeger/drommer-androider-om-elektriske-far\r\n/boeger/stranden-0\r\n/boeger/neuromantiker\r\n/boeger/fluernes-herre\r\n/boeger/dine-ojne-taler-ikke-synet\r\n/boeger/glasperlespillet\r\n/boeger/niels-klims-underjordiske-reise\r\n/boeger/fagre-nye-verden\r\n/boeger/dine-ojne-taler-ikke-synet\r\n/boeger/menneskeborn\r\n/boeger/varslet\r\n/boeger/dystopia\r\n/boeger/dommens-dag-1\r\n/boeger/sangfuglen-0\r\n/boeger/chronic-city\r\n/boeger/se-dagens-lys\r\n/boeger/vogterne\r\n/boeger/utopia-0\r\n/boeger/taxo-luma-fortaellingen-om-en-avatar\r\n/boeger/det-underste-land\r\n/boeger/1984\r\n/boeger/stalhjerte\r\n/boeger/manden-der-ville-vaere-skyldig\r\n/boeger/dagenes-skum\r\n/boeger/miraklernes-tid-0\r\n/boeger/den-afskyelige\r\n/boeger/corpus-delicti-0"
+    pages: "/boeger/ar-9-efter-loopet\r\n/boeger/tjenerindens-fortaelling\r\n/boeger/verdens-skygge\r\n/boeger/i-det-sidstes-land\r\n/boeger/kallocain\r\n/boeger/fahrenheit-451\r\n/boeger/nogen-frokost\r\n/boeger/mitose\r\n/boeger/2060\r\n/boeger/okotopia\r\n/boeger/den-danske-borgerkrig-2018-24\r\n/boeger/vejen-0\r\n/boeger/dodsspillet-0\r\n/boeger/drommer-androider-om-elektriske-far\r\n/boeger/stranden-0\r\n/boeger/neuromantiker\r\n/boeger/fluernes-herre\r\n/boeger/dine-ojne-taler-ikke-synet\r\n/boeger/glasperlespillet\r\n/boeger/niels-klims-underjordiske-reise\r\n/boeger/fagre-nye-verden\r\n/boeger/dine-ojne-taler-ikke-synet\r\n/boeger/menneskeborn\r\n/boeger/varslet\r\n/boeger/dystopia\r\n/boeger/dommens-dag-1\r\n/boeger/sangfuglen-0\r\n/boeger/chronic-city\r\n/boeger/se-dagens-lys\r\n/boeger/vogterne\r\n/boeger/utopia-0\r\n/boeger/taxo-luma-fortaellingen-om-en-avatar\r\n/boeger/det-underste-land\r\n/boeger/1984\r\n/boeger/stalhjerte\r\n/boeger/manden-der-ville-vaere-skyldig\r\n/boeger/dagenes-skum\r\n/boeger/miraklernes-tid-0\r\n/boeger/den-afskyelige\r\n/boeger/corpus-delicti-0"
     negate: false
     context_mapping: {  }

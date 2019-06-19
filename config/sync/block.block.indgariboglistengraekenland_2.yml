@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistengraekenland_2
 theme: litteratursiden
 region: content
-weight: 615
+weight: 614
 provider: null
 plugin: 'block_content:95e4e5c7-62e3-41ff-b40d-d6e3963b02c6'
 settings:

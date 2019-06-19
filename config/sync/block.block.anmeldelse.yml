@@ -12,7 +12,7 @@ dependencies:
 id: anmeldelse
 theme: litteratursiden
 region: content
-weight: 303
+weight: 315
 provider: null
 plugin: 'block_content:b04b59d3-46f4-4abd-806a-2f307e4a0acd'
 settings:

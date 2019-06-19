@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensuperhelteitegneserier
 theme: litteratursiden
 region: content
-weight: 100
+weight: 128
 provider: null
 plugin: 'block_content:ec8db4ca-d778-4f50-a3cc-e2b0bc1919df'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: danmarkshistorie
 theme: litteratursiden
 region: content
-weight: 99
+weight: 127
 provider: null
 plugin: 'block_content:fe6be05e-1dfc-4c58-9d61-e91f63fdbf41'
 settings:

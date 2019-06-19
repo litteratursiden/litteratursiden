@@ -12,7 +12,7 @@ dependencies:
 id: aretsdanskefaglitteratur_2
 theme: litteratursiden
 region: content
-weight: 239
+weight: 251
 provider: null
 plugin: 'block_content:b3a8e696-e360-4615-8417-3d9038fad2df'
 settings:

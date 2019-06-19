@@ -12,7 +12,7 @@ dependencies:
 id: hellehellevirkelighedensgenkomstomhusoghjem_2
 theme: litteratursiden
 region: content
-weight: 718
+weight: 714
 provider: null
 plugin: 'block_content:dea8a6e8-9939-499c-a956-d78ee601e551'
 settings:

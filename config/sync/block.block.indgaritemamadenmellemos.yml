@@ -1,0 +1,31 @@
+uuid: bcbb0988-73c1-4649-a0ad-2ff39540ae56
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:43621727-7d04-4955-9f9d-38cff699beeb'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgaritemamadenmellemos
+theme: litteratursiden
+region: content
+weight: 109
+provider: null
+plugin: 'block_content:43621727-7d04-4955-9f9d-38cff699beeb'
+settings:
+  id: 'block_content:43621727-7d04-4955-9f9d-38cff699beeb'
+  label: 'Indgår i tema: Maden mellem os'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/det-var-ikke-planen-kobe-kalroer\r\n/boeger/i-kokkenet\r\n/boeger/vegetaren\r\n/boeger/bjerget\r\n/boeger/stegte-gronne-tomater\r\n/boeger/skonvirke\r\n/boeger/chokolade\r\n/boeger/der-er-ingen-ende-pa-paris\r\n/boeger/sultekunstnerinde\r\n/boeger/livret\r\n/boeger/senseis-mappe\r\n/boeger/kupe-nr-6\r\n/boeger/sour-sweet\r\n/boeger/john-saturnalls-gaestebud\r\n/boeger/empire-falls\r\n/boeger/maerkedage\r\n/boeger/otte-opbyggelige-fortaellinger-om-kaerlighed-og-mad-og-fremmede-byer\r\n/boeger/senseis-mappe-bind-1\r\n/boeger/honningtunger\r\n/boeger/kokken\r\n/boeger/hundredefodsrejsen\r\n/boeger/i-gaeld-til-nydelsen\r\n/boeger/spis-bed-elsk\r\n/boeger/lykkens-cafe\r\n/boeger/mundskaenken\r\n/boeger/hjerter-i-chili\r\n/boeger/babettes-gaestebud\r\n/boeger/bare-sammen"
+    negate: false
+    context_mapping: {  }

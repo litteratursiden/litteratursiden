@@ -1,4 +1,4 @@
-uuid: e276db47-36b4-4bd3-b058-6b7169555432
+uuid: 4729e2ec-7a1c-444c-8439-160d8bea3d51
 langcode: da
 status: true
 dependencies:
@@ -12,14 +12,14 @@ dependencies:
 id: forfatterportraetjonaseika_2
 theme: litteratursiden
 region: content
-weight: 50
+weight: 27
 provider: null
 plugin: 'block_content:682a1be2-3f5e-4f23-a6eb-e6936c882d2b'
 settings:
   id: 'block_content:682a1be2-3f5e-4f23-a6eb-e6936c882d2b'
-  label: 'Nomineret til Nordisk Råds litteraturpris'
+  label: 'Forfatterportræt: Jonas Eika'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfranskeklassikere
 theme: litteratursiden
 region: content
-weight: 455
+weight: 456
 provider: null
 plugin: 'block_content:780a737f-b808-46f4-9ea7-0ef4ccbffde7'
 settings:

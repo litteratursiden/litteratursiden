@@ -1,0 +1,31 @@
+uuid: 0aaf7e79-67fb-4825-ab41-75f6df35df32
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8575e755-8326-4fdf-8c24-b7fc053005cd'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: oppeinorge
+theme: litteratursiden
+region: content
+weight: 99
+provider: null
+plugin: 'block_content:8575e755-8326-4fdf-8c24-b7fc053005cd'
+settings:
+  id: 'block_content:8575e755-8326-4fdf-8c24-b7fc053005cd'
+  label: 'Oppe i Norge - Nyere norske børnebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/books\r\n/temaer/ny-norsk-litteratur-0"
+    negate: false
+    context_mapping: {  }

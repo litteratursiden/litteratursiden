@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfolkeskolenilitteraturen
 theme: litteratursiden
 region: content
-weight: 449
+weight: 450
 provider: null
 plugin: 'block_content:6825b1f7-9fa9-4285-bb15-73a1b32defd9'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/det-forsomte-forar\r\n/boeger/lidt-beromt-meget-berygtet\r\n/over-os-haenger-en-vidunderlig-sol\r\n/boeger/fugle-i-frostvejr\r\n/boeger/imaqa\r\n/boeger/superhelte-i-det-hele-taget\r\n/boeger/sinkeklassen\r\n/boeger/og-en-i-mente\r\n/boeger/det-de-ikke-snakkede-om\r\n/boeger/bjerget\r\n/boeger/de-maske-egnede\r\n/boeger/under-kommando\r\n"
+    pages: "/boeger/det-forsomte-forar\r\n/boeger/klassen-1\r\n/boeger/over-os-haenger-en-vidunderlig-sol\r\n/boeger/lidt-beromt-meget-berygtet\r\n/boeger/fugle-i-frostvejr\r\n/boeger/imaqa\r\n/boeger/superhelte-i-det-hele-taget\r\n/boeger/sinkeklassen\r\n/boeger/og-en-i-mente\r\n/boeger/det-de-ikke-snakkede-om\r\n/boeger/bjerget\r\n/boeger/de-maske-egnede\r\n/boeger/under-kommando\r\n"
     negate: false
     context_mapping: {  }

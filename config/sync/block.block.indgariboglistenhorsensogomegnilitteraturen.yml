@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhorsensogomegnilitteraturen
 theme: litteratursiden
 region: content
-weight: 484
+weight: 486
 provider: null
 plugin: 'block_content:c1dfa999-74b1-4e75-9a8c-68df7ea69722'
 settings:

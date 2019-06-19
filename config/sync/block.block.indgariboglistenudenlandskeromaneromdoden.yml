@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenudenlandskeromaneromdoden
 theme: litteratursiden
 region: content
-weight: 200
+weight: 219
 provider: null
 plugin: 'block_content:b941f8d6-a600-469e-9493-df0a35f4bb5d'
 settings:

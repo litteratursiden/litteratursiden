@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkunstenatvandreogtaenke
 theme: litteratursiden
 region: content
-weight: 536
+weight: 540
 provider: null
 plugin: 'block_content:b4a99e34-a58d-41e4-a426-40d86fa787c1'
 settings:

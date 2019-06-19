@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisteneuropasetgennemlitteraturen
 theme: litteratursiden
 region: content
-weight: 429
+weight: 431
 provider: null
 plugin: 'block_content:f296b8f3-3656-44b4-84cb-1c9d6c6ba60b'
 settings:

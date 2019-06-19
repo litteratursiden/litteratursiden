@@ -12,7 +12,7 @@ dependencies:
 id: indgaridestilleliv
 theme: litteratursiden
 region: content
-weight: 723
+weight: 719
 provider: null
 plugin: 'block_content:1ddcadcc-f1c1-44d5-a61e-e5b19bf17918'
 settings:

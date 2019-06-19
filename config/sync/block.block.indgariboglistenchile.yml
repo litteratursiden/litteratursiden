@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenchile
 theme: litteratursiden
 region: content
-weight: 840
+weight: 835
 provider: null
 plugin: 'block_content:da5bafe6-c29c-4577-89ee-efc11799a8f8'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/eva-luna-fortaeller\r\n/boeger/kaerlighed-og-morke\r\n/boeger/mayas-dagbog\r\n/boeger/mit-opdigtede-land\r\n/boeger/2666\r\n/boeger/fjern-stjerne\r\n/boeger/nocturne-fra-chile\r\n/boeger/de-vilde-detektiver\r\n/boeger/den-sidste-tage-ligklaedt\r\n/boeger/landstedet\r\n/boeger/stedet-uden-graenser\r\n/boeger/enker\r\n/boeger/mit-livs-film\r\n/boeger/svomme-nogen\r\n/boeger/kvinden-i-mit-liv-0\r\n/boeger/firkantet-horisont-eiffeltarn\r\n/boeger/pigen-der-fortalte-film\r\n/boeger/elementaere-oder\r\n/boeger/hundrede-kaerlighedssonetter\r\n/boeger/jeg-bekender-jeg-har-levet\r\n/boeger/kaptajnens-vers\r\n/boeger/den-store-sang\r\n/boeger/den-gamle-mand-der-laeste-kaerlighedsromaner\r\n/boeger/historien-om-en-mage-og-om-katten-der-laerte-den-flyve\r\n/boeger/hotline\r\n/boeger/postboks-fem-ildlandet\r\n/boeger/jeg-dromte-sneen-braendte\r\n/boeger/postbudet\r\n/boeger/traeernes-privatliv\r\n/boeger/bonsai-0\r\n/boeger/bonsai-0"
+    pages: "/boeger/skyggen-af-hvad-vi-var-engang\r\n/boeger/du-ma-ikke-tage-imod-slik-fra-fremmede\r\n/boeger/svomme-nogen\r\n/boeger/pigen-der-fortalte-film\r\n/boeger/de-vilde-detektiver\r\n/boeger/2666\r\n/boeger/hotline\r\n/boeger/den-gamle-mand-der-laeste-kaerlighedsromaner\r\n/boeger/bonsai-0\r\n/boeger/traeernes-privatliv\r\n/boeger/mader-finde-hjem-pa\r\n/boeger/andernes-hus\r\n/boeger/mit-opdigtede-land\r\n/boeger/eva-luna\r\n/boeger/kaptajnens-vers\r\n/boeger/den-sidste-tage-ligklaedt\r\n/boeger/hundrede-kaerlighedssonetter\r\n/boeger/firkantet-horisont-eiffeltarn\r\n/boeger/gale-kvinder\r\n/boeger/den-store-sang\r\n/boeger/jeg-bekender-jeg-har-levet\r\n/boeger/postbudet"
     negate: false
     context_mapping: {  }

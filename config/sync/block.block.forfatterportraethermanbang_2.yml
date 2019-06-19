@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraethermanbang_2
 theme: litteratursiden
 region: content
-weight: 339
+weight: 350
 provider: null
 plugin: 'block_content:013eaf71-bcbf-468d-bc1b-51a9dbcf7573'
 settings:

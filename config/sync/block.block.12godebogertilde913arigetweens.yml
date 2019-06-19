@@ -12,12 +12,12 @@ dependencies:
 id: 12godebogertilde913arigetweens
 theme: litteratursiden
 region: content
-weight: 39
+weight: 75
 provider: null
 plugin: 'block_content:f9711977-f6d8-4792-9dcd-f431258265bc'
 settings:
   id: 'block_content:f9711977-f6d8-4792-9dcd-f431258265bc'
-  label: '12 gode bøger til de 9-13-årige tweens'
+  label: 'Gode bøger til tweens'
   provider: block_content
   label_display: visible
   status: true

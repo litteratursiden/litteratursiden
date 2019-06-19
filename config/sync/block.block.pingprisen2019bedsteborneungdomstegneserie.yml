@@ -1,0 +1,31 @@
+uuid: fc773164-53c9-4fd0-89f4-a56b56099019
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:e5440746-086a-4fba-b33a-94b30bba5c73'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: pingprisen2019bedsteborneungdomstegneserie
+theme: litteratursiden
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:e5440746-086a-4fba-b33a-94b30bba5c73'
+settings:
+  id: 'block_content:e5440746-086a-4fba-b33a-94b30bba5c73'
+  label: 'Pingprisen 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedjensandersen
 theme: litteratursiden
 region: content
-weight: 24
+weight: 62
 provider: null
 plugin: 'block_content:60a6c2dd-72af-4ac3-99bb-64eb6e97f982'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/kim-larsen-mine-unge-ar\r\n/forfattere/jens-andersen\r\n/lister/vindere-af-laesernes-bogpris\r\n/authors"
+    pages: "/boeger/kim-larsen-mine-unge-ar\r\n/forfattere/jens-andersen\r\n/lister/vindere-af-laesernes-bogpris"
     negate: false
     context_mapping: {  }

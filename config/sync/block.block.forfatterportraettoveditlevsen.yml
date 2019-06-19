@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraettoveditlevsen
 theme: litteratursiden
 region: content
-weight: 666
+weight: 661
 provider: null
 plugin: 'block_content:48480f95-6342-4db2-b9cc-630c20aa9d25'
 settings:

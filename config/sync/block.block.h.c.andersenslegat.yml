@@ -1,0 +1,31 @@
+uuid: 22f7ffce-637f-4a52-a121-fdfd85fb6941
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:0d789f40-b9d3-481b-af13-81679a8a5b72'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: h.c.andersenslegat
+theme: litteratursiden
+region: content
+weight: 34
+provider: null
+plugin: 'block_content:0d789f40-b9d3-481b-af13-81679a8a5b72'
+settings:
+  id: 'block_content:0d789f40-b9d3-481b-af13-81679a8a5b72'
+  label: 'H.C. Andersens legat'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

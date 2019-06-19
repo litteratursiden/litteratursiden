@@ -12,7 +12,7 @@ dependencies:
 id: kaerlighedmand
 theme: litteratursiden
 region: content
-weight: 733
+weight: 730
 provider: null
 plugin: 'block_content:0057d042-f334-4eaa-9f93-0cd2003db2f8'
 settings:

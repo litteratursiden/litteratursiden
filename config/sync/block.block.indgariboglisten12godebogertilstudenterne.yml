@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten12godebogertilstudenterne
 theme: litteratursiden
 region: content
-weight: 461
+weight: 462
 provider: null
 plugin: 'block_content:65046ced-84c6-4032-a306-5e7ba0211a6c'
 settings:

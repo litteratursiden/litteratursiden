@@ -12,7 +12,7 @@ dependencies:
 id: nogetderlignermargueriteduraselskeren
 theme: litteratursiden
 region: content
-weight: 865
+weight: 860
 provider: null
 plugin: 'block_content:3dc605da-3f68-4191-94a9-ad93c0b6a4b1'
 settings:

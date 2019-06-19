@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistengamlesofortaellinger
 theme: litteratursiden
 region: content
-weight: 465
+weight: 466
 provider: null
 plugin: 'block_content:cb85bf5c-267b-4015-b4a9-88ffb1355aff'
 settings:

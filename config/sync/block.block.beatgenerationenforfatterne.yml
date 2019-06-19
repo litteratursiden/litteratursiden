@@ -12,7 +12,7 @@ dependencies:
 id: beatgenerationenforfatterne
 theme: litteratursiden
 region: content
-weight: 691
+weight: 686
 provider: null
 plugin: 'block_content:e4348170-5ac8-4f5b-a712-bb7c9cd6b2d3'
 settings:

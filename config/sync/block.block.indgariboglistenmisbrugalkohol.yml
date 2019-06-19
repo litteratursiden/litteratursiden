@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:ebdad956-31c4-43f3-9833-d2a02569c422'
 settings:
   id: 'block_content:ebdad956-31c4-43f3-9833-d2a02569c422'
-  label: 'Indgår i boglisten: Misbrug (alkohol)'
+  label: 'Indgår i boglisten: Alkoholmisbrug'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/svinestierne\r\n/boeger/sortedam\r\n/boeger/copyright-0\r\n/boeger/fordi-ilden-er-vores\r\n/boeger/begyndere\r\n/boeger/paula-spencer\r\n/boeger/en-smuk-mand-i-farver\r\n/boeger/sindets-tremmer\r\n/boeger/eksil-0\r\n/boeger/sporet-fanger\r\n/boeger/et-andet-liv-0\r\n/boeger/engle-har-ingenting-i-lommerne\r\n/boeger/jeg-kunne-finde-hjem-i-blinde\r\n/boeger/hypertension\r\n/boeger/fodt-fri\r\n/boeger/den-indre-angst\r\n/boeger/jeg-er-selv-med-i-billederne\r\n/boeger/manden-i-glasset\r\n/boeger/mit-liv-med-en-alkoholiker\r\n/boeger/i-sandhedens-tjeneste\r\n/boeger/factory\r\n/boeger/min-kamp-1-bog\r\n/boeger/1979\r\n/boeger/haervaerk\r\n/boeger/og-solen-stod-op-0\r\n/boeger/vores-ar\r\n/boeger/spurvens-sang\r\n/boeger/den-tredje-beatrice\r\n/boeger/skuespilleren-der-forsvandt\r\n/boeger/bag-facaden-0\r\n/boeger/hundene-0\r\n/boeger/venskabet\r\n/boeger/indtoget-i-kautokeino\r\n/boeger/mellem-venner-2\r\n/boeger/boys\r\n/boeger/skuffen-og-skeden\r\n/boeger/jokelteatret\r\n/boeger/verdens-sidste-roman\r\n/boeger/bare-vi-har-hinanden\r\n/boeger/vi-er-ikke-os-selv\r\n/boeger/modvind-0"
+    pages: "/boeger/svinestierne\r\n/boeger/sortedam\r\nk/boeger/vi-er-vel-helte\r\n/boeger/bornholm-notater\r\n/boeger/jeg-er-farmor\r\n/boeger/knaek\r\n/boeger/jubelidiot\r\n/boeger/copyright-0\r\n/boeger/fordi-ilden-er-vores\r\n/boeger/begyndere\r\n/boeger/paula-spencer\r\n/boeger/en-smuk-mand-i-farver\r\n/boeger/sindets-tremmer\r\n/boeger/eksil-0\r\n/boeger/sporet-fanger\r\n/boeger/et-andet-liv-0\r\n/boeger/engle-har-ingenting-i-lommerne\r\n/boeger/jeg-kunne-finde-hjem-i-blinde\r\n/boeger/hypertension\r\n/boeger/fodt-fri\r\n/boeger/den-indre-angst\r\n/boeger/jeg-er-selv-med-i-billederne\r\n/boeger/manden-i-glasset\r\n/boeger/mit-liv-med-en-alkoholiker\r\n/boeger/i-sandhedens-tjeneste\r\n/boeger/factory\r\n/boeger/min-kamp-1-bog\r\n/boeger/1979\r\n/boeger/haervaerk\r\n/boeger/og-solen-stod-op-0\r\n/boeger/vores-ar\r\n/boeger/spurvens-sang\r\n/boeger/den-tredje-beatrice\r\n/boeger/skuespilleren-der-forsvandt\r\n/boeger/bag-facaden-0\r\n/boeger/hundene-0\r\n/boeger/venskabet\r\n/boeger/indtoget-i-kautokeino\r\n/boeger/mellem-venner-2\r\n/boeger/boys\r\n/boeger/skuffen-og-skeden\r\n/boeger/jokelteatret\r\n/boeger/verdens-sidste-roman\r\n/boeger/bare-vi-har-hinanden\r\n/boeger/vi-er-ikke-os-selv\r\n/boeger/modvind-0"
     negate: false
     context_mapping: {  }

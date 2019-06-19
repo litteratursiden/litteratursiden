@@ -12,20 +12,20 @@ dependencies:
 id: klassikerenvillysorensen
 theme: litteratursiden
 region: content
-weight: 862
+weight: 499
 provider: null
 plugin: 'block_content:10c1d0a2-f89c-46ab-8821-519bb66bb1dd'
 settings:
   id: 'block_content:10c1d0a2-f89c-46ab-8821-519bb66bb1dd'
-  label: 'Klassikeren Villy Sørensen'
+  label: 'Debat: Hungerhjerte'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /forfattere/villy-sorensen
+    pages: /boeger/hungerhjerte-0
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpersonligeessays
 theme: litteratursiden
 region: content
-weight: 216
+weight: 231
 provider: null
 plugin: 'block_content:c270ab60-37bd-479c-a72a-74fad968e7de'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/vejen-op-vejen-ned\r\n/boeger/solve\r\n/boeger/ubekvemmelighedszonen\r\n/boeger/livet-ved-havet\r\n/boeger/essays\r\n/boeger/sjaelens-amerika\r\n/boeger/om-efteraret\r\n/boeger/om-vinteren\r\n/boeger/det-uperfekte-menneske-12\r\n/boeger/andre-farver-essays-og-en-fortaelling\r\n/boeger/blandede-bolsjer-0\r\n/boeger/da-jeg-var-barn-laeste-jeg-boger"
+    pages: "/boeger/vejen-op-vejen-ned\r\n/boeger/solve\r\n/boeger/slaeber-sig-mod-betlehem\r\n/boeger/ubekvemmelighedszonen\r\n/boeger/livet-ved-havet\r\n/boeger/essays\r\n/boeger/sjaelens-amerika\r\n/boeger/om-efteraret\r\n/boeger/om-vinteren\r\n/boeger/det-uperfekte-menneske-12\r\n/boeger/andre-farver-essays-og-en-fortaelling\r\n/boeger/blandede-bolsjer-0\r\n/boeger/da-jeg-var-barn-laeste-jeg-boger"
     negate: false
     context_mapping: {  }

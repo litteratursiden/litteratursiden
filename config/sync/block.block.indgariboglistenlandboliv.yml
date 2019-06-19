@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlandboliv
 theme: litteratursiden
 region: content
-weight: 541
+weight: 545
 provider: null
 plugin: 'block_content:d7ea4ffa-5379-4a3e-88ed-4bdef9cc3f45'
 settings:

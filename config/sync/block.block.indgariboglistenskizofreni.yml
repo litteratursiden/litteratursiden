@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenskizofreni
 theme: litteratursiden
 region: content
-weight: 147
+weight: 170
 provider: null
 plugin: 'block_content:45162839-eafa-42ea-94ba-f471dc9af212'
 settings:

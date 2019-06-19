@@ -12,7 +12,7 @@ dependencies:
 id: deallerforsteboger_2
 theme: litteratursiden
 region: content
-weight: 95
+weight: 123
 provider: null
 plugin: 'block_content:20b2def4-662d-4c0d-bda1-96ac19e7d3c4'
 settings:

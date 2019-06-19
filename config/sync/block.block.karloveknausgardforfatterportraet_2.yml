@@ -12,14 +12,14 @@ dependencies:
 id: karloveknausgardforfatterportraet_2
 theme: litteratursiden
 region: content
-weight: 54
+weight: 32
 provider: null
 plugin: 'block_content:3251f4a9-74e5-490b-b934-dafbdb955588'
 settings:
   id: 'block_content:3251f4a9-74e5-490b-b934-dafbdb955588'
-  label: 'Det Svenske Akademis nordiske pris'
+  label: 'Karl Ove Knausgård'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

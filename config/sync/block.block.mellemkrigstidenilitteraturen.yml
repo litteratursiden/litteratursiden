@@ -12,7 +12,7 @@ dependencies:
 id: mellemkrigstidenilitteraturen
 theme: litteratursiden
 region: content
-weight: 106
+weight: 134
 provider: null
 plugin: 'block_content:9f4cdd84-2c93-4454-94b8-d4c5b0b44b19'
 settings:

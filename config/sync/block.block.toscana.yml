@@ -12,7 +12,7 @@ dependencies:
 id: toscana
 theme: litteratursiden
 region: content
-weight: 297
+weight: 309
 provider: null
 plugin: 'block_content:a1e82571-0153-46ed-8045-f33245ee515e'
 settings:

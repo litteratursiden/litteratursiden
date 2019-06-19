@@ -12,7 +12,7 @@ dependencies:
 id: paris
 theme: litteratursiden
 region: content
-weight: 290
+weight: 302
 provider: null
 plugin: 'block_content:36641528-5925-42cb-b2a1-d9c5f608b04d'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenoromaner
 theme: litteratursiden
 region: content
-weight: 257
+weight: 268
 provider: null
 plugin: 'block_content:8aea8012-64d6-4ce8-8e41-802ed4a54ae2'
 settings:

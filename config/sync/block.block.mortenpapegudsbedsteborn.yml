@@ -1,0 +1,31 @@
+uuid: d661143e-6532-4e75-854f-ee38a816846c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:1ecd1368-6729-4fee-bbb9-6c02360cff7b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: mortenpapegudsbedsteborn
+theme: litteratursiden
+region: content
+weight: 3
+provider: null
+plugin: 'block_content:1ecd1368-6729-4fee-bbb9-6c02360cff7b'
+settings:
+  id: 'block_content:1ecd1368-6729-4fee-bbb9-6c02360cff7b'
+  label: 'Vinder af DR Romanprisen 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

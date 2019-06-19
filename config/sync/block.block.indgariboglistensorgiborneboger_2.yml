@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensorgiborneboger_2
 theme: litteratursiden
 region: content
-weight: 87
+weight: 116
 provider: null
 plugin: 'block_content:24ad12da-c3a0-4169-8a60-d291d22d01e5'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /artikler/doden-born-om-det-maerkelige-efterliv-i-brodrene-lovehjerte
+    pages: /artikler/doden-born-om-det-maerkelige-efterliv-i-astrid-lindgrens-brodrene-lovehjerte
     negate: false
     context_mapping: {  }

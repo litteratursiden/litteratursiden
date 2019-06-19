@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenglasnoglen
 theme: litteratursiden
 region: content
-weight: 466
+weight: 467
 provider: null
 plugin: 'block_content:a125a85a-d4cc-49fd-bfd8-1e1cb5d00144'
 settings:

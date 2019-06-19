@@ -12,7 +12,7 @@ dependencies:
 id: internationaleforfatteretillouisianaliterature
 theme: litteratursiden
 region: content
-weight: 781
+weight: 778
 provider: null
 plugin: 'block_content:f4873551-c3c9-4530-bc95-a3e4f9a685fb'
 settings:

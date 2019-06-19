@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendansk70er80erlitteratur
 theme: litteratursiden
 region: content
-weight: 366
+weight: 375
 provider: null
 plugin: 'block_content:7a897f1f-591a-484e-8486-58de18a3020a'
 settings:

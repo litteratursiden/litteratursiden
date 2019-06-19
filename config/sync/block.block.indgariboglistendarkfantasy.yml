@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendarkfantasy
 theme: litteratursiden
 region: content
-weight: 392
+weight: 401
 provider: null
 plugin: 'block_content:b821c9d5-36fb-4733-91c4-173d34c2826b'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/vampyrens-maerke\r\n/boeger/den-skjulte-vampyr\r\n/boeger/natskygger\r\n/boeger/glashuse\r\n/boeger/skyggesider-0\r\n/boeger/manens-kald\r\n/boeger/fodt-ved-midnat\r\n/boeger/dod-indtil-solnedgang\r\n/boeger/heksenat-0\r\n/boeger/blodsostre-0\r\n/boeger/en-vampyrs-bekendelser\r\n/boeger/morkets-brodre\r\n/boeger/bree-tanners-korte-liv-efter-doden-en-formorkelsesfortaelling\r\n/boeger/fodt-ved-midnat\r\n/boeger/daemonernes\r\n/boeger/american-gods\r\n/boeger/coraline\r\n/boeger/oceanet-hvor-grusvejen-endte\r\n/boeger/assassinernes-hemmelighed\r\n/boeger/de-sorte-skygger-0\r\n/boeger/den-indre-daemon\r\n/boeger/heksejaegerens-laerling\r\n/boeger/skyggernes-bog-1\r\n/boeger/half-wild-halvkode\r\n/boeger/de-utilpassede\r\n/boeger/blood-magic\r\n/boeger/englefald\r\n/boeger/sorte-engle\r\n/boeger/vildskab"
+    pages: "/boeger/vampyrens-maerke\r\n/boeger/den-skjulte-vampyr\r\n/boeger/pigen-fra-manehojen\r\n/boeger/natskygger\r\n/boeger/glashuse\r\n/boeger/skyggesider-0\r\n/boeger/manens-kald\r\n/boeger/fodt-ved-midnat\r\n/boeger/dod-indtil-solnedgang\r\n/boeger/heksenat-0\r\n/boeger/blodsostre-0\r\n/boeger/en-vampyrs-bekendelser\r\n/boeger/morkets-brodre\r\n/boeger/bree-tanners-korte-liv-efter-doden-en-formorkelsesfortaelling\r\n/boeger/fodt-ved-midnat\r\n/boeger/daemonernes\r\n/boeger/american-gods\r\n/boeger/coraline\r\n/boeger/oceanet-hvor-grusvejen-endte\r\n/boeger/assassinernes-hemmelighed\r\n/boeger/de-sorte-skygger-0\r\n/boeger/den-indre-daemon\r\n/boeger/heksejaegerens-laerling\r\n/boeger/skyggernes-bog-1\r\n/boeger/half-wild-halvkode\r\n/boeger/de-utilpassede\r\n/boeger/blood-magic\r\n/boeger/englefald\r\n/boeger/sorte-engle\r\n/boeger/vildskab"
     negate: false
     context_mapping: {  }

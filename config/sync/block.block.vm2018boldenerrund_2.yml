@@ -12,7 +12,7 @@ dependencies:
 id: vm2018boldenerrund_2
 theme: litteratursiden
 region: content
-weight: 312
+weight: 324
 provider: null
 plugin: 'block_content:abde86b7-d622-4f20-a82e-728b77795d14'
 settings:

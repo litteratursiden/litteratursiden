@@ -12,20 +12,20 @@ dependencies:
 id: h.candersenseventyr
 theme: litteratursiden
 region: content
-weight: 860
+weight: 857
 provider: null
 plugin: 'block_content:791f475c-549c-440a-999c-dd411bb5a24e'
 settings:
   id: 'block_content:791f475c-549c-440a-999c-dd411bb5a24e'
-  label: 'H.C Andersens eventyr'
+  label: 'SÅDAN HAR JEG ALDRIG FÅET DEN FØR'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /forfattere/h-c-andersen
+    pages: /artikler/lusket-og-lummer-om-slaegten-af-gustav-wied
     negate: false
     context_mapping: {  }

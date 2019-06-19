@@ -12,7 +12,7 @@ dependencies:
 id: indgaritemasherlock
 theme: litteratursiden
 region: content
-weight: 682
+weight: 677
 provider: null
 plugin: 'block_content:65b5b6e8-3aa7-4dad-8669-b6d1c1ffc243'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenparforholdogforaeldreskab
 theme: litteratursiden
 region: content
-weight: 595
+weight: 596
 provider: null
 plugin: 'block_content:35e4d0ec-bbc3-4c8b-9552-06cb80e8c22e'
 settings:

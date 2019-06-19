@@ -12,7 +12,7 @@ dependencies:
 id: manedenstemaaretsbedsteboger2018_3
 theme: litteratursiden
 region: content
-weight: 878
+weight: 873
 provider: null
 plugin: 'block_content:fc9c27ce-7f4c-42fc-b1c2-b7ecfdcf2d99'
 settings:

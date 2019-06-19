@@ -12,12 +12,12 @@ dependencies:
 id: analysesorgensgrundstof
 theme: litteratursiden
 region: content
-weight: 120
+weight: 147
 provider: null
 plugin: 'block_content:9ba175ed-ecfa-4c01-bff6-3a8c4b8c6727'
 settings:
   id: 'block_content:9ba175ed-ecfa-4c01-bff6-3a8c4b8c6727'
-  label: 'Analyse: Sorgens Grundstof'
+  label: Analyse
   provider: block_content
   label_display: visible
   status: true

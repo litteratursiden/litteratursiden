@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenboliviaparaguayuruguayogvenezuela
 theme: litteratursiden
 region: content
-weight: 827
+weight: 822
 provider: null
 plugin: 'block_content:2e05ac69-80cf-49aa-a0d0-e00d1bf17210'
 settings:

@@ -1,0 +1,31 @@
+uuid: 46aa2839-4d3b-4bd6-8854-d3914c8a421c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:78399e74-5d2d-4542-b914-8962678631ab'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klimaetilitteraturenartikeloversigt
+theme: litteratursiden
+region: content
+weight: 578
+provider: null
+plugin: 'block_content:78399e74-5d2d-4542-b914-8962678631ab'
+settings:
+  id: 'block_content:78399e74-5d2d-4542-b914-8962678631ab'
+  label: 'Klimaet i litteraturen - artikeloversigt'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /lister/er-der-hab-fremtiden
+    negate: false
+    context_mapping: {  }
