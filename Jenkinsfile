@@ -30,9 +30,9 @@ pipeline {
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; git fetch'"
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; git reset origin/${BRANCH_NAME} --hard'"
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; composer install  --no-dev'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs/web; vendor/bin/drush updb -y'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs/web; vendor/bin/drush entup -y'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs/web; vendor/bin/drush cr'"
+                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; vendor/bin/drush updb -y'"
+                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; vendor/bin/drush entup -y'"
+                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; vendor/bin/drush cr'"
                     }
                 }
                 stage('Litteratursiden - production') {
@@ -48,9 +48,9 @@ pipeline {
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; git fetch'"
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; git reset origin/${BRANCH_NAME} --hard'"
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; composer install --no-dev'"
-                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs/web; vendor/bin/drush updb -y'"
-                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs/web; vendor/bin/drush entup -y'"
-                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs/web; vendor/bin/drush cr'"
+                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; vendor/bin/drush updb -y'"
+                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; vendor/bin/drush entup -y'"
+                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; vendor/bin/drush cr'"
                     }
                 }
             }
