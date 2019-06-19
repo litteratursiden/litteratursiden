@@ -12,7 +12,7 @@ dependencies:
 id: forfatterlivet
 theme: litteratursiden
 region: content
-weight: 194
+weight: 214
 provider: null
 plugin: 'block_content:59837d8b-4592-45dd-ac60-e85ab0ddcf97'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenisraelskestemmer
 theme: litteratursiden
 region: content
-weight: 501
+weight: 506
 provider: null
 plugin: 'block_content:deb22d9a-0ec1-49a6-b908-644fc9cd18bb'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/troskabseden\r\n/boeger/en-stille-glaede\r\n/boeger/gode-mennesker\r\n/boeger/efter-regnen-0\r\n/boeger/det-evige-folk-har-ingen-frygt\r\n/boeger/hvorfor-kom-du-ikke-krigen\r\n/boeger/vals-med-bashir\r\n/boeger/kvinde-pa-flugt-fra-meddelelse\r\n/boeger/en-god-arabers-bekendelser\r\n/boeger/8-af-ingenting\r\n/boeger/min-familie-pa-godt-og-ondt\r\n/boeger/din-nabos-son\r\n/boeger/abne-sar\r\n/boeger/en-fortaelling-om-kaerlighed-og-morke\r\n/boeger/limassol\r\n/boeger/det-bla-bjerg\r\n/boeger/blodappelsiner\r\n/boeger/hr-mani-0"
+    pages: "/boeger/troskabseden\r\n/boeger/en-stille-glaede\r\n/boeger/gode-mennesker\r\n/boeger/efter-regnen-0\r\n/boeger/det-evige-folk-har-ingen-frygt\r\n/boeger/hvorfor-kom-du-ikke-krigen\r\n/boeger/vals-med-bashir\r\n/boeger/kvinde-pa-flugt-fra-meddelelse\r\n/boeger/en-god-arabers-bekendelser\r\n/boeger/8-af-ingenting\r\n/boeger/min-familie-pa-godt-og-ondt\r\n/boeger/din-nabos-son\r\n/boeger/abne-sar\r\n/boeger/en-fortaelling-om-kaerlighed-og-morke\r\n/boeger/limassol\r\n/boeger/det-bla-bjerg\r\n/boeger/blodappelsiner\r\n/boeger/hr-mani-0\r\n/boeger/verdens-skygge\r\n/boeger/judas\r\n/boeger/mellem-venner-3"
     negate: false
     context_mapping: {  }

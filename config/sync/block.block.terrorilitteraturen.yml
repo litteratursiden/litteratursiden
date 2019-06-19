@@ -12,7 +12,7 @@ dependencies:
 id: terrorilitteraturen
 theme: litteratursiden
 region: content
-weight: 665
+weight: 660
 provider: null
 plugin: 'block_content:946262ce-f803-442e-915b-0b8eca802598'
 settings:

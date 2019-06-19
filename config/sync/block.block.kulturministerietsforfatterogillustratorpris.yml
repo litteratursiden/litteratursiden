@@ -12,7 +12,7 @@ dependencies:
 id: kulturministerietsforfatterogillustratorpris
 theme: litteratursiden
 region: content
-weight: 30
+weight: 71
 provider: null
 plugin: 'block_content:1a524d3e-d6f0-4263-9192-7fbb67b0c850'
 settings:

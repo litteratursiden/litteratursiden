@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1990erne
 theme: litteratursiden
 region: content
-weight: 811
+weight: 806
 provider: null
 plugin: 'block_content:6d45d149-24eb-4d31-9aaf-c1b280808140'
 settings:

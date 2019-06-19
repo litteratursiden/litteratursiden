@@ -1,0 +1,31 @@
+uuid: fb50184b-5d13-45ad-84e6-ba3f8d893d2e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:6c0dc6b4-8c17-4e04-b902-ce612fc9314a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: tysksprogedeklassikere
+theme: litteratursiden
+region: content
+weight: 701
+provider: null
+plugin: 'block_content:6c0dc6b4-8c17-4e04-b902-ce612fc9314a'
+settings:
+  id: 'block_content:6c0dc6b4-8c17-4e04-b902-ce612fc9314a'
+  label: 'Tysksprogede klassikere'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/nye-tyske-stemmer
+    negate: false
+    context_mapping: {  }

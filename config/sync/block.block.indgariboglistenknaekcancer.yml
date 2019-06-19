@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenknaekcancer
 theme: litteratursiden
 region: content
-weight: 524
+weight: 528
 provider: null
 plugin: 'block_content:157688c1-d76f-4d0f-bad2-2bbaac98a3e8'
 settings:

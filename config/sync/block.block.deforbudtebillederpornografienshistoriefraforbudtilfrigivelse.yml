@@ -1,0 +1,31 @@
+uuid: 2afdf856-3dcd-4964-9fc7-ea447fcb43b5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:01d2b958-fa56-4859-af7b-0375f69f6d49'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: deforbudtebillederpornografienshistoriefraforbudtilfrigivelse
+theme: litteratursiden
+region: content
+weight: 47
+provider: null
+plugin: 'block_content:01d2b958-fa56-4859-af7b-0375f69f6d49'
+settings:
+  id: 'block_content:01d2b958-fa56-4859-af7b-0375f69f6d49'
+  label: 'De forbudte billeder : pornografiens historie fra forbud til frigivelse '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/lummer-litteratur
+    negate: false
+    context_mapping: {  }

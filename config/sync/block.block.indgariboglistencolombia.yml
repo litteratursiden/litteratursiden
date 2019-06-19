@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistencolombia
 theme: litteratursiden
 region: content
-weight: 842
+weight: 837
 provider: null
 plugin: 'block_content:5c69a2e8-a30b-4c35-a1c7-b0150cd4cb3d'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/vor-daglige-angst\r\n/boeger/100-ars-ensomhed\r\n/boeger/leve-fortaelle\r\n/boeger/erindring-om-mine-bedrovelige-ludere\r\n/boeger/beretning-om-en-skibbruden\r\n/boeger/om-kaerlighed-og-andre-daemoner\r\n/boeger/historien-om-et-bebudet-mord\r\n/boeger/admiralens-sne\r\n/boeger/trampdamperens-sidste-faerd\r\n/boeger/hvis-en-engel\r\n/boeger/leoparden-i-solen\r\n/boeger/haerene\r\n/boeger/chico"
+    pages: "/boeger/vor-daglige-angst\r\n/boeger/100-ars-ensomhed\r\n/boeger/breve-fra-en-barndom\r\n/boeger/leve-fortaelle\r\n/boeger/erindring-om-mine-bedrovelige-ludere\r\n/boeger/beretning-om-en-skibbruden\r\n/boeger/om-kaerlighed-og-andre-daemoner\r\n/boeger/historien-om-et-bebudet-mord\r\n/boeger/admiralens-sne\r\n/boeger/trampdamperens-sidste-faerd\r\n/boeger/hvis-en-engel\r\n/boeger/leoparden-i-solen\r\n/boeger/haerene\r\n/boeger/chico"
     negate: false
     context_mapping: {  }

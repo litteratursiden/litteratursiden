@@ -12,7 +12,7 @@ dependencies:
 id: analyseraftoveditlevsensvaerker
 theme: litteratursiden
 region: content
-weight: 674
+weight: 669
 provider: null
 plugin: 'block_content:15c537ad-f091-4643-b5a9-fe369bd92a1f'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendenindustriellerevolution
 theme: litteratursiden
 region: content
-weight: 397
+weight: 406
 provider: null
 plugin: 'block_content:cd4175dc-35e1-4083-90d3-f9280391ce15'
 settings:

@@ -1,0 +1,31 @@
+uuid: c1124c73-74c4-43c1-a341-cde6729b6205
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:dbd65e40-b414-4a2c-bf8a-4a2f444edc1d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenvindereafdrromanprisen_2
+theme: litteratursiden
+region: content
+weight: 4
+provider: null
+plugin: 'block_content:dbd65e40-b414-4a2c-bf8a-4a2f444edc1d'
+settings:
+  id: 'block_content:dbd65e40-b414-4a2c-bf8a-4a2f444edc1d'
+  label: 'Vindere af DR Romanprisen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

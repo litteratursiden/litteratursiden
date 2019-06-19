@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpsykologiskethrillers
 theme: litteratursiden
 region: content
-weight: 164
+weight: 187
 provider: null
 plugin: 'block_content:6b29ad70-e83d-4a56-91b4-3b5a916abe8d'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/den-ottende-dodssynd\r\n/boeger/til-doden-os-skiller-1\r\n/boeger/vuggesang\r\n/boeger/sommerfugleeffekten-0\r\n/boeger/kata\r\n/boeger/enken-0\r\n/boeger/dyster-viden\r\n/boeger/skruestikken\r\n/boeger/hojlandet\r\n/boeger/englemageren-0\r\n/boeger/min-mands-hustru\r\n/boeger/babyalarm\r\n/boeger/ind-i-labyrinten\r\n/boeger/splinten\r\n/boeger/en-hjaelpende-hand\r\n/boeger/kvinden-der-forsvandt-0\r\n/boeger/dukkeforeren\r\n/boeger/kvinden-i-toget\r\n/boeger/morke-afkroge\r\n/boeger/kvinden-i-graven\r\n/boeger/pantomime\r\n/boeger/varslet\r\n/boeger/de-ubudne-0\r\n/boeger/spindleren\r\n/boeger/hotel-rudolph\r\n/boeger/enhver-lighed\r\n/boeger/kom-aldrig-mere-tilbage\r\n/boeger/kom-tag-min-hand\r\n/boeger/det-burde-du-have-vidst\r\n/boeger/verdens-heldigste-kvinde\r\n/boeger/den-perfekte-pige\r\n/boeger/drengen-der-slog-ihjel\r\n/boeger/tilbederen\r\n/boeger/efter-branden\r\n/boeger/lyden-af-stilhed\r\n/boeger/sandheden-om-amelia\r\n/boeger/sundhedsplejersken\r\n/boeger/i-misosuppen\r\n/boeger/fluen-og-evigheden\r\n/boeger/straf-0\r\n/boeger/gode-naboer\r\n/boeger/intet-nummer\r\n/boeger/blodmanden\r\n/boeger/mokka\r\n/boeger/hvor-intet-bryder-vinden\r\n/boeger/stadig-savnet\r\n/boeger/lognen\r\n/boeger/eksperimentet-1\r\n/boeger/faldet-2\r\n/boeger/ophelia\r\n/boeger/close\r\n/boeger/hvor-intet-kan-rore-dig\r\n/boeger/jeg-lukker-ojnene\r\n/boeger/nultid"
+    pages: "/boeger/den-ottende-dodssynd\r\n/boeger/sekretaeren\r\nk/boeger/vilde-dyr\r\n/boeger/til-doden-os-skiller-1\r\n/boeger/vuggesang\r\n/boeger/sommerfugleeffekten-0\r\n/boeger/kata\r\n/boeger/enken-0\r\n/boeger/dyster-viden\r\n/boeger/skruestikken\r\n/boeger/hojlandet\r\n/boeger/englemageren-0\r\n/boeger/min-mands-hustru\r\n/boeger/babyalarm\r\n/boeger/ind-i-labyrinten\r\n/boeger/splinten\r\n/boeger/en-hjaelpende-hand\r\n/boeger/kvinden-der-forsvandt-0\r\n/boeger/dukkeforeren\r\n/boeger/kvinden-i-toget\r\n/boeger/morke-afkroge\r\n/boeger/kvinden-i-graven\r\n/boeger/pantomime\r\n/boeger/varslet\r\n/boeger/de-ubudne-0\r\n/boeger/spindleren\r\n/boeger/hotel-rudolph\r\n/boeger/enhver-lighed\r\n/boeger/kom-aldrig-mere-tilbage\r\n/boeger/kom-tag-min-hand\r\n/boeger/det-burde-du-have-vidst\r\n/boeger/verdens-heldigste-kvinde\r\n/boeger/den-perfekte-pige\r\n/boeger/drengen-der-slog-ihjel\r\n/boeger/tilbederen\r\n/boeger/efter-branden\r\n/boeger/lyden-af-stilhed\r\n/boeger/sandheden-om-amelia\r\n/boeger/sundhedsplejersken\r\n/boeger/i-misosuppen\r\n/boeger/fluen-og-evigheden\r\n/boeger/straf-0\r\n/boeger/gode-naboer\r\n/boeger/intet-nummer\r\n/boeger/blodmanden\r\n/boeger/mokka\r\n/boeger/hvor-intet-bryder-vinden\r\n/boeger/stadig-savnet\r\n/boeger/lognen\r\n/boeger/eksperimentet-1\r\n/boeger/faldet-2\r\n/boeger/ophelia\r\n/boeger/close\r\n/boeger/hvor-intet-kan-rore-dig\r\n/boeger/jeg-lukker-ojnene\r\n/boeger/nultid"
     negate: false
     context_mapping: {  }

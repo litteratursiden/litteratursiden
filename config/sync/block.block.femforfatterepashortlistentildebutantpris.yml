@@ -12,7 +12,7 @@ dependencies:
 id: femforfatterepashortlistentildebutantpris
 theme: litteratursiden
 region: content
-weight: 965
+weight: 955
 provider: null
 plugin: 'block_content:30b5a1a7-aea9-4d5b-a440-d95031978d6f'
 settings:

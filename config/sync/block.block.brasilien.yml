@@ -12,7 +12,7 @@ dependencies:
 id: brasilien
 theme: litteratursiden
 region: content
-weight: 832
+weight: 827
 provider: null
 plugin: 'block_content:ed7d9469-47f8-4aca-8b15-0884f11f7c4b'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenterror_2
 theme: litteratursiden
 region: content
-weight: 631
+weight: 630
 provider: null
 plugin: 'block_content:38602c94-cca6-452d-8bd9-157e17686f5f'
 settings:

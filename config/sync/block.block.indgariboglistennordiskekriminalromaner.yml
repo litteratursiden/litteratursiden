@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennordiskekriminalromaner
 theme: litteratursiden
 region: content
-weight: 592
+weight: 593
 provider: null
 plugin: 'block_content:7385e524-e7a8-4e34-a0b5-4c3d8dcaa4c1'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/selfies\r\n/boeger/kvinden-de-meldte-savnet\r\n/boeger/dodvaegt\r\n/boeger/min-mund-er-lukket\r\n/boeger/i-lige-linje\r\n/boeger/portraet-af-doden\r\n/boeger/de-frosne-flammer\r\n/boeger/den-tredje-mont\r\n/boeger/dybet-0\r\n/boeger/en-hellig-alliance\r\n/boeger/de-savnede-0\r\n/boeger/helt-til-graensen\r\n/boeger/braendte-sjaele\r\n/boeger/ildmanden\r\n/boeger/helvedesilden\r\n/boeger/offline\r\n/boeger/sonnen\r\n/boeger/ingen-er-sa-tryg-i-fare\r\n/boeger/begravet-i-stilheden\r\n/boeger/klaverstemmeren\r\n/boeger/skyggezone\r\n/boeger/glaslegemer\r\n/boeger/de-uegnede\r\n/boeger/forarslig\r\n/boeger/stalker-0\r\n/boeger/slagteren-fra-lille-burma\r\n/boeger/som-offer-til-molok\r\n/boeger/lovetaemmeren-0\r\n/boeger/handen-0\r\n/boeger/jernblod\r\n/boeger/fyrmesterens-datter\r\n/boeger/sa-laenge-hjertet-slar\r\n/boeger/i-skjul-af-skyggerne\r\n/boeger/handlangeren\r\n/boeger/nedkoling\r\n/boeger/kulde\r\n/boeger/kolibrien\r\n/boeger/hvor-er-de-unge-piger-nu\r\n/boeger/morkt-er-mit-hjerte\r\n/boeger/en-saer-omhed\r\n/boeger/en-tjans-tipo\r\n/boeger/det-tatoverede-budskab\r\n/boeger/frosne-beviser\r\n/boeger/pigen-uden-hud"
+    pages: "/boeger/frit-fald-1\r\n/boeger/en-grav-til-selma-falcks-forste-sag-kriminalroman\r\n/boeger/udenfor-er-hundene\r\n/boeger/en-hojere-retfaerdighed\r\n/boeger/blodspor-0\r\n/boeger/morket-kalder\r\n/boeger/den-sorte-engel-1\r\n/boeger/kold-angst\r\n/boeger/heroine\r\n/boeger/lazarus\r\n/boeger/lupus\r\n/boeger/en-djaevelsk-plan\r\n/boeger/de-venstrehandedes-forening\r\n/boeger/tilgivelse\r\n/boeger/glashjerte\r\n/boeger/heksen-1\r\n/boeger/macbeth-0\r\n/boeger/midtvand\r\n/boeger/slagteren-1\r\n/boeger/selfies\r\n/boeger/hviskeren-0\r\n/boeger/kvinden-de-meldte-savnet\r\n/boeger/ukendte-kyster\r\n/boeger/min-mund-er-lukket\r\n/boeger/i-lige-linje\r\n/boeger/den-tredje-mont\r\n/boeger/en-hellig-alliance\r\n/boeger/de-savnede-0\r\n/boeger/helt-til-graensen\r\n/boeger/begravet-i-stilheden\r\n/boeger/klaverstemmeren\r\n/boeger/glaslegemer\r\n/boeger/som-offer-til-molok\r\n/boeger/handen-0\r\n/boeger/jernblod\r\n/boeger/fyrmesterens-datter\r\n/boeger/sa-laenge-hjertet-slar\r\n/boeger/i-skjul-af-skyggerne\r\n/boeger/kolibrien\r\n/boeger/hvor-er-de-unge-piger-nu\r\n/boeger/morkt-er-mit-hjerte\r\n/boeger/en-saer-omhed\r\n/boeger/en-tjans-tipo\r\n/boeger/det-tatoverede-budskab"
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfrisorerilitteraturen
 theme: litteratursiden
 region: content
-weight: 456
+weight: 457
 provider: null
 plugin: 'block_content:ee142709-b0f2-4557-9bd9-178f18a9e92d'
 settings:

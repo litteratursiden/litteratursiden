@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyereeuropaeiskskonlitteratur
 theme: litteratursiden
 region: content
-weight: 236
+weight: 248
 provider: null
 plugin: 'block_content:2603e4d2-5ef3-4682-860e-cd49c11cc9d6'
 settings:

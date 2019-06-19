@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1960erne
 theme: litteratursiden
 region: content
-weight: 805
+weight: 800
 provider: null
 plugin: 'block_content:3d9838b3-857c-4836-8821-c236c97ad063'
 settings:

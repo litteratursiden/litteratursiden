@@ -12,7 +12,7 @@ dependencies:
 id: aretsbedstelyrik2018
 theme: litteratursiden
 region: content
-weight: 163
+weight: 186
 provider: null
 plugin: 'block_content:d71acae5-4c58-4528-b752-9e0c7bf1292f'
 settings:

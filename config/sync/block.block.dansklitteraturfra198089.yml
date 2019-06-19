@@ -12,7 +12,7 @@ dependencies:
 id: dansklitteraturfra198089
 theme: litteratursiden
 region: content
-weight: 730
+weight: 726
 provider: null
 plugin: 'block_content:79605b4e-4bb4-45cd-8347-c6842431d385'
 settings:

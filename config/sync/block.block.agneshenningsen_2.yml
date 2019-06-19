@@ -12,7 +12,7 @@ dependencies:
 id: agneshenningsen_2
 theme: litteratursiden
 region: content
-weight: 529
+weight: 533
 provider: null
 plugin: 'block_content:7f979f83-e1df-4b5f-9de4-3de44e341db6'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /boeger/let-gang-pa-jorden-og-letsindighedens-gave
+    pages: "/boeger/let-gang-pa-jorden-og-letsindighedens-gave\r\n/forfattere/agnes-henningsen"
     negate: false
     context_mapping: {  }

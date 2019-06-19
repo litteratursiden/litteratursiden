@@ -1,0 +1,31 @@
+uuid: 6f93de12-a8b0-4724-933d-59eb1eed5ff9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b1e5ea46-0a37-46ab-aca5-cf77c863b5d1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forestillingomhvorforvilaeserslaegtsromanerpeterhoeg
+theme: litteratursiden
+region: content
+weight: 755
+provider: null
+plugin: 'block_content:b1e5ea46-0a37-46ab-aca5-cf77c863b5d1'
+settings:
+  id: 'block_content:b1e5ea46-0a37-46ab-aca5-cf77c863b5d1'
+  label: 'Forestilling om hvorfor vi læser slægtsromaner - Peter Høeg'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/peter-hoeg\r\n/boeger/forestilling-om-det-tyvende-arhundrede"
+    negate: false
+    context_mapping: {  }

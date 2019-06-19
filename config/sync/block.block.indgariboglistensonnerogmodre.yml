@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensonnerogmodre
 theme: litteratursiden
 region: content
-weight: 114
+weight: 141
 provider: null
 plugin: 'block_content:513544f4-6beb-4538-8e3d-6548d145b322'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/mor-om-natten\r\n/boeger/en-dag-mere\r\n/boeger/tosedreng\r\n/boeger/perla-0\r\n/boeger/om-et-klaver\r\n/boeger/stemte-ser\r\n/boeger/drommefanger-0\r\n/boeger/jeg-kunne-finde-hjem-i-blinde\r\n/boeger/det-halve-barn\r\n/boeger/den-ottende-bonde\r\n/boeger/kvinden-ved-1000deg\r\n/boeger/rygtet-om-hendes-dod\r\n/boeger/vidunderbarn\r\n/boeger/frokost-i-tyrens-hoved\r\n/boeger/fugle-i-frostvejr\r\n/boeger/jordfald\r\n/boeger/mallos-0\r\n/boeger/i-vinterens-lob\r\n/boeger/gennem-en-hinde-af\r\n/boeger/sneen-og-doden\r\n/boeger/jeg-forbander-tidens-flod\r\n/boeger/ariel-0\r\n/boeger/du-som-er-i-himlen\r\n/boeger/tilbage-til-rue-darwin\r\n/boeger/moders-maelk-til-sidst\r\n/boeger/min-mors-sidste-dage\r\n/boeger/stillidsen\r\n/boeger/nora-webster\r\n/boeger/morkt-er-mit-hjerte\r\n/boeger/jord-0\r\n/boeger/inden-der-var-modre\r\n/boeger/lykkens-son"
+    pages: "/boeger/mor-om-natten\r\n/boeger/i-vinterens-lob\r\n/boeger/rygtet-om-hendes-dod\r\n/boeger/om-et-klaver\r\n/boeger/moders-maelk-til-sidst\r\n/boeger/nora-webster\r\n/boeger/perla-0\r\n/boeger/stillidsen\r\n/boeger/jord-0\r\n/boeger/tosedreng\r\n/boeger/kvinden-ved-1000deg\r\n/boeger/ariel-0\r\n/boeger/frokost-i-tyrens-hoved\r\n/boeger/jeg-kunne-finde-hjem-i-blinde\r\n/boeger/mallos-0\r\n/boeger/min-mors-sidste-dage\r\n/boeger/vidunderbarn\r\n/boeger/stemte-ser\r\n/boeger/jeg-forbander-tidens-flod\r\n/boeger/en-dag-mere\r\n/boeger/den-ottende-bonde\r\n/boeger/du-som-er-i-himlen\r\n/boeger/fugle-i-frostvejr\r\n/boeger/det-halve-barn\r\n/boeger/sneen-og-doden\r\n/boeger/lykkens-son\r\n"
     negate: false
     context_mapping: {  }

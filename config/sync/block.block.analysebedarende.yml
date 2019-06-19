@@ -12,7 +12,7 @@ dependencies:
 id: analysebedarende
 theme: litteratursiden
 region: content
-weight: 717
+weight: 713
 provider: null
 plugin: 'block_content:232dca42-1190-4452-bba5-f0edec01c58d'
 settings:

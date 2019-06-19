@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkortedanskeromaner
 theme: litteratursiden
 region: content
-weight: 530
+weight: 534
 provider: null
 plugin: 'block_content:382ee06f-da25-4455-878e-4affcccbfe06'
 settings:

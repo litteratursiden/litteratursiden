@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistentilgrinfor2010
 theme: litteratursiden
 region: content
-weight: 178
+weight: 200
 provider: null
 plugin: 'block_content:4caffd35-97f3-4939-8cc6-fb219cb8ae8d'
 settings:
   id: 'block_content:4caffd35-97f3-4939-8cc6-fb219cb8ae8d'
-  label: 'Indgår i boglisten: Til grin - før 2010'
+  label: 'Til grin - før 2010'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/kald-det-hvad-fanden-du-vil\r\n/boeger/svinestreger-0\r\n/boeger/pludselig-flaeben\r\n/boeger/kaeledyrene\r\n/boeger/damen-som-holdt-af-rene-toiletter\r\n/boeger/tre-engle-og-en-tung-krabat\r\n/boeger/sa-var-det-slut\r\n/boeger/svinets-blik-lynhistorier\r\n/boeger/touchdown\r\n/boeger/forrest-gump\r\n/boeger/fisketyven\r\n/boeger/en-lille-sang-om-stella\r\n/boeger/den-mystiske-sag-om-hunden-i-natten\r\n/boeger/lejemorderens-guide-til-et-smukt-hjem\r\n/boeger/101-reykjavik\r\n/boeger/hva-sa-gilbert-grape\r\n/boeger/formateret\r\n/boeger/glimmerbosserne\r\n/boeger/potensgiverne\r\n/boeger/verden-ifolge-garp\r\n/boeger/valdemar-wimmers-ankomst\r\n/boeger/kunsten-graede-i-kor\r\n/boeger/med-livet-i-haelene\r\n/boeger/fakta-om-finland\r\n/boeger/kvinden-flytter-ind\r\n/boeger/hvorfor-gor-vi-aldrig-noget-fantastisk\r\n/boeger/den-perfekte-mand-en-selvbiografi-roman\r\n/boeger/dage-med-far\r\n/boeger/populaermusik-fra-vittula\r\n/boeger/skaeve-knald\r\n/boeger/kravl\r\n/boeger/borgmester-ved-et-tilfaelde\r\n/boeger/kollektivt-selvmord\r\n/boeger/harens-ar\r\n/boeger/den-ufuldendte-dommer\r\n/boeger/ogledage\r\n/boeger/kettys-blues\r\n/boeger/samlede-skroner-fra-et-rejseliv\r\n/boeger/i-virkeligheden-hedder-jeg-nielsen\r\n/boeger/idealister\r\n/boeger/jeg-skriver-til-jer-fordi\r\n/boeger/bare-det-lober-rundt\r\n/boeger/maendene-og-skibet\r\n/boeger/kvinder-pa-kur\r\n/boeger/jysk-fitness\r\n/boeger/kommando-villavej"
+    pages: "/boeger/kald-det-hvad-fanden-du-vil\r\n/boeger/svinestreger-0\r\n/artikler/humorens-sproglige-virkemidler\r\n/boeger/pludselig-flaeben\r\n/boeger/kaeledyrene\r\n/boeger/damen-som-holdt-af-rene-toiletter\r\n/boeger/tre-engle-og-en-tung-krabat\r\n/boeger/sa-var-det-slut\r\n/boeger/svinets-blik-lynhistorier\r\n/boeger/touchdown\r\n/boeger/forrest-gump\r\n/boeger/fisketyven\r\n/boeger/en-lille-sang-om-stella\r\n/boeger/den-mystiske-sag-om-hunden-i-natten\r\n/boeger/lejemorderens-guide-til-et-smukt-hjem\r\n/boeger/101-reykjavik\r\n/boeger/hva-sa-gilbert-grape\r\n/boeger/formateret\r\n/boeger/glimmerbosserne\r\n/boeger/potensgiverne\r\n/boeger/verden-ifolge-garp\r\n/boeger/valdemar-wimmers-ankomst\r\n/boeger/kunsten-graede-i-kor\r\n/boeger/med-livet-i-haelene\r\n/boeger/fakta-om-finland\r\n/boeger/kvinden-flytter-ind\r\n/boeger/hvorfor-gor-vi-aldrig-noget-fantastisk\r\n/boeger/den-perfekte-mand-en-selvbiografi-roman\r\n/boeger/dage-med-far\r\n/boeger/populaermusik-fra-vittula\r\n/boeger/skaeve-knald\r\n/boeger/kravl\r\n/boeger/borgmester-ved-et-tilfaelde\r\n/boeger/kollektivt-selvmord\r\n/boeger/harens-ar\r\n/boeger/den-ufuldendte-dommer\r\n/boeger/ogledage\r\n/boeger/kettys-blues\r\n/boeger/samlede-skroner-fra-et-rejseliv\r\n/boeger/i-virkeligheden-hedder-jeg-nielsen\r\n/boeger/idealister\r\n/boeger/jeg-skriver-til-jer-fordi\r\n/boeger/bare-det-lober-rundt\r\n/boeger/maendene-og-skibet\r\n/boeger/kvinder-pa-kur\r\n/boeger/jysk-fitness\r\n/boeger/kommando-villavej"
     negate: false
     context_mapping: {  }

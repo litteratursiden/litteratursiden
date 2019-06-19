@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistenafropolitanskestemmer
 theme: litteratursiden
 region: content
-weight: 794
+weight: 21
 provider: null
 plugin: 'block_content:18e125c7-5869-45e4-9cea-26e2a2eb047b'
 settings:
   id: 'block_content:18e125c7-5869-45e4-9cea-26e2a2eb047b'
-  label: 'Indgår i boglisten: Afropolitanske stemmer'
+  label: 'Afropolitanske stemmer'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/americanah\r\n/boeger/det-du-har-om-halsen\r\n/boeger/en-halv-gul-sol\r\n/boeger/vi-skal-have-nye-navne\r\n/boeger/et-ojeblik-pa-7th-street\r\n/boeger/aben-0\r\n/boeger/til-minde-om-kaerligheden\r\n/boeger/hjemfaerd\r\n/boeger/drommemestrene\r\n/boeger/hvordan-man-tyder-luften\r\n/boeger/spor-83\r\n/boeger/vi-var-fiskere\r\n/boeger/sultens-vej\r\n/boeger/ga-vaek-ghana"
+    pages: "<front>\r\n/boeger/americanah\r\n/boeger/dromme-i-krigens-tid\r\n/boeger/i-fortolkerens-hus\r\n/boeger/en-drommemagers-fodsel\r\n/boeger/det-du-har-om-halsen\r\n/boeger/en-halv-gul-sol\r\n/boeger/vi-skal-have-nye-navne\r\n/boeger/aben-0\r\n/boeger/til-minde-om-kaerligheden\r\n/temaer/afropolitanske-forfattere\r\n/boeger/hjemfaerd\r\n/boeger/drommemestrene\r\n/boeger/hvordan-man-tyder-luften\r\n/boeger/spor-83\r\n/boeger/vi-var-fiskere\r\n/boeger/sultens-vej\r\n/boeger/ga-vaek-ghana"
     negate: false
     context_mapping: {  }

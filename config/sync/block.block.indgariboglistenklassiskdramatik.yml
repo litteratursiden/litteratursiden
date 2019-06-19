@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenklassiskdramatik
 theme: litteratursiden
 region: content
-weight: 511
+weight: 517
 provider: null
 plugin: 'block_content:ba73965a-29fc-43ec-bf1c-016ae3695031'
 settings:

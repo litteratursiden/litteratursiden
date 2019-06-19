@@ -12,7 +12,7 @@ dependencies:
 id: julefavoritterforborn
 theme: litteratursiden
 region: content
-weight: 937
+weight: 928
 provider: null
 plugin: 'block_content:8add8009-98d3-4ea4-85c7-8094e66cedea'
 settings:

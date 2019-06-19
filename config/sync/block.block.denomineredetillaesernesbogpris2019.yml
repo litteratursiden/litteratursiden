@@ -12,7 +12,7 @@ dependencies:
 id: denomineredetillaesernesbogpris2019
 theme: litteratursiden
 region: content
-weight: 866
+weight: 861
 provider: null
 plugin: 'block_content:764e1736-6ebd-4212-9d34-a604f45c2388'
 settings:

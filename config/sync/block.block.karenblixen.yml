@@ -12,7 +12,7 @@ dependencies:
 id: karenblixen
 theme: litteratursiden
 region: content
-weight: 705
+weight: 700
 provider: null
 plugin: 'block_content:bfde3468-a582-4464-9a79-2782f8bef36e'
 settings:

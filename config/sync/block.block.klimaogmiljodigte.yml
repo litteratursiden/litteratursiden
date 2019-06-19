@@ -12,7 +12,7 @@ dependencies:
 id: klimaogmiljodigte
 theme: litteratursiden
 region: content
-weight: 737
+weight: 734
 provider: null
 plugin: 'block_content:53f2b415-7043-406e-9f76-ebeea64ad4ae'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/artikler/klimaet-i-litteraturen\r\n/boeger/digte-2014\r\n/boeger/17-tipping-point\r\n/boeger/vi-er-her\r\n/boeger/teotwawki\r\n/boeger/guld-4"
+    pages: "/artikler/klimaet-i-litteraturen\r\n/boeger/moder-vaekst\r\n/boeger/digte-2014\r\n/boeger/17-tipping-point\r\n/boeger/vi-er-her\r\n/boeger/teotwawki\r\n/boeger/guld-4"
     negate: false
     context_mapping: {  }

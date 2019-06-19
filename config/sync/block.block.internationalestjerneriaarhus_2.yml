@@ -1,0 +1,31 @@
+uuid: 3eea3fe4-0e17-4d53-afee-88311be55158
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:47a2ea6d-83d6-4edc-b9d2-63cfdb52c099'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: internationalestjerneriaarhus_2
+theme: litteratursiden
+region: content
+weight: 791
+provider: null
+plugin: 'block_content:47a2ea6d-83d6-4edc-b9d2-63cfdb52c099'
+settings:
+  id: 'block_content:47a2ea6d-83d6-4edc-b9d2-63cfdb52c099'
+  label: 'Internationale stjerner i Aarhus'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/ny-norsk-litteratur-0
+    negate: false
+    context_mapping: {  }

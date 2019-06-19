@@ -12,7 +12,7 @@ dependencies:
 id: indgaritemanewyorkilitteraturen
 theme: litteratursiden
 region: content
-weight: 517
+weight: 523
 provider: null
 plugin: 'block_content:1d76b18e-cd20-468f-8650-a5732c271193'
 settings:

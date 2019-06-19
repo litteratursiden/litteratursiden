@@ -12,7 +12,7 @@ dependencies:
 id: kierkegaardtaltemedselvetsstemme
 theme: litteratursiden
 region: content
-weight: 663
+weight: 658
 provider: null
 plugin: 'block_content:b2a5a6e0-7e3a-4d0a-8716-6bbdf1e89d0e'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /forfattere/soren-kierkegaard
+    pages: "/forfattere/soren-kierkegaard\r\n/blogs/lise-vandborg/kierkegaard-og-livets-morke-sider"
     negate: false
     context_mapping: {  }

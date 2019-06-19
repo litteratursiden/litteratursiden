@@ -1,0 +1,31 @@
+uuid: 5a866dc3-2e81-4e6f-9061-d8a203ea3fda
+langcode: da
+status: false
+dependencies:
+  content:
+    - 'block_content:spot:9d1bd9ac-2012-4fe7-bcfd-d4e5039007de'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: katrinemarieguldager
+theme: litteratursiden
+region: content
+weight: 960
+provider: null
+plugin: 'block_content:9d1bd9ac-2012-4fe7-bcfd-d4e5039007de'
+settings:
+  id: 'block_content:9d1bd9ac-2012-4fe7-bcfd-d4e5039007de'
+  label: 'Katrine Marie Guldager'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

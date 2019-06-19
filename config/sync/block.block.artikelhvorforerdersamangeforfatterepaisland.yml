@@ -12,7 +12,7 @@ dependencies:
 id: artikelhvorforerdersamangeforfatterepaisland
 theme: litteratursiden
 region: content
-weight: 704
+weight: 699
 provider: null
 plugin: 'block_content:44b3d958-9d7e-4133-8ef8-8fc6c626ff3c'
 settings:

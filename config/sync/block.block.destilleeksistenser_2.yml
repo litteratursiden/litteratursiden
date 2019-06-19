@@ -12,7 +12,7 @@ dependencies:
 id: destilleeksistenser_2
 theme: litteratursiden
 region: content
-weight: 923
+weight: 916
 provider: null
 plugin: 'block_content:954e836d-8eac-442c-81ba-d13e8d13505b'
 settings:

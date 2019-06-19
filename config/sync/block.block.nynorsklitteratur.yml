@@ -1,0 +1,31 @@
+uuid: a00d8ac1-011b-4284-afa7-c0f3ad65d545
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:fa3dc285-7efb-4a31-8bff-23616731aec1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nynorsklitteratur
+theme: litteratursiden
+region: content
+weight: 110
+provider: null
+plugin: 'block_content:fa3dc285-7efb-4a31-8bff-23616731aec1'
+settings:
+  id: 'block_content:fa3dc285-7efb-4a31-8bff-23616731aec1'
+  label: 'Ny norsk litteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/norsk-litteratur-lidt-insiderviden\r\n/artikler/autobiografiske-hybrider-tre-mestervaerker-i-den-glimrende-norske-samtidslitteratur\r\n"
+    negate: false
+    context_mapping: {  }

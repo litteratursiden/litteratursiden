@@ -12,7 +12,7 @@ dependencies:
 id: madogdrikkeharaltidspilletencentralrolleilitteraturhistorien
 theme: litteratursiden
 region: content
-weight: 90
+weight: 119
 provider: null
 plugin: 'block_content:42eee0cf-e405-4599-9864-114bc08a75f0'
 settings:

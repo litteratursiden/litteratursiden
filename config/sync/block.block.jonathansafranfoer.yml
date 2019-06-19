@@ -12,7 +12,7 @@ dependencies:
 id: jonathansafranfoer
 theme: litteratursiden
 region: content
-weight: 669
+weight: 664
 provider: null
 plugin: 'block_content:31a796a1-fe5c-4596-8ea2-a94a95c4bf79'
 settings:

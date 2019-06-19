@@ -12,7 +12,7 @@ dependencies:
 id: klassikerguidejohnsteinbeck
 theme: litteratursiden
 region: content
-weight: 250
+weight: 262
 provider: null
 plugin: 'block_content:8fce954e-d2fb-4687-90f5-5f442000d90e'
 settings:

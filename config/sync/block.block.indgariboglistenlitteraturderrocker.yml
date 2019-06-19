@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraturderrocker
 theme: litteratursiden
 region: content
-weight: 544
+weight: 546
 provider: null
 plugin: 'block_content:49a4830e-cadb-499b-a2d2-612fd115c308'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: manedenstemakroppenilitteraturen_2
 theme: litteratursiden
 region: content
-weight: 907
+weight: 901
 provider: null
 plugin: 'block_content:ccd62977-361b-4294-8562-b66da1e16333'
 settings:

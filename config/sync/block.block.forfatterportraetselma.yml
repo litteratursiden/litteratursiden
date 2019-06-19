@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraetselma
 theme: litteratursiden
 region: content
-weight: 938
+weight: 929
 provider: null
 plugin: 'block_content:99cbad96-1931-4e5e-a8ce-6ffa4160924e'
 settings:

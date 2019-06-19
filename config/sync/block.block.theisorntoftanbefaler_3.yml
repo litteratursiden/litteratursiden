@@ -12,7 +12,7 @@ dependencies:
 id: theisorntoftanbefaler_3
 theme: litteratursiden
 region: content
-weight: 288
+weight: 300
 provider: null
 plugin: 'block_content:6bb5a334-0b27-47bc-9b9f-4ba0d454fccd'
 settings:

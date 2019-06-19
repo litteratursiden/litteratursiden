@@ -12,7 +12,7 @@ dependencies:
 id: artikelkropumuligekroppeinydansklitteratur
 theme: litteratursiden
 region: content
-weight: 709
+weight: 705
 provider: null
 plugin: 'block_content:8b35d7ec-2128-4862-95c3-c50d11ad7157'
 settings:

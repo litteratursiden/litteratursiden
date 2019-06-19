@@ -12,7 +12,7 @@ dependencies:
 id: bogerafhellehelle
 theme: litteratursiden
 region: content
-weight: 740
+weight: 737
 provider: null
 plugin: 'block_content:e6d71175-69b2-49c5-96e2-f0f71218c395'
 settings:

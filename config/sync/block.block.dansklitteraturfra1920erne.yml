@@ -12,7 +12,7 @@ dependencies:
 id: dansklitteraturfra1920erne
 theme: litteratursiden
 region: content
-weight: 273
+weight: 284
 provider: null
 plugin: 'block_content:343a1830-05aa-41a8-b6ab-5c37de23d3cc'
 settings:

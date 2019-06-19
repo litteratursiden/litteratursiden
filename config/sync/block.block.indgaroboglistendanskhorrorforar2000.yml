@@ -12,7 +12,7 @@ dependencies:
 id: indgaroboglistendanskhorrorforar2000
 theme: litteratursiden
 region: content
-weight: 371
+weight: 380
 provider: null
 plugin: 'block_content:612f4eaf-c467-4b70-a3c6-937225e42fbe'
 settings:

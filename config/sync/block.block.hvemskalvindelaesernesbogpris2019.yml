@@ -12,7 +12,7 @@ dependencies:
 id: hvemskalvindelaesernesbogpris2019
 theme: litteratursiden
 region: content
-weight: 970
+weight: 965
 provider: null
 plugin: 'block_content:2564a5b7-5ec1-4349-a046-73cff7c1ee0e'
 settings:

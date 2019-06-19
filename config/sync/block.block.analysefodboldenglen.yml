@@ -12,7 +12,7 @@ dependencies:
 id: analysefodboldenglen
 theme: litteratursiden
 region: content
-weight: 301
+weight: 313
 provider: null
 plugin: 'block_content:b44d33cf-665b-4d1b-80ec-28d85d233907'
 settings:

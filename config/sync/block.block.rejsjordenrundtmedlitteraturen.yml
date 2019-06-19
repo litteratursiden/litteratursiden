@@ -1,0 +1,31 @@
+uuid: 9ca9c1e5-01d5-4fb6-9b32-fa053125c458
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:c5b39161-199b-4dea-a459-7e80ed9ffb08'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: rejsjordenrundtmedlitteraturen
+theme: litteratursiden
+region: content
+weight: 20
+provider: null
+plugin: 'block_content:c5b39161-199b-4dea-a459-7e80ed9ffb08'
+settings:
+  id: 'block_content:c5b39161-199b-4dea-a459-7e80ed9ffb08'
+  label: 'Rejs jorden rundt med litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

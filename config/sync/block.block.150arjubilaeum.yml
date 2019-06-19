@@ -1,0 +1,31 @@
+uuid: 485486e3-f879-46f4-8ffe-dde68245e4ef
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:fcf5cc52-87c9-49c2-8518-8bb4234a43b2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: 150arjubilaeum
+theme: litteratursiden
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:fcf5cc52-87c9-49c2-8518-8bb4234a43b2'
+settings:
+  id: 'block_content:fcf5cc52-87c9-49c2-8518-8bb4234a43b2'
+  label: '150 års jubilæum'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

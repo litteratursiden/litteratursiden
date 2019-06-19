@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraetjonaseika
 theme: litteratursiden
 region: content
-weight: 119
+weight: 146
 provider: null
 plugin: 'block_content:682a1be2-3f5e-4f23-a6eb-e6936c882d2b'
 settings:

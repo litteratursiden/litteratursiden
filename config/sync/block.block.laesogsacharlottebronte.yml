@@ -12,14 +12,14 @@ dependencies:
 id: laesogsacharlottebronte
 theme: litteratursiden
 region: content
-weight: 608
+weight: 609
 provider: null
 plugin: 'block_content:1db08216-0768-4ce8-9e4b-30a57b233190'
 settings:
   id: 'block_content:1db08216-0768-4ce8-9e4b-30a57b233190'
-  label: 'Læs også'
+  label: 'Charlotte Brontë'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

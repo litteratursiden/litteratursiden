@@ -12,7 +12,7 @@ dependencies:
 id: h.candersenenmesterligfortaeller
 theme: litteratursiden
 region: content
-weight: 782
+weight: 779
 provider: null
 plugin: 'block_content:dde672e2-b2c1-4bc5-899d-5f5e8a561918'
 settings:

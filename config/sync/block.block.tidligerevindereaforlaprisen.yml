@@ -12,7 +12,7 @@ dependencies:
 id: tidligerevindereaforlaprisen
 theme: litteratursiden
 region: content
-weight: 404
+weight: 413
 provider: null
 plugin: 'block_content:f00d5813-db58-49c7-9b90-2d87284c0951'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1940erne
 theme: litteratursiden
 region: content
-weight: 803
+weight: 798
 provider: null
 plugin: 'block_content:ce99c8e1-70dd-4433-9fae-ebeb90738c9c'
 settings:

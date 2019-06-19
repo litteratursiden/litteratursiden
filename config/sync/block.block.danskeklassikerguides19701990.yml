@@ -12,7 +12,7 @@ dependencies:
 id: danskeklassikerguides19701990
 theme: litteratursiden
 region: content
-weight: 488
+weight: 490
 provider: null
 plugin: 'block_content:ae2fbdfc-d5d6-48b1-a3c7-f0be34deb9f3'
 settings:

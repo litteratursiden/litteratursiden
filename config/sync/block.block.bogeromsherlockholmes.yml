@@ -12,7 +12,7 @@ dependencies:
 id: bogeromsherlockholmes
 theme: litteratursiden
 region: content
-weight: 690
+weight: 685
 provider: null
 plugin: 'block_content:8ddf6213-56cb-444f-9e63-16701bb1f9fc'
 settings:

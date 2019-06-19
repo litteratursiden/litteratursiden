@@ -12,7 +12,7 @@ dependencies:
 id: romantikken18001870
 theme: litteratursiden
 region: content
-weight: 635
+weight: 482
 provider: null
 plugin: 'block_content:ef4bdda3-4a3e-4d48-b0cf-914065a21182'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "\r\n/forfattere/august-strindberg\r\n/forfattere/h-c-andersen\r\n/forfattere/jane-austen\r\n/forfattere/charles-baudelaire\r\n\r\n/forfattere/emily-bronte\r\n/forfattere/charles-dickens\r\n/forfattere/f-m-dostojevskij\r\n/forfattere/johann-wolfgang-von-goethe\r\n/forfattere/n-f-s-grundtvig\r\n/forfattere/thomasine-gyllembourg\r\n/forfattere/b-s-ingemann\r\n/forfattere/soren-kierkegaard\r\n/forfattere/adam-oehlenschlager\r\n/forfattere/edgar-allan-poe\r\n/forfattere/lev-tolstoj\r\n\r\n\r\n\r\n\r\n\r\n"
+    pages: "/forfattere/august-strindberg\r\n/forfattere/h-c-andersen\r\n/forfattere/jane-austen\r\n/forfattere/charles-baudelaire\r\n/forfattere/emily-bronte\r\n/forfattere/charles-dickens\r\n/forfattere/f-m-dostojevskij\r\n/forfattere/johann-wolfgang-von-goethe\r\n/forfattere/n-f-s-grundtvig\r\n/forfattere/thomasine-gyllembourg\r\n/forfattere/b-s-ingemann\r\n/forfattere/soren-kierkegaard\r\n/forfattere/adam-oehlenschlager\r\n/forfattere/edgar-allan-poe\r\n/forfattere/lev-tolstoj\r\n\r\n\r\n\r\n"
     negate: false
     context_mapping: {  }

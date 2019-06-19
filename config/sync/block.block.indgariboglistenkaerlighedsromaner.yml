@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkaerlighedsromaner
 theme: litteratursiden
 region: content
-weight: 538
+weight: 542
 provider: null
 plugin: 'block_content:0ba8f710-e327-4fd5-9ab7-6d8130a2e015'
 settings:

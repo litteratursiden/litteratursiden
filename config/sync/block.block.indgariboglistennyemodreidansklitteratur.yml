@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyemodreidansklitteratur
 theme: litteratursiden
 region: content
-weight: 235
+weight: 247
 provider: null
 plugin: 'block_content:7a19b253-a3e6-4016-b21d-397e3acc8a39'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/stormskader\r\n/boeger/pa-traek-0\r\n/boeger/mado\r\n/boeger/mor-0\r\n/boeger/ulvekvinten\r\n/boeger/erindring-om-kaerligheden\r\n/boeger/sortedam\r\n/boeger/som-om"
+    pages: "/boeger/til-min-soster\r\n/boeger/stormskader\r\n/boeger/pa-traek-0\r\n/boeger/mado\r\n/boeger/mor-0\r\n/boeger/ulvekvinten\r\n/boeger/erindring-om-kaerligheden\r\n/boeger/sortedam\r\n/boeger/som-om"
     negate: false
     context_mapping: {  }
