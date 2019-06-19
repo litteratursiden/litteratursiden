@@ -12,7 +12,7 @@ dependencies:
 id: forfatterselskabetparoskildefestival
 theme: litteratursiden
 region: content
-weight: 344
+weight: 355
 provider: null
 plugin: 'block_content:9495c539-3685-4d67-9723-f149f122fbf3'
 settings:

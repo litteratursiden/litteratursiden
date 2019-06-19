@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenperu
 theme: litteratursiden
 region: content
-weight: 217
+weight: 232
 provider: null
 plugin: 'block_content:cba30b94-936b-4161-b025-6aa3f88c8080'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/de-dybe-floder\r\n/boeger/den-sorte-herold\r\n/boeger/bukkens-fest\r\n/boeger/byen-og-hundene\r\n/boeger/don-rigobertos-haefter\r\n/boeger/hvem-draebte-palomino-molero\r\n/boeger/krigen-ved-verdens-ende\r\n/boeger/lituma-i-andesbjergene\r\n/boeger/stedmoderens-pris\r\n/boeger/tante-julia-og-poeten"
+    pages: "/boeger/de-dybe-floder\r\n/boeger/vejen-til-paradis-0\r\n/boeger/den-sorte-herold\r\n/boeger/bukkens-fest\r\n/boeger/byen-og-hundene\r\n/boeger/don-rigobertos-haefter\r\n/boeger/hvem-draebte-palomino-molero\r\n/boeger/krigen-ved-verdens-ende\r\n/boeger/lituma-i-andesbjergene\r\n/boeger/stedmoderens-pris\r\n/boeger/tante-julia-og-poeten"
     negate: false
     context_mapping: {  }

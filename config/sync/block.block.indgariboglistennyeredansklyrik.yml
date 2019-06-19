@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyeredansklyrik
 theme: litteratursiden
 region: content
-weight: 251
+weight: 263
 provider: null
 plugin: 'block_content:fde73d41-b307-47f8-ac86-2f2cb2236358'
 settings:

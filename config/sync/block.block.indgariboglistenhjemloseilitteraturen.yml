@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhjemloseilitteraturen
 theme: litteratursiden
 region: content
-weight: 483
+weight: 485
 provider: null
 plugin: 'block_content:72b8a2b3-0d14-4938-85f5-96e0df15f6ec'
 settings:

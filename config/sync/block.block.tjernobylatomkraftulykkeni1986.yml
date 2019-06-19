@@ -1,0 +1,31 @@
+uuid: 4bf1e575-9930-4ffb-80fc-d1d45960444d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:63da2ded-de3b-47e9-9963-a066d52e3db6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: tjernobylatomkraftulykkeni1986
+theme: litteratursiden
+region: content
+weight: 852
+provider: null
+plugin: 'block_content:63da2ded-de3b-47e9-9963-a066d52e3db6'
+settings:
+  id: 'block_content:63da2ded-de3b-47e9-9963-a066d52e3db6'
+  label: 'Tjernobyl - atomkraftulykken i 1986 '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/baba-dunja-og-kaerligheden\r\n/boeger/bon-tjernobyl\r\n/boeger/den-usynlige-ivan-isaenko\r\n/boeger/efter-morkets-frembrud"
+    negate: false
+    context_mapping: {  }

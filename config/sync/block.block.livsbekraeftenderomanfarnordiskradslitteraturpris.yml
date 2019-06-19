@@ -12,7 +12,7 @@ dependencies:
 id: livsbekraeftenderomanfarnordiskradslitteraturpris
 theme: litteratursiden
 region: content
-weight: 123
+weight: 409
 provider: null
 plugin: 'block_content:a6b5bf43-e0d8-432b-841d-a12392f21797'
 settings:

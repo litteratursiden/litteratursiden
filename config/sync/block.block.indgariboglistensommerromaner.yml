@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensommerromaner
 theme: litteratursiden
 region: content
-weight: 140
+weight: 164
 provider: null
 plugin: 'block_content:1a022b05-efd7-4aff-bb30-ce50e7ea178b'
 settings:

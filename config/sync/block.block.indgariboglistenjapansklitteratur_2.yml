@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenjapansklitteratur_2
 theme: litteratursiden
 region: content
-weight: 616
+weight: 615
 provider: null
 plugin: 'block_content:3d17541c-ef2e-4320-ade7-17c2d668b8ad'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanskekvindestemmeranno20152016
 theme: litteratursiden
 region: content
-weight: 386
+weight: 395
 provider: null
 plugin: 'block_content:982484fe-dd75-4911-9fbd-1ce5b6a42462'
 settings:

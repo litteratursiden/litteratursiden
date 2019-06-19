@@ -12,7 +12,7 @@ dependencies:
 id: dealvidendeindfodteikarenblixensdenafrikanskfarm
 theme: litteratursiden
 region: content
-weight: 964
+weight: 954
 provider: null
 plugin: 'block_content:4f775443-9faf-43b1-a01c-d422cbb49ace'
 settings:

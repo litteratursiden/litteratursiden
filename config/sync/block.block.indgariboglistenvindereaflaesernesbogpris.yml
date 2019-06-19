@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenvindereaflaesernesbogpris
 theme: litteratursiden
 region: content
-weight: 243
+weight: 255
 provider: null
 plugin: 'block_content:0c2d1bb0-fb5f-413b-9c00-5768997be74e'
 settings:

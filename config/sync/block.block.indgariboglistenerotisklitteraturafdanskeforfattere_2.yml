@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenerotisklitteraturafdanskeforfattere_2
 theme: litteratursiden
 region: content
-weight: 645
+weight: 642
 provider: null
 plugin: 'block_content:607ae678-b9aa-4af1-a4d5-fc0de045e94d'
 settings:

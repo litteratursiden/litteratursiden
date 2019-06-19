@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistennyeretyskeromanerognoveller
 theme: litteratursiden
 region: content
-weight: 231
+weight: 244
 provider: null
 plugin: 'block_content:5f834d27-0260-41fb-835a-3498b2b5f927'
 settings:
   id: 'block_content:5f834d27-0260-41fb-835a-3498b2b5f927'
-  label: 'Indgår i boglisten: Nyere tyske romaner og noveller'
+  label: 'Nyere tyske romaner og noveller'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/syv-naetter\r\n/boeger/du-skulle-vaere-gaet\r\n/boeger/lettipark\r\n/boeger/pafugleoen\r\n/boeger/i-den-korte-ende-af-sonnenallee\r\n/boeger/middagsfruen\r\n/boeger/lykkebarn-med-far\r\n/boeger/svommeren\r\n/boeger/sa-siger-den-ene\r\n/boeger/i-hans-tidlige-barndom-en-have\r\n/boeger/jeg-roman\r\n/boeger/modstanderens-dod\r\n/boeger/i-vinterens-lob\r\n/boeger/crazy\r\n/boeger/dykkeren\r\n/boeger/vaerelset\r\n/boeger/dengang-vi-dromte\r\n/boeger/min-mors-elskede\r\n/boeger/i-tider-med-aftagende-lys\r\n/boeger/tarnet-historie-fra-et-sunket-land\r\n/boeger/fortiden-er-ikke-hvad-den-har-vaeret\r\n/boeger/mens-alligatoren-griner\r\n/boeger/i-live-0\r\n/boeger/nultid"
+    pages: "/boeger/syv-naetter\r\n/boeger/blodbrodre-0\r\n/boeger/engang-vil-vi-fortaelle-hinanden-alt\r\n/boeger/kruso\r\n/temaer/nye-tyske-stemmer\r\n/boeger/du-skulle-vaere-gaet\r\n/boeger/lettipark\r\n/boeger/pafugleoen\r\n/boeger/i-den-korte-ende-af-sonnenallee\r\n/boeger/middagsfruen\r\n/boeger/lykkebarn-med-far\r\n/boeger/svommeren\r\n/boeger/sa-siger-den-ene\r\n/boeger/i-hans-tidlige-barndom-en-have\r\n/boeger/modstanderens-dod\r\n/boeger/dykkeren\r\n/boeger/vaerelset\r\n/boeger/dengang-vi-dromte\r\n/boeger/min-mors-elskede\r\n/boeger/i-tider-med-aftagende-lys\r\n/boeger/tarnet-historie-fra-et-sunket-land\r\n/boeger/fortiden-er-ikke-hvad-den-har-vaeret\r\n/artikler/laesetips-til-storbyferien\r\n/boeger/overloberen\r\n/boeger/oostende-1936-stefan-zweig-og-joseph-roth-sommeren-morket-faldt-pa\r\n/boeger/pigen-med-fingerbollet\r\n/boeger/nultid"
     negate: false
     context_mapping: {  }

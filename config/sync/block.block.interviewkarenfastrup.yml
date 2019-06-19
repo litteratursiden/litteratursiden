@@ -12,7 +12,7 @@ dependencies:
 id: interviewkarenfastrup
 theme: litteratursiden
 region: content
-weight: 170
+weight: 63
 provider: null
 plugin: 'block_content:b8be94e4-3f78-4e8b-b173-d903dd8a6b3c'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/mine-syvogtyve-sansers-elskede\r\n/forfattere/karen-fastrup"
+    pages: "/boeger/mine-syvogtyve-sansers-elskede\r\n/forfattere/karen-fastrup\r\n/boeger/hungerhjerte-0"
     negate: false
     context_mapping: {  }

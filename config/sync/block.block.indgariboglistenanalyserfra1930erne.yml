@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1930erne
 theme: litteratursiden
 region: content
-weight: 802
+weight: 797
 provider: null
 plugin: 'block_content:ba491e0c-52b4-4559-b752-9a9439f6b9d6'
 settings:

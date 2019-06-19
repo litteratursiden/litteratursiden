@@ -1,0 +1,31 @@
+uuid: 3e3efdef-49ea-4206-afad-4c25a68b956e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:1b941c15-f401-463c-8ab0-4c933b871441'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: laesbogenforfilmenvildheks
+theme: litteratursiden
+region: content
+weight: 31
+provider: null
+plugin: 'block_content:1b941c15-f401-463c-8ab0-4c933b871441'
+settings:
+  id: 'block_content:1b941c15-f401-463c-8ab0-4c933b871441'
+  label: 'Vinder af børnevalget 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/books"
+    negate: false
+    context_mapping: {  }

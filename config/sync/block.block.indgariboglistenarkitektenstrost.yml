@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenarkitektenstrost
 theme: litteratursiden
 region: content
-weight: 816
+weight: 811
 provider: null
 plugin: 'block_content:01ec6f47-f272-4145-a522-c07c19629488'
 settings:

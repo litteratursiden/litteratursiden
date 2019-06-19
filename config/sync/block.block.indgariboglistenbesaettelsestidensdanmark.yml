@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbesaettelsestidensdanmark
 theme: litteratursiden
 region: content
-weight: 969
+weight: 964
 provider: null
 plugin: 'block_content:6e2a6b5b-45bc-43a2-8527-3d80a0b0a8d3'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenislam
 theme: litteratursiden
 region: content
-weight: 495
+weight: 500
 provider: null
 plugin: 'block_content:0c8369f6-04cb-466b-aee9-868f9d904558'
 settings:

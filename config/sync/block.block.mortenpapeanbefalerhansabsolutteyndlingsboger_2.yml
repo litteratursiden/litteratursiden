@@ -12,7 +12,7 @@ dependencies:
 id: mortenpapeanbefalerhansabsolutteyndlingsboger_2
 theme: litteratursiden
 region: content
-weight: 960
+weight: 950
 provider: null
 plugin: 'block_content:b214bce2-8497-42f0-94e1-6bcb4ac35d37'
 settings:

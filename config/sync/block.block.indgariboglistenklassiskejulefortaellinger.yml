@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenklassiskejulefortaellinger
 theme: litteratursiden
 region: content
-weight: 518
+weight: 524
 provider: null
 plugin: 'block_content:5f590943-891f-4d15-89d4-e2a772ec2a16'
 settings:

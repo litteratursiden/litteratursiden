@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenaalborgilitteraturen
 theme: litteratursiden
 region: content
-weight: 790
+weight: 787
 provider: null
 plugin: 'block_content:1a469d16-fa7f-4031-9990-47916bb22611'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/fuga-0\r\n/boeger/natportier\r\n/boeger/krigsfaren\r\n/boeger/rab-pa-lang-afstand\r\n/boeger/nedrullede-persienner\r\n/boeger/nordkraft\r\n/boeger/en-kvinde-med-hat\r\n/boeger/nederlagenes\r\n/boeger/ale-langskaegs-saga-livsbillede-fra-vikingetiden\r\n/boeger/sin-brors-vogter\r\n/boeger/tretten-er-ude\r\n/boeger/og-mennesket-vandt-den-hele-verden\r\n/boeger/tragedien-i-torvegade\r\n/boeger/sohaner\r\n/boeger/kaerlighedens-sommer-0\r\n/boeger/drejers-hotel\r\n/boeger/var-jeg-end-en-tabe\r\n/boeger/da-kaerligheden-kom-til-byen\r\n/boeger/stenen-i-strommen\r\n/boeger/nordlige-rytmer\r\n/boeger/traktorstedet-og-cafe-danmark\r\n/boeger/du-blinkende-klare-stjerne\r\n/boeger/dig-og-mig-ved-daggry\r\n/boeger/noget-du-skal-vide\r\n/boeger/jorgen-stein-torden-i-syd\r\n/boeger/kildespring\r\n/boeger/batmans-have\r\n/boeger/girafhuset\r\n/boeger/aalborgdage\r\n/boeger/drengene-fra-sankt-petri\r\n/boeger/reparation-af-spunsvaegge\r\n/boeger/fryd\r\n/boeger/ejnar\r\n/boeger/den-sene-host\r\n/boeger/godheden-selv\r\n/boeger/arbejdssky\r\n"
+    pages: "/boeger/i-dine-ojne\r\n/boeger/girafhuset\r\n/boeger/nordkraft\r\n/boeger/hjemlos-0\r\n/boeger/dig-og-mig-ved-daggry\r\n/boeger/fuga-0\r\n/boeger/natportier\r\n/boeger/krigsfaren\r\n/boeger/rab-pa-lang-afstand\r\n/boeger/nedrullede-persienner\r\n/boeger/en-kvinde-med-hat\r\n/boeger/og-mennesket-vandt-den-hele-verden\r\n/boeger/det-kan-koste-dit-liv\r\n/boeger/nederlagenes\r\n/boeger/ale-langskaegs-saga-livsbillede-fra-vikingetiden\r\n/boeger/tretten-er-ude\r\n/boeger/og-mennesket-vandt-den-hele-verden\r\n/boeger/tragedien-i-torvegade\r\n/boeger/sohaner\r\n/boeger/kaerlighedens-sommer-0\r\n/boeger/drejers-hotel\r\n/boeger/var-jeg-end-en-tabe\r\n/boeger/da-kaerligheden-kom-til-byen\r\n/boeger/stenen-i-strommen\r\n/boeger/nordlige-rytmer\r\n/boeger/traktorstedet-og-cafe-danmark\r\n/boeger/du-blinkende-klare-stjerne\r\n/boeger/noget-du-skal-vide\r\n/boeger/jorgen-stein-torden-i-syd\r\n/boeger/kildespring\r\n/boeger/batmans-have\r\n/boeger/aalborgdage\r\n/boeger/drengene-fra-sankt-petri\r\n/boeger/reparation-af-spunsvaegge\r\n/boeger/fryd\r\n/boeger/ejnar\r\n/boeger/do-danska\r\n/boeger/den-sene-host\r\n/boeger/godheden-selv\r\n/boeger/arbejdssky"
     negate: false
     context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: b0595ac0-c68c-49aa-8417-283e659ac1c4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:c448a305-4647-4b92-bd1f-0f2a98a1bb33'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: enamerikanerslidelser
+theme: litteratursiden
+region: content
+weight: 100
+provider: null
+plugin: 'block_content:c448a305-4647-4b92-bd1f-0f2a98a1bb33'
+settings:
+  id: 'block_content:c448a305-4647-4b92-bd1f-0f2a98a1bb33'
+  label: 'En amerikaners lidelser'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/siri-hustvedt
+    negate: false
+    context_mapping: {  }

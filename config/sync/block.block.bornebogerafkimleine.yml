@@ -12,7 +12,7 @@ dependencies:
 id: bornebogerafkimleine
 theme: litteratursiden
 region: content
-weight: 929
+weight: 921
 provider: null
 plugin: 'block_content:b55e49fb-cba8-4f18-87b5-15635c9fc921'
 settings:

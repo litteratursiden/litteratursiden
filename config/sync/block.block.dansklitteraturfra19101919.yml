@@ -12,7 +12,7 @@ dependencies:
 id: dansklitteraturfra19101919
 theme: litteratursiden
 region: content
-weight: 901
+weight: 896
 provider: null
 plugin: 'block_content:a1b29317-3dde-40e7-aa0f-a536319a334a'
 settings:

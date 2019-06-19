@@ -12,7 +12,7 @@ dependencies:
 id: japansklitteratur
 theme: litteratursiden
 region: content
-weight: 725
+weight: 721
 provider: null
 plugin: 'block_content:6f0ad295-9844-40d4-9273-121ec9f0967c'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/den-hengivne-hr-x\r\n/boeger/senseis-mappe\r\n/boeger/mit-liv-som-geisha\r\n/boeger/nagasaki\r\n/boeger/den-smalle-vej-til-det-dybe-nord\r\n/boeger/kvinden-ved-havet\r\n/boeger/kaiken\r\n/boeger/hotellet-pa-hjornet-af-bitter-og-sod\r\n/boeger/kattegaesten\r\n/boeger/ude-0\r\n/boeger/spurvenes-sky\r\n/boeger/skyggefamilie\r\n/boeger/i-misosuppen\r\n/boeger/tokyo-min-elskede\r\n/boeger/tidens-vaesen\r\n/boeger/og-vi-kom-over-havet\r\n/boeger/solens-aermer\r\n/boeger/den-ensomme-gourmet\r\n/boeger/skyggelandet-0\r\n/boeger/det-rene-land\r\n/boeger/jacob-de-zoets-tusind-efterar\r\n/boeger/1q84-bog-1\r\n/boeger/1q84-bog-2\r\n/boeger/1q84-bog-3\r\n/boeger/den-farvelose-tsukuru-tazakis-pilgrimsar\r\n/boeger/hardboiled-wonderland-og-verdens-ende\r\n/boeger/hor-vinden-synge-flipperspil-1973\r\n/boeger/maend-uden-kvinder-0\r\n/boeger/mordet-pa-kommandanten-bind-2\r\n/boeger/efter-skaelvet\r\n/boeger/efter-midnat-0\r\n/boeger/kafka-pa-stranden\r\n/boeger/norwegian-wood\r\n/boeger/sputnik-min-elskede\r\n/boeger/sonden-graensen-og-vesten-solen\r\n/boeger/traekopfuglens-kronike\r\n/boeger/en-vild-farejagt\r\n\r\n"
+    pages: "/boeger/den-hengivne-hr-x\r\n/boeger/senseis-mappe\r\n/boeger/mit-liv-som-geisha\r\n/boeger/nagasaki\r\n/boeger/den-smalle-vej-til-det-dybe-nord\r\n/boeger/kvinden-ved-havet\r\n/boeger/kaiken\r\n/boeger/hotellet-pa-hjornet-af-bitter-og-sod\r\n/boeger/kattegaesten\r\n/boeger/ude-0\r\n/boeger/spurvenes-sky\r\n/boeger/skyggefamilie\r\n/boeger/i-misosuppen\r\n/boeger/tokyo-min-elskede\r\n/boeger/tidens-vaesen\r\n/boeger/og-vi-kom-over-havet\r\n/boeger/solens-aermer\r\n/boeger/den-ensomme-gourmet\r\n/boeger/skyggelandet-0\r\n/boeger/det-rene-land\r\n/boeger/jacob-de-zoets-tusind-efterar\r\n/boeger/1q84-bog-1\r\n/boeger/1q84-bog-2\r\n/boeger/1q84-bog-3\r\n/boeger/den-farvelose-tsukuru-tazakis-pilgrimsar\r\n/boeger/hardboiled-wonderland-og-verdens-ende\r\n/boeger/hor-vinden-synge-flipperspil-1973\r\n/boeger/maend-uden-kvinder-0\r\n/boeger/mordet-pa-kommandanten-bind-2\r\n/boeger/efter-skaelvet\r\n/boeger/efter-midnat-0\r\n/boeger/kafka-pa-stranden\r\n/boeger/norwegian-wood\r\n/boeger/sputnik-min-elskede\r\n/boeger/sonden-graensen-og-vesten-solen\r\n/boeger/traekopfuglens-kronike\r\n/boeger/en-vild-farejagt\r\n/boeger/dognkioskmennesket-roman\r\n\r\n"
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpulitzerprisen
 theme: litteratursiden
 region: content
-weight: 167
+weight: 190
 provider: null
 plugin: 'block_content:dfeb3fe7-6d11-4887-b7ac-7ae0c1208081'
 settings:

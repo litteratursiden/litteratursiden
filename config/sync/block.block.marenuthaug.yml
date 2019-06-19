@@ -12,7 +12,7 @@ dependencies:
 id: marenuthaug
 theme: litteratursiden
 region: content
-weight: 680
+weight: 675
 provider: null
 plugin: 'block_content:0c348dcf-0352-4103-b32b-2c3df909dd9a'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanskhorrorefter2015
 theme: litteratursiden
 region: content
-weight: 370
+weight: 379
 provider: null
 plugin: 'block_content:4e454a89-aa7f-4e37-997a-38a6bd3aaf05'
 settings:

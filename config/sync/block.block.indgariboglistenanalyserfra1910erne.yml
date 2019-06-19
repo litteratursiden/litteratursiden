@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1910erne
 theme: litteratursiden
 region: content
-weight: 800
+weight: 795
 provider: null
 plugin: 'block_content:fc365a94-c4bf-459c-9451-b13c20a134cb'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/en-dodsnat\r\n/boeger/asfaltens-sange\r\n/boeger/den-erotiske-hamster\r\n/boeger/ditte-menneskebarn\r\n"
+    pages: "/boeger/en-dodsnat\r\n/boeger/asfaltens-sange\r\n/boeger/den-erotiske-hamster\r\n/boeger/ditte-menneskebarn-1-2\r\n"
     negate: false
     context_mapping: {  }

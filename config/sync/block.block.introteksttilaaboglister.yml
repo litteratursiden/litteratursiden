@@ -13,7 +13,7 @@ dependencies:
 id: introteksttilaaboglister
 theme: litteratursiden
 region: content
-weight: 661
+weight: 656
 provider: null
 plugin: 'block_content:f20fbfd1-3c53-4c24-89cc-d1aa02d548d4'
 settings:

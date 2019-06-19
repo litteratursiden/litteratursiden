@@ -17,29 +17,9 @@ pipeline {
                     }
                 }
             }
-            post {
-                always {
-                    recordIssues enabledForFailure: true, tool: checkStyle()
-                }
-            }
         }
         stage('Deployment') {
             parallel {
-                stage('Litteratursiden - develop') {
-                    when {
-                        branch 'develop'
-                    }
-                    steps {
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git clean -d --force'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git checkout ${BRANCH_NAME}'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git fetch'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; git reset origin/${BRANCH_NAME} --hard'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs; composer install'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs/web; drush updb -y'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs/web; drush entup -y'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/dev_litteratursiden_dk/htdocs/web; drush cr'"
-                    }
-                }
                 stage('Litteratursiden - staging') {
                     when {
                         branch 'release'
@@ -49,7 +29,7 @@ pipeline {
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; git checkout ${BRANCH_NAME}'"
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; git fetch'"
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; git reset origin/${BRANCH_NAME} --hard'"
-                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; composer install'"
+                        sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs; composer install  --no-dev'"
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs/web; drush updb -y'"
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs/web; drush entup -y'"
                         sh "ansible devlitt -m shell -a 'cd /data/www/stg_litteratursiden_dk/htdocs/web; drush cr'"
@@ -67,7 +47,7 @@ pipeline {
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; git checkout ${BRANCH_NAME}'"
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; git fetch'"
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; git reset origin/${BRANCH_NAME} --hard'"
-                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; composer install'"
+                        sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs; composer install --no-dev'"
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs/web; drush updb -y'"
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs/web; drush entup -y'"
                         sh "ansible litt -m shell -a 'cd /data/www/litteratursiden_dk/htdocs/web; drush cr'"

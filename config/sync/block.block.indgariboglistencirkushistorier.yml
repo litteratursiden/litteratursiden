@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistencirkushistorier
 theme: litteratursiden
 region: content
-weight: 841
+weight: 836
 provider: null
 plugin: 'block_content:2f2b1504-5b89-4726-95af-5f3f19a09c39'
 settings:

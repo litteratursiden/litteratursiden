@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbarcelona
 theme: litteratursiden
 region: content
-weight: 819
+weight: 814
 provider: null
 plugin: 'block_content:ef8c2f08-3cee-44be-9d64-9c3b7701ed43'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/barcelona-vide-verden\r\n/boeger/fejltagelsernes-bog\r\n/boeger/min-broders-vogter\r\n/boeger/pigen-med-de-ni-fingre\r\n/boeger/havets-katedral\r\n/boeger/jordens-arvinger\r\n/boeger/catalaneren\r\n/boeger/jeg-vil-give-dig-verden\r\n/boeger/ildhav\r\n/boeger/sandheden-om-savolta-sagen\r\n/boeger/den-tidlose\r\n/boeger/sydens-dronning\r\n/boeger/vindens-skygge\r\n/boeger/englens-spil\r\n/boeger/himlens-fange\r\n/boeger/g-det-braender-pa-ramblaen-i-barcelona\r\n/boeger/chikitin-co\r\n/boeger/den-utalmodige-alkymist\r\n/boeger/dronningen-uden-spejl\r\n/boeger/antoni-gaudi\r\n/boeger/centerforwarden-blev-myrdet-ved-aftenstide\r\n/boeger/den-graeske-labyrint\r\n/boeger/olympisk-sabotage\r\n/boeger/det-tatoverede-lig\r\n/boeger/min-lille-horror\r\n"
+    pages: "/boeger/barcelona-vide-verden\r\n/boeger/fejltagelsernes-bog\r\n/boeger/min-broders-vogter\r\n/boeger/pigen-med-de-ni-fingre\r\n/boeger/havets-katedral\r\n/boeger/jordens-arvinger\r\n/boeger/catalaneren\r\n/boeger/jeg-vil-give-dig-verden\r\n/boeger/ildhav\r\n/boeger/sandheden-om-savolta-sagen\r\n/boeger/den-tidlose\r\n/boeger/sydens-dronning\r\n/boeger/vindens-skygge\r\n/boeger/englens-spil\r\n/boeger/himlens-fange\r\n/boeger/g-det-braender-pa-ramblaen-i-barcelona\r\n/boeger/chikitin-co\r\n/boeger/den-utalmodige-alkymist\r\n/boeger/dronningen-uden-spejl\r\n/boeger/antoni-gaudi\r\n/boeger/centerforwarden-blev-myrdet-ved-aftenstide\r\n/boeger/den-graeske-labyrint\r\n/boeger/olympisk-sabotage\r\n/boeger/det-tatoverede-lig\r\n/boeger/min-lille-horror\r\n/boeger/den-forbandede-jord"
     negate: false
     context_mapping: {  }

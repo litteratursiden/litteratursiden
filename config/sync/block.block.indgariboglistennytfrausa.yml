@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistennytfrausa
 theme: litteratursiden
 region: content
-weight: 233
+weight: 26
 provider: null
 plugin: 'block_content:153681f6-70b4-408e-9c4b-ceb82befa50e'
 settings:
   id: 'block_content:153681f6-70b4-408e-9c4b-ceb82befa50e'
-  label: 'Indgår i boglisten: Nyt fra USA'
+  label: 'Nyt fra USA'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/tavshedens-smerte\r\n/boeger/tyvenes\r\n/boeger/en-fortaelling-om-glemme\r\n/boeger/stormen-udenfor\r\n/boeger/oscar-wao-hans-korte-og-forunderlige-liv\r\n/boeger/sum\r\n/boeger/hvad-er-dette-hvad\r\n/boeger/ministeriet-specielle-anliggender\r\n/boeger/max-tivoli\r\n/boeger/abehuset\r\n/boeger/vand-til-elefanterne\r\n/boeger/de-sma-ting\r\n/boeger/den-naeste-verden\r\n/boeger/det-store-hus\r\n/boeger/en-helt-almindelig-han\r\n/boeger/midt-imellem\r\n/boeger/udvalgte-vaerker-af-ts-spivet-vest-rejsen-ost\r\n/boeger/gulddreng-smaragdpige\r\n/boeger/de-hjemlose-0\r\n/boeger/escortchaufforen\r\n/boeger/en-forsvindens-anatomi\r\n/boeger/maendenes-land\r\n/boeger/hvordan-man-tyder-luften\r\n/boeger/tigerens-kone\r\n/boeger/borgmesterens-tunge\r\n/boeger/aften-hele-dagen\r\n/boeger/absurdistan\r\n/boeger/super-sorgelig-sand-kaerlighedshistorie\r\n/boeger/en-kvinde-tre-maend-og-en-psykolog\r\n/boeger/alting-plyndret-alting-braendt\r\n/boeger/om-spise-dyr\r\n/boeger/amerika-under-huden-et-roadtrip\r\n/boeger/historier-om-amerika\r\n/boeger/min-amerikanske-drom\r\n/boeger/med-jacob-holdt-i-amerika\r\n/boeger/new-york-0\r\n/boeger/come-america"
+    pages: "<front>\r\n/boeger/tavshedens-smerte\r\n/boeger/sult-historien-om-min-krop\r\n/boeger/kattemenneske-og-andre-fortaellinger\r\n/boeger/intet-gaelder\r\n/boeger/nadestolen\r\n/boeger/der-der\r\n/boeger/den-underjordiske-jernbane\r\n/boeger/idioten-0\r\n/boeger/et-lille-liv\r\n/boeger/blithedale\r\n/boeger/asymmetri\r\n/node/70843\r\n/boeger/oplyst-erindringsroman\r\n/boeger/halvfems-huller-i-himlen-roman\r\n/boeger/syng-levende-og-dode-syng\r\n/boeger/hvad-er-dette-hvad\r\n/boeger/en-forsvindens-anatomi"
     negate: false
     context_mapping: {  }

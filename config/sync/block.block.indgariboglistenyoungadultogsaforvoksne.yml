@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenyoungadultogsaforvoksne
 theme: litteratursiden
 region: content
-weight: 294
+weight: 306
 provider: null
 plugin: 'block_content:736efe75-127e-4e52-8e5a-2dd74d3a3cfc'
 settings:

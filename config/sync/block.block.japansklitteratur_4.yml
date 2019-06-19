@@ -12,7 +12,7 @@ dependencies:
 id: japansklitteratur_4
 theme: litteratursiden
 region: content
-weight: 668
+weight: 663
 provider: null
 plugin: 'block_content:6f0ad295-9844-40d4-9273-121ec9f0967c'
 settings:

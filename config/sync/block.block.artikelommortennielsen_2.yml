@@ -12,7 +12,7 @@ dependencies:
 id: artikelommortennielsen_2
 theme: litteratursiden
 region: content
-weight: 762
+weight: 759
 provider: null
 plugin: 'block_content:532024fd-06f9-4726-a895-e9c1819d3aba'
 settings:

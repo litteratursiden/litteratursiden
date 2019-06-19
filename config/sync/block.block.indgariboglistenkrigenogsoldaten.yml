@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkrigenogsoldaten
 theme: litteratursiden
 region: content
-weight: 532
+weight: 536
 provider: null
 plugin: 'block_content:b0373c9a-7421-432f-9fe8-562173f3e483'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/vi-skod-ogsa-hunde-noveller\r\n/node/83333\r\n/boeger/krigens-sorg\r\n/boeger/de-kom-fra-de-kom-fra-land\r\n/boeger/og-alt-blev-stille\r\n/boeger/broen-over-floden-kwai\r\n/boeger/hvor-var-du-adam-0\r\n/boeger/stien-med-edderkopperederne\r\n/boeger/aerens-vej\r\n/boeger/den-smalle-vej-til-det-dybe-nord\r\n/boeger/dodsdomt-arme\r\n/boeger/broen\r\n/boeger/den-gode-soldat-svejks-eventyr\r\n/boeger/jeg-er-en-haer\r\n/boeger/den-forste-sten-0\r\n/boeger/herfra-til-evigheden\r\n/boeger/fangerne-i-quai-dong\r\n/boeger/den-ukendte-soldat\r\n/boeger/de-velvillige\r\n/boeger/menneskets-lod\r\n/boeger/intet-nyt-fra-vestfronten\r\n/boeger/mikael-0\r\n/boeger/den-stjalne-vej\r\n/boeger/dage-og-naetter\r\n/boeger/hell-man\r\n/boeger/soldatens-ar-afghanistan-krigen-i-dansk-litteratur-og-kultur"
+    pages: "/boeger/vi-skod-ogsa-hunde-noveller\r\n/node/83333\r\n/boeger/forarets-dode\r\n/boeger/krigens-sorg\r\n/boeger/de-kom-fra-de-kom-fra-land\r\n/boeger/og-alt-blev-stille\r\n/boeger/broen-over-floden-kwai\r\n/boeger/hvor-var-du-adam-0\r\n/boeger/stien-med-edderkopperederne\r\n/boeger/aerens-vej\r\n/boeger/den-smalle-vej-til-det-dybe-nord\r\n/boeger/dodsdomt-arme\r\n/boeger/broen\r\n/boeger/den-gode-soldat-svejks-eventyr\r\n/boeger/jeg-er-en-haer\r\n/boeger/den-forste-sten-0\r\n/boeger/herfra-til-evigheden\r\n/boeger/fangerne-i-quai-dong\r\n/boeger/den-ukendte-soldat\r\n/boeger/de-velvillige\r\n/boeger/menneskets-lod\r\n/boeger/intet-nyt-fra-vestfronten\r\n/boeger/mikael-0\r\n/boeger/den-stjalne-vej\r\n/boeger/dage-og-naetter\r\n/boeger/hell-man\r\n/boeger/soldatens-ar-afghanistan-krigen-i-dansk-litteratur-og-kultur"
     negate: false
     context_mapping: {  }

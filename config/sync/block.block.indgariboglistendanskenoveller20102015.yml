@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanskenoveller20102015
 theme: litteratursiden
 region: content
-weight: 388
+weight: 397
 provider: null
 plugin: 'block_content:87f512d4-810c-472e-a36a-5a96655a071d'
 settings:

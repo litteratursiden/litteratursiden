@@ -1,0 +1,31 @@
+uuid: e935b96f-7db2-4b26-a082-97ebe039fbd0
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:47a2ea6d-83d6-4edc-b9d2-63cfdb52c099'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: internationalestjerneriaarhus
+theme: litteratursiden
+region: content
+weight: 15
+provider: null
+plugin: 'block_content:47a2ea6d-83d6-4edc-b9d2-63cfdb52c099'
+settings:
+  id: 'block_content:47a2ea6d-83d6-4edc-b9d2-63cfdb52c099'
+  label: Litteraturfestival
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/lister/literaturexchange-2019\r\n/boeger/vejen-til-paradis-0\r\n/lister/danske-forfattere-til-literaturexchange-2019\r\n/authors\r\n/boeger/maend-i-min-situation\r\n/boeger/minder-om-fremtiden-roman\r\n/boeger/max-mischa-tet-offensiven"
+    negate: false
+    context_mapping: {  }

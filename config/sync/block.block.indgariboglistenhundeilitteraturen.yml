@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhundeilitteraturen
 theme: litteratursiden
 region: content
-weight: 486
+weight: 488
 provider: null
 plugin: 'block_content:0891c2c6-58b5-4529-b96a-a7e7eab83faf'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/timbuktu\r\n/boeger/rode-hund\r\n/boeger/vandreren-0\r\n/boeger/nej-ah-nej-hundemanuskripterne-1-3\r\n/boeger/luk-lagen-satan-og-hunden\r\n/boeger/hundedreng\r\n/boeger/hundedage\r\n/boeger/verden-ifolge-bolleschaeferen-og-pjoklederen\r\n/boeger/nar-naturen-kalder\r\n/boeger/nortons-filosofiske-memoirer\r\n/boeger/mand-bider-hund\r\n/boeger/timoleon-vieta-kom-hjem\r\n/boeger/boys\r\n/boeger/skytsenglen-0\r\n/boeger/kulde-ind-til-marven\r\n/boeger/tos"
+    pages: "/boeger/nortons-filosofiske-memoirer\r\n/boeger/hundedreng\r\n/boeger/boys\r\n/boeger/nej-ah-nej-hundemanuskripterne-1-3\r\n/boeger/vandreren-0\r\n/boeger/mand-bider-hund\r\n/boeger/timoleon-vieta-kom-hjem\r\n/boeger/rode-hund\r\n/boeger/nar-naturen-kalder\r\n/boeger/tos\r\n/boeger/timbuktu"
     negate: false
     context_mapping: {  }

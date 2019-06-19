@@ -1,0 +1,31 @@
+uuid: 2673e605-ae90-4826-8a6a-e46024385da7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:6da44819-0a0b-489c-95c7-36023c83fa5b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: norsklitteratur
+theme: litteratursiden
+region: content
+weight: 592
+provider: null
+plugin: 'block_content:6da44819-0a0b-489c-95c7-36023c83fa5b'
+settings:
+  id: 'block_content:6da44819-0a0b-489c-95c7-36023c83fa5b'
+  label: 'Bagom norsk litteratur'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/ny-norsk-litteratur-0
+    negate: false
+    context_mapping: {  }

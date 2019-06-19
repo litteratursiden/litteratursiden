@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserafudenlandskevaerker
 theme: litteratursiden
 region: content
-weight: 947
+weight: 938
 provider: null
 plugin: 'block_content:96ae2bf3-1dbc-402f-b8e5-54c0a1297272'
 settings:

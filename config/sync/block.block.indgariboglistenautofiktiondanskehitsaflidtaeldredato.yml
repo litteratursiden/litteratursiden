@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenautofiktiondanskehitsaflidtaeldredato
 theme: litteratursiden
 region: content
-weight: 44
+weight: 81
 provider: null
 plugin: 'block_content:88ea0017-0222-40c9-bdb7-c3b84994501e'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/kunsten-graede-i-kor\r\n/boeger/de-maske-egnede\r\n/boeger/gud-taler-ud\r\n/boeger/kalak\r\n/boeger/yahya-hassan\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/fars-en-fortaelling\r\n/boeger/du-som-er-i-himlen\r\n/boeger/claus-beck-nielsen-1963-2001\r\n/boeger/fjenden-i-forkobet\r\n/boeger/creme-fraiche\r\n/boeger/fornemmelser\r\n/boeger/det-bliver-sagt\r\n/boeger/hovedstolen"
+    pages: "/boeger/kunsten-graede-i-kor\r\n/boeger/de-maske-egnede\r\n/boeger/kalak\r\n/boeger/yahya-hassan\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/fars-en-fortaelling\r\n/boeger/du-som-er-i-himlen\r\n/boeger/claus-beck-nielsen-1963-2001\r\n/boeger/fjenden-i-forkobet\r\n/boeger/creme-fraiche\r\n/boeger/fornemmelser\r\n/boeger/det-bliver-sagt\r\n/boeger/hovedstolen"
     negate: false
     context_mapping: {  }

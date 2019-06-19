@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendagbogsromaner
 theme: litteratursiden
 region: content
-weight: 844
+weight: 839
 provider: null
 plugin: 'block_content:32a1d8a8-e525-40e9-b6ed-eb0e9ba64103'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/ps-jeg-elsker-dig\r\n/boeger/mayas-dagbog\r\n/boeger/dagbog-fra-i-morgen\r\n/boeger/frit-flet\r\n/boeger/sharon-og-min-svigermor\r\n/boeger/dode-piger-lyver-ikke\r\n/boeger/hurra-hurra-hurra-og-sa-det-lange\r\n/boeger/mands-hjerte\r\n/boeger/carries-dagbog-1\r\n/boeger/evigheden-er-med-os\r\n/boeger/syv-sostre\r\n/boeger/min-skygge\r\n/boeger/bridget-jones-dagbog\r\n/boeger/bridget-jones-vild-med-ham\r\n/boeger/spis-bed-elsk\r\n/boeger/regine\r\n/boeger/40-min-bare-rov\r\n/boeger/vera-winkelvir\r\n/boeger/dampe\r\n/boeger/nynnes-dagbog\r\n/boeger/kaere-fucking-dagbog\r\n/boeger/muleum\r\n/boeger/til-mine-dotre\r\n/boeger/100-tag-med-harborsten-seng\r\n/boeger/isens-og-morkets-raedsler\r\n/boeger/jaja-jeg-skal-nok-redde-jer-nar-jeg-lige-har-drukket-min-rom-cola\r\n/boeger/tyskerens-landsby\r\n/boeger/desiree-0\r\n/boeger/papegojer-i-varmeskab\r\n/boeger/almindelige-dodelige\r\n/boeger/doktor-glas\r\n/boeger/julie-1\r\n/boeger/personlige-anliggender\r\n/boeger/mine-ord\r\n/boeger/astas-bog\r\n/boeger/ser-jeg-tyk-ud-i-det-her"
+    pages: "/boeger/ps-jeg-elsker-dig\r\n/boeger/endnu-ikke\r\n/boeger/mayas-dagbog\r\n/boeger/dagbog-fra-i-morgen\r\n/boeger/frit-flet\r\n/boeger/sharon-og-min-svigermor\r\n/boeger/dode-piger-lyver-ikke\r\n/boeger/hurra-hurra-hurra-og-sa-det-lange\r\n/boeger/mands-hjerte\r\n/boeger/carries-dagbog-1\r\n/boeger/evigheden-er-med-os\r\n/boeger/syv-sostre\r\n/boeger/min-skygge\r\n/boeger/bridget-jones-dagbog\r\n/boeger/bridget-jones-vild-med-ham\r\n/boeger/spis-bed-elsk\r\n/boeger/regine\r\n/boeger/40-min-bare-rov\r\n/boeger/vera-winkelvir\r\n/boeger/dampe\r\n/boeger/nynnes-dagbog\r\n/boeger/kaere-fucking-dagbog\r\n/boeger/muleum\r\n/boeger/til-mine-dotre\r\n/boeger/100-tag-med-harborsten-seng\r\n/boeger/isens-og-morkets-raedsler\r\n/boeger/jaja-jeg-skal-nok-redde-jer-nar-jeg-lige-har-drukket-min-rom-cola\r\n/boeger/tyskerens-landsby\r\n/boeger/desiree-0\r\n/boeger/papegojer-i-varmeskab\r\n/boeger/almindelige-dodelige\r\n/boeger/doktor-glas\r\n/boeger/julie-1\r\n/boeger/personlige-anliggender\r\n/boeger/mine-ord\r\n/boeger/astas-bog\r\n/boeger/ser-jeg-tyk-ud-i-det-her"
     negate: false
     context_mapping: {  }

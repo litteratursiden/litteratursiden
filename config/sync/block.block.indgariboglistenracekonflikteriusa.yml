@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistenracekonflikteriusa
 theme: litteratursiden
 region: content
-weight: 168
+weight: 191
 provider: null
 plugin: 'block_content:9b96ab14-9131-454f-9722-6b5264e60457'
 settings:
   id: 'block_content:9b96ab14-9131-454f-9722-6b5264e60457'
-  label: 'Indgår i boglisten: Racekonflikter i USA'
+  label: 'Racekonflikter i USA'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/det-store-i-det-sma\r\n/boeger/hate-u-give\r\n/boeger/den-underjordiske-jernbane\r\n/boeger/onkel-toms-hytte\r\n/boeger/saet-en-vagtpost-ud\r\n/boeger/draeb-ikke-en-sangfugl\r\n/boeger/hjertet-er-en-ensom-vandrer-0\r\n/boeger/kviksand-0\r\n/boeger/americanah\r\n/boeger/hjem-1\r\n/boeger/gadefejeren\r\n/boeger/niceville\r\n/boeger/skaberfuglen"
+    pages: "/boeger/det-store-i-det-sma\r\n/boeger/hate-u-give\r\n/boeger/jeg-ved-hvorfor-fuglen-synger-i-sit-bur-selvbiografi\r\n/boeger/den-underjordiske-jernbane\r\n/boeger/onkel-toms-hytte\r\n/boeger/saet-en-vagtpost-ud\r\n/boeger/draeb-ikke-en-sangfugl\r\n/boeger/hjertet-er-en-ensom-vandrer-0\r\n/boeger/kviksand-0\r\n/boeger/americanah\r\n/boeger/hjem-1\r\n/boeger/gadefejeren\r\n/boeger/niceville\r\n/boeger/skaberfuglen"
     negate: false
     context_mapping: {  }

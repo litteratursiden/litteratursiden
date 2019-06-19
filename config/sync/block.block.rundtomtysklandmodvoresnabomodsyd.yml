@@ -12,20 +12,20 @@ dependencies:
 id: rundtomtysklandmodvoresnabomodsyd
 theme: litteratursiden
 region: content
-weight: 651
+weight: 648
 provider: null
 plugin: 'block_content:0cf17e36-7404-4084-96f0-877ca485ef27'
 settings:
   id: 'block_content:0cf17e36-7404-4084-96f0-877ca485ef27'
-  label: 'Rundt om Tyskland: Mød vores nabo mod syd'
+  label: 'Tysk tema: Mød vores nabo mod syd'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: "/temaer/international-litteratur-i-aarhus\r\n/temaer/literaturexchange"
+    pages: "/temaer/international-litteratur-i-aarhus\r\n/temaer/literaturexchange\r\n/lister/tysksprogede-klassikere\r\n/lister/nyere-tyske-romaner-og-noveller\r\n/artikler/med-pulsen-pa-tiden-bemaerkninger-om-den-lyslevende-tyske-samtidslitteratur\r\n/lister/prisvindende-tysksproget-litteratur-0\r\n/lister/berlin-i-litteraturen\r\n/lister/ddr-murens-fald"
     negate: false
     context_mapping: {  }

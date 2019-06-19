@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenrandersogomegnforognu
 theme: litteratursiden
 region: content
-weight: 169
+weight: 192
 provider: null
 plugin: 'block_content:01928102-1c98-4b05-9893-d097426bc5a1'
 settings:

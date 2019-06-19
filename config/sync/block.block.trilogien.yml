@@ -12,7 +12,7 @@ dependencies:
 id: trilogien
 theme: litteratursiden
 region: content
-weight: 266
+weight: 277
 provider: null
 plugin: 'block_content:39a153a5-07be-4e68-a7f6-10cf8401cc7d'
 settings:

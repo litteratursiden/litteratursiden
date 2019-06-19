@@ -12,7 +12,7 @@ dependencies:
 id: vision
 theme: litteratursiden
 region: content
-weight: 914
+weight: 908
 provider: null
 plugin: 'block_content:8ad0e471-eace-4155-aedc-67950f282759'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensvommenderomaner
 theme: litteratursiden
 region: content
-weight: 105
+weight: 133
 provider: null
 plugin: 'block_content:1afd4c29-71dc-4a2e-957a-80850c3e7c11'
 settings:

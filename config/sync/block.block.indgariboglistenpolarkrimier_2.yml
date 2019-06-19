@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenpolarkrimier_2
 theme: litteratursiden
 region: content
-weight: 45
+weight: 82
 provider: null
 plugin: 'block_content:9d0b5231-d765-4080-a03f-0fc5268cb092'
 settings:

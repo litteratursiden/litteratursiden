@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedsisseljogazan
 theme: litteratursiden
 region: content
-weight: 383
+weight: 392
 provider: null
 plugin: 'block_content:461572f0-7017-4a10-9214-20939b39cba8'
 settings:

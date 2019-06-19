@@ -12,12 +12,12 @@ dependencies:
 id: 12godebogertilkonfirmanderogandreteenagere
 theme: litteratursiden
 region: content
-weight: 12
+weight: 2
 provider: null
 plugin: 'block_content:0679025e-af08-4636-a08c-df0a112f451d'
 settings:
   id: 'block_content:0679025e-af08-4636-a08c-df0a112f451d'
-  label: '12 gode bøger til konfirmander og andre teens'
+  label: 'Gode bøger til konfirmander og andre teens'
   provider: block_content
   label_display: visible
   status: true

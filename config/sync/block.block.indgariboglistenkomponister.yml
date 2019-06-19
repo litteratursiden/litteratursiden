@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkomponister
 theme: litteratursiden
 region: content
-weight: 526
+weight: 530
 provider: null
 plugin: 'block_content:9876c4de-9282-4bfe-963f-1fe45077ba85'
 settings:

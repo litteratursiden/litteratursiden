@@ -12,7 +12,7 @@ dependencies:
 id: analyserfra19501959
 theme: litteratursiden
 region: content
-weight: 884
+weight: 879
 provider: null
 plugin: 'block_content:0b4e580a-f3a5-4b19-8e6e-b21d74cd34c4'
 settings:

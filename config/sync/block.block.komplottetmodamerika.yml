@@ -12,7 +12,7 @@ dependencies:
 id: komplottetmodamerika
 theme: litteratursiden
 region: content
-weight: 698
+weight: 693
 provider: null
 plugin: 'block_content:e3c16ed5-0a3f-46ee-8901-4743333df7da'
 settings:

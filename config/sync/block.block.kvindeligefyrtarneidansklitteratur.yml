@@ -12,7 +12,7 @@ dependencies:
 id: kvindeligefyrtarneidansklitteratur
 theme: litteratursiden
 region: content
-weight: 101
+weight: 129
 provider: null
 plugin: 'block_content:d1baacf6-bf09-4e08-9ab4-76924c6e91e5'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /artikler/kvindelige-fyrtarne-i-dansk-litteratur
+    pages: "/artikler/kvindelige-fyrtarne-i-dansk-litteratur\r\n/forfattere/agnes-henningsen\r\n/temaer/kvindelige-fyrtarne"
     negate: false
     context_mapping: {  }

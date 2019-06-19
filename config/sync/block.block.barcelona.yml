@@ -12,7 +12,7 @@ dependencies:
 id: barcelona
 theme: litteratursiden
 region: content
-weight: 277
+weight: 288
 provider: null
 plugin: 'block_content:e78e8e92-9c79-4be5-9788-1dc509b1dbec'
 settings:
