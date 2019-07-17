@@ -81,7 +81,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background: transparent url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
+        background: transparent url(/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
         background-size: contain;
         @include respond-to(tablets-portrait) {
           width: 85%;
