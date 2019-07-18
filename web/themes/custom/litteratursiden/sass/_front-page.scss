@@ -21,7 +21,7 @@ body {
     // HEADER
     header.main-header {
       min-height: $header-height;
-      background: rgba(0, 0, 0, 0.95) url('https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Front_page_bg.jpg') no-repeat 0% 50%;
+      background: rgba(0, 0, 0, 0.95) url('/themes/custom/litteratursiden/images/Front_page_bg.jpg') no-repeat 0% 50%;
       background-size: cover;
       position: relative;
       @include respond-to(tablets-portrait) {
@@ -44,7 +44,7 @@ body {
         top: 0;
         bottom: 0;
         z-index: 2;
-        background-image: url('https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Litteratur_bg_header.svg');
+        background-image: url('/themes/custom/litteratursiden/images/Litteratur_bg_header.svg');
         background-repeat: no-repeat;
         background-position: 0 0;
         background-position-x: 0;
