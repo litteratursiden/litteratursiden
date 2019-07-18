@@ -154,10 +154,10 @@
       }
     }
     .comments-icon {
-      background-image: url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/comments_icon.svg);
+      background-image: url(/themes/custom/litteratursiden/images/comments_icon.svg);
     }
     .reviews-icon {
-      background-image: url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/user_reviews.svg);
+      background-image: url(/themes/custom/litteratursiden/images/user_reviews.svg);
       width: $small-spacer*13.5;
       height: $small-spacer*13.5;
       margin: $small-spacer*3.5 0;
@@ -172,7 +172,7 @@
       }
     }
     .debate-icon {
-      background-image: url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/book_debate_icon.svg);
+      background-image: url(/themes/custom/litteratursiden/images/book_debate_icon.svg);
       position: relative;
       &:after {
         content: 'Læseklub';
