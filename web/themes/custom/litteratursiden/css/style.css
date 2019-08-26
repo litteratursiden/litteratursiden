@@ -25570,6 +25570,15 @@ body.path-user .user-form .form-group, body.path-user .user-pass .form-group {
         position: static;
         transform: none; } }
 
+body.path-user .user-form .user-consent, body.path-user .user-pass .user-consent {
+  max-height: 250px;
+  max-width: 100%;
+  overflow-y: scroll;
+  background: #eeecec;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  margin-bottom: 35px; }
+
 body.path-user.user-password .region-content:after, body.path-user.user-register .region-content:after {
   display: none; }
 

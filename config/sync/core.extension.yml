@@ -80,7 +80,6 @@ module:
   scheduler: 0
   search_api: 0
   serialization: 0
-  simple_fb_connect: 0
   social_media: 0
   swiftmailer: 0
   syslog: 0

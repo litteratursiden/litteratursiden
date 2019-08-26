@@ -89,7 +89,6 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
       }
     }
 
-
     $build['roles'] = [
       '#type' => 'container',
       '#attributes' => [
@@ -110,8 +109,8 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
       '#cache' => [
         'contexts' => [
           'url',
-        ]
-      ]
+        ],
+      ],
     ];
   }
 
@@ -125,12 +124,12 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
     $tree = $menu_tree->load('tools', $parameters);
 
     // Transform the tree using the manipulators you want.
-    $manipulators = array(
+    $manipulators = [
       // Only show links that are accessible for the current user.
-      array('callable' => 'menu.default_tree_manipulators:checkAccess'),
+      ['callable' => 'menu.default_tree_manipulators:checkAccess'],
       // Use the default sorting of menu links.
-      array('callable' => 'menu.default_tree_manipulators:generateIndexAndSort'),
-    );
+      ['callable' => 'menu.default_tree_manipulators:generateIndexAndSort'],
+    ];
     $tree = $menu_tree->transform($tree, $manipulators);
 
     // Finally, build a renderable array from the transformed tree.
@@ -141,13 +140,17 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
   }
 
   if ($display->getComponent('edit_profile_link')) {
-    $url = \Drupal\Core\Url::fromRoute('entity.user.edit_form', ['user' => \Drupal::currentUser()->id()]);
+    $url = \Drupal\Core\Url::fromRoute('entity.user.edit_form', [
+      'user' => \Drupal::currentUser()
+        ->id(),
+    ]);
 
     $build['edit_profile_link'] = [
       '#type' => 'link',
       '#title' => t('Edit profile'),
       '#url' => $url,
-      '#access' => \Drupal::currentUser()->id() == $entity->id() && $url->access(\Drupal::currentUser()),
+      '#access' => \Drupal::currentUser()
+          ->id() == $entity->id() && $url->access(\Drupal::currentUser()),
     ];
   }
 
@@ -167,7 +170,9 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
  * Implements hook_form_user_login_form_alter().
  */
 function lit_user_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  $form['actions']['submit']['#ajax'] = ['callback' => 'lit_user_login_form_ajax_submit'];
+  $form['actions']['submit']['#ajax'] = [
+    'callback' => 'lit_user_login_form_ajax_submit'
+  ];
 }
 
 /**
@@ -188,4 +193,54 @@ function lit_user_login_form_ajax_submit(array &$form, FormStateInterface $form_
   }
 
   return $ajax_response;
+}
+
+/**
+ * Implements hook_form_user_admin_settings_alter().
+ */
+function lit_user_form_user_admin_settings_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  $form['consent'] = [
+    '#type' => 'details',
+    '#title' => t('User consent'),
+    '#open' => TRUE,
+  ];
+
+  $default = \Drupal::state()->get('lit_user.consent_text');
+  $form['consent']['consent_text'] = [
+    '#type' => 'text_format',
+    '#title' => t('Description text'),
+    '#format' => array_key_exists('format', $default) ? $default['format'] : 'full_html',
+    '#default_value' => array_key_exists('value', $default) ? $default['value'] : '',
+    '#rows' => 15,
+  ];
+
+  $form['#submit'][] = 'lit_user_user_admin_settings_submit';
+}
+
+/**
+ * Submit handler to store consent text.
+ */
+function lit_user_user_admin_settings_submit($form, FormStateInterface $form_state) {
+  \Drupal::state()->set('lit_user.consent_text', $form_state->getValue('consent_text'));
+}
+
+/**
+ * Implements hook_form_user_register_form_alter().
+ */
+function lit_user_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['consent'] = [
+    '#type' => 'container',
+    '#weight' => -9,
+    '#attributes' => [
+      'class' => [
+        'user-consent'
+      ]
+    ]
+  ];
+
+  $text = \Drupal::state()->get('lit_user.consent_text');
+  $form['consent']['content'] = [
+    '#markup' => $text['value'],
+  ];
 }
