@@ -6715,7 +6715,7 @@ body {
           margin-top: 15px;
           justify-content: space-between;
           flex-wrap: wrap; }
-          .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
+          .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link {
             margin-top: 15px;
             margin-bottom: 15px;
             display: inline-block;
@@ -6736,49 +6736,24 @@ body {
             text-transform: uppercase;
             text-decoration: none;
             transition: all 0.2s ease-out; }
-            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:active, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:active {
+            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:active {
               text-decoration: none;
               outline: none;
               background-color: transparent;
               transition: all 0.2s ease-out; }
             @media only screen and (max-width: 767px) {
-              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
+              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link {
                 width: 100%; } }
-            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:focus {
+            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus {
               background-color: #fff;
               color: #3a3b3d; }
-              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:hover:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:focus:before {
+              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus:before {
                 color: #3a3b3d; }
           .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link {
             margin-right: 5px; }
             @media only screen and (max-width: 767px) {
               .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link {
                 margin: 15px 0 0; } }
-          .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
-            flex-grow: 1;
-            margin-left: 5px;
-            position: relative;
-            padding: 0 20px 0 40px; }
-            @media only screen and (max-width: 767px) {
-              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
-                margin-left: 0;
-                padding: 0 20px; } }
-            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:before {
-              content: "";
-              /* use !important to prevent issues with browser extensions that change fonts */
-              font-family: 'literatur-icons' !important;
-              speak: none;
-              font-style: normal;
-              font-weight: normal;
-              font-variant: normal;
-              text-transform: none;
-              /* Better Font Rendering =========== */
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale;
-              font-size: 20px;
-              color: #fff;
-              position: absolute;
-              left: 10px; }
         .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form:after {
           display: table;
           content: " "; }

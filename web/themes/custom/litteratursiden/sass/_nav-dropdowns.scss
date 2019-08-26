@@ -100,7 +100,7 @@
           margin-top: $regular-spacer;
           justify-content: space-between;
           flex-wrap: wrap;
-          .create-account-link, .facebook-login {
+          .create-account-link {
             @include btn-mixin(40px, transparent, $inverse-text-color, $inverse-text-color, inline-block);
             @include respond-to(phones-landscape) {
               width: 100%;
@@ -117,24 +117,6 @@
             margin-right: $small-spacer*0.5;
             @include respond-to(phones-landscape) {
               margin: $regular-spacer 0 0;
-            }
-          }
-          .facebook-login {
-            flex-grow: 1;
-            margin-left: $small-spacer*0.5;
-            position: relative;
-            padding: 0 $small-spacer*2 0 $small-spacer*4;
-            @include respond-to(phones-landscape) {
-              margin-left: 0;
-              padding: 0 $large-spacer;
-            }
-            &:before {
-              content: $icon-facebook;
-              @include icon-props();
-              font-size: 20px;
-              color: $inverse-text-color;
-              position: absolute;
-              left: 10px;
             }
           }
         }
