@@ -13,6 +13,7 @@
       jQuery.fn.existsWithValue = function () {
         return this.length && this.val().length;
       };
+
       // IE object fit fix for slider
       var uA = window.navigator.userAgent,
           isIE = /msie\s|trident\/|edge\//i.test(uA) && !!(document.uniqueID || document.documentMode || window.ActiveXObject || window.MSInputMethodContext),
@@ -127,13 +128,6 @@
         });
         $('.views-row .front .content').matchHeight();
         $('.views-row .teaser .content').matchHeight();
-
-        var loginFormBlock = $('#block-litteratursiden-login');
-        var loginFormTitle = $('#block-litteratursiden-login .block-title');
-        loginFormBlock.find('ul li:first-child a').insertBefore(loginFormTitle);
-        loginFormBlock.find('ul li:last-child a').insertBefore(loginFormTitle);
-        $('#block-litteratursiden-login .create-account-link, #block-litteratursiden-login .facebook-login').wrapAll('<div class="flex-row"></div>');
-
 
         // Filters checkboxes
         $('.facets-checkbox').change(function () {

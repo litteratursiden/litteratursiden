@@ -3,9 +3,3 @@ services:
     class: Drupal\lit_user\Routing\RouteSubscriber
     tags:
       - { name: event_subscriber }
-  lit_user.simple_fb_subscriber:
-      class: Drupal\lit_user\EventSubscriber\SimpleFbSubscriber
-      arguments:
-        - '@simple_fb_connect.fb_factory'
-      tags:
-        - { name: event_subscriber }

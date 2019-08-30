@@ -14,6 +14,16 @@ body {
           }
         }
       }
+
+      .user-consent {
+        max-height: 250px;
+        max-width: 100%;
+        overflow-y: scroll;
+        background: #eeecec;
+        border: 1px solid #e3e3e3;
+        padding: 20px;
+        margin-bottom: 35px;
+      }
     }
     &.user-password, &.user-register {
       .region-content {
@@ -421,6 +431,7 @@ body {
     }
   }
 }
+
 body.path-bookmarks {
   .region-content {
     > .views-element-container {

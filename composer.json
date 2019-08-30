@@ -206,9 +206,6 @@
                 "comment settings patch": "patches/core/comment_settings_tabs.patch",
                 "invalid property": "patches/core/invalid_property.patch"
             },
-            "drupal/simple_fb_connect": {
-                "export name": "patches/simple_fb_connect/export_name.patch"
-            },
             "drupal/redis": {
                 "Flood: Compatibility with Flood unblock": "https://www.drupal.org/files/issues/redis-flood_unblock_external_flood-2928007-2.patch"
             },
