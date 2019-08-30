@@ -96,30 +96,6 @@
           font-family: $heading-font-serif;
           margin: 0 0 $small-spacer;
         }
-        .flex-row {
-          margin-top: $regular-spacer;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          .create-account-link {
-            @include btn-mixin(40px, transparent, $inverse-text-color, $inverse-text-color, inline-block);
-            @include respond-to(phones-landscape) {
-              width: 100%;
-            }
-            &:hover, &:focus {
-              background-color: $inverse-text-color;
-              color: $primary-text-color;
-              &:before {
-                color: $primary-text-color;
-              }
-            }
-          }
-          .create-account-link {
-            margin-right: $small-spacer*0.5;
-            @include respond-to(phones-landscape) {
-              margin: $regular-spacer 0 0;
-            }
-          }
-        }
         .user-login-form {
           @include clearfix();
           .form-group .control-label {
@@ -137,15 +113,8 @@
           + ul {
             position: absolute;
             display: inline-block;
-            bottom: $regular-spacer;
+            top: 192px;
             margin-bottom: 0;
-            @include respond-to(phones-landscape) {
-              position: relative;
-              bottom: 50px;
-              @include respond-to(phones) {
-                position: static;
-              }
-            }
             li a {
               display: block;
               color: $brand-color;
@@ -155,6 +124,29 @@
               line-height: $small-spacer*3.5;
               &:hover, &:focus {
                 color: darken($brand-color, 10%);
+              }
+              &.create-account-link {
+                @include btn-mixin(40px, transparent, $inverse-text-color, $inverse-text-color, inline-block);
+                @include respond-to(phones-landscape) {
+                  width: 100%;
+                }
+                &:hover, &:focus {
+                  background-color: $inverse-text-color;
+                  color: $primary-text-color;
+                  &:before {
+                    color: $primary-text-color;
+                  }
+                }
+              }
+              &.create-account-link {
+                margin-right: $small-spacer*0.5;
+                @include respond-to(phones-landscape) {
+                  margin: $regular-spacer 0 0;
+                }
+              }
+              @include respond-to(phones-landscape) {
+                position: static;
+                margin-top: 0px;
               }
             }
           }
