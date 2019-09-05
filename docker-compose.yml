@@ -80,6 +80,11 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
+  node:
+    image: node:6
+    volumes:
+      - .:/app:delegated
+
 # Drush cache volume to persist cache between runs.
 volumes:
   drush-cache:

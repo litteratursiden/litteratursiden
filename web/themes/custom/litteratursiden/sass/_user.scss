@@ -14,6 +14,16 @@ body {
           }
         }
       }
+
+      .user-consent {
+        max-height: 250px;
+        max-width: 100%;
+        overflow-y: scroll;
+        background: #eeecec;
+        border: 1px solid #e3e3e3;
+        padding: 20px;
+        margin-bottom: 35px;
+      }
     }
     &.user-password, &.user-register {
       .region-content {
@@ -81,7 +91,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background: transparent url(https://s3.eu-central-1.amazonaws.com/litteratursiden-public/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
+        background: transparent url(/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
         background-size: contain;
         @include respond-to(tablets-portrait) {
           width: 85%;
@@ -421,6 +431,7 @@ body {
     }
   }
 }
+
 body.path-bookmarks {
   .region-content {
     > .views-element-container {
