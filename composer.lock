@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a7ccc24f45e07a4e75f471508341d79",
+    "content-hash": "be8ee725debf753141f5294793f0c378",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5256,9 +5256,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "export name": "patches/simple_fb_connect/export_name.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5278,7 +5275,7 @@
             "description": "Allows users to authenticate with their Facebook accounts.",
             "homepage": "https://www.drupal.org/project/simple_fb_connect",
             "support": {
-                "source": "http://cgit.drupalcode.org/simple_fb_connect",
+                "source": "https://git.drupalcode.org/project/simple_fb_connect",
                 "issues": "https://www.drupal.org/project/issues/simple_fb_connect"
             }
         },
@@ -10389,7 +10386,7 @@
             "version": "8.3.1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/coder.git",
+                "url": "https://git.drupalcode.org/project/coder.git",
                 "reference": "29a25627e7148b3119c84f18e087fc3b8c85b959"
             },
             "require": {

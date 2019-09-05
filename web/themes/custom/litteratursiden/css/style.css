@@ -6711,74 +6711,6 @@ body {
           font-size: 24px;
           font-family: "RobotoSlab-Regular", serif;
           margin: 0 0 10px; }
-        .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row {
-          margin-top: 15px;
-          justify-content: space-between;
-          flex-wrap: wrap; }
-          .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
-            margin-top: 15px;
-            margin-bottom: 15px;
-            display: inline-block;
-            min-width: 170px;
-            line-height: 38px;
-            height: 40px;
-            padding: 0 10px;
-            background-color: transparent;
-            color: #fff;
-            border: 1px solid #fff;
-            border-radius: 0;
-            font-size: 14px;
-            font-family: "Oswald-Regular", sans-serif;
-            font-weight: 500;
-            letter-spacing: 0px;
-            font-style: normal;
-            text-align: center;
-            text-transform: uppercase;
-            text-decoration: none;
-            transition: all 0.2s ease-out; }
-            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:active, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:active {
-              text-decoration: none;
-              outline: none;
-              background-color: transparent;
-              transition: all 0.2s ease-out; }
-            @media only screen and (max-width: 767px) {
-              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
-                width: 100%; } }
-            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:focus {
-              background-color: #fff;
-              color: #3a3b3d; }
-              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:hover:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link:focus:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:hover:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:focus:before {
-                color: #3a3b3d; }
-          .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link {
-            margin-right: 5px; }
-            @media only screen and (max-width: 767px) {
-              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .create-account-link {
-                margin: 15px 0 0; } }
-          .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
-            flex-grow: 1;
-            margin-left: 5px;
-            position: relative;
-            padding: 0 20px 0 40px; }
-            @media only screen and (max-width: 767px) {
-              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login {
-                margin-left: 0;
-                padding: 0 20px; } }
-            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .flex-row .facebook-login:before {
-              content: "";
-              /* use !important to prevent issues with browser extensions that change fonts */
-              font-family: 'literatur-icons' !important;
-              speak: none;
-              font-style: normal;
-              font-weight: normal;
-              font-variant: normal;
-              text-transform: none;
-              /* Better Font Rendering =========== */
-              -webkit-font-smoothing: antialiased;
-              -moz-osx-font-smoothing: grayscale;
-              font-size: 20px;
-              color: #fff;
-              position: absolute;
-              left: 10px; }
         .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form:after {
           display: table;
           content: " "; }
@@ -6797,15 +6729,8 @@ body {
         .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul {
           position: absolute;
           display: inline-block;
-          bottom: 15px;
+          top: 192px;
           margin-bottom: 0; }
-          @media only screen and (max-width: 767px) {
-            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul {
-              position: relative;
-              bottom: 50px; } }
-  @media only screen and (max-width: 767px) and (max-width: 480px) {
-    .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul {
-      position: static; } }
           .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a {
             display: block;
             color: #ff5002;
@@ -6815,6 +6740,49 @@ body {
             line-height: 35px; }
             .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a:focus {
               color: #ce4000; }
+            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link {
+              margin-top: 15px;
+              margin-bottom: 15px;
+              display: inline-block;
+              min-width: 170px;
+              line-height: 38px;
+              height: 40px;
+              padding: 0 10px;
+              background-color: transparent;
+              color: #fff;
+              border: 1px solid #fff;
+              border-radius: 0;
+              font-size: 14px;
+              font-family: "Oswald-Regular", sans-serif;
+              font-weight: 500;
+              letter-spacing: 0px;
+              font-style: normal;
+              text-align: center;
+              text-transform: uppercase;
+              text-decoration: none;
+              transition: all 0.2s ease-out; }
+              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link:focus, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link:active {
+                text-decoration: none;
+                outline: none;
+                background-color: transparent;
+                transition: all 0.2s ease-out; }
+              @media only screen and (max-width: 767px) {
+                .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link {
+                  width: 100%; } }
+              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link:hover, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link:focus {
+                background-color: #fff;
+                color: #3a3b3d; }
+                .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link:hover:before, .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link:focus:before {
+                  color: #3a3b3d; }
+            .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link {
+              margin-right: 5px; }
+              @media only screen and (max-width: 767px) {
+                .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a.create-account-link {
+                  margin: 15px 0 0; } }
+            @media only screen and (max-width: 767px) {
+              .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form + ul li a {
+                position: static;
+                margin-top: 0px; } }
         .user-main-dropdown .user-dropdown .region-user-dropdown .block-user-login-block .user-login-form .form-group input.form-control {
           height: 50px; }
       .user-main-dropdown .user-dropdown .region-user-dropdown .menu.nav > li {
@@ -25569,6 +25537,15 @@ body.path-user .user-form .form-group, body.path-user .user-pass .form-group {
       body.path-user .user-form .form-group label.error, body.path-user .user-pass .form-group label.error {
         position: static;
         transform: none; } }
+
+body.path-user .user-form .user-consent, body.path-user .user-pass .user-consent {
+  max-height: 250px;
+  max-width: 100%;
+  overflow-y: scroll;
+  background: #eeecec;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  margin-bottom: 35px; }
 
 body.path-user.user-password .region-content:after, body.path-user.user-register .region-content:after {
   display: none; }
