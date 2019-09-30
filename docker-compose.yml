@@ -1,18 +1,30 @@
 version: "3"
 
+networks:
+  frontend:
+    external: true
+  app:
+    driver: bridge
+    internal: false
+
 services:
   mariadb:
     image: itkdev/mariadb:latest
+    networks:
+      - app
     ports:
       - '3306'
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_USER: db
-      MYSQL_PASSWORD: db
-      MYSQL_DATABASE: db
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=db
+      - MYSQL_PASSWORD=db
+      - MYSQL_DATABASE=db
+      #- ENCRYPT=1 # Uncomment to enable database encryptionn.
 
   phpfpm:
     image: itkdev/php7.2-fpm:latest
+    networks:
+      - app
     environment:
       - PHP_XDEBUG=${PHP_XDEBUG:-0}
       - PHP_XDEBUG_REMOTE_AUTOSTART=${PHP_XDEBUG_REMOTE_AUTOSTART:-0}
@@ -21,14 +33,17 @@ services:
       - PHP_MAX_EXECUTION_TIME=300
       - PHP_MEMORY_LIMIT=512M
       - PHP_MAIL=1
+      - DOCKER_HOST_DOMAIN=${COMPOSE_DOMAIN}
     depends_on:
       - mariadb
     volumes:
       - .:/app:delegated
       - drush-cache:/root/.drush
 
-  nginx:
+  littnginx:
     image: nginx:latest
+    networks:
+      - app
     depends_on:
       - phpfpm
       - memcached
@@ -40,18 +55,38 @@ services:
 
   varnish:
     image: 'wodby/varnish:6'
+    ports:
+      - '6081'
+    networks:
+      - app
+      - frontend
     depends_on:
-      - nginx
+      - littnginx
     environment:
       VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl
       VARNISH_SECRET: eca2b7c263eae74c0d746f147691e7ce
     volumes:
       - ${PWD}/.docker/litt.vcl:/etc/varnish/litt.vcl:ro
     labels:
-      - "traefik.frontend.rule=Host:${COMPOSE_PROJECT_NAME}.docker.localhost"
+      - "traefik.enable=true"
+      - "traefik.port=6081"
+      - "traefik.docker.network=frontend"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_DOMAIN}`)"
+
+  es:
+    image: elasticsearch:6.7.0
+    networks:
+      - app
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200"
+      - "9300"
 
   memcached:
     image: 'memcached:latest'
+    networks:
+      - app
     ports:
       - '11211'
     environment:
@@ -59,29 +94,16 @@ services:
 
   mailhog:
     image: mailhog/mailhog
+    networks:
+      - app
     ports:
       - "1025"
       - "8025"
 
-  es:
-    image: elasticsearch:6.7.0
-    environment:
-      - discovery.type=single-node
-    ports:
-      - "9200"
-      - "9300"
-
-  reverse-proxy:
-    image: traefik
-    command: --api --docker
-    ports:
-      - "80"
-      - "8080"
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-
   node:
     image: node:6
+    networks:
+      - app
     volumes:
       - .:/app:delegated
 

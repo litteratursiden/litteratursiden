@@ -6,10 +6,10 @@ import directors;
 # This Varnish VCL has been adapted from the Four Kitchens VCL for Varnish 3.
 # This VCL is for using cache tags with drupal 8. Minor chages of VCL provided by Jeff Geerling.
 
-# Default backend definition. Points to Apache, normally. 
+# Default backend definition. Points to Apache, normally.
 # Apache is in this config on port 80.
 backend default {
-    .host = "nginx";
+    .host = "littnginx";
     .port = "80";
     .first_byte_timeout = 300s;
 }
