@@ -5,4 +5,11 @@ dependencies: {  }
 id: node__review
 label: 'Indhold: Anmeldelse'
 tags:
+  og_image_width: '[node:field_review_cover_image:medium:width]'
+  og_image: '[node:field_review_cover_image:medium:url]'
+  og_image_url: '[node:field_review_cover_image:medium:url]'
+  og_image_height: '[node:field_review_cover_image:medium:height]'
+  og_image_alt: '[node:field_review_cover_image:alt]'
+  og_image_secure_url: '[node:field_review_cover_image:medium:url]'
   og_description: '[node:field_review_body]'
+  og_image_type: '[node:field_review_cover_image:medium:mimetype]'

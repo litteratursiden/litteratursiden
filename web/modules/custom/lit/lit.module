@@ -500,3 +500,33 @@ function _lit_facet_type_prerender(array $build) {
 
   return $build;
 }
+
+/**
+ * Implements hook_page_attachments_alter().
+ *
+ * Ensure that the meta-tag og:description is not the whole nodes text but
+ * trimmed to a max length.
+ */
+function lit_page_attachments_alter(array &$attachments) {
+  // Trim all meta tags to a max of 300 characters.
+  if (!empty($attachments['#attached']['html_head'])) {
+    // Adjust this as needed.
+    $max_length = 300;
+    foreach ($attachments['#attached']['html_head'] as &$tag) {
+      // Only process meta tags with a 'content' attribute, that way it will
+      // exclude LINK tags or meta tags which do not have a "content" value.
+      if (isset($tag[0]['#tag']) && $tag[0]['#tag'] == 'meta') {
+        if (isset($tag[0]['#attributes']['content']) && $tag[0]['#attributes']['property'] == 'og:description') {
+          if (!is_string($tag[0]['#attributes']['content'])) {
+            $tag[0]['#attributes']['content'] = (string) $tag[0]['#attributes']['content'];
+          }
+          if (strlen($tag[0]['#attributes']['content']) > $max_length) {
+            $string = wordwrap($tag[0]['#attributes']['content'], ($max_length - 3));
+            $string = explode("\n", $string);
+            $tag[0]['#attributes']['content'] = $string[0];
+          }
+        }
+      }
+    }
+  }
+}
