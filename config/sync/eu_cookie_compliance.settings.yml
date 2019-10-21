@@ -11,7 +11,7 @@ popup_agreed:
   value: "<h2>Tak for dit samtykke</h2>\r\n\r\n<p>Du kan nu skjule denne besked eller læse mere om cookies.</p>\r\n"
   format: full_html
 popup_agree_button_message: 'OK, jeg er enig'
-popup_agreed_enabled: true
+popup_agreed_enabled: false
 popup_bg_hex: 131b1e
 popup_clicking_confirmation: false
 popup_scrolling_confirmation: false
