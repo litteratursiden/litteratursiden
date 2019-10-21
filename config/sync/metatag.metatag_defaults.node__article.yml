@@ -5,4 +5,11 @@ dependencies: {  }
 id: node__article
 label: 'Indhold: Artikel'
 tags:
+  og_image_width: '[node:field_article_cover_image:medium:width]'
+  og_image: '[node:field_article_cover_image:medium:url]'
+  og_image_url: '[node:field_article_cover_image:medium:url]'
+  og_image_height: '[node:field_article_cover_image:medium:height]'
+  og_image_alt: '[node:field_article_cover_image:alt]'
+  og_image_secure_url: '[node:field_article_cover_image:medium:url]'
   og_description: '[node:field_article_body]'
+  og_image_type: '[node:field_article_cover_image:medium:mimetype]'
