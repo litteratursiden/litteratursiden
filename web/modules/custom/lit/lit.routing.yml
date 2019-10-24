@@ -9,7 +9,7 @@ lit.books:
   path: '/books'
   defaults:
     _controller: '\Drupal\lit\Controller\EmptyPageController::content'
-    _title: 'Books'
+    _title: "Children's Books"
   requirements:
     _permission: 'access content'
 

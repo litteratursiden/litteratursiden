@@ -11,7 +11,7 @@ lit.content:
   weight: -7
 
 lit.books:
-  title: 'Books'
+  title: "Children's Books"
   route_name: lit.books
   menu_name: main
   weight: 5
