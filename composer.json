@@ -115,6 +115,7 @@
         "drupal/override_node_options": "^2.0",
         "drupal/pathauto": "1.2",
         "drupal/purge": "^3.0@beta",
+        "drupal/purge_users": "^1.9",
         "drupal/redis": "^1.0@RC",
         "drupal/reroute_email": "^1.0@beta",
         "drupal/restui": "^1.15",

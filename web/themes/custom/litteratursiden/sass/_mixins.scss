@@ -1077,6 +1077,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
         right: 0px;
         padding-left: $large-spacer;
         padding-right: $large-spacer;
+        width: auto;
         @include respond-to(tablets-landscape) {
           left: 30px;
         }
@@ -1086,7 +1087,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
           padding-right: $regular-spacer;
         }
         @include respond-to(phones-landscape) {
-          left: 5px;
+          left: 5px !important; // important since it will be overritten by the very specific month-topic-rp-row in line 1267
           top: $small-spacer*3;
         }
       }
