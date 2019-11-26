@@ -301,22 +301,28 @@ function lit_get_latest_book_analisys($book_nid) {
  *   Returns book nid or NULL.
  */
 function lit_get_latest_reviewed_book($nid) {
-  $books = Drupal::entityQuery('node')
+  $book_nids = Drupal::entityQuery('node')
     ->condition('type', 'book')
     ->condition('field_book_reference_author.target_id', $nid)
     ->execute();
 
-  $reviews = [];
-  if ($books) {
-    $reviews = Drupal::entityQuery('node')
+  if ($book_nids) {
+    $nids = Drupal::entityQuery('node')
       ->condition('type', 'review')
-      ->condition('field_review_reference_book.target_id', $books, 'IN')
+      ->condition('field_review_reference_book.target_id', $book_nids, 'IN')
       ->sort('created', 'DESC')
       ->range(0, 1)
       ->execute();
+
+    if (!empty($nids)) {
+      $node = \Drupal::entityTypeManager()->getStorage('node')->load(reset($nids));
+      $refFieldItemList = $node->get('field_review_reference_book');
+
+      return  $refFieldItemList->first()->get('target_id')->getValue();
+    }
   }
 
-  return $reviews ? reset($reviews) : NULL;
+  return NULL;
 }
 
 
