@@ -6,6 +6,9 @@
  */
 
 use Drupal\file\Entity\File;
+use Drupal\node\Entity\Node;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+use Drupal\pathauto\PathautoState;
 
 /**
  * Set up default images.
@@ -91,4 +94,70 @@ function lit_update_8003() {
     ->condition('collection', 'system.schema')
     ->condition('name', 'migrate_plus')
     ->execute();
+}
+
+/**
+ * Add landing pages.
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function lit_update_8104() {
+  // Create nodes.
+  $node = Node::create([
+    'type'        => 'landing_page',
+    'title'       => 'Frontpage',
+    'path' => [
+      'alias' => '/frontpage',
+      'pathauto' => PathautoState::SKIP,
+    ]
+  ]);
+  $node->save();
+
+  $node = Node::create([
+    'type'        => 'landing_page',
+    'title'       => 'Børnebøger',
+    'path' => [
+      'alias' => '/boerneboeger',
+      'pathauto' => PathautoState::SKIP,
+    ]
+  ]);
+  $node->save();
+
+  $node = Node::create([
+    'type'        => 'landing_page',
+    'title'       => 'Forfattere',
+    'path' => [
+      'alias' => '/forfattere',
+      'pathauto' => PathautoState::SKIP,
+    ]
+  ]);
+  $node->save();
+
+  $node = Node::create([
+    'type'        => 'landing_page',
+    'title'       => 'Temaer',
+    'path' => [
+      'alias' => '/temaer',
+      'pathauto' => PathautoState::SKIP,
+    ]
+  ]);
+  $node->save();
+
+  MenuLinkContent::create([
+    'title' => 'Børnebøger',
+    'link' => ['uri' => 'internal:/boerneboeger'],
+    'menu_name' => 'main',
+  ])->save();
+
+  MenuLinkContent::create([
+    'title' => 'Forfattere',
+    'link' => ['uri' => 'internal:/forfattere'],
+    'menu_name' => 'main',
+  ])->save();
+
+  MenuLinkContent::create([
+    'title' => 'Temaer',
+    'link' => ['uri' => 'internal:/temaer'],
+    'menu_name' => 'main',
+  ])->save();
 }

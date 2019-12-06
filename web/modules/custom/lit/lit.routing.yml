@@ -1,26 +1,3 @@
-lit.front:
-  path: '/litteratursiden'
-  defaults:
-    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
-  requirements:
-    _permission: 'access content'
-
-lit.books:
-  path: '/books'
-  defaults:
-    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
-    _title: "Children's Books"
-  requirements:
-    _permission: 'access content'
-
-lit.authors:
-  path: '/authors'
-  defaults:
-    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
-    _title: 'Authors'
-  requirements:
-    _permission: 'access content'
-
 lit.book_lists_overview:
   path: '/book-lists-overview'
   defaults:
