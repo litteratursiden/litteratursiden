@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenspiseforstyrrelser
 theme: litteratursiden
 region: content
-weight: 156
+weight: 309
 provider: null
 plugin: 'block_content:f4722a3d-fcbb-4621-86b2-9d59fda03f9f'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilmatiseredesciencefictionromaner
 theme: litteratursiden
 region: content
-weight: 447
+weight: 592
 provider: null
 plugin: 'block_content:a02812a4-f86c-42f7-a888-25a654c6d040'
 settings:

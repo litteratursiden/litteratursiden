@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensenmoderneliv
 theme: litteratursiden
 region: content
-weight: 180
+weight: 329
 provider: null
 plugin: 'block_content:cc083d57-d86b-435e-aa34-220c947ecc6f'
 settings:

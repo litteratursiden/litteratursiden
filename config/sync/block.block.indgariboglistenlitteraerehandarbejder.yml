@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraerehandarbejder
 theme: litteratursiden
 region: content
-weight: 556
+weight: 695
 provider: null
 plugin: 'block_content:ff90dd01-aa53-46b2-9ec8-29ca6fa088f0'
 settings:

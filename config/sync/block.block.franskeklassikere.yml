@@ -12,7 +12,7 @@ dependencies:
 id: franskeklassikere
 theme: litteratursiden
 region: content
-weight: 689
+weight: 814
 provider: null
 plugin: 'block_content:8e930a26-2daa-4ee4-a5a5-aa97ad1344cf'
 settings:

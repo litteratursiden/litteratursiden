@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.topic.field_block_reference
     - field.field.node.topic.field_topic_body
     - field.field.node.topic.field_topic_comments
     - field.field.node.topic.field_topic_cover_image
@@ -34,6 +35,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_block_reference:
+    weight: 20
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_topic_body:
     weight: 1
     settings:
@@ -117,7 +127,8 @@ content:
     type: language_select
     weight: 2
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path
@@ -147,7 +158,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 21
     region: content
     third_party_settings: {  }
   sticky:

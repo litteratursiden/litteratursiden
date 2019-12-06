@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlitteraturfragraenselandet_2
 theme: litteratursiden
 region: content
-weight: 522
+weight: 663
 provider: null
 plugin: 'block_content:50fd7e8d-25f7-4e26-bdce-c1bebb9c65d1'
 settings:

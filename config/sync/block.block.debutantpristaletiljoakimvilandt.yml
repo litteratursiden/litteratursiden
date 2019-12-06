@@ -12,7 +12,7 @@ dependencies:
 id: debutantpristaletiljoakimvilandt
 theme: litteratursiden
 region: content
-weight: 339
+weight: 483
 provider: null
 plugin: 'block_content:5473d385-b160-423f-9946-944698697a4e'
 settings:

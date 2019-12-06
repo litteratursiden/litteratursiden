@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenungkaerlighed
 theme: litteratursiden
 region: content
-weight: 221
+weight: 372
 provider: null
 plugin: 'block_content:66798b4b-918d-4d26-bc04-b50bb9b2cb57'
 settings:

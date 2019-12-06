@@ -12,7 +12,7 @@ dependencies:
 id: indgaritemamadenmellemos
 theme: litteratursiden
 region: content
-weight: 109
+weight: 259
 provider: null
 plugin: 'block_content:43621727-7d04-4955-9f9d-38cff699beeb'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensocialarv
 theme: litteratursiden
 region: content
-weight: 163
+weight: 316
 provider: null
 plugin: 'block_content:3cc3bdf8-e197-415b-af03-28b47ff9bb72'
 settings:

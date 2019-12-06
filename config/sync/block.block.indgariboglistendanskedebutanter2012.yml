@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanskedebutanter2012
 theme: litteratursiden
 region: content
-weight: 388
+weight: 532
 provider: null
 plugin: 'block_content:322812bd-9946-4a01-a482-19ee314d8ed5'
 settings:

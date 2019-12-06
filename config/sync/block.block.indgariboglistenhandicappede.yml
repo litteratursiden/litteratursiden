@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhandicappede
 theme: litteratursiden
 region: content
-weight: 478
+weight: 620
 provider: null
 plugin: 'block_content:ef28ab0c-943b-47f9-b2c3-58c658a74bbf'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: troelsklovedaloglitteraturen_
 theme: litteratursiden
 region: content
-weight: 211
+weight: 361
 provider: null
 plugin: 'block_content:d9780a38-313d-4077-af4c-e720f2c21389'
 settings:

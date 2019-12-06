@@ -12,7 +12,7 @@ dependencies:
 id: artikeltilforfatterportraetjanguillousverigesfarligstevaben
 theme: litteratursiden
 region: content
-weight: 939
+weight: 1067
 provider: null
 plugin: 'block_content:02634e48-3066-4af9-a14f-133b310a712d'
 settings:

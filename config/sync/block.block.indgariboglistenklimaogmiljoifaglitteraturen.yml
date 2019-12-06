@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenklimaogmiljoifaglitteraturen
 theme: litteratursiden
 region: content
-weight: 527
+weight: 668
 provider: null
 plugin: 'block_content:7b8f4acc-6ed5-4c87-a103-e77095c1dbee'
 settings:

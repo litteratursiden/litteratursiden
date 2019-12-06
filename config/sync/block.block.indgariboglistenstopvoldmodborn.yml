@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistenstopvoldmodborn
 theme: litteratursiden
 region: content
-weight: 122
+weight: 275
 provider: null
 plugin: 'block_content:4f2ed6bf-9190-4aea-ae45-afce5bab13cb'
 settings:
   id: 'block_content:4f2ed6bf-9190-4aea-ae45-afce5bab13cb'
-  label: 'Indgår i boglisten: Stop vold mod børn'
+  label: 'Indgår i boglisten: Vold mod børn'
   provider: block_content
   label_display: visible
   status: true

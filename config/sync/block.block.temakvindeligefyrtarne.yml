@@ -12,7 +12,7 @@ dependencies:
 id: temakvindeligefyrtarne
 theme: litteratursiden
 region: content
-weight: 85
+weight: 205
 provider: null
 plugin: 'block_content:fa09add2-1b47-4b80-934f-9f6a88f7bc99'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/artikler/kvindelige-fyrtarne-i-dansk-litteratur\r\n/forfattere/leonora-christina-ulfeldt\r\n/forfattere/thomasine-gyllembourg\r\n/forfattere/amalie-skram\r\n/forfattere/agnes-henningsen\r\n/forfattere/marie-bregendahl\r\n/forfattere/karin-michaelis\r\n/forfattere/thit-jensen\r\n/forfattere/karen-blixen\r\n/forfattere/tove-ditlevsen\r\n/forfattere/dorrit-willumsen\r\n/forfattere/kirsten-thorup\r\n/forfattere/suzanne-brogger\r\n/forfattere/inger-christensen\r\n/forfattere/dea-trier-morch\r\n/lister/staerke-kvinder\r\n/lister/staerke-piger\r\n/artikler/forfatteraben\r\n/lister/kvindelige-fyrtarne-udvalgte-vaerker\r\n/temaer/kvinderoller-kvinden-som-forfatter"
+    pages: "/artikler/kvindelige-fyrtarne-i-dansk-litteratur\r\n/forfattere/leonora-christina-ulfeldt\r\n/forfattere/thomasine-gyllembourg\r\n/lister/klassiske-kvindeskildringer\r\n/forfattere/amalie-skram\r\n/forfattere/agnes-henningsen\r\n/forfattere/marie-bregendahl\r\n/forfattere/karin-michaelis\r\n/forfattere/thit-jensen\r\n/forfattere/karen-blixen\r\n/forfattere/tove-ditlevsen\r\n/forfattere/dorrit-willumsen\r\n/forfattere/kirsten-thorup\r\n/forfattere/suzanne-brogger\r\n/forfattere/inger-christensen\r\n/forfattere/dea-trier-morch\r\n/lister/staerke-kvinder\r\n/lister/staerke-piger\r\n/artikler/forfatteraben\r\n/lister/kvindelige-fyrtarne-udvalgte-vaerker\r\n/temaer/kvinderoller-kvinden-som-forfatter"
     negate: false
     context_mapping: {  }

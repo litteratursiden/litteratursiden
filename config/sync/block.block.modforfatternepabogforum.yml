@@ -12,12 +12,12 @@ dependencies:
 id: modforfatternepabogforum
 theme: litteratursiden
 region: content
-weight: 317
+weight: 460
 provider: null
 plugin: 'block_content:fc6f844a-5795-4585-958a-e9a06efff2c7'
 settings:
   id: 'block_content:fc6f844a-5795-4585-958a-e9a06efff2c7'
-  label: 'Mød forfatterne på BogForum'
+  label: 'Mød forfatterne på BogForum 2018'
   provider: block_content
   label_display: visible
   status: true

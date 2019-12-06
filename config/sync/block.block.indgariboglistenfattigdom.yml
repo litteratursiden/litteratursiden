@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfattigdom
 theme: litteratursiden
 region: content
-weight: 437
+weight: 582
 provider: null
 plugin: 'block_content:dda714b4-fb12-405e-bbd0-59039bb03c74'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: hermanbang
 theme: litteratursiden
 region: content
-weight: 780
+weight: 907
 provider: null
 plugin: 'block_content:3fbcb9fb-8f69-41e0-bffd-715f771d874e'
 settings:

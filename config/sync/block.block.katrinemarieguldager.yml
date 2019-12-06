@@ -12,7 +12,7 @@ dependencies:
 id: katrinemarieguldager
 theme: litteratursiden
 region: content
-weight: 960
+weight: 1103
 provider: null
 plugin: 'block_content:9d1bd9ac-2012-4fe7-bcfd-d4e5039007de'
 settings:

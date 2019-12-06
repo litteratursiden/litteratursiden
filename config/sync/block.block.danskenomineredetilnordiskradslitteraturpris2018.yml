@@ -12,7 +12,7 @@ dependencies:
 id: danskenomineredetilnordiskradslitteraturpris2018
 theme: litteratursiden
 region: content
-weight: 702
+weight: 826
 provider: null
 plugin: 'block_content:772b6c95-8c26-436b-866e-c575e58b2f81'
 settings:

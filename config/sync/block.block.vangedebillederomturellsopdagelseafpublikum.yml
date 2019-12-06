@@ -12,7 +12,7 @@ dependencies:
 id: vangedebillederomturellsopdagelseafpublikum
 theme: litteratursiden
 region: content
-weight: 735
+weight: 860
 provider: null
 plugin: 'block_content:93fc83e9-82a0-4f28-8f2f-eec999ddaea7'
 settings:

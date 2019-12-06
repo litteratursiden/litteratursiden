@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilmatiseredekrimispaendingsromaner
 theme: litteratursiden
 region: content
-weight: 443
+weight: 588
 provider: null
 plugin: 'block_content:c338537f-81b6-4484-a98e-461ce48db687'
 settings:

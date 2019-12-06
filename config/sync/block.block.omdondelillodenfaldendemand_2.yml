@@ -12,7 +12,7 @@ dependencies:
 id: omdondelillodenfaldendemand_2
 theme: litteratursiden
 region: content
-weight: 627
+weight: 751
 provider: null
 plugin: 'block_content:3ef479ed-3ca0-48b7-86e0-fd363cb63c5d'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmisbrugnarkotika
 theme: litteratursiden
 region: content
-weight: 577
+weight: 709
 provider: null
 plugin: 'block_content:590cacf9-2474-4dff-a5ef-b0702206e80e'
 settings:

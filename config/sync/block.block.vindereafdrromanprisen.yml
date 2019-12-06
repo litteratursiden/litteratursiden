@@ -12,7 +12,7 @@ dependencies:
 id: vindereafdrromanprisen
 theme: litteratursiden
 region: content
-weight: 727
+weight: 852
 provider: null
 plugin: 'block_content:e407fce3-2029-4aa5-a623-cb24c6d3340f'
 settings:

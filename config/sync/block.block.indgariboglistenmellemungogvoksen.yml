@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmellemungogvoksen
 theme: litteratursiden
 region: content
-weight: 571
+weight: 703
 provider: null
 plugin: 'block_content:01319473-0195-4908-8dfb-f5096ffa4142'
 settings:

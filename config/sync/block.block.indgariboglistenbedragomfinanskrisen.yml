@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbedragomfinanskrisen
 theme: litteratursiden
 region: content
-weight: 817
+weight: 944
 provider: null
 plugin: 'block_content:9d0cea69-48b1-4635-a4be-5b6268aaac83'
 settings:

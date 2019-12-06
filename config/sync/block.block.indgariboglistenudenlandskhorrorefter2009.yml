@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenudenlandskhorrorefter2009
 theme: litteratursiden
 region: content
-weight: 217
+weight: 367
 provider: null
 plugin: 'block_content:175a5208-fd3e-4f35-8a8d-32631ca121a5'
 settings:

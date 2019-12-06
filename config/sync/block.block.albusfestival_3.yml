@@ -12,7 +12,7 @@ dependencies:
 id: albusfestival_3
 theme: litteratursiden
 region: content
-weight: 292
+weight: 436
 provider: null
 plugin: 'block_content:d12894c6-a827-4b93-999c-06ebe0fefaeb'
 settings:

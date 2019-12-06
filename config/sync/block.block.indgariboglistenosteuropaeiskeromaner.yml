@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistenosteuropaeiskeromaner
 theme: litteratursiden
 region: content
-weight: 269
+weight: 63
 provider: null
 plugin: 'block_content:9f3ce0c8-02a0-42b1-a7b7-774a98d5ce21'
 settings:
   id: 'block_content:9f3ce0c8-02a0-42b1-a7b7-774a98d5ce21'
-  label: 'Indgår i boglisten: Østeuropæiske romaner'
+  label: 'Østeuropæiske romaner'
   provider: block_content
   label_display: visible
   status: true

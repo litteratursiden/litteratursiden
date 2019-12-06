@@ -12,7 +12,7 @@ dependencies:
 id: krigogflugtiborneboger
 theme: litteratursiden
 region: content
-weight: 65
+weight: 179
 provider: null
 plugin: 'block_content:c159dc58-464d-436d-8b85-0af634d911f2'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/nar-kaniner-bliver-bange\r\n/boeger/havpaladset\r\n/boeger/zenobia\r\n/boeger/den-dag-vi-dromte-om"
+    pages: "/boeger/nar-kaniner-bliver-bange\r\n/boeger/havpaladset\r\n/boeger/zenobia\r\n/boeger/den-dag-vi-dromte-om\r\n/boeger/den-skjulte-dreng\r\n/boeger/det-vi-har-mistet\r\n/boeger/anne-franks-dagbog-graphic-novel\r\n/boeger/fortaellingen-om-ibis\r\n/boeger/ulvevilderen\r\n/boeger/anne-frank-sma-mennesker-store-dromme\r\n/boeger/ulveland"
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: christianjungersen
 theme: litteratursiden
 region: content
-weight: 53
+weight: 166
 provider: null
 plugin: 'block_content:8dd1dc45-f032-4a0d-a9fb-67f113a049c6'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /authors
+    pages: /blogs/lise-vandborg/ojeblikke-og-pauser
     negate: false
     context_mapping: {  }

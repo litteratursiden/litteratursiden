@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhumoristiskekvinderbogeroggraphicnovels
 theme: litteratursiden
 region: content
-weight: 487
+weight: 630
 provider: null
 plugin: 'block_content:d5d63336-ca2a-4caf-81e4-215ba810dacb'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/adulthood-myth\r\n/boeger/big-mushy-happy-lump\r\n/boeger/hyperbole-and-half\r\n/boeger/little-world-liz-climo\r\n/boeger/i-was-told-thered-be-cake\r\n/boeger/ikke-den-slags-pige\r\n/boeger/its-all-absolutely-fine-life-complicated-so-ive-drawn-it-instead\r\n/boeger/eleanor-oliphant-completely-fine\r\n/boeger/we-are-never-meeting-real-life\r\n/boeger/furiously-happy\r\n/boeger/pigen-med-rovgeviret\r\n/boeger/ellers-gar-det-godt"
+    pages: "/boeger/adulthood-myth\r\n/boeger/voksenlivet-er-en-myte\r\n/boeger/big-mushy-happy-lump\r\n/boeger/hyperbole-and-half\r\n/boeger/little-world-liz-climo\r\n/boeger/i-was-told-thered-be-cake\r\n/boeger/ikke-den-slags-pige\r\n/boeger/its-all-absolutely-fine-life-complicated-so-ive-drawn-it-instead\r\n/boeger/eleanor-oliphant-completely-fine\r\n/boeger/we-are-never-meeting-real-life\r\n/boeger/furiously-happy\r\n/boeger/pigen-med-rovgeviret\r\n/boeger/ellers-gar-det-godt"
     negate: false
     context_mapping: {  }

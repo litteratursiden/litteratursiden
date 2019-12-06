@@ -12,7 +12,7 @@ dependencies:
 id: jakobvedelsby
 theme: litteratursiden
 region: content
-weight: 603
+weight: 731
 provider: null
 plugin: 'block_content:cbc1378f-5c88-4141-b1c4-b54791cd574f'
 settings:

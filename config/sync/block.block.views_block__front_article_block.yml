@@ -12,7 +12,7 @@ dependencies:
 id: views_block__front_article_block
 theme: litteratursiden
 region: content
-weight: 650
+weight: 772
 provider: null
 plugin: 'views_block:front_article-block_front_article'
 settings:

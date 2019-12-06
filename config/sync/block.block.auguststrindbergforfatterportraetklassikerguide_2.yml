@@ -12,7 +12,7 @@ dependencies:
 id: auguststrindbergforfatterportraetklassikerguide_2
 theme: litteratursiden
 region: content
-weight: 80
+weight: 190
 provider: null
 plugin: 'block_content:54414328-b37f-43ed-a3bd-f7c6f3da7463'
 settings:

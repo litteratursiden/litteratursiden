@@ -12,7 +12,7 @@ dependencies:
 id: godebogertilhojtlaesningfortweens
 theme: litteratursiden
 region: content
-weight: 73
+weight: 185
 provider: null
 plugin: 'block_content:bf5ea716-bf7d-4425-9885-1cdbd9b378c9'
 settings:

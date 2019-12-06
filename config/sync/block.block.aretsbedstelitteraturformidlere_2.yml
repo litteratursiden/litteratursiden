@@ -12,7 +12,7 @@ dependencies:
 id: aretsbedstelitteraturformidlere_2
 theme: litteratursiden
 region: content
-weight: 323
+weight: 467
 provider: null
 plugin: 'block_content:cc1bda3a-4c55-43ec-8dd7-e97b081a8751'
 settings:

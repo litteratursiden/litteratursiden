@@ -12,7 +12,7 @@ dependencies:
 id: autobiografisketendenser.tremestervaerkeriden
 theme: litteratursiden
 region: content
-weight: 51
+weight: 165
 provider: null
 plugin: 'block_content:35230a6c-15e1-49dd-8a53-475c538d00ea'
 settings:

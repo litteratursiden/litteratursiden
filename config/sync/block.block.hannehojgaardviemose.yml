@@ -12,7 +12,7 @@ dependencies:
 id: hannehojgaardviemose
 theme: litteratursiden
 region: content
-weight: 357
+weight: 501
 provider: null
 plugin: 'block_content:6ac0caca-152c-419b-bd2f-76b8b772d198'
 settings:

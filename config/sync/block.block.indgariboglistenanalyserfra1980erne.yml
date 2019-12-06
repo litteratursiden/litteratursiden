@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1980erne
 theme: litteratursiden
 region: content
-weight: 805
+weight: 929
 provider: null
 plugin: 'block_content:1c639edc-a76b-4153-a9c5-6dd77deaaba5'
 settings:

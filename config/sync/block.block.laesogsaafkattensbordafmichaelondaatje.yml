@@ -12,7 +12,7 @@ dependencies:
 id: laesogsaafkattensbordafmichaelondaatje
 theme: litteratursiden
 region: content
-weight: 610
+weight: 739
 provider: null
 plugin: 'block_content:20738563-25c3-4ba6-b1ce-308a0a44ade3'
 settings:

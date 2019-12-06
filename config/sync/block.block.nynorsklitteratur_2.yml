@@ -1,6 +1,6 @@
 uuid: ca0ced51-8338-4401-9ae4-7131d1568cdc
 langcode: da
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:spot:fa3dc285-7efb-4a31-8bff-23616731aec1'
@@ -12,7 +12,7 @@ dependencies:
 id: nynorsklitteratur_2
 theme: litteratursiden
 region: content
-weight: 5
+weight: 1099
 provider: null
 plugin: 'block_content:fa3dc285-7efb-4a31-8bff-23616731aec1'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/topics"
+    pages: "<front>\r\n"
     negate: false
     context_mapping: {  }

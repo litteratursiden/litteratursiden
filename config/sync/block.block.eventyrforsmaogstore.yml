@@ -12,12 +12,12 @@ dependencies:
 id: eventyrforsmaogstore
 theme: litteratursiden
 region: content
-weight: 88
+weight: 53
 provider: null
 plugin: 'block_content:97116019-da26-4b28-be95-e34570923835'
 settings:
   id: 'block_content:97116019-da26-4b28-be95-e34570923835'
-  label: 'Eventyr for små og store'
+  label: 'Eventyrligt efterår'
   provider: block_content
   label_display: visible
   status: true

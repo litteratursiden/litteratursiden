@@ -12,14 +12,14 @@ dependencies:
 id: interview
 theme: litteratursiden
 region: content
-weight: 464
+weight: 610
 provider: null
 plugin: 'block_content:68c7f7c9-1d52-40f1-93bb-4c8b7d0075d8'
 settings:
   id: 'block_content:68c7f7c9-1d52-40f1-93bb-4c8b7d0075d8'
-  label: Interview
+  label: 'Interview med Merete Pryds Helle'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

@@ -12,7 +12,7 @@ dependencies:
 id: tjernobylatomkraftulykkeni1986
 theme: litteratursiden
 region: content
-weight: 852
+weight: 982
 provider: null
 plugin: 'block_content:63da2ded-de3b-47e9-9963-a066d52e3db6'
 settings:

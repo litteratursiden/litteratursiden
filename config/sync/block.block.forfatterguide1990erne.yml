@@ -12,7 +12,7 @@ dependencies:
 id: forfatterguide1990erne
 theme: litteratursiden
 region: content
-weight: 491
+weight: 634
 provider: null
 plugin: 'block_content:61ea715b-d0c1-4a4f-9e3a-6318237c5baa'
 settings:

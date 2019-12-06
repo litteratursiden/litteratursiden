@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedlonehorslev
 theme: litteratursiden
 region: content
-weight: 66
+weight: 180
 provider: null
 plugin: 'block_content:a61fd403-f9e4-4473-9c64-f4c834e3ff70'
 settings:

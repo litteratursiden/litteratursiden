@@ -12,7 +12,7 @@ dependencies:
 id: omsadetgaelder
 theme: litteratursiden
 region: content
-weight: 961
+weight: 1104
 provider: null
 plugin: 'block_content:92bc7078-03e1-4fc5-a204-755152c8ded5'
 settings:

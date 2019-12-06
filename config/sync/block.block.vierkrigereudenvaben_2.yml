@@ -12,7 +12,7 @@ dependencies:
 id: vierkrigereudenvaben_2
 theme: litteratursiden
 region: content
-weight: 911
+weight: 1040
 provider: null
 plugin: 'block_content:3889aec5-3f15-4ad4-9219-e915f5d64274'
 settings:

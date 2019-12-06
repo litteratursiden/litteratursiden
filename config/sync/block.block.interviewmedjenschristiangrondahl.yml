@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedjenschristiangrondahl
 theme: litteratursiden
 region: content
-weight: 273
+weight: 421
 provider: null
 plugin: 'block_content:478ca60d-f359-4e86-9a7c-29d5b2df97fb'
 settings:

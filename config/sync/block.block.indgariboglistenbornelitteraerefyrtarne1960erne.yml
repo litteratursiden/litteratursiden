@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbornelitteraerefyrtarne1960erne
 theme: litteratursiden
 region: content
-weight: 364
+weight: 507
 provider: null
 plugin: 'block_content:99e52662-6345-4554-83a8-1485af9d41bc'
 settings:

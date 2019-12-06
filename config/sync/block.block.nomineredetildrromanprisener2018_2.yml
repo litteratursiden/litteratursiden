@@ -12,7 +12,7 @@ dependencies:
 id: nomineredetildrromanprisener2018_2
 theme: litteratursiden
 region: content
-weight: 935
+weight: 1063
 provider: null
 plugin: 'block_content:c614ee03-4052-4ce8-90ad-7eb7625f664c'
 settings:

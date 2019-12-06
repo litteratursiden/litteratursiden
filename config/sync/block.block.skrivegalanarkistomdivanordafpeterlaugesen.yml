@@ -12,7 +12,7 @@ dependencies:
 id: skrivegalanarkistomdivanordafpeterlaugesen
 theme: litteratursiden
 region: content
-weight: 665
+weight: 785
 provider: null
 plugin: 'block_content:0375209d-237d-4c62-bcce-70e110b54f71'
 settings:

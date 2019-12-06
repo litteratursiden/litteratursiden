@@ -12,7 +12,7 @@ dependencies:
 id: piajuulersadan.ivedsadan.nejnoknaermeresadan...
 theme: litteratursiden
 region: content
-weight: 865
+weight: 994
 provider: null
 plugin: 'block_content:3fc7ceb5-126d-4ede-8eb1-c68925f49727'
 settings:

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.similar.field_block_reference
     - field.field.node.similar.field_similar_author
     - field.field.node.similar.field_similar_body
     - field.field.node.similar.field_similar_comments
@@ -22,6 +23,15 @@ targetEntityType: node
 bundle: similar
 mode: default
 content:
+  field_block_reference:
+    weight: 9
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_similar_body:
     type: text_default
     weight: 6

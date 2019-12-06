@@ -12,14 +12,14 @@ dependencies:
 id: temaautofiktion_4
 theme: litteratursiden
 region: content
-weight: 112
+weight: 264
 provider: null
 plugin: 'block_content:9ea1632a-097d-423e-8722-e77211c2c040'
 settings:
   id: 'block_content:9ea1632a-097d-423e-8722-e77211c2c040'
   label: 'Tema: Autofiktion'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

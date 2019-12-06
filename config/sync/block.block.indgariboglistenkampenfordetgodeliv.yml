@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkampenfordetgodeliv
 theme: litteratursiden
 region: content
-weight: 515
+weight: 657
 provider: null
 plugin: 'block_content:28db9114-ee48-4063-93cf-09e3b406e1ea'
 settings:

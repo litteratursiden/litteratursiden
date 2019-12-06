@@ -12,7 +12,7 @@ dependencies:
 id: udenlandskeforfatteretilliteraturexchange2019
 theme: litteratursiden
 region: content
-weight: 16
+weight: 1082
 provider: null
 plugin: 'block_content:f924c3ad-0687-45a7-a885-532ac6c6e058'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/artikler/internationale-stjerner-i-aarhus\r\n/authors\r\n/anmeldelser/internationale-stjerner-i-aarhus"
+    pages: "/artikler/internationale-stjerner-i-aarhus\r\n/anmeldelser/internationale-stjerner-i-aarhus"
     negate: false
     context_mapping: {  }

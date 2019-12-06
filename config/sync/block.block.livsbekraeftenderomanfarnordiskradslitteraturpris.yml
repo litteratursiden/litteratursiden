@@ -12,7 +12,7 @@ dependencies:
 id: livsbekraeftenderomanfarnordiskradslitteraturpris
 theme: litteratursiden
 region: content
-weight: 409
+weight: 552
 provider: null
 plugin: 'block_content:a6b5bf43-e0d8-432b-841d-a12392f21797'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /artikler/staerke-danske-kandidater-til-nordisk-rads-litteraturpris
+    pages: "/artikler/staerke-danske-kandidater-til-nordisk-rads-litteraturpris\r\n/temaer/nye-islandske-fortaellinger\r\n\r\n"
     negate: false
     context_mapping: {  }

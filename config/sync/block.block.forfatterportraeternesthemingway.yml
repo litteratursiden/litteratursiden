@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraeternesthemingway
 theme: litteratursiden
 region: content
-weight: 354
+weight: 498
 provider: null
 plugin: 'block_content:4a71789e-060e-4f37-8d9f-3eeb863bd6d3'
 settings:

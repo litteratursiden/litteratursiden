@@ -12,7 +12,7 @@ dependencies:
 id: deallerforsteboger_2
 theme: litteratursiden
 region: content
-weight: 123
+weight: 276
 provider: null
 plugin: 'block_content:20b2def4-662d-4c0d-bda1-96ac19e7d3c4'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/kaj-laeser-bog\r\n/boeger/lili-er-vild-med-gaver\r\n/boeger/se-mig\r\n/boeger/carl-er-gavmild\r\n/boeger/se-en-lille-baby\r\n/boeger/kanin-bader\r\n/boeger/pyh-siger-den-lille-bamse-0\r\n/boeger/lille-krokodille-bloder\r\n"
+    pages: "/boeger/kaj-laeser-bog\r\n/boeger/lili-er-vild-med-gaver\r\n/boeger/se-mig\r\n/boeger/carl-er-gavmild\r\n/boeger/se-en-lille-baby\r\n/boeger/carl-er-kilden\r\n/boeger/dyretaellebogen\r\n/boeger/farvernes-bog-om-farver\r\n/boeger/kanin-bader\r\n/boeger/pyh-siger-den-lille-bamse-0\r\n/boeger/lille-krokodille-bloder\r\n/boeger/buller-kysser\r\n/boeger/carl-er-glad\r\n/boeger/lili-graver-en-faelde\r\n/boeger/lili-syr-en-ting\r\n/boeger/ulven-og-fluen\r\n/boeger/nora-gar-i-vuggestue\r\n/boeger/hej-kaj-fire-gode-historier-om-kaj"
     negate: false
     context_mapping: {  }

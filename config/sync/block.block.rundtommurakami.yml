@@ -12,7 +12,7 @@ dependencies:
 id: rundtommurakami
 theme: litteratursiden
 region: content
-weight: 644
+weight: 61
 provider: null
 plugin: 'block_content:71f8798f-cdb0-4e82-a424-5d1a50eaf08d'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/temaer/international-litteratur-i-aarhus\r\n/temaer/literaturexchange\r\n/lister/japan\r\n/boeger/mordet-pa-kommandanten-bind-2\r\n"
+    pages: "/temaer/international-litteratur-i-aarhus\r\n/temaer/literaturexchange\r\n/lister/japan\r\n/boeger/mordet-pa-kommandanten-bind-2\r\n/boeger/det-mystiske-bibliotek\r\n"
     negate: false
     context_mapping: {  }

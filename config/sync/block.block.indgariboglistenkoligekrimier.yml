@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkoligekrimier
 theme: litteratursiden
 region: content
-weight: 544
+weight: 687
 provider: null
 plugin: 'block_content:1bfa5ddb-8624-48fc-8d10-1584f82750f8'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: denfaldendemand
 theme: litteratursiden
 region: content
-weight: 636
+weight: 760
 provider: null
 plugin: 'block_content:4dc3d03b-84da-4632-a6f0-afcba6c4f201'
 settings:

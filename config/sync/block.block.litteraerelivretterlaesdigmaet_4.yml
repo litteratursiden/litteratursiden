@@ -12,7 +12,7 @@ dependencies:
 id: litteraerelivretterlaesdigmaet_4
 theme: litteratursiden
 region: content
-weight: 966
+weight: 1109
 provider: null
 plugin: 'block_content:95ff491c-3659-4d87-8e32-09f27ad450d4'
 settings:

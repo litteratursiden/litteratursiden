@@ -12,7 +12,7 @@ dependencies:
 id: alletiderskaerlighedsromaner_2
 theme: litteratursiden
 region: content
-weight: 850
+weight: 980
 provider: null
 plugin: 'block_content:997a59c2-a830-43af-bf0b-29c572e41570'
 settings:

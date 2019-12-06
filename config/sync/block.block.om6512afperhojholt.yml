@@ -12,7 +12,7 @@ dependencies:
 id: om6512afperhojholt
 theme: litteratursiden
 region: content
-weight: 695
+weight: 820
 provider: null
 plugin: 'block_content:763c0a26-dbe1-4797-99a0-93b791b6a4fe'
 settings:

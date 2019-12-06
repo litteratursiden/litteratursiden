@@ -12,7 +12,7 @@ dependencies:
 id: debutantprisvindere
 theme: litteratursiden
 region: content
-weight: 325
+weight: 125
 provider: null
 plugin: 'block_content:13b006a8-d086-44ab-90a3-2977d6243888'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/temaer/danske-debutanter-2017-2018\r\n"
+    pages: "/temaer/danske-debutanter-2017-2018\r\n/temaer/arets-danske-debutanter-2018-2019\r\n"
     negate: false
     context_mapping: {  }

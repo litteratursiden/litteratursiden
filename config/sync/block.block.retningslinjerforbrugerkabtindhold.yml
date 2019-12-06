@@ -1,6 +1,6 @@
 uuid: e0377ee2-d227-498f-bd4c-018e3c059372
 langcode: da
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:spot:069758fe-14f6-4c4a-8494-b49a98fcf719'
@@ -12,7 +12,7 @@ dependencies:
 id: retningslinjerforbrugerkabtindhold
 theme: litteratursiden
 region: content
-weight: 907
+weight: 1095
 provider: null
 plugin: 'block_content:069758fe-14f6-4c4a-8494-b49a98fcf719'
 settings:

@@ -13,7 +13,7 @@ dependencies:
 id: klassikerguide_2
 theme: litteratursiden
 region: content
-weight: 918
+weight: 1046
 provider: null
 plugin: 'block_content:b88bff2b-2d6f-41bf-a6e9-8a3497917ae5'
 settings:

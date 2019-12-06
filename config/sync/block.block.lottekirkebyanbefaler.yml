@@ -12,7 +12,7 @@ dependencies:
 id: lottekirkebyanbefaler
 theme: litteratursiden
 region: content
-weight: 220
+weight: 371
 provider: null
 plugin: 'block_content:54cf57f1-bcc2-4209-a28a-7db2c7acaae2'
 settings:

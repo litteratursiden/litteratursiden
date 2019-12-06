@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten80erklassikerefraglemmebogen_3
 theme: litteratursiden
 region: content
-weight: 311
+weight: 454
 provider: null
 plugin: 'block_content:9106ff35-d321-43f9-a63d-ec72d2cec4a9'
 settings:

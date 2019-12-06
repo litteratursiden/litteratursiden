@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfraburnstilrankinnedslagiskotsklitteratur
 theme: litteratursiden
 region: content
-weight: 455
+weight: 601
 provider: null
 plugin: 'block_content:fcad6156-2478-4688-a148-fc48138529c3'
 settings:

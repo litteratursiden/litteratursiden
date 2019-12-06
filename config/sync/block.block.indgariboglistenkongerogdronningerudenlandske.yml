@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkongerogdronningerudenlandske
 theme: litteratursiden
 region: content
-weight: 532
+weight: 674
 provider: null
 plugin: 'block_content:c8a86424-1486-4098-98d4-41b68226edbf'
 settings:

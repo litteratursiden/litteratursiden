@@ -12,7 +12,7 @@ dependencies:
 id: livettilsos
 theme: litteratursiden
 region: content
-weight: 294
+weight: 438
 provider: null
 plugin: 'block_content:120a433d-beda-4ab0-b779-677a106da8de'
 settings:

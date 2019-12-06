@@ -12,7 +12,7 @@ dependencies:
 id: ereolengo
 theme: litteratursiden
 region: content
-weight: 87
+weight: 202
 provider: null
 plugin: 'block_content:e040f6e5-affd-461b-a4b7-e2a743fdba60'
 settings:

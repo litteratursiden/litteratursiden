@@ -12,7 +12,7 @@ dependencies:
 id: artikelomradiator
 theme: litteratursiden
 region: content
-weight: 760
+weight: 889
 provider: null
 plugin: 'block_content:aaf746fc-ab1e-451d-b6e2-5427e9838dc7'
 settings:

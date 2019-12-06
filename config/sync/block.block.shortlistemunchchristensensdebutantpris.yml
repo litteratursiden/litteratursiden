@@ -12,7 +12,7 @@ dependencies:
 id: shortlistemunchchristensensdebutantpris
 theme: litteratursiden
 region: content
-weight: 304
+weight: 447
 provider: null
 plugin: 'block_content:bcb9739a-b09f-4e87-b64a-33c429ad7054'
 settings:

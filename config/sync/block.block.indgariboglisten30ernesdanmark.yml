@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisten30ernesdanmark
 theme: litteratursiden
 region: content
-weight: 94
+weight: 235
 provider: null
 plugin: 'block_content:943c3583-0fa8-4494-a1bf-cf96aa8314c8'
 settings:

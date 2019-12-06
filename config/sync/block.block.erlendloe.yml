@@ -12,14 +12,14 @@ dependencies:
 id: erlendloe
 theme: litteratursiden
 region: content
-weight: 333
+weight: 477
 provider: null
 plugin: 'block_content:562a46c4-3fc2-4822-bab9-bd8c31777725'
 settings:
   id: 'block_content:562a46c4-3fc2-4822-bab9-bd8c31777725'
-  label: 'Erlend Loe'
+  label: 'Mød ham på Bogforum'
   provider: block_content
-  label_display: '0'
+  label_display: visible
   status: true
   info: ''
   view_mode: full

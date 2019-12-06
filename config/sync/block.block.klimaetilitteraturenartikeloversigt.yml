@@ -12,7 +12,7 @@ dependencies:
 id: klimaetilitteraturenartikeloversigt
 theme: litteratursiden
 region: content
-weight: 578
+weight: 710
 provider: null
 plugin: 'block_content:78399e74-5d2d-4542-b914-8962678631ab'
 settings:

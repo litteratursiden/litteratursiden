@@ -12,7 +12,7 @@ dependencies:
 id: jakobejersbovillevaerefyldt50ar
 theme: litteratursiden
 region: content
-weight: 746
+weight: 873
 provider: null
 plugin: 'block_content:3c232cfc-1e4e-494a-b081-ce075ee65222'
 settings:

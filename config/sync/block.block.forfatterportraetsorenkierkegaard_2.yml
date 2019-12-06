@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraetsorenkierkegaard_2
 theme: litteratursiden
 region: content
-weight: 774
+weight: 901
 provider: null
 plugin: 'block_content:d2263473-0508-46e8-aa36-8bcdfdab9754'
 settings:

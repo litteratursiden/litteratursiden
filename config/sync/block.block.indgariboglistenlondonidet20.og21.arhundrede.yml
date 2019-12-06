@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenlondonidet20.og21.arhundrede
 theme: litteratursiden
 region: content
-weight: 566
+weight: 699
 provider: null
 plugin: 'block_content:7ee56cec-7e85-41a2-8ca4-6d22f698ff05'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/brick-lane\r\n/boeger/kvinde-der-flojter\r\n/boeger/ungdomsar\r\n/boeger/syv-sostre\r\n/boeger/26a\r\n/boeger/bridget-jones-vild-med-ham\r\n/boeger/omkring-en-dreng\r\n/boeger/en-forstadsbuddha\r\n/boeger/noget-jeg-ma-fortaelle-dig\r\n/boeger/forsvar-undergrundsbanen\r\n/boeger/den-gode-terrorist\r\n/boeger/lordag\r\n/boeger/londonstani\r\n/boeger/til-manen-og-tilbage\r\n/boeger/charlotte-street\r\n/boeger/pa-den-anden-side-1\r\n/boeger/draeb-dine-venner\r\n/boeger/kun-i-london\r\n/boeger/hvide-taender\r\n/boeger/nw\r\n/boeger/et-godt-stykke-fra-kensington\r\n/boeger/6-kaerlighed\r\n/boeger/miss-penhows-blodende-hjerte\r\n/boeger/fredag-aften\r\n/boeger/nattevagt-1\r\n/boeger/primrose-hill\r\n/boeger/mrs-dalloway\r\n"
+    pages: "/boeger/vores-elskede\r\n/boeger/mit-knap-sa-perfekte-liv\r\n/boeger/brick-lane\r\n/boeger/kvinde-der-flojter\r\n/boeger/ungdomsar\r\n/boeger/syv-sostre\r\n/boeger/26a\r\n/boeger/bridget-jones-vild-med-ham\r\n/boeger/omkring-en-dreng\r\n/boeger/en-forstadsbuddha\r\n/boeger/noget-jeg-ma-fortaelle-dig\r\n/boeger/forsvar-undergrundsbanen\r\n/boeger/den-gode-terrorist\r\n/boeger/lordag\r\n/boeger/londonstani\r\n/boeger/til-manen-og-tilbage\r\n/boeger/charlotte-street\r\n/boeger/pa-den-anden-side-1\r\n/boeger/draeb-dine-venner\r\n/boeger/kun-i-london\r\n/boeger/hvide-taender\r\n/boeger/nw\r\n/boeger/et-godt-stykke-fra-kensington\r\n/boeger/6-kaerlighed\r\n/boeger/miss-penhows-blodende-hjerte\r\n/boeger/fredag-aften\r\n/boeger/nattevagt-1\r\n/boeger/primrose-hill\r\n/boeger/mrs-dalloway\r\n"
     negate: false
     context_mapping: {  }

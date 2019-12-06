@@ -12,7 +12,7 @@ dependencies:
 id: agneshenningsen_2
 theme: litteratursiden
 region: content
-weight: 533
+weight: 675
 provider: null
 plugin: 'block_content:7f979f83-e1df-4b5f-9de4-3de44e341db6'
 settings:

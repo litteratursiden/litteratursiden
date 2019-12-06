@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenisraelskestemmer
 theme: litteratursiden
 region: content
-weight: 506
+weight: 649
 provider: null
 plugin: 'block_content:deb22d9a-0ec1-49a6-b908-644fc9cd18bb'
 settings:

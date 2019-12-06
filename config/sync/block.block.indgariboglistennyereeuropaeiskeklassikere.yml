@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennyereeuropaeiskeklassikere
 theme: litteratursiden
 region: content
-weight: 241
+weight: 392
 provider: null
 plugin: 'block_content:6de78bfd-b0cf-47d0-b566-8b1b04a4c002'
 settings:

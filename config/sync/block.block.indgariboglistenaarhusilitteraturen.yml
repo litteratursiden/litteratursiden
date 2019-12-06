@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistenaarhusilitteraturen
 theme: litteratursiden
 region: content
-weight: 788
+weight: 167
 provider: null
 plugin: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
 settings:
   id: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
-  label: 'Indgår i boglisten: Aarhus i litteraturen'
+  label: 'Aarhus i litteraturen'
   provider: block_content
   label_display: visible
   status: true

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbarcelona
 theme: litteratursiden
 region: content
-weight: 814
+weight: 941
 provider: null
 plugin: 'block_content:ef8c2f08-3cee-44be-9d64-9c3b7701ed43'
 settings:

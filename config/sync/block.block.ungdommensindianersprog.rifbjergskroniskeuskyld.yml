@@ -12,7 +12,7 @@ dependencies:
 id: ungdommensindianersprog.rifbjergskroniskeuskyld
 theme: litteratursiden
 region: content
-weight: 747
+weight: 874
 provider: null
 plugin: 'block_content:2bdb4a84-9ba4-4327-b9b7-dab6be990835'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: autofiktion_2
 theme: litteratursiden
 region: content
-weight: 106
+weight: 256
 provider: null
 plugin: 'block_content:343cc4bf-1442-44bd-b63d-662ebbd69636'
 settings:

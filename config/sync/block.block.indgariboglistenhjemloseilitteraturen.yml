@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhjemloseilitteraturen
 theme: litteratursiden
 region: content
-weight: 485
+weight: 627
 provider: null
 plugin: 'block_content:72b8a2b3-0d14-4938-85f5-96e0df15f6ec'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/livsstil\r\n/boeger/ti-ting-jeg-har-laert-om-kaerlighed\r\n/boeger/vandreren-0\r\n/boeger/ga-eller-kunsten-leve-et-vildt-og-poetisk-liv\r\n/boeger/vaniljehvidt-som-eminem\r\n/boeger/endnu-en-lortenat-i-en-rovsyg\r\n/boeger/bogstavets-betydning\r\n/boeger/en-mors-dilemma\r\n/boeger/hundedreng\r\n/boeger/dode-prinsesser-drommer-ikke\r\n/boeger/tornmark\r\n/boeger/de-hjemlose-0\r\n/boeger/lyse-tider\r\n/boeger/lila-1\r\n/boeger/fogeden\r\n/boeger/uden-hjem\r\n/boeger/storbysagaer\r\n/boeger/no-og-mig"
+    pages: "/boeger/livsstil\r\n/boeger/ti-ting-jeg-har-laert-om-kaerlighed\r\n/boeger/vandreren-0\r\n/boeger/ga-eller-kunsten-leve-et-vildt-og-poetisk-liv\r\n/boeger/vaniljehvidt-som-eminem\r\n/boeger/dromme-sa-stort-det-darligt-kan-vaere-i-min-lomme\r\n/boeger/endnu-en-lortenat-i-en-rovsyg\r\n/boeger/bogstavets-betydning\r\n/boeger/en-mors-dilemma\r\n/boeger/hundedreng\r\n/boeger/dode-prinsesser-drommer-ikke\r\n/boeger/tornmark\r\n/boeger/de-hjemlose-0\r\n/boeger/lyse-tider\r\n/boeger/lila-1\r\n/boeger/fogeden\r\n/boeger/uden-hjem\r\n/boeger/storbysagaer\r\n/boeger/no-og-mig"
     negate: false
     context_mapping: {  }

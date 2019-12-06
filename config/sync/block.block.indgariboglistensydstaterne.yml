@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensydstaterne
 theme: litteratursiden
 region: content
-weight: 137
+weight: 290
 provider: null
 plugin: 'block_content:c3f0ab80-7f8a-473b-a268-4bb44a9e77ca'
 settings:

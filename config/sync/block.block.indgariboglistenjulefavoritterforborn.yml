@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenjulefavoritterforborn
 theme: litteratursiden
 region: content
-weight: 511
+weight: 654
 provider: null
 plugin: 'block_content:2a56b75d-b9c2-41fc-b274-b27213623820'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/bamses-julerejse\r\n/boeger/lasse-leif-dm-i-aebleskiver\r\n/boeger/peters-jul\r\n/boeger/jul-i-bulderby\r\n/boeger/villads-fra-valby-holder-jul\r\n/boeger/god-jul-cirkeline\r\n/boeger/froken-ignora-holder-jul\r\n/boeger/mig-og-bedstefar-og-sa-nisse-pok\r\n/boeger/drengen-der-drog-nordpa-med-sin-far-finde-julemanden\r\n/boeger/pippi-plyndrer-juletrae\r\n/boeger/julekalender-born\r\n/boeger/karl-og-julestjernen-0\r\n/boeger/iqbal-farooq-og-julesvineriet\r\n/boeger/tiberius-tudefjaes-dropper-julen\r\n/boeger/jul-i-skoven-1\r\n/boeger/betty-far-en-julegave\r\n/boeger/en-julehistorie-og-sa-alligevel-ikke\r\n/boeger/jul-hos-peddersen\r\n"
+    pages: "/boeger/bamses-julerejse\r\n/boeger/lasse-leif-dm-i-aebleskiver\r\n/boeger/peters-jul\r\n/boeger/jul-i-bulderby\r\n/boeger/villads-fra-valby-holder-jul\r\n/boeger/nissen-der-ville-vaere-beromt\r\n/boeger/fra-alle-os-til-alle-jer-alle-klassikerne-fra-disneys-juleshow\r\n/boeger/da-julen-kom-til-mumidalen\r\n/boeger/god-jul-cirkeline\r\n/boeger/froken-ignora-holder-jul\r\n/boeger/mig-og-bedstefar-og-sa-nisse-pok\r\n/boeger/drengen-der-drog-nordpa-med-sin-far-finde-julemanden\r\n/boeger/pippi-plyndrer-juletrae\r\n/boeger/julekalender-born\r\n/boeger/karl-og-julestjernen-0\r\n/boeger/iqbal-farooq-og-julesvineriet\r\n/boeger/tiberius-tudefjaes-dropper-julen\r\n/boeger/jul-i-skoven-1\r\n/boeger/betty-far-en-julegave\r\n/boeger/en-julehistorie-og-sa-alligevel-ikke\r\n/boeger/jul-hos-peddersen\r\n/boeger/snemanden-1\r\n/boeger/snesosteren-en-julehistorie\r\n/boeger/vitello-24-julehistorier\r\n/boeger/julefortaellinger-en-antologi\r\n/boeger/ole-lund-kirkegaards-kikkebakke-boligby\r\n/boeger/jul-i-stalden\r\n/boeger/jul-i-eventyrland\r\n/boeger/julemusens-hemmelighed\r\n/boeger/en-julehistorie-og-sa-alligevel-ikke\r\n/boeger/historien-om-nissen"
     negate: false
     context_mapping: {  }

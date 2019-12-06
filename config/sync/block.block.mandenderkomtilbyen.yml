@@ -12,7 +12,7 @@ dependencies:
 id: mandenderkomtilbyen
 theme: litteratursiden
 region: content
-weight: 319
+weight: 463
 provider: null
 plugin: 'block_content:b291462d-4859-49e8-9f1b-5b2f6d850ccc'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenbornelitteraerefyrtarne1990erne
 theme: litteratursiden
 region: content
-weight: 368
+weight: 511
 provider: null
 plugin: 'block_content:839dcc94-75fc-4d46-bc10-7385370fab03'
 settings:

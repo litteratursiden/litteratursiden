@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglisteneuropaihistorien
 theme: litteratursiden
 region: content
-weight: 428
+weight: 572
 provider: null
 plugin: 'block_content:6a2be3ee-099f-4cb0-bd8c-2f544383e067'
 settings:

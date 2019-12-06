@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenklassiskedetektiver
 theme: litteratursiden
 region: content
-weight: 520
+weight: 661
 provider: null
 plugin: 'block_content:ecee553f-0733-49ab-97e7-1ec77eb8f317'
 settings:

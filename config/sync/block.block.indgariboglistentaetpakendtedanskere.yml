@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentaetpakendtedanskere
 theme: litteratursiden
 region: content
-weight: 208
+weight: 357
 provider: null
 plugin: 'block_content:19209f4c-5c9a-449e-a453-d9534293e74b'
 settings:

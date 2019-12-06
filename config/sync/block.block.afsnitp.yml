@@ -12,7 +12,7 @@ dependencies:
 id: afsnitp
 theme: litteratursiden
 region: content
-weight: 876
+weight: 1010
 provider: null
 plugin: 'block_content:7c09b3d3-2344-47d8-a967-87d14ebe525a'
 settings:

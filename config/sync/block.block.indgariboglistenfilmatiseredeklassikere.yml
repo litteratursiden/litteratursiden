@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfilmatiseredeklassikere
 theme: litteratursiden
 region: content
-weight: 784
+weight: 912
 provider: null
 plugin: 'block_content:9a1dc162-6f3a-4b82-a5dd-00d9865e047d'
 settings:

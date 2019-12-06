@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhistorieromdanmarkmiddelalderen
 theme: litteratursiden
 region: content
-weight: 481
+weight: 623
 provider: null
 plugin: 'block_content:8ac41f65-015a-4e55-8428-cd2a2909bc3d'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentilgrinfor2010
 theme: litteratursiden
 region: content
-weight: 200
+weight: 348
 provider: null
 plugin: 'block_content:4caffd35-97f3-4939-8cc6-fb219cb8ae8d'
 settings:

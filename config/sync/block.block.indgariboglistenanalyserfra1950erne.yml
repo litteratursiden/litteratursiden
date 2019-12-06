@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1950erne
 theme: litteratursiden
 region: content
-weight: 799
+weight: 924
 provider: null
 plugin: 'block_content:d9d2fcc3-2d6f-4668-a6f1-ab55a62f4fe5'
 settings:

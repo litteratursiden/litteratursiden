@@ -12,7 +12,7 @@ dependencies:
 id: anbefaletboger
 theme: litteratursiden
 region: content
-weight: 314
+weight: 457
 provider: null
 plugin: 'block_content:2ea82286-d925-45d8-b763-ba9b467b0793'
 settings:

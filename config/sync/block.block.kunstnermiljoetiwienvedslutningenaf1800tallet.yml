@@ -12,7 +12,7 @@ dependencies:
 id: kunstnermiljoetiwienvedslutningenaf1800tallet
 theme: litteratursiden
 region: content
-weight: 607
+weight: 735
 provider: null
 plugin: 'block_content:018df3ea-0859-414b-af69-4055cbccb3da'
 settings:

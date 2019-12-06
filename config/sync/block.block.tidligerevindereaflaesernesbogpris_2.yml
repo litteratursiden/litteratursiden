@@ -12,7 +12,7 @@ dependencies:
 id: tidligerevindereaflaesernesbogpris_2
 theme: litteratursiden
 region: content
-weight: 883
+weight: 1018
 provider: null
 plugin: 'block_content:91332ed6-79d3-4353-a638-aca39bb822b0'
 settings:

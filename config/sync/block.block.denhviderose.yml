@@ -12,7 +12,7 @@ dependencies:
 id: denhviderose
 theme: litteratursiden
 region: content
-weight: 461
+weight: 607
 provider: null
 plugin: 'block_content:45c61350-16a5-4d0a-8513-28ce596d9ecb'
 settings:

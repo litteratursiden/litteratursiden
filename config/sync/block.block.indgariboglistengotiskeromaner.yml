@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistengotiskeromaner
 theme: litteratursiden
 region: content
-weight: 469
+weight: 614
 provider: null
 plugin: 'block_content:08d4ee11-c3ad-4344-93b8-abbc7ee4e393'
 settings:

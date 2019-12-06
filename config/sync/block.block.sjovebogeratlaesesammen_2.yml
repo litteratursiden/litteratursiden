@@ -12,7 +12,7 @@ dependencies:
 id: sjovebogeratlaesesammen_2
 theme: litteratursiden
 region: content
-weight: 98
+weight: 243
 provider: null
 plugin: 'block_content:42b1e1f5-e999-4b5b-871e-75db5424fc08'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/vitello-28-historier-fra-til\r\n/boeger/morgenthalers-abc\r\n/boeger/jorgen-og-else-laver-et-menneskebarn-eller\r\n/boeger/sallys-far-er-sygt-pinlig\r\n/boeger/bogen-om-pippi-langstrompe\r\n/boeger/villads-fra-valby\r\n/boeger/tro-hab-og-gorgonzola\r\n/boeger/iqbal-farooq-og-den-jyske-forbandelse\r\n/boeger/wimpy-kid-nedsmeltning\r\n/boeger/da-mumbo-jumbo-blev-kaempestor\r\n/boeger/godnat-og-sjov-godt\r\n/boeger/lasse-leif-og-de-hemmelige-kaeledyr\r\n/boeger/ternet-ninja"
+    pages: "/boeger/vitello-28-historier-fra-til\r\n/boeger/gangster-farmor\r\n/boeger/jorgen-og-else-laver-et-menneskebarn-eller\r\n/boeger/sallys-far-er-sygt-pinlig\r\n/boeger/flyvebogen-rejsen-til-monstrenes-o\r\n/boeger/villads-fra-valby\r\n/boeger/tro-hab-og-gorgonzola\r\n/boeger/iqbal-farooq-og-den-jyske-forbandelse\r\n/boeger/wimpy-kid-nedsmeltning\r\n/boeger/da-mumbo-jumbo-blev-kaempestor\r\n/boeger/godnat-og-sjov-godt\r\n/boeger/lasse-leif-og-de-hemmelige-kaeledyr\r\n/boeger/ternet-ninja\r\n/boeger/skraekkelige-rikke-og-den-ildelugtende-finger\r\nboeger/rov-verdens-vigtigste-eventyr\r\n/boeger/stenfjaes\r\n/bette-bov-krudt-og-ukrudt\r\n/boeger/radisehajen-og-andre-historier-om-raeven-og-pattegrisen"
     negate: false
     context_mapping: {  }

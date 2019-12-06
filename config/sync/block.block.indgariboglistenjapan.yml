@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenjapan
 theme: litteratursiden
 region: content
-weight: 590
+weight: 60
 provider: null
 plugin: 'block_content:a6fcca5a-43b8-40bf-b4cf-13712860d65b'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/mordet-pa-kommandanten-bind-2\r\n/boeger/mordet-pa-kommandanten\r\n/boeger/pachinko\r\n/boeger/vildgraes-ved-flodlejet\r\n/boeger/kattegaesten\r\n/boeger/kvinden-ved-havet\r\n/boeger/den-ensomme-gourmet\r\n/boeger/hor-vinden-synge-flipperspil-1973\r\n/boeger/den-smalle-vej-til-det-dybe-nord\r\n/boeger/maend-uden-kvinder-0\r\n/boeger/tidens-vaesen\r\n/boeger/solens-aermer\r\n/boeger/jacob-de-zoets-tusind-efterar\r\n/boeger/den-farvelose-tsukuru-tazakis-pilgrimsar\r\n/boeger/hardboiled-wonderland-og-verdens-ende\r\n/boeger/og-vi-kom-over-havet\r\n/boeger/senseis-mappe\r\n/boeger/kaiken\r\n/boeger/1q84-bog-3\r\n/boeger/1q84-bog-2\r\n/boeger/1q84-bog-1\r\n/boeger/nagasaki\r\n/boeger/hotellet-pa-hjornet-af-bitter-og-sod\r\n/boeger/skyggefamilie\r\n/boeger/i-misosuppen\r\n/boeger/tokyo-min-elskede\r\n/boeger/ude-0\r\n/boeger/det-rene-land\r\n/boeger/skyggelandet-0\r\n/boeger/spurvenes-sky\r\n/boeger/mit-liv-som-geisha"
+    pages: "/boeger/jeg-kaldte-ham-slips\r\n/boeger/dognkioskmennesket-roman\r\n/boeger/en-midsommerligning\r\n/boeger/mordet-pa-kommandanten-bind-2\r\n/boeger/mordet-pa-kommandanten\r\n/boeger/det-mystiske-bibliotek\r\n/boeger/verdenslitteraturer\r\n/boeger/pachinko\r\n/boeger/vildgraes-ved-flodlejet\r\n/boeger/kattegaesten\r\n/boeger/kvinden-ved-havet\r\n/boeger/den-ensomme-gourmet\r\n/boeger/hor-vinden-synge-flipperspil-1973\r\n/boeger/den-smalle-vej-til-det-dybe-nord\r\n/boeger/maend-uden-kvinder-0\r\n/boeger/tidens-vaesen\r\n/boeger/solens-aermer\r\n/boeger/jacob-de-zoets-tusind-efterar\r\n/boeger/den-farvelose-tsukuru-tazakis-pilgrimsar\r\n/boeger/hardboiled-wonderland-og-verdens-ende\r\n/boeger/og-vi-kom-over-havet\r\n/boeger/senseis-mappe\r\n/boeger/kaiken\r\n/boeger/1q84-bog-3\r\n/boeger/1q84-bog-2\r\n/boeger/1q84-bog-1\r\n/boeger/nagasaki\r\n/boeger/hotellet-pa-hjornet-af-bitter-og-sod\r\n/boeger/skyggefamilie\r\n/boeger/i-misosuppen\r\n/boeger/tokyo-min-elskede\r\n/boeger/ude-0\r\n/boeger/det-rene-land\r\n/boeger/skyggelandet-0\r\n/boeger/spurvenes-sky\r\n/boeger/mit-liv-som-geisha"
     negate: false
     context_mapping: {  }

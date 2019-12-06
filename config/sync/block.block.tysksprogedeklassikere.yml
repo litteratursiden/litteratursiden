@@ -12,7 +12,7 @@ dependencies:
 id: tysksprogedeklassikere
 theme: litteratursiden
 region: content
-weight: 701
+weight: 825
 provider: null
 plugin: 'block_content:6c0dc6b4-8c17-4e04-b902-ce612fc9314a'
 settings:

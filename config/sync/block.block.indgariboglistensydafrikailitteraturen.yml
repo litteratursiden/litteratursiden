@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensydafrikailitteraturen
 theme: litteratursiden
 region: content
-weight: 136
+weight: 289
 provider: null
 plugin: 'block_content:853682ac-66ea-46b2-b76b-5437721f233c'
 settings:

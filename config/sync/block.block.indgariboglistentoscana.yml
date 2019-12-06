@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentoscana
 theme: litteratursiden
 region: content
-weight: 206
+weight: 355
 provider: null
 plugin: 'block_content:d1ed101d-59f3-48c9-b853-4b187e17162d'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: bragenderomandebuter
 theme: litteratursiden
 region: content
-weight: 398
+weight: 542
 provider: null
 plugin: 'block_content:35284c4a-e06e-451e-99f2-dd9201655e9e'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /temaer/danske-debutanter-2017-2018
+    pages: "/temaer/danske-debutanter-2017-2018\r\n/temaer/arets-danske-debutanter-2018-2019"
     negate: false
     context_mapping: {  }

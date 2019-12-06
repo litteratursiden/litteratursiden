@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfolkeskolenilitteraturen
 theme: litteratursiden
 region: content
-weight: 450
+weight: 597
 provider: null
 plugin: 'block_content:6825b1f7-9fa9-4285-bb15-73a1b32defd9'
 settings:

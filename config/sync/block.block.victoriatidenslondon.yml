@@ -12,7 +12,7 @@ dependencies:
 id: victoriatidenslondon
 theme: litteratursiden
 region: content
-weight: 764
+weight: 893
 provider: null
 plugin: 'block_content:748d7782-3b3e-4ec1-9fa6-a46b25a1c36b'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkomponister
 theme: litteratursiden
 region: content
-weight: 530
+weight: 672
 provider: null
 plugin: 'block_content:9876c4de-9282-4bfe-963f-1fe45077ba85'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/hr-mozart-vagner-op\r\n/boeger/g-mol-balladen\r\n/boeger/solen-mellem-tyrens-horn\r\n/boeger/fugt-din-aske\r\n/boeger/sibelius\r\n/boeger/lille-wienervals\r\n/boeger/kald-mig-liva\r\n/boeger/praeludier\r\n/boeger/constanze-mozart\r\n/boeger/syv-splinter-til-en-mosaik\r\n/boeger/i-brogede-blades-vand\r\n/boeger/spurvens-sang\r\n/boeger/symphonie-pathetique\r\n/boeger/musikken-og-kaerligheden-er-sjaelens-vinger\r\n/boeger/hildegard-0\r\n/boeger/hildegard-ii\r\n/boeger/lili\r\n/boeger/nar-solen-er-begravet\r\n/boeger/ungdom-og-galskab\r\n"
+    pages: "/boeger/hr-mozart-vagner-op\r\n/boeger/en-lille-bog-om-opera\r\n/boeger/richard-wagners-nibelungens-ring\r\n/boeger/g-mol-balladen\r\n/boeger/solen-mellem-tyrens-horn\r\n/boeger/fugt-din-aske\r\n/boeger/sibelius\r\n/boeger/lille-wienervals\r\n/boeger/kald-mig-liva\r\n/boeger/praeludier\r\n/boeger/constanze-mozart\r\n/boeger/syv-splinter-til-en-mosaik\r\n/boeger/i-brogede-blades-vand\r\n/boeger/spurvens-sang\r\n/boeger/symphonie-pathetique\r\n/boeger/musikken-og-kaerligheden-er-sjaelens-vinger\r\n/boeger/hildegard-0\r\n/boeger/hildegard-ii\r\n/boeger/lili\r\n/boeger/nar-solen-er-begravet\r\n/boeger/ungdom-og-galskab\r\n"
     negate: false
     context_mapping: {  }

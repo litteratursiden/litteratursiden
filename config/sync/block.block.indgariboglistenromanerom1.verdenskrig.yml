@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenromanerom1.verdenskrig
 theme: litteratursiden
 region: content
-weight: 111
+weight: 263
 provider: null
 plugin: 'block_content:d2ef11ad-113e-49c9-af45-46a5aa273d62'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/erna-i-krig\r\n/boeger/vi-ses-deroppe\r\n/boeger/den-gode-soldat-svejks-eventyr\r\n/boeger/farvel-til-vabnene\r\n/boeger/fandens-til-krig\r\n/boeger/som-sne-i-solen\r\n/boeger/thode\r\n/boeger/gra-sjaele\r\n/boeger/spionen-1\r\n/boeger/fugle-uden-vinger\r\n/boeger/zennor-i-morke\r\n/boeger/men-fuglene-synger-alligevel\r\n/boeger/pa-denne-side-af-paradis\r\n/boeger/giganternes-fald\r\n/boeger/regeneration\r\n/boeger/tro-tjeneste\r\n/boeger/en-lang-forlovelse\r\n/boeger/kejserhogen\r\n/boeger/vent-pa-mig-marie\r\n/boeger/i-stalstormen\r\n/boeger/nar-retsind-forer-ordet\r\n/boeger/ashenden\r\n/boeger/fire-soldater\r\n/boeger/spejlkassen\r\n/boeger/gavrilo-princip\r\n/boeger/intet-nyt-fra-vestfronten\r\n/boeger/i-skyggen-af-en-krig\r\n/boeger/men-himlen-lukker-sine-ojne\r\n/boeger/pigen-og-soldaten\r\n/boeger/knacker\r\n/boeger/skyttegravskrigen\r\n/boeger/levende-model\r\n/boeger/mrs-dalloway\r\n/boeger/soldat-varlot\r\n/boeger/enkeland-roman\r\n/boeger/og-alt-blev-stille"
+    pages: "/boeger/erna-i-krig\r\n/boeger/de-forsvundne-roser-roman\r\n/boeger/vi-ses-deroppe\r\n/boeger/den-gode-soldat-svejks-eventyr\r\n/boeger/farvel-til-vabnene\r\n/boeger/fandens-til-krig\r\n/boeger/som-sne-i-solen\r\n/boeger/thode\r\n/boeger/gra-sjaele\r\n/boeger/spionen-1\r\n/boeger/fugle-uden-vinger\r\n/boeger/zennor-i-morke\r\n/boeger/men-fuglene-synger-alligevel\r\n/boeger/pa-denne-side-af-paradis\r\n/boeger/giganternes-fald\r\n/boeger/regeneration\r\n/boeger/tro-tjeneste\r\n/boeger/en-lang-forlovelse\r\n/boeger/kejserhogen\r\n/boeger/vent-pa-mig-marie\r\n/boeger/i-stalstormen\r\n/boeger/nar-retsind-forer-ordet\r\n/boeger/ashenden\r\n/boeger/fire-soldater\r\n/boeger/spejlkassen\r\n/boeger/gavrilo-princip\r\n/boeger/intet-nyt-fra-vestfronten\r\n/boeger/i-skyggen-af-en-krig\r\n/boeger/men-himlen-lukker-sine-ojne\r\n/boeger/pigen-og-soldaten\r\n/boeger/knacker\r\n/boeger/skyttegravskrigen\r\n/boeger/levende-model\r\n/boeger/mrs-dalloway\r\n/boeger/soldat-varlot\r\n/boeger/enkeland-roman\r\n/boeger/og-alt-blev-stille"
     negate: false
     context_mapping: {  }

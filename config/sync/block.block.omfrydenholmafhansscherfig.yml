@@ -12,7 +12,7 @@ dependencies:
 id: omfrydenholmafhansscherfig
 theme: litteratursiden
 region: content
-weight: 867
+weight: 996
 provider: null
 plugin: 'block_content:d088e466-e6c0-491c-ac16-0772eca0cf65'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenminyndlingsklassiker
 theme: litteratursiden
 region: content
-weight: 575
+weight: 707
 provider: null
 plugin: 'block_content:96c2f9fd-df35-45b0-a61d-1bc66f48f83a'
 settings:

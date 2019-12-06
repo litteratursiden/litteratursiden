@@ -12,7 +12,7 @@ dependencies:
 id: tresporisamtidigfransksprogetlitteratur
 theme: litteratursiden
 region: content
-weight: 348
+weight: 492
 provider: null
 plugin: 'block_content:a759b8f0-7284-418a-b537-e78ec40e9d36'
 settings:

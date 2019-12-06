@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenirskestemmer
 theme: litteratursiden
 region: content
-weight: 497
+weight: 640
 provider: null
 plugin: 'block_content:76622e32-cb51-4451-92e7-a092f678460a'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/havet-0\r\n/boeger/normale-mennesker\r\n/boeger/vaelde-vokse-vakle-visne\r\n/boeger/samtaler-med-venner\r\n/boeger/cyril-averys-hjerte\r\n/boeger/dage-pa-stone-house-hotel\r\n/boeger/laesning-i-morke\r\n/boeger/underet\r\n/boeger/commitments\r\n/boeger/kvinden-der-gik-ind-i-dore\r\n/boeger/paula-spencer\r\n/boeger/paddy-clarke-ha-ha-ha\r\n/boeger/en-stjerne-ved-navn-henry\r\n/boeger/et-anderledes-liv-0\r\n/boeger/den-gronne-vej-0\r\n/boeger/sammenkomsten\r\n/boeger/sang-til-en-rakkerdreng\r\n/boeger/hjemve-0\r\n/boeger/gang-pa-gang\r\n/boeger/gode-manerer\r\n/boeger/slagterdrengen\r\n/boeger/angelas-aske\r\n/boeger/pearls-mor\r\n/boeger/sweeny-i-traeerne\r\n/boeger/desperados\r\n/boeger/havets-stjerne\r\n/boeger/manden-pa-oen\r\n/boeger/rust\r\n/boeger/hvis-dublin-var-en-kvinde-ville-jeg-gifte-mig-med-hende\r\n/boeger/tavshedens-pris-0\r\n/boeger/heden-i-flammer\r\n/boeger/nora-webster\r\n/boeger/fire-kaerlighedsbreve\r\n/boeger/eureka-street\r\n/boeger/skinhellige-herligheder"
+    pages: "/boeger/havet-0\r\n/lister/dublin-i-litteraturen\r\n/boeger/normale-mennesker\r\n/boeger/vaelde-vokse-vakle-visne\r\n/boeger/samtaler-med-venner\r\n/boeger/cyril-averys-hjerte\r\n/boeger/dage-pa-stone-house-hotel\r\n/boeger/laesning-i-morke\r\n/boeger/underet\r\n/boeger/commitments\r\n/boeger/kvinden-der-gik-ind-i-dore\r\n/boeger/paula-spencer\r\n/boeger/paddy-clarke-ha-ha-ha\r\n/boeger/en-stjerne-ved-navn-henry\r\n/boeger/et-anderledes-liv-0\r\n/boeger/den-gronne-vej-0\r\n/boeger/sammenkomsten\r\n/boeger/sang-til-en-rakkerdreng\r\n/boeger/hjemve-0\r\n/boeger/gang-pa-gang\r\n/boeger/gode-manerer\r\n/boeger/slagterdrengen\r\n/boeger/angelas-aske\r\n/boeger/pearls-mor\r\n/boeger/sweeny-i-traeerne\r\n/boeger/desperados\r\n/boeger/havets-stjerne\r\n/boeger/manden-pa-oen\r\n/boeger/rust\r\n/boeger/hvis-dublin-var-en-kvinde-ville-jeg-gifte-mig-med-hende\r\n/boeger/tavshedens-pris-0\r\n/boeger/heden-i-flammer\r\n/boeger/nora-webster\r\n/boeger/fire-kaerlighedsbreve\r\n/boeger/eureka-street\r\n/boeger/skinhellige-herligheder\r\n/boeger/linje-tradt-af-trin\r\n"
     negate: false
     context_mapping: {  }

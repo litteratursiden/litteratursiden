@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraetdanturell
 theme: litteratursiden
 region: content
-weight: 346
+weight: 490
 provider: null
 plugin: 'block_content:215fed43-f86a-41d4-9805-702813182f72'
 settings:

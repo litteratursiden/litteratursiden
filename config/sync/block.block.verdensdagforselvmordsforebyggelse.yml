@@ -12,7 +12,7 @@ dependencies:
 id: verdensdagforselvmordsforebyggelse
 theme: litteratursiden
 region: content
-weight: 276
+weight: 424
 provider: null
 plugin: 'block_content:348e87d9-95b0-48ac-ae2d-fb5b372320f2'
 settings:

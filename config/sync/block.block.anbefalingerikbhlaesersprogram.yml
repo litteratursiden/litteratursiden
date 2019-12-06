@@ -13,7 +13,7 @@ dependencies:
 id: anbefalingerikbhlaesersprogram
 theme: litteratursiden
 region: content
-weight: 54
+weight: 1017
 provider: null
 plugin: 'block_content:542ea826-df15-4806-8482-6361f0bcb4ef'
 settings:

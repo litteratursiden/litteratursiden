@@ -12,7 +12,7 @@ dependencies:
 id: nyesteanalyser_4
 theme: litteratursiden
 region: content
-weight: 372
+weight: 516
 provider: null
 plugin: 'block_content:96827e03-d1e7-481d-a512-1213b5a01ab3'
 settings:

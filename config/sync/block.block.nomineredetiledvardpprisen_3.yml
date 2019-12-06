@@ -12,7 +12,7 @@ dependencies:
 id: nomineredetiledvardpprisen_3
 theme: litteratursiden
 region: content
-weight: 320
+weight: 464
 provider: null
 plugin: 'block_content:302d18db-522b-4e72-9da1-4930ad4cf937'
 settings:

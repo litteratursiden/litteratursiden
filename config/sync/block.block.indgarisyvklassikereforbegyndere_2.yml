@@ -12,7 +12,7 @@ dependencies:
 id: indgarisyvklassikereforbegyndere_2
 theme: litteratursiden
 region: content
-weight: 37
+weight: 910
 provider: null
 plugin: 'block_content:0a6f46d2-c087-4988-941e-6c276a3bdf6f'
 settings:

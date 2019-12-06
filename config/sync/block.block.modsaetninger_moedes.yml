@@ -12,7 +12,7 @@ dependencies:
 id: modsaetninger_moedes
 theme: litteratursiden
 region: content
-weight: 749
+weight: 878
 provider: null
 plugin: 'block_content:2ccac10f-c8a2-426a-b016-2ed470bc8156'
 settings:

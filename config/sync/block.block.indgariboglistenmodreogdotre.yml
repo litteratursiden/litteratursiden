@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmodreogdotre
 theme: litteratursiden
 region: content
-weight: 581
+weight: 713
 provider: null
 plugin: 'block_content:420f6bd4-9c8f-434a-8af8-33c4cd4c800b'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/mit-navn-er-lucy-barton\r\n/boeger/den-der-lever-stille\r\n/lister/modre-og-dotre\r\n/boeger/de\r\n/boeger/det-var-os\r\n/boeger/voldsomme-band-af-vivian-gornick\r\n/boeger/alle-veje-forer-til-mor\r\n/boeger/modre-og-dotre\r\n/boeger/folelsesmaessigt-saer\r\n/boeger/modre-dotre-sostre\r\n/boeger/sortedam\r\n/boeger/ulvetimen\r\n/boeger/mig-og-min-datter\r\n/boeger/insekt\r\n/boeger/voksentid\r\n/boeger/evigheden-er-med-os\r\n/boeger/staekkede-vinger\r\n/boeger/hundens-orer\r\n/boeger/felicia-forsvandt\r\n/boeger/hvid-nerie\r\n/boeger/stilhed-0\r\n/boeger/den-hemmelige-datter\r\n/boeger/fire-dage-i-marts\r\n/boeger/drengen-pa-stentrappen\r\n/boeger/brunstkalenderen\r\n/boeger/sommeroen-0\r\n/boeger/chokoladeheksen\r\n/boeger/fodselsdagen-0\r\n/boeger/bornene\r\n/boeger/mormors-meriter\r\n/boeger/handbog-ravnemodre\r\n/boeger/eventuelle-parorende\r\n/boeger/tre-kvinder-0\r\n/boeger/arseniktarnet\r\n/boeger/den-nogne-mur\r\n/boeger/manens-skygge\r\n/boeger/hvor-blev-du-af-bernadette\r\n/boeger/noras-tredje-alder\r\n/boeger/benbrudslaegens-datter\r\n/boeger/iris-og-ruby\r\n/boeger/sne-pa-hendes-ansigt\r\n/boeger/mod-uret\r\n/boeger/johanna-fra-smaland\r\n/boeger/kvinderne-i-klithuset"
+    pages: "/boeger/mit-navn-er-lucy-barton\r\n/boeger/den-der-lever-stille\r\n/boeger/de\r\n/boeger/det-var-os\r\n/boeger/voldsomme-band-af-vivian-gornick\r\n/boeger/alle-veje-forer-til-mor\r\n/boeger/modre-og-dotre\r\n/boeger/folelsesmaessigt-saer\r\n/boeger/modre-dotre-sostre\r\n/boeger/sortedam\r\n/boeger/ulvetimen\r\n/boeger/mig-og-min-datter\r\n/boeger/insekt\r\n/boeger/voksentid\r\n/boeger/evigheden-er-med-os\r\n/boeger/staekkede-vinger\r\n/boeger/hundens-orer\r\n/boeger/felicia-forsvandt\r\n/boeger/hvid-nerie\r\n/boeger/stilhed-0\r\n/boeger/den-hemmelige-datter\r\n/boeger/fire-dage-i-marts\r\n/boeger/drengen-pa-stentrappen\r\n/boeger/brunstkalenderen\r\n/boeger/sommeroen-0\r\n/boeger/chokoladeheksen\r\n/boeger/fodselsdagen-0\r\n/boeger/bornene\r\n/boeger/mormors-meriter\r\n/boeger/handbog-ravnemodre\r\n/boeger/eventuelle-parorende\r\n/boeger/tre-kvinder-0\r\n/boeger/arseniktarnet\r\n/boeger/den-nogne-mur\r\n/boeger/manens-skygge\r\n/boeger/hvor-blev-du-af-bernadette\r\n/boeger/noras-tredje-alder\r\n/boeger/benbrudslaegens-datter\r\n/boeger/iris-og-ruby\r\n/boeger/sne-pa-hendes-ansigt\r\n/boeger/mod-uret\r\n/boeger/johanna-fra-smaland\r\n/boeger/kvinderne-i-klithuset"
     negate: false
     context_mapping: {  }

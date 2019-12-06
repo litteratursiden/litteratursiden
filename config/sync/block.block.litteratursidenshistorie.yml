@@ -1,6 +1,6 @@
 uuid: d75ec7d1-ab09-4171-8b2c-6fc9c78c08e5
 langcode: da
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:spot:f6b6ddcb-568e-4f7d-ba70-ea8105409d5f'
@@ -12,7 +12,7 @@ dependencies:
 id: litteratursidenshistorie
 theme: litteratursiden
 region: content
-weight: 902
+weight: 1093
 provider: null
 plugin: 'block_content:f6b6ddcb-568e-4f7d-ba70-ea8105409d5f'
 settings:

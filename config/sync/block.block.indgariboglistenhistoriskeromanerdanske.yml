@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhistoriskeromanerdanske
 theme: litteratursiden
 region: content
-weight: 483
+weight: 625
 provider: null
 plugin: 'block_content:d32d06df-9eab-4f7a-af66-dcefb5134ddb'
 settings:

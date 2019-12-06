@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedjensandersen
 theme: litteratursiden
 region: content
-weight: 62
+weight: 175
 provider: null
 plugin: 'block_content:60a6c2dd-72af-4ac3-99bb-64eb6e97f982'
 settings:

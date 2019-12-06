@@ -1,9 +1,9 @@
-uuid: e52d4537-9677-431c-9d25-7b357e71c044
+uuid: d647a8e4-2a62-4285-94fc-18c54a27d6a0
 langcode: da
 status: true
 dependencies:
   content:
-    - 'block_content:content_carousel:f33d103c-9fcc-4954-828e-0652c943ac90'
+    - 'block_content:content_carousel:7cf63d94-7991-4da2-8001-ae4fc3576948'
   module:
     - block_content
     - system
@@ -12,12 +12,12 @@ dependencies:
 id: destoreforfattere
 theme: litteratursiden
 region: content
-weight: 769
+weight: 76
 provider: null
-plugin: 'block_content:f33d103c-9fcc-4954-828e-0652c943ac90'
+plugin: 'block_content:7cf63d94-7991-4da2-8001-ae4fc3576948'
 settings:
-  id: 'block_content:f33d103c-9fcc-4954-828e-0652c943ac90'
-  label: 'De store forfattere '
+  id: 'block_content:7cf63d94-7991-4da2-8001-ae4fc3576948'
+  label: 'De store forfattere'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /artikler/de-store-forfattere-klassikerne
+    pages: "/artikler/de-store-forfattere-klassikerne\r\n/temaer/med-andres-ord"
     negate: false
     context_mapping: {  }

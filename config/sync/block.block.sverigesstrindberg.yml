@@ -12,7 +12,7 @@ dependencies:
 id: sverigesstrindberg
 theme: litteratursiden
 region: content
-weight: 629
+weight: 753
 provider: null
 plugin: 'block_content:f3aa0149-8792-4ebb-aa26-b016b2d15e5b'
 settings:

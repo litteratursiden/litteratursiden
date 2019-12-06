@@ -12,7 +12,7 @@ dependencies:
 id: 12godebogertilde913arigetweens
 theme: litteratursiden
 region: content
-weight: 75
+weight: 12
 provider: null
 plugin: 'block_content:f9711977-f6d8-4792-9dcd-f431258265bc'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /books
+    pages: "/books\r\n/artikler/kulturministeriets-forfatter-og-illustratorpris-borne-og-ungdomsboger"
     negate: false
     context_mapping: {  }

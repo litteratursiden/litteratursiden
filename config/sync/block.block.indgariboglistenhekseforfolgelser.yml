@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenhekseforfolgelser
 theme: litteratursiden
 region: content
-weight: 479
+weight: 621
 provider: null
 plugin: 'block_content:1db94adb-aab4-4cc8-b69e-3cadd5ba2e04'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: seogsaforfatterthomasinegyllembourg
 theme: litteratursiden
 region: content
-weight: 84
+weight: 203
 provider: null
 plugin: 'block_content:09e2df84-c2c0-4941-aac5-33b4f935db79'
 settings:

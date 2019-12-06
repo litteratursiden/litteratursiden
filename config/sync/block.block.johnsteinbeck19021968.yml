@@ -12,7 +12,7 @@ dependencies:
 id: johnsteinbeck19021968
 theme: litteratursiden
 region: content
-weight: 261
+weight: 411
 provider: null
 plugin: 'block_content:b8c3260b-e3fd-4237-8684-4b4dcc38e98d'
 settings:

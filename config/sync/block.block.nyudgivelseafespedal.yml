@@ -12,7 +12,7 @@ dependencies:
 id: nyudgivelseafespedal
 theme: litteratursiden
 region: content
-weight: 970
+weight: 1113
 provider: null
 plugin: 'block_content:bd094e85-c0cf-48c1-9a94-1d50fdbf50e0'
 settings:

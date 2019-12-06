@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraethenrikpontoppidan_2
 theme: litteratursiden
 region: content
-weight: 298
+weight: 443
 provider: null
 plugin: 'block_content:20a30bb1-b082-4946-9f62-09495d1a640c'
 settings:

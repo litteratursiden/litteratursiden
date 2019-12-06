@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensciencefictionudenlandsk
 theme: litteratursiden
 region: content
-weight: 176
+weight: 326
 provider: null
 plugin: 'block_content:e0693748-bf83-411d-b466-270981d803c6'
 settings:

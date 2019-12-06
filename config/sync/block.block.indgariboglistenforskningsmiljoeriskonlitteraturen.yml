@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenforskningsmiljoeriskonlitteraturen
 theme: litteratursiden
 region: content
-weight: 453
+weight: 599
 provider: null
 plugin: 'block_content:f8424865-cee3-4b4d-93f1-937b1d81c434'
 settings:

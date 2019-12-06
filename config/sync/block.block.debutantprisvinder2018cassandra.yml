@@ -12,7 +12,7 @@ dependencies:
 id: debutantprisvinder2018cassandra
 theme: litteratursiden
 region: content
-weight: 272
+weight: 420
 provider: null
 plugin: 'block_content:18e0b10f-8ae7-46b0-9e97-74ed5a8082bb'
 settings:

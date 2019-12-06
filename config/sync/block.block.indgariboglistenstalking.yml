@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenstalking
 theme: litteratursiden
 region: content
-weight: 118
+weight: 272
 provider: null
 plugin: 'block_content:2d14bafe-29b6-48a6-8643-e9b541c7b9a1'
 settings:

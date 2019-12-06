@@ -12,7 +12,7 @@ dependencies:
 id: nyeislandskefortaellinger
 theme: litteratursiden
 region: content
-weight: 820
+weight: 144
 provider: null
 plugin: 'block_content:252b0b8e-6848-43b5-a85d-70ce38a9ac11'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /lister/islandsk-litteratur
+    pages: "/blogs/lise-vandborg/livsbekraeftende-roman-far-nordisk-rads-litteraturpris\r\n/artikler/saga-landets-naturlige-rigdomme-og-forbandelser\r\n/artikler/hvorfor-er-der-sa-mange-forfattere-pa-island\r\n/artikler/staerke-kvinder-og-marginaliserede-maend-i-nyere-islandsk-litteratur\r\n/lister/islandsk-litteratur"
     negate: false
     context_mapping: {  }

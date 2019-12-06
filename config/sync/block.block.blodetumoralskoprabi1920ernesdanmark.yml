@@ -12,7 +12,7 @@ dependencies:
 id: blodetumoralskoprabi1920ernesdanmark
 theme: litteratursiden
 region: content
-weight: 252
+weight: 403
 provider: null
 plugin: 'block_content:dc859c22-bfbc-43c4-9d27-d2d24d744f4d'
 settings:

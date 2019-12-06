@@ -12,7 +12,7 @@ dependencies:
 id: somenlilleormiaeblet
 theme: litteratursiden
 region: content
-weight: 285
+weight: 432
 provider: null
 plugin: 'block_content:099c026b-b214-4fdc-a8d7-5dbf35e028cc'
 settings:

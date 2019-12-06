@@ -12,7 +12,7 @@ dependencies:
 id: flereklassikere
 theme: litteratursiden
 region: content
-weight: 340
+weight: 484
 provider: null
 plugin: 'block_content:d5239f53-48f4-4ade-8ea9-b4d783a6a6bd'
 settings:

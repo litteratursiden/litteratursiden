@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenanalyserfra1920erne
 theme: litteratursiden
 region: content
-weight: 796
+weight: 921
 provider: null
 plugin: 'block_content:42b584ec-aba4-4c9e-80a4-3100207ec05e'
 settings:

@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistendanskeslaegtsromaner
 theme: litteratursiden
 region: content
-weight: 400
+weight: 42
 provider: null
 plugin: 'block_content:178d41c2-eec1-4350-bbda-8df40286ca4b'
 settings:
   id: 'block_content:178d41c2-eec1-4350-bbda-8df40286ca4b'
-  label: 'Indgår i boglisten: Danske slægtsromaner'
+  label: 'Danske slægtsromaner'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/om-hundrede-ar\r\n/boeger/kvinderne-fra-thy\r\n/boeger/i-dine-ojne\r\n/boeger/hvor-der-er-fugle\r\n/boeger/vi-kunne-alt\r\n/boeger/johns-saga\r\n/boeger/hvor-der-er-fugle\r\n/boeger/aeg\r\n/boeger/folkets-skonhed\r\n/boeger/christas-forlovelser\r\n/boeger/abelone-pa-bangsbo\r\n/boeger/desertorerne-0\r\n/boeger/vi-de-druknede\r\n/boeger/apropos-opa\r\n/boeger/familien-bruchfontane\r\n/boeger/en-engel-bag-oret\r\n/boeger/stella-0\r\n/boeger/mindet\r\n/boeger/krigens-tid-0\r\n/boeger/i-min-tid-0\r\n/boeger/indretningen\r\n/boeger/den-ottende-bonde\r\n/boeger/fata-morgana-0\r\n/boeger/seje-slaegter\r\n/boeger/illa-isabella-roman-om-et-hus-en-familie-og-en-kvinde\r\n/boeger/vent-pa-mig-marie-0\r\n/boeger/juttas-ar\r\n/boeger/kviksand-0\r\n/boeger/den-amerikanske-somand\r\n/boeger/stalbandagen\r\n/boeger/serafia\r\n/boeger/burgundia\r\n/boeger/fortielse\r\n/boeger/appelsinaeblet\r\n/boeger/stromme\r\n/boeger/regnskab\r\n/boeger/hundehoved\r\n/boeger/understromme\r\n/boeger/alle-dage-kommer\r\n/boeger/kastebold\r\n/boeger/maerkedage\r\n/boeger/forlad-os-vor-skyld-0\r\n/boeger/som-dagene-er\r\n/boeger/efterladt-2\r\n/boeger/vesten-mane\r\n/boeger/udlaengsel"
+    pages: "/boeger/om-hundrede-ar\r\n/boeger/en-lykkelig-slutning\r\n/boeger/kvinderne-fra-thy\r\n/boeger/i-dine-ojne\r\n/boeger/hvor-der-er-fugle\r\n/boeger/vi-kunne-alt\r\n/boeger/sostrene-fra-thy-roman\r\n/boeger/johns-saga\r\n/boeger/hvor-der-er-fugle\r\n/boeger/aeg\r\n/boeger/folkets-skonhed\r\n/boeger/christas-forlovelser\r\n/boeger/abelone-pa-bangsbo\r\n/boeger/desertorerne-0\r\n/boeger/vi-de-druknede\r\n/boeger/apropos-opa\r\n/boeger/familien-bruchfontane\r\n/boeger/en-engel-bag-oret\r\n/boeger/stella-0\r\n/boeger/mindet\r\n/boeger/krigens-tid-0\r\n/boeger/i-min-tid-0\r\n/boeger/indretningen\r\n/boeger/den-ottende-bonde\r\n/boeger/fata-morgana-0\r\n/boeger/seje-slaegter\r\n/boeger/illa-isabella-roman-om-et-hus-en-familie-og-en-kvinde\r\n/boeger/vent-pa-mig-marie-0\r\n/boeger/juttas-ar\r\n/boeger/kviksand-0\r\n/boeger/den-amerikanske-somand\r\n/boeger/stalbandagen\r\n/boeger/serafia\r\n/boeger/burgundia\r\n/boeger/fortielse\r\n/boeger/appelsinaeblet\r\n/boeger/stromme\r\n/boeger/regnskab\r\n/boeger/hundehoved\r\n/boeger/understromme\r\n/boeger/alle-dage-kommer\r\n/boeger/kastebold\r\n/boeger/maerkedage\r\n/boeger/forlad-os-vor-skyld-0\r\n/boeger/som-dagene-er\r\n/boeger/efterladt-2\r\n/boeger/vesten-mane\r\n/boeger/udlaengsel"
     negate: false
     context_mapping: {  }

@@ -12,7 +12,7 @@ dependencies:
 id: kierkegaardoglivetsmorkesider
 theme: litteratursiden
 region: content
-weight: 748
+weight: 875
 provider: null
 plugin: 'block_content:84677e5d-591c-47bd-b85e-dc08462dcd6e'
 settings:

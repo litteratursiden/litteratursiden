@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenreligion
 theme: litteratursiden
 region: content
-weight: 148
+weight: 301
 provider: null
 plugin: 'block_content:ea066912-da9d-4c5d-b0e3-3ab5ccb18532'
 settings:

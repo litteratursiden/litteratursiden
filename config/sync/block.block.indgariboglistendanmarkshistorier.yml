@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanmarkshistorier
 theme: litteratursiden
 region: content
-weight: 86
+weight: 210
 provider: null
 plugin: 'block_content:9559aaf9-c19b-4621-b61d-7027b29c6e75'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/jyske-lov\r\n/boeger/saedelighedsfejden\r\n/boeger/svenskekrigene\r\n/boeger/svenskekrigene\r\n/boeger/dannebrog\r\n/boeger/rigets-runer\r\n/boeger/saxo"
+    pages: "/boeger/jyske-lov\r\n/boeger/saedelighedsfejden\r\n/boeger/svenskekrigene\r\n/boeger/svenskekrigene\r\n/boeger/dannebrog\r\n/boeger/rigets-runer\r\n/boeger/saxo\r\n/boeger/fisk-til-folket\r\n/boeger/jodefejden\r\n/boeger/cementen\r\n/boeger/genforeningen-1920"
     negate: false
     context_mapping: {  }

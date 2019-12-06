@@ -12,7 +12,7 @@ dependencies:
 id: erotiskeforfatterelaesdeuomgaengelige
 theme: litteratursiden
 region: content
-weight: 334
+weight: 478
 provider: null
 plugin: 'block_content:5e7c0076-c47b-4972-a0d6-43dbc7876f93'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: fantasyfestivalmodbla.disseforfattere
 theme: litteratursiden
 region: content
-weight: 275
+weight: 423
 provider: null
 plugin: 'block_content:40658239-8769-4857-9413-bf465f8581ad'
 settings:

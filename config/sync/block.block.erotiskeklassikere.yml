@@ -12,7 +12,7 @@ dependencies:
 id: erotiskeklassikere
 theme: litteratursiden
 region: content
-weight: 36
+weight: 156
 provider: null
 plugin: 'block_content:82d7f859-9b78-45f4-ad5c-27eafc420888'
 settings:

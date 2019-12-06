@@ -12,7 +12,7 @@ dependencies:
 id: klimakriseibornehojde
 theme: litteratursiden
 region: content
-weight: 846
+weight: 976
 provider: null
 plugin: 'block_content:4f54490c-378e-4ae8-91d8-1a5c0863827b'
 settings:

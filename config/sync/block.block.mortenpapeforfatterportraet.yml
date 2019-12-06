@@ -12,12 +12,12 @@ dependencies:
 id: mortenpapeforfatterportraet
 theme: litteratursiden
 region: content
-weight: 597
+weight: 131
 provider: null
 plugin: 'block_content:f5faed8f-1d2b-4a1d-97fc-77cdb1e59fd5'
 settings:
   id: 'block_content:f5faed8f-1d2b-4a1d-97fc-77cdb1e59fd5'
-  label: 'Morten Pape - forfatterportræt'
+  label: 'Vinder af DR Romanprisen 2019'
   provider: block_content
   label_display: '0'
   status: true

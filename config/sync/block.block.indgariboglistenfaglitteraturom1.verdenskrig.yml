@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenfaglitteraturom1.verdenskrig
 theme: litteratursiden
 region: content
-weight: 433
+weight: 577
 provider: null
 plugin: 'block_content:5c2bb240-23fa-4d8e-9e3c-60e4d73d2cb0'
 settings:

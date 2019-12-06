@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentysksprogedeklassikere
 theme: litteratursiden
 region: content
-weight: 207
+weight: 356
 provider: null
 plugin: 'block_content:d959f137-9b95-43b2-b677-fc72ae2883c5'
 settings:

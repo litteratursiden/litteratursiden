@@ -12,7 +12,7 @@ dependencies:
 id: kvinderollerkvindensomforfatter
 theme: litteratursiden
 region: content
-weight: 158
+weight: 311
 provider: null
 plugin: 'block_content:37b38633-719d-4368-8ce2-92e5f13c7172'
 settings:

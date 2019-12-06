@@ -12,7 +12,7 @@ dependencies:
 id: digitallitteraturogcomputerensomlitteraermaskine
 theme: litteratursiden
 region: content
-weight: 751
+weight: 880
 provider: null
 plugin: 'block_content:27d2563a-9136-435a-97ac-d26eacf1d6c0'
 settings:

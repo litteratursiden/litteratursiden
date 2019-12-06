@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraeth.candersen
 theme: litteratursiden
 region: content
-weight: 349
+weight: 493
 provider: null
 plugin: 'block_content:cc627a64-8e66-4ede-a0ee-85fb58af822a'
 settings:

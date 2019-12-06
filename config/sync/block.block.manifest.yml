@@ -12,7 +12,7 @@ dependencies:
 id: manifest
 theme: litteratursiden
 region: content
-weight: 913
+weight: 1041
 provider: null
 plugin: 'block_content:054e2d78-7cf6-490b-b624-ed0efca513b6'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: solsorteflojtibombekrateret.ommrs.dallowayogtimerne
 theme: litteratursiden
 region: content
-weight: 745
+weight: 872
 provider: null
 plugin: 'block_content:acad10dd-8af3-4178-95ca-dcf8bb572247'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: orlaprisen
 theme: litteratursiden
 region: content
-weight: 412
+weight: 554
 provider: null
 plugin: 'block_content:652a47e5-52a6-4923-a160-54303c9a581a'
 settings:

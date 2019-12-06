@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenspilleromaner
 theme: litteratursiden
 region: content
-weight: 155
+weight: 308
 provider: null
 plugin: 'block_content:f684b44d-8f5a-4a5a-82de-cffef7b20c9c'
 settings:

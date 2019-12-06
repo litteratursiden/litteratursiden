@@ -12,7 +12,7 @@ dependencies:
 id: interviewmednielswiumolesen
 theme: litteratursiden
 region: content
-weight: 933
+weight: 1061
 provider: null
 plugin: 'block_content:a5d337db-d645-4b4c-8bcf-6653634370e9'
 settings:

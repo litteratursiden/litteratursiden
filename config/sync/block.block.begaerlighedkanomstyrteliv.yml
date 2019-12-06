@@ -12,7 +12,7 @@ dependencies:
 id: begaerlighedkanomstyrteliv
 theme: litteratursiden
 region: content
-weight: 50
+weight: 164
 provider: null
 plugin: 'block_content:53904d76-dd64-4766-ab69-23d76e3c1ea5'
 settings:

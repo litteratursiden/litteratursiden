@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistennyeudenlandskenoveller
 theme: litteratursiden
 region: content
-weight: 260
+weight: 122
 provider: null
 plugin: 'block_content:bf032604-b90f-4efc-968f-f25483a64a06'
 settings:
   id: 'block_content:bf032604-b90f-4efc-968f-f25483a64a06'
-  label: 'Indgår i boglisten: Nye udenlandske noveller'
+  label: 'Nye udenlandske noveller'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/det-du-har-om-halsen\r\n/boeger/fuglene-under-himlen\r\n/boeger/bokserhunde-i-alle-farver-fortaellinger-fra-egypten\r\n/boeger/puls-0\r\n/boeger/den-lille-sorte-bog\r\n/boeger/den-trettende-kvinde\r\n/boeger/englen-esmeralda\r\n/boeger/dengang-jeg-kobte-en-fiskestang-til-min-bedstefar\r\n/boeger/valeyri-valsen\r\n/boeger/mellem-traeerne\r\n/boeger/kun-stemmen-bliver-tilbage\r\n/boeger/alice\r\n/boeger/nocturner-fem-fortaellinger-om-musik-og-skumring\r\n/boeger/grand-mal\r\n/boeger/masken-0\r\n/boeger/den-herrelose-ridder\r\n/boeger/natten-lysene-volden\r\n/boeger/meget-lykke\r\n/boeger/livet\r\n/boeger/offentlige-hemmeligheder\r\n/boeger/efter-skaelvet\r\n/boeger/fra-doktor-klimkes-horisont\r\n/boeger/sulebulen\r\n/boeger/mellem-venner-3\r\n/boeger/brokeback-mountain-0\r\n/boeger/historien-om-fru-berg\r\n/boeger/leviathan-og-andre-fortaellinger\r\n/boeger/tiende-december\r\n/boeger/skyld-0\r\n/boeger/fortaelling-om-et-selvmord\r\n/boeger/efter-tusind-ars-fromme-bonner"
+    pages: "/boeger/vittigheder-til-krigerne\r\n/boeger/det-du-har-om-halsen\r\n/boeger/florida\r\n/boeger/kattemenneske-og-andre-fortaellinger\r\n/boeger/fuglene-under-himlen\r\n/boeger/bokserhunde-i-alle-farver-fortaellinger-fra-egypten\r\n/boeger/puls-0\r\n/boeger/den-lille-sorte-bog\r\n/boeger/den-trettende-kvinde\r\n/boeger/englen-esmeralda\r\n/boeger/dengang-jeg-kobte-en-fiskestang-til-min-bedstefar\r\n/boeger/valeyri-valsen\r\n/boeger/mellem-traeerne\r\n/boeger/kun-stemmen-bliver-tilbage\r\n/boeger/alice\r\n/boeger/nocturner-fem-fortaellinger-om-musik-og-skumring\r\n/boeger/grand-mal\r\n/boeger/masken-0\r\n/boeger/den-herrelose-ridder\r\n/boeger/natten-lysene-volden\r\n/boeger/meget-lykke\r\n/boeger/livet\r\n/boeger/offentlige-hemmeligheder\r\n/boeger/efter-skaelvet\r\n/boeger/fra-doktor-klimkes-horisont\r\n/boeger/sulebulen\r\n/boeger/mellem-venner-3\r\n/boeger/brokeback-mountain-0\r\n/boeger/historien-om-fru-berg\r\n/boeger/leviathan-og-andre-fortaellinger\r\n/boeger/tiende-december\r\n/boeger/skyld-0\r\n/boeger/fortaelling-om-et-selvmord\r\n/boeger/efter-tusind-ars-fromme-bonner"
     negate: false
     context_mapping: {  }

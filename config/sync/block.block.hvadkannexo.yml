@@ -12,7 +12,7 @@ dependencies:
 id: hvadkannexo
 theme: litteratursiden
 region: content
-weight: 25
+weight: 155
 provider: null
 plugin: 'block_content:2924ae14-a39c-4436-84b2-61a4ff3cf4dc'
 settings:

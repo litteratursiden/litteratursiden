@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenscifiogfantasypaengelsk
 theme: litteratursiden
 region: content
-weight: 174
+weight: 324
 provider: null
 plugin: 'block_content:b53b0cd8-6127-4417-a762-e7447c3a97d0'
 settings:

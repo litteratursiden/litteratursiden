@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraethenrikpontoppidan
 theme: litteratursiden
 region: content
-weight: 278
+weight: 105
 provider: null
 plugin: 'block_content:20a30bb1-b082-4946-9f62-09495d1a640c'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /artikler/henrik-pontoppidans-romantrilogi
+    pages: "/artikler/henrik-pontoppidans-romantrilogi\r\n/temaer/med-andres-ord"
     negate: false
     context_mapping: {  }

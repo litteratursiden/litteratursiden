@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensyvklassikereforbegyndere
 theme: litteratursiden
 region: content
-weight: 39
+weight: 137
 provider: null
 plugin: 'block_content:a93e172f-cda6-4601-8ebe-a27ec16c5379'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/mus-og-maend\r\n/boeger/gift-2\r\n/boeger/draeb-ikke-en-sangfugl\r\n/boeger/fahrenheit-451\r\n/boeger/frankenstein-eller-den-moderne-prometheus\r\n/boeger/den-unge-werthers-lidelser\r\n/boeger/draeb-ikke-en-sangfugl-0\r\n/boeger/kammerat-napoleon\r\n/boeger/dorian-grays-billede"
+    pages: "/boeger/mus-og-maend\r\n/boeger/gift-2\r\n/boeger/draeb-ikke-en-sangfugl\r\n/boeger/fahrenheit-451\r\n/boeger/frankenstein-eller-den-moderne-prometheus\r\n/boeger/den-unge-werthers-lidelser\r\n/boeger/draeb-ikke-en-sangfugl-0\r\n/boeger/kammerat-napoleon\r\n/boeger/dorian-grays-billede\r\n/temaer/med-andres-ord"
     negate: false
     context_mapping: {  }

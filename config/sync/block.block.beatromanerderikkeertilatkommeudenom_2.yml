@@ -12,7 +12,7 @@ dependencies:
 id: beatromanerderikkeertilatkommeudenom_2
 theme: litteratursiden
 region: content
-weight: 717
+weight: 842
 provider: null
 plugin: 'block_content:edd4f99b-2812-4fba-8661-57baf130fd73'
 settings:

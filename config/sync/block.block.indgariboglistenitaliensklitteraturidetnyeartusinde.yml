@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistenitaliensklitteraturidetnyeartusinde
 theme: litteratursiden
 region: content
-weight: 508
+weight: 269
 provider: null
 plugin: 'block_content:ebb43bf8-5d18-4060-93c7-d1d420425cc8'
 settings:
   id: 'block_content:ebb43bf8-5d18-4060-93c7-d1d420425cc8'
-  label: 'Nyere italiensk litteratur'
+  label: 'Italien - italiensk litteratur'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/pa-herrens-mark\r\n/boeger/vita\r\n/boeger/drilleri\r\n/boeger/band\r\n/boeger/de-otte-bjerge\r\n/boeger/pigen-de-sendte-tilbage-roman\r\n/boeger/velkommen-til-festen\r\n/boeger/annafrancesca-leger-ikke\r\n/boeger/denne-historie\r\n/boeger/eksemplariske-idioter\r\n/boeger/jeg-gar-i-gasegang\r\n/boeger/det-sorte-far\r\n/boeger/vindskift\r\n/boeger/kirkegarden-i-prag\r\n/boeger/nr-0\r\n/boeger/maend-far\r\n/boeger/besvaerende-kaerlighed\r\n/boeger/dem-der-flygter-og-dem-der-bliver\r\n/boeger/dukken-der-blev-vaek\r\n/boeger/forladte-dage\r\n/boeger/det-forsvundne-barn\r\n/boeger/historien-om-et-nyt-navn\r\n/boeger/min-geniale-veninde\r\n/boeger/i-havet-er-der-krokodiller\r\n/boeger/folk-fra-poju-luadu\r\n/boeger/menneskekroppen\r\n/boeger/primtallenes-ensomhed\r\n/boeger/arvetanten\r\n/boeger/som-om-jeg-var-alene\r\n/boeger/intet-retsligt-efterspil\r\n/boeger/som-de-sikkert-forstar\r\n/boeger/ny-finsk-grammatik\r\n/boeger/limbo-0\r\n/boeger/tintorettos-engel\r\n/boeger/villa-spada\r\n/boeger/imprimatur\r\n/boeger/accabadora\r\n/boeger/duften-af-dig\r\n/boeger/fascistkommunisten\r\n/boeger/mussolini-kanalen\r\n/boeger/fortidens-magt\r\n/boeger/inden-der-var-modre\r\n/boeger/landet-hvor-man-aldrig-dor"
+    pages: "/boeger/pa-herrens-mark\r\n/boeger/vita\r\n/boeger/drilleri\r\n/boeger/band\r\n/boeger/de-otte-bjerge\r\n/boeger/pigen-de-sendte-tilbage-roman\r\n/boeger/velkommen-til-festen\r\n/boeger/annafrancesca-leger-ikke\r\n/boeger/denne-historie\r\n/boeger/eksemplariske-idioter\r\n/boeger/jeg-gar-i-gasegang\r\n/boeger/det-sorte-far\r\n/boeger/vindskift\r\n/boeger/kirkegarden-i-prag\r\n/boeger/nr-0\r\n/boeger/maend-far\r\n/boeger/besvaerende-kaerlighed\r\n/boeger/dem-der-flygter-og-dem-der-bliver\r\n/boeger/dukken-der-blev-vaek\r\n/boeger/forladte-dage\r\n/boeger/det-forsvundne-barn\r\n/boeger/historien-om-et-nyt-navn\r\n/boeger/min-geniale-veninde\r\n/boeger/i-havet-er-der-krokodiller\r\n/boeger/folk-fra-poju-luadu\r\n/boeger/menneskekroppen\r\n/boeger/primtallenes-ensomhed\r\n/boeger/arvetanten\r\n/boeger/som-om-jeg-var-alene\r\n/boeger/intet-retsligt-efterspil\r\n/boeger/som-de-sikkert-forstar\r\n/boeger/ny-finsk-grammatik\r\n/boeger/limbo-0\r\n/boeger/tintorettos-engel\r\n/boeger/villa-spada\r\n/boeger/imprimatur\r\n/boeger/accabadora\r\n/boeger/duften-af-dig\r\n/boeger/fascistkommunisten\r\n/boeger/mussolini-kanalen\r\n/boeger/fortidens-magt\r\n/boeger/inden-der-var-modre\r\n/boeger/landet-hvor-man-aldrig-dor\r\n/boeger/farvel-genfaerd-roman"
     negate: false
     context_mapping: {  }

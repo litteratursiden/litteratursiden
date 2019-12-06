@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanskhorror20002009
 theme: litteratursiden
 region: content
-weight: 377
+weight: 521
 provider: null
 plugin: 'block_content:7d8f6e76-d526-4e18-a423-bd65ab9e622c'
 settings:

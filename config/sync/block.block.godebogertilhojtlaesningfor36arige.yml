@@ -12,7 +12,7 @@ dependencies:
 id: godebogertilhojtlaesningfor36arige
 theme: litteratursiden
 region: content
-weight: 49
+weight: 163
 provider: null
 plugin: 'block_content:9cd3e65b-fdc3-49b2-9e0b-3f569b69f2bd'
 settings:

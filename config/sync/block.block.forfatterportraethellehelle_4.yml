@@ -12,7 +12,7 @@ dependencies:
 id: forfatterportraethellehelle_4
 theme: litteratursiden
 region: content
-weight: 144
+weight: 297
 provider: null
 plugin: 'block_content:b3741d58-a7f7-41d4-a20a-3bb3528d36c7'
 settings:

@@ -12,14 +12,14 @@ dependencies:
 id: medpulsenpatiden
 theme: litteratursiden
 region: content
-weight: 633
+weight: 757
 provider: null
 plugin: 'block_content:1ab0a861-f9cb-41b8-996f-7ed682eb994e'
 settings:
   id: 'block_content:1ab0a861-f9cb-41b8-996f-7ed682eb994e'
   label: 'Med pulsen på tiden'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

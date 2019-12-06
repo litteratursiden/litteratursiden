@@ -12,7 +12,7 @@ dependencies:
 id: hvaderenmor_2
 theme: litteratursiden
 region: content
-weight: 321
+weight: 465
 provider: null
 plugin: 'block_content:377e46cd-c9bc-4623-a19b-69b50d211454'
 settings:

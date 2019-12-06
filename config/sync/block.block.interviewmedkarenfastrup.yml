@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedkarenfastrup
 theme: litteratursiden
 region: content
-weight: 95
+weight: 237
 provider: null
 plugin: 'block_content:76dc33b7-d1b0-4000-ae03-ddd8c03389f1'
 settings:

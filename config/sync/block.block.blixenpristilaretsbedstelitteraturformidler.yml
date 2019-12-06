@@ -12,7 +12,7 @@ dependencies:
 id: blixenpristilaretsbedstelitteraturformidler
 theme: litteratursiden
 region: content
-weight: 756
+weight: 885
 provider: null
 plugin: 'block_content:0409b6c1-9871-448c-8988-b5b820c52cfd'
 settings:

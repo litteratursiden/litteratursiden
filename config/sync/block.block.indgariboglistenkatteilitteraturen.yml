@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenkatteilitteraturen
 theme: litteratursiden
 region: content
-weight: 516
+weight: 658
 provider: null
 plugin: 'block_content:c898633b-9e48-4e03-8f6e-dabef87778f0'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/kattegaesten\r\n/boeger/hvad-fluffy-vidste\r\n/boeger/kafka-pa-stranden\r\n/boeger/ann-lie\r\n/boeger/artemis-0\r\n/boeger/linda-evangelista-olsen\r\n/boeger/de-kattens-feriedage\r\n/boeger/de-bedste-kattehistorier\r\n/boeger/katte-isaer"
+    pages: "/index.php/boeger/andssvage-ozelot-roman\r\n/boeger/kattegaesten\r\n/boeger/hvad-fluffy-vidste\r\n/boeger/kafka-pa-stranden\r\n/boeger/ann-lie\r\n/boeger/artemis-0\r\n/boeger/linda-evangelista-olsen\r\n/boeger/de-kattens-feriedage\r\n/boeger/de-bedste-kattehistorier\r\n/boeger/katte-isaer"
     negate: false
     context_mapping: {  }

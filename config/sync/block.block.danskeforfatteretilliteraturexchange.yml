@@ -12,7 +12,7 @@ dependencies:
 id: danskeforfatteretilliteraturexchange
 theme: litteratursiden
 region: content
-weight: 635
+weight: 759
 provider: null
 plugin: 'block_content:ceec60b7-9cf0-4aaa-aa8b-f21c69f5b344'
 settings:

@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistennewyorkerromaner
 theme: litteratursiden
 region: content
-weight: 584
+weight: 716
 provider: null
 plugin: 'block_content:d2cb608d-938a-4d5f-86f9-2698671d1186'
 settings:
   id: 'block_content:d2cb608d-938a-4d5f-86f9-2698671d1186'
-  label: 'Indgår i boglisten: New Yorker romaner'
+  label: 'New Yorker romaner'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/new-york-trilogien\r\n/boeger/max-mischa-tet-offensiven\r\n/boeger/minder-om-fremtiden-roman\r\n/boeger/manhattan-beach\r\n\r\n/boeger/en-lang-raekke-dode-maend\r\n/boeger/sleepers\r\n/boeger/sindssygelaegen\r\n/boeger/gothams-stjerner\r\n/boeger/mrs-corbetts-sidste-onske\r\n/boeger/moderlose-brooklyn\r\n/boeger/den-sidste-dans\r\n/boeger/new-york-blues\r\n/boeger/ormene-pa-carmine-street\r\n/boeger/godfather\r\n/boeger/flood\r\n/boeger/pigen-med-den-gule-hat\r\n/boeger/brooklyn-darskab\r\n/boeger/new-york-trilogien\r\n/boeger/sunset-park\r\n/boeger/one-fifth-avenue\r\n/boeger/sommercruise\r\n/boeger/den-utrolige-historie-om-kavalier-clay\r\n/boeger/aben-0\r\n/boeger/nar-morket-bryder-frem\r\n/boeger/udvalgte-dage\r\n/boeger/den-faldende-mand\r\n/boeger/kosmopolis\r\n/boeger/homer-og-langley\r\n/boeger/taeskeholdet-banker-pa\r\n/boeger/american-psycho\r\n/boeger/gothams-guder\r\n/boeger/ekstremt-hojt-utrolig-taet-pa\r\n/boeger/triburbia\r\n/boeger/byen-braender-0\r\n/boeger/den-naeste-verden\r\n/boeger/mrs-corbetts-sidste-onske\r\n/boeger/en-amerikaners-lidelser\r\n/boeger/den-flammende-verden\r\n/boeger/walker-datter\r\n/boeger/flammekasterne\r\n/boeger/midt-imellem\r\n/boeger/chronic-city\r\n/boeger/ensomhedens-faestning\r\n/boeger/moderlose-brooklyn\r\n/boeger/forberedelse-til-naeste-liv\r\n/boeger/lad-kun-verden-tumle-sig\r\n/boeger/new-york-karma\r\n/boeger/netherland\r\n/boeger/kald-det-sovn\r\n/boeger/griberen-i-rugen\r\n/boeger/kys-pa-manhattan\r\n/boeger/prospect-park-west\r\n/boeger/brooklyn\r\n/boeger/monumentet-0\r\n/boeger/zero-0\r\n/boeger/jagten-pa-harry-winston\r\n/boeger/uskyldens-ar\r\n/boeger/forfaengelighedens-bal\r\n/boeger/solen-er-ogsa-en-stjerne"
+    pages: "/boeger/max-mischa-tet-offensiven\r\n/boeger/minder-om-fremtiden-roman\r\n/boeger/manhattan-beach\r\n/boeger/forberedelse-til-naeste-liv\r\n/boeger/ekstremt-hojt-utrolig-taet-pa\r\n/boeger/griberen-i-rugen\r\n/boeger/taeskeholdet-banker-pa\r\n/boeger/brooklyn-darskab\r\n/boeger/aben-0\r\n/boeger/byen-braender-0\r\n/boeger/new-york-trilogien\r\n/boeger/den-faldende-mand\r\n/boeger/prospect-park-west\r\n/boeger/brooklyn\r\n/boeger/den-utrolige-historie-om-kavalier-clay\r\n/boeger/sommercruise\r\n/boeger/nar-morket-bryder-frem\r\n/boeger/udvalgte-dage\r\n/boeger/kosmopolis\r\n/boeger/homer-og-langley\r\n/boeger/one-fifth-avenue\r\n/boeger/american-psycho\r\n/boeger/gothams-guder\r\n/boeger/solen-er-ogsa-en-stjerne\r\n/boeger/sunset-park\r\n/boeger/en-amerikaners-lidelser\r\n/boeger/walker-datter\r\n/boeger/midt-imellem\r\n/boeger/chronic-city\r\n/boeger/ensomhedens-faestning\r\n/boeger/lad-kun-verden-tumle-sig\r\n/boeger/den-flammende-verden"
     negate: false
     context_mapping: {  }

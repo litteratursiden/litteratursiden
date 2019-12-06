@@ -12,7 +12,7 @@ dependencies:
 id: laesartiklenforfatteraben
 theme: litteratursiden
 region: content
-weight: 159
+weight: 312
 provider: null
 plugin: 'block_content:e023c065-dbe5-4011-bb39-5ef1fed8f92b'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /temaer/kvindelige-fyrtarne
+    pages: "/temaer/kvindelige-fyrtarne\r\n/forfattere/hanne-hojgaard-viemose\r\n/boeger/hannah-0\r\n/boeger/mado\r\n\r\n"
     negate: false
     context_mapping: {  }

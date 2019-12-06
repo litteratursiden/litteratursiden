@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenrejseessays
 theme: litteratursiden
 region: content
-weight: 847
+weight: 977
 provider: null
 plugin: 'block_content:ffb3c104-7cee-4796-8975-c323b5e84ec6'
 settings:

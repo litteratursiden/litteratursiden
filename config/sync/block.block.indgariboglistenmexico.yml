@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmexico
 theme: litteratursiden
 region: content
-weight: 22
+weight: 154
 provider: null
 plugin: 'block_content:c4224afb-a058-4bae-a963-91903cc8e744'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/boeger/de-ni-vogtere\r\n/boeger/de-vaegtlose\r\n/boeger/skonhedssalon\r\n/boeger/kroppen-jeg-blev-fodt-i\r\n/boeger/saet-og-match\r\n/boeger/gonzalez-datter-transport-co-en-road-novel-med-litteraere-friheder\r\n/boeger/hjerter-i-chili\r\n/boeger/kaerlighedens-lov\r\n/boeger/inez\r\n/boeger/kristoffer-ufodt\r\n/boeger/arene-med-laura-diaz\r\n/boeger/besat-af-kaerlighed\r\n/boeger/tag-mit-liv\r\n/boeger/ensomhedens-labyrint\r\n/boeger/klarhedens-skrift\r\n/boeger/den-voldsomme-arstid\r\n/boeger/pedro-paramo\r\n/boeger/sletten-braender\r\n/boeger/mexicos-stemme"
+    pages: "/boeger/de-ni-vogtere\r\n/boeger/de-vildfarne-borns-arkiv-roman\r\n/boeger/de-vaegtlose\r\n/boeger/verdenslitteraturer\r\n/boeger/skonhedssalon\r\n/boeger/kroppen-jeg-blev-fodt-i\r\n/boeger/saet-og-match\r\n/boeger/gonzalez-datter-transport-co-en-road-novel-med-litteraere-friheder\r\n/boeger/hjerter-i-chili\r\n/boeger/kaerlighedens-lov\r\n/boeger/inez\r\n/boeger/kristoffer-ufodt\r\n/boeger/arene-med-laura-diaz\r\n/boeger/besat-af-kaerlighed\r\n/boeger/tag-mit-liv\r\n/boeger/ensomhedens-labyrint\r\n/boeger/klarhedens-skrift\r\n/boeger/den-voldsomme-arstid\r\n/boeger/pedro-paramo\r\n/boeger/sletten-braender\r\n/boeger/mexicos-stemme"
     negate: false
     context_mapping: {  }

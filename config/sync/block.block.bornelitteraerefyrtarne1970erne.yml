@@ -12,7 +12,7 @@ dependencies:
 id: bornelitteraerefyrtarne1970erne
 theme: litteratursiden
 region: content
-weight: 687
+weight: 812
 provider: null
 plugin: 'block_content:ce8241da-7b7f-4f87-ac3a-5877390d6e59'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendanskpolitikmarkantepersonligheder
 theme: litteratursiden
 region: content
-weight: 381
+weight: 525
 provider: null
 plugin: 'block_content:a5c03134-ef51-44e1-8a06-165ff05abf2e'
 settings:

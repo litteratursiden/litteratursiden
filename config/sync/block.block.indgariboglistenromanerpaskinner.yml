@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenromanerpaskinner
 theme: litteratursiden
 region: content
-weight: 113
+weight: 265
 provider: null
 plugin: 'block_content:29bc93a3-d118-4b93-acaf-3e89d036a98a'
 settings:

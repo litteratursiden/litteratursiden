@@ -12,7 +12,7 @@ dependencies:
 id: sidstearsdebutantprisvinderlivnimandduvaanbefaler_2
 theme: litteratursiden
 region: content
-weight: 318
+weight: 462
 provider: null
 plugin: 'block_content:61a1bd8b-7235-4f2b-ba64-f8f3bfef4060'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /artikler/nar-det-langsomme-bliver-en-luksus-liv-nimand-duva
+    pages: "/artikler/nar-det-langsomme-bliver-en-luksus-liv-nimand-duva\r\n/forfattere/liv-nimand-duva\r\n/artikler/liv-nimand-duva-anbefaler"
     negate: false
     context_mapping: {  }

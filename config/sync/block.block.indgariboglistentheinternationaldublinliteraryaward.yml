@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistentheinternationaldublinliteraryaward
 theme: litteratursiden
 region: content
-weight: 197
+weight: 345
 provider: null
 plugin: 'block_content:94330c73-badd-4efd-b4f7-d8a372863d97'
 settings:

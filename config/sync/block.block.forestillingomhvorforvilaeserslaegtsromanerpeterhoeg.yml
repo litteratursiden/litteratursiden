@@ -12,7 +12,7 @@ dependencies:
 id: forestillingomhvorforvilaeserslaegtsromanerpeterhoeg
 theme: litteratursiden
 region: content
-weight: 755
+weight: 884
 provider: null
 plugin: 'block_content:b1e5ea46-0a37-46ab-aca5-cf77c863b5d1'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: forsteverdenskrig100aretforafslutningen_2
 theme: litteratursiden
 region: content
-weight: 245
+weight: 395
 provider: null
 plugin: 'block_content:6efd9fe9-4fbd-493b-b172-1993282e4c0c'
 settings:

@@ -12,20 +12,20 @@ dependencies:
 id: thomasg.bagge
 theme: litteratursiden
 region: content
-weight: 640
+weight: 764
 provider: null
 plugin: 'block_content:96c2b4bf-c5f3-4288-8d5c-7549afce4897'
 settings:
   id: 'block_content:96c2b4bf-c5f3-4288-8d5c-7549afce4897'
   label: 'Thomas G. Bagge'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /temaer/nye-tyske-stemmer
+    pages: "/boeger/lettipark\r\n/forfattere/judith-hermann"
     negate: false
     context_mapping: {  }

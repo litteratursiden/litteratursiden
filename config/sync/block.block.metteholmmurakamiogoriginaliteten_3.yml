@@ -12,7 +12,7 @@ dependencies:
 id: metteholmmurakamiogoriginaliteten_3
 theme: litteratursiden
 region: content
-weight: 765
+weight: 894
 provider: null
 plugin: 'block_content:9b1279b9-5716-4ecf-a2f7-6edfe8091f98'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: karrusselbornelitteratur2017
 theme: litteratursiden
 region: content
-weight: 692
+weight: 817
 provider: null
 plugin: 'block_content:e09b5a11-85a8-4f05-b5f4-10532f9ed239'
 settings:

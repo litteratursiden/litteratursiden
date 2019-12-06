@@ -12,7 +12,7 @@ dependencies:
 id: artikelomhanskirk
 theme: litteratursiden
 region: content
-weight: 758
+weight: 887
 provider: null
 plugin: 'block_content:becaa46c-4e27-446b-b5ac-e3002d66438e'
 settings:

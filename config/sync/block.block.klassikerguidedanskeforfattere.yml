@@ -12,7 +12,7 @@ dependencies:
 id: klassikerguidedanskeforfattere
 theme: litteratursiden
 region: content
-weight: 373
+weight: 517
 provider: null
 plugin: 'block_content:d6c34863-240c-4eb3-bdb5-0802cdf1578b'
 settings:

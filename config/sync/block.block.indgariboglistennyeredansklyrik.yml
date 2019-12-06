@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistennyeredansklyrik
 theme: litteratursiden
 region: content
-weight: 263
+weight: 30
 provider: null
 plugin: 'block_content:fde73d41-b307-47f8-ac86-2f2cb2236358'
 settings:
   id: 'block_content:fde73d41-b307-47f8-ac86-2f2cb2236358'
-  label: 'Indgår i boglisten: Nyere dansk lyrik'
+  label: 'Nyere dansk lyrik'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/sporgsmalene\r\n/boeger/det-3-artusindes-hjerte\r\n/boeger/have-og-helvede-digt\r\n/boeger/hesteaederne-digte\r\n/boeger/sa-efterlades-alt-flaeskende\r\n/boeger/inden-april\r\n/boeger/vi-er-ikke-konger\r\n/boeger/37-postkort\r\n/boeger/dod-og-status\r\n/boeger/yahya-hassan\r\n/boeger/man-tror-man-samler-sig-til-hele-livet-efterladte-og-ikke-bogforte-digte-1976-2008\r\n/boeger/umulighedsportal-i-ubestemt-engangslys\r\n/boeger/sig-mig-et-underjordisk-trae-med-vindens-udtale\r\n/boeger/jeglose-digte\r\n/boeger/do-logn-do\r\n/boeger/3-12-d\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/jeg-aeder-mig-selv-som-lyng\r\n/boeger/i-civil\r\n/boeger/hjem-er-en-retning\r\n/boeger/odefabrikanten\r\n/boeger/salamandersol\r\n/boeger/rystet-spejl\r\n/boeger/eva-adolf\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/fremmed-under-samme-hud\r\n/boeger/endnu-ikke-allerede\r\n/boeger/romerske-naetter\r\n/boeger/det-er-hyklerisk-sige-fra\r\n/boeger/digte-2014"
+    pages: "/boeger/i-nat-bar-jeg-caligula\r\n/boeger/digte-grotian\r\n/boeger/mit-barn-digt\r\n/boeger/den-sorte-bog-b-sider\r\n/boeger/til-den-smukkeste-117-digte\r\n/boeger/pa-jupiter-findes-fortiden-ikke\r\n/boeger/manta-digte\r\n/boeger/yahya-hassan-2-digte\r\n/boeger/sporgsmalene\r\n/temaer/lyrik-gar-taet-pa-det-menneskelige\r\n/boeger/det-3-artusindes-hjerte\r\n/boeger/have-og-helvede-digt\r\n/boeger/hesteaederne-digte\r\n/boeger/sa-efterlades-alt-flaeskende\r\n/boeger/inden-april\r\n/boeger/vi-er-ikke-konger\r\n/boeger/37-postkort\r\n/boeger/dod-og-status\r\n/boeger/yahya-hassan\r\n/boeger/man-tror-man-samler-sig-til-hele-livet-efterladte-og-ikke-bogforte-digte-1976-2008\r\n/boeger/umulighedsportal-i-ubestemt-engangslys\r\n/boeger/sig-mig-et-underjordisk-trae-med-vindens-udtale\r\n/boeger/jeglose-digte\r\n/boeger/do-logn-do\r\n/boeger/3-12-d\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/jeg-aeder-mig-selv-som-lyng\r\n/boeger/i-civil\r\n/boeger/hjem-er-en-retning\r\n/boeger/odefabrikanten\r\n/boeger/salamandersol\r\n/boeger/rystet-spejl\r\n/boeger/eva-adolf\r\n/boeger/det-nemme-og-det-ensomme\r\n/boeger/fremmed-under-samme-hud\r\n/boeger/endnu-ikke-allerede\r\n/boeger/romerske-naetter\r\n/boeger/det-er-hyklerisk-sige-fra\r\n/boeger/digte-2014\r\n/boeger/aftenblade"
     negate: false
     context_mapping: {  }

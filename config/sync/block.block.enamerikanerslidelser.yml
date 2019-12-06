@@ -12,7 +12,7 @@ dependencies:
 id: enamerikanerslidelser
 theme: litteratursiden
 region: content
-weight: 100
+weight: 248
 provider: null
 plugin: 'block_content:c448a305-4647-4b92-bd1f-0f2a98a1bb33'
 settings:

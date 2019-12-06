@@ -12,7 +12,7 @@ dependencies:
 id: omfrankjaeger
 theme: litteratursiden
 region: content
-weight: 696
+weight: 821
 provider: null
 plugin: 'block_content:7e69047b-a752-4af2-968d-9dfba785e56d'
 settings:

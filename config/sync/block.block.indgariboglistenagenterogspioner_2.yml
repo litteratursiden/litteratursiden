@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenagenterogspioner_2
 theme: litteratursiden
 region: content
-weight: 790
+weight: 916
 provider: null
 plugin: 'block_content:450e3ea1-6d9c-4e1d-aa1c-a67dc8a382e2'
 settings:

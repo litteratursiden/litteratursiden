@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenitalienskeklassikerefradet20.arhundrede
 theme: litteratursiden
 region: content
-weight: 509
+weight: 652
 provider: null
 plugin: 'block_content:83078537-e71e-4476-a339-16937f8696b7'
 settings:

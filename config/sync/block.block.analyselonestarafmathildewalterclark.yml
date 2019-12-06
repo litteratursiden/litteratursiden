@@ -12,7 +12,7 @@ dependencies:
 id: analyselonestarafmathildewalterclark
 theme: litteratursiden
 region: content
-weight: 154
+weight: 307
 provider: null
 plugin: 'block_content:51cb9f66-efe2-4a87-af2e-381ec14fb128'
 settings:

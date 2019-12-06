@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenaalborgilitteraturen
 theme: litteratursiden
 region: content
-weight: 787
+weight: 915
 provider: null
 plugin: 'block_content:1a469d16-fa7f-4031-9990-47916bb22611'
 settings:

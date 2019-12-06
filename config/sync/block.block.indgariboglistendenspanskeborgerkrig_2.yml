@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendenspanskeborgerkrig_2
 theme: litteratursiden
 region: content
-weight: 160
+weight: 313
 provider: null
 plugin: 'block_content:5be56dd7-025f-46e7-99c5-6d040e33daa1'
 settings:

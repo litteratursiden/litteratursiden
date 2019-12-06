@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennordiskekriminalromaner
 theme: litteratursiden
 region: content
-weight: 593
+weight: 724
 provider: null
 plugin: 'block_content:7385e524-e7a8-4e34-a0b5-4c3d8dcaa4c1'
 settings:

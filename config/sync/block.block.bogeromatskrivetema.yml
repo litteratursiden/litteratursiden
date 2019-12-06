@@ -12,14 +12,14 @@ dependencies:
 id: bogeromatskrivetema
 theme: litteratursiden
 region: content
-weight: 940
+weight: 1068
 provider: null
 plugin: 'block_content:0cf1dc0b-c7ba-4bf6-b09f-accde2c21206'
 settings:
   id: 'block_content:0cf1dc0b-c7ba-4bf6-b09f-accde2c21206'
-  label: 'Indgår i tema'
+  label: 'Indgår i tema om at skrive'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

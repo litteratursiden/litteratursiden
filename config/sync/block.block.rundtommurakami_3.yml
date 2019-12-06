@@ -12,7 +12,7 @@ dependencies:
 id: rundtommurakami_3
 theme: litteratursiden
 region: content
-weight: 139
+weight: 292
 provider: null
 plugin: 'block_content:71f8798f-cdb0-4e82-a424-5d1a50eaf08d'
 settings:

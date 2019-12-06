@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistenmisbrugalkohol
 theme: litteratursiden
 region: content
-weight: 576
+weight: 708
 provider: null
 plugin: 'block_content:ebdad956-31c4-43f3-9833-d2a02569c422'
 settings:

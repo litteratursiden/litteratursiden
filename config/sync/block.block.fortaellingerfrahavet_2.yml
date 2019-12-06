@@ -12,7 +12,7 @@ dependencies:
 id: fortaellingerfrahavet_2
 theme: litteratursiden
 region: content
-weight: 212
+weight: 362
 provider: null
 plugin: 'block_content:d038da37-4083-4be6-bf7f-502d4219408b'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /boeger/alle-mine-morgener-pa-jorden-mit-autodidakte-liv
+    pages: "/boeger/alle-mine-morgener-pa-jorden-mit-autodidakte-liv\r\n/boeger/moby-dick-0\r\n/forfattere/herman-melville\r\n/boeger/havbogen\r\n/boeger/vi-de-druknede\r\n/boeger/den-gamle-mand-og-havet"
     negate: false
     context_mapping: {  }

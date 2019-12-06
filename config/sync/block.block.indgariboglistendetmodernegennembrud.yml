@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistendetmodernegennembrud
 theme: litteratursiden
 region: content
-weight: 600
+weight: 728
 provider: null
 plugin: 'block_content:462f625b-eb63-43e2-a763-c98b94679aae'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistensport
 theme: litteratursiden
 region: content
-weight: 115
+weight: 267
 provider: null
 plugin: 'block_content:e0318b5c-b765-4cce-8864-20103a4e0066'
 settings:

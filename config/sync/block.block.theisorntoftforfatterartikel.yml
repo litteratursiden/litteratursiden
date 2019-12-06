@@ -12,7 +12,7 @@ dependencies:
 id: theisorntoftforfatterartikel
 theme: litteratursiden
 region: content
-weight: 283
+weight: 430
 provider: null
 plugin: 'block_content:4ec1fd40-29d2-4a2f-a778-7ac309fa68b2'
 settings:

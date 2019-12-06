@@ -12,7 +12,7 @@ dependencies:
 id: interviewmedsvendbrinkmann
 theme: litteratursiden
 region: content
-weight: 68
+weight: 182
 provider: null
 plugin: 'block_content:b28e17dd-11dd-4203-9d88-209a6c204bca'
 settings:

@@ -12,7 +12,7 @@ dependencies:
 id: hojtlaesninggivernaervaerogappetitpalaesning
 theme: litteratursiden
 region: content
-weight: 92
+weight: 223
 provider: null
 plugin: 'block_content:3c2400e6-fc11-48a4-a664-66ad03da213c'
 settings:

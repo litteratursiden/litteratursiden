@@ -12,7 +12,7 @@ dependencies:
 id: klassikerenvillysorensen
 theme: litteratursiden
 region: content
-weight: 499
+weight: 643
 provider: null
 plugin: 'block_content:10c1d0a2-f89c-46ab-8821-519bb66bb1dd'
 settings:

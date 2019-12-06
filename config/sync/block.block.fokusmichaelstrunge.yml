@@ -12,7 +12,7 @@ dependencies:
 id: fokusmichaelstrunge
 theme: litteratursiden
 region: content
-weight: 638
+weight: 762
 provider: null
 plugin: 'block_content:c400421e-cbeb-4c65-b257-358ff45f4862'
 settings:

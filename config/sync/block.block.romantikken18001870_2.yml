@@ -12,7 +12,7 @@ dependencies:
 id: romantikken18001870_2
 theme: litteratursiden
 region: content
-weight: 880
+weight: 1014
 provider: null
 plugin: 'block_content:ef4bdda3-4a3e-4d48-b0cf-914065a21182'
 settings:

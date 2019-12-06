@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglistenparoadtrip
 theme: litteratursiden
 region: content
-weight: 239
+weight: 142
 provider: null
 plugin: 'block_content:4eccf126-4908-457d-bb77-50509992e64a'
 settings:
   id: 'block_content:4eccf126-4908-457d-bb77-50509992e64a'
-  label: 'Indgår i boglisten: På road trip'
+  label: 'På road trip'
   provider: block_content
   label_display: visible
   status: true

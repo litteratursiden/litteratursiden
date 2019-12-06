@@ -12,7 +12,7 @@ dependencies:
 id: indgariboglistennytfrausa
 theme: litteratursiden
 region: content
-weight: 26
+weight: 65
 provider: null
 plugin: 'block_content:153681f6-70b4-408e-9c4b-ceb82befa50e'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/boeger/tavshedens-smerte\r\n/boeger/sult-historien-om-min-krop\r\n/boeger/kattemenneske-og-andre-fortaellinger\r\n/boeger/intet-gaelder\r\n/boeger/nadestolen\r\n/boeger/der-der\r\n/boeger/den-underjordiske-jernbane\r\n/boeger/idioten-0\r\n/boeger/et-lille-liv\r\n/boeger/blithedale\r\n/boeger/asymmetri\r\n/node/70843\r\n/boeger/oplyst-erindringsroman\r\n/boeger/halvfems-huller-i-himlen-roman\r\n/boeger/syng-levende-og-dode-syng\r\n/boeger/hvad-er-dette-hvad\r\n/boeger/en-forsvindens-anatomi"
+    pages: "/boeger/tavshedens-smerte\r\n/boeger/verdenslitteraturer\r\n/boeger/florida\r\n/boeger/sult-historien-om-min-krop\r\n/boeger/kattemenneske-og-andre-fortaellinger\r\n/boeger/intet-gaelder\r\n/boeger/nadestolen\r\n/boeger/der-der\r\n/boeger/den-underjordiske-jernbane\r\n/boeger/idioten-0\r\n/boeger/et-lille-liv\r\n/boeger/blithedale\r\n/boeger/asymmetri\r\n/node/70843\r\n/boeger/oplyst-erindringsroman\r\n/boeger/halvfems-huller-i-himlen-roman\r\n/boeger/syng-levende-og-dode-syng\r\n/boeger/hvad-er-dette-hvad\r\n/boeger/en-forsvindens-anatomi\r\n/boeger/hvor-flodkrebsene-synger\r\n/boeger/skinsygens-tid"
     negate: false
     context_mapping: {  }

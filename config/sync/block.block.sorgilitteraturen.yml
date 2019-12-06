@@ -12,7 +12,7 @@ dependencies:
 id: sorgilitteraturen
 theme: litteratursiden
 region: content
-weight: 58
+weight: 758
 provider: null
 plugin: 'block_content:c6c40ea0-5d52-42ee-a319-3a4325eb87dd'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/lister/sorg\r\n/lister/sorg-og-dod-i-borneboger\r\n/artikler/5-hurtige-til-svend-brinkmann-om-sorg-og-litteratur\r\n/artikler/del-dine-bedste-oplevelser-pa-bogforum\r\n/analyser/marstrand-jorgensen-annelise-sorgens-grundstof\r\n"
+    pages: "/lister/sorg\r\n/lister/sorg-og-dod-i-borneboger\r\n/artikler/5-hurtige-til-svend-brinkmann-om-sorg-og-litteratur\r\n/artikler/del-dine-bedste-oplevelser-pa-bogforum\r\n/analyser/marstrand-jorgensen-annelise-sorgens-grundstof"
     negate: false
     context_mapping: {  }

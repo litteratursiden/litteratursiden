@@ -12,12 +12,12 @@ dependencies:
 id: indgariboglisten12godebogertilkonfirmanden
 theme: litteratursiden
 region: content
-weight: 246
+weight: 396
 provider: null
 plugin: 'block_content:f6fa9f4c-75d8-4a39-996a-747f8f8c1eb0'
 settings:
   id: 'block_content:f6fa9f4c-75d8-4a39-996a-747f8f8c1eb0'
-  label: 'Indgår i boglisten: 12 gode bøger til konfirmanden'
+  label: 'Indgår i boglisten: Gode bøger til teenagere'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/boeger/valget-1\r\n/boeger/det-tidlige-forar\r\n/boeger/den-lille-prins-1\r\n/boeger/en-flaenge-i-himlen\r\n/boeger/skamlos\r\n/boeger/drengene-0\r\n/boeger/hate-u-give\r\n/boeger/lonely-journey\r\n/boeger/ravnenes-hvisken\r\n/boeger/zam\r\n/boeger/odinsbarn"
+    pages: "/boeger/det-tidlige-forar\r\n/boeger/valget-1\r\n/boeger/en-flaenge-i-himlen\r\n/boeger/skamlos\r\n/boeger/drengene-0\r\n/boeger/pa-den-anden-side-2\r\n/boeger/hate-u-give\r\n/boeger/lonely-journey\r\n/boeger/ravnenes-hvisken\r\n/boeger/zam\r\n/boeger/odinsbarn\r\n/boeger/kort-til-forelskede-og-andre-vildfarne-sjaele\r\n/boeger/den-dag-vi-dode-roman\r\n/boeger/hvad-ingen-ved\r\n/boeger/nar-hjertet-er-en-elpisker"
     negate: false
     context_mapping: {  }

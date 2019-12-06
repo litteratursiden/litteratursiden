@@ -12,7 +12,7 @@ dependencies:
 id: arbejderlitteratur
 theme: litteratursiden
 region: content
-weight: 72
+weight: 1003
 provider: null
 plugin: 'block_content:64254b38-6dbe-49b6-8ca3-df1ff95533f1'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /forfattere/martin-andersen-nexo
+    pages: "/forfattere/martin-andersen-nexo\r\n/artikler/findes-der-overhovedet-arbejderlitteratur-i-2019"
     negate: false
     context_mapping: {  }

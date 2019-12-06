@@ -12,7 +12,7 @@ dependencies:
 id: degodelinserfrastatoil.omhellehellenedtilhundene
 theme: litteratursiden
 region: content
-weight: 753
+weight: 882
 provider: null
 plugin: 'block_content:ea219eed-0956-4efe-b39a-0ef318775657'
 settings:

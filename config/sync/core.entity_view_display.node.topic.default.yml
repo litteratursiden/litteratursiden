@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.topic.field_block_reference
     - field.field.node.topic.field_topic_body
     - field.field.node.topic.field_topic_comments
     - field.field.node.topic.field_topic_cover_image
@@ -26,6 +27,15 @@ targetEntityType: node
 bundle: topic
 mode: default
 content:
+  field_block_reference:
+    weight: 12
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_topic_body:
     type: text_default
     weight: 7
