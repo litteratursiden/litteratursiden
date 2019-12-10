@@ -1,0 +1,31 @@
+uuid: 2de57d4c-91dc-4c4f-bffe-9419980e6e0a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:fe6cd6c1-26d6-4300-8efb-421efe6abbcf'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nardetlangsommebliverenluksus
+theme: litteratursiden
+region: content
+weight: 250
+provider: null
+plugin: 'block_content:fe6cd6c1-26d6-4300-8efb-421efe6abbcf'
+settings:
+  id: 'block_content:fe6cd6c1-26d6-4300-8efb-421efe6abbcf'
+  label: 'Når det langsomme bliver en luksus'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/liv-nimand-duva\r\n/boeger/vi-er-vel-helte\r\n/boeger/rosenreglen-roman"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 3166c36c-d09e-41fd-aaef-5f23d59ab982
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:4032b18f-96bb-487b-aaf5-fb664778cd69'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: markanteforfatterenominerettildrromanprisen2020_2
+theme: litteratursiden
+region: content
+weight: 22
+provider: null
+plugin: 'block_content:4032b18f-96bb-487b-aaf5-fb664778cd69'
+settings:
+  id: 'block_content:4032b18f-96bb-487b-aaf5-fb664778cd69'
+  label: 'DR Romanprisen 2020'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

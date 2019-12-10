@@ -1,0 +1,31 @@
+uuid: ddd04558-6096-4a5d-a51a-ae3ea6a2de9f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:14ba1ac2-f229-4d07-9eb6-d10ef75a91a7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengodebogertilhojtlaesningfra36ar
+theme: litteratursiden
+region: content
+weight: 198
+provider: null
+plugin: 'block_content:14ba1ac2-f229-4d07-9eb6-d10ef75a91a7'
+settings:
+  id: 'block_content:14ba1ac2-f229-4d07-9eb6-d10ef75a91a7'
+  label: 'Indgår i boglisten: Gode bøger til højtlæsning fra 3-6 år '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/bedstemor-fugl\r\n/boeger/glitter-flytter-ind\r\n/boeger/ib-skruer-stottehjulene-af\r\n/boeger/bjarne-blaeser-vaek\r\n/boeger/kammas-ferie\r\n/boeger/kalle-den-lille-tyrefaegter-af-astrid-lindgren-og-marit-tornqvist\r\n/boeger/villads-fra-valby-pa-sommerferie\r\n/boeger/lille-virgil\r\n/boeger/nivemaskinen\r\n/boeger/hugo-sikke-et-cirkus\r\n/boeger/grumlingen\r\n/boeger/da-lille-madsens-hus-blaeste-vaek\r\n/boeger/da-carl-blev-rasende\r\n/boeger/hvad-stiller-man-op-med-triste\r\n/boeger/snagebogen\r\n/boeger/sa-er-der-serveret-hr-struganoff\r\n/boeger/godnat-og-sjov-godt\r\n/boeger/lasse-leif-og-den-sidste-sut\r\n/boeger/bjornebarn\r\n/boeger/den-ensomste-hval-i-verden\r\n/boeger/karl-er-usynlig\r\n/boeger/i-landet-med-den-store-ordfabrik\r\n/boeger/pelles-lommelygte\r\n/boeger/chinos-tykke-kinder\r\n/boeger/morkemusen\r\n/boeger/alfons-og-hans-hemmelige-verden\r\n/boeger/hulder-til-balder\r\n/boeger/sadan-kommer-du-til-manen\r\n/boeger/da-boris-fik-gaeslinger\r\n/boeger/du-ka-godt\r\n/boeger/graevlings-rejse\r\n/boeger/man-ma-ikke-spise-sine-klassekammerater\r\n/boeger/anker-siger-fra"
+    negate: false
+    context_mapping: {  }

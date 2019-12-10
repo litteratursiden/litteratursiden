@@ -1,0 +1,31 @@
+uuid: a4adfbfe-db2c-4a4a-8431-2d3b26bcce8a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b3741d58-a7f7-41d4-a20a-3bb3528d36c7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraethellehelle_2
+theme: litteratursiden
+region: content
+weight: 32
+provider: null
+plugin: 'block_content:b3741d58-a7f7-41d4-a20a-3bb3528d36c7'
+settings:
+  id: 'block_content:b3741d58-a7f7-41d4-a20a-3bb3528d36c7'
+  label: 'Holbergmedaljen 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

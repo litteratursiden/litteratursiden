@@ -1,0 +1,31 @@
+uuid: f0784ce6-d87d-48ef-b160-c78e7154c119
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:f8c3e5ba-cd34-40c6-9b5e-cdd576096efa'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensilkeborgilitteraturen
+theme: litteratursiden
+region: content
+weight: 579
+provider: null
+plugin: 'block_content:f8c3e5ba-cd34-40c6-9b5e-cdd576096efa'
+settings:
+  id: 'block_content:f8c3e5ba-cd34-40c6-9b5e-cdd576096efa'
+  label: 'Indgår i boglisten: Silkeborg i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/sorte-so\r\n/boeger/agenda-spaendingsroman\r\n/boeger/opgoret-spaendingsroman\r\n/boeger/ingemanns-land-et-familiedrama-0\r\n/boeger/leifs-far-var-borgmester\r\n/boeger/gar-du-nu-er-du-ikke-laengere-min-datter\r\n/boeger/hjemlos-romanen-om-den-glemte-march-i-1928\r\n/boeger/den-hemmelige-kvinde\r\n/boeger/som-dagene-er-roman\r\n/boeger/operation-pandoras-aeske\r\n/boeger/begyndelsen-fire-historier\r\n/boeger/det-uvelkomne-bevis\r\n"
+    negate: false
+    context_mapping: {  }

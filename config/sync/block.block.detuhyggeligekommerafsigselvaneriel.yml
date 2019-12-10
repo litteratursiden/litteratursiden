@@ -1,0 +1,31 @@
+uuid: 1e552161-e59a-4411-9328-90b38154c065
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:8f43ad04-1e14-40f2-a407-253465a03b2d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: detuhyggeligekommerafsigselvaneriel
+theme: litteratursiden
+region: content
+weight: 686
+provider: null
+plugin: 'block_content:8f43ad04-1e14-40f2-a407-253465a03b2d'
+settings:
+  id: 'block_content:8f43ad04-1e14-40f2-a407-253465a03b2d'
+  label: '""Det uhyggelige kommer af sig selv" - Ane Riel '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/ane-riel\r\n/boeger/harpiks"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 55155c26-5607-4500-be42-44c0d67f794f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:6a741a26-049f-4169-a935-7c697a8d6194'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: orlaprisen2019
+theme: litteratursiden
+region: content
+weight: 11
+provider: null
+plugin: 'block_content:6a741a26-049f-4169-a935-7c697a8d6194'
+settings:
+  id: 'block_content:6a741a26-049f-4169-a935-7c697a8d6194'
+  label: 'Orlaprisen 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

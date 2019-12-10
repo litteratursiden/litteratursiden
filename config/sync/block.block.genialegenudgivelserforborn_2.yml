@@ -1,0 +1,31 @@
+uuid: 8cb50363-0d51-4ac5-96a4-47de4567b9e5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:91aaf26e-1b9b-4d1f-953c-bd4486805d1a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: genialegenudgivelserforborn_2
+theme: litteratursiden
+region: content
+weight: 246
+provider: null
+plugin: 'block_content:91aaf26e-1b9b-4d1f-953c-bd4486805d1a'
+settings:
+  id: 'block_content:91aaf26e-1b9b-4d1f-953c-bd4486805d1a'
+  label: 'Ingår i: Geniale genudgivelser for børn'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/totte-gar-ud-og-tre-andre-historier\r\n/boeger/alfons-og-hans-hemmelige-verden\r\n/boeger/tante-gron-tante-brun-og-tante-lilla-0\r\n/boeger/fodselsdagsgaven\r\n/boeger/vi-pa-krageoen\r\n/boeger/hej-kaj-fire-gode-historier-om-kaj\r\n/boeger/junglebogen-ved-jane-carruth\r\n/boeger/vinden-i-piletraeerne\r\n/boeger/silas-og-den-sorte-hoppe\r\n/boeger/kaptajn-bimse\r\n/boeger/min-lille-hund-mester-og-mange-flere-dyrehistorier"
+    negate: false
+    context_mapping: {  }

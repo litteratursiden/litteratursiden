@@ -1,0 +1,31 @@
+uuid: 77c43146-ceb5-44d2-88eb-ed6a69ce2109
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:c0f82b66-c9bb-4407-8f38-fc0aac627fbb'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: lytenpodcastomlyrik
+theme: litteratursiden
+region: content
+weight: 138
+provider: null
+plugin: 'block_content:c0f82b66-c9bb-4407-8f38-fc0aac627fbb'
+settings:
+  id: 'block_content:c0f82b66-c9bb-4407-8f38-fc0aac627fbb'
+  label: 'LYT - en podcast om lyrik'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/lyrik-gar-taet-pa-det-menneskelige
+    negate: false
+    context_mapping: {  }

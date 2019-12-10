@@ -1,0 +1,31 @@
+uuid: af7fb01f-dbd6-4a2c-94c7-385eb55a6b79
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:8e820371-c144-42d4-bfbc-6d639c308d97'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: trafallastrilogien
+theme: litteratursiden
+region: content
+weight: 189
+provider: null
+plugin: 'block_content:8e820371-c144-42d4-bfbc-6d639c308d97'
+settings:
+  id: 'block_content:8e820371-c144-42d4-bfbc-6d639c308d97'
+  label: 'Trafallas-trilogien '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/julie-m-day
+    negate: false
+    context_mapping: {  }

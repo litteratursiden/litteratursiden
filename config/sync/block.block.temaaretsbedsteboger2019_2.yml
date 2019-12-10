@@ -1,0 +1,31 @@
+uuid: 1c103c76-0e9f-4f9c-b0c6-3737dfa7bebb
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:00cca7e5-b165-41b8-84fb-c67e7dbedc56'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temaaretsbedsteboger2019_2
+theme: litteratursiden
+region: content
+weight: 19
+provider: null
+plugin: 'block_content:00cca7e5-b165-41b8-84fb-c67e7dbedc56'
+settings:
+  id: 'block_content:00cca7e5-b165-41b8-84fb-c67e7dbedc56'
+  label: 'Tema: Årets bedste bøger 2019'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

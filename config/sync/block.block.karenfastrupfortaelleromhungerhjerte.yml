@@ -1,0 +1,31 @@
+uuid: 69e68b28-d2c2-4b69-853a-b06ce578285d
+langcode: da
+status: false
+dependencies:
+  content:
+    - 'block_content:spot:9b0207c2-ac6e-4d4b-8295-79939504a0d0'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: karenfastrupfortaelleromhungerhjerte
+theme: litteratursiden
+region: content
+weight: 1092
+provider: null
+plugin: 'block_content:9b0207c2-ac6e-4d4b-8295-79939504a0d0'
+settings:
+  id: 'block_content:9b0207c2-ac6e-4d4b-8295-79939504a0d0'
+  label: 'Karen Fastrup fortæller om Hungerhjerte'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/det-folsomme-sind
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 852214fe-8552-4ae4-ba2e-3519a62c7d45
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e5f554fa-e3f1-4cdd-82d2-1902d6d8fbec'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenletlaesning
+theme: litteratursiden
+region: content
+weight: 220
+provider: null
+plugin: 'block_content:e5f554fa-e3f1-4cdd-82d2-1902d6d8fbec'
+settings:
+  id: 'block_content:e5f554fa-e3f1-4cdd-82d2-1902d6d8fbec'
+  label: 'Indgår i: Letlæsningsserier'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/star-girl-afsloret\r\n/boeger/slags-heste\r\n/boeger/havets-magi-de-knuste-perler"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 91708e64-03b2-4124-8194-2ea2e4eed9e9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7a2b76ac-14c0-4376-bb70-303c83ec1ef3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: enaftenomkaerlighedogfrygtenforatmiste
+theme: litteratursiden
+region: content
+weight: 344
+provider: null
+plugin: 'block_content:7a2b76ac-14c0-4376-bb70-303c83ec1ef3'
+settings:
+  id: 'block_content:7a2b76ac-14c0-4376-bb70-303c83ec1ef3'
+  label: 'En aften om kærlighed og frygten for at miste'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/nigeriansk-sensation-gaester-danmark\r\n/forfattere/chigozie-obioma\r\n/artikler/sensommerlaesning-fra-afrikanske-himmelstrog"
+    negate: false
+    context_mapping: {  }

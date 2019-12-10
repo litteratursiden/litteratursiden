@@ -1,0 +1,31 @@
+uuid: 036ad7c1-5868-4a5b-8449-4317eeb1a388
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:e4c921ed-2b1c-4328-aad5-1a68a8ce16d8'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temaaretsdanskedebutanter20182019
+theme: litteratursiden
+region: content
+weight: 96
+provider: null
+plugin: 'block_content:e4c921ed-2b1c-4328-aad5-1a68a8ce16d8'
+settings:
+  id: 'block_content:e4c921ed-2b1c-4328-aad5-1a68a8ce16d8'
+  label: 'Tema: Årets danske debutanter 2018-2019'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/fire-forfattere-pa-shortlisten-til-debutantprisen
+    negate: false
+    context_mapping: {  }

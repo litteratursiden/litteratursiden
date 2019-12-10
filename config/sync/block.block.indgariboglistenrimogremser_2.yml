@@ -1,0 +1,31 @@
+uuid: ea4df33a-b44c-4399-821a-92372a15f7d1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:99e6f7bd-769c-42b9-b29a-660d439d6434'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenrimogremser_2
+theme: litteratursiden
+region: content
+weight: 14
+provider: null
+plugin: 'block_content:99e6f7bd-769c-42b9-b29a-660d439d6434'
+settings:
+  id: 'block_content:99e6f7bd-769c-42b9-b29a-660d439d6434'
+  label: 'Rim og remser'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

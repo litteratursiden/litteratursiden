@@ -1,0 +1,31 @@
+uuid: 47323083-13ea-4a9c-b9ea-12c72acb1bba
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:e749061d-ce92-4a2a-9f95-78c58d196fee'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgaritemamurenilitteraturen
+theme: litteratursiden
+region: content
+weight: 56
+provider: null
+plugin: 'block_content:e749061d-ce92-4a2a-9f95-78c58d196fee'
+settings:
+  id: 'block_content:e749061d-ce92-4a2a-9f95-78c58d196fee'
+  label: 'Indgår i tema: '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/i-tider-med-aftagende-lys\r\n/boeger/tarnet-0\r\n/boeger/englenes\r\n/boeger/syv-naetter\r\n/boeger/kruso\r\n/boeger/land-i-datid\r\n/boeger/pigen-0\r\n/boeger/dengang-vi-dromte\r\n/boeger/kaerlighed-i-kommunismens-tid-et-dansk-liv-i-ddr\r\n/boeger/hjemve-1\r\n/boeger/skyggemand-flugthjaelper-i-den-kolde-krigs-berlin\r\n/boeger/lykkebarn-med-far\r\n/boeger/den-bortkomne\r\n/boeger/erobring\r\n/boeger/i-den-korte-ende-af-sonnenallee\r\n/boeger/willenbrock\r\n/boeger/sommerhus-senere-0\r\n/boeger/dyret-i-hjertet\r\n/boeger/kirsebaertiden\r\n/boeger/ildevarsler\r\n/boeger/sol-gar-ned\r\n/boeger/tanker-om-christa-t\r\n/lister/berlin-i-litteraturen\r\n/lister/nyere-tyske-romaner-og-noveller\r\n"
+    negate: false
+    context_mapping: {  }

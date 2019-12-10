@@ -1,0 +1,31 @@
+uuid: 577672b2-037b-4b53-8031-85ec42ac27c5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:136b4419-e10f-42a7-b65c-4a8238d79b74'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: tilbagetilhelvede_2
+theme: litteratursiden
+region: content
+weight: 33
+provider: null
+plugin: 'block_content:136b4419-e10f-42a7-b65c-4a8238d79b74'
+settings:
+  id: 'block_content:136b4419-e10f-42a7-b65c-4a8238d79b74'
+  label: 'Tilbage til helvede'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/authors\r\n/boeger/gileads-dotre\r\n/forfattere/margaret-atwood\r\n/boeger/tjenerindens-fortaelling\r\n/lister/utopier-og-dystopier-i-litteraturen"
+    negate: false
+    context_mapping: {  }

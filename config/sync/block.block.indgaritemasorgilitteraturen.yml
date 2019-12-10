@@ -1,0 +1,31 @@
+uuid: 7e26ccf3-c158-4f50-9095-6b198fe52f37
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:db11d4aa-a74f-47ef-9c38-a9bcf753103e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgaritemasorgilitteraturen
+theme: litteratursiden
+region: content
+weight: 400
+provider: null
+plugin: 'block_content:db11d4aa-a74f-47ef-9c38-a9bcf753103e'
+settings:
+  id: 'block_content:db11d4aa-a74f-47ef-9c38-a9bcf753103e'
+  label: 'Indgår i tema: Sorg i litteraturen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/ind-i-en-stjerne-roman\r\n/boeger/har-doden-taget-noget-fra-dig-sa-giv-det-tilbage\r\n/boeger/udenfor-pesthospitalet\r\n/boeger/forsvindingsnumre-0\r\n/boeger/de\r\n/boeger/mellem-regndraber-roman\r\n/boeger/lad-os-habe-pa-det-bedste\r\n/boeger/de-naermeste\r\n/boeger/i-hvert-ojeblik-er-vi-stadig-i-live\r\n/boeger/velsignelser\r\n/boeger/det-sorgende-dyr-om-sorgen-selvet-og-samfundet\r\n/boeger/digt-om-doden-en-bog-om-min-far\r\n/boeger/sorgens-grundstof\r\n/boeger/pludselig-falder-ting-fra-himlen\r\n/boeger/ud-af-ensomheden\r\n/boeger/alle-de-liv\r\n/boeger/sorg-er-et-vaesen-med-fjer\r\n/boeger/kattemand-ah-kattemand-en-billednovella\r\n/boeger/kastevind-erindringsglimt-fra-en-barndom\r\n/boeger/jeg-lober\r\n/boeger/sorg-0\r\n/boeger/tit-er-jeg-glad\r\n/boeger/har-du-selv-haft-en-familie\r\n/boeger/alt-hvad-du-ejer\r\n/boeger/erle-perle\r\n/boeger/den-hvide-rose-0\r\n/boeger/en-pige-og-en-dreng\r\n"
+    negate: false
+    context_mapping: {  }

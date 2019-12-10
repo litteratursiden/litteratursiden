@@ -1,0 +1,31 @@
+uuid: c44cdbc4-e0a8-4fca-a060-ec406f2d06c2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b8512384-3f18-4106-bed1-8a773d849097'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: novellistenscottfitzgerald_2
+theme: litteratursiden
+region: content
+weight: 236
+provider: null
+plugin: 'block_content:b8512384-3f18-4106-bed1-8a773d849097'
+settings:
+  id: 'block_content:b8512384-3f18-4106-bed1-8a773d849097'
+  label: 'Novellisten Scott Fitzgerald'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/alletiders-noveller
+    negate: false
+    context_mapping: {  }

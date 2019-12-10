@@ -1,0 +1,31 @@
+uuid: 9709476a-bb3e-49ad-8bd3-70bb215ad70e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:42a5de2b-7c6a-413f-ba48-1498dd76c454'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: fireforfatterepashortlistentildebutantprisen
+theme: litteratursiden
+region: content
+weight: 242
+provider: null
+plugin: 'block_content:42a5de2b-7c6a-413f-ba48-1498dd76c454'
+settings:
+  id: 'block_content:42a5de2b-7c6a-413f-ba48-1498dd76c454'
+  label: 'FIRE FORFATTERE PÅ SHORTLISTEN TIL DEBUTANTPRISEN'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/arets-danske-debutanter-2018-2019
+    negate: false
+    context_mapping: {  }

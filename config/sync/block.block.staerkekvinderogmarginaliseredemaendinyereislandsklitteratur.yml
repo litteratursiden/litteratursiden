@@ -1,0 +1,31 @@
+uuid: 23132888-aee4-4f7b-b36b-a78ae02e8da7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7debe6ff-894b-4258-8428-cba4e57db531'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: staerkekvinderogmarginaliseredemaendinyereislandsklitteratur
+theme: litteratursiden
+region: content
+weight: 877
+provider: null
+plugin: 'block_content:7debe6ff-894b-4258-8428-cba4e57db531'
+settings:
+  id: 'block_content:7debe6ff-894b-4258-8428-cba4e57db531'
+  label: 'Stærke kvinder og marginaliserede mænd i nyere islandsk litteratur'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/nye-islandske-fortaellinger
+    negate: false
+    context_mapping: {  }

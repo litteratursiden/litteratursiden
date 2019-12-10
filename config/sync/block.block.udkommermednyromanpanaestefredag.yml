@@ -1,0 +1,31 @@
+uuid: e4539825-0687-414c-af13-808096c149e9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:5552e0c9-7390-42e6-bc10-b4f440f6dcf3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: udkommermednyromanpanaestefredag
+theme: litteratursiden
+region: content
+weight: 48
+provider: null
+plugin: 'block_content:5552e0c9-7390-42e6-bc10-b4f440f6dcf3'
+settings:
+  id: 'block_content:5552e0c9-7390-42e6-bc10-b4f440f6dcf3'
+  label: 'Nomineret til DR Romanprisen 2020'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 213ae211-4829-4932-ae4c-897db0352b5d
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:52a36a4b-6279-4248-b6c3-af1e328bcc8f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: wendelitteratur
+theme: litteratursiden
+region: content
+weight: 97
+provider: null
+plugin: 'block_content:52a36a4b-6279-4248-b6c3-af1e328bcc8f'
+settings:
+  id: 'block_content:52a36a4b-6279-4248-b6c3-af1e328bcc8f'
+  label: 'wende litteratur'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/muren-i-litteraturen
+    negate: false
+    context_mapping: {  }

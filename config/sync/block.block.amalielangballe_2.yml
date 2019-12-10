@@ -1,0 +1,31 @@
+uuid: 3b9603ff-ee04-4f55-8a06-be0ed46bff11
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7b0dc431-28e4-4ce4-a5a2-3d5470020d96'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: amalielangballe_2
+theme: litteratursiden
+region: content
+weight: 35
+provider: null
+plugin: 'block_content:7b0dc431-28e4-4ce4-a5a2-3d5470020d96'
+settings:
+  id: 'block_content:7b0dc431-28e4-4ce4-a5a2-3d5470020d96'
+  label: 'Vinderen af Bogforums debutantpris'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

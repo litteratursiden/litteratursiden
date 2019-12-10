@@ -1,0 +1,31 @@
+uuid: 93d93c8d-e9da-4713-a560-931616be4c19
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:content_carousel:f9edb10b-7076-49ef-af70-9ac93764f791'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: modforfatternepabogforum2019_2
+theme: litteratursiden
+region: content
+weight: 36
+provider: null
+plugin: 'block_content:f9edb10b-7076-49ef-af70-9ac93764f791'
+settings:
+  id: 'block_content:f9edb10b-7076-49ef-af70-9ac93764f791'
+  label: 'Mød forfatterne på BogForum 2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/litteratursidens-program-pa-bogforum-2019
+    negate: false
+    context_mapping: {  }

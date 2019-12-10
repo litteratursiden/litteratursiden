@@ -1,0 +1,31 @@
+uuid: b97c2ba5-fbc7-4bc4-a717-097431324fb1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:a3756033-b94c-4bc0-aaf1-3a1b483d8f91'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskenoveller20002009
+theme: litteratursiden
+region: content
+weight: 347
+provider: null
+plugin: 'block_content:a3756033-b94c-4bc0-aaf1-3a1b483d8f91'
+settings:
+  id: 'block_content:a3756033-b94c-4bc0-aaf1-3a1b483d8f91'
+  label: 'Danske noveller 2000-2009'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/alletiders-noveller
+    negate: false
+    context_mapping: {  }

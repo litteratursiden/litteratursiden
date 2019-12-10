@@ -1,0 +1,31 @@
+uuid: 80909a4c-e2f7-4d90-ae66-b7d97fb0d284
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:187e0caa-916c-4ccf-82f9-ecb6c427dd0f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: aretsbedsteborneboger2019_2
+theme: litteratursiden
+region: content
+weight: 21
+provider: null
+plugin: 'block_content:187e0caa-916c-4ccf-82f9-ecb6c427dd0f'
+settings:
+  id: 'block_content:187e0caa-916c-4ccf-82f9-ecb6c427dd0f'
+  label: 'Årets bedste børnebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

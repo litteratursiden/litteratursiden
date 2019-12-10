@@ -1,0 +1,31 @@
+uuid: 0936cae5-4874-41ce-9d89-2764d401a88c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:d0d501eb-5399-47c7-87dc-84b1e6059084'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenkaeledyr
+theme: litteratursiden
+region: content
+weight: 204
+provider: null
+plugin: 'block_content:d0d501eb-5399-47c7-87dc-84b1e6059084'
+settings:
+  id: 'block_content:d0d501eb-5399-47c7-87dc-84b1e6059084'
+  label: 'Indgår i boglisten: Kæledyr'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vitello-onsker-et-onske\r\n/boeger/sne-er-usynlig\r\n/boeger/pigen-der-kunne-tale-med-hunde\r\n/boeger/far-ma-jeg-fa-et-kaeledyr"
+    negate: false
+    context_mapping: {  }

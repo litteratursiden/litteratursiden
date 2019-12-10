@@ -1,0 +1,31 @@
+uuid: 13a012de-3c17-4840-84f0-29cdee6c5edf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:2c0c208c-d411-43c4-8657-afb6bb7c5f05'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: denfarligealder
+theme: litteratursiden
+region: content
+weight: 129
+provider: null
+plugin: 'block_content:2c0c208c-d411-43c4-8657-afb6bb7c5f05'
+settings:
+  id: 'block_content:2c0c208c-d411-43c4-8657-afb6bb7c5f05'
+  label: 'Analyse: Karin Michäelis'' Den farlige alder'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/med-andres-ord
+    negate: false
+    context_mapping: {  }

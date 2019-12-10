@@ -1,0 +1,31 @@
+uuid: 24fa1f42-5a39-43e7-9633-61547522de96
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:1c40c4b3-ec76-4066-bfdc-ef6d88e802f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskenoveller20162020
+theme: litteratursiden
+region: content
+weight: 369
+provider: null
+plugin: 'block_content:1c40c4b3-ec76-4066-bfdc-ef6d88e802f0'
+settings:
+  id: 'block_content:1c40c4b3-ec76-4066-bfdc-ef6d88e802f0'
+  label: 'Danske noveller 2016-2020'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/alletiders-noveller
+    negate: false
+    context_mapping: {  }

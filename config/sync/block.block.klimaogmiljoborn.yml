@@ -1,0 +1,31 @@
+uuid: a4547656-691a-4339-91b0-32407c646e1a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:cc2e72d1-f6ca-4421-b6d8-ed1d2900b568'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klimaogmiljoborn
+theme: litteratursiden
+region: content
+weight: 84
+provider: null
+plugin: 'block_content:cc2e72d1-f6ca-4421-b6d8-ed1d2900b568'
+settings:
+  id: 'block_content:cc2e72d1-f6ca-4421-b6d8-ed1d2900b568'
+  label: 'Klima og miljø - børn'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

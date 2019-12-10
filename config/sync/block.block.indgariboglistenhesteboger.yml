@@ -1,0 +1,31 @@
+uuid: 15ebe174-1d2e-4dfc-ad00-8040f8259284
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8f2d0054-4743-45cc-8c52-1035b196ebc9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenhesteboger
+theme: litteratursiden
+region: content
+weight: 192
+provider: null
+plugin: 'block_content:8f2d0054-4743-45cc-8c52-1035b196ebc9'
+settings:
+  id: 'block_content:8f2d0054-4743-45cc-8c52-1035b196ebc9'
+  label: 'Indgår i: Hestebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/alle-elsker-sigge\r\n/boeger/laer-ride-med-sigge-tips-og-tricks-til-begyndere\r\n/boeger/silas-og-den-sorte-hoppe\r\n/boeger/hesten-fra-vild-til-tamdyr\r\n/boeger/hest-horse-pferd-cheval-love\r\n/boeger/slags-heste"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: be1cf37a-5c7e-4275-bc53-ea470c8b0091
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:135f9353-6aa4-4972-ac29-4fd773b35f09'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: bedstebilledboger
+theme: litteratursiden
+region: content
+weight: 98
+provider: null
+plugin: 'block_content:135f9353-6aa4-4972-ac29-4fd773b35f09'
+settings:
+  id: 'block_content:135f9353-6aa4-4972-ac29-4fd773b35f09'
+  label: 'Bedste billedbøger'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

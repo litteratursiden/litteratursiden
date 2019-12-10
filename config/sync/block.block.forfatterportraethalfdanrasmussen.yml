@@ -1,0 +1,31 @@
+uuid: dfea1ee0-537f-4796-91a8-eb4113c9c055
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7460a273-886f-405d-aadb-9eb5e1613d07'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterportraethalfdanrasmussen
+theme: litteratursiden
+region: content
+weight: 111
+provider: null
+plugin: 'block_content:7460a273-886f-405d-aadb-9eb5e1613d07'
+settings:
+  id: 'block_content:7460a273-886f-405d-aadb-9eb5e1613d07'
+  label: 'Forfatterportræt: Halfdan Rasmussen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/med-andres-ord
+    negate: false
+    context_mapping: {  }

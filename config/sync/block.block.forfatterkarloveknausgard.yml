@@ -1,0 +1,31 @@
+uuid: d6699929-c051-43f8-b896-f81c283c1238
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:2b00be09-e693-4713-9860-627414daa027'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: forfatterkarloveknausgard
+theme: litteratursiden
+region: content
+weight: 120
+provider: null
+plugin: 'block_content:2b00be09-e693-4713-9860-627414daa027'
+settings:
+  id: 'block_content:2b00be09-e693-4713-9860-627414daa027'
+  label: 'Forfatter Karl Ove Knausgård'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/ny-norsk-litteratur-0
+    negate: false
+    context_mapping: {  }

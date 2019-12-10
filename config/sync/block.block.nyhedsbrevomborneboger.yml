@@ -1,0 +1,31 @@
+uuid: fdf3bf81-1d26-41c1-84d0-2ba158333b4c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:9053e5d8-89c1-4db0-88db-fd7e9f4228c1'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nyhedsbrevomborneboger
+theme: litteratursiden
+region: content
+weight: 58
+provider: null
+plugin: 'block_content:9053e5d8-89c1-4db0-88db-fd7e9f4228c1'
+settings:
+  id: 'block_content:9053e5d8-89c1-4db0-88db-fd7e9f4228c1'
+  label: 'Nyhedsbrev om børnebøger'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/books"
+    negate: false
+    context_mapping: {  }

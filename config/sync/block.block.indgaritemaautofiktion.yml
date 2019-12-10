@@ -1,0 +1,31 @@
+uuid: 2737bc45-52fb-43a6-be0c-1d9a93c5eddf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:2d539844-40a5-4a2e-b969-99457af3b98b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgaritemaautofiktion
+theme: litteratursiden
+region: content
+weight: 83
+provider: null
+plugin: 'block_content:2d539844-40a5-4a2e-b969-99457af3b98b'
+settings:
+  id: 'block_content:2d539844-40a5-4a2e-b969-99457af3b98b'
+  label: 'Indgår i tema: Autofiktion'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kort-over-paradis\r\n/artikler/en-undersogelse-af-autofiktion-med-mads-damso\r\n/boeger/fra-skyggerne-af-det-vi-ved-kunst-som-virkelighedsproduktion\r\n/boeger/den-der-lever-stille\r\n/boeger/hungerhjerte-0\r\n/boeger/lone-star\r\n/boeger/de-urolige\r\n/boeger/hhv-frshwn\r\n/lister/ny-autofiktion\r\n/boeger/i-hvert-ojeblik-er-vi-stadig-i-live\r\n/boeger/alt-ma-vige-natten\r\n/boeger/der-bor-hollywoodstjerner-pa-vejen\r\n/boeger/lad-os-habe-pa-det-bedste\r\n/boeger/jeg-er-grahvid\r\n/boeger/planen\r\n/boeger/arhundredets-kaerlighedskrig\r\n/boeger/monstermenneske\r\n/boeger/han\r\n/boeger/indigo-1\r\n/boeger/fortiden-er-ikke-hvad-den-har-vaeret\r\n/boeger/fra-vinterarkiverne\r\n/boeger/min-kamp-1-bog\r\n/boeger/kalak\r\n/boeger/yahya-hassan\r\n/boeger/den-som-blinker-er-bange-doden\r\n/boeger/creme-fraiche\r\n/boeger/de-maske-egnede\r\n/boeger/hovedstolen\r\n/boeger/du-som-er-i-himlen\r\n/boeger/claus-beck-nielsen-1963-2001\r\n/boeger/det-bliver-sagt-0\r\n/boeger/alt-hvad-jeg-ved-om-kaerlighed"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 2535ea6a-e9a3-45fc-b20b-86986dd5e8c2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:966f2086-163e-45b9-8fa6-2bd8082f03c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: detensommemenneskeefter68
+theme: litteratursiden
+region: content
+weight: 245
+provider: null
+plugin: 'block_content:966f2086-163e-45b9-8fa6-2bd8082f03c6'
+settings:
+  id: 'block_content:966f2086-163e-45b9-8fa6-2bd8082f03c6'
+  label: 'Det ensomme menneske efter ''68'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/gao-xingjian
+    negate: false
+    context_mapping: {  }

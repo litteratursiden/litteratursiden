@@ -1,0 +1,31 @@
+uuid: 08783aef-6422-4dff-88a8-9da44646434b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:20c65b1a-0872-4eb9-bea7-d3e643b305bd'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: analysejegergrahvid
+theme: litteratursiden
+region: content
+weight: 285
+provider: null
+plugin: 'block_content:20c65b1a-0872-4eb9-bea7-d3e643b305bd'
+settings:
+  id: 'block_content:20c65b1a-0872-4eb9-bea7-d3e643b305bd'
+  label: 'Analyse - Jeg er gråhvid'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/det-folsomme-sind
+    negate: false
+    context_mapping: {  }

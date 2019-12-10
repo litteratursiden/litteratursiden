@@ -1,0 +1,31 @@
+uuid: f22c070c-cd7b-4348-ac7c-8021e5acf278
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7b974094-b945-4812-beff-e2fca4767af4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temamurenilitteraturen
+theme: litteratursiden
+region: content
+weight: 103
+provider: null
+plugin: 'block_content:7b974094-b945-4812-beff-e2fca4767af4'
+settings:
+  id: 'block_content:7b974094-b945-4812-beff-e2fca4767af4'
+  label: 'Tema: Muren i litteraturen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/muren-i-litteraturen-tema\r\n/artikler/traum-und-trauma-vi-har-brug-en-der-er-villig-til-stikke-fingeren-i-saret\r\n/lister/berlin-i-litteraturen\r\n/lister/nyere-tyske-romaner-og-noveller"
+    negate: false
+    context_mapping: {  }

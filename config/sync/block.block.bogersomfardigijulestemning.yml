@@ -1,0 +1,31 @@
+uuid: b104239b-8bff-4980-83a5-5262746b4f26
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e1d78487-fc4e-4df6-8a61-56af0be3c3ac'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: bogersomfardigijulestemning
+theme: litteratursiden
+region: content
+weight: 28
+provider: null
+plugin: 'block_content:e1d78487-fc4e-4df6-8a61-56af0be3c3ac'
+settings:
+  id: 'block_content:e1d78487-fc4e-4df6-8a61-56af0be3c3ac'
+  label: 'Bøger som får dig i julestemning'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

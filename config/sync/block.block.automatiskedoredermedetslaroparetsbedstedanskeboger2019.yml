@@ -1,0 +1,31 @@
+uuid: 5ecef6cd-e157-42f9-8b4d-a12953b22596
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b377274b-ab60-467f-ae53-f21e607cd105'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: automatiskedoredermedetslaroparetsbedstedanskeboger2019
+theme: litteratursiden
+region: content
+weight: 146
+provider: null
+plugin: 'block_content:b377274b-ab60-467f-ae53-f21e607cd105'
+settings:
+  id: 'block_content:b377274b-ab60-467f-ae53-f21e607cd105'
+  label: '"Automatiske døre, der med ét slår op – årets bedste danske bøger 2019'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/arets-bedste-boger-2019
+    negate: false
+    context_mapping: {  }

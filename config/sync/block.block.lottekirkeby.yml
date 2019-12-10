@@ -1,0 +1,31 @@
+uuid: 12ecd64f-0c43-4b84-9e3c-b411ec5a3561
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ccbb34a7-6ecd-4b42-ab3e-aafff223484d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: lottekirkeby
+theme: litteratursiden
+region: content
+weight: 196
+provider: null
+plugin: 'block_content:ccbb34a7-6ecd-4b42-ab3e-aafff223484d'
+settings:
+  id: 'block_content:ccbb34a7-6ecd-4b42-ab3e-aafff223484d'
+  label: 'Lotte Kirkeby'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/lotte-kirkeby-i-dr-romanklubben
+    negate: false
+    context_mapping: {  }

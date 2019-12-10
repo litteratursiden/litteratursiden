@@ -1,0 +1,33 @@
+uuid: 9747caa3-5f14-4a22-813f-da53c0be425d
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  posted:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  social_media:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true

@@ -1,0 +1,31 @@
+uuid: bceb543e-98a4-404f-94fe-8ba4c51d7d08
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:ab6d72d6-71ff-4878-a2bc-dd83965b5a94'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nyefagboger
+theme: litteratursiden
+region: content
+weight: 24
+provider: null
+plugin: 'block_content:ab6d72d6-71ff-4878-a2bc-dd83965b5a94'
+settings:
+  id: 'block_content:ab6d72d6-71ff-4878-a2bc-dd83965b5a94'
+  label: 'Nyeste anmeldelser: Fagbøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: ecc6948d-9962-41d3-8565-ee98d236c93e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:90b27bcd-f2b6-4e41-9d0d-7d9ad32e8994'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: 4skarpetilelisabethmollerjensen
+theme: litteratursiden
+region: content
+weight: 82
+provider: null
+plugin: 'block_content:90b27bcd-f2b6-4e41-9d0d-7d9ad32e8994'
+settings:
+  id: 'block_content:90b27bcd-f2b6-4e41-9d0d-7d9ad32e8994'
+  label: '4 skarpe til Elisabeth Møller Jensen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/ny-feministisk-litteratur
+    negate: false
+    context_mapping: {  }

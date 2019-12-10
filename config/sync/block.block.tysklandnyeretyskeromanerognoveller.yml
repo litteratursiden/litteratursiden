@@ -1,0 +1,31 @@
+uuid: c542451f-578c-4260-93cc-ecb3017536b7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:165b71d2-09bc-4346-b82c-0db64eed2765'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: tysklandnyeretyskeromanerognoveller
+theme: litteratursiden
+region: content
+weight: 221
+provider: null
+plugin: 'block_content:165b71d2-09bc-4346-b82c-0db64eed2765'
+settings:
+  id: 'block_content:165b71d2-09bc-4346-b82c-0db64eed2765'
+  label: 'Tyskland - nyere tyske romaner og noveller '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/muren-i-litteraturen
+    negate: false
+    context_mapping: {  }

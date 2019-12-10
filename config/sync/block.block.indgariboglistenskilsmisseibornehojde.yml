@@ -1,0 +1,31 @@
+uuid: 3967a630-75bc-4349-87a8-8988952b79c9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3aac0f78-0102-4f72-a826-a0ebaf822b60'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenskilsmisseibornehojde
+theme: litteratursiden
+region: content
+weight: 231
+provider: null
+plugin: 'block_content:3aac0f78-0102-4f72-a826-a0ebaf822b60'
+settings:
+  id: 'block_content:3aac0f78-0102-4f72-a826-a0ebaf822b60'
+  label: 'Indgår i boglisten: Skilsmisse i børnehøjde'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/mig-og-min-mor-og-emilie-og-emilies-far-af-kathrina-skarosa-kim-fupz-aakeson\r\n/boeger/plus-er-koko\r\n/boeger/tigerhjerte\r\n/boeger/hjerte-af-pap\r\n/boeger/ma-jeg-fa-mit-gulvtaeppe-med-hjem-til-mor\r\n/boeger/i-love-louise\r\n/boeger/mira-kreaklubben-familie-kys\r\n/boeger/heks"
+    negate: false
+    context_mapping: {  }

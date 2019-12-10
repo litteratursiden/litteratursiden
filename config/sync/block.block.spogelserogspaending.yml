@@ -1,0 +1,31 @@
+uuid: 029db3b6-adde-45cb-b2ea-5d008e2c4fd5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:8072d1c6-c69e-4325-873a-b43ad13dad5e'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: spogelserogspaending
+theme: litteratursiden
+region: content
+weight: 650
+provider: null
+plugin: 'block_content:8072d1c6-c69e-4325-873a-b43ad13dad5e'
+settings:
+  id: 'block_content:8072d1c6-c69e-4325-873a-b43ad13dad5e'
+  label: 'Gys og spænding'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

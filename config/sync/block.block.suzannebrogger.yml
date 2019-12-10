@@ -1,0 +1,31 @@
+uuid: 4e99f555-fdac-4741-8650-5ce471da8e57
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7921d33e-e83f-4883-ab43-67be013b8bce'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: suzannebrogger
+theme: litteratursiden
+region: content
+weight: 16
+provider: null
+plugin: 'block_content:7921d33e-e83f-4883-ab43-67be013b8bce'
+settings:
+  id: 'block_content:7921d33e-e83f-4883-ab43-67be013b8bce'
+  label: 'Suzanne Brøgger 75 år'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: da6ea49a-edc3-4299-8fb6-552725fc745c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:bd898cae-ad8a-4c4a-85ad-fbb23d72cd40'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: aretsbedsteboger2019_2
+theme: litteratursiden
+region: content
+weight: 20
+provider: null
+plugin: 'block_content:bd898cae-ad8a-4c4a-85ad-fbb23d72cd40'
+settings:
+  id: 'block_content:bd898cae-ad8a-4c4a-85ad-fbb23d72cd40'
+  label: 'Årets bedste nordiske bøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

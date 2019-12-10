@@ -1,0 +1,31 @@
+uuid: a5c236d8-6ab6-46bb-b3eb-c96350da2c83
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:06050041-7da2-45b7-a66e-670294874a97'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenaarhusilitteraturen_2
+theme: litteratursiden
+region: content
+weight: 45
+provider: null
+plugin: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
+settings:
+  id: 'block_content:06050041-7da2-45b7-a66e-670294874a97'
+  label: 'Indgår i boglisten: Aarhus i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/index.php/boeger/lageret-huset-marie\r\n/index.php/boeger/lejlighedssange\r\n/boeger/fantomsmerter-krimi\r\n/boeger/jeg-slar-mig-selv-pa-brystet-som-en-slags-primitiv-handling\r\n/boeger/enden-pa-tragedie-i-fjorten-sind-roman\r\n/boeger/kragemanden\r\n/boeger/blaekhat\r\n/index.php/boeger/frit-fald-1\r\n/index.php/boeger/jeg-finder-dig-altid\r\n/index.php/boeger/dodvaegt\r\n/index.php/boeger/mortens-besaettelse\r\n/index.php/boeger/i-helvede-flyder-en-flod\r\n/index.php/boeger/luskefisefortaellinger\r\n/index.php/boeger/alle-de-brugte-dage\r\n/index.php/boeger/pigen-i-cementblanderen\r\n/index.php/boeger/sorte-so\r\n/index.php/boeger/vi-er-da-voksne-mennesker\r\n/index.php/boeger/nar-havet-graner\r\n/index.php/boeger/mange-saere-ting\r\n/index.php/boeger/gud-taler-ud\r\n/index.php/boeger/bag-havelagen-i-abyhoj\r\n/index.php/boeger/ludwig\r\n/index.php/boeger/tugt-og-utugt-i-mellemtiden\r\n/index.php/boeger/blodet-pa-mine-haender\r\n"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 13fcb215-d620-4a5f-af45-04552bae64c7
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:d5dc0ce0-24ad-41c6-8ccb-df6809ce35c6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nominerettildrromanprisen2020
+theme: litteratursiden
+region: content
+weight: 50
+provider: null
+plugin: 'block_content:d5dc0ce0-24ad-41c6-8ccb-df6809ce35c6'
+settings:
+  id: 'block_content:d5dc0ce0-24ad-41c6-8ccb-df6809ce35c6'
+  label: 'Nomineret til DR Romanprisen 2020'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /authors
+    negate: false
+    context_mapping: {  }

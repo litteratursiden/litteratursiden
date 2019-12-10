@@ -1,0 +1,31 @@
+uuid: 15234985-47f8-4160-bf99-63442585f944
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:04eabfa0-7569-4b8d-883d-bc48119b60e7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglisten
+theme: litteratursiden
+region: content
+weight: 199
+provider: null
+plugin: 'block_content:04eabfa0-7569-4b8d-883d-bc48119b60e7'
+settings:
+  id: 'block_content:04eabfa0-7569-4b8d-883d-bc48119b60e7'
+  label: 'Indgår i boglisten'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n"
+    negate: false
+    context_mapping: {  }

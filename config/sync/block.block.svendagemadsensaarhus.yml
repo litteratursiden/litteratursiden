@@ -1,0 +1,31 @@
+uuid: d707c8ad-408b-440e-8430-7bfcbc9e78c9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:1c710da4-4203-4ff4-9ead-077def14357b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: svendagemadsensaarhus
+theme: litteratursiden
+region: content
+weight: 568
+provider: null
+plugin: 'block_content:1c710da4-4203-4ff4-9ead-077def14357b'
+settings:
+  id: 'block_content:1c710da4-4203-4ff4-9ead-077def14357b'
+  label: 'Svend Åge Madsens Aarhus'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/svend-age-madsen
+    negate: false
+    context_mapping: {  }

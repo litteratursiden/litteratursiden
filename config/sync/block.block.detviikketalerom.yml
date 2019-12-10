@@ -1,0 +1,31 @@
+uuid: 6b58a85c-cec5-491f-b15b-9bf966ac23ef
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:32ee4b4f-5128-4bf9-85a1-0fdbf77201a3'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: detviikketalerom
+theme: litteratursiden
+region: content
+weight: 439
+provider: null
+plugin: 'block_content:32ee4b4f-5128-4bf9-85a1-0fdbf77201a3'
+settings:
+  id: 'block_content:32ee4b4f-5128-4bf9-85a1-0fdbf77201a3'
+  label: 'Det vi ikke taler om'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/det-folsomme-sind
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 2916378b-c316-4408-b9cf-fd10f2cb0c25
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c402d641-25e1-4308-8c72-2baa8cd3db60'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgarividenskabogundreboger
+theme: litteratursiden
+region: content
+weight: 100
+provider: null
+plugin: 'block_content:c402d641-25e1-4308-8c72-2baa8cd3db60'
+settings:
+  id: 'block_content:c402d641-25e1-4308-8c72-2baa8cd3db60'
+  label: 'Indgår i: Videnskab og undrebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/fordi-0\r\n/boeger/hvad-er-et-aeg-bogen-om-videnskab-i-hverdagen\r\n/boeger/bogen-om-verden"
+    negate: false
+    context_mapping: {  }

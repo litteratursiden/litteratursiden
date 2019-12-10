@@ -1,0 +1,31 @@
+uuid: 2c012f79-364b-48cc-b816-65a2bbd79452
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:e65eac45-e7a2-42fb-97f6-24886b439afd'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: hungerhjertepayderkantenafverden
+theme: litteratursiden
+region: content
+weight: 494
+provider: null
+plugin: 'block_content:e65eac45-e7a2-42fb-97f6-24886b439afd'
+settings:
+  id: 'block_content:e65eac45-e7a2-42fb-97f6-24886b439afd'
+  label: 'Hungerhjerte - på yderkanten af verden'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/det-folsomme-sind
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 1f4c2e19-f057-4e6e-9365-6f25697547a1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3f54d88f-c5f5-4b17-8cb9-571ec8b94136'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klassiskedanskenoveller_2
+theme: litteratursiden
+region: content
+weight: 461
+provider: null
+plugin: 'block_content:3f54d88f-c5f5-4b17-8cb9-571ec8b94136'
+settings:
+  id: 'block_content:3f54d88f-c5f5-4b17-8cb9-571ec8b94136'
+  label: 'Klassiske danske noveller '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/alletiders-noveller
+    negate: false
+    context_mapping: {  }

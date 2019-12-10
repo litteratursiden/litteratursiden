@@ -1,0 +1,31 @@
+uuid: 1ad89de5-3e39-4b0b-b390-a5ec9c7f1d5a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:59f3bff3-a451-4ff0-9655-53b15bb1392b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: firevilderomaneromfamilieogmoderskabtilsommerferien
+theme: litteratursiden
+region: content
+weight: 145
+provider: null
+plugin: 'block_content:59f3bff3-a451-4ff0-9655-53b15bb1392b'
+settings:
+  id: 'block_content:59f3bff3-a451-4ff0-9655-53b15bb1392b'
+  label: 'Fire vilde romaner om familie og moderskab til sommerferien '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/til-min-soster\r\n/boeger/ophav-roman\r\n/boeger/de-naermeste\r\n/boeger/hhv-frshwn\r\n/forfattere/hanne-hojgaard-viemose\r\n/forfattere/dy-plambeck\r\n/forfattere/lotte-kirkeby\r\n/forfattere/eva-tind-kristensen"
+    negate: false
+    context_mapping: {  }

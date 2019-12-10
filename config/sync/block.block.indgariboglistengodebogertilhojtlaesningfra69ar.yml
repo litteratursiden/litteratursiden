@@ -1,0 +1,31 @@
+uuid: 683fe3ca-5da0-4e4d-832a-7d737fc33a0e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b810d81a-0b16-462c-84b0-aea0e8e54b19'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengodebogertilhojtlaesningfra69ar
+theme: litteratursiden
+region: content
+weight: 216
+provider: null
+plugin: 'block_content:b810d81a-0b16-462c-84b0-aea0e8e54b19'
+settings:
+  id: 'block_content:b810d81a-0b16-462c-84b0-aea0e8e54b19'
+  label: 'Indgår i boglisten: Gode bøger til højtlæsning fra 6-9 år'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/stenfjaes\r\n/boeger/krapyl-0\r\n/boeger/dyr-med-pels-og-uden\r\n/boeger/jorgen-og-else-laver-et-menneskebarn-eller\r\n/boeger/pigen-der-hed-djamesbond\r\n/boeger/barn-af-boger\r\n/boeger/magnolia-af-skagerrak\r\n/boeger/sallys-far-er-sygt-pinlig\r\n/boeger/ismonstret\r\n/boeger/elise-og-den-brugte-hund\r\n/boeger/tork-og-hest\r\n/boeger/anton-og-den-tungeste-byrde\r\n/boeger/viljetyven-bog-1-3\r\n/boeger/ronja-roverdatter\r\n/boeger/vinden-i-piletraeerne\r\n/boeger/tomat\r\n/boeger/tordenhuset-af-mette-vedso\r\n/boeger/lille-moskusmand\r\n/boeger/forsogsbillens-fodnoter\r\nboeger/pigen-der-krob\r\n/boeger/kaere-donald-trump\r\n/boeger/vitello-onsker-et-onske\r\n/boeger/frygtelige-faster\r\n/boeger/rapfod-historien-om-en-lille-letbenet-dinosaur"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 56b11ebf-9b97-4dd1-8afc-9d41c51828aa
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:0a607cf8-2fdd-43fb-838f-cf8153d3070f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: efteraretsfamiliefilm
+theme: litteratursiden
+region: content
+weight: 132
+provider: null
+plugin: 'block_content:0a607cf8-2fdd-43fb-838f-cf8153d3070f'
+settings:
+  id: 'block_content:0a607cf8-2fdd-43fb-838f-cf8153d3070f'
+  label: 'Efterårets familiefilm'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/peter-madsen
+    negate: false
+    context_mapping: {  }

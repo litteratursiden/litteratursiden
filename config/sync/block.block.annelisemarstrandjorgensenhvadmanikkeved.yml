@@ -1,0 +1,31 @@
+uuid: 7812cf8a-78ec-46c6-b221-aa90abc6bfaf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:441461c2-348a-49db-9b23-1ca07066b874'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: annelisemarstrandjorgensenhvadmanikkeved
+theme: litteratursiden
+region: content
+weight: 960
+provider: null
+plugin: 'block_content:441461c2-348a-49db-9b23-1ca07066b874'
+settings:
+  id: 'block_content:441461c2-348a-49db-9b23-1ca07066b874'
+  label: 'Anne Lise Marstrand-Jørgensen - Hvad man ikke ved'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/anne-lise-marstrand-jorgensen\r\n/boeger/hvad-man-ikke-ved"
+    negate: false
+    context_mapping: {  }

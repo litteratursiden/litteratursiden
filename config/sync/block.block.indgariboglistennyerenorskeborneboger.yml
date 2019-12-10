@@ -1,0 +1,31 @@
+uuid: 5296ec0c-f09a-4c88-b388-b297d57f5176
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:729a4ef4-7e2f-481b-a01f-f6f227e94bb6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistennyerenorskeborneboger
+theme: litteratursiden
+region: content
+weight: 238
+provider: null
+plugin: 'block_content:729a4ef4-7e2f-481b-a01f-f6f227e94bb6'
+settings:
+  id: 'block_content:729a4ef4-7e2f-481b-a01f-f6f227e94bb6'
+  label: 'Nyere norske børnebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/alfred-og-blahvalen\r\n/boeger/den-store-kurt-bog\r\n/boeger/min-sidste-dag-i-forste\r\n/boeger/rebuslobet\r\n/boeger/malmanden-og-havet\r\n/boeger/mine-oldemodre\r\n/boeger/alle-taeller-med\r\n/boeger/du-og-jeg-1\r\n/boeger/om-lidt-sover-du\r\n/boeger/nar-kaniner-blive\r\n/boeger/hak-og-ve"
+    negate: false
+    context_mapping: {  }

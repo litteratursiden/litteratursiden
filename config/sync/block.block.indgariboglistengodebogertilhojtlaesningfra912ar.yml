@@ -1,0 +1,31 @@
+uuid: 2aaa4aff-150f-4b92-9ef8-86d80d746947
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:a21169bd-def9-4c0f-94de-eedd4b29236f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengodebogertilhojtlaesningfra912ar
+theme: litteratursiden
+region: content
+weight: 218
+provider: null
+plugin: 'block_content:a21169bd-def9-4c0f-94de-eedd4b29236f'
+settings:
+  id: 'block_content:a21169bd-def9-4c0f-94de-eedd4b29236f'
+  label: 'Indgår i boglisten: Gode bøger til højtlæsning fra 9-12 år '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/vikingesagn-de-20-allerbedste-fortaellinger-fra-danmarks-oldtid\r\n/boeger/malmanden-og-havet\r\n/boeger/de-forunderlige-boger-om-amaia-og-gustau\r\n/boeger/mesterdetektiven-blomkvist\r\n/boeger/liv-den-fantastiske-historie-om-evolution\r\n/boeger/harry-potter-og-de-vises-sten-0\r\n/boeger/arlo-finch-i-flammernes-dal\r\n/boeger/brodrene-lovehjerte\r\n/boeger/hest-horse-pferd-cheval-love\r\n/boeger/iqbal-farooq-og-den-jyske-forbandelse\r\n/boeger/silas-og-den-sorte-hoppe\r\n/boeger/den-opdagelsesrejsende"
+    negate: false
+    context_mapping: {  }

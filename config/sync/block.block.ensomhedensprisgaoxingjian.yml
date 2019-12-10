@@ -1,0 +1,31 @@
+uuid: d5d60e3d-64c9-4b47-a709-e51d3a38b57a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:806c0d9f-361b-4ff7-a11b-48a1418f6a3f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: ensomhedensprisgaoxingjian
+theme: litteratursiden
+region: content
+weight: 207
+provider: null
+plugin: 'block_content:806c0d9f-361b-4ff7-a11b-48a1418f6a3f'
+settings:
+  id: 'block_content:806c0d9f-361b-4ff7-a11b-48a1418f6a3f'
+  label: 'Ensomhedens pris - Gao Xingjian'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/gao-xingjian
+    negate: false
+    context_mapping: {  }

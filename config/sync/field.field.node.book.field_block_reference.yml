@@ -1,0 +1,36 @@
+uuid: 079c4842-3432-459a-9fda-b6bfd193da32
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - block_content.type.book_list_carousel
+    - block_content.type.content_carousel
+    - block_content.type.similar_content_tabs
+    - block_content.type.spot
+    - field.storage.node.field_block_reference
+    - node.type.book
+id: node.book.field_block_reference
+field_name: field_block_reference
+entity_type: node
+bundle: book
+label: 'Block reference'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic: basic
+      book_list_carousel: book_list_carousel
+      content_carousel: content_carousel
+      similar_content_tabs: similar_content_tabs
+      spot: spot
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: basic
+field_type: entity_reference

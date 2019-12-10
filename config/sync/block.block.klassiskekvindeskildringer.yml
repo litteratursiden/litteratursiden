@@ -1,0 +1,31 @@
+uuid: 8f9c0abb-b2f5-4e36-b3a5-782f75e0db58
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:34449c29-4d55-4e9b-86a4-a716f03c449c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: klassiskekvindeskildringer
+theme: litteratursiden
+region: content
+weight: 130
+provider: null
+plugin: 'block_content:34449c29-4d55-4e9b-86a4-a716f03c449c'
+settings:
+  id: 'block_content:34449c29-4d55-4e9b-86a4-a716f03c449c'
+  label: 'Klassiske kvindeskildringer'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/ny-feministisk-litteratur
+    negate: false
+    context_mapping: {  }

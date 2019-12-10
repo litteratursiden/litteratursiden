@@ -1,0 +1,31 @@
+uuid: d87f4522-cefc-4dfe-baa2-4c9878b01aa2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:2e64d1c5-2de1-4672-879c-f83dbdbc864a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: debedstebogertilstorbyferien
+theme: litteratursiden
+region: content
+weight: 971
+provider: null
+plugin: 'block_content:2e64d1c5-2de1-4672-879c-f83dbdbc864a'
+settings:
+  id: 'block_content:2e64d1c5-2de1-4672-879c-f83dbdbc864a'
+  label: 'De bedste bøger til storbyferien'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/lister/barcelona\r\n/lister/berlin-i-litteraturen\r\n/lister/new-yorker-romaner\r\n/lister/paris\r\n/lister/dublin-i-litteraturen\r\n/lister/london-i-det-20-og-21-arhundrede"
+    negate: false
+    context_mapping: {  }

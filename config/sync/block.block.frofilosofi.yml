@@ -1,0 +1,31 @@
+uuid: e0fa67ad-bab1-4cc9-8fbc-d2c69085df95
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:0875f9bf-0a19-4bd9-83ad-223111192e58'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: frofilosofi
+theme: litteratursiden
+region: content
+weight: 89
+provider: null
+plugin: 'block_content:0875f9bf-0a19-4bd9-83ad-223111192e58'
+settings:
+  id: 'block_content:0875f9bf-0a19-4bd9-83ad-223111192e58'
+  label: Frø-filosofi
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/books\r\n/forfattere/max-velthuijs"
+    negate: false
+    context_mapping: {  }

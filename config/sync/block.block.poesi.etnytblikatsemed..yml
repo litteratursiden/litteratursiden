@@ -1,0 +1,31 @@
+uuid: bef47a39-2b99-4583-8d47-2b9b18075644
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ea22a747-ee0e-438f-a171-6375578e4d03'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: poesi.etnytblikatsemed.
+theme: litteratursiden
+region: content
+weight: 195
+provider: null
+plugin: 'block_content:ea22a747-ee0e-438f-a171-6375578e4d03'
+settings:
+  id: 'block_content:ea22a747-ee0e-438f-a171-6375578e4d03'
+  label: 'POESI. ET NYT BLIK AT SE MED.'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/lyrik-gar-taet-pa-det-menneskelige
+    negate: false
+    context_mapping: {  }

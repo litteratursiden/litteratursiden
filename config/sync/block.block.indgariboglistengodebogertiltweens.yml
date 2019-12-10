@@ -1,0 +1,31 @@
+uuid: 5bc7d192-375f-4913-b369-c3588a4f5952
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:eb020f94-2c81-4cfe-8cb1-06d221e36927'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengodebogertiltweens
+theme: litteratursiden
+region: content
+weight: 229
+provider: null
+plugin: 'block_content:eb020f94-2c81-4cfe-8cb1-06d221e36927'
+settings:
+  id: 'block_content:eb020f94-2c81-4cfe-8cb1-06d221e36927'
+  label: 'Indgår i boglisten: gode bøger til tweens'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/mira-kreaklubben-familie-kys\r\n/boeger/hjerte-af-pap\r\n/boeger/de-ualmindelige-den-bojede-mont\r\n/boeger/de-hemmelige-youtubere\r\n/boeger/ternet-ninja\r\n/boeger/drommestenen\r\n/boeger/de-fremmede-0\r\n/boeger/det-mekaniske-hjerte\r\n/boeger/alfred-og-gabestokken\r\n/boeger/mesterdetektiven-blomkvist\r\n/boeger/arlo-finch-i-flammernes-dal\r\n/boeger/de-forunderlige-boger-om-amaia-og-gustau\r\n/boeger/dallas-kobenhavn-intet-forandrer-sig-aldrig\r\n/boeger/malmanden-og-havet\r\n/boeger/wimpy-kid-nedsmeltning\r\n/boeger/vildheks-ildproven\r\n/boeger/den-opdagelsesrejsende\r\n/boeger/harry-potter-og-de-vises-sten-0\r\n/boeger/verdens-vildeste-born\r\n/boeger/walker-dawns-beromte-postordrekatalog"
+    negate: false
+    context_mapping: {  }

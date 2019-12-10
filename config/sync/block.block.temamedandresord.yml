@@ -1,0 +1,31 @@
+uuid: 692c8921-b780-44de-ae49-6d1e79f76fbf
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:32b46d5e-fe8c-4883-b238-c10b20a2dd5f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temamedandresord
+theme: litteratursiden
+region: content
+weight: 94
+provider: null
+plugin: 'block_content:32b46d5e-fe8c-4883-b238-c10b20a2dd5f'
+settings:
+  id: 'block_content:32b46d5e-fe8c-4883-b238-c10b20a2dd5f'
+  label: 'Tema: '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/forfattere/leonora-christina-ulfeldt\r\n/forfattere/henrik-pontoppidan\r\n/forfattere/michael-strunge\r\n/forfattere/karin-michaelis\r\n/forfattere/jeppe-aakjaer\r\n/forfattere/halfdan-rasmussen"
+    negate: false
+    context_mapping: {  }

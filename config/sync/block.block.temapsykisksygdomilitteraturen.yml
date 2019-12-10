@@ -1,0 +1,31 @@
+uuid: fe03ef5f-f9b0-4a62-bb04-6a6aac271f0f
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:f245fde6-6c9c-4785-9af0-490937713f8a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: temapsykisksygdomilitteraturen
+theme: litteratursiden
+region: content
+weight: 999
+provider: null
+plugin: 'block_content:f245fde6-6c9c-4785-9af0-490937713f8a'
+settings:
+  id: 'block_content:f245fde6-6c9c-4785-9af0-490937713f8a'
+  label: 'Tema: Psykisk sygdom i litteraturen '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/kampagne-psykisk-sygdom-i-litteraturen\r\n/artikler/hungerhjerte-pa-yderkanten-af-verden"
+    negate: false
+    context_mapping: {  }

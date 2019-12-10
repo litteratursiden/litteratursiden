@@ -1,0 +1,31 @@
+uuid: 81bb7bad-80fa-47a1-b8e1-25899c0cc434
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:39e6dad1-d5c5-4258-801f-77892c6e4c81'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenarbejderlitteratur
+theme: litteratursiden
+region: content
+weight: 99
+provider: null
+plugin: 'block_content:39e6dad1-d5c5-4258-801f-77892c6e4c81'
+settings:
+  id: 'block_content:39e6dad1-d5c5-4258-801f-77892c6e4c81'
+  label: 'indgår i boglisten: Arbejderlitteratur'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/en-uretfaerdig-tid\r\n/boeger/de-ansatte\r\n/boeger/dengang-vi-var-os\r\n/boeger/trappevask\r\n/boeger/slagterkoner-og-bagerenker\r\n/boeger/arbejdsnaever\r\n/boeger/planen\r\n/boeger/den-svaevende-tankbestyrer\r\n/boeger/do-danska\r\n/boeger/dagpengeland-en-sand-historie-om-aktivering\r\n/boeger/beton\r\n/boeger/rakkerpakhuset\r\n/boeger/stormen-i-99\r\n/boeger/vangede-billeder\r\n/boeger/konen-og-aeggene\r\n/boeger/barndommens-gade\r\n/boeger/harboor-folk\r\n/boeger/man-skal-jo-leve\r\n/boeger/pelle-erobreren-bind-1-2\r\n/boeger/lageret-huset-marie\r\n"
+    negate: false
+    context_mapping: {  }

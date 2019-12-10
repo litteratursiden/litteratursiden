@@ -1,0 +1,31 @@
+uuid: 10be2c33-91e0-4828-8a4d-cb9f0c4767f4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:c843e457-20b1-4a92-a7a8-aa25d6e11514'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: valhalla40ar
+theme: litteratursiden
+region: content
+weight: 54
+provider: null
+plugin: 'block_content:c843e457-20b1-4a92-a7a8-aa25d6e11514'
+settings:
+  id: 'block_content:c843e457-20b1-4a92-a7a8-aa25d6e11514'
+  label: 'Valhalla 40 år'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

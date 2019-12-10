@@ -1,0 +1,31 @@
+uuid: 22e73c95-602f-4669-8b1c-454be26c57d9
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:58285a8f-cff6-42f6-bd87-df0d33ec6595'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: murenilitteraturen
+theme: litteratursiden
+region: content
+weight: 52
+provider: null
+plugin: 'block_content:58285a8f-cff6-42f6-bd87-df0d33ec6595'
+settings:
+  id: 'block_content:58285a8f-cff6-42f6-bd87-df0d33ec6595'
+  label: 'Muren i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/muren-i-litteraturen
+    negate: false
+    context_mapping: {  }

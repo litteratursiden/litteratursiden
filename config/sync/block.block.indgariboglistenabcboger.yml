@@ -1,0 +1,31 @@
+uuid: 5a7cc88c-b6ad-465e-9c52-eade72717089
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:3b9bdc51-dd50-41f7-b8e5-89ca06173b16'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenabcboger
+theme: litteratursiden
+region: content
+weight: 104
+provider: null
+plugin: 'block_content:3b9bdc51-dd50-41f7-b8e5-89ca06173b16'
+settings:
+  id: 'block_content:3b9bdc51-dd50-41f7-b8e5-89ca06173b16'
+  label: 'ABC bøger '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/halfdans-abc-med-musik-cd\r\n/boeger/alfabet-atlet\r\n/boeger/guds-abc\r\n/boeger/morgenthalers-abc\r\n/boeger/sa-er-der-serveret-hr-struganoff\r\n/boeger/vitello-28-historier-fra-til\r\n/boeger/alting-begynder-med\r\n/boeger/mimbo-jimbos-lille-abc\r\n/boeger/urskovsalfabet"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: 9149e968-ad29-472c-b29e-08d348c8901b
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:9e47ff5d-b339-488b-808c-31849c86ab1f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: danskedebutanter20182019
+theme: litteratursiden
+region: content
+weight: 69
+provider: null
+plugin: 'block_content:9e47ff5d-b339-488b-808c-31849c86ab1f'
+settings:
+  id: 'block_content:9e47ff5d-b339-488b-808c-31849c86ab1f'
+  label: 'Danske debutanter 2018-2019'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/arets-danske-debutanter-2018-2019\r\n/boeger/pillerne-far-mors-ojne-til-naerme-sig-gulvet-roman\r\n/boeger/det-rette-element"
+    negate: false
+    context_mapping: {  }

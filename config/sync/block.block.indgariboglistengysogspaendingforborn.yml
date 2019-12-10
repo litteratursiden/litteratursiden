@@ -1,0 +1,31 @@
+uuid: 8ff27d52-0bf6-4f39-86c8-a8ef670b0964
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:66d314c5-2857-43f2-83a2-5f3183397145'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengysogspaendingforborn
+theme: litteratursiden
+region: content
+weight: 247
+provider: null
+plugin: 'block_content:66d314c5-2857-43f2-83a2-5f3183397145'
+settings:
+  id: 'block_content:66d314c5-2857-43f2-83a2-5f3183397145'
+  label: 'Indgår i boglisten: Gys og spænding for børn'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/heksens-soster\r\n/boeger/de-udode\r\n/boeger/lysets-hjerte-0\r\n/boeger/drengen-fra-krematorium-d\r\n/boeger/det-dode-hus-pa-egevej\r\n/boeger/dodningedukken-en-spogelseshistorie\r\n/boeger/king-0\r\n/boeger/sma-onde-svin"
+    negate: false
+    context_mapping: {  }

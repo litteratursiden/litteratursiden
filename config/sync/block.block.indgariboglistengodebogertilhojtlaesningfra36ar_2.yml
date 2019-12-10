@@ -1,0 +1,31 @@
+uuid: a31dfefd-46d4-44dc-869d-e9c639e85500
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:14ba1ac2-f229-4d07-9eb6-d10ef75a91a7'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistengodebogertilhojtlaesningfra36ar_2
+theme: litteratursiden
+region: content
+weight: 102
+provider: null
+plugin: 'block_content:14ba1ac2-f229-4d07-9eb6-d10ef75a91a7'
+settings:
+  id: 'block_content:14ba1ac2-f229-4d07-9eb6-d10ef75a91a7'
+  label: 'Gode bøger til højtlæsning fra 3-6 år '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: b1e1f38f-bde1-4785-862b-9f0d51d68105
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:c159dc58-464d-436d-8b85-0af634d911f2'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: krigogflugtiborneboger_2
+theme: litteratursiden
+region: content
+weight: 68
+provider: null
+plugin: 'block_content:c159dc58-464d-436d-8b85-0af634d911f2'
+settings:
+  id: 'block_content:c159dc58-464d-436d-8b85-0af634d911f2'
+  label: 'Krig og flugt i børnebøger'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

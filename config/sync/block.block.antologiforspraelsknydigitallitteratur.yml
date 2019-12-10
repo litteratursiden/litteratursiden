@@ -1,0 +1,31 @@
+uuid: 1a1bc901-a2ce-4e76-8383-93beb20849f5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:b817b1ad-f94f-4bcb-8e62-be282a0d162b'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: antologiforspraelsknydigitallitteratur
+theme: litteratursiden
+region: content
+weight: 116
+provider: null
+plugin: 'block_content:b817b1ad-f94f-4bcb-8e62-be282a0d162b'
+settings:
+  id: 'block_content:b817b1ad-f94f-4bcb-8e62-be282a0d162b'
+  label: 'Antologi for sprælsk ny digital litteratur'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/digital-litteratur
+    negate: false
+    context_mapping: {  }

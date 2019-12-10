@@ -1,0 +1,31 @@
+uuid: 63f7e062-d053-4549-aa31-c1fb549d49b5
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:1fe1ca3b-21cd-4586-9875-c89b97bba296'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: galskabilitteraturen
+theme: litteratursiden
+region: content
+weight: 513
+provider: null
+plugin: 'block_content:1fe1ca3b-21cd-4586-9875-c89b97bba296'
+settings:
+  id: 'block_content:1fe1ca3b-21cd-4586-9875-c89b97bba296'
+  label: 'Galskab i litteraturen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/det-folsomme-sind
+    negate: false
+    context_mapping: {  }

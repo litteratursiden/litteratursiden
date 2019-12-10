@@ -1,0 +1,31 @@
+uuid: 78b4a94c-72e1-46bb-b757-e5900eac8219
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:d5d15465-d040-4506-8999-5baca937aa0a'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistenroskildeilitteraturen
+theme: litteratursiden
+region: content
+weight: 800
+provider: null
+plugin: 'block_content:d5d15465-d040-4506-8999-5baca937aa0a'
+settings:
+  id: 'block_content:d5d15465-d040-4506-8999-5baca937aa0a'
+  label: 'Indgår i boglisten: Roskilde i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/kaellingehaven\r\n/boeger/professor-hieronimus-pa-sct-jorgen\r\n/boeger/dodsenglen\r\n/boeger/oraklet-kriminalroman\r\n/boeger/de-uskyldige-dode\r\n/boeger/bornenes-ven-sagen-om-den-kendte-morder-roman\r\n/boeger/bad-standing\r\n/boeger/sa-var-verden-deres\r\n/boeger/bla-bror-roman\r\n/boeger/vanilletrilogien\r\n/boeger/om\r\n/boeger/vand-under-neglene\r\n/boeger/professor-hieronimus-roman\r\n/boeger/paa-sct-jorgen\r\n/boeger/hojt-spil-0\r\n/boeger/morgengaven-roman"
+    negate: false
+    context_mapping: {  }

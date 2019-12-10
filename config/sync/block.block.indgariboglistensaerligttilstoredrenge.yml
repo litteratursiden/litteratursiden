@@ -1,0 +1,31 @@
+uuid: 538f8102-9dac-4309-81d3-6319eccde8b2
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:b217d205-6ba0-4e7b-8e88-d3fbc8a8ce94'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: indgariboglistensaerligttilstoredrenge
+theme: litteratursiden
+region: content
+weight: 200
+provider: null
+plugin: 'block_content:b217d205-6ba0-4e7b-8e88-d3fbc8a8ce94'
+settings:
+  id: 'block_content:b217d205-6ba0-4e7b-8e88-d3fbc8a8ce94'
+  label: 'Indgår i boglisten: Særligt til store drenge'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/boeger/pragtfuldt-pragtfuldt\r\n/boeger/kampen-om-sommersvaerdet\r\n/boeger/zam\r\n/boeger/mig-og-earl-og-den-doende-pige\r\n/boeger/drengene-0\r\n/boeger/drengen-i-den-stribede-pyjamas\r\n/boeger/kings-jutland-en-krimikomedie\r\n/boeger/tranedans\r\n"
+    negate: false
+    context_mapping: {  }

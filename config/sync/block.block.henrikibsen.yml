@@ -1,0 +1,31 @@
+uuid: 69444aca-e58f-48e0-bab7-ac07503b69d1
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:9cee5159-57d2-4e17-b5f0-defffcede844'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: henrikibsen
+theme: litteratursiden
+region: content
+weight: 72
+provider: null
+plugin: 'block_content:9cee5159-57d2-4e17-b5f0-defffcede844'
+settings:
+  id: 'block_content:9cee5159-57d2-4e17-b5f0-defffcede844'
+  label: 'Henrik Ibsen'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/artikler/nor-gendigtning-af-henrik-ibsens-vaerker\r\n/boeger/henrik-roman\r\n/boeger/hilde-roman\r\n/boeger/nora-roman"
+    negate: false
+    context_mapping: {  }

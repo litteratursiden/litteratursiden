@@ -1,0 +1,31 @@
+uuid: 625618ac-67da-4ddd-be5e-5592eb576c65
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:7921d33e-e83f-4883-ab43-67be013b8bce'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: suzannebrogger_2
+theme: litteratursiden
+region: content
+weight: 793
+provider: null
+plugin: 'block_content:7921d33e-e83f-4883-ab43-67be013b8bce'
+settings:
+  id: 'block_content:7921d33e-e83f-4883-ab43-67be013b8bce'
+  label: Forfatterportræt
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /artikler/fra-bog-til-scene
+    negate: false
+    context_mapping: {  }

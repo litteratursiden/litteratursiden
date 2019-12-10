@@ -1,0 +1,31 @@
+uuid: 64bfa226-230e-42d7-bc19-717ea88ca285
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:8e5af102-49ff-4fdb-b043-ad3e8739dab9'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: mednormalsprogetindipoesien
+theme: litteratursiden
+region: content
+weight: 410
+provider: null
+plugin: 'block_content:8e5af102-49ff-4fdb-b043-ad3e8739dab9'
+settings:
+  id: 'block_content:8e5af102-49ff-4fdb-b043-ad3e8739dab9'
+  label: 'Med normalsproget ind i poesien'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/temaer/det-folsomme-sind\r\n/forfattere/mikael-josephsen\r\n"
+    negate: false
+    context_mapping: {  }

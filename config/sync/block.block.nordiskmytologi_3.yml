@@ -1,0 +1,31 @@
+uuid: f8f9d845-574c-484a-a7e8-9a708540a88c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:75574e54-0761-4e36-993c-287458005e9f'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: nordiskmytologi_3
+theme: litteratursiden
+region: content
+weight: 114
+provider: null
+plugin: 'block_content:75574e54-0761-4e36-993c-287458005e9f'
+settings:
+  id: 'block_content:75574e54-0761-4e36-993c-287458005e9f'
+  label: 'Nordisk mytologi '
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /forfattere/peter-madsen
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,31 @@
+uuid: f322e189-20f3-44d4-8778-11e405fd257e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:c3a99189-8f98-4054-8224-ccd30216c7b4'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: louisianaliterature2019forsiden
+theme: litteratursiden
+region: content
+weight: 616
+provider: null
+plugin: 'block_content:c3a99189-8f98-4054-8224-ccd30216c7b4'
+settings:
+  id: 'block_content:c3a99189-8f98-4054-8224-ccd30216c7b4'
+  label: 'Louisiana Literature 2019 - forsiden'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /lister/louisiana-literature-2019
+    negate: false
+    context_mapping: {  }

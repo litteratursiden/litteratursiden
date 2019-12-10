@@ -1,0 +1,31 @@
+uuid: 8241b03e-bc04-482f-b427-30a5e55b5ca8
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:a7119c56-6db2-40d6-bf11-7f50bd37f85c'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: julelaesning
+theme: litteratursiden
+region: content
+weight: 7
+provider: null
+plugin: 'block_content:a7119c56-6db2-40d6-bf11-7f50bd37f85c'
+settings:
+  id: 'block_content:a7119c56-6db2-40d6-bf11-7f50bd37f85c'
+  label: Julelæsning
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }

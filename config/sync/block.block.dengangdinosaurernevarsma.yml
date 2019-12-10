@@ -1,0 +1,31 @@
+uuid: 0548beb2-4a55-44ef-b354-b6fa163107d8
+langcode: da
+status: false
+dependencies:
+  content:
+    - 'block_content:spot:af2df193-e939-4830-8561-1c91aaee53e5'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: dengangdinosaurernevarsma
+theme: litteratursiden
+region: content
+weight: 1091
+provider: null
+plugin: 'block_content:af2df193-e939-4830-8561-1c91aaee53e5'
+settings:
+  id: 'block_content:af2df193-e939-4830-8561-1c91aaee53e5'
+  label: 'Dengang dinosaurerne var små'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

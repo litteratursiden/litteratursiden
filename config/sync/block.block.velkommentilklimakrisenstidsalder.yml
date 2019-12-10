@@ -1,0 +1,31 @@
+uuid: 32ac0be2-e3aa-498f-be0a-7a062aafacc4
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:958ce0cd-768e-477f-8ec4-ae73fbfa7c2d'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: velkommentilklimakrisenstidsalder
+theme: litteratursiden
+region: content
+weight: 149
+provider: null
+plugin: 'block_content:958ce0cd-768e-477f-8ec4-ae73fbfa7c2d'
+settings:
+  id: 'block_content:958ce0cd-768e-477f-8ec4-ae73fbfa7c2d'
+  label: 'Velkommen til klimakrisens tidsalder!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/klima-i-litteraturen
+    negate: false
+    context_mapping: {  }

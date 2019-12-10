@@ -1,0 +1,31 @@
+uuid: 3a483ba1-f579-45ac-b6b7-ce54d1facfca
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:e583c580-ffc0-4677-ab97-461af80db942'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: psykisksygdomilitteraturen
+theme: litteratursiden
+region: content
+weight: 260
+provider: null
+plugin: 'block_content:e583c580-ffc0-4677-ab97-461af80db942'
+settings:
+  id: 'block_content:e583c580-ffc0-4677-ab97-461af80db942'
+  label: 'Psykisk sygdom i litteraturen'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/det-folsomme-sind
+    negate: false
+    context_mapping: {  }

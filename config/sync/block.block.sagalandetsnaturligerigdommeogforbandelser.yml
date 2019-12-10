@@ -1,0 +1,31 @@
+uuid: 8df37cee-88b4-4207-ab64-ad021aa3df8c
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:spot:ab05a854-6ef2-4232-ba25-1e01830755af'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: sagalandetsnaturligerigdommeogforbandelser
+theme: litteratursiden
+region: content
+weight: 642
+provider: null
+plugin: 'block_content:ab05a854-6ef2-4232-ba25-1e01830755af'
+settings:
+  id: 'block_content:ab05a854-6ef2-4232-ba25-1e01830755af'
+  label: 'Saga-landets naturlige rigdomme og forbandelser'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /temaer/nye-islandske-fortaellinger
+    negate: false
+    context_mapping: {  }
