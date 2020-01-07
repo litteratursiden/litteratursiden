@@ -31,7 +31,7 @@ function litteratursiden_preprocess_html(&$variables) {
   }
 
   $variables['head_title']['name'] = "Litteratursiden";
-} 
+}
 
 /**
  * Implements hook_page_attachments_alter().

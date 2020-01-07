@@ -69,7 +69,7 @@
             {% if item.content['#block_content'].bundle == 'book_list_carousel' %}
               <h2{{ title_attributes.addClass('block-title') }}>
                 <span class="block-icon">
-                  {% set icon = item.content['#block_content'].field_content_carousel_icon|render %}
+                  {% set icon = item.content['#block_content'].field_book_list_carousel_icon.value %}
                   {% if icon %}
                     {{ icon }}
                   {% else %}
@@ -79,7 +79,20 @@
                 {{ item.content['#block_content'].label }}
               </h2>
             {% endif %}
-            {{ item.content|without('field_book_list_carousel_bg', 'field_label') }}
+            {% if item.content['#block_content'].bundle == 'content_carousel' %}
+              <h2{{ title_attributes.addClass('block-title') }}>
+                <span class="block-icon">
+                  {% set icon = item.content['#block_content'].field_content_carousel_icon.value %}
+                  {% if icon %}
+                    {{ icon }}
+                  {% else %}
+                    <span class="icon"></span>
+                  {% endif %}
+                </span>
+                {{ item.content['#block_content'].label }}
+              </h2>
+            {% endif %}
+            {{ item.content|without('field_book_list_carousel_bg', 'field_content_carousel_bg', 'field_label') }}
           </div>
         </div>
       {% endfor %}
