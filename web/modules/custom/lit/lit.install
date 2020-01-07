@@ -133,16 +133,6 @@ function lit_update_8104() {
   ]);
   $node->save();
 
-  $node = Node::create([
-    'type'        => 'landing_page',
-    'title'       => 'Temaer',
-    'path' => [
-      'alias' => '/temaer',
-      'pathauto' => PathautoState::SKIP,
-    ]
-  ]);
-  $node->save();
-
   MenuLinkContent::create([
     'title' => 'Børnebøger',
     'link' => ['uri' => 'internal:/boerneboeger'],
@@ -152,12 +142,6 @@ function lit_update_8104() {
   MenuLinkContent::create([
     'title' => 'Forfattere',
     'link' => ['uri' => 'internal:/forfattere'],
-    'menu_name' => 'main',
-  ])->save();
-
-  MenuLinkContent::create([
-    'title' => 'Temaer',
-    'link' => ['uri' => 'internal:/temaer'],
     'menu_name' => 'main',
   ])->save();
 }

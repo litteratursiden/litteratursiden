@@ -14,27 +14,28 @@ mode: default
 content:
   field_block_reference:
     weight: 101
-    label: above
+    label: hidden
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   posted:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   social_media:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true
   owner_full_name: true

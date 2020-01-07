@@ -26,6 +26,7 @@ class ConfigToBlockReference extends DrushCommands {
     $count = 0;
     $disabled = 0;
     $handledUrls = 0;
+    $batchCount = 50;
 
     $this->checkState();
 
@@ -59,36 +60,43 @@ class ConfigToBlockReference extends DrushCommands {
           foreach ($urls as $key => $url) {
             // Remove trailing space.
             $trimmedUrl = trim($url);
-
-            // The old main menu landing pages URLS have changed.
+            // The old main menu landing pages URLs have changed.
             $trimmedUrl = $this->handleLandingPages($trimmedUrl);
 
             $url = Drupal::service('path.alias_manager')->getPathByAlias($trimmedUrl);
             $urlExploded = explode('/', $url);
-            if (isset($urlExploded['2']) && is_numeric($urlExploded['2'])) {
-              // Do stuff.
-              $failedNodes = $this->addReferenceToNode($urlExploded['2'], $blockConfig);
+            if (
+              isset($urlExploded['2']) &&
+              is_numeric($urlExploded['2']) &&
+              $urlExploded['1'] == 'node' &&
+              empty($urlExploded['3'])
+            ) {
+              $result = $this->addReferenceToNode($urlExploded['2'], $blockConfig);
+              $failedNodes[$result['status']][] = $result;
             }
             else {
               $broken_links[$url][] = $blockConfig['settings']['label'];
             }
-            $this->output()->writeln($trimmedUrl);
+            $this->output()->writeln($trimmedUrl . ' (' . $count . '/' . $batchCount . ')');
             $handledUrls = $handledUrls + 1;
           }
+
+          // @todo Do we need further checks here before deleting?
+          // Delete the configuration.
+          $this->deleteConfig($blockConfig);
+          $count = $count + 1;
         }
       }
 
-      $count = $count + 1;
-
-      if ($count > 100) {
+      if ($count > $batchCount) {
          break;
       }
-
-      // Create csv with broken links.
-      $this->createBrokenLinksCsv($broken_links);
     }
 
-    $this->output()->writeln('--- Handled blocks ---');
+    // Create csv with broken links.
+    $this->createBrokenLinksCsv($broken_links);
+
+    $this->output()->writeln('--- Migrated blocks ---');
     $this->output()->writeln($count);
     $this->output()->writeln('--- Disabled blocks config deleted ---');
     $this->output()->writeln($disabled);
@@ -130,9 +138,6 @@ class ConfigToBlockReference extends DrushCommands {
       case '/authors':
         $url = '/forfattere';
         break;
-      case '/topics':
-        $url = '/temaer';
-        break;
     }
     return $url;
   }
@@ -151,14 +156,28 @@ class ConfigToBlockReference extends DrushCommands {
     $blockContentUuid = $blockContentId['1'];
     $block = \Drupal::service('entity.repository')->loadEntityByUuid('block_content', $blockContentUuid);
     if (isset($block)) {
+      // Move block label to spotbox block_content if block label display is set.
+      if ($blockConfig['settings']['label_display'] == 'visible') {
+        if ($block->bundle() == 'spot') {
+          $block->field_label = $blockConfig['settings']['label'];
+          $block->save();
+        }
+      }
       $node = Node::load($nid);
-      $node->field_block_reference[] = $block->id();
-      $node->save();
-      return ['Success' => [$nid => ['nid' => $nid, 'config' => $blockConfig, 'status' => 'Success']]];
+      if (isset($node)) {
+        $node->field_block_reference[] = $block->id();
+        $node->save();
+        $status = 'Success';
+      }
+      else {
+        $status = 'Missing block';
+      }
     }
     else {
-      return ['Missing block' => [$nid => ['nid' => $nid, 'config' => $blockConfig, 'status' => 'Missing block']]];
+      $status = 'Missing block';
     }
+
+    return ['nid' => $nid, 'config' => $blockConfig, 'status' => $status];
   }
 
   /**
@@ -180,9 +199,8 @@ class ConfigToBlockReference extends DrushCommands {
       'frontpage' => '/frontpage',
       'boerneboeger' => '/boerneboeger',
       'forfattere' => '/forfattere',
-      'temaer' => '/temaer',
     ];
-    $nodeTypes = $node_types = \Drupal\node\Entity\NodeType::loadMultiple();
+    $nodeTypes = \Drupal\node\Entity\NodeType::loadMultiple();
 
     // Check for existing landing pages.
     foreach ($landing_pages as $name => $alias) {

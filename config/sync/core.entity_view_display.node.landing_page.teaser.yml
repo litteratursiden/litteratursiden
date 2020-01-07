@@ -28,6 +28,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_block_reference: true
   langcode: true
   owner_full_name: true
   owner_portrait: true

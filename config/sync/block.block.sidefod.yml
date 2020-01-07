@@ -1,5 +1,5 @@
-uuid: fd6ff386-bb7c-4a1f-b237-82e61a1dbb47
-langcode: en
+uuid: cc5b5386-aa2b-4845-89a6-1aed9e366379
+langcode: da
 status: true
 dependencies:
   config:
@@ -11,12 +11,12 @@ dependencies:
 id: sidefod
 theme: litteratursiden
 region: footer
-weight: -19
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: Footer
+  label: Sidefod
   provider: system
   label_display: '0'
   level: 1
