@@ -26,7 +26,7 @@ class ConfigToBlockReference extends DrushCommands {
     $count = 0;
     $disabled = 0;
     $handledUrls = 0;
-    $batchCount = 50;
+    $batchCount = 2000;
 
     $this->checkState();
 
