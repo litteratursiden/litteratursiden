@@ -46,12 +46,6 @@
     'field--label-' ~ label_display,
   ]
 %}
-{%
-  set title_classes = [
-    'field--label',
-    label_display == 'visually_hidden' ? 'sr-only',
-  ]
-%}
 
 {% if label_hidden %}
   {% if multiple %}
@@ -62,7 +56,7 @@
             {% if item.content['#block_content'].bundle == 'spot' %}
               {% if item.content['#block_content'].field_label %}
                 <div class="header-container container flex-row stretch">
-                  <h3{{ title_attributes.addClass('block-title', 'col-xs-12') }}>{{ item.content['#block_content'].field_label.value }}</h3>
+                  <h3 class="block-title col-xs-12">{{ item.content['#block_content'].field_label.value }}</h3>
                 </div>
               {% endif %}
             {% endif %}
@@ -92,27 +86,10 @@
                 {{ item.content['#block_content'].label }}
               </h2>
             {% endif %}
-            {{ item.content|without('field_book_list_carousel_bg', 'field_content_carousel_bg', 'field_label') }}
+            {{ item.content|without('field_book_list_carousel_bg', 'field_label') }}
           </div>
         </div>
       {% endfor %}
     </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-    {% endfor %}
   {% endif %}
-{% else %}
-  <div{{ attributes.addClass(classes) }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-    {% if multiple %}
-      <div class="field--items">
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
-  </div>
 {% endif %}
