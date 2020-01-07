@@ -86,7 +86,7 @@
                 {{ item.content['#block_content'].label }}
               </h2>
             {% endif %}
-            {{ item.content|without('field_book_list_carousel_bg', 'field_label') }}
+            {{ item.content|without('field_book_list_carousel_bg', 'field_content_carousel_bg', 'field_label') }}
           </div>
         </div>
       {% endfor %}
