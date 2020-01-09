@@ -145,3 +145,13 @@ function lit_update_8104() {
     'menu_name' => 'main',
   ])->save();
 }
+
+/**
+ * Enable module.
+ */
+function lit_update_8105() {
+  $modules = array(
+    'twig_tweak',
+  );
+  \Drupal::service('module_installer')->install($modules);
+}

@@ -81,10 +81,13 @@ class ConfigToBlockReference extends DrushCommands {
             $handledUrls = $handledUrls + 1;
           }
 
-          // @todo Do we need further checks here before deleting?
           // Delete the configuration.
           $this->deleteConfig($blockConfig);
           $count = $count + 1;
+        }
+        // Remove book list view. Rendered from node book-list full template.
+        if ($blockConfig['id'] == 'views_block__book_list_books_block') {
+          $this->deleteConfig($blockConfig);
         }
       }
 
@@ -160,6 +163,10 @@ class ConfigToBlockReference extends DrushCommands {
       if ($blockConfig['settings']['label_display'] == 'visible') {
         if ($block->bundle() == 'spot') {
           $block->field_label = $blockConfig['settings']['label'];
+          $block->save();
+        }
+        if ($block->bundle() == 'book_list_carousel') {
+          $block->title = $blockConfig['settings']['label'];
           $block->save();
         }
       }

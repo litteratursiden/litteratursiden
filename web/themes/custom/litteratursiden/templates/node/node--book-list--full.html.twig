@@ -77,8 +77,8 @@ view_mode ? view_mode|clean_class,
   <div class="container">
     <div class="left-col">
       <div class="author-block">
-        {{ content.field_author_portrait_image }}
-        <div class="latest-review-book">{{ content.latest_reviewed_book }}</div>
+        {{ content.owner_portrait }}
+        {{ content.posted }}
       </div>
     </div>
     <div class="right-col">
@@ -88,7 +88,6 @@ view_mode ? view_mode|clean_class,
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
       {{ title_suffix }}
-
       <div class="desktop-node-content hidden-xs hidden-sm">
         <div class="social-block">
           <div class="grow">
@@ -98,13 +97,12 @@ view_mode ? view_mode|clean_class,
           {{ content.social_media }}
         </div>
         <div{{ content_attributes.addClass('content') }}>
-          {{ content|without('links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book', 'field_block_reference') }}
+          {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'posted', 'field_block_reference') }}
         </div>
       </div>
     </div>
     {#Placeholder for DOM modifications#}
     <div class="mobile-node-content hidden-md hidden-lg">
-      <div class="author-block"></div>
       <div class="social-block">
         <div class="grow">
           {{ content.flag_bookmark }}
@@ -113,15 +111,23 @@ view_mode ? view_mode|clean_class,
         {{ content.social_media }}
       </div>
       <div{{ content_attributes.addClass('content') }}>
-        {{ content|without( 'links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book', 'field_block_reference') }}
+        {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'posted', 'field_block_reference') }}
       </div>
     </div>
   </div>
-  <div class="accordion ">
+  <div class="accordion">
     <div class="container">
       <div class="right-col">
-        {{ content.group_additional_info }}
+        {% if content.group_additional_info %}
+          {{ content.group_additional_info }}
+        {% endif %}
       </div>
+    </div>
+  </div>
+  <div class="block-views-blockbooks-book-list-books-block">
+    <div class="content-wrapper">
+      <h2 class="block-title">{{ 'Books on the list'|t }}</h2>
+      {{ drupal_view('books', 'book_list_books_block') }}
     </div>
   </div>
   {{ content.field_block_reference }}

@@ -128,6 +128,7 @@
         "drupal/social_media": "^1.2",
         "drupal/swiftmailer": "^1.0",
         "drupal/system_status": "^2.8",
+        "drupal/twig_tweak": "^2.3",
         "drupal/user_registrationpassword": "1.0-alpha3",
         "drupal/varnish_purge": "^1.5",
         "drupal/video_embed_field": "^1.5",
