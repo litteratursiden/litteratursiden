@@ -89,6 +89,9 @@ class ConfigToBlockReference extends DrushCommands {
         if ($blockConfig['id'] == 'views_block__book_list_books_block') {
           $this->deleteConfig($blockConfig);
         }
+        if ($blockConfig['id'] == 'views_block__related_books_related_books_by_author_block') {
+          $this->deleteConfig($blockConfig);
+        }
       }
 
       if ($count > $batchCount) {
