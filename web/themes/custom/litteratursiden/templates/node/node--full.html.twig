@@ -124,5 +124,25 @@ view_mode ? view_mode|clean_class,
       </div>
     </div>
   </div>
+  {# Get field references for author name #}
+  {% if node.bundle == 'analysis' %}
+    {% if node.field_analysis_reference_book.entity.field_book_reference_author.value is not empty %}
+      {% set field = node.field_analysis_reference_book.entity.field_book_reference_author.entity.title.value %}
+    {% endif %}
+  {% elseif node.bundle == 'interview' %}
+    {% set field = node.field_interview_reference_author.entity.title.value %}
+  {% elseif node.bundle == 'review' %}
+    {% if node.field_review_reference_book.entity.field_book_reference_author.value is not empty %}
+      {% set field = node.field_review_reference_book.entity.field_book_reference_author.entity.title.value %}
+    {% endif %}
+  {% endif %}
+  {% if field is defined %}
+    <div class="block-views-blockrelated-books-related-books-by-author-block">
+      <div class="content-wrapper">
+        <h2 class="block-title">{{ 'Books by @author_name'|t({'@author_name': field}) }}</h2>
+        {{ drupal_view('related_books', 'related_books_by_author_block') }}
+      </div>
+    </div>
+  {% endif %}
   {{ content.field_block_reference }}
 </article>
