@@ -153,6 +153,7 @@ function lit_update_8104() {
 function lit_update_8105() {
   $modules = array(
     'twig_tweak',
+    'viewsreference'
   );
   \Drupal::service('module_installer')->install($modules);
 }

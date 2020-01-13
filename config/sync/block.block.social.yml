@@ -1,4 +1,4 @@
-uuid: 3fe958d4-1cc0-40d3-9c1c-ed05d2cff9b8
+uuid: e1171e62-32a2-4043-b928-d0340ddcf328
 langcode: da
 status: true
 dependencies:
@@ -11,14 +11,14 @@ dependencies:
 id: social
 theme: litteratursiden
 region: footer
-weight: 0
+weight: -18
 provider: null
 plugin: 'system_menu_block:social'
 settings:
   id: 'system_menu_block:social'
-  label: Social
+  label: 'Følg os'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
 visibility: {  }

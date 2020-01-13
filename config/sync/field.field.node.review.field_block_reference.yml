@@ -6,6 +6,7 @@ dependencies:
     - block_content.type.basic
     - block_content.type.book_list_carousel
     - block_content.type.content_carousel
+    - block_content.type.overview
     - block_content.type.similar_content_tabs
     - block_content.type.spot
     - field.storage.node.field_block_reference
@@ -27,6 +28,7 @@ settings:
       basic: basic
       book_list_carousel: book_list_carousel
       content_carousel: content_carousel
+      overview: overview
       similar_content_tabs: similar_content_tabs
       spot: spot
     sort:

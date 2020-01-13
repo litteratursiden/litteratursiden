@@ -86,6 +86,11 @@ class ConfigToBlockReference extends DrushCommands {
           $count = $count + 1;
         }
 
+        if ($blockConfig['id'] == 'views_block__recent_reviews_block') {
+          // Create views reference spot
+          // $this->deleteConfig($blockConfig);
+        }
+
         // Remove book list view. Rendered from node book-list full template.
         if ($blockConfig['id'] == 'views_block__book_list_books_block') {
           $this->deleteConfig($blockConfig);
