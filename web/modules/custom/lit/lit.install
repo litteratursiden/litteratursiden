@@ -9,6 +9,7 @@ use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
 use Drupal\pathauto\PathautoState;
+use \Drupal\locale\SourceString;
 
 /**
  * Set up default images.
@@ -154,4 +155,44 @@ function lit_update_8105() {
     'twig_tweak',
   );
   \Drupal::service('module_installer')->install($modules);
+}
+
+/**
+ * Change frontpage in config and translate strings.
+ */
+function lit_update_8106() {
+  $config_factory = Drupal::configFactory();
+  $config = $config_factory->getEditable('system.site');
+  $config->set('page.front', '/frontpage');
+  $config->save(TRUE);
+
+  _lit_add_translation('Books on the list','Bøger på listen', 'da');
+}
+
+/**
+ * @param $source_string
+ *   The string to translate.
+ * @param $translated_string
+ *   The translated string.
+ * @param $langcode
+ *   The language code.
+ *
+ * @throws \Drupal\locale\StringStorageException
+ */
+function _lit_add_translation($source_string, $translated_string, $langcode) {
+  // Find existing source string.
+  $storage = \Drupal::service('locale.storage');
+  $string = $storage->findString(array('source' => $source_string));
+  if (is_null($string)) {
+    $string = new SourceString();
+    $string->setString($source_string);
+    $string->setStorage($storage);
+    $string->save();
+  }
+  // Create translation. If one already exists, it will be replaced.
+  $translation = $storage->createTranslation(array(
+    'lid' => $string->lid,
+    'language' => $langcode,
+    'translation' => $translated_string,
+  ))->save();
 }

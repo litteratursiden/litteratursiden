@@ -3,6 +3,7 @@
 namespace Drupal\lit\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Url;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -34,5 +35,14 @@ class BooksController extends ControllerBase {
                 'tags' => ['lit:books_without_image'],
             ],
         ];
+    }
+
+    /**
+     * Redirect path when visiting /books or /bøger.
+     */
+    public function redirectPath() {
+      $path = Url::fromUserInput('/boerneboeger')->getRouteName();
+      $parameters = Url::fromUserInput('/boerneboeger')->getRouteParameters();
+      return $this->redirect($path, $parameters);
     }
 }

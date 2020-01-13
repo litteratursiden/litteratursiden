@@ -85,6 +85,7 @@ class ConfigToBlockReference extends DrushCommands {
           $this->deleteConfig($blockConfig);
           $count = $count + 1;
         }
+
         // Remove book list view. Rendered from node book-list full template.
         if ($blockConfig['id'] == 'views_block__book_list_books_block') {
           $this->deleteConfig($blockConfig);
@@ -160,7 +161,7 @@ class ConfigToBlockReference extends DrushCommands {
   private function addReferenceToNode($nid, $blockConfig) {
     $blockContentId = explode(':', $blockConfig['settings']['id']);
     $blockContentUuid = $blockContentId['1'];
-    $block = \Drupal::service('entity.repository')->loadEntityByUuid('block_content', $blockContentUuid);
+    $block = Drupal::service('entity.repository')->loadEntityByUuid('block_content', $blockContentUuid);
     if (isset($block)) {
       // Move block label to spotbox block_content if block label display is set.
       if ($blockConfig['settings']['label_display'] == 'visible') {
@@ -169,7 +170,7 @@ class ConfigToBlockReference extends DrushCommands {
           $block->save();
         }
         if ($block->bundle() == 'book_list_carousel') {
-          $block->title = $blockConfig['settings']['label'];
+          $block->info = $blockConfig['settings']['label'];
           $block->save();
         }
       }
