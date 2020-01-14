@@ -5,6 +5,7 @@ namespace Drupal\lit\Commands;
 use Drupal;
 use Drupal\node\Entity\Node;
 use Drush\Commands\DrushCommands;
+use Drupal\block_content\Entity\BlockContent;
 use Exception;
 
 /**
@@ -87,7 +88,27 @@ class ConfigToBlockReference extends DrushCommands {
         }
 
         if ($blockConfig['id'] == 'views_block__recent_reviews_block') {
-          // Create views reference spot
+          // Create views reference spot.
+          $block = BlockContent::create([
+            'info' => 'Nyeste anmeldelser',
+            'type' => 'overview',
+            'field_views_reference' => [
+              'target_id' => 'recent_reviews',
+              'display_id' => 'block_recent_reviews',
+              'argument' => null,
+              'title' => '1',
+              'data' => null
+            ]
+          ]);
+          $block->save();
+          $url = Drupal::service('path.alias_manager')->getPathByAlias('/frontpage');
+          $urlExploded = explode('/', $url);
+          $node = Node::load($urlExploded['2']);
+          if (isset($node)) {
+            $node->field_block_reference[] = $block->id();
+            $node->save();
+          }
+
           // $this->deleteConfig($blockConfig);
         }
 
@@ -114,6 +135,8 @@ class ConfigToBlockReference extends DrushCommands {
     $this->output()->writeln($disabled);
     $this->output()->writeln('--- Handled urls ---');
     $this->output()->writeln($handledUrls);
+
+    Drupal::state()->set('block_migration_status', 'migrated');
   }
 
   /**
@@ -211,6 +234,10 @@ class ConfigToBlockReference extends DrushCommands {
    * @throws \Exception
    */
   private function checkState() {
+    if (Drupal::state()->get('block_migration_status')) {
+      throw new Exception(dt('Data has already been migrated.'));
+    }
+
     $landing_pages = [
       'frontpage' => '/frontpage',
       'boerneboeger' => '/boerneboeger',
@@ -237,7 +264,7 @@ class ConfigToBlockReference extends DrushCommands {
         continue;
       }
       else {
-        throw new Exception(dt('Missing block reference field on: !nodeType', ['!nodeType' => $name]));
+        throw new Exception(dt('Missing block reference field on: !nod  eType', ['!nodeType' => $name]));
       }
     }
   }
