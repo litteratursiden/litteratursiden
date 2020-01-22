@@ -167,15 +167,17 @@ function lit_update_8106() {
   $config->set('page.front', '/frontpage');
   $config->save(TRUE);
 
-  _lit_add_translation('Books on the list','Bøger på listen', 'da');
+  _lit_add_translation('Books on the list', 'Bøger på listen', 'da');
 }
 
 /**
- * @param $source_string
+ * Translate a string
+ *
+ * @param $source_string string
  *   The string to translate.
- * @param $translated_string
+ * @param $translated_string string
  *   The translated string.
- * @param $langcode
+ * @param $langcode string
  *   The language code.
  *
  * @throws \Drupal\locale\StringStorageException

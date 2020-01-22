@@ -12,6 +12,9 @@ class AuthorsController extends ControllerBase {
 
   /**
    * Redirect path when visiting /authors
+   *
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse
+   *   A redirect response.
    */
   public function redirectPath() {
     $path = Url::fromUserInput('/forfattere')->getRouteName();

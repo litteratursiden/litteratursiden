@@ -22,12 +22,10 @@ class ConfigToBlockReference extends DrushCommands {
    * @throws \Exception
    */
   public function migrate() {
-    $broken_links = [];
     $failedNodes = [];
     $count = 0;
     $disabled = 0;
     $handledUrls = 0;
-    $batchCount = 2000;
 
     $this->checkState();
 
@@ -38,17 +36,20 @@ class ConfigToBlockReference extends DrushCommands {
       $blockList[] = Drupal::config('block.block.' . $blockName)->getRawData();
     }
 
-    // Sort config by block weight.
+    $noOfBlocks = count($blockList);
+    // Sort config by block weight to ensure proper order when migrated.
     usort($blockList, function($a, $b) {
       return $a['weight'] - $b['weight'];
     });
 
     // Handle blocks.
     foreach ($blockList as $blockConfig) {
-      if ($blockConfig['status'] == FALSE) {
+      $broken_links = [];
+
+      if ($blockConfig['status'] == FALSE && $blockConfig['theme'] == 'litteratursiden') {
         // Delete disabled blocks config from db.
         $this->deleteConfig($blockConfig);
-        $disabled = $disabled + 1;
+        $disabled += 1;
       }
       else {
         if (
@@ -78,13 +79,13 @@ class ConfigToBlockReference extends DrushCommands {
             else {
               $broken_links[$url][] = $blockConfig['settings']['label'];
             }
-            $this->output()->writeln($trimmedUrl . ' (' . $count . '/' . $batchCount . ')');
-            $handledUrls = $handledUrls + 1;
+            $this->output()->writeln($trimmedUrl . ' (' . $count . '/' . $noOfBlocks . ')');
+            $handledUrls += 1;
           }
 
           // Delete the configuration.
           $this->deleteConfig($blockConfig);
-          $count = $count + 1;
+          $count += 1;
         }
 
         if ($blockConfig['id'] == 'views_block__recent_reviews_block') {
@@ -109,7 +110,7 @@ class ConfigToBlockReference extends DrushCommands {
             $node->save();
           }
 
-          // $this->deleteConfig($blockConfig);
+          $this->deleteConfig($blockConfig);
         }
 
         // Remove book list view. Rendered from node book-list full template.
@@ -119,15 +120,15 @@ class ConfigToBlockReference extends DrushCommands {
         if ($blockConfig['id'] == 'views_block__related_books_by_author_block') {
           $this->deleteConfig($blockConfig);
         }
+
+        // Create csv with broken links.
+        $this->createBrokenLinksCsv($broken_links);
       }
 
-      if ($count > $batchCount) {
+      if ($count > $noOfBlocks) {
          break;
       }
     }
-
-    // Create csv with broken links.
-    $this->createBrokenLinksCsv($broken_links);
 
     $this->output()->writeln('--- Migrated blocks ---');
     $this->output()->writeln($count);
@@ -142,10 +143,11 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Create CSV with broken links.
    *
-   * @param $broken_links
+   * @param $broken_links array
+   *   List of broken links in block.
    */
   private function createBrokenLinksCsv($broken_links) {
-    $fp = fopen('file.csv', 'w');
+    $fp = fopen('file.csv', 'a');
 
     foreach ($broken_links as $key => $fields) {
       array_unshift($fields, $key);
@@ -158,18 +160,22 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Change incorrect url of landing pages.
    *
-   * @param $url
+   * @param $url string
+   *   The url to change.
    *
    * @return string
+   *   The new url.
    */
   private function handleLandingPages(&$url) {
     switch ($url) {
       case '<front>':
         $url = '/frontpage';
         break;
+
       case '/books':
         $url = '/boerneboeger';
         break;
+
       case '/authors':
         $url = '/forfattere';
         break;
@@ -180,10 +186,13 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Create a block reference on an entity.
    *
-   * @param $nid
+   * @param $nid integer
+   *   A node to add reference to
    * @param $blockConfig
+   *   The block that holds the old config.
    *
    * @return array
+   *   A summary array of action.
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
   private function addReferenceToNode($nid, $blockConfig) {
@@ -209,7 +218,7 @@ class ConfigToBlockReference extends DrushCommands {
         $status = 'Success';
       }
       else {
-        $status = 'Missing block';
+        $status = 'Missing node';
       }
     }
     else {
@@ -222,7 +231,8 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Delete block configuration but maintain block content.
    *
-   * @param $blockConfig
+   * @param $blockConfig array
+   *   An array containing block configuration.
    */
   private function deleteConfig($blockConfig) {
     Drupal::configFactory()->getEditable('block.block.' . $blockConfig['id'])->delete();

@@ -37,9 +37,12 @@ class BooksController extends ControllerBase {
         ];
     }
 
-    /**
-     * Redirect path when visiting /books or /bøger.
-     */
+  /**
+   * Redirect path when visiting /books or /bøger.
+   *
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse
+   *   A redirect response.
+   */
     public function redirectPath() {
       $path = Url::fromUserInput('/boerneboeger')->getRouteName();
       $parameters = Url::fromUserInput('/boerneboeger')->getRouteParameters();
