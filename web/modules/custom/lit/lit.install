@@ -173,16 +173,16 @@ function lit_update_8106() {
 /**
  * Translate a string
  *
- * @param $source_string string
+ * @param string $source_string
  *   The string to translate.
- * @param $translated_string string
+ * @param string $translated_string
  *   The translated string.
- * @param $langcode string
+ * @param string $langcode
  *   The language code.
  *
  * @throws \Drupal\locale\StringStorageException
  */
-function _lit_add_translation($source_string, $translated_string, $langcode) {
+function _lit_add_translation(string $source_string, string $translated_string, string $langcode) {
   // Find existing source string.
   $storage = \Drupal::service('locale.storage');
   $string = $storage->findString(array('source' => $source_string));

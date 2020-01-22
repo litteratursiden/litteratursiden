@@ -143,10 +143,10 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Create CSV with broken links.
    *
-   * @param $broken_links array
+   * @param array $broken_links
    *   List of broken links in block.
    */
-  private function createBrokenLinksCsv($broken_links) {
+  private function createBrokenLinksCsv(array $broken_links) {
     $fp = fopen('file.csv', 'a');
 
     foreach ($broken_links as $key => $fields) {
@@ -160,13 +160,13 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Change incorrect url of landing pages.
    *
-   * @param $url string
+   * @param string $url
    *   The url to change.
    *
    * @return string
    *   The new url.
    */
-  private function handleLandingPages(&$url) {
+  private function handleLandingPages(string &$url) {
     switch ($url) {
       case '<front>':
         $url = '/frontpage';
@@ -186,16 +186,16 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Create a block reference on an entity.
    *
-   * @param $nid integer
+   * @param int $nid
    *   A node to add reference to
-   * @param $blockConfig
+   * @param array $blockConfig
    *   The block that holds the old config.
    *
    * @return array
    *   A summary array of action.
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  private function addReferenceToNode($nid, $blockConfig) {
+  private function addReferenceToNode(int $nid, array $blockConfig) {
     $blockContentId = explode(':', $blockConfig['settings']['id']);
     $blockContentUuid = $blockContentId['1'];
     $block = Drupal::service('entity.repository')->loadEntityByUuid('block_content', $blockContentUuid);
@@ -231,10 +231,10 @@ class ConfigToBlockReference extends DrushCommands {
   /**
    * Delete block configuration but maintain block content.
    *
-   * @param $blockConfig array
+   * @param array $blockConfig
    *   An array containing block configuration.
    */
-  private function deleteConfig($blockConfig) {
+  private function deleteConfig(array $blockConfig) {
     Drupal::configFactory()->getEditable('block.block.' . $blockConfig['id'])->delete();
   }
 
