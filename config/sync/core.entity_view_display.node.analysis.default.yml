@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.analysis.field_analysis_internal_link
     - field.field.node.analysis.field_analysis_reference_book
     - field.field.node.analysis.field_analysis_spotbox_image
+    - field.field.node.analysis.field_block_reference
     - image.style.spot
     - node.type.analysis
   module:
@@ -68,6 +69,15 @@ content:
       image_style: spot
       image_link: ''
     third_party_settings: {  }
+  field_block_reference:
+    weight: 11
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   flag_bookmark:
     weight: 2
     region: content

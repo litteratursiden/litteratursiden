@@ -1,0 +1,21 @@
+uuid: 45d581ba-1eae-42a5-9b11-d4861534a6ef
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.spot
+    - field.storage.block_content.field_label
+  module:
+    - text
+id: block_content.spot.field_label
+field_name: field_label
+entity_type: block_content
+bundle: spot
+label: Label
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.author_portrait.field_author_portrait_lit_type
     - field.field.node.author_portrait.field_author_portrait_surname
     - field.field.node.author_portrait.field_author_portrait_tags
+    - field.field.node.author_portrait.field_block_reference
     - image.style.author
     - node.type.author_portrait
   module:
@@ -83,6 +84,15 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_block_reference:
+    weight: 12
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
   flag_bookmark:
     weight: 0

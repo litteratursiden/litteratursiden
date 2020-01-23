@@ -6,6 +6,10 @@
  */
 
 use Drupal\file\Entity\File;
+use Drupal\node\Entity\Node;
+use Drupal\menu_link_content\Entity\MenuLinkContent;
+use Drupal\pathauto\PathautoState;
+use \Drupal\locale\SourceString;
 
 /**
  * Set up default images.
@@ -91,4 +95,107 @@ function lit_update_8003() {
     ->condition('collection', 'system.schema')
     ->condition('name', 'migrate_plus')
     ->execute();
+}
+
+/**
+ * Add landing pages.
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function lit_update_8104() {
+  // Create nodes.
+  $node = Node::create([
+    'type'        => 'landing_page',
+    'title'       => 'Frontpage',
+    'path' => [
+      'alias' => '/frontpage',
+      'pathauto' => PathautoState::SKIP,
+    ]
+  ]);
+  $node->save();
+
+  $node = Node::create([
+    'type'        => 'landing_page',
+    'title'       => 'Børnebøger',
+    'path' => [
+      'alias' => '/boerneboeger',
+      'pathauto' => PathautoState::SKIP,
+    ]
+  ]);
+  $node->save();
+
+  $node = Node::create([
+    'type'        => 'landing_page',
+    'title'       => 'Forfattere',
+    'path' => [
+      'alias' => '/forfattere',
+      'pathauto' => PathautoState::SKIP,
+    ]
+  ]);
+  $node->save();
+
+  MenuLinkContent::create([
+    'title' => 'Børnebøger',
+    'link' => ['uri' => 'internal:/boerneboeger'],
+    'menu_name' => 'main',
+  ])->save();
+
+  MenuLinkContent::create([
+    'title' => 'Forfattere',
+    'link' => ['uri' => 'internal:/forfattere'],
+    'menu_name' => 'main',
+  ])->save();
+}
+
+/**
+ * Enable module.
+ */
+function lit_update_8105() {
+  $modules = array(
+    'twig_tweak',
+    'viewsreference'
+  );
+  \Drupal::service('module_installer')->install($modules);
+}
+
+/**
+ * Change frontpage in config and translate strings.
+ */
+function lit_update_8106() {
+  $config_factory = Drupal::configFactory();
+  $config = $config_factory->getEditable('system.site');
+  $config->set('page.front', '/frontpage');
+  $config->save(TRUE);
+
+  _lit_add_translation('Books on the list', 'Bøger på listen', 'da');
+}
+
+/**
+ * Translate a string
+ *
+ * @param string $source_string
+ *   The string to translate.
+ * @param string $translated_string
+ *   The translated string.
+ * @param string $langcode
+ *   The language code.
+ *
+ * @throws \Drupal\locale\StringStorageException
+ */
+function _lit_add_translation(string $source_string, string $translated_string, string $langcode) {
+  // Find existing source string.
+  $storage = \Drupal::service('locale.storage');
+  $string = $storage->findString(array('source' => $source_string));
+  if (is_null($string)) {
+    $string = new SourceString();
+    $string->setString($source_string);
+    $string->setStorage($storage);
+    $string->save();
+  }
+  // Create translation. If one already exists, it will be replaced.
+  $translation = $storage->createTranslation(array(
+    'lid' => $string->lid,
+    'language' => $langcode,
+    'translation' => $translated_string,
+  ))->save();
 }

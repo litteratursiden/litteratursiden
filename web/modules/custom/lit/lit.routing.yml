@@ -8,7 +8,7 @@ lit.front:
 lit.books:
   path: '/books'
   defaults:
-    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
+    _controller: '\Drupal\lit\Controller\BooksController::redirectPath'
     _title: "Children's Books"
   requirements:
     _permission: 'access content'
@@ -16,7 +16,7 @@ lit.books:
 lit.authors:
   path: '/authors'
   defaults:
-    _controller: '\Drupal\lit\Controller\EmptyPageController::content'
+    _controller: '\Drupal\lit\Controller\AuthorsController::redirectPath'
     _title: 'Authors'
   requirements:
     _permission: 'access content'

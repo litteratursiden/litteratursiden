@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.book.field_block_reference
     - field.field.node.book.field_book_author
     - field.field.node.book.field_book_body
     - field.field.node.book.field_book_comments
@@ -99,6 +100,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_block_reference:
+    weight: 13
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_book_author:
     type: string
     weight: 3

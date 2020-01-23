@@ -1,0 +1,39 @@
+uuid: f3348bf9-2f60-48c2-b497-1066bb164f26
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.overview
+    - field.field.block_content.overview.field_views_reference
+  module:
+    - viewsreference
+id: block_content.overview.default
+targetEntityType: block_content
+bundle: overview
+mode: default
+content:
+  field_views_reference:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

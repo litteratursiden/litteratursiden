@@ -9002,11 +9002,13 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       max-width: 100%;
       width: 100%; } }
 
+.block-type-overview,
 .block-type-content_carousel,
 .block-type-book_list_carousel,
 .block-type-similar_content_tabs {
   background-color: #3a3b3d;
   padding-bottom: 20px; }
+  .block-type-overview .content-wrapper,
   .block-type-content_carousel .content-wrapper,
   .block-type-book_list_carousel .content-wrapper,
   .block-type-similar_content_tabs .content-wrapper {
@@ -9018,80 +9020,121 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     max-width: 1170px;
     padding-left: 65px;
     padding-right: 65px; }
-    .block-type-content_carousel .content-wrapper:before, .block-type-content_carousel .content-wrapper:after,
+    .block-type-overview .content-wrapper:before, .block-type-overview .content-wrapper:after,
+    .block-type-content_carousel .content-wrapper:before,
+    .block-type-content_carousel .content-wrapper:after,
     .block-type-book_list_carousel .content-wrapper:before,
     .block-type-book_list_carousel .content-wrapper:after,
     .block-type-similar_content_tabs .content-wrapper:before,
     .block-type-similar_content_tabs .content-wrapper:after {
       display: table;
       content: " "; }
+    .block-type-overview .content-wrapper:after,
     .block-type-content_carousel .content-wrapper:after,
     .block-type-book_list_carousel .content-wrapper:after,
     .block-type-similar_content_tabs .content-wrapper:after {
       clear: both; }
     @media only screen and (max-width: 1199px) {
+      .block-type-overview .content-wrapper,
       .block-type-content_carousel .content-wrapper,
       .block-type-book_list_carousel .content-wrapper,
       .block-type-similar_content_tabs .content-wrapper {
         width: 970px;
         max-width: 970px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .block-type-overview .content-wrapper,
     .block-type-content_carousel .content-wrapper,
     .block-type-book_list_carousel .content-wrapper,
     .block-type-similar_content_tabs .content-wrapper {
       max-width: 100%;
       width: 100%; } }
     @media only screen and (max-width: 1199px) {
+      .block-type-overview .content-wrapper,
       .block-type-content_carousel .content-wrapper,
       .block-type-book_list_carousel .content-wrapper,
       .block-type-similar_content_tabs .content-wrapper {
         padding-left: 40px;
         padding-right: 40px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .block-type-overview .content-wrapper,
     .block-type-content_carousel .content-wrapper,
     .block-type-book_list_carousel .content-wrapper,
     .block-type-similar_content_tabs .content-wrapper {
       padding-left: 20px;
       padding-right: 20px; } }
     @media only screen and (max-width: 480px) {
+      .block-type-overview .content-wrapper,
       .block-type-content_carousel .content-wrapper,
       .block-type-book_list_carousel .content-wrapper,
       .block-type-similar_content_tabs .content-wrapper {
         padding-left: 0;
         padding-right: 0; }
+        .block-type-overview .content-wrapper .block-title,
         .block-type-content_carousel .content-wrapper .block-title,
         .block-type-book_list_carousel .content-wrapper .block-title,
         .block-type-similar_content_tabs .content-wrapper .block-title {
           padding-left: 20px;
           padding-right: 20px; } }
+  .block-type-overview .viewsreference--view-title,
+  .block-type-overview h2.block-title,
+  .block-type-content_carousel .viewsreference--view-title,
   .block-type-content_carousel h2.block-title,
+  .block-type-book_list_carousel .viewsreference--view-title,
   .block-type-book_list_carousel h2.block-title,
+  .block-type-similar_content_tabs .viewsreference--view-title,
   .block-type-similar_content_tabs h2.block-title {
     display: block;
     font-family: "RobotoSlab-Regular", serif;
     line-height: 1.1;
     font-size: 35px;
-    color: #fff; }
+    color: #fff;
+    font-weight: bold;
+    line-height: 56.25px;
+    letter-spacing: 0;
+    font-style: normal;
+    word-wrap: break-word;
+    margin-top: 20px;
+    margin-bottom: 20px; }
     @media only screen and (max-width: 991px) {
+      .block-type-overview .viewsreference--view-title,
+      .block-type-overview h2.block-title,
+      .block-type-content_carousel .viewsreference--view-title,
       .block-type-content_carousel h2.block-title,
+      .block-type-book_list_carousel .viewsreference--view-title,
       .block-type-book_list_carousel h2.block-title,
+      .block-type-similar_content_tabs .viewsreference--view-title,
       .block-type-similar_content_tabs h2.block-title {
         padding: 0 15px; } }
   @media only screen and (max-width: 991px) and (max-width: 767px) {
+    .block-type-overview .viewsreference--view-title,
+    .block-type-overview h2.block-title,
+    .block-type-content_carousel .viewsreference--view-title,
     .block-type-content_carousel h2.block-title,
+    .block-type-book_list_carousel .viewsreference--view-title,
     .block-type-book_list_carousel h2.block-title,
+    .block-type-similar_content_tabs .viewsreference--view-title,
     .block-type-similar_content_tabs h2.block-title {
       padding: 0;
       font-size: 20px;
       line-height: 30px; } }
   @media only screen and (max-width: 991px) and (max-width: 767px) and (max-width: 320px) {
+    .block-type-overview .viewsreference--view-title,
+    .block-type-overview h2.block-title,
+    .block-type-content_carousel .viewsreference--view-title,
     .block-type-content_carousel h2.block-title,
+    .block-type-book_list_carousel .viewsreference--view-title,
     .block-type-book_list_carousel h2.block-title,
+    .block-type-similar_content_tabs .viewsreference--view-title,
     .block-type-similar_content_tabs h2.block-title {
       font-size: 18px;
       line-height: 24px; } }
+    .block-type-overview .viewsreference--view-title .block-icon,
+    .block-type-overview h2.block-title .block-icon,
+    .block-type-content_carousel .viewsreference--view-title .block-icon,
     .block-type-content_carousel h2.block-title .block-icon,
+    .block-type-book_list_carousel .viewsreference--view-title .block-icon,
     .block-type-book_list_carousel h2.block-title .block-icon,
+    .block-type-similar_content_tabs .viewsreference--view-title .block-icon,
     .block-type-similar_content_tabs h2.block-title .block-icon {
       display: inline-block;
       border-radius: 50%;
@@ -9104,8 +9147,13 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       line-height: 41.5px;
       padding: 18px; }
       @media only screen and (max-width: 767px) {
+        .block-type-overview .viewsreference--view-title .block-icon,
+        .block-type-overview h2.block-title .block-icon,
+        .block-type-content_carousel .viewsreference--view-title .block-icon,
         .block-type-content_carousel h2.block-title .block-icon,
+        .block-type-book_list_carousel .viewsreference--view-title .block-icon,
         .block-type-book_list_carousel h2.block-title .block-icon,
+        .block-type-similar_content_tabs .viewsreference--view-title .block-icon,
         .block-type-similar_content_tabs h2.block-title .block-icon {
           width: 58.1px;
           height: 58.1px;
@@ -9113,20 +9161,35 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
           font-size: 26.25px;
           padding: 0; } }
   @media only screen and (max-width: 767px) and (max-width: 320px) {
+    .block-type-overview .viewsreference--view-title .block-icon,
+    .block-type-overview h2.block-title .block-icon,
+    .block-type-content_carousel .viewsreference--view-title .block-icon,
     .block-type-content_carousel h2.block-title .block-icon,
+    .block-type-book_list_carousel .viewsreference--view-title .block-icon,
     .block-type-book_list_carousel h2.block-title .block-icon,
+    .block-type-similar_content_tabs .viewsreference--view-title .block-icon,
     .block-type-similar_content_tabs h2.block-title .block-icon {
       margin-right: 10px;
       width: 41.5px;
       height: 41.5px;
       line-height: 41.5px;
       font-size: 19.25px; } }
+      .block-type-overview .viewsreference--view-title .block-icon .field--type-image .field--label,
+      .block-type-overview h2.block-title .block-icon .field--type-image .field--label,
+      .block-type-content_carousel .viewsreference--view-title .block-icon .field--type-image .field--label,
       .block-type-content_carousel h2.block-title .block-icon .field--type-image .field--label,
+      .block-type-book_list_carousel .viewsreference--view-title .block-icon .field--type-image .field--label,
       .block-type-book_list_carousel h2.block-title .block-icon .field--type-image .field--label,
+      .block-type-similar_content_tabs .viewsreference--view-title .block-icon .field--type-image .field--label,
       .block-type-similar_content_tabs h2.block-title .block-icon .field--type-image .field--label {
         display: none; }
+      .block-type-overview .viewsreference--view-title .block-icon .field--type-image img,
+      .block-type-overview h2.block-title .block-icon .field--type-image img,
+      .block-type-content_carousel .viewsreference--view-title .block-icon .field--type-image img,
       .block-type-content_carousel h2.block-title .block-icon .field--type-image img,
+      .block-type-book_list_carousel .viewsreference--view-title .block-icon .field--type-image img,
       .block-type-book_list_carousel h2.block-title .block-icon .field--type-image img,
+      .block-type-similar_content_tabs .viewsreference--view-title .block-icon .field--type-image img,
       .block-type-similar_content_tabs h2.block-title .block-icon .field--type-image img {
         display: inline-block;
         width: auto;
@@ -9134,23 +9197,43 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         max-width: 40px;
         max-height: 40px; }
         @media only screen and (max-width: 767px) {
+          .block-type-overview .viewsreference--view-title .block-icon .field--type-image img,
+          .block-type-overview h2.block-title .block-icon .field--type-image img,
+          .block-type-content_carousel .viewsreference--view-title .block-icon .field--type-image img,
           .block-type-content_carousel h2.block-title .block-icon .field--type-image img,
+          .block-type-book_list_carousel .viewsreference--view-title .block-icon .field--type-image img,
           .block-type-book_list_carousel h2.block-title .block-icon .field--type-image img,
+          .block-type-similar_content_tabs .viewsreference--view-title .block-icon .field--type-image img,
           .block-type-similar_content_tabs h2.block-title .block-icon .field--type-image img {
             max-width: 30px;
             max-height: 30px; } }
   @media only screen and (max-width: 767px) and (max-width: 320px) {
+    .block-type-overview .viewsreference--view-title .block-icon .field--type-image img,
+    .block-type-overview h2.block-title .block-icon .field--type-image img,
+    .block-type-content_carousel .viewsreference--view-title .block-icon .field--type-image img,
     .block-type-content_carousel h2.block-title .block-icon .field--type-image img,
+    .block-type-book_list_carousel .viewsreference--view-title .block-icon .field--type-image img,
     .block-type-book_list_carousel h2.block-title .block-icon .field--type-image img,
+    .block-type-similar_content_tabs .viewsreference--view-title .block-icon .field--type-image img,
     .block-type-similar_content_tabs h2.block-title .block-icon .field--type-image img {
       max-width: 20px;
       max-height: 20px; } }
+      .block-type-overview .viewsreference--view-title .block-icon .icon,
+      .block-type-overview h2.block-title .block-icon .icon,
+      .block-type-content_carousel .viewsreference--view-title .block-icon .icon,
       .block-type-content_carousel h2.block-title .block-icon .icon,
+      .block-type-book_list_carousel .viewsreference--view-title .block-icon .icon,
       .block-type-book_list_carousel h2.block-title .block-icon .icon,
+      .block-type-similar_content_tabs .viewsreference--view-title .block-icon .icon,
       .block-type-similar_content_tabs h2.block-title .block-icon .icon {
         font-size: inherit; }
+        .block-type-overview .viewsreference--view-title .block-icon .icon:before,
+        .block-type-overview h2.block-title .block-icon .icon:before,
+        .block-type-content_carousel .viewsreference--view-title .block-icon .icon:before,
         .block-type-content_carousel h2.block-title .block-icon .icon:before,
+        .block-type-book_list_carousel .viewsreference--view-title .block-icon .icon:before,
         .block-type-book_list_carousel h2.block-title .block-icon .icon:before,
+        .block-type-similar_content_tabs .viewsreference--view-title .block-icon .icon:before,
         .block-type-similar_content_tabs h2.block-title .block-icon .icon:before {
           content: "";
           /* use !important to prevent issues with browser extensions that change fonts */
@@ -9165,6 +9248,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
           -moz-osx-font-smoothing: grayscale;
           color: #fff;
           display: inline-block; }
+  .block-type-overview .read-more,
   .block-type-content_carousel .read-more,
   .block-type-book_list_carousel .read-more,
   .block-type-similar_content_tabs .read-more {
@@ -9185,30 +9269,38 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     transition: all 0.2s ease-out;
     align-items: center; }
     @media only screen and (max-width: 767px) {
+      .block-type-overview .read-more,
       .block-type-content_carousel .read-more,
       .block-type-book_list_carousel .read-more,
       .block-type-similar_content_tabs .read-more {
         font-size: 14px;
         line-height: 20px; } }
-    .block-type-content_carousel .read-more:hover, .block-type-content_carousel .read-more:focus,
+    .block-type-overview .read-more:hover, .block-type-overview .read-more:focus,
+    .block-type-content_carousel .read-more:hover,
+    .block-type-content_carousel .read-more:focus,
     .block-type-book_list_carousel .read-more:hover,
     .block-type-book_list_carousel .read-more:focus,
     .block-type-similar_content_tabs .read-more:hover,
     .block-type-similar_content_tabs .read-more:focus {
       color: #e6e6e6 !important; }
-    .block-type-content_carousel .read-more:hover, .block-type-content_carousel .read-more:focus,
+    .block-type-overview .read-more:hover, .block-type-overview .read-more:focus,
+    .block-type-content_carousel .read-more:hover,
+    .block-type-content_carousel .read-more:focus,
     .block-type-book_list_carousel .read-more:hover,
     .block-type-book_list_carousel .read-more:focus,
     .block-type-similar_content_tabs .read-more:hover,
     .block-type-similar_content_tabs .read-more:focus {
       color: #e6e6e6;
       transition: all 0.2s ease-out; }
-      .block-type-content_carousel .read-more:hover:after, .block-type-content_carousel .read-more:focus:after,
+      .block-type-overview .read-more:hover:after, .block-type-overview .read-more:focus:after,
+      .block-type-content_carousel .read-more:hover:after,
+      .block-type-content_carousel .read-more:focus:after,
       .block-type-book_list_carousel .read-more:hover:after,
       .block-type-book_list_carousel .read-more:focus:after,
       .block-type-similar_content_tabs .read-more:hover:after,
       .block-type-similar_content_tabs .read-more:focus:after {
         color: #e6e6e6; }
+    .block-type-overview .read-more:after,
     .block-type-content_carousel .read-more:after,
     .block-type-book_list_carousel .read-more:after,
     .block-type-similar_content_tabs .read-more:after {
@@ -9235,26 +9327,31 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       color: #fff;
       transition: all 0.2s ease-out; }
       @media only screen and (max-width: 767px) {
+        .block-type-overview .read-more:after,
         .block-type-content_carousel .read-more:after,
         .block-type-book_list_carousel .read-more:after,
         .block-type-similar_content_tabs .read-more:after {
           font-size: 14px; } }
     @media only screen and (max-width: 767px) {
+      .block-type-overview .read-more:after,
       .block-type-content_carousel .read-more:after,
       .block-type-book_list_carousel .read-more:after,
       .block-type-similar_content_tabs .read-more:after {
         font-size: 14px;
         line-height: 16px; } }
+  .block-type-overview .node-readmore,
   .block-type-content_carousel .node-readmore,
   .block-type-book_list_carousel .node-readmore,
   .block-type-similar_content_tabs .node-readmore {
     float: right; }
     @media only screen and (max-width: 767px) {
+      .block-type-overview .node-readmore,
       .block-type-content_carousel .node-readmore,
       .block-type-book_list_carousel .node-readmore,
       .block-type-similar_content_tabs .node-readmore {
         width: 100% !important; } }
   @media only screen and (max-width: 767px) {
+    .block-type-overview .node-all,
     .block-type-content_carousel .node-all,
     .block-type-book_list_carousel .node-all,
     .block-type-similar_content_tabs .node-all {
@@ -9262,10 +9359,12 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       float: right;
       text-align: right;
       display: none; } }
+  .block-type-overview .node-all .read-more,
   .block-type-content_carousel .node-all .read-more,
   .block-type-book_list_carousel .node-all .read-more,
   .block-type-similar_content_tabs .node-all .read-more {
     font-weight: normal; }
+  .block-type-overview .links.inline,
   .block-type-content_carousel .links.inline,
   .block-type-book_list_carousel .links.inline,
   .block-type-similar_content_tabs .links.inline {

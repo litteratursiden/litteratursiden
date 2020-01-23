@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.author_portrait.field_author_portrait_lit_type
     - field.field.node.author_portrait.field_author_portrait_surname
     - field.field.node.author_portrait.field_author_portrait_tags
+    - field.field.node.author_portrait.field_block_reference
     - image.style.thumbnail
     - node.type.author_portrait
   module:
@@ -106,11 +107,21 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_block_reference:
+    weight: 19
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path
@@ -140,7 +151,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 20
     region: content
     third_party_settings: {  }
   sticky:

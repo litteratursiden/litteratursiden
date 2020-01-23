@@ -89,6 +89,7 @@ body.path-frontpage .main-container {
   padding: 0;
 }
 //Sliders Sub pages
+.block-type-overview,
 .block-type-content_carousel,
 .block-type-book_list_carousel,
 .block-type-similar_content_tabs {
@@ -109,8 +110,17 @@ body.path-frontpage .main-container {
     }
   }
 
+  .viewsreference--view-title,
   h2.block-title {
     @include icon-title-custom();
+
+    font-weight: bold;
+    line-height: 56.25px;
+    letter-spacing: 0;
+    font-style: normal;
+    word-wrap: break-word;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .read-more {

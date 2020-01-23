@@ -98,7 +98,7 @@ view_mode ? view_mode|clean_class,
           {{ content.social_media }}
         </div>
         <div{{ content_attributes.addClass('content') }}>
-          {{ content|without('links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book') }}
+          {{ content|without('links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book', 'field_block_reference') }}
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@ view_mode ? view_mode|clean_class,
         {{ content.social_media }}
       </div>
       <div{{ content_attributes.addClass('content') }}>
-        {{ content|without( 'links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book') }}
+        {{ content|without( 'links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book', 'field_block_reference') }}
       </div>
     </div>
   </div>
@@ -124,4 +124,11 @@ view_mode ? view_mode|clean_class,
       </div>
     </div>
   </div>
+  <div class="block-views-blockrelated-books-related-books-by-author-block">
+    <div class="content-wrapper">
+      <h2 class="block-title">{{ 'Books by @author_name'|t({'@author_name': node.label}) }}</h2>
+      {{ drupal_view('related_books', 'related_books_by_author_block') }}
+    </div>
+  </div>
+  {{ content.field_block_reference }}
 </article>

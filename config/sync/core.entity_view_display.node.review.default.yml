@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.review.field_block_reference
     - field.field.node.review.field_review_body
     - field.field.node.review.field_review_comments
     - field.field.node.review.field_review_cover_image
@@ -25,6 +26,15 @@ targetEntityType: node
 bundle: review
 mode: default
 content:
+  field_block_reference:
+    weight: 11
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_review_body:
     weight: 6
     label: hidden

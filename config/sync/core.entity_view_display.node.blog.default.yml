@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.blog.field_block_reference
     - field.field.node.blog.field_blog_body
     - field.field.node.blog.field_blog_comments
     - field.field.node.blog.field_blog_cover_image
@@ -25,6 +26,15 @@ targetEntityType: node
 bundle: blog
 mode: default
 content:
+  field_block_reference:
+    weight: 12
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_blog_body:
     weight: 7
     label: hidden

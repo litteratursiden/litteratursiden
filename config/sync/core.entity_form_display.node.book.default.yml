@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.book.field_block_reference
     - field.field.node.book.field_book_author
     - field.field.node.book.field_book_body
     - field.field.node.book.field_book_comments
@@ -43,6 +44,15 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_block_reference:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_book_author:
     weight: 14
     settings:
@@ -75,7 +85,7 @@ content:
     type: image_image
     region: content
   field_book_debates:
-    weight: 121
+    weight: 30
     settings: {  }
     third_party_settings: {  }
     type: comment_default
@@ -204,7 +214,8 @@ content:
     type: language_select
     weight: 1
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path
@@ -229,7 +240,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 29
     region: content
     third_party_settings: {  }
   sticky:
