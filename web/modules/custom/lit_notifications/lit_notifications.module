@@ -17,19 +17,6 @@ use Drupal\Core\Url;
 use Drupal\Core\Render\BubbleableMetadata;
 
 /**
- * Implements hook_entity_extra_field_info_alter().
- */
-function lit_notifications_entity_extra_field_info_alter(&$info) {
-  $nodes = isset($info['node']) ? $info['node'] : [];
-  foreach ($nodes as $node => $extra_fields) {
-    if (isset($extra_fields['display']['flag_notifications'])) {
-      $info['node'][$node]['display']['flag_notifications']['visible'] = FALSE;
-      $info['node'][$node]['display']['flag_notifications']['render_class'] = '\Drupal\lit_notifications\FlagNotificationsExtraFieldRenderer';
-    }
-  }
-}
-
-/**
  * Implements hook_comment_insert().
  */
 function lit_notifications_comment_insert(CommentInterface $comment) {
