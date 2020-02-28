@@ -21,7 +21,7 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-background_path: 'public://morten_pape_topbillede_2019_web_0.jpg'
+background_path: 'public://Skærmbillede 2020-01-02 kl. 08.39.00.png'
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -31,3 +31,4 @@ logo:
   path: ''
   url: ''
   use_default: true
+langcode: da

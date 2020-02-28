@@ -1,0 +1,58 @@
+uuid: 1f241de7-090f-4a6c-8987-73051558173a
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.overview
+    - field.storage.block_content.field_views_reference
+  module:
+    - viewsreference
+id: block_content.overview.field_views_reference
+field_name: field_views_reference
+entity_type: block_content
+bundle: overview
+label: 'Views reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+  preselect_views:
+    recent_reviews: recent_reviews
+    block_content: 0
+    books: 0
+    books_being_debated: 0
+    book_list: 0
+    comments: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    flag_bookmark: 0
+    frontpage: 0
+    front_article: 0
+    front_blog: 0
+    internal_links: 0
+    related_books: 0
+    related_content: 0
+    saved_content: 0
+    scheduler_scheduled_content: 0
+    search: 0
+    tags: 0
+    taxonomy_term: 0
+    topics: 0
+    user_admin_people: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+field_type: viewsreference

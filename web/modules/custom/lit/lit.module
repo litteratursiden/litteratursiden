@@ -230,6 +230,9 @@ function lit_node_links_alter(array &$links, NodeInterface $entity, array &$cont
       ];
     }
   }
+
+  // Remove comment links.
+  unset($links['comment__field_book_list_comments']);
 }
 
 /**

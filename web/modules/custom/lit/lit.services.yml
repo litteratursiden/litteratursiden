@@ -3,3 +3,7 @@ services:
     class: '\Drupal\lit\EventSubscriber\ResponseSubscriber'
     tags:
       - { name: 'event_subscriber' }
+  block_migration:
+    class: \Drupal\lit\Commands\ConfigToBlockReference
+    tags:
+      - { name: drush.command }

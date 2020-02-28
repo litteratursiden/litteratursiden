@@ -82,7 +82,7 @@ view_mode ? view_mode|clean_class,
     {{ title_suffix }}
     <div class="desktop-node-content">
       <div{{ content_attributes.addClass('content') }}>
-        {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info') }}
+        {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_block_reference') }}
       </div>
     </div>
   </div>
@@ -95,4 +95,5 @@ view_mode ? view_mode|clean_class,
       </div>
     </div>
   </div>
+  {{ content.field_block_reference }}
 </article>

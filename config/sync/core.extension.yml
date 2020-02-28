@@ -89,6 +89,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  twig_tweak: 0
   update: 0
   user: 0
   user_registrationpassword: 0
@@ -100,6 +101,7 @@ module:
   views: 0
   views_infinite_scroll: 0
   views_ui: 0
+  viewsreference: 0
   metatag: 1
   metatag_open_graph: 1
   pathauto: 1

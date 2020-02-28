@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.analysis.field_analysis_internal_link
     - field.field.node.analysis.field_analysis_reference_book
     - field.field.node.analysis.field_analysis_spotbox_image
+    - field.field.node.analysis.field_block_reference
     - image.style.thumbnail
     - node.type.analysis
   module:
@@ -105,11 +106,21 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_block_reference:
+    weight: 19
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   langcode:
     type: language_select
     weight: 2
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path
@@ -139,7 +150,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 20
     region: content
     third_party_settings: {  }
   sticky:

@@ -4,12 +4,22 @@ status: true
 dependencies:
   config:
     - block_content.type.spot
+    - field.field.block_content.spot.field_label
     - field.field.block_content.spot.field_spot_content
+  module:
+    - text
 id: block_content.spot.default
 targetEntityType: block_content
 bundle: spot
 mode: default
 content:
+  field_label:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_spot_content:
     weight: 0
     label: hidden

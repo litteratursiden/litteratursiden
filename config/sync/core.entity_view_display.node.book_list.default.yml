@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.book_list.field_block_reference
     - field.field.node.book_list.field_book_list_body
     - field.field.node.book_list.field_book_list_comments
     - field.field.node.book_list.field_book_list_cover_image
@@ -21,6 +22,15 @@ targetEntityType: node
 bundle: book_list
 mode: default
 content:
+  field_block_reference:
+    weight: 9
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
   field_book_list_body:
     weight: 6
     label: hidden

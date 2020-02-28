@@ -10,18 +10,6 @@ lit.content:
   menu_name: account
   weight: -7
 
-lit.books:
-  title: "Children's Books"
-  route_name: lit.books
-  menu_name: main
-  weight: 5
-
-lit.authors:
-  title: 'Authors'
-  route_name: lit.authors
-  menu_name: main
-  weight: 7
-
 lit.comments:
   title: 'Manage comments'
   route_name: comment.admin
