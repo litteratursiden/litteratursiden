@@ -2,7 +2,7 @@
 
 namespace Drupal\lit_notifications;
 
-use Drupal\Core\Entity\Entity;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\extrafield_views_integration\lib\ExtrafieldRenderClassInterface;
 
 /**
@@ -13,7 +13,7 @@ class FlagNotificationsExtraFieldRenderer implements ExtrafieldRenderClassInterf
   /**
    * {@inheritdoc}
    */
-  public static function render(Entity $entity) {
+  public static function render(EntityInterface $entity) {
     /** @var \Drupal\flag\FlagServiceInterface $flag_service */
     $flag_service = \Drupal::service('flag');
     $flag = $flag_service->getFlagById('notifications');
