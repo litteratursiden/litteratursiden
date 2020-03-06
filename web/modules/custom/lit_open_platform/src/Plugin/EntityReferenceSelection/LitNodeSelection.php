@@ -2,7 +2,7 @@
 
 namespace Drupal\lit_open_platform\Plugin\EntityReferenceSelection;
 
-use Drupal\Core\Entity\EntityManagerInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\file\Entity\File;
@@ -34,8 +34,8 @@ class LitNodeSelection extends NodeSelection {
   /**
    * @inheritdoc
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition,EntityManagerInterface $entity_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user) {
-    parent::__construct($configuration, $plugin_id, $plugin_definition, $entity_manager, $module_handler, $current_user);
+  public function __construct(array $configuration, $plugin_id, $plugin_definition,EntityTypeManagerInterface $entity_type_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $entity_type_manager, $module_handler, $current_user);
 
     // Get module config.
     $config = \Drupal::config('lit_open_platform.settings');
