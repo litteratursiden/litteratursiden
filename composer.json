@@ -57,10 +57,10 @@
             "type": "package",
             "package": {
                 "name": "jqueryvalidate",
-                "version": "1.14.0",
+                "version": "1.17.0",
                 "type": "drupal-library",
                 "dist": {
-                    "url": "https://jqueryvalidation.org/files/jquery-validation-1.14.0.zip",
+                    "url": "https://github.com/jquery-validation/jquery-validation/releases/download/1.17.0/jquery-validation-1.17.0.zip",
                     "type": "zip"
                 }
             }
@@ -139,6 +139,7 @@
         "drush/drush": "^9.0.0",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
+        "jqueryvalidate": "~1.0",
         "kenwheeler/slick": "master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

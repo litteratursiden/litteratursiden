@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: producer
-label: Producer
+label: Skribent
 weight: 2
 is_admin: null
 permissions:

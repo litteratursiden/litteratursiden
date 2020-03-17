@@ -17,7 +17,6 @@ description: ''
 tag: ''
 base_table: taxonomy_term_field_data
 base_field: tid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -368,6 +367,9 @@ display:
           entity_type: taxonomy_term
           entity_field: vid
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         name:
           id: name
           table: taxonomy_term_field_data
@@ -396,6 +398,8 @@ display:
               producer: '0'
               superadmin: '0'
             placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -438,6 +442,8 @@ display:
               editor: '0'
               producer: '0'
               superadmin: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: 'Publishing status'
@@ -462,9 +468,9 @@ display:
           entity_field: status
           plugin_id: boolean
         0:
-          id: false
+          id: ''
           table: taxonomy_term_field_data
-          field: false
+          field: ''
           relationship: none
           group_type: group
           admin_label: ''
@@ -486,6 +492,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -499,7 +507,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: taxonomy_term
-          entity_field: false
+          entity_field: ''
           plugin_id: boolean
       sorts: {  }
       title: Tags
@@ -552,9 +560,9 @@ display:
       sorts: {  }
       filters:
         -
-          id: false
+          id: ''
           table: taxonomy_term_field_data
-          field: false
+          field: ''
           relationship: none
           group_type: group
           admin_label: ''
@@ -576,6 +584,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -589,7 +599,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: taxonomy_term
-          entity_field: false
+          entity_field: ''
           plugin_id: boolean
     cache_metadata:
       max-age: -1
