@@ -21,7 +21,13 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-background_path: 'public://Skærmbillede 2020-01-02 kl. 08.39.00.png'
+background_path: 'public://theis_oentoft_web_2.jpg'
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -31,4 +37,3 @@ logo:
   path: ''
   url: ''
   use_default: true
-langcode: da

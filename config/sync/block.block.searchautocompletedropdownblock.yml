@@ -1,0 +1,20 @@
+uuid: 31233dd3-22c1-4588-9eef-a86d0f709993
+langcode: da
+status: true
+dependencies:
+  module:
+    - lit_search
+  theme:
+    - litteratursiden
+id: searchautocompletedropdownblock
+theme: litteratursiden
+region: navigation
+weight: -12
+provider: null
+plugin: lit_search_autocomplete_block
+settings:
+  id: lit_search_autocomplete_block
+  label: 'Search autocomplete dropdown'
+  provider: lit_search
+  label_display: '0'
+visibility: {  }

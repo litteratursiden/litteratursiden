@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Literature types'
 vid: literature_type
 description: ''
-hierarchy: 0
 weight: 0

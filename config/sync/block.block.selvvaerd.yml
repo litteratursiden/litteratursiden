@@ -1,0 +1,31 @@
+uuid: 557ed40c-dad3-4123-9968-7c6894305592
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:book_list_carousel:a0b8bc29-e110-4379-aa6a-a387d4973ec6'
+  module:
+    - block_content
+    - system
+  theme:
+    - litteratursiden
+id: selvvaerd
+theme: litteratursiden
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:a0b8bc29-e110-4379-aa6a-a387d4973ec6'
+settings:
+  id: 'block_content:a0b8bc29-e110-4379-aa6a-a387d4973ec6'
+  label: Selvværd
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /books
+    negate: false
+    context_mapping: {  }
