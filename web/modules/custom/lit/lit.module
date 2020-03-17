@@ -524,7 +524,7 @@ function lit_page_attachments_alter(array &$attachments) {
     foreach ($attachments['#attached']['html_head'] as &$tag) {
       // Only process meta tags with a 'content' attribute, that way it will
       // exclude LINK tags or meta tags which do not have a "content" value.
-      if (isset($tag[0]['#tag']) && $tag[0]['#tag'] == 'meta') {
+      if (isset($tag[0]['#tag']) && $tag[0]['#tag'] == 'meta' && isset($tag[0]['#attributes']['property'])) {
         if (isset($tag[0]['#attributes']['content']) && $tag[0]['#attributes']['property'] == 'og:description') {
           if (!is_string($tag[0]['#attributes']['content'])) {
             $tag[0]['#attributes']['content'] = (string) $tag[0]['#attributes']['content'];

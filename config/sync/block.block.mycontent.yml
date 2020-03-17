@@ -1,0 +1,25 @@
+uuid: bd9c2f99-0808-497e-8ec4-bfc4da51966f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.my-content
+  module:
+    - system
+  theme:
+    - bartik
+id: mycontent
+theme: bartik
+region: sidebar_first
+weight: -3
+provider: null
+plugin: 'system_menu_block:my-content'
+settings:
+  id: 'system_menu_block:my-content'
+  label: 'My content'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

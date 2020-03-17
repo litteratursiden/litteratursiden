@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86ffb4a1a30b97521586c8ed9b20cf09",
+    "content-hash": "f0d8026bbcab24d818cef8566e813afb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7139,6 +7139,15 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "jqueryvalidate",
+            "version": "1.17.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/jquery-validation/jquery-validation/releases/download/1.17.0/jquery-validation-1.17.0.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "kenwheeler/slick",

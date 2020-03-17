@@ -1,0 +1,46 @@
+uuid: 1e94c722-d2cb-4050-a43c-0f17095a352d
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.related_content
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - litteratursiden
+id: views_block__related_content_block
+theme: litteratursiden
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:related_content-related_content_block'
+settings:
+  id: 'views_block:related_content-related_content_block'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      analysis: analysis
+      article: article
+      author_portrait: author_portrait
+      blog: blog
+      book: book
+      interview: interview
+      review: review
+      topic: topic
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/node/*/*'
+    negate: true
+    context_mapping: {  }

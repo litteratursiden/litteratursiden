@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'General tags'
 vid: general_tags
 description: ''
-hierarchy: 0
 weight: 0
