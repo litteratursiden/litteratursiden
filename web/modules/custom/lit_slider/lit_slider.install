@@ -1,5 +1,7 @@
 <?php
 
+use \Drupal\taxonomy\Entity\Term;
+
 /**
  * @file
  * Installation actions for lit_slider.
@@ -30,4 +32,14 @@ function lit_slider_requirements($phase) {
       'value'       => $exists ? t('Installed') : t('Not installed'),
     ],
   ];
+}
+
+/**
+ * Add Children's books taxonomy term
+ */
+function lit_slider_update_8100() {
+  $term = Term::create([
+    'name' => t('Children\'s Books'),
+    'vid' => 'literature_type',
+  ])->save();
 }
