@@ -11,7 +11,7 @@ field_name: field_review_literature_type
 entity_type: node
 bundle: review
 label: 'Literature types'
-description: ''
+description: 'Ved at udfylde dette felt kan du tilføje anmeldelsen til en eller flere karruseller.'
 required: false
 translatable: false
 default_value: {  }
