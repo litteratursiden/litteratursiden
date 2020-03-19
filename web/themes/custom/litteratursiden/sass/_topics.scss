@@ -7,10 +7,12 @@ body.path-topics {
   @include respond-to(phones-landscape) {
     padding-top: $large-spacer;
   }
+
   .views-infinite-scroll-content-wrapper {
     @include container-fixed(0);
     @include bs-container();
     @include slider-paddings();
+
     .views-row {
       @include make-sm-column(6, 30px);
       @include make-md-column(4, 30px);
@@ -19,21 +21,27 @@ body.path-topics {
         padding-right: 0;
       }
       margin-bottom: $regular-spacer*2;
+
       article.topic {
         &:hover, &:focus {
           .title-holder > a {
             background-color: $brand-color;
             color: $inverse-text-color;
             @include transition(all 0.2s ease-out);
+
             h2 {
               color: $inverse-text-color;
+
               > span {
                 color: $inverse-text-color;
+
                 &:hover, &:focus {
                   color: $inverse-text-color;
                 }
+
                 @include arrows-link($inverse-text-color, $inverse-text-color, $xlarge-spacer, $large-font-size, inline-block, static, $large-spacer, $large-spacer);
-                &:after{
+
+                &:after {
                   line-height: $large-spacer;
                   margin-left: 0;
                 }
@@ -42,25 +50,29 @@ body.path-topics {
           }
         }
       }
+
       .title-holder > a {
         display: block;
         height: 130px;
         padding: $large-spacer $regular-spacer;
         background-color: $btn-gray;
+
         h2 {
           margin: 0;
           @include text-mixin(
-          $family:$heading-font-serif,
-          $font-size: $h4-font-size,
-          $text-color:$primary-text-color,
-          $font-weight:$font-weight-bold,
-          $line-height: $h3-font-size
+            $family: $heading-font-serif,
+            $font-size: $h4-font-size,
+            $text-color: $primary-text-color,
+            $font-weight: $font-weight-bold,
+            $line-height: $h3-font-size
           );
+
           > a, span {
             color: inherit;
           }
         }
       }
+
       .content {
         min-height: $topic-block-height;
 
@@ -73,6 +85,7 @@ body.path-topics {
           min-height: $topic-block-height;
           width: 100%;
         }
+
         img {
           height: $topic-block-height;
         }
@@ -81,4 +94,18 @@ body.path-topics {
   }
 
   @include ajax-pager();
+
+}
+
+
+.page-node-type-landing-page {
+  .field--name-field-block-reference {
+    .block-type-overview {
+      background: none;
+
+      .content-wrapper {
+        padding: 0;
+      }
+    }
+  }
 }
