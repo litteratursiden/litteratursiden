@@ -151,11 +151,14 @@ view_mode ? view_mode|clean_class,
       <div class="right-col"> {{ content.group_additional_info }}</div>
     </div>
   </div>
-  <div class="block-views-blockrelated-books-related-books-by-author-block">
-    <div class="content-wrapper">
-      <h2 class="block-title">{{ 'Other books by @author_name'|t({'@author_name': node.field_book_reference_author.entity.title.value}) }}</h2>
-      {{ drupal_view('related_books', 'related_books_by_author_block') }}
+
+  {% if drupal_view_result('related_books', 'related_books_by_author_block')|length > 0 %}
+    <div class="block-views-blockrelated-books-related-books-by-author-block">
+      <div class="content-wrapper">
+        <h2 class="block-title">{{ 'Other books by @author_name'|t({'@author_name': node.field_book_reference_author.entity.title.value}) }}</h2>
+        {{ drupal_view('related_books', 'related_books_by_author_block') }}
+      </div>
     </div>
-  </div>
+  {% endif %}
   {{ content.field_block_reference }}
 </article>
