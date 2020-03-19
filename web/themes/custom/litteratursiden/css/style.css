@@ -10717,6 +10717,11 @@ body.path-topics {
           background-color: #bfbfbf;
           transition: all 0.2s ease-out; }
 
+.page-node-type-landing-page .field--name-field-block-reference .block-type-overview {
+  background: none; }
+  .page-node-type-landing-page .field--name-field-block-reference .block-type-overview .content-wrapper {
+    padding: 0; }
+
 #navbar .lit-search-autocomplete-form form.active .lit-search-autocomplete-field-container {
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
