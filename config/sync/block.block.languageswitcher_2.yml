@@ -1,0 +1,20 @@
+uuid: fe586133-e943-4cc4-8a4e-1cd896b542e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - seven
+id: languageswitcher_2
+theme: seven
+region: header
+weight: -2
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  provider: language
+  label_display: '0'
+visibility: {  }

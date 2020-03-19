@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: editor
-label: Editor
+label: Redaktør
 weight: 3
 is_admin: null
 permissions:
@@ -16,7 +16,6 @@ permissions:
   - 'administer block_content fields'
   - 'administer block_content form display'
   - 'administer blocks'
-  - 'bpi push content'
   - 'administer comments'
   - 'administer contact forms'
   - 'administer display modes'
@@ -25,6 +24,7 @@ permissions:
   - 'administer nodes'
   - 'administer themes'
   - 'administer users'
+  - 'bpi push content'
   - 'change own username'
   - 'create analysis content'
   - 'create article content'
@@ -36,6 +36,7 @@ permissions:
   - 'create book_debate content'
   - 'create book_list content'
   - 'create interview content'
+  - 'create landing_page content'
   - 'create page content'
   - 'create review content'
   - 'create similar content'
@@ -76,6 +77,7 @@ permissions:
   - 'edit any book_debate content'
   - 'edit any book_list content'
   - 'edit any interview content'
+  - 'edit any landing_page content'
   - 'edit any page content'
   - 'edit any review content'
   - 'edit any similar content'
@@ -89,6 +91,7 @@ permissions:
   - 'edit own book_debate content'
   - 'edit own book_list content'
   - 'edit own interview content'
+  - 'edit own landing_page content'
   - 'edit own page content'
   - 'edit own review content'
   - 'edit own similar content'

@@ -1,0 +1,22 @@
+uuid: b1fe2fa8-ae36-47c3-a11d-9bdd14f72503
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - litteratursiden
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: litteratursiden_messages
+theme: litteratursiden
+region: highlighted
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

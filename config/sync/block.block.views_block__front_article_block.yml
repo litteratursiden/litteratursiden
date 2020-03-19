@@ -1,0 +1,30 @@
+uuid: b28df5e9-cd59-4bbe-b332-e4ffdebc0882
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.front_article
+  module:
+    - system
+    - views
+  theme:
+    - litteratursiden
+id: views_block__front_article_block
+theme: litteratursiden
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:front_article-block_front_article'
+settings:
+  id: 'views_block:front_article-block_front_article'
+  label: Artikel
+  provider: views
+  label_display: visible
+  views_label: Artikel
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n"
+    negate: false
+    context_mapping: {  }

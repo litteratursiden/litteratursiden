@@ -14,7 +14,6 @@ description: ''
 tag: ''
 base_table: search_api_index_content
 base_field: search_api_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -72,6 +71,8 @@ display:
         type: search_api
         options:
           view_modes:
+            'entity:group':
+              book_club: search_index
             'entity:node':
               analysis: search_index
               article: search_index
@@ -84,8 +85,6 @@ display:
               review: search_index
               similar: search_index
               topic: search_index
-            'entity:group':
-              book_club: search_index
       fields:
         title:
           table: search_api_index_content
@@ -184,6 +183,8 @@ display:
               producer: '0'
               editor: '0'
               superadmin: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
