@@ -1,23 +1,23 @@
-uuid: 557ed40c-dad3-4123-9968-7c6894305592
+uuid: ffc4a48a-769d-4b58-9758-1a47e439974f
 langcode: da
 status: true
 dependencies:
   content:
-    - 'block_content:book_list_carousel:a0b8bc29-e110-4379-aa6a-a387d4973ec6'
+    - 'block_content:spot:0c348dcf-0352-4103-b32b-2c3df909dd9a'
   module:
     - block_content
     - system
   theme:
     - litteratursiden
-id: selvvaerd
+id: marenuthaugforfatterportraet
 theme: litteratursiden
 region: content
-weight: -16
+weight: 0
 provider: null
-plugin: 'block_content:a0b8bc29-e110-4379-aa6a-a387d4973ec6'
+plugin: 'block_content:0c348dcf-0352-4103-b32b-2c3df909dd9a'
 settings:
-  id: 'block_content:a0b8bc29-e110-4379-aa6a-a387d4973ec6'
-  label: Selvværd
+  id: 'block_content:0c348dcf-0352-4103-b32b-2c3df909dd9a'
+  label: 'Maren Uthaug - forfatterportræt'
   provider: block_content
   label_display: visible
   status: true
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /books
+    pages: /artikler/maren-uthaug-vinder-laesernes-bogpris
     negate: false
     context_mapping: {  }
