@@ -12,7 +12,7 @@ dependencies:
 id: videverden
 theme: litteratursiden
 region: content
-weight: 0
+weight: 2
 provider: null
 plugin: 'block_content:d8068459-df2d-4061-9c52-85c8b0a3fbd2'
 settings:

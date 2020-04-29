@@ -7229,7 +7229,6 @@ form .form-group .control-label {
     font-size: 17.5px; }
 
 form .form-group .form-control {
-  height: 52px;
   padding: 6px 15px;
   border-radius: 0;
   border-color: #eeecec;
@@ -8942,6 +8941,98 @@ body {
     body.path-frontpage .main-container #articles-wrapper .block.block-facebook-feed-block .block-title {
       line-height: 36px; } }
 
+.front-page--content-teaser h2, .front-page--content-teaser .media-heading {
+  font-family: "RobotoSlab-Regular", serif;
+  font-size: 35px;
+  color: #ff5002;
+  font-weight: bold;
+  line-height: 45px;
+  letter-spacing: 0px;
+  font-style: normal;
+  margin-bottom: 20px;
+  margin-top: 0; }
+  @media only screen and (max-width: 1199px) {
+    .front-page--content-teaser h2, .front-page--content-teaser .media-heading {
+      font-size: 35px; } }
+  @media only screen and (max-width: 1199px) and (max-width: 767px) {
+    .front-page--content-teaser h2, .front-page--content-teaser .media-heading {
+      font-size: 30px;
+      line-height: 35px; } }
+  .front-page--content-teaser h2 a, .front-page--content-teaser h2 a span, .front-page--content-teaser .media-heading a, .front-page--content-teaser .media-heading a span {
+    color: #ff5002; }
+
+.front-page--content-teaser h2 a span {
+  color: #ff5002 !important; }
+
+.front-page--content-teaser .inner-content {
+  color: #3a3b3d;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: Roboto-Regular,sans-serif;
+  margin-bottom: 30px; }
+  .front-page--content-teaser .inner-content a {
+    display: block;
+    font-family: Roboto-Regular,sans-serif;
+    font-size: 20px;
+    color: #787777 !important;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0;
+    font-style: normal;
+    margin: 30px 0; }
+
+.front-page--content-teaser .btn-link {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 33px;
+  height: 35px;
+  display: inline-flex;
+  color: #ff5002;
+  font-size: 18px;
+  font-family: "Oswald-Regular", sans-serif;
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  color: #ff5002 !important;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 45px; }
+  .front-page--content-teaser .btn-link:hover, .front-page--content-teaser .btn-link:focus {
+    color: #ce4000;
+    transition: all 0.2s ease-out; }
+    .front-page--content-teaser .btn-link:hover:after, .front-page--content-teaser .btn-link:focus:after {
+      color: #ce4000; }
+  .front-page--content-teaser .btn-link:after {
+    content: "";
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'literatur-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    position: initial;
+    right: 20px;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    top: 15px;
+    font-size: 15px;
+    color: #ff5002;
+    transition: all 0.2s ease-out; }
+    @media only screen and (max-width: 767px) {
+      .front-page--content-teaser .btn-link:after {
+        font-size: 14px; } }
+
 body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recent-reviews {
   margin-top: 30px; }
 
@@ -9404,6 +9495,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     margin-bottom: 0;
     margin-top: -20px; }
 
+.block-views-blockreviews-by-user-block-1,
 .block-views-blockrelated-content-topic-related-content,
 .block-views-blockbooks-being-debated-books-being-debated-block,
 .block-views-blockbook-list-book-list-block,
@@ -9414,6 +9506,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
 .view-book-list-filter-book_list-book_list_block {
   background-color: #3a3b3d;
   padding-bottom: 20px; }
+  .block-views-blockreviews-by-user-block-1 .content-wrapper,
   .block-views-blockrelated-content-topic-related-content .content-wrapper,
   .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
   .block-views-blockbook-list-book-list-block .content-wrapper,
@@ -9430,7 +9523,9 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     max-width: 1170px;
     padding-left: 65px;
     padding-right: 65px; }
-    .block-views-blockrelated-content-topic-related-content .content-wrapper:before, .block-views-blockrelated-content-topic-related-content .content-wrapper:after,
+    .block-views-blockreviews-by-user-block-1 .content-wrapper:before, .block-views-blockreviews-by-user-block-1 .content-wrapper:after,
+    .block-views-blockrelated-content-topic-related-content .content-wrapper:before,
+    .block-views-blockrelated-content-topic-related-content .content-wrapper:after,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper:before,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper:after,
     .block-views-blockbook-list-book-list-block .content-wrapper:before,
@@ -9447,6 +9542,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     .view-book-list-filter-book_list-book_list_block .content-wrapper:after {
       content: " ";
       display: table; }
+    .block-views-blockreviews-by-user-block-1 .content-wrapper:after,
     .block-views-blockrelated-content-topic-related-content .content-wrapper:after,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper:after,
     .block-views-blockbook-list-book-list-block .content-wrapper:after,
@@ -9457,6 +9553,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     .view-book-list-filter-book_list-book_list_block .content-wrapper:after {
       clear: both; }
     @media only screen and (max-width: 1199px) {
+      .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
       .block-views-blockbook-list-book-list-block .content-wrapper,
@@ -9468,6 +9565,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         width: 970px;
         max-width: 970px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .block-views-blockreviews-by-user-block-1 .content-wrapper,
     .block-views-blockrelated-content-topic-related-content .content-wrapper,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
     .block-views-blockbook-list-book-list-block .content-wrapper,
@@ -9479,6 +9577,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       max-width: 100%;
       width: 100%; } }
     @media only screen and (max-width: 1199px) {
+      .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
       .block-views-blockbook-list-book-list-block .content-wrapper,
@@ -9490,6 +9589,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         padding-left: 40px;
         padding-right: 40px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .block-views-blockreviews-by-user-block-1 .content-wrapper,
     .block-views-blockrelated-content-topic-related-content .content-wrapper,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
     .block-views-blockbook-list-book-list-block .content-wrapper,
@@ -9501,6 +9601,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       padding-left: 20px;
       padding-right: 20px; } }
     @media only screen and (max-width: 480px) {
+      .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
       .block-views-blockbook-list-book-list-block .content-wrapper,
@@ -9511,6 +9612,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       .view-book-list-filter-book_list-book_list_block .content-wrapper {
         padding-left: 0;
         padding-right: 0; }
+        .block-views-blockreviews-by-user-block-1 .content-wrapper .block-title,
         .block-views-blockrelated-content-topic-related-content .content-wrapper .block-title,
         .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper .block-title,
         .block-views-blockbook-list-book-list-block .content-wrapper .block-title,
@@ -9521,6 +9623,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         .view-book-list-filter-book_list-book_list_block .content-wrapper .block-title {
           padding-left: 20px;
           padding-right: 20px; } }
+  .block-views-blockreviews-by-user-block-1 h2.block-title,
   .block-views-blockrelated-content-topic-related-content h2.block-title,
   .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
   .block-views-blockbook-list-book-list-block h2.block-title,
@@ -9535,6 +9638,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     font-size: 35px;
     color: #fff; }
     @media only screen and (max-width: 991px) {
+      .block-views-blockreviews-by-user-block-1 h2.block-title,
       .block-views-blockrelated-content-topic-related-content h2.block-title,
       .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
       .block-views-blockbook-list-book-list-block h2.block-title,
@@ -9545,6 +9649,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       .view-book-list-filter-book_list-book_list_block h2.block-title {
         padding: 0 15px; } }
   @media only screen and (max-width: 991px) and (max-width: 767px) {
+    .block-views-blockreviews-by-user-block-1 h2.block-title,
     .block-views-blockrelated-content-topic-related-content h2.block-title,
     .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
     .block-views-blockbook-list-book-list-block h2.block-title,
@@ -9556,6 +9661,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       padding: 0;
       font-size: 20px;
       line-height: 30px; } }
+    .block-views-blockreviews-by-user-block-1 h2.block-title:before,
     .block-views-blockrelated-content-topic-related-content h2.block-title:before,
     .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title:before,
     .block-views-blockbook-list-book-list-block h2.block-title:before,
@@ -9586,6 +9692,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       height: 83px;
       line-height: 83px; }
       @media only screen and (max-width: 480px) {
+        .block-views-blockreviews-by-user-block-1 h2.block-title:before,
         .block-views-blockrelated-content-topic-related-content h2.block-title:before,
         .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title:before,
         .block-views-blockbook-list-book-list-block h2.block-title:before,
@@ -10716,11 +10823,6 @@ body.path-topics {
           outline: none;
           background-color: #bfbfbf;
           transition: all 0.2s ease-out; }
-
-.page-node-type-landing-page .field--name-field-block-reference .block-type-overview {
-  background: none; }
-  .page-node-type-landing-page .field--name-field-block-reference .block-type-overview .content-wrapper {
-    padding: 0; }
 
 #navbar .lit-search-autocomplete-form form.active .lit-search-autocomplete-field-container {
   -webkit-transition: all 0.3s ease-in;

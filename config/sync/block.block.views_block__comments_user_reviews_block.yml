@@ -13,7 +13,7 @@ dependencies:
 id: views_block__comments_user_reviews_block
 theme: litteratursiden
 region: content
-weight: -2
+weight: -5
 provider: null
 plugin: 'views_block:comments-user_reviews_block'
 settings:

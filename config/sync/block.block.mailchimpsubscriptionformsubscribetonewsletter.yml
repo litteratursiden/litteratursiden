@@ -10,14 +10,14 @@ dependencies:
 id: mailchimpsubscriptionformsubscribetonewsletter
 theme: litteratursiden
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: 'mailchimp_signup_subscribe_block:subscribe_to_newsletter'
 settings:
   id: 'mailchimp_signup_subscribe_block:subscribe_to_newsletter'
-  label: 'Hold dig opdateret'
+  label: 'Få vores nyhedsbrev'
   provider: mailchimp_signup
-  label_display: visible
+  label_display: '0'
 visibility:
   request_path:
     id: request_path

@@ -51,18 +51,17 @@
 'block-' ~ plugin_id|clean_class,
 'clearfix',
 ] %}
+{% set user = drupal_entity('user', content['#view'].args[0]) %}
+{% set user_full_name = user['#user'].field_user_full_name[0].value %}
+
 <section{{ attributes.addClass(classes) }}>
-  <div class="content-wrapper flex-row align-center">
-    <div class="left-col">
-      {{ title_prefix }}
-      <h2{{ title_attributes.addClass('block-title') }}>{{ 'Receive our newsletter'|t }}</h2>
-      {{ title_suffix }}
-    </div>
-    <div class="right-col">
-      {% block content %}
-        {{ content }}
-      {% endblock %}
-    </div>
+  <div class="content-wrapper">
+    {{ title_prefix }}
+      <h2 class="block-title">{{ 'Latest reviews by @user'|t({ '@user': user_full_name }) }}</h2>
+    {{ title_suffix }}
+
+    {% block content %}
+      {{ content }}
+    {% endblock %}
   </div>
 </section>
-

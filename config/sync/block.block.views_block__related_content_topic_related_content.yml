@@ -13,7 +13,7 @@ dependencies:
 id: views_block__related_content_topic_related_content
 theme: litteratursiden
 region: content
-weight: 1
+weight: 3
 provider: null
 plugin: 'views_block:related_content-topic_related_content'
 settings:

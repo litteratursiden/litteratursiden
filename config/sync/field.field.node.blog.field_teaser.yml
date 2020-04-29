@@ -1,0 +1,19 @@
+uuid: b3342365-ae75-495e-8e81-6f6b3cfcb913
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.blog
+id: node.blog.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: blog
+label: Teaser
+description: 'Hvis teaseren ikke udfyldes bruges en del af blog tekst feltet herunder til teaservisninger i eksempelvis spotbokse.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
