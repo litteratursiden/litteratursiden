@@ -186,7 +186,7 @@
         {% block content %}
           <a id="main-content"></a>
           <div class="front-page-container">
-            {{ page.content|without('views_block__front_blog_block_front_blog', 'views_block__front_article_block', 'mailchimpsubscriptionformsubscribetonewsletter') }}
+            {{ page.content|without('views_block__front_blog_block_front_blog', 'views_block__front_article_block', 'mailchimpsubscriptionformsubscribetonewsletter', 'mailchimptilmeldingsformularsubscribetochildrennewsletter') }}
             <div id="articles-wrapper">
               <div class="container no-padding">
                 {{ page.content.views_block__front_article_block }}
@@ -194,21 +194,7 @@
               </div>
               <div class="container no-padding flex-row flex-md-nowrap flex-stretch">
                 {{ page.content.mailchimpsubscriptionformsubscribetonewsletter }}
-                <section id="block-views-block-facebook-feed-block"
-                         class="block block-views block-facebook-feed-block clearfix">
-                  <div class="flex-row flex-nowrap stretch space-between flex-wrap">
-                    <div class="left-col">
-                      <h3 class="block-title">{{ 'Visit us on Facebook'|t }}</h3>
-                    </div>
-                    <div class="fb-page" data-href="https://www.facebook.com/Litteratursiden" data-tabs="timeline"
-                         data-small-header="true" data-adapt-container-width="true" data-hide-cover="true"
-                         data-show-facepile="false">
-                      <blockquote cite="https://www.facebook.com/Litteratursiden" class="fb-xfbml-parse-ignore">
-                        <a href="https://www.facebook.com/Litteratursiden">Litteratursiden.dk</a>
-                      </blockquote>
-                    </div>
-                  </div>
-                </section>
+                {{ page.content.mailchimptilmeldingsformularsubscribetochildrennewsletter }}
               </div>
             </div>
 

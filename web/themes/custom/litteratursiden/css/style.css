@@ -8696,8 +8696,7 @@ body {
         float: left;
         padding-left: 50px;
         padding-right: 35px;
-        margin-left: 30px;
-        margin-right: 15px; }
+        margin-left: 30px; }
         @media only screen and (max-width: 1199px) {
           body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form {
             width: calc(50% - 15px);

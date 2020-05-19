@@ -1,0 +1,31 @@
+uuid: 5dc6bc67-1d89-4f5e-8dd0-b0768f4c4c95
+langcode: da
+status: null
+dependencies: {  }
+id: subscribe_to_child_newsletter
+title: 'Subscribe to children newsletter'
+mc_lists:
+  e7ece301b6: e7ece301b6
+  8163edb0d0: '0'
+mode: 1
+mergefields:
+  EMAIL: true
+description: ''
+doublein: true
+send_welcome: null
+include_interest_groups: false
+settings:
+  path: ''
+  submit_button: Submit
+  confirmation_message: 'Du er nu tilmeldt.'
+  destination: ''
+  mergefields:
+    EMAIL: "O:8:\"stdClass\":8:{s:3:\"tag\";s:5:\"EMAIL\";s:4:\"name\";O:48:\"Drupal\\Core\\StringTranslation\\TranslatableMarkup\":3:{s:9:\"\0*\0string\";s:13:\"Email Address\";s:12:\"\0*\0arguments\";a:0:{}s:10:\"\0*\0options\";a:0:{}}s:4:\"type\";s:5:\"email\";s:8:\"required\";b:1;s:13:\"default_value\";s:0:\"\";s:6:\"public\";b:1;s:13:\"display_order\";i:1;s:7:\"options\";O:8:\"stdClass\":1:{s:4:\"size\";i:25;}}"
+  description: ''
+  doublein: true
+  include_interest_groups: false
+  safe_interest_groups: false
+  configure_groups: false
+  gdpr_consent: false
+  gdpr_checkbox_label: ''
+  gdpr_consent_required: false

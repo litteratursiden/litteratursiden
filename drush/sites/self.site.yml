@@ -12,3 +12,15 @@
 #  user: www-admin
 #  root: /path/to/drupal
 #  uri: http://stage.example.com
+local:
+  root: /Users/martinydegranath/projects/itkdev/litteratursiden/web
+  uri: http://127.0.0.1:8088/
+
+prod:
+  host: litteratursiden.dk
+  paths:
+    files: sites/default/files/
+    drush-script: /data/www/litteratursiden_dk/htdocs/vendor/bin/drush
+  root: /data/www/litteratursiden_dk/htdocs/web
+  uri: https://litteratursiden.dk/
+  user: deploy
