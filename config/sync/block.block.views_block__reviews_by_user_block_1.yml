@@ -1,4 +1,4 @@
-uuid: 0e760ccd-ad04-4b79-8b52-8390058e6616
+uuid: 3ed25962-4fae-40cb-b6e3-b6c532d44ae0
 langcode: da
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: views_block__reviews_by_user_block_1
 theme: litteratursiden
 region: content
-weight: -4
+weight: -5
 provider: null
 plugin: 'views_block:reviews_by_user-block_1'
 settings:
