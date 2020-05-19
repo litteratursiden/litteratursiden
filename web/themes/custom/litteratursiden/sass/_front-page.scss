@@ -423,7 +423,6 @@ body {
           padding-left: $small-spacer*5;
           padding-right: $small-spacer*3.5;
           margin-left: $regular-spacer*2;
-          margin-right: $regular-spacer;
 
           @include respond-to(tablets-landscape) {
             width: calc(50% - #{$regular-spacer});
