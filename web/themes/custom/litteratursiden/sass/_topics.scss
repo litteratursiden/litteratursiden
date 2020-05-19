@@ -96,16 +96,3 @@ body.path-topics {
   @include ajax-pager();
 
 }
-
-
-.page-node-type-landing-page {
-  .field--name-field-block-reference {
-    .block-type-overview {
-      background: none;
-
-      .content-wrapper {
-        padding: 0;
-      }
-    }
-  }
-}
