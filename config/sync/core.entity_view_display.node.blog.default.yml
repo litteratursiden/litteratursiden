@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.blog.field_blog_internal_link
     - field.field.node.blog.field_blog_literature_type
     - field.field.node.blog.field_blog_message_flag
+    - field.field.node.blog.field_teaser
     - image.style.spot
     - node.type.blog
   module:
@@ -121,6 +122,8 @@ hidden:
   field_blog_comments: true
   field_blog_literature_type: true
   field_blog_message_flag: true
+  field_teaser: true
   flag_notifications: true
   langcode: true
   owner_full_name: true
+  search_api_excerpt: true

@@ -12,7 +12,7 @@ dependencies:
 id: views_block__flag_bookmark_favorite_content_block
 theme: litteratursiden
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: 'views_block:flag_bookmark-favorite_content_block'
 settings:

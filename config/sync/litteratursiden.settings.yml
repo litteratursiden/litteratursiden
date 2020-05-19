@@ -21,7 +21,7 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-background_path: 'public://theis_oentoft_web_2.jpg'
+background_path: 'public://stine_pilgaard_topbilledei_0.jpg'
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'
@@ -37,3 +37,4 @@ logo:
   path: ''
   url: ''
   use_default: true
+langcode: da

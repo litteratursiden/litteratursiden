@@ -1,0 +1,34 @@
+uuid: 2358dd90-a83a-4ab5-b005-98471fa0547c
+langcode: da
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+    - system
+    - user
+  theme:
+    - litteratursiden
+id: mailchimptilmeldingsformularsubscribetochildrennewsletter
+theme: litteratursiden
+region: content
+weight: 0
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:subscribe_to_child_newsletter'
+settings:
+  id: 'mailchimp_signup_subscribe_block:subscribe_to_child_newsletter'
+  label: 'Få vores børnenyhedsbrev'
+  provider: mailchimp_signup
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      superadmin: superadmin
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

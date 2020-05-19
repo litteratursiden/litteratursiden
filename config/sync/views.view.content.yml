@@ -230,7 +230,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Indholdstype
+          label: Type
           exclude: false
           alter:
             alter_text: false
@@ -458,7 +458,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Indholdstype
+            label: Type
             description: ''
             use_operator: false
             operator: type_op

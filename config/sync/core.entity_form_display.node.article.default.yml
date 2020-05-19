@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.article.field_article_internal_link
     - field.field.node.article.field_article_link_external
     - field.field.node.article.field_block_reference
+    - field.field.node.article.field_teaser
     - image.style.thumbnail
     - node.type.article
   module:
@@ -26,12 +27,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   field_article_body:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -39,13 +40,13 @@ content:
     type: text_textarea
     region: content
   field_article_comments:
-    weight: 15
+    weight: 16
     settings: {  }
     third_party_settings: {  }
     type: comment_default
     region: content
   field_article_cover_image:
-    weight: 2
+    weight: 3
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -53,16 +54,6 @@ content:
     type: image_image
     region: content
   field_article_general_tags:
-    weight: 4
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_article_internal_link:
     weight: 5
     settings:
       match_operator: CONTAINS
@@ -72,16 +63,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_article_link_external:
+  field_article_internal_link:
     weight: 6
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_block_reference:
-    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60
@@ -90,16 +73,47 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_article_link_external:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_block_reference:
+    weight: 17
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_teaser:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 400
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+    type: string_textarea
+    region: content
   langcode:
     type: language_select
-    weight: 3
+    weight: 4
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -107,17 +121,17 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 10
     region: content
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -125,14 +139,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 17
+    weight: 18
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 11
     region: content
     third_party_settings: {  }
   title:
@@ -145,7 +159,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60
@@ -155,7 +169,7 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }

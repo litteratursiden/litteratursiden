@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.spot
+    - field.field.node.blog.field_block_reference
     - field.field.node.blog.field_blog_body
     - field.field.node.blog.field_blog_comments
     - field.field.node.blog.field_blog_cover_image
@@ -13,6 +14,7 @@ dependencies:
     - field.field.node.blog.field_blog_internal_link
     - field.field.node.blog.field_blog_literature_type
     - field.field.node.blog.field_blog_message_flag
+    - field.field.node.blog.field_teaser
     - image.style.spot
     - node.type.blog
   module:
@@ -41,7 +43,15 @@ content:
       image_style: spot
       image_link: ''
     third_party_settings: {  }
+  field_teaser:
+    type: basic_string
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_block_reference: true
   field_blog_comments: true
   field_blog_external_link: true
   field_blog_files: true
@@ -57,4 +67,5 @@ hidden:
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true
   social_media: true

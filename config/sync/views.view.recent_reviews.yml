@@ -8,8 +8,8 @@ dependencies:
     - taxonomy.vocabulary.literature_type
   content:
     - 'taxonomy_term:literature_type:1db35be8-b631-4323-8457-797636f84223'
-    - 'taxonomy_term:literature_type:b77954ea-9dc1-4e06-901b-407af6e7dd30'
     - 'taxonomy_term:literature_type:bd0746d3-d1af-40ae-bd91-8eda19efc17c'
+    - 'taxonomy_term:literature_type:ce760537-05f8-48d5-bbc6-311d7348d9d0'
   module:
     - lit_slider
     - lit_views
@@ -302,7 +302,7 @@ display:
           admin_label: ''
           operator: or
           value:
-            30595: 30595
+            30596: 30596
           group: 1
           exposed: false
           expose:

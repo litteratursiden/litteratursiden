@@ -104,4 +104,19 @@ view_mode ? view_mode|clean_class,
     {{ title_suffix }}
 
   </div>
+  <div class="hover-content">
+    <a class="link-wrapper" href="{{ url }}"></a>
+    <h2{{ title_attributes }}>
+      {{ label }}
+    </h2>
+    {% if content.field_book_body|render %}
+      <div class="description book">{% set text = content.field_book_body|render|striptags|raw|trim %}
+        {{ (text|length > 180 ? text|slice(0, 181)|split(' ')|slice(0, -1)|join(' ') ~ '…' : text)|raw }}
+      </div>
+    {% endif %}
+    {{ content.book_links|render }}
+    {% if not content.book_links|render %}
+      <a class="read-more" href="{{ url }}" rel="bookmark">{{ "Read more"|t }}</a>
+    {% endif %}
+  </div>
 </article>

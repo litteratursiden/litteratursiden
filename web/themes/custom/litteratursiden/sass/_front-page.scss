@@ -423,7 +423,6 @@ body {
           padding-left: $small-spacer*5;
           padding-right: $small-spacer*3.5;
           margin-left: $regular-spacer*2;
-          margin-right: $regular-spacer;
 
           @include respond-to(tablets-landscape) {
             width: calc(50% - #{$regular-spacer});
@@ -631,4 +630,41 @@ body {
 
 }
 
+// What a bloody mess! Nothing to do but to continue down this dark path.
+// ITK Overrides.
+.front-page--content-teaser {
+  @include teaser-title();
+  h2 a span {
+    color: $brand-color!important;
+  }
 
+  .inner-content {
+    color: #3a3b3d;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: Roboto-Regular,sans-serif;
+    margin-bottom: 30px;
+
+    a {
+      display: block;
+      font-family: Roboto-Regular,sans-serif;
+      font-size: 20px;
+      color: #787777!important;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0;
+      font-style: normal;
+      margin: 30px 0;
+    }
+  }
+
+  .btn-link {
+    @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
+    @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+
+    color: $brand-color!important;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+}

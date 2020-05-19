@@ -100,12 +100,8 @@ view_mode ? view_mode|clean_class,
     <h2{{ title_attributes }}>
       {{ label }}
     </h2>
-    {% if content.field_review_body|render %}
-      <div class="description review">{% set text = content.field_review_body|render|striptags|raw|trim %}
-        {{ (text|length > 180 ? text|slice(0, 181)|split(' ')|slice(0, -1)|join(' ') ~ '…' : text)|raw }}
-      </div>
-    {% elseif content.field_book_body|render %}
-      <div class="description book">{% set text = content.field_book_body|render|striptags|raw|trim %}
+    {% if node.field_review_reference_book.entity.field_book_body.value is not empty %}
+      <div class="description book">{% set booktext = node.field_review_reference_book.entity.field_book_body.value %}
         {{ (booktext|length > 180 ? booktext|slice(0, 181)|split(' ')|slice(0, -1)|join(' ') ~ '…' : booktext)|raw }}
       </div>
     {% endif %}
