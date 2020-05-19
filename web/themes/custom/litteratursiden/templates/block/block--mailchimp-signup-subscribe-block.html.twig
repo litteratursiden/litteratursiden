@@ -53,13 +53,13 @@
 ] %}
 {% set title = 'Receive our newsletter'|t %}
 {% if plugin_id is same as('mailchimp_signup_subscribe_block:subscribe_to_child_newsletter') %}
-  {% set title = 'Receive our newsletter'|t %}
+  {% set title = 'Receive our children newsletter'|t %}
 {% endif %}
 <section{{ attributes.addClass(classes) }}>
   <div class="content-wrapper flex-row align-center">
     <div class="left-col">
       {{ title_prefix }}
-      <h2{{ title_attributes.addClass('block-title') }}>{{ 'Receive our children newsletter'|t }}</h2>
+      <h2{{ title_attributes.addClass('block-title') }}>{{ title }}</h2>
       {{ title_suffix }}
     </div>
     <div class="right-col">
