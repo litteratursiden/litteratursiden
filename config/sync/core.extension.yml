@@ -4,7 +4,6 @@ module:
   advagg_css_minify: 0
   advagg_ext_minify: 0
   advagg_js_minify: 0
-  basic_auth: 0
   block: 0
   block_content: 0
   block_exclude_pages: 0
