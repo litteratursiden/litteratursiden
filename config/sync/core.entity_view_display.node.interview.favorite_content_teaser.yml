@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.favorite_content_teaser
+    - field.field.node.interview.field_block_reference
     - field.field.node.interview.field_interview_body
     - field.field.node.interview.field_interview_external_links
     - field.field.node.interview.field_interview_images
@@ -11,6 +12,7 @@ dependencies:
     - field.field.node.interview.field_interview_reference_author
     - field.field.node.interview.field_interview_video
     - field.field.node.interview.field_interview_video_text
+    - field.field.node.interview.field_teaser
     - image.style.medium
     - node.type.interview
   module:
@@ -51,13 +53,16 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_block_reference: true
   field_interview_body: true
   field_interview_external_links: true
   field_interview_internal_lin: true
   field_interview_reference_author: true
   field_interview_video: true
   field_interview_video_text: true
+  field_teaser: true
   flag_like: true
   langcode: true
   owner_portrait: true
+  search_api_excerpt: true
   social_media: true
