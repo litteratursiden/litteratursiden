@@ -26973,7 +26973,7 @@ body.path-bookmarks .region-content > .views-element-container {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  margin-bottom: 60px; }
+  margin-bottom: 15px; }
   .path-node .pager:before, .path-node .pager:after {
     content: " ";
     display: table; }
