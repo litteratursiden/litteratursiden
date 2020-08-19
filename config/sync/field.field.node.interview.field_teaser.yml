@@ -1,0 +1,19 @@
+uuid: e44d2db2-a602-4801-816c-015e292e3024
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.interview
+id: node.interview.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: interview
+label: Teaser
+description: 'Hvis teaseren ikke udfyldes bruges en del af tekst feltet herunder til teaservisninger i eksempelvis spotbokse.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
