@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_index
+    - field.field.node.topic.field_block_reference
+    - field.field.node.topic.field_teaser
     - field.field.node.topic.field_topic_body
     - field.field.node.topic.field_topic_comments
     - field.field.node.topic.field_topic_cover_image
@@ -56,6 +58,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_block_reference: true
+  field_teaser: true
   field_topic_comments: true
   field_topic_excerpt: true
   field_topic_files: true
@@ -70,4 +74,5 @@ hidden:
   links: true
   owner_full_name: true
   owner_portrait: true
+  search_api_excerpt: true
   social_media: true
