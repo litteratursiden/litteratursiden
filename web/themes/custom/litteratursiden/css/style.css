@@ -8782,6 +8782,8 @@ body {
             body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email {
               position: relative;
               color: #3a3b3d; }
+              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email > label {
+                display: none; }
               body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email.active:after {
                 content: '';
                 position: absolute;
