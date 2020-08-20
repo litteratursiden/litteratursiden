@@ -116,7 +116,7 @@ body {
         margin-top: $xxlarge-spacer;
         margin-bottom: $xxlarge-spacer;
       }
-      .views-row {
+      .favorite-content-block .views-row {
         padding: $regular-spacer 0;
         border-bottom: 1px solid $border-gray;
       }
@@ -355,6 +355,7 @@ body {
       .block-views-blockflag-bookmark-favorite-content-block {
         background-color: $light-gray;
         padding-bottom: $largest-spacer;
+        padding-top: $large-spacer;
         @include respond-to(tablets-portrait) {
           padding-bottom: $xlarge-spacer;
         }

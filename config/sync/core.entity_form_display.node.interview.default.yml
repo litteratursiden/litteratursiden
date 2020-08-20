@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.interview.field_interview_reference_author
     - field.field.node.interview.field_interview_video
     - field.field.node.interview.field_interview_video_text
+    - field.field.node.interview.field_teaser
     - image.style.thumbnail
     - node.type.interview
   module:
@@ -27,12 +28,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   field_block_reference:
-    weight: 17
+    weight: 18
     settings:
       match_operator: CONTAINS
       size: 60
@@ -42,7 +43,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_interview_body:
-    weight: 3
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
@@ -50,7 +51,7 @@ content:
     type: text_textarea
     region: content
   field_interview_external_links:
-    weight: 8
+    weight: 9
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -58,7 +59,7 @@ content:
     type: link_default
     region: content
   field_interview_images:
-    weight: 6
+    weight: 7
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -66,7 +67,7 @@ content:
     type: image_image
     region: content
   field_interview_internal_lin:
-    weight: 7
+    weight: 8
     settings:
       match_operator: CONTAINS
       size: 60
@@ -86,18 +87,31 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_interview_video:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
     region: content
   field_interview_video_text:
-    weight: 5
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_teaser:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      maxlength:
+        maxlength_js: 400
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
+        maxlength_js_truncate_html: false
+    type: string_textarea
     region: content
   langcode:
     type: language_select
@@ -108,7 +122,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 13
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -116,17 +130,17 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 12
     region: content
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 15
+    weight: 16
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 14
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -134,14 +148,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 19
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 13
     region: content
     third_party_settings: {  }
   title:
@@ -154,7 +168,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
@@ -164,7 +178,7 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 16
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }

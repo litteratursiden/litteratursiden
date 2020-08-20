@@ -13,6 +13,8 @@ dependencies:
     - field.field.node.author_portrait.field_author_portrait_lit_type
     - field.field.node.author_portrait.field_author_portrait_surname
     - field.field.node.author_portrait.field_author_portrait_tags
+    - field.field.node.author_portrait.field_block_reference
+    - field.field.node.author_portrait.field_teaser
     - image.style.slick_item
     - node.type.author_portrait
   module:
@@ -60,6 +62,8 @@ hidden:
   field_author_portrait_int_links: true
   field_author_portrait_lit_type: true
   field_author_portrait_tags: true
+  field_block_reference: true
+  field_teaser: true
   flag_bookmark: true
   flag_like: true
   langcode: true
@@ -68,3 +72,4 @@ hidden:
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true

@@ -1,0 +1,19 @@
+uuid: 2129f3d5-6d63-4dec-bd2c-551037f0010a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.topic
+id: node.topic.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: topic
+label: Teaser
+description: 'Hvis teaseren ikke udfyldes bruges en del af tekst feltet herunder til teaservisninger i eksempelvis spotbokse.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
