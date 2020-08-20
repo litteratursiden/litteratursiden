@@ -376,7 +376,8 @@ function lit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
     lit_alter_flag_forms($form, $form_state, $form_id);
   }
 
-  if ($form_id == 'mailchimp_signup_subscribe_block_subscribe_to_newsletter_form') {
+  if ($form_id == 'mailchimp_signup_subscribe_block_subscribe_to_newsletter_form' ||
+    $form_id == 'mailchimp_signup_subscribe_block_subscribe_to_child_newsletter_form') {
     $form['mergevars']['EMAIL']['#title_display'] = 'invisible';
     $form['mergevars']['EMAIL']['#attributes']['placeholder'] = t('Email address');
   }
