@@ -1,0 +1,131 @@
+@mixin spot-box-header() {
+  display: block;
+  font-family: $heading-font-serif;
+  line-height: 1.1;
+  font-size: $h1-font-size;
+  margin-bottom: $xlarge-spacer;
+  font-weight: $font-weight-bold;
+  @include respond-to(tablets-landscape) {
+    font-size: $h2-font-size;
+    @include respond-to(tablets-portrait) {
+      font-size: $h1-font-size;
+      @include respond-to(phones-landscape) {
+        font-size: $h3-font-size;
+        line-height: $h3-font-size+5px;
+      }
+    }
+  }
+}
+
+@mixin spot-box($image-position: 'image-right', $hide-node-type: true) {
+  .content {
+    color: $white;
+    overflow: hidden;
+  }
+
+  .container {
+    padding: 0 60px;
+  }
+
+  @if ($image-position == 'image-left') {
+    .container {
+      flex-direction: row-reverse;
+    }
+
+    .col-md-6:first-child {
+      background: $brand-primary;
+
+      &:after {
+        background: $brand-primary;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        width: 200%;
+      }
+    }
+
+    .col-md-6:last-child {
+      position: static;
+
+      .right-col {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        width: 50%;
+        background-position: center;
+        background-color: transparent;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+
+  } @else {
+    .col-md-6:first-child {
+      background: $brand-primary;
+
+      &:before {
+        background: $brand-primary;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        width: 200%;
+      }
+    }
+
+    .col-md-6:last-child {
+      position: static;
+
+      .right-col {
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        width: 50%;
+        background-position: center;
+        background-color: transparent;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  h2 {
+    color: $white;
+
+    @include spot-box-header;
+  }
+
+  h3.node-type {
+    color: $white;
+  }
+
+  @if $hide-node-type {
+    h3.node-type {
+      display: none;
+    }
+  }
+
+  p, a {
+    color: $white;
+  }
+
+  .inner-wrap {
+    font-size: $large-font-size;
+    padding: 3em 0;
+  }
+
+  .btn-link {
+    @include btn-link(35px, transparent, $white, 18px, inline-flex);
+    @include arrows-link($white, $white, $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+
+    &:after {
+      margin-top: 9px;
+    }
+  }
+}
