@@ -108,7 +108,6 @@ module:
   metatag_open_graph: 1
   pathauto: 1
   minimal: 1000
-  eu_cookie_compliance: 1001
 theme:
   stable: 0
   classy: 0
