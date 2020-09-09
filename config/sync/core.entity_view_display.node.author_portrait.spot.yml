@@ -13,6 +13,8 @@ dependencies:
     - field.field.node.author_portrait.field_author_portrait_lit_type
     - field.field.node.author_portrait.field_author_portrait_surname
     - field.field.node.author_portrait.field_author_portrait_tags
+    - field.field.node.author_portrait.field_block_reference
+    - field.field.node.author_portrait.field_teaser
     - image.style.spot
     - node.type.author_portrait
   module:
@@ -41,6 +43,13 @@ content:
     third_party_settings: {  }
     type: image
     region: content
+  field_teaser:
+    type: basic_string
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_author_portrait_country: true
   field_author_portrait_ext_link: true
@@ -49,6 +58,7 @@ hidden:
   field_author_portrait_lit_type: true
   field_author_portrait_surname: true
   field_author_portrait_tags: true
+  field_block_reference: true
   flag_bookmark: true
   flag_like: true
   langcode: true
@@ -57,4 +67,5 @@ hidden:
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true
   social_media: true

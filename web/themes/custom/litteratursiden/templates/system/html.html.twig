@@ -59,6 +59,7 @@
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
+    <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="DA" type="text/javascript"></script>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
     <meta name="viewport" content="width=device-width, initial-scale=1,  initial-scale=1.02, maximum-scale=1.0, user-scalable=no" />
@@ -72,39 +73,49 @@
     {{ page_bottom }}
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
     <!-- Google Analytics -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-2206045-2']);_gaq.push(['_setCustomVar', 1, 'Loggedin', '0', 2 ]);_gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+      <script type="text/javascript">
+        window.addEventListener('CookieInformationConsentGiven', function (event) {
+          if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+            var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-2206045-2']);_gaq.push(['_setCustomVar', 1, 'Loggedin', '0', 2 ]);_gaq.push(['_trackPageview']);
+            (function() {
+              var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+          }
+        }, false);
+      </script>
     <!-- end google analytics -->
 
     <!-- Start p?WebTrekk Script  (Inds? til og med denne linje i headder)-->
     <script type="text/javascript">
+      window.addEventListener('CookieInformationConsentGiven', function (event) {
+        if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+          //Placeholder for fremtidige OnSiteSearch variabler start
+          //Placeholder for fremtidige OnSiteSearch variabler slut
 
-      //Placeholder for fremtidige OnSiteSearch variabler start
-      //Placeholder for fremtidige OnSiteSearch variabler slut
+          window._tiConfig = window._tiConfig || {
+                tiDomain: 'responder.wt-safetag.com',// Domain for tracking
+                tiId: '476651662471322',// Tracking ID
+              option: { }
+          };
 
-      window._tiConfig = window._tiConfig || {
-            tiDomain: 'responder.wt-safetag.com',// Domain for tracking
-            tiId: '476651662471322',// Tracking ID
-          option: { }
-      };
+          /** start TagIntegration loader  */
+          (function(c,d,a,f){c.wts=c.wts||[];var g=function(b){var a="";b.customDomain&&b.customPath?a=b.customDomain+"/"+b.customPath:b.tiDomain&&b.tiId&&(a=b.tiDomain+"/resp/api/get/"+b.tiId+"?url="+encodeURIComponent(c.location.href)+"&v=5");if(b.option)for(var d in b.option)a+="&"+d+"="+encodeURIComponent(b.option[d]);return a};if(-1===d.cookie.indexOf("wt_r=1")){var e=d.getElementsByTagName(a)[0];a=d.createElement(a);a.async=!0;a.onload=function(){if("undefined"!==typeof c.wt_r&&!isNaN(c.wt_r)){var b=
+          new Date,a=b.getTime()+1E3*parseInt(c.wt_r);b.setTime(a);d.cookie="wt_r=1;path=/;expires="+b.toUTCString()}};a.onerror=function(){"undefined"!==typeof c.wt_mcp_hide&&"function"===typeof c.wt_mcp_hide.show&&(c.wt_mcp_hide.show(),c.wt_mcp_hide.show=function(){})};a.src="//"+g(f);e.parentNode.insertBefore(a,e)}})(window,document,"script",_tiConfig);
 
-      /** start TagIntegration loader  */
-      (function(c,d,a,f){c.wts=c.wts||[];var g=function(b){var a="";b.customDomain&&b.customPath?a=b.customDomain+"/"+b.customPath:b.tiDomain&&b.tiId&&(a=b.tiDomain+"/resp/api/get/"+b.tiId+"?url="+encodeURIComponent(c.location.href)+"&v=5");if(b.option)for(var d in b.option)a+="&"+d+"="+encodeURIComponent(b.option[d]);return a};if(-1===d.cookie.indexOf("wt_r=1")){var e=d.getElementsByTagName(a)[0];a=d.createElement(a);a.async=!0;a.onload=function(){if("undefined"!==typeof c.wt_r&&!isNaN(c.wt_r)){var b=
-      new Date,a=b.getTime()+1E3*parseInt(c.wt_r);b.setTime(a);d.cookie="wt_r=1;path=/;expires="+b.toUTCString()}};a.onerror=function(){"undefined"!==typeof c.wt_mcp_hide&&"function"===typeof c.wt_mcp_hide.show&&(c.wt_mcp_hide.show(),c.wt_mcp_hide.show=function(){})};a.src="//"+g(f);e.parentNode.insertBefore(a,e)}})(window,document,"script",_tiConfig);
-
-      /** end TagIntegration loader */
-
+          /** end TagIntegration loader */
+        }
+      }, false);
     </script>
     <!-- Slut p?WebTrekk Script (Inds? til og med denne linje i headder)-->
 
     <script>
-      'use strict';(function(){var a=document.createElement('script');a.src='https://unpkg.com/@charlietango/ddb-widget/dist/ddb-widget.js',document.head.appendChild(a),a.onload=function(){var b=document.createElement('ddb-widget');document.body.appendChild(b)}})();
+      window.addEventListener('CookieInformationConsentGiven', function (event) {
+        if (CookieInformation.getConsentGivenFor('cookie_cat_statistic')) {
+          'use strict';(function(){var a=document.createElement('script');a.src='https://unpkg.com/@charlietango/ddb-widget/dist/ddb-widget.js',document.head.appendChild(a),a.onload=function(){var b=document.createElement('ddb-widget');document.body.appendChild(b)}})();
+        }
+      }, false);
     </script>
   </body>
 </html>

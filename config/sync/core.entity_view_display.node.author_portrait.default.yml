@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.author_portrait.field_author_portrait_surname
     - field.field.node.author_portrait.field_author_portrait_tags
     - field.field.node.author_portrait.field_block_reference
+    - field.field.node.author_portrait.field_teaser
     - image.style.author
     - node.type.author_portrait
   module:
@@ -122,7 +123,9 @@ content:
 hidden:
   field_author_portrait_country: true
   field_author_portrait_lit_type: true
+  field_teaser: true
   langcode: true
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true

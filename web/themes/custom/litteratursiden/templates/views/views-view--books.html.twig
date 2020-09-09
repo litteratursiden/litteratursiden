@@ -52,15 +52,16 @@
   {{ attachment_before }}
 
   {{ rows }}
-  <div class="block-type-overview" style="padding: 0 1em;">
-    <a href="/lister/a-aa-alfabetisk-oversigt" class="read-more">{{ 'Show other book lists'|t }}</a>
-  </div>
+
   {{ empty }}
   {{ pager }}
 
   {{ attachment_after }}
   {{ more }}
 
+  <div class="block-type-overview" style="padding: 0 1em;">
+    <a href="/lister/a-aa-alfabetisk-oversigt" class="read-more">{{ 'Show other book lists'|t }}</a>
+  </div>
   {% if footer %}
     <footer>
       {{ footer }}

@@ -8782,6 +8782,8 @@ body {
             body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email {
               position: relative;
               color: #3a3b3d; }
+              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email > label {
+                display: none; }
               body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email.active:after {
                 content: '';
                 position: absolute;
@@ -9793,6 +9795,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       .tns-outer .tns-item article > .content .field--name-field-book-cover-image,
       .tns-outer .tns-item article > .content .field--name-field-review-cover-image,
       .tns-outer .tns-item article > .content .field--name-field-author-portrait-image {
+        color: #eeecec;
         width: 100%;
         background-position: center;
         background-size: cover;
@@ -25920,7 +25923,7 @@ body.path-user .region-content, body.path-bookmarks .region-content, body.path-t
   body.path-user .region-content form, body.path-bookmarks .region-content form, body.path-taxonomy .region-content form {
     margin-top: 45px;
     margin-bottom: 45px; }
-  body.path-user .region-content .views-row, body.path-bookmarks .region-content .views-row, body.path-taxonomy .region-content .views-row {
+  body.path-user .region-content .favorite-content-block .views-row, body.path-bookmarks .region-content .favorite-content-block .views-row, body.path-taxonomy .region-content .favorite-content-block .views-row {
     padding: 15px 0;
     border-bottom: 1px solid #979797; }
   body.path-user .region-content > .system-block-wrap article, body.path-bookmarks .region-content > .system-block-wrap article, body.path-taxonomy .region-content > .system-block-wrap article {
@@ -26195,7 +26198,8 @@ body.path-user .region-content, body.path-bookmarks .region-content, body.path-t
           font-style: normal; }
   body.path-user .region-content .block-views-blockflag-bookmark-favorite-content-block, body.path-bookmarks .region-content .block-views-blockflag-bookmark-favorite-content-block, body.path-taxonomy .region-content .block-views-blockflag-bookmark-favorite-content-block {
     background-color: #eeecec;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    padding-top: 20px; }
     @media only screen and (max-width: 991px) {
       body.path-user .region-content .block-views-blockflag-bookmark-favorite-content-block, body.path-bookmarks .region-content .block-views-blockflag-bookmark-favorite-content-block, body.path-taxonomy .region-content .block-views-blockflag-bookmark-favorite-content-block {
         padding-bottom: 30px; } }
@@ -26682,6 +26686,7 @@ body.path-bookmarks .region-content > .views-element-container {
           .path-node.page-node-type-similar .block-views-blockinternal-links-internal-links-block .internal-links-block .views-infinite-scroll-content-wrapper .views-row article > .content .field--name-field-book-cover-image,
           .path-node.page-node-type-similar .block-views-blockinternal-links-internal-links-block .internal-links-block .views-infinite-scroll-content-wrapper .views-row article > .content .field--name-field-review-cover-image,
           .path-node.page-node-type-similar .block-views-blockinternal-links-internal-links-block .internal-links-block .views-infinite-scroll-content-wrapper .views-row article > .content .field--name-field-author-portrait-image {
+            color: #eeecec;
             width: 100%;
             background-position: center;
             background-size: cover;
@@ -26970,7 +26975,7 @@ body.path-bookmarks .region-content > .views-element-container {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  margin-bottom: 60px; }
+  margin-bottom: 15px; }
   .path-node .pager:before, .path-node .pager:after {
     content: " ";
     display: table; }

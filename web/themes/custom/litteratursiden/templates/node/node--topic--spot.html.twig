@@ -73,6 +73,11 @@ not node.isPublished() ? 'is-unpublished',
 view_mode ? view_mode|clean_class,
 'clearfix',
 ] %}
+{% set use_teaser = FALSE %}
+{% if node.field_teaser[0].value is not empty %}
+  {% set use_teaser = TRUE %}
+{% endif %}
+
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('content') }}>
     <div class="infobox">
@@ -86,9 +91,15 @@ view_mode ? view_mode|clean_class,
               </h2>
             {% endif %}
             {{ title_suffix }}
-            {% spaceless %}
-              <div class="field--name-field-topic-body field--type-text-long">{{ content.field_topic_body|render|striptags|raw }}</div>
-            {% endspaceless %}
+            {% if use_teaser %}
+              <div class="field--type-text-long">{{ content.field_teaser }}</div>
+            {% else %}
+              {% spaceless %}
+                <div class="field--name-field-topic-body field--type-text-long">
+                  {{ content.field_topic_body|render|striptags|raw }}
+                </div>
+              {% endspaceless %}
+            {% endif %}
             <a class="btn-link" href="{{ url }}" rel="bookmark">{{ 'Read more'|t }}</a>
           </div>
           <div class="left-col"></div>
