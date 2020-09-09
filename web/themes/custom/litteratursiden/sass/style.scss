@@ -3,6 +3,7 @@
 // Bootstrap Framework.
 @import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 @import "mixins";
+@import "itk-mixins";
 @import "fonts";
 @import "icons";
 @import "typography";
@@ -29,5 +30,5 @@
 @import 'utils';
 @import 'overrides';
 // Print styles
-@import 'print'
+@import 'print';
 

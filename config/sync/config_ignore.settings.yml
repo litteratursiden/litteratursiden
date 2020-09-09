@@ -1,12 +1,14 @@
 ignored_config_entities:
-  0: 'block.block.*'
-  2: 'system.menu.*'
-  4: system.site
-  6: '*.mail'
-  8: 'contact.form.*'
-  10: litteratursiden.settings
-  12: lit_open_platform.settings
-  14: user_registrationpassword.mail
+  - 'block.block.*'
+  - 'system.menu.*'
+  - system.site
+  - '*.mail'
+  - 'contact.form.*'
+  - litteratursiden.settings
+  - lit_open_platform.settings
+  - user_registrationpassword.mail
+  - ~block.block.views_block__content_by_user_block_1
+  - ~block.block.views_block__content_by_user_block_2
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
 langcode: da

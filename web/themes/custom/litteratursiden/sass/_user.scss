@@ -1,5 +1,25 @@
 body {
   &.path-user {
+    .block-views-blockcontent-by-user-block-1 {
+      padding-bottom: 0;
+
+      ul {
+        margin-bottom: 0;
+      }
+
+      .spotbox-list > ul > li:nth-child(odd) {
+        .spot {
+          @include spot-box('image-right', false);
+        }
+      }
+
+      .spotbox-list > ul > li:nth-child(even) {
+        .spot {
+          @include spot-box('image-left', false);
+        }
+      }
+    }
+
     .user-form, .user-pass {
       .form-group {
         position: relative;
