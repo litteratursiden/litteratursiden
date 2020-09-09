@@ -9497,6 +9497,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     margin-top: -20px; }
 
 .block-views-blockcontent-by-user-block-1,
+.block-views-blockcontent-by-user-block-2,
 .block-views-blockreviews-by-user-block-1,
 .block-views-blockrelated-content-topic-related-content,
 .block-views-blockbooks-being-debated-books-being-debated-block,
@@ -9509,6 +9510,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
   background-color: #3a3b3d;
   padding-bottom: 20px; }
   .block-views-blockcontent-by-user-block-1 .content-wrapper,
+  .block-views-blockcontent-by-user-block-2 .content-wrapper,
   .block-views-blockreviews-by-user-block-1 .content-wrapper,
   .block-views-blockrelated-content-topic-related-content .content-wrapper,
   .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9527,6 +9529,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     padding-left: 65px;
     padding-right: 65px; }
     .block-views-blockcontent-by-user-block-1 .content-wrapper:before, .block-views-blockcontent-by-user-block-1 .content-wrapper:after,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper:before,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper:after,
     .block-views-blockreviews-by-user-block-1 .content-wrapper:before,
     .block-views-blockreviews-by-user-block-1 .content-wrapper:after,
     .block-views-blockrelated-content-topic-related-content .content-wrapper:before,
@@ -9548,6 +9552,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       content: " ";
       display: table; }
     .block-views-blockcontent-by-user-block-1 .content-wrapper:after,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper:after,
     .block-views-blockreviews-by-user-block-1 .content-wrapper:after,
     .block-views-blockrelated-content-topic-related-content .content-wrapper:after,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper:after,
@@ -9560,6 +9565,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       clear: both; }
     @media only screen and (max-width: 1199px) {
       .block-views-blockcontent-by-user-block-1 .content-wrapper,
+      .block-views-blockcontent-by-user-block-2 .content-wrapper,
       .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9573,6 +9579,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         max-width: 970px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
     .block-views-blockcontent-by-user-block-1 .content-wrapper,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper,
     .block-views-blockreviews-by-user-block-1 .content-wrapper,
     .block-views-blockrelated-content-topic-related-content .content-wrapper,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9586,6 +9593,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       width: 100%; } }
     @media only screen and (max-width: 1199px) {
       .block-views-blockcontent-by-user-block-1 .content-wrapper,
+      .block-views-blockcontent-by-user-block-2 .content-wrapper,
       .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9599,6 +9607,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         padding-right: 40px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
     .block-views-blockcontent-by-user-block-1 .content-wrapper,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper,
     .block-views-blockreviews-by-user-block-1 .content-wrapper,
     .block-views-blockrelated-content-topic-related-content .content-wrapper,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9612,6 +9621,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       padding-right: 20px; } }
     @media only screen and (max-width: 480px) {
       .block-views-blockcontent-by-user-block-1 .content-wrapper,
+      .block-views-blockcontent-by-user-block-2 .content-wrapper,
       .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9624,6 +9634,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         padding-left: 0;
         padding-right: 0; }
         .block-views-blockcontent-by-user-block-1 .content-wrapper .block-title,
+        .block-views-blockcontent-by-user-block-2 .content-wrapper .block-title,
         .block-views-blockreviews-by-user-block-1 .content-wrapper .block-title,
         .block-views-blockrelated-content-topic-related-content .content-wrapper .block-title,
         .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper .block-title,
@@ -9636,6 +9647,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
           padding-left: 20px;
           padding-right: 20px; } }
   .block-views-blockcontent-by-user-block-1 h2.block-title,
+  .block-views-blockcontent-by-user-block-2 h2.block-title,
   .block-views-blockreviews-by-user-block-1 h2.block-title,
   .block-views-blockrelated-content-topic-related-content h2.block-title,
   .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
@@ -9652,6 +9664,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     color: #fff; }
     @media only screen and (max-width: 991px) {
       .block-views-blockcontent-by-user-block-1 h2.block-title,
+      .block-views-blockcontent-by-user-block-2 h2.block-title,
       .block-views-blockreviews-by-user-block-1 h2.block-title,
       .block-views-blockrelated-content-topic-related-content h2.block-title,
       .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
@@ -9664,6 +9677,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         padding: 0 15px; } }
   @media only screen and (max-width: 991px) and (max-width: 767px) {
     .block-views-blockcontent-by-user-block-1 h2.block-title,
+    .block-views-blockcontent-by-user-block-2 h2.block-title,
     .block-views-blockreviews-by-user-block-1 h2.block-title,
     .block-views-blockrelated-content-topic-related-content h2.block-title,
     .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
@@ -9677,6 +9691,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       font-size: 20px;
       line-height: 30px; } }
     .block-views-blockcontent-by-user-block-1 h2.block-title:before,
+    .block-views-blockcontent-by-user-block-2 h2.block-title:before,
     .block-views-blockreviews-by-user-block-1 h2.block-title:before,
     .block-views-blockrelated-content-topic-related-content h2.block-title:before,
     .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title:before,
@@ -9709,6 +9724,7 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       line-height: 83px; }
       @media only screen and (max-width: 480px) {
         .block-views-blockcontent-by-user-block-1 h2.block-title:before,
+        .block-views-blockcontent-by-user-block-2 h2.block-title:before,
         .block-views-blockreviews-by-user-block-1 h2.block-title:before,
         .block-views-blockrelated-content-topic-related-content h2.block-title:before,
         .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title:before,
@@ -25791,7 +25807,18 @@ body.path-user .block-views-blockcontent-by-user-block-1 {
     color: #fff;
     overflow: hidden; }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .container {
-    padding: 0 60px; }
+    padding: 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .infobox > .container {
+    position: relative;
+    width: 100%; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .infobox > .container .inner-wrap {
+      padding-left: 120px;
+      padding-right: 20px; }
+      @media only screen and (max-width: 991px) {
+        body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .infobox > .container .inner-wrap {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0; } }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .col-md-6:first-child {
     background: #ff5002; }
     body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .col-md-6:first-child:before {
@@ -25834,6 +25861,9 @@ body.path-user .block-views-blockcontent-by-user-block-1 {
       line-height: 35px; } }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h3.node-type {
     color: #fff; }
+    @media only screen and (max-width: 991px) {
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h3.node-type {
+        padding: 0; } }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot p, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot a {
     color: #fff; }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .inner-wrap {
@@ -25892,9 +25922,19 @@ body.path-user .block-views-blockcontent-by-user-block-1 {
     color: #fff;
     overflow: hidden; }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .container {
-    padding: 0 60px; }
-  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .container {
-    flex-direction: row-reverse; }
+    padding: 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .infobox > .container {
+    flex-direction: row-reverse;
+    position: relative;
+    width: 100%; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .infobox > .container .inner-wrap {
+      padding-left: 20px;
+      padding-right: 120px; }
+      @media only screen and (max-width: 991px) {
+        body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .infobox > .container .inner-wrap {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0; } }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .col-md-6:first-child {
     background: #ff5002; }
     body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .col-md-6:first-child:after {
@@ -25937,6 +25977,9 @@ body.path-user .block-views-blockcontent-by-user-block-1 {
       line-height: 35px; } }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h3.node-type {
     color: #fff; }
+    @media only screen and (max-width: 991px) {
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h3.node-type {
+        padding: 0; } }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot p, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot a {
     color: #fff; }
   body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .inner-wrap {

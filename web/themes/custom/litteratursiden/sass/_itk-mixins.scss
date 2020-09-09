@@ -24,12 +24,25 @@
   }
 
   .container {
-    padding: 0 60px;
+    padding: 0;
   }
 
   @if ($image-position == 'image-left') {
-    .container {
+    .infobox > .container {
       flex-direction: row-reverse;
+      position: relative;
+      width: 100%;
+
+      .inner-wrap {
+        padding-left: 20px;
+        padding-right: 120px;
+
+        @include respond-to(tablets-portrait) {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+        }
+      }
     }
 
     .col-md-6:first-child {
@@ -64,6 +77,22 @@
 
 
   } @else {
+    .infobox > .container {
+      position: relative;
+      width: 100%;
+
+      .inner-wrap {
+        padding-left: 120px;
+        padding-right: 20px;
+
+        @include respond-to(tablets-portrait) {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
     .col-md-6:first-child {
       background: $brand-primary;
 
@@ -103,6 +132,10 @@
 
   h3.node-type {
     color: $white;
+
+    @include respond-to(tablets-portrait) {
+      padding: 0;
+    }
   }
 
   @if $hide-node-type {
@@ -115,7 +148,7 @@
     color: $white;
   }
 
-  .inner-wrap {
+    .inner-wrap {
     font-size: $large-font-size;
     padding: 3em 0;
   }
