@@ -132,6 +132,7 @@
 
   h3.node-type {
     color: $white;
+    display: block;
 
     @include respond-to(tablets-portrait) {
       padding: 0;
