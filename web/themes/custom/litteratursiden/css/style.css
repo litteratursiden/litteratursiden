@@ -26039,6 +26039,55 @@ body.path-user .block-views-blockcontent-by-user-block-1 {
     body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:after {
       margin-top: 9px; }
 
+body.path-user .pager {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-bottom: 15px; }
+  body.path-user .pager:before, body.path-user .pager:after {
+    content: " ";
+    display: table; }
+  body.path-user .pager:after {
+    clear: both; }
+  @media only screen and (max-width: 1199px) {
+    body.path-user .pager {
+      padding-left: 0;
+      padding-right: 0; } }
+  body.path-user .pager li.pager__item {
+    display: block; }
+    body.path-user .pager li.pager__item > a {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: block;
+      min-width: 170px;
+      line-height: 48px;
+      height: 50px;
+      padding: 0 10px;
+      background-color: #D8D8D8;
+      color: #3a3b3d;
+      border: 1px solid #D8D8D8;
+      border-radius: 0;
+      font-size: 14px;
+      font-family: "Oswald-Regular", sans-serif;
+      font-weight: 500;
+      letter-spacing: 0px;
+      font-style: normal;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease-out;
+      width: 100%;
+      margin-top: 0; }
+      body.path-user .pager li.pager__item > a:hover, body.path-user .pager li.pager__item > a:focus, body.path-user .pager li.pager__item > a:active {
+        text-decoration: none;
+        outline: none;
+        background-color: #bfbfbf;
+        transition: all 0.2s ease-out; }
+
 body.path-user .user-form .form-group, body.path-user .user-pass .form-group {
   position: relative; }
   body.path-user .user-form .form-group label.error, body.path-user .user-pass .form-group label.error {
@@ -27242,6 +27291,8 @@ body.path-bookmarks .region-content > .views-element-container {
             transition: all 0.2s ease-out; }
 
 .path-node .pager {
+  max-width: 1000px;
+  margin: 0 auto;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;

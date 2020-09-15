@@ -51,17 +51,20 @@
 'block-' ~ plugin_id|clean_class,
 'clearfix',
 ] %}
-<section{{ attributes.addClass(classes) }}>
-    {{ title_prefix }}
-    {% if label %}
-      <div class="content-wrapper">
-        <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
-      </div>
-    {% endif %}
-    {{ title_suffix }}
+{% set user = drupal_entity('user', content['#view'].args[0]) %}
+{% set user_full_name = user['#user'].field_user_full_name[0].value %}
 
-    {% block content %}
-      {{ content }}
-    {% endblock %}
+<section{{ attributes.addClass(classes) }}>
+  {% if label %}
+    <div class="content-wrapper">
+      {{ title_prefix }}
+      q<h2 class="block-title">{{ 'Latest content by @user'|t({ '@user': user_full_name }) }}</h2>
+      {{ title_suffix }}
+    </div>
+  {% endif %}
+
+  {% block content %}
+    {{ content }}
+  {% endblock %}
 </section>
 

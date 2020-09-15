@@ -20,6 +20,10 @@ body {
       }
     }
 
+    .pager {
+      @include pager;
+    }
+
     .user-form, .user-pass {
       .form-group {
         position: relative;
