@@ -167,3 +167,25 @@
     }
   }
 }
+
+@mixin pager() {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @include container-fixed(30px);
+  width: 100%;
+  margin-bottom: $regular-spacer;
+  @include respond-to(tablets-landscape) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  li.pager__item {
+    display: block;
+
+    > a {
+      @include btn-mixin(50px, $btn-gray, $btn-gray, $primary-text-color, block);
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}
