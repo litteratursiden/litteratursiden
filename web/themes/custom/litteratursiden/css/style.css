@@ -7972,6 +7972,9 @@ table.sticky-header {
     text-align: right;
     width: 50%; }
 
+.spot .node-type {
+  display: none; }
+
 body {
   padding: 0;
   margin-top: 0 !important; }
@@ -9496,6 +9499,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     margin-bottom: 0;
     margin-top: -20px; }
 
+.block-views-blockcontent-by-user-block-1,
+.block-views-blockcontent-by-user-block-2,
 .block-views-blockreviews-by-user-block-1,
 .block-views-blockrelated-content-topic-related-content,
 .block-views-blockbooks-being-debated-books-being-debated-block,
@@ -9507,6 +9512,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
 .view-book-list-filter-book_list-book_list_block {
   background-color: #3a3b3d;
   padding-bottom: 20px; }
+  .block-views-blockcontent-by-user-block-1 .content-wrapper,
+  .block-views-blockcontent-by-user-block-2 .content-wrapper,
   .block-views-blockreviews-by-user-block-1 .content-wrapper,
   .block-views-blockrelated-content-topic-related-content .content-wrapper,
   .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9524,7 +9531,11 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     max-width: 1170px;
     padding-left: 65px;
     padding-right: 65px; }
-    .block-views-blockreviews-by-user-block-1 .content-wrapper:before, .block-views-blockreviews-by-user-block-1 .content-wrapper:after,
+    .block-views-blockcontent-by-user-block-1 .content-wrapper:before, .block-views-blockcontent-by-user-block-1 .content-wrapper:after,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper:before,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper:after,
+    .block-views-blockreviews-by-user-block-1 .content-wrapper:before,
+    .block-views-blockreviews-by-user-block-1 .content-wrapper:after,
     .block-views-blockrelated-content-topic-related-content .content-wrapper:before,
     .block-views-blockrelated-content-topic-related-content .content-wrapper:after,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper:before,
@@ -9543,6 +9554,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     .view-book-list-filter-book_list-book_list_block .content-wrapper:after {
       content: " ";
       display: table; }
+    .block-views-blockcontent-by-user-block-1 .content-wrapper:after,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper:after,
     .block-views-blockreviews-by-user-block-1 .content-wrapper:after,
     .block-views-blockrelated-content-topic-related-content .content-wrapper:after,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper:after,
@@ -9554,6 +9567,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     .view-book-list-filter-book_list-book_list_block .content-wrapper:after {
       clear: both; }
     @media only screen and (max-width: 1199px) {
+      .block-views-blockcontent-by-user-block-1 .content-wrapper,
+      .block-views-blockcontent-by-user-block-2 .content-wrapper,
       .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9566,6 +9581,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         width: 970px;
         max-width: 970px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .block-views-blockcontent-by-user-block-1 .content-wrapper,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper,
     .block-views-blockreviews-by-user-block-1 .content-wrapper,
     .block-views-blockrelated-content-topic-related-content .content-wrapper,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9578,6 +9595,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       max-width: 100%;
       width: 100%; } }
     @media only screen and (max-width: 1199px) {
+      .block-views-blockcontent-by-user-block-1 .content-wrapper,
+      .block-views-blockcontent-by-user-block-2 .content-wrapper,
       .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9590,6 +9609,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         padding-left: 40px;
         padding-right: 40px; } }
   @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .block-views-blockcontent-by-user-block-1 .content-wrapper,
+    .block-views-blockcontent-by-user-block-2 .content-wrapper,
     .block-views-blockreviews-by-user-block-1 .content-wrapper,
     .block-views-blockrelated-content-topic-related-content .content-wrapper,
     .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9602,6 +9623,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       padding-left: 20px;
       padding-right: 20px; } }
     @media only screen and (max-width: 480px) {
+      .block-views-blockcontent-by-user-block-1 .content-wrapper,
+      .block-views-blockcontent-by-user-block-2 .content-wrapper,
       .block-views-blockreviews-by-user-block-1 .content-wrapper,
       .block-views-blockrelated-content-topic-related-content .content-wrapper,
       .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper,
@@ -9613,6 +9636,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       .view-book-list-filter-book_list-book_list_block .content-wrapper {
         padding-left: 0;
         padding-right: 0; }
+        .block-views-blockcontent-by-user-block-1 .content-wrapper .block-title,
+        .block-views-blockcontent-by-user-block-2 .content-wrapper .block-title,
         .block-views-blockreviews-by-user-block-1 .content-wrapper .block-title,
         .block-views-blockrelated-content-topic-related-content .content-wrapper .block-title,
         .block-views-blockbooks-being-debated-books-being-debated-block .content-wrapper .block-title,
@@ -9624,6 +9649,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
         .view-book-list-filter-book_list-book_list_block .content-wrapper .block-title {
           padding-left: 20px;
           padding-right: 20px; } }
+  .block-views-blockcontent-by-user-block-1 h2.block-title,
+  .block-views-blockcontent-by-user-block-2 h2.block-title,
   .block-views-blockreviews-by-user-block-1 h2.block-title,
   .block-views-blockrelated-content-topic-related-content h2.block-title,
   .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
@@ -9639,6 +9666,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     font-size: 35px;
     color: #fff; }
     @media only screen and (max-width: 991px) {
+      .block-views-blockcontent-by-user-block-1 h2.block-title,
+      .block-views-blockcontent-by-user-block-2 h2.block-title,
       .block-views-blockreviews-by-user-block-1 h2.block-title,
       .block-views-blockrelated-content-topic-related-content h2.block-title,
       .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
@@ -9650,6 +9679,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       .view-book-list-filter-book_list-book_list_block h2.block-title {
         padding: 0 15px; } }
   @media only screen and (max-width: 991px) and (max-width: 767px) {
+    .block-views-blockcontent-by-user-block-1 h2.block-title,
+    .block-views-blockcontent-by-user-block-2 h2.block-title,
     .block-views-blockreviews-by-user-block-1 h2.block-title,
     .block-views-blockrelated-content-topic-related-content h2.block-title,
     .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title,
@@ -9662,6 +9693,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       padding: 0;
       font-size: 20px;
       line-height: 30px; } }
+    .block-views-blockcontent-by-user-block-1 h2.block-title:before,
+    .block-views-blockcontent-by-user-block-2 h2.block-title:before,
     .block-views-blockreviews-by-user-block-1 h2.block-title:before,
     .block-views-blockrelated-content-topic-related-content h2.block-title:before,
     .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title:before,
@@ -9693,6 +9726,8 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
       height: 83px;
       line-height: 83px; }
       @media only screen and (max-width: 480px) {
+        .block-views-blockcontent-by-user-block-1 h2.block-title:before,
+        .block-views-blockcontent-by-user-block-2 h2.block-title:before,
         .block-views-blockreviews-by-user-block-1 h2.block-title:before,
         .block-views-blockrelated-content-topic-related-content h2.block-title:before,
         .block-views-blockbooks-being-debated-books-being-debated-block h2.block-title:before,
@@ -25767,6 +25802,297 @@ body.path-topics {
       .path-search .tags .field--name-field-author-portrait-tags {
         margin-bottom: 10px; } }
 
+body.path-user .block-views-blockcontent-by-user-block-1 {
+  padding-bottom: 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 ul {
+    margin-bottom: 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .content {
+    color: #fff;
+    overflow: hidden; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .container {
+    padding: 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .infobox > .container {
+    position: relative;
+    width: 100%; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .infobox > .container .inner-wrap {
+      padding-left: 120px;
+      padding-right: 20px;
+      max-width: 605px;
+      float: right; }
+      @media only screen and (max-width: 991px) {
+        body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .infobox > .container .inner-wrap {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+          float: left; } }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .col-md-6:first-child {
+    background: #ff5002; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .col-md-6:first-child:before {
+      background: #ff5002;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      width: 200%; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .col-md-6:last-child {
+    position: static; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .col-md-6:last-child .right-col {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      width: 50%;
+      background-position: center;
+      background-color: transparent;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h2 {
+    color: #fff;
+    display: block;
+    font-family: "RobotoSlab-Regular", serif;
+    line-height: 1.1;
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: bold; }
+    @media only screen and (max-width: 1199px) {
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h2 {
+        font-size: 35px; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h2 {
+      font-size: 45px; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) and (max-width: 767px) {
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h2 {
+      font-size: 30px;
+      line-height: 35px; } }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h3.node-type {
+    color: #fff;
+    display: block; }
+    @media only screen and (max-width: 991px) {
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot h3.node-type {
+        padding: 0; } }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot p, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot a {
+    color: #fff; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .inner-wrap {
+    font-size: 20px;
+    padding: 3em 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 33px;
+    height: 35px;
+    display: inline-flex;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Oswald-Regular", sans-serif;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-out; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link:hover, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link:focus {
+      color: #fff;
+      transition: all 0.2s ease-out; }
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link:hover:after, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link:focus:after {
+        color: #fff; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link:after {
+      content: "";
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'literatur-icons' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      position: initial;
+      right: 20px;
+      margin-left: 10px;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      top: 15px;
+      font-size: 15px;
+      color: #fff;
+      transition: all 0.2s ease-out; }
+      @media only screen and (max-width: 767px) {
+        body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link:after {
+          font-size: 14px; } }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(odd) .spot .btn-link:after {
+      margin-top: 9px; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .content {
+    color: #fff;
+    overflow: hidden; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .container {
+    padding: 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .infobox > .container {
+    flex-direction: row-reverse;
+    position: relative;
+    width: 100%; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .infobox > .container .inner-wrap {
+      padding-left: 20px;
+      padding-right: 120px;
+      max-width: 605px; }
+      @media only screen and (max-width: 991px) {
+        body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .infobox > .container .inner-wrap {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0; } }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .col-md-6:first-child {
+    background: #ff5002; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .col-md-6:first-child:after {
+      background: #ff5002;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 100%;
+      width: 200%; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .col-md-6:last-child {
+    position: static; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .col-md-6:last-child .right-col {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      width: 50%;
+      background-position: center;
+      background-color: transparent;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h2 {
+    color: #fff;
+    display: block;
+    font-family: "RobotoSlab-Regular", serif;
+    line-height: 1.1;
+    font-size: 45px;
+    margin-bottom: 30px;
+    font-weight: bold; }
+    @media only screen and (max-width: 1199px) {
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h2 {
+        font-size: 35px; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h2 {
+      font-size: 45px; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) and (max-width: 767px) {
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h2 {
+      font-size: 30px;
+      line-height: 35px; } }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h3.node-type {
+    color: #fff;
+    display: block; }
+    @media only screen and (max-width: 991px) {
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot h3.node-type {
+        padding: 0; } }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot p, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot a {
+    color: #fff; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .inner-wrap {
+    font-size: 20px;
+    padding: 3em 0; }
+  body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 33px;
+    height: 35px;
+    display: inline-flex;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Oswald-Regular", sans-serif;
+    letter-spacing: 0px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s ease-out; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:hover, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:focus {
+      color: #fff;
+      transition: all 0.2s ease-out; }
+      body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:hover:after, body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:focus:after {
+        color: #fff; }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:after {
+      content: "";
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'literatur-icons' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      display: inline-block;
+      position: initial;
+      right: 20px;
+      margin-left: 10px;
+      width: 15px;
+      height: 15px;
+      line-height: 15px;
+      top: 15px;
+      font-size: 15px;
+      color: #fff;
+      transition: all 0.2s ease-out; }
+      @media only screen and (max-width: 767px) {
+        body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:after {
+          font-size: 14px; } }
+    body.path-user .block-views-blockcontent-by-user-block-1 .spotbox-list > ul > li:nth-child(even) .spot .btn-link:after {
+      margin-top: 9px; }
+
+body.path-user .pager {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-bottom: 15px; }
+  body.path-user .pager:before, body.path-user .pager:after {
+    content: " ";
+    display: table; }
+  body.path-user .pager:after {
+    clear: both; }
+  @media only screen and (max-width: 1199px) {
+    body.path-user .pager {
+      padding-left: 0;
+      padding-right: 0; } }
+  body.path-user .pager li.pager__item {
+    display: block; }
+    body.path-user .pager li.pager__item > a {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: block;
+      min-width: 170px;
+      line-height: 48px;
+      height: 50px;
+      padding: 0 10px;
+      background-color: #D8D8D8;
+      color: #3a3b3d;
+      border: 1px solid #D8D8D8;
+      border-radius: 0;
+      font-size: 14px;
+      font-family: "Oswald-Regular", sans-serif;
+      font-weight: 500;
+      letter-spacing: 0px;
+      font-style: normal;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.2s ease-out;
+      width: 100%;
+      margin-top: 0; }
+      body.path-user .pager li.pager__item > a:hover, body.path-user .pager li.pager__item > a:focus, body.path-user .pager li.pager__item > a:active {
+        text-decoration: none;
+        outline: none;
+        background-color: #bfbfbf;
+        transition: all 0.2s ease-out; }
+
 body.path-user .user-form .form-group, body.path-user .user-pass .form-group {
   position: relative; }
   body.path-user .user-form .form-group label.error, body.path-user .user-pass .form-group label.error {
@@ -26970,6 +27296,8 @@ body.path-bookmarks .region-content > .views-element-container {
             transition: all 0.2s ease-out; }
 
 .path-node .pager {
+  max-width: 1000px;
+  margin: 0 auto;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;

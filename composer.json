@@ -85,6 +85,7 @@
         "dinbror/blazy": "master",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/advagg": "^3.2",
+        "drupal/antibot": "^1.4",
         "drupal/block_exclude_pages": "^1.2",
         "drupal/bootstrap": "^3.5",
         "drupal/cdn": "^3.1",
