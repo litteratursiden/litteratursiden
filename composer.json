@@ -141,6 +141,7 @@
         "drush/drush": "^9.0.0",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
+        "itk-dev/web_accessibility_statement": "dev-master",
         "jqueryvalidate": "~1.0",
         "kenwheeler/slick": "master",
         "vlucas/phpdotenv": "^2.4",
