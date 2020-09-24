@@ -105,6 +105,7 @@ module:
   views_infinite_scroll: 0
   views_ui: 0
   viewsreference: 0
+  web_accessibility_statement: 0
   metatag: 1
   metatag_open_graph: 1
   pathauto: 1
