@@ -2,7 +2,8 @@
 
 namespace Drupal\lit_cover_service\Commands;
 
-use Consolidation\OutputFormatters\StructuredData\RowsOfFields;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drush\Commands\DrushCommands;
 
 /**
@@ -18,53 +19,135 @@ use Drush\Commands\DrushCommands;
  */
 class LitCoverServiceCommands extends DrushCommands {
 
+  private const LIMIT_ALL = 'all';
+  private const BATCH_SIZE = 100;
+
   /**
-   * Command description here.
+   * Entity type service.
    *
-   * @param $arg1
-   *   Argument description.
-   * @param array $options
-   *   An associative array of options whose values come from cli, aliases, config, etc.
-   * @option option-name
-   *   Description
-   * @usage lit_cover_service2-commandName foo
-   *   Usage description
-   *
-   * @command lit_cover_service2:commandName
-   * @aliases foo
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
    */
-  public function commandName($arg1, $options = ['option-name' => 'default']) {
-    $this->logger()->success(dt('Achievement unlocked.'));
+  private $entityTypeManager;
+
+  /**
+   * Logger service.
+   *
+   * @var \Drupal\Core\Logger\LoggerChannelFactoryInterface
+   */
+  private $loggerChannelFactory;
+
+  /**
+   * Constructs a new UpdateVideosStatsController object.
+   *
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
+   *   Entity type service.
+   * @param \Drupal\Core\Logger\LoggerChannelFactoryInterface $loggerChannelFactory
+   *   Logger service.
+   */
+  public function __construct(EntityTypeManagerInterface $entityTypeManager, LoggerChannelFactoryInterface $loggerChannelFactory) {
+    $this->entityTypeManager = $entityTypeManager;
+    $this->loggerChannelFactory = $loggerChannelFactory;
   }
 
   /**
-   * An example of the table output format.
+   * Batch delete cover images from 'Books'
    *
-   * @param array $options An associative array of options whose values come from cli, aliases, config, etc.
+   * @param $limit
+   *   Limit the number of covers to delete
    *
-   * @field-labels
-   *   group: Group
-   *   token: Token
-   *   name: Name
-   * @default-fields group,token,name
+   * @usage lit_cover_service:delete_covers 100
+   *   Delete covers from 'Books', limit to 100
    *
-   * @command lit_cover_service2:token
-   * @aliases token
-   *
-   * @filter-default-field name
-   * @return \Consolidation\OutputFormatters\StructuredData\RowsOfFields
+   * @command lit_cover_service:delete_covers
+   * @aliases delete_covers
    */
-  public function token($options = ['format' => 'table']) {
-    $all = \Drupal::token()->getInfo();
-    foreach ($all['tokens'] as $group => $tokens) {
-      foreach ($tokens as $key => $token) {
-        $rows[] = [
-          'group' => $group,
-          'token' => $key,
-          'name' => $token['name'],
+  public function deleteCovers($limit = self::LIMIT_ALL) {
+    $limit = $this->parseLimit($limit);
+
+    $this->loggerChannelFactory->get('lit_cover_service')->info('Delete covers batch operations start');
+
+    $nids = $this->getBookWithCoversNids($limit);
+
+    if (!empty($nids)) {
+      $chunks = array_chunk($nids, self::BATCH_SIZE);
+
+      $numOperations = count($nids);
+      $batchId = 1;
+      $batchTotal = count($chunks);
+
+      foreach ($chunks as $batchNids) {
+        $operations[] = [
+          '\Drupal\lit_cover_service\Batch\BatchService::deleteBookCovers',
+          [
+            $batchId,
+            $batchTotal,
+            $batchNids
+          ],
         ];
+        ++$batchId;
       }
     }
-    return new RowsOfFields($rows);
+    else {
+      $this->logger()->warning('No nodes of this type @type', ['@type' => 'book']);
+    }
+
+    $batch = [
+      'title' => t('Deleting covers from @num "book" node(s)', ['@num' => $numOperations]),
+      'operations' => $operations,
+      'finished' => '\Drupal\lit_cover_service\Batch\BatchService::deleteBookCoversFinished',
+    ];
+    batch_set($batch);
+    drush_backend_batch_process();
+    $this->loggerChannelFactory->get('lit_cover_service')->info('Delete covers batch operations end.');
+    $this->logger()->success("Book covers deleted");
+  }
+
+  /**
+   * Get node ids for all 'Book' nodes with cover images.
+   *
+   * @param int $limit
+   *
+   * @return array
+   */
+  private function getBookWithCoversNids(int $limit): array
+  {
+    try {
+      $storage = $this->entityTypeManager->getStorage('node');
+      $query = $storage->getQuery()
+        ->condition('type', 'book')
+        ->exists('field_book_cover_image')
+        ->sort('nid', 'DESC');
+      if ($limit) {
+        $query->range(0, $limit);
+      }
+      return $query->execute();
+    }
+    catch (\Exception $e) {
+      $this->logger->error('Error found @e', ['@e' => $e]);
+    }
+  }
+
+  /**
+   * Parse string argument to integer value.
+   *
+   * @param string $limit
+   *
+   * @return int
+   */
+  private function parseLimit(string $limit): int
+  {
+    if (self::LIMIT_ALL === $limit) {
+      $intLimit = 0;
+    } else if (is_numeric($limit)) {
+      $intLimit = intval($limit);
+      // Returns the integer value of var on success, or 0 on failure.
+      if (0 === $intLimit) {
+        throw new \InvalidArgumentException($limit . ' must be an integer value');
+      }
+    } else {
+      throw new \InvalidArgumentException($limit . ' must be an integer value');
+    }
+
+    return $intLimit;
   }
 }
