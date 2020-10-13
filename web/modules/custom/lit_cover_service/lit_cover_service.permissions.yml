@@ -1,0 +1,4 @@
+administer lit_cover_service configuration:
+  title: 'Administer lit_cover_service configuration'
+  description: 'Optional description.'
+  restrict access: true

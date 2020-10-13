@@ -1,0 +1,6 @@
+services:
+  lit_cover_service.event_subscriber:
+    class: Drupal\lit_cover_service\EventSubscriber\LitCoverServiceSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

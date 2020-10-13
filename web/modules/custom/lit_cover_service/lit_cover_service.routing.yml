@@ -1,0 +1,15 @@
+lit_cover_service.example:
+  path: '/lit-cover-service/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\lit_cover_service\Controller\LitCoverServiceController::build'
+  requirements:
+    _permission: 'access content'
+
+lit_cover_service.settings_form:
+  path: '/admin/config/system/lit-cover-service'
+  defaults:
+    _title: 'Litteratursiden Cover Service Integration settings'
+    _form: 'Drupal\lit_cover_service\Form\SettingsForm'
+  requirements:
+    _permission: 'administer lit_cover_service configuration'

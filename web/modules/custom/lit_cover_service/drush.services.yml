@@ -1,0 +1,5 @@
+services:
+  lit_cover_service.commands:
+    class: \Drupal\lit_cover_service\Commands\LitCoverServiceCommands
+    tags:
+      - { name: drush.command }
