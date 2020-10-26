@@ -1,6 +1,6 @@
 services:
   lit_cover_service.commands:
-    class: \Drupal\lit_cover_service\Commands\LitCoverServiceCommands
+    class: \Drupal\lit_cover_service\Command\LitCoverServiceCommands
     tags:
       - { name: drush.command }
-    arguments: ['@entity_type.manager', '@logger.factory']
+    arguments: ['@lit_cover_service.batch_service','@entity_type.manager', '@logger.factory']

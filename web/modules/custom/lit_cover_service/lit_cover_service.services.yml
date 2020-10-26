@@ -1,6 +1,6 @@
 services:
-  lit_cover_service.event_subscriber:
-    class: Drupal\lit_cover_service\EventSubscriber\LitCoverServiceSubscriber
-    arguments: ['@messenger']
-    tags:
-      - { name: event_subscriber }
+  lit_cover_service.batch_service:
+    class: Drupal\lit_cover_service\Service\BatchService
+  lit_cover_service.cover_service:
+    class: Drupal\lit_cover_service\Service\CoverService
+    arguments: ['@http_client', '@file_system']

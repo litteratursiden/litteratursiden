@@ -1,11 +1,11 @@
 {
     "name": "org/lit_cover_service",
-    "description": "This extension provides new commands for Drush.",
-    "type": "drupal-drush",
+    "description": "This extension provides Cover Service commands for Drush.",
+    "type": "drupal-module",
     "authors": [
         {
-            "name": "Author name",
-            "email": "author@example.com"
+            "name": "Ture Gjørup",
+            "email": "ture@ignatz.dk"
         }
     ],
     "require": {
