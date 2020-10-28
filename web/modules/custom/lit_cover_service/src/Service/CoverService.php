@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @file
+ * Cover service to find local covers or fetch remote covers bu ISBN.
+ */
 
 namespace Drupal\lit_cover_service\Service;
 

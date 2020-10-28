@@ -3,10 +3,6 @@
 /**
  * @file
  * Primary module hooks for Litteratursiden Cover Service Integration module.
- *
- * @DCG
- * This file is no longer required in Drupal 8.
- * @see https://www.drupal.org/node/2217931
  */
 
 /**
@@ -43,7 +39,7 @@ function lit_cover_service_form_alter(array &$form, \Drupal\Core\Form\FormStateI
       'callback' => 'lit_cover_service_ajax_callback',
       'disable-refocus' => TRUE,
       'event' => 'change',
-      'wrapper' => 'edit-field-book-cover-image-wrapper', // This element is updated with this AJAX callback.
+      'wrapper' => 'edit-field-book-cover-image-wrapper',
       'progress' => [
         'type' => 'throbber',
         'message' => t('Fetching cover...'),
@@ -56,9 +52,13 @@ function lit_cover_service_form_alter(array &$form, \Drupal\Core\Form\FormStateI
  * Ajax callback function to find or fetch Cover from Cover Service
  *
  * @param array $form
+ *   The form being editied
  * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The state of the form being edited
  *
  * @return mixed|string[]
+ *   If a cover is found a html element displaying the image. Else the
+ *   original file upload field
  */
 function lit_cover_service_ajax_callback(array &$form, \Drupal\Core\Form\FormStateInterface $form_state) {
   $formField = $form['field_book_cover_image'];

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Batch service to support the commands defined in the module.
+ */
+
 namespace Drupal\lit_cover_service\Service;
 
 use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
@@ -197,7 +202,7 @@ class BatchService {
    *
    * @return \Drupal\file\Entity\File|null
    */
-  private function clearImageField(Node $node): ?File {
+  private static function clearImageField(Node $node): ?File {
     /** @var \Drupal\file\Plugin\Field\FieldType\FileFieldItemList $deletedImageField */
     $deletedImageField = $node->get('field_book_cover_image');
     $file = $deletedImageField->entity;
@@ -211,7 +216,7 @@ class BatchService {
    *
    * @param \Drupal\node\Entity\Node $node
    */
-  private function setImageFile(Node $node): void {
+  private static function setImageFile(Node $node): void {
     $isbn = $node->get('field_book_isbn')->getString();
     if ($isbn) {
       $coverService = \Drupal::service('lit_cover_service.cover_service');
@@ -233,7 +238,7 @@ class BatchService {
    *
    * @param \Drupal\file\Entity\File[] $files
    */
-  public function deleteFileEntities(array $files): void {
+  private static function deleteFileEntities(array $files): void {
     $files = array_filter($files);
 
     try {

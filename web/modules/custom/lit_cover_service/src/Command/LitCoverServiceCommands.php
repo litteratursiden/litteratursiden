@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Commands for cover clean up. Deletes and download covers from DDB Cover Service.
+ */
+
 namespace Drupal\lit_cover_service\Command;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -15,6 +20,7 @@ class LitCoverServiceCommands extends DrushCommands {
   private const LIMIT_ALL = 'all';
   private const BATCH_SIZE = 100;
 
+  private const ALL_BOOKS = 'all_books';
   private const HAS_COVER = 'has_cover';
   private const NO_COVER = 'no_cover';
 
@@ -58,6 +64,9 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch delete cover images from 'Books'
    *
+   * This command is intended as a one time clean up command for migrating
+   * from 'MoreInfo' to DDB Cover Service.
+   *
    * @param $limit
    *   Limit the number of covers to delete
    *
@@ -100,7 +109,7 @@ class LitCoverServiceCommands extends DrushCommands {
     $batch = [
       'title' => t('Deleting covers from @num "book" node(s)', ['@num' => $numOperations]),
       'operations' => $operations,
-      'finished' => '\Drupal\lit_cover_service\Service\BatchService::deleteBookCoversFinished',
+      'finished' => '\Drupal\lit_cover_service\Service\BatchService::batchFinished',
     ];
     batch_set($batch);
     drush_backend_batch_process();
@@ -109,7 +118,7 @@ class LitCoverServiceCommands extends DrushCommands {
   }
 
   /**
-   * Batch fetch cover images from 'Books'
+   * Batch fetch cover images for 'Books' for books with no cover
    *
    * @param $limit
    *   Limit the number of covers to fetch
@@ -125,6 +134,7 @@ class LitCoverServiceCommands extends DrushCommands {
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');
 
+    // Load book nids for books without cover.
     $nids = $this->getBookNids($limit, self::NO_COVER);
 
     if (!empty($nids)) {
@@ -150,20 +160,20 @@ class LitCoverServiceCommands extends DrushCommands {
       $batch = [
         'title' => t('Fetching covers for @num "book" node(s)', ['@num' => $numOperations]),
         'operations' => $operations,
-        'finished' => '\Drupal\lit_cover_service\Service\BatchService::deleteBookCoversFinished',
+        'finished' => '\Drupal\lit_cover_service\Service\BatchService::batchFinished',
       ];
       batch_set($batch);
       drush_backend_batch_process();
-      $this->loggerChannelFactory->get('lit_cover_service')->info('Delete covers batch operations end.');
+      $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations end.');
       $this->logger()->success("Book covers fetched");
     }
     else {
-      $this->logger()->warning('No nodes of this type @type', ['@type' => 'book']);
+      $this->logger()->warning('No nodes of this type book');
     }
   }
 
   /**
-   * Batch fetch cover images from 'Books'
+   * Batch fetch cover images for all 'Books' replacing existing covers.
    *
    * @param $limit
    *   Limit the number of covers to fetch
@@ -179,6 +189,7 @@ class LitCoverServiceCommands extends DrushCommands {
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');
 
+    // Load all book nids
     $nids = $this->getBookNids($limit);
 
     if (!empty($nids)) {
@@ -202,9 +213,9 @@ class LitCoverServiceCommands extends DrushCommands {
       }
 
       $batch = [
-        'title' => t('Fetching covers for @num "book" node(s)', ['@num' => $numOperations]),
+        'title' => t('Fetching and replaced covers for @num "book" node(s)', ['@num' => $numOperations]),
         'operations' => $operations,
-        'finished' => '\Drupal\lit_cover_service\Service\BatchService::deleteBookCoversFinished',
+        'finished' => '\Drupal\lit_cover_service\Service\BatchService::batchFinished',
       ];
       batch_set($batch);
       drush_backend_batch_process();
@@ -212,7 +223,7 @@ class LitCoverServiceCommands extends DrushCommands {
       $this->logger()->success("Book covers fetched");
     }
     else {
-      $this->logger()->warning('No nodes of this type @type', ['@type' => 'book']);
+      $this->logger()->warning('No nodes of this type book');
     }
   }
 
@@ -220,12 +231,16 @@ class LitCoverServiceCommands extends DrushCommands {
    * Get node ids for all 'Book' nodes.
    *
    * @param int $limit
+   *   The max number of nids to get
    *
    * @param string $cover
+   *   Should the books have covers. Default 'all' books. Valid values are
+   *   self::ALL_BOOKS, self::HAS_COVER, self::NO_COVER
    *
    * @return array
+   *   Array of nids
    */
-  private function getBookNids(int $limit, string $cover = 'all'): array
+  private function getBookNids(int $limit, string $cover = self::ALL_BOOKS): array
   {
     try {
       $storage = $this->entityTypeManager->getStorage('node');
@@ -234,14 +249,17 @@ class LitCoverServiceCommands extends DrushCommands {
         ->sort('nid', 'DESC');
 
       switch ($cover) {
-        case 'all':
+        case self::ALL_BOOKS:
           break;
+
         case self::HAS_COVER:
           $query->exists('field_book_cover_image');
           break;
+
         case self::NO_COVER:
           $query->notExists('field_book_cover_image');
           break;
+
         default:
           throw new \InvalidArgumentException('Unknown value' . $cover);
       }
@@ -260,20 +278,24 @@ class LitCoverServiceCommands extends DrushCommands {
    * Parse string argument to integer value.
    *
    * @param string $limit
+   *   The string value of the limit. Either self::LIMIT_ALL or integer value.
    *
    * @return int
+   *   The limit as integer. "0" returned for no limit
    */
   private function parseLimit(string $limit): int
   {
     if (self::LIMIT_ALL === $limit) {
       $intLimit = 0;
-    } else if (is_numeric($limit)) {
+    }
+    else if (is_numeric($limit)) {
       $intLimit = intval($limit);
       // Returns the integer value of var on success, or 0 on failure.
       if (0 === $intLimit) {
         throw new \InvalidArgumentException($limit . ' must be an integer value');
       }
-    } else {
+    }
+    else {
       throw new \InvalidArgumentException($limit . ' must be an integer value');
     }
 
