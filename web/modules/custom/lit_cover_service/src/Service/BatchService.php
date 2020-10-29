@@ -7,9 +7,6 @@
 
 namespace Drupal\lit_cover_service\Service;
 
-use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
-use Drupal\Component\Plugin\Exception\PluginNotFoundException;
-use Drupal\Core\Entity\EntityStorageException;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
@@ -246,12 +243,8 @@ class BatchService {
       $entityManager = \Drupal::service('entity.manager');
       $storage = $entityManager->getStorage('file');
       $storage->delete($files);
-    } catch (InvalidPluginDefinitionException $e) {
-      // @TODO handle
-    } catch (PluginNotFoundException $e) {
-      // @TODO handle
-    } catch (EntityStorageException $e) {
-      // @TODO handle
+    } catch (\Exception $e) {
+      \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
   }
 }

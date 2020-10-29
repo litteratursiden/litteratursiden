@@ -1,7 +1,7 @@
 {
     "name": "org/lit_cover_service",
     "description": "This extension provides Cover Service commands for Drush.",
-    "type": "drupal-module",
+    "type": "drupal-custom-module",
     "authors": [
         {
             "name": "Ture Gjørup",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "285e50fc4deba147ee712c76e081458e",
+    "content-hash": "9e8b0c82feff52e12c8183212ee49094",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1298,6 +1298,56 @@
             ],
             "description": "Provides a way to patch Composer packages.",
             "time": "2019-08-29T20:11:49+00:00"
+        },
+        {
+            "name": "danskernesdigitalebibliotek/ddb-cover-service-php-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danskernesdigitalebibliotek/ddb-cover-service-php-client.git",
+                "reference": "b5da3650cbe5f92dd372782f8049ea438d5a8659"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danskernesdigitalebibliotek/ddb-cover-service-php-client/zipball/b5da3650cbe5f92dd372782f8049ea438d5a8659",
+                "reference": "b5da3650cbe5f92dd372782f8049ea438d5a8659",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^6.2",
+                "php": ">=7"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoverService\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "AGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Swagger and contributors",
+                    "homepage": "https://github.com/swagger-api/swagger-codegen"
+                }
+            ],
+            "homepage": "http://swagger.io",
+            "keywords": [
+                "api",
+                "php",
+                "sdk",
+                "swagger"
+            ],
+            "time": "2020-06-02T12:52:12+00:00"
         },
         {
             "name": "dflydev/dot-access-configuration",
@@ -11434,6 +11484,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/ddb-cover-service-php-client": 20,
         "drupal/elasticsearch_connector": 15,
         "drupal/flood_unblock": 20,
         "drupal/imageapi_optimize": 15,

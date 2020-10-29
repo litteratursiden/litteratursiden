@@ -7,19 +7,20 @@
 
 namespace Drupal\lit_cover_service\Service;
 
+use CoverService\Api\CoverApi;
+use CoverService\Configuration;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\Entity\File;
 use Drupal\file\FileInterface;
 use Drupal\lit_cover_service\OpenPlatform\TokenClient;
 use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Exception\GuzzleException;
 
 /**
  * Class CoverService
  */
 class CoverService {
 
-  private const COVER_SERVICE_URL = 'https://cover.dandigbib.org/api/v2/covers';
+  private const COVER_SERVICE_HOST = 'https://cover.dandigbib.org';
   private const DRUPAL_FILE_PATH = 'public://cover_dandigbib_org';
 
   private $httpClient;
@@ -84,29 +85,45 @@ class CoverService {
    * @return string|null
    */
   private function getCoverUrlForIsbn(string $isbn): ?string {
+    $originalImageUrl = NULL;
+    $largeImageUrl = NULL;
+
     try {
-      $response = $this->httpClient->request('get', self::COVER_SERVICE_URL, [
-        'headers' => [
-          'Authorization' => 'Bearer '.$this->getToken(),
-          'accept' => 'application/json'
-        ],
-        'query' => [
-          'type' => 'isbn',
-          'identifiers' => $isbn,
-          'sizes' => 'original,large'
-        ]
+      $accessToken = $this->getToken();
+      $config = Configuration::getDefaultConfiguration()
+        ->setAccessToken($accessToken)
+        ->setHost(self::COVER_SERVICE_HOST);
+
+      $apiInstance = new CoverApi(
+        $this->httpClient,
+        $config
+      );
+
+      $coverCollection = $apiInstance->getCoverCollection('isbn', [$isbn], [
+        'original',
+        'large',
       ]);
 
-      $body = $response->getBody()->getContents();
-      $result = json_decode($body);
-      $cover = array_shift($result);
+      foreach ($coverCollection as $cover) {
+        $imageUrls = $cover->getImageUrls();
+        foreach ($imageUrls as $imageUrl) {
+          switch ($imageUrl->getSize()) {
+            case 'original':
+              $originalImageUrl = $imageUrl->getUrl();
+              break;
 
-      $url = $cover->imageUrls->large ? $cover->imageUrls->large->url : $cover->imageUrls->original->url;
-    } catch (GuzzleException $e) {
-      // @TODO handle
+            case 'large':
+              $largeImageUrl = $imageUrl->getUrl();
+              break;
+          }
+        }
+      }
+    } catch (\Exception $e) {
+      \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
 
-    return $url ?? null;
+    // If cover doesn't have a  'large' cover fall back to use the original.
+    return $largeImageUrl ?? $originalImageUrl;
   }
 
   /**
@@ -120,8 +137,8 @@ class CoverService {
     try {
       $response = $this->httpClient->request('get', $imageUrl, [
         'headers' => [
-          'Referer' => 'https://litteratursiden.dk/'
-        ]
+          'Referer' => 'https://litteratursiden.dk/',
+        ],
       ]);
       $data = $response->getBody()->getContents();
       $dir = self::DRUPAL_FILE_PATH;
@@ -131,8 +148,8 @@ class CoverService {
         $file = file_save_data($data, $destination, FileSystemInterface::EXISTS_REPLACE);
         return (FALSE !== $file) ? $file : NULL;
       }
-    } catch (GuzzleException $exception) {
-      // @TODO handle
+    } catch (\Exception $e) {
+      \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
 
     return NULL;
