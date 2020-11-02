@@ -1,0 +1,90 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Litteratursiden Cover Service Integration module.
+ */
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function lit_cover_service_node_presave(\Drupal\node\NodeInterface $node) {
+  if ($node->getType() == 'book') {
+    $coverImage = $node->get('field_book_cover_image')->getValue();
+    $isbn = $node->get('field_book_isbn')->getString();
+    if (!$coverImage && $isbn) {
+      $coverService = \Drupal::service('lit_cover_service.cover_service');
+      $coverImage = $coverService->getCoverImage($isbn);
+
+      if ($coverImage) {
+        $imageField = [
+          'target_id' => $coverImage->id(),
+          'alt' => '',
+          'title' => $node->getTitle(),
+        ];
+        $node->set('field_book_cover_image', $imageField);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function lit_cover_service_form_alter(array &$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ('node_book_edit_form' === $form_id) {
+    $form['#attached']['library'][] = 'core/drupal.ajax';
+
+    $form['field_book_isbn']['widget'][0]['value']['#ajax'] = [
+      'callback' => 'lit_cover_service_ajax_callback',
+      'disable-refocus' => TRUE,
+      'event' => 'change',
+      'wrapper' => 'edit-field-book-cover-image-wrapper',
+      'progress' => [
+        'type' => 'throbber',
+        'message' => t('Fetching cover...'),
+      ],
+    ];
+  }
+}
+
+/**
+ * Ajax callback function to find or fetch Cover from Cover Service
+ *
+ * @param array $form
+ *   The form being editied
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The state of the form being edited
+ *
+ * @return mixed|string[]
+ *   If a cover is found a html element displaying the image. Else the
+ *   original file upload field
+ */
+function lit_cover_service_ajax_callback(array &$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $formField = $form['field_book_cover_image'];
+  $formField['#id'] = 'edit-field-book-cover-image-wrapper';
+
+  $isbnValue = $form_state->getValue('field_book_isbn');
+  $isbn = $isbnValue[0]['value'];
+  if ($isbn) {
+    /** @var \Drupal\lit_cover_service\Service\CoverService $coverService */
+    $coverService = \Drupal::service('lit_cover_service.cover_service');
+
+    /** @var \Drupal\file\Entity\File $coverImage */
+    $coverImage = $coverService->getCoverImage($isbn);
+
+    if ($coverImage) {
+      $style = \Drupal\image\Entity\ImageStyle::load('thumbnail');
+      $url = $style->buildUrl($coverImage->getFileUri());
+
+      $html = '<div id="edit-field-book-cover-image-wrapper">
+            <p><strong>'.t('Cover service image').'</strong></p>
+            <img src="'.$url.'">
+        </div>';
+
+      return ['#markup' => $html];
+    }
+  }
+
+  return $formField;
+}

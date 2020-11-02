@@ -47,6 +47,7 @@ module:
   lit: 0
   lit_bibliotekdk: 0
   lit_comment_extra: 0
+  lit_cover_service: 0
   lit_fields: 0
   lit_notifications: 0
   lit_open_platform: 0
