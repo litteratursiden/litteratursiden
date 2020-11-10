@@ -17,7 +17,7 @@ use Drush\Commands\DrushCommands;
  */
 class LitCoverServiceCommands extends DrushCommands {
 
-  private const START_BATCH = 0;
+  private const START_BATCH = '0';
   private const BATCH_SIZE = 100;
 
   private const ALL_BOOKS = 'all_books';
@@ -282,7 +282,7 @@ class LitCoverServiceCommands extends DrushCommands {
    */
   private function startBatch(string $startBatch): int
   {
-    if (0 === $startBatch) {
+    if ('0' === $startBatch) {
       return 0;
     }
     else if (is_numeric($startBatch)) {
