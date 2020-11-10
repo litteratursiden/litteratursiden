@@ -278,11 +278,14 @@ class LitCoverServiceCommands extends DrushCommands {
    *   The string value of the start batch.
    *
    * @return int
-   *   The limit as integer. "0" returned for no limit
+   *   The start batch as integer.
    */
   private function startBatch(string $startBatch): int
   {
-    if (is_numeric($startBatch)) {
+    if (0 === $startBatch) {
+      return 0;
+    }
+    else if (is_numeric($startBatch)) {
       $intBatch = intval($startBatch);
       // Returns the integer value of var on success, or 0 on failure.
       if (0 === $intBatch) {
