@@ -32,7 +32,7 @@ function lit_cover_service_node_presave(\Drupal\node\NodeInterface $node) {
  * Implements hook_form_alter().
  */
 function lit_cover_service_form_alter(array &$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  if ('node_book_edit_form' === $form_id) {
+  if ('node_book_form' === $form_id || 'node_book_edit_form' === $form_id) {
     $form['#attached']['library'][] = 'core/drupal.ajax';
 
     $form['field_book_isbn']['widget'][0]['value']['#ajax'] = [
