@@ -7,12 +7,14 @@
 
 namespace Drupal\lit_cover_service\ProxyClass\Service {
 
-    /**
+  use Drupal\file\FileInterface;
+
+  /**
      * Provides a proxy class for \Drupal\lit_cover_service\Service\CoverService.
      *
      * @see \Drupal\Component\ProxyBuilder
      */
-    class CoverService
+    class CoverService implements \Drupal\lit_cover_service\Service\CoverServiceInterface
     {
 
         use \Drupal\Core\DependencyInjection\DependencySerializationTrait;
@@ -70,7 +72,7 @@ namespace Drupal\lit_cover_service\ProxyClass\Service {
         /**
          * {@inheritdoc}
          */
-        public function getCoverImage($isbn)
+        public function getCoverImage(string $isbn): ?FileInterface
         {
             return $this->lazyLoadItself()->getCoverImage($isbn);
         }

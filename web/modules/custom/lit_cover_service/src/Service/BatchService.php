@@ -14,7 +14,7 @@ use Drupal\node\Entity\Node;
 /**
  * Class BatchService.
  */
-class BatchService {
+class BatchService implements BatchServiceInterface {
 
   /**
    * Batch delete process callback.
