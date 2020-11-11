@@ -12,7 +12,7 @@ namespace Drupal\lit_cover_service\ProxyClass\Service {
      *
      * @see \Drupal\Component\ProxyBuilder
      */
-    class BatchService
+    class BatchService implements \Drupal\lit_cover_service\Service\BatchServiceInterface
     {
 
         use \Drupal\Core\DependencyInjection\DependencySerializationTrait;

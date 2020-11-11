@@ -10,6 +10,7 @@ namespace Drupal\lit_cover_service\Command;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\lit_cover_service\Service\BatchService;
+use Drupal\lit_cover_service\Service\BatchServiceInterface;
 use Drush\Commands\DrushCommands;
 
 /**
@@ -27,7 +28,7 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch service
    *
-   * @var \Drupal\lit_cover_service\Service\BatchService
+   * @var \Drupal\lit_cover_service\Service\BatchServiceInterface
    */
   private $batchService;
 
@@ -55,7 +56,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @param \Drupal\Core\Logger\LoggerChannelFactoryInterface $loggerChannelFactory
    *   Logger service.
    */
-  public function __construct(BatchService $batchService, EntityTypeManagerInterface $entityTypeManager, LoggerChannelFactoryInterface $loggerChannelFactory) {
+  public function __construct(BatchServiceInterface $batchService, EntityTypeManagerInterface $entityTypeManager, LoggerChannelFactoryInterface $loggerChannelFactory) {
     $this->batchService = $batchService;
     $this->entityTypeManager = $entityTypeManager;
     $this->loggerChannelFactory = $loggerChannelFactory;

@@ -18,7 +18,7 @@ use GuzzleHttp\ClientInterface;
 /**
  * Class CoverService
  */
-class CoverService {
+class CoverService implements CoverServiceInterface {
 
   private const COVER_SERVICE_HOST = 'https://cover.dandigbib.org';
   private const DRUPAL_FILE_PATH = 'public://cover_dandigbib_org';
