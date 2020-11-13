@@ -86,6 +86,7 @@ class CoverService implements CoverServiceInterface {
    * @return string|null
    */
   private function getCoverUrlForIsbn(string $isbn): ?string {
+    $isbn = str_replace('-', '', $isbn);
     $originalImageUrl = NULL;
     $largeImageUrl = NULL;
 
