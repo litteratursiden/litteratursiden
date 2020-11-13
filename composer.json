@@ -121,6 +121,7 @@
         "drupal/purge_users": "^1.9",
         "drupal/redis": "^1.0@RC",
         "drupal/reroute_email": "^1.0@beta",
+        "drupal/rest_views": "^2.0",
         "drupal/restui": "^1.15",
         "drupal/s3fs": "^3.0@alpha",
         "drupal/scheduler": "^1.0",
