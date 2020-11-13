@@ -9,6 +9,7 @@ namespace Drupal\lit_cover_service\Service;
 
 use CoverService\Api\CoverApi;
 use CoverService\Configuration;
+use Drupal\Core\File\Exception\DirectoryNotReadyException;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\Entity\File;
 use Drupal\file\FileInterface;
@@ -147,6 +148,11 @@ class CoverService implements CoverServiceInterface {
       $data = $response->getBody()->getContents();
       $dir = self::DRUPAL_FILE_PATH;
       $destination = self::DRUPAL_FILE_PATH . '/' . basename($imageUrl);
+
+      $dirWritable = $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY) && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::MODIFY_PERMISSIONS);;
+      if (!$dirWritable) {
+        throw new DirectoryNotReadyException('Cannot write to: '.$dir);
+      }
 
       if ($data && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
         $file = file_save_data($data, $destination, FileSystemInterface::EXISTS_REPLACE);
