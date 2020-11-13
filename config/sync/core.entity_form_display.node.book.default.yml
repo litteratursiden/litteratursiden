@@ -55,7 +55,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_book_author:
-    weight: 14
+    weight: 15
     settings:
       size: 60
       placeholder: ''
@@ -63,11 +63,12 @@ content:
     type: string_textfield
     region: content
   field_book_body:
-    weight: 13
+    weight: 14
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
@@ -78,7 +79,7 @@ content:
     type: comment_default
     region: content
   field_book_cover_image:
-    weight: 11
+    weight: 12
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -102,7 +103,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_book_graphic:
-    weight: 18
+    weight: 19
     settings:
       size: 60
       placeholder: ''
@@ -110,7 +111,7 @@ content:
     type: string_textfield
     region: content
   field_book_isbn:
-    weight: 22
+    weight: 11
     settings:
       size: 60
       placeholder: ''
@@ -118,7 +119,7 @@ content:
     type: string_textfield
     region: content
   field_book_language:
-    weight: 19
+    weight: 20
     settings:
       size: 60
       placeholder: ''
@@ -143,7 +144,7 @@ content:
     type: number
     region: content
   field_book_old_library_key:
-    weight: 21
+    weight: 22
     settings:
       size: 60
       placeholder: ''
@@ -166,7 +167,7 @@ content:
     type: number
     region: content
   field_book_publisher:
-    weight: 17
+    weight: 18
     settings:
       size: 60
       placeholder: ''
@@ -174,7 +175,7 @@ content:
     type: string_textfield
     region: content
   field_book_reference_author:
-    weight: 15
+    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60
@@ -192,7 +193,7 @@ content:
     type: string_textfield
     region: content
   field_book_spotbox_image:
-    weight: 12
+    weight: 13
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -200,14 +201,14 @@ content:
     type: image_image
     region: content
   field_book_subject_number:
-    weight: 20
+    weight: 21
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_book_translater:
-    weight: 16
+    weight: 17
     settings:
       size: 60
       placeholder: ''

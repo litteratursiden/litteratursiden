@@ -1,0 +1,21 @@
+{
+    "name": "org/lit_cover_service",
+    "description": "This extension provides Cover Service commands for Drush.",
+    "type": "drupal-custom-module",
+    "authors": [
+        {
+            "name": "Ture Gjørup",
+            "email": "tug@aarhus.dk"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "extra": {
+        "drush": {
+            "services": {
+                "drush.services.yml": "^9"
+            }
+        }
+    }
+}
