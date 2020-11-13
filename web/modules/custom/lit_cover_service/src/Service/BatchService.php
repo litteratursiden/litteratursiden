@@ -226,6 +226,8 @@ class BatchService implements BatchServiceInterface {
           'title' => $node->getTitle(),
         ];
         $node->set('field_book_cover_image', $imageField);
+      } else {
+        \Drupal::logger('lit_cover_service')->info('No cover found for ISBN '.$isbn);
       }
     }
   }
