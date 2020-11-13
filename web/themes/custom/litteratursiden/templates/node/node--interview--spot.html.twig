@@ -73,12 +73,18 @@ not node.isPublished() ? 'is-unpublished',
 view_mode ? view_mode|clean_class,
 'clearfix',
 ] %}
+{% set use_teaser = FALSE %}
+{% if node.field_teaser[0].value is not empty %}
+  {% set use_teaser = TRUE %}
+{% endif %}
+
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('content') }}>
     <div class="infobox">
       <div class="container flex-row stretch">
         <div class="col-xs-12 col-md-6">
           <div class="inner-wrap">
+            <h3 class="node-type">{{ node.type.entity.label }}</h3>
             {{ title_prefix }}
             {% if not page %}
               <h2{{ title_attributes }}>
@@ -86,7 +92,11 @@ view_mode ? view_mode|clean_class,
               </h2>
             {% endif %}
             {{ title_suffix }}
-            {{ content|without('field_interview_images', 'links') }}
+            {% if use_teaser %}
+              <div class="field--type-text-long">{{ content.field_teaser }}</div>
+            {% else %}
+              {{ content|without('field_interview_images', 'links') }}
+            {% endif %}
             <a class="btn-link" href="{{ url }}" rel="bookmark">{{ 'Read more'|t }}</a>
           </div>
           <div class="left-col"></div>

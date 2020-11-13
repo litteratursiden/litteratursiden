@@ -1,5 +1,29 @@
 body {
   &.path-user {
+    .block-views-blockcontent-by-user-block-1 {
+      padding-bottom: 0;
+
+      ul {
+        margin-bottom: 0;
+      }
+
+      .spotbox-list > ul > li:nth-child(odd) {
+        .spot {
+          @include spot-box('image-right', false);
+        }
+      }
+
+      .spotbox-list > ul > li:nth-child(even) {
+        .spot {
+          @include spot-box('image-left', false);
+        }
+      }
+    }
+
+    .pager {
+      @include pager;
+    }
+
     .user-form, .user-pass {
       .form-group {
         position: relative;
@@ -116,7 +140,7 @@ body {
         margin-top: $xxlarge-spacer;
         margin-bottom: $xxlarge-spacer;
       }
-      .views-row {
+      .favorite-content-block .views-row {
         padding: $regular-spacer 0;
         border-bottom: 1px solid $border-gray;
       }
@@ -355,6 +379,7 @@ body {
       .block-views-blockflag-bookmark-favorite-content-block {
         background-color: $light-gray;
         padding-bottom: $largest-spacer;
+        padding-top: $large-spacer;
         @include respond-to(tablets-portrait) {
           padding-bottom: $xlarge-spacer;
         }

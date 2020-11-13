@@ -13,6 +13,8 @@ dependencies:
     - field.field.node.author_portrait.field_author_portrait_lit_type
     - field.field.node.author_portrait.field_author_portrait_surname
     - field.field.node.author_portrait.field_author_portrait_tags
+    - field.field.node.author_portrait.field_block_reference
+    - field.field.node.author_portrait.field_teaser
     - node.type.author_portrait
   module:
     - image
@@ -127,7 +129,10 @@ content:
     third_party_settings: {  }
 hidden:
   field_author_portrait_like: true
+  field_block_reference: true
+  field_teaser: true
   langcode: true
   latest_reviewed_book: true
   owner_full_name: true
   owner_portrait: true
+  search_api_excerpt: true

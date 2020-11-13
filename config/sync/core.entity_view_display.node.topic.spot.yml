@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.spot
+    - field.field.node.topic.field_block_reference
+    - field.field.node.topic.field_teaser
     - field.field.node.topic.field_topic_body
     - field.field.node.topic.field_topic_comments
     - field.field.node.topic.field_topic_cover_image
@@ -25,6 +27,13 @@ targetEntityType: node
 bundle: topic
 mode: spot
 content:
+  field_teaser:
+    type: basic_string
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
   field_topic_body:
     weight: 0
     label: hidden
@@ -43,16 +52,17 @@ content:
       image_link: ''
     third_party_settings: {  }
   links:
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  posted:
     weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
+  posted:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_block_reference: true
   field_topic_comments: true
   field_topic_cover_image: true
   field_topic_excerpt: true
@@ -67,4 +77,5 @@ hidden:
   langcode: true
   owner_full_name: true
   owner_portrait: true
+  search_api_excerpt: true
   social_media: true

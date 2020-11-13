@@ -1,0 +1,31 @@
+uuid: 6d4f78ff-8d49-4214-91d8-6c5819b0cb0e
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.content_by_user
+  module:
+    - system
+    - views
+  theme:
+    - litteratursiden
+id: views_block__content_by_user_block_2
+theme: litteratursiden
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:content_by_user-block_2'
+settings:
+  id: 'views_block:content_by_user-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user/*\r\n!/user/login\r\n!/user/register\r\n!/user/password\r\n!/user/*/edit"
+    negate: false
+    context_mapping: {  }

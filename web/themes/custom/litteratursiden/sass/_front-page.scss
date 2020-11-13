@@ -509,6 +509,10 @@ body {
                     margin-bottom: 0;
                   }
                   .form-type-email {
+                    > label {
+                      display: none;
+                    }
+
                     position: relative;
                     color: $primary-text-color;
                     &.active {
