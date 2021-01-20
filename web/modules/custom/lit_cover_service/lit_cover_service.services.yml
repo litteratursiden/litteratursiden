@@ -1,0 +1,8 @@
+services:
+  lit_cover_service.batch_service:
+    class: Drupal\lit_cover_service\Service\BatchService
+    lazy: true
+  lit_cover_service.cover_service:
+    class: Drupal\lit_cover_service\Service\CoverService
+    arguments: ['@http_client', '@file_system']
+    lazy: true
