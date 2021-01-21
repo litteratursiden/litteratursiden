@@ -9,6 +9,7 @@ namespace Drupal\lit_cover_service\Service;
 
 use CoverService\Api\CoverApi;
 use CoverService\Configuration;
+use Drupal\Core\File\Exception\DirectoryNotReadyException;
 use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\Entity\File;
 use Drupal\file\FileInterface;
@@ -18,7 +19,7 @@ use GuzzleHttp\ClientInterface;
 /**
  * Class CoverService
  */
-class CoverService {
+class CoverService implements CoverServiceInterface {
 
   private const COVER_SERVICE_HOST = 'https://cover.dandigbib.org';
   private const DRUPAL_FILE_PATH = 'public://cover_dandigbib_org';
@@ -45,6 +46,8 @@ class CoverService {
    * @return \Drupal\file\FileInterface|null
    */
   public function getCoverImage(string $isbn): ?FileInterface {
+    $isbn = trim($isbn);
+    $isbn = str_replace('-', '', $isbn);
 
     $file = $this->findLocalImageFile($isbn);
     if ($file) {
@@ -122,6 +125,10 @@ class CoverService {
       \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
 
+    if (!$largeImageUrl && !$originalImageUrl) {
+      drupal_set_message('No cover found for ISBN '.$isbn, 'warning');
+    }
+
     // If cover doesn't have a  'large' cover fall back to use the original.
     return $largeImageUrl ?? $originalImageUrl;
   }
@@ -143,6 +150,11 @@ class CoverService {
       $data = $response->getBody()->getContents();
       $dir = self::DRUPAL_FILE_PATH;
       $destination = self::DRUPAL_FILE_PATH . '/' . basename($imageUrl);
+
+      $dirWritable = $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY) && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::MODIFY_PERMISSIONS);;
+      if (!$dirWritable) {
+        throw new DirectoryNotReadyException('Cannot write to: '.$dir);
+      }
 
       if ($data && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
         $file = file_save_data($data, $destination, FileSystemInterface::EXISTS_REPLACE);

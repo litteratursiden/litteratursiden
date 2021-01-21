@@ -10,6 +10,7 @@ namespace Drupal\lit_cover_service\Command;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 use Drupal\lit_cover_service\Service\BatchService;
+use Drupal\lit_cover_service\Service\BatchServiceInterface;
 use Drush\Commands\DrushCommands;
 
 /**
@@ -17,7 +18,7 @@ use Drush\Commands\DrushCommands;
  */
 class LitCoverServiceCommands extends DrushCommands {
 
-  private const LIMIT_ALL = 'all';
+  private const START_BATCH = '0';
   private const BATCH_SIZE = 100;
 
   private const ALL_BOOKS = 'all_books';
@@ -27,7 +28,7 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch service
    *
-   * @var \Drupal\lit_cover_service\Service\BatchService
+   * @var \Drupal\lit_cover_service\Service\BatchServiceInterface
    */
   private $batchService;
 
@@ -55,7 +56,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @param \Drupal\Core\Logger\LoggerChannelFactoryInterface $loggerChannelFactory
    *   Logger service.
    */
-  public function __construct(BatchService $batchService, EntityTypeManagerInterface $entityTypeManager, LoggerChannelFactoryInterface $loggerChannelFactory) {
+  public function __construct(BatchServiceInterface $batchService, EntityTypeManagerInterface $entityTypeManager, LoggerChannelFactoryInterface $loggerChannelFactory) {
     $this->batchService = $batchService;
     $this->entityTypeManager = $entityTypeManager;
     $this->loggerChannelFactory = $loggerChannelFactory;
@@ -67,29 +68,30 @@ class LitCoverServiceCommands extends DrushCommands {
    * This command is intended as a one time clean up command for migrating
    * from 'MoreInfo' to DDB Cover Service.
    *
-   * @param $limit
-   *   Limit the number of covers to delete
+   * @param $startBatch
+   *   The batch number to start with
    *
    * @usage lit_cover_service:delete_covers 100
-   *   Delete covers from 'Books', limit to 100
+   *   Delete covers from 'Books', restart batch at 100
    *
    * @command lit_cover_service:delete_covers
    * @aliases delete_covers
    */
-  public function deleteCovers($limit = self::LIMIT_ALL) {
-    $limit = $this->parseLimit($limit);
+  public function deleteCovers($startBatch = self::START_BATCH) {
+    $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Delete covers batch operations start');
 
-    $nids = $this->getBookNids($limit, self::HAS_COVER);
+    $nids = $this->getBookNids(self::HAS_COVER);
 
     if (!empty($nids)) {
       $chunks = array_chunk($nids, self::BATCH_SIZE);
 
       $numOperations = count($nids);
-      $batchId = 1;
+      $batchId = $startBatch;
       $batchTotal = count($chunks);
 
+      $chunks = array_slice($chunks, $startBatch);
       foreach ($chunks as $batchNids) {
         $operations[] = [
           '\Drupal\lit_cover_service\Service\BatchService::deleteBookCovers',
@@ -120,31 +122,32 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch fetch cover images for 'Books' for books with no cover
    *
-   * @param $limit
-   *   Limit the number of covers to fetch
+   * @param $startBatch
+   *   The batch number to start with
    *
    * @usage lit_cover_service:fetch_covers 100
-   *   Fetch covers for 'Books', limit to 100
+   *   Fetch covers for 'Books', restart batch at 100
    *
    * @command lit_cover_service:fetch_missing_covers
    * @aliases fetch_missing_covers
    */
-  public function fetchMissingCovers($limit = self::LIMIT_ALL) {
-    $limit = $this->parseLimit($limit);
+  public function fetchMissingCovers($startBatch = self::START_BATCH) {
+    $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');
 
     // Load book nids for books without cover.
-    $nids = $this->getBookNids($limit, self::NO_COVER);
+    $nids = $this->getBookNids(self::NO_COVER);
 
     if (!empty($nids)) {
       $chunks = array_chunk($nids, self::BATCH_SIZE);
 
       $numOperations = count($nids);
-      $batchId = 1;
+      $batchId = $startBatch;
       $batchTotal = count($chunks);
 
       $operations = [];
+      $chunks = array_slice($chunks, $startBatch);
       foreach ($chunks as $batchNids) {
         $operations[] = [
           '\Drupal\lit_cover_service\Service\BatchService::fetchBookCovers',
@@ -175,31 +178,32 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch fetch cover images for all 'Books' replacing existing covers.
    *
-   * @param $limit
-   *   Limit the number of covers to fetch
+   * @param $startBatch
+   *   The batch number to start with
    *
    * @usage lit_cover_service:fetch_covers 100
-   *   Fetch covers for 'Books', limit to 100
+   *   Fetch covers for 'Books', restart batch at 100
    *
    * @command lit_cover_service:add_or_replace_covers
    * @aliases add_or_replace_covers
    */
-  public function addOrReplaceCovers($limit = self::LIMIT_ALL) {
-    $limit = $this->parseLimit($limit);
+  public function addOrReplaceCovers($startBatch = self::START_BATCH) {
+    $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');
 
     // Load all book nids
-    $nids = $this->getBookNids($limit);
+    $nids = $this->getBookNids();
 
     if (!empty($nids)) {
       $chunks = array_chunk($nids, self::BATCH_SIZE);
 
       $numOperations = count($nids);
-      $batchId = 1;
+      $batchId = $startBatch;
       $batchTotal = count($chunks);
 
       $operations = [];
+      $chunks = array_slice($chunks, $startBatch);
       foreach ($chunks as $batchNids) {
         $operations[] = [
           '\Drupal\lit_cover_service\Service\BatchService::replaceBookCovers',
@@ -230,9 +234,6 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Get node ids for all 'Book' nodes.
    *
-   * @param int $limit
-   *   The max number of nids to get
-   *
    * @param string $cover
    *   Should the books have covers. Default 'all' books. Valid values are
    *   self::ALL_BOOKS, self::HAS_COVER, self::NO_COVER
@@ -240,7 +241,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @return array
    *   Array of nids
    */
-  private function getBookNids(int $limit, string $cover = self::ALL_BOOKS): array
+  private function getBookNids(string $cover = self::ALL_BOOKS): array
   {
     try {
       $storage = $this->entityTypeManager->getStorage('node');
@@ -264,9 +265,6 @@ class LitCoverServiceCommands extends DrushCommands {
           throw new \InvalidArgumentException('Unknown value' . $cover);
       }
 
-      if ($limit) {
-        $query->range(0, $limit);
-      }
       return $query->execute();
     }
     catch (\Exception $e) {
@@ -277,28 +275,28 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Parse string argument to integer value.
    *
-   * @param string $limit
-   *   The string value of the limit. Either self::LIMIT_ALL or integer value.
+   * @param string $startBatch
+   *   The string value of the start batch.
    *
    * @return int
-   *   The limit as integer. "0" returned for no limit
+   *   The start batch as integer.
    */
-  private function parseLimit(string $limit): int
+  private function startBatch(string $startBatch): int
   {
-    if (self::LIMIT_ALL === $limit) {
-      $intLimit = 0;
+    if ('0' === $startBatch) {
+      return 0;
     }
-    else if (is_numeric($limit)) {
-      $intLimit = intval($limit);
+    else if (is_numeric($startBatch)) {
+      $intBatch = intval($startBatch);
       // Returns the integer value of var on success, or 0 on failure.
-      if (0 === $intLimit) {
-        throw new \InvalidArgumentException($limit . ' must be an integer value');
+      if (0 === $intBatch) {
+        throw new \InvalidArgumentException($startBatch . ' must be an integer value');
       }
     }
     else {
-      throw new \InvalidArgumentException($limit . ' must be an integer value');
+      throw new \InvalidArgumentException($startBatch . ' must be an integer value');
     }
 
-    return $intLimit;
+    return $intBatch;
   }
 }

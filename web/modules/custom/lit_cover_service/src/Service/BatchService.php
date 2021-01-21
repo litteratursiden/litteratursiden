@@ -14,7 +14,7 @@ use Drupal\node\Entity\Node;
 /**
  * Class BatchService.
  */
-class BatchService {
+class BatchService implements BatchServiceInterface {
 
   /**
    * Batch delete process callback.
@@ -226,6 +226,8 @@ class BatchService {
           'title' => $node->getTitle(),
         ];
         $node->set('field_book_cover_image', $imageField);
+      } else {
+        \Drupal::logger('lit_cover_service')->info('No cover found for ISBN '.$isbn);
       }
     }
   }
