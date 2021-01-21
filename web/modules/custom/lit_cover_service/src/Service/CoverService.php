@@ -46,6 +46,8 @@ class CoverService implements CoverServiceInterface {
    * @return \Drupal\file\FileInterface|null
    */
   public function getCoverImage(string $isbn): ?FileInterface {
+    $isbn = trim($isbn);
+    $isbn = str_replace('-', '', $isbn);
 
     $file = $this->findLocalImageFile($isbn);
     if ($file) {
@@ -86,7 +88,6 @@ class CoverService implements CoverServiceInterface {
    * @return string|null
    */
   private function getCoverUrlForIsbn(string $isbn): ?string {
-    $isbn = str_replace('-', '', $isbn);
     $originalImageUrl = NULL;
     $largeImageUrl = NULL;
 
