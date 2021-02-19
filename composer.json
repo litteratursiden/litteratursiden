@@ -127,7 +127,7 @@
         "drupal/scheduler": "^1.0",
         "drupal/simple_fb_connect": "^3.0",
         "drupal/slick": "^1.0",
-        "drupal/slick_entityreference": "^1.5",
+        "drupal/slick_entityreference": "^1.0",
         "drupal/slick_views": "^1.0",
         "drupal/social_media": "^1.2",
         "drupal/swiftmailer": "^2.0",
