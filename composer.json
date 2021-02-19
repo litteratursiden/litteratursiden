@@ -196,7 +196,7 @@
         },
         "patches": {
             "drupal/group": {
-                "view own unpublished content": "patches/group/2876696-05.patch"
+                "view own unpublished content (https://www.drupal.org/project/group/issues/2876696)": "patches/group/9.patch"
             },
             "drupal/video_embed_html5": {
               "add m4v format as mp4": "patches/video_embed_html5/m4v-format.patch"
