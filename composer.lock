@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19fec6a5f0bb218e4e825513b135d156",
+    "content-hash": "08dbc45a5408e1d4f75f720edcbc30f9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5132,26 +5132,26 @@
         },
         {
             "name": "drupal/purge_users",
-            "version": "1.9.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/purge_users.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/purge_users-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "74b99d4bd3fcf4c790b4d3448d6f1b816141c733"
+                "url": "https://ftp.drupal.org/files/projects/purge_users-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "f215e97133842bb99ee04a586bf637f7fc9a6ef3"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1543506480",
+                    "version": "8.x-2.0",
+                    "datestamp": "1589474295",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
