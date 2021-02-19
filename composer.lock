@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "831359026c5bab08ba09c3da4b076c74",
+    "content-hash": "d1b221bd85d9e1789617f34025d90961",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6142,26 +6142,26 @@
         },
         {
             "name": "drupal/user_registrationpassword",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/user_registrationpassword.git",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/user_registrationpassword-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "13bf58c24a5dc6422079b6b82c2efa6bf80db96b"
+                "url": "https://ftp.drupal.org/files/projects/user_registrationpassword-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "2443b1e7d1c080863c907da569187add5b0c0814"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "^8.8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1522102080",
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1592713735",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -11640,6 +11640,7 @@
         "drupal/imageapi_optimize": 10,
         "drupal/maxlength": 5,
         "drupal/s3fs": 15,
+        "drupal/user_registrationpassword": 15,
         "itk-dev/web_accessibility_statement": 20,
         "bpi/sdk": 20
     },
