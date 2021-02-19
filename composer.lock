@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c184ebfcf1b852edc637cfcbd079a6a",
+    "content-hash": "076a0fc9cd4b1ec8d3fd810ef2e672b5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11568,13 +11568,9 @@
         "danskernesdigitalebibliotek/ddb-cover-service-php-client": 20,
         "drupal/elasticsearch_connector": 15,
         "drupal/flood_unblock": 20,
-        "drupal/imageapi_optimize": 15,
-        "drupal/maxlength": 10,
-        "drupal/purge": 10,
-        "drupal/redis": 5,
-        "drupal/reroute_email": 10,
+        "drupal/imageapi_optimize": 10,
+        "drupal/maxlength": 5,
         "drupal/s3fs": 15,
-        "drupal/view_unpublished": 15,
         "itk-dev/web_accessibility_statement": 20,
         "bpi/sdk": 20
     },
