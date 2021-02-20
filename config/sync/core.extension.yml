@@ -38,7 +38,7 @@ module:
   filter: 0
   flag: 0
   flag_bookmark: 0
-  flood_unblock: 0
+  flood_control: 0
   hal: 0
   image: 0
   image_widget_crop: 0

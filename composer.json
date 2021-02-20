@@ -106,6 +106,7 @@
         "drupal/field_group": "^1.0",
         "drupal/flag": "^4.0-beta",
         "drupal/flood_control": "^2.1",
+        "drupal/flood_unblock": "^3.2",
         "drupal/group": "^1.0",
         "drupal/image_widget_crop": "^2.0",
         "drupal/imageapi_optimize": "^2.0@beta",
