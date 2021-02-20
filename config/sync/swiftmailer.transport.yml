@@ -1,9 +1,9 @@
 transport: sendmail
-smtp_host: smtp.mandrillapp.com
-smtp_port: 587
+smtp_host: localhost
+smtp_port: null
 smtp_encryption: tls
-smtp_username: redaktionen@litteratursiden.dk
-smtp_password: vhDjm_66RNS72zdtR6rkCw
+smtp_username: ''
+smtp_password: null
 sendmail_path: /usr/sbin/sendmail
 sendmail_mode: bs
 spool_directory: ''
@@ -13,5 +13,5 @@ langcode: da
 smtp_credential_provider: swiftmailer
 smtp_credentials:
   swiftmailer:
-    username: redaktionen@litteratursiden.dk
-    password: vhDjm_66RNS72zdtR6rkCw
+    username: ''
+    password: null
