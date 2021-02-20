@@ -2,7 +2,7 @@
 
 namespace Drupal\lit_user\Controller;
 
-use Drupal\user_registrationpassword\Controller\UserRegistrationPassword as UserRegistrationPasswordDefault;
+use Drupal\user_registrationpassword\Controller\RegistrationController as UserRegistrationPasswordDefault;
 
 class UserRegistrationPassword extends UserRegistrationPasswordDefault {
 

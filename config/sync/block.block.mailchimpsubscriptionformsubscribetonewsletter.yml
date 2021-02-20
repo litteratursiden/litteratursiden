@@ -10,7 +10,7 @@ dependencies:
 id: mailchimpsubscriptionformsubscribetonewsletter
 theme: litteratursiden
 region: content
-weight: -2
+weight: 0
 provider: null
 plugin: 'mailchimp_signup_subscribe_block:subscribe_to_newsletter'
 settings:
