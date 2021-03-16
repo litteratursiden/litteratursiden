@@ -35,6 +35,7 @@ services:
       - PHP_MAIL=1
       - DOCKER_HOST_DOMAIN=${COMPOSE_DOMAIN}
       - PHP_IDE_CONFIG=serverName=localhost
+      - COMPOSER_VERSION=2
     depends_on:
       - mariadb
     volumes:
