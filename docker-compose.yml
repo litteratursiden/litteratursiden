@@ -28,13 +28,11 @@ services:
     environment:
       - PHP_XDEBUG=${PHP_XDEBUG:-0}
       - PHP_XDEBUG_REMOTE_AUTOSTART=${PHP_XDEBUG_REMOTE_AUTOSTART:-0}
-      - PHP_XDEBUG_REMOTE_HOST=${PHP_XDEBUG_REMOTE_HOST:-0.0.0.0}
       - PHP_XDEBUG_REMOTE_CONNECT_BACK=${PHP_XDEBUG_REMOTE_CONNECT_BACK:-0}
-      - PHP_MAX_EXECUTION_TIME=300
-      - PHP_MEMORY_LIMIT=512M
-      - PHP_MAIL=1
+      - PHP_MAX_EXECUTION_TIME=30
+      - PHP_MEMORY_LIMIT=256M
+      # - PHP_MAIL=1 # Uncomment to enable mailhog.
       - DOCKER_HOST_DOMAIN=${COMPOSE_DOMAIN}
-      - PHP_IDE_CONFIG=serverName=localhost
       - COMPOSER_VERSION=2
     depends_on:
       - mariadb
@@ -42,10 +40,11 @@ services:
       - .:/app:delegated
       - drush-cache:/root/.drush
 
-  littnginx:
+  nginx:
     image: nginx:latest
     networks:
       - app
+      - frontend
     depends_on:
       - phpfpm
       - memcached
@@ -63,7 +62,7 @@ services:
       - app
       - frontend
     depends_on:
-      - littnginx
+      - nginx
     environment:
       VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl
       VARNISH_SECRET: eca2b7c263eae74c0d746f147691e7ce
