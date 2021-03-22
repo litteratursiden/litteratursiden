@@ -8867,26 +8867,6 @@ body {
     body.path-frontpage .main-container #articles-wrapper .block.block-facebook-feed-block .block-title {
       line-height: 36px; } }
 
-/*
-// What a bloody mess! Nothing to do but to continue down this dark path.
-// ITK Overrides.
-.front-page--content-teaser {
-  @include teaser-title();
-  h2 a span {
-    color: $brand-color!important;
-  }
-
-  .btn-link {
-    @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
-    @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
-
-    color: $brand-color!important;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 45px;
-  }
-}
-*/
 body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recent-reviews {
   margin-top: 30px; }
 
