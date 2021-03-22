@@ -8497,113 +8497,53 @@ body {
           body.path-frontpage .main-container .view-book-list-filter-book_list-book_list_block .form-group .book-list-block header .book-lists-container .book-list-link .ajax-throbber {
             margin-left: 10px; }
     body.path-frontpage .main-container #articles-wrapper {
-      background-color: #fff; }
-      body.path-frontpage .main-container #articles-wrapper .block.block-views {
-        background-color: #D8D8D8;
-        margin-top: 30px;
-        margin-bottom: 15px;
-        width: calc(50% - 45px);
-        float: left;
-        padding-left: 50px;
-        padding-right: 35px; }
-        @media only screen and (max-width: 1199px) {
-          body.path-frontpage .main-container #articles-wrapper .block.block-views {
-            width: calc(50% - 15px); } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) {
-    body.path-frontpage .main-container #articles-wrapper .block.block-views {
-      width: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
-      margin-top: 10px;
-      margin-bottom: 0; } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) and (max-width: 767px) {
-    body.path-frontpage .main-container #articles-wrapper .block.block-views {
-      padding-left: 20px;
-      padding-right: 20px; } }
-        body.path-frontpage .main-container #articles-wrapper .block.block-views * {
+      background: #fff; }
+      body.path-frontpage .main-container #articles-wrapper .front-article-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+      body.path-frontpage .main-container #articles-wrapper .views-row {
+        flex: 0 0 48%;
+        background-color: #d8d8d8;
+        padding: 2em;
+        margin: 1em 0; }
+        @media only screen and (max-width: 991px) {
+          body.path-frontpage .main-container #articles-wrapper .views-row {
+            flex: 0 0 100%; } }
+        body.path-frontpage .main-container #articles-wrapper .views-row * {
           color: #3a3b3d; }
-        body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
-          margin-left: 30px;
-          margin-right: 15px; }
-          @media only screen and (max-width: 1199px) {
-            body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
-              margin-left: 0; } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) {
-    body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
-      margin-left: 0;
-      margin-right: 0; } }
-        body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-blog-block-front-blog {
-          margin-left: 15px;
-          margin-right: 30px; }
-          @media only screen and (max-width: 1199px) {
-            body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-blog-block-front-blog {
-              margin-right: 0; } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) {
-    body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-blog-block-front-blog {
-      margin-left: 0;
-      margin-right: 0; } }
-        body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper .block-title {
-          width: 100%;
-          color: #3a3b3d;
-          font-family: "RobotoSlab-Regular", serif;
-          font-size: 30px;
-          font-weight: bold;
-          line-height: 1.333;
-          margin: 40px 0 20px; }
-          @media only screen and (max-width: 767px) {
-            body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper .block-title {
-              font-size: 20px;
-              line-height: 26px;
-              margin: 30px 0; } }
-        body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front h2, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .media-heading {
-          font-family: "RobotoSlab-Regular", serif;
-          font-size: 35px;
-          color: #ff5002;
-          font-weight: bold;
-          line-height: 45px;
-          letter-spacing: 0px;
-          font-style: normal;
-          margin-bottom: 20px;
+        body.path-frontpage .main-container #articles-wrapper .views-row h2 {
+          font-size: inherit;
+          line-height: 1em;
           margin-top: 0; }
-          @media only screen and (max-width: 1199px) {
-            body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front h2, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .media-heading {
-              font-size: 35px; } }
-  @media only screen and (max-width: 1199px) and (max-width: 767px) {
-    body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front h2, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .media-heading {
-      font-size: 30px;
-      line-height: 35px; } }
-          body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front h2 a, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front h2 a span, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .media-heading a, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .media-heading a span {
-            color: #ff5002; }
-        body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .content .inner-content {
-          margin-bottom: 20px; }
-          body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .content .inner-content > a {
+        body.path-frontpage .main-container #articles-wrapper .views-row .block-title {
+          font-family: "RobotoSlab-Regular", serif;
+          font-size: 30px; }
+        body.path-frontpage .main-container #articles-wrapper .views-row .content {
+          font-size: 22px;
+          font-family: Roboto-Regular, sans-serif; }
+        body.path-frontpage .main-container #articles-wrapper .views-row .inner-content {
+          color: #3a3b3d;
+          font-size: 22px;
+          line-height: 30px;
+          font-family: Roboto-Regular,sans-serif;
+          margin-bottom: 30px; }
+          body.path-frontpage .main-container #articles-wrapper .views-row .inner-content a {
             display: block;
-            font-family: "RobotoSlab-Regular", serif;
+            font-family: Roboto-Regular,sans-serif;
             font-size: 20px;
-            color: #787777;
-            font-weight: bold;
+            color: #787777 !important;
+            font-weight: 700;
             line-height: 26px;
-            letter-spacing: 0px;
+            letter-spacing: 0;
             font-style: normal;
             margin: 30px 0; }
-            @media only screen and (max-width: 767px) {
-              body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .content .inner-content > a {
-                font-size: 12px;
-                line-height: 16px; } }
-          body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .content .inner-content > div {
-            color: #3a3b3d;
-            font-size: 22px;
-            line-height: 30px;
-            font-family: "Roboto-Regular", sans-serif;
-            margin-bottom: 30px; }
-            @media only screen and (max-width: 767px) {
-              body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .content .inner-content > div {
-                font-size: 16px;
-                line-height: 20px;
-                margin-bottom: 20px; } }
-            body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .content .inner-content > div strong {
-              font-family: "Roboto-Bold", sans-serif; }
-        body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link {
+        body.path-frontpage .main-container #articles-wrapper .views-row h2 span {
+          color: #ff5002;
+          font-family: "RobotoSlab-Regular", serif;
+          font-size: 35px;
+          line-height: 45px; }
+        body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a {
           margin-top: 15px;
           margin-bottom: 15px;
           line-height: 33px;
@@ -8623,17 +8563,17 @@ body {
           margin-top: 20px;
           margin-bottom: 45px; }
           @media only screen and (max-width: 767px) {
-            body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link {
+            body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a {
               font-size: 14px;
               line-height: 20px; } }
-          body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:hover, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:focus {
+          body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:hover, body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:focus {
             color: #ce4000; }
-          body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:hover, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:focus {
+          body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:hover, body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:focus {
             color: #ce4000;
             transition: all 0.2s ease-out; }
-            body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:hover:after, body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:focus:after {
+            body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:hover:after, body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:focus:after {
               color: #ce4000; }
-          body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:after {
+          body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:after {
             content: "";
             /* use !important to prevent issues with browser extensions that change fonts */
             font-family: 'literatur-icons' !important;
@@ -8657,12 +8597,22 @@ body {
             color: #ff5002;
             transition: all 0.2s ease-out; }
             @media only screen and (max-width: 767px) {
-              body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:after {
+              body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:after {
                 font-size: 14px; } }
           @media only screen and (max-width: 767px) {
-            body.path-frontpage .main-container #articles-wrapper .block.block-views .content-wrapper > .form-group .front .btn-link:after {
+            body.path-frontpage .main-container #articles-wrapper .views-row .btn-link a:after {
               font-size: 14px;
               line-height: 16px; } }
+      body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
+        margin-left: 30px;
+        margin-right: 15px; }
+        @media only screen and (max-width: 1199px) {
+          body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
+            margin-left: 0; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
+      margin-left: 0;
+      margin-right: 0; } }
       body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form {
         background-color: #3a3b3d;
         margin-top: 15px;
@@ -8916,98 +8866,6 @@ body {
   @media only screen and (max-width: 1199px) and (max-width: 767px) {
     body.path-frontpage .main-container #articles-wrapper .block.block-facebook-feed-block .block-title {
       line-height: 36px; } }
-
-.front-page--content-teaser h2, .front-page--content-teaser .media-heading {
-  font-family: "RobotoSlab-Regular", serif;
-  font-size: 35px;
-  color: #ff5002;
-  font-weight: bold;
-  line-height: 45px;
-  letter-spacing: 0px;
-  font-style: normal;
-  margin-bottom: 20px;
-  margin-top: 0; }
-  @media only screen and (max-width: 1199px) {
-    .front-page--content-teaser h2, .front-page--content-teaser .media-heading {
-      font-size: 35px; } }
-  @media only screen and (max-width: 1199px) and (max-width: 767px) {
-    .front-page--content-teaser h2, .front-page--content-teaser .media-heading {
-      font-size: 30px;
-      line-height: 35px; } }
-  .front-page--content-teaser h2 a, .front-page--content-teaser h2 a span, .front-page--content-teaser .media-heading a, .front-page--content-teaser .media-heading a span {
-    color: #ff5002; }
-
-.front-page--content-teaser h2 a span {
-  color: #ff5002 !important; }
-
-.front-page--content-teaser .inner-content {
-  color: #3a3b3d;
-  font-size: 22px;
-  line-height: 30px;
-  font-family: Roboto-Regular,sans-serif;
-  margin-bottom: 30px; }
-  .front-page--content-teaser .inner-content a {
-    display: block;
-    font-family: Roboto-Regular,sans-serif;
-    font-size: 20px;
-    color: #787777 !important;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0;
-    font-style: normal;
-    margin: 30px 0; }
-
-.front-page--content-teaser .btn-link {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: 33px;
-  height: 35px;
-  display: inline-flex;
-  color: #ff5002;
-  font-size: 18px;
-  font-family: "Oswald-Regular", sans-serif;
-  letter-spacing: 0px;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.2s ease-out;
-  color: #ff5002 !important;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 45px; }
-  .front-page--content-teaser .btn-link:hover, .front-page--content-teaser .btn-link:focus {
-    color: #ce4000;
-    transition: all 0.2s ease-out; }
-    .front-page--content-teaser .btn-link:hover:after, .front-page--content-teaser .btn-link:focus:after {
-      color: #ce4000; }
-  .front-page--content-teaser .btn-link:after {
-    content: "";
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'literatur-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    position: initial;
-    right: 20px;
-    margin-left: 10px;
-    width: 15px;
-    height: 15px;
-    line-height: 15px;
-    top: 15px;
-    font-size: 15px;
-    color: #ff5002;
-    transition: all 0.2s ease-out; }
-    @media only screen and (max-width: 767px) {
-      .front-page--content-teaser .btn-link:after {
-        font-size: 14px; } }
 
 body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recent-reviews {
   margin-top: 30px; }
