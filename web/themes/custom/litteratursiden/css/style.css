@@ -8613,31 +8613,6 @@ body {
     body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
       margin-left: 0;
       margin-right: 0; } }
-      body.path-frontpage .main-container #articles-wrapper .block.block-views article {
-        /*
-            > .form-group {
-              .front {
-                @include teaser-title();
-                .content {
-                  .inner-content {
-                    margin-bottom: $large-spacer;
-                    > a {
-                      display: block;
-                      @include text-mixin($heading-font-serif, $large-font-size, $arrow-gray, $font-weight-bold, 26px);
-                      margin: $xlarge-spacer 0;
-                      @include respond-to(phones-landscape) {
-                        font-size: $small-font-size;
-                        line-height: $medium-font-size;
-                      }
-                    }
-                    > div {
-                      @include field--type-text-long();
-                    }
-                  }
-                }
-              }
-            }
-            */ }
       body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form {
         background-color: #3a3b3d;
         margin-top: 15px;
@@ -8892,81 +8867,26 @@ body {
     body.path-frontpage .main-container #articles-wrapper .block.block-facebook-feed-block .block-title {
       line-height: 36px; } }
 
-.front-page--content-teaser h2, .front-page--content-teaser .media-heading {
-  font-family: "RobotoSlab-Regular", serif;
-  font-size: 35px;
-  color: #ff5002;
-  font-weight: bold;
-  line-height: 45px;
-  letter-spacing: 0px;
-  font-style: normal;
-  margin-bottom: 20px;
-  margin-top: 0; }
-  @media only screen and (max-width: 1199px) {
-    .front-page--content-teaser h2, .front-page--content-teaser .media-heading {
-      font-size: 35px; } }
-  @media only screen and (max-width: 1199px) and (max-width: 767px) {
-    .front-page--content-teaser h2, .front-page--content-teaser .media-heading {
-      font-size: 30px;
-      line-height: 35px; } }
-  .front-page--content-teaser h2 a, .front-page--content-teaser h2 a span, .front-page--content-teaser .media-heading a, .front-page--content-teaser .media-heading a span {
-    color: #ff5002; }
+/*
+// What a bloody mess! Nothing to do but to continue down this dark path.
+// ITK Overrides.
+.front-page--content-teaser {
+  @include teaser-title();
+  h2 a span {
+    color: $brand-color!important;
+  }
 
-.front-page--content-teaser h2 a span {
-  color: #ff5002 !important; }
+  .btn-link {
+    @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
+    @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
 
-.front-page--content-teaser .btn-link {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: 33px;
-  height: 35px;
-  display: inline-flex;
-  color: #ff5002;
-  font-size: 18px;
-  font-family: "Oswald-Regular", sans-serif;
-  letter-spacing: 0px;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.2s ease-out;
-  color: #ff5002 !important;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 45px; }
-  .front-page--content-teaser .btn-link:hover, .front-page--content-teaser .btn-link:focus {
-    color: #ce4000;
-    transition: all 0.2s ease-out; }
-    .front-page--content-teaser .btn-link:hover:after, .front-page--content-teaser .btn-link:focus:after {
-      color: #ce4000; }
-  .front-page--content-teaser .btn-link:after {
-    content: "";
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'literatur-icons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: inline-block;
-    position: initial;
-    right: 20px;
-    margin-left: 10px;
-    width: 15px;
-    height: 15px;
-    line-height: 15px;
-    top: 15px;
-    font-size: 15px;
-    color: #ff5002;
-    transition: all 0.2s ease-out; }
-    @media only screen and (max-width: 767px) {
-      .front-page--content-teaser .btn-link:after {
-        font-size: 14px; } }
-
+    color: $brand-color!important;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+}
+*/
 body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recent-reviews {
   margin-top: 30px; }
 

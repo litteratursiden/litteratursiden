@@ -401,34 +401,6 @@ body {
               }
             }
           }
-
-          article {
-
-            /*
-            > .form-group {
-              .front {
-                @include teaser-title();
-                .content {
-                  .inner-content {
-                    margin-bottom: $large-spacer;
-                    > a {
-                      display: block;
-                      @include text-mixin($heading-font-serif, $large-font-size, $arrow-gray, $font-weight-bold, 26px);
-                      margin: $xlarge-spacer 0;
-                      @include respond-to(phones-landscape) {
-                        font-size: $small-font-size;
-                        line-height: $medium-font-size;
-                      }
-                    }
-                    > div {
-                      @include field--type-text-long();
-                    }
-                  }
-                }
-              }
-            }
-            */
-          }
         }
 
         // Subscribe block
@@ -650,26 +622,5 @@ body {
 
     }
   }
-
 }
 
-// What a bloody mess! Nothing to do but to continue down this dark path.
-// ITK Overrides.
-.front-page--content-teaser {
-  @include teaser-title();
-  h2 a span {
-    color: $brand-color!important;
-  }
-
-
-
-  .btn-link {
-    @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
-    @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
-
-    color: $brand-color!important;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 45px;
-  }
-}
