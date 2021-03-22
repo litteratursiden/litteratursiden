@@ -303,33 +303,93 @@ body {
       }
       // Article & Blog
       #articles-wrapper {
-        background-color: $inverse-color;
+        background: $inverse-color;
 
-        .block.block-views {
-          background-color: $btn-gray;
-          margin-top: $regular-spacer*2;
-          margin-bottom: $regular-spacer;
-          width: calc(50% - #{$regular-spacer*3});
-          float: left;
-          padding-left: $small-spacer*5;
-          padding-right: $small-spacer*3.5;
-          @include respond-to(tablets-landscape) {
-            width: calc(50% - #{$regular-spacer});
-            @include respond-to(tablets-portrait) {
-              width: 100%;
-              padding-left: $xlarge-spacer;
-              padding-right: $xlarge-spacer;
-              margin-top: $small-spacer;
-              margin-bottom: 0;
+        .front-article-block {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .views-row {
+          flex: 0 0 48%;
+          background-color: #d8d8d8;
+          padding: 2em;
+          margin: 1em 0;
+          @include respond-to(tablets-portrait) {
+            flex: 0 0 100%;
+          }
+
+          * {
+            color: $dark-gray;
+          }
+
+          h2 {
+            font-size: inherit;
+            line-height: 1em;
+            margin-top: 0;
+          }
+
+          .block-title {
+            font-family: "RobotoSlab-Regular", serif;
+            font-size: 30px;
+          }
+
+          .content {
+            font-size: 22px;
+            font-family: Roboto-Regular, sans-serif;
+          }
+
+          .inner-content {
+            color: #3a3b3d;
+            font-size: 22px;
+            line-height: 30px;
+            font-family: Roboto-Regular,sans-serif;
+            margin-bottom: 30px;
+
+            a {
+              display: block;
+              font-family: Roboto-Regular,sans-serif;
+              font-size: 20px;
+              color: #787777!important;
+              font-weight: 700;
+              line-height: 26px;
+              letter-spacing: 0;
+              font-style: normal;
+              margin: 30px 0;
+            }
+          }
+
+          h2 span {
+            color: rgb(255, 80, 2);
+            font-family: "RobotoSlab-Regular", serif;
+            font-size: 35px;
+            line-height: 45px;
+          }
+
+          .btn-link a {
+            @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
+            @include align-center();
+            margin-top: $large-spacer;
+            margin-bottom: $xxlarge-spacer;
+            @include respond-to(phones-landscape) {
+              font-size: $font-size;
+              line-height: $large-font-size;
+            }
+            &:hover, &:focus {
+              color: darken($brand-color, 10%);
+            }
+            @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+            &:after {
               @include respond-to(phones-landscape) {
-                padding-left: $large-spacer;
-                padding-right: $large-spacer;
+                font-size: $font-size;
+                line-height: $medium-font-size;
               }
             }
           }
-          * {
-            color: $body-font-color;
-          }
+        }
+
+        .block.block-views {
           &.block-views-blockfront-article-block-front-article {
             margin-left: $regular-spacer*2;
             margin-right: $regular-spacer;
@@ -341,32 +401,10 @@ body {
               }
             }
           }
-          &.block-views-blockfront-blog-block-front-blog {
-            margin-left: $regular-spacer;
-            margin-right: $regular-spacer*2;
-            @include respond-to(tablets-landscape) {
-              margin-right: 0;
-              @include respond-to(tablets-portrait) {
-                margin-left: 0;
-                margin-right: 0;
-              }
-            }
-          }
-          .content-wrapper {
-            .block-title {
-              width: 100%;
-              color: $body-font-color;
-              font-family: $heading-font-serif;
-              font-size: $h3-font-size;
-              font-weight: $font-weight-bold;
-              line-height: 1.333;
-              margin: $small-spacer*4 0 $large-spacer;
-              @include respond-to(phones-landscape) {
-                font-size: $large-font-size;
-                line-height: $logo-font-size;
-                margin: $small-spacer*3 0;
-              }
-            }
+
+          article {
+
+            /*
             > .form-group {
               .front {
                 @include teaser-title();
@@ -387,28 +425,9 @@ body {
                     }
                   }
                 }
-                .btn-link {
-                  @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
-                  @include align-center();
-                  margin-top: $large-spacer;
-                  margin-bottom: $xxlarge-spacer;
-                  @include respond-to(phones-landscape) {
-                    font-size: $font-size;
-                    line-height: $large-font-size;
-                  }
-                  &:hover, &:focus {
-                    color: darken($brand-color, 10%);
-                  }
-                  @include arrows-link($brand-color, darken($brand-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
-                  &:after {
-                    @include respond-to(phones-landscape) {
-                      font-size: $font-size;
-                      line-height: $medium-font-size;
-                    }
-                  }
-                }
               }
             }
+            */
           }
         }
 
@@ -642,25 +661,7 @@ body {
     color: $brand-color!important;
   }
 
-  .inner-content {
-    color: #3a3b3d;
-    font-size: 22px;
-    line-height: 30px;
-    font-family: Roboto-Regular,sans-serif;
-    margin-bottom: 30px;
 
-    a {
-      display: block;
-      font-family: Roboto-Regular,sans-serif;
-      font-size: 20px;
-      color: #787777!important;
-      font-weight: 700;
-      line-height: 26px;
-      letter-spacing: 0;
-      font-style: normal;
-      margin: 30px 0;
-    }
-  }
 
   .btn-link {
     @include btn-link(35px, transparent, $brand-color, 18px, inline-flex);
