@@ -116,6 +116,7 @@
         "drupal/memcache": "^2.1",
         "drupal/metatag": "^1.4",
         "drupal/override_node_options": "^2.0",
+        "drupal/paragraphs": "^1.12",
         "drupal/pathauto": "^1.2",
         "drupal/purge": "^3.0@beta",
         "drupal/purge_users": "^1.9",

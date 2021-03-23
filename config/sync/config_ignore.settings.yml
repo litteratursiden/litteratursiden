@@ -7,7 +7,7 @@ ignored_config_entities:
   - litteratursiden.settings
   - lit_open_platform.settings
   - user_registrationpassword.mail
-  - ~block.block.views_block__content_by_user_block_1
+  - ~block.block.views_block__content_by_ user_block_1
   - ~block.block.views_block__content_by_user_block_2
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
