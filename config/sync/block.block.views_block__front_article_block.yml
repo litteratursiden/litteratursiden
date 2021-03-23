@@ -12,15 +12,15 @@ dependencies:
 id: views_block__front_article_block
 theme: litteratursiden
 region: content
-weight: -9
+weight: -7
 provider: null
 plugin: 'views_block:front_article-block_front_article'
 settings:
   id: 'views_block:front_article-block_front_article'
-  label: Artikel
+  label: 'Seneste artikler'
   provider: views
-  label_display: visible
-  views_label: Artikel
+  label_display: '0'
+  views_label: 'Seneste artikler'
   items_per_page: none
 visibility:
   request_path:
