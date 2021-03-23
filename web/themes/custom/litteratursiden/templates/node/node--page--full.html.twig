@@ -84,6 +84,10 @@ view_mode ? view_mode|clean_class,
       <div{{ content_attributes.addClass('content') }}>
         {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_block_reference') }}
       </div>
+      <div class="container no-padding flex-row flex-md-nowrap flex-stretch">
+        {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_child_newsletter') }}
+        {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_newsletter') }}
+      </div>
     </div>
   </div>
   <div class="accordion">

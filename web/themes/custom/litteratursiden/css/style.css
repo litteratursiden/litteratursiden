@@ -8613,211 +8613,6 @@ body {
     body.path-frontpage .main-container #articles-wrapper .block.block-views.block-views-blockfront-article-block-front-article {
       margin-left: 0;
       margin-right: 0; } }
-      body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form {
-        background-color: #3a3b3d;
-        margin-top: 15px;
-        margin-bottom: 30px;
-        width: calc(50% - 45px);
-        float: left;
-        padding-left: 50px;
-        padding-right: 35px;
-        margin-left: 30px; }
-        @media only screen and (max-width: 1199px) {
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form {
-            width: calc(50% - 15px);
-            margin-left: 0; } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) {
-    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form {
-      width: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
-      margin-top: 10px;
-      margin-bottom: 0;
-      margin-left: 0;
-      margin-right: 0; } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) and (max-width: 767px) {
-    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form {
-      padding-left: 20px;
-      padding-right: 20px; } }
-        body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper {
-          flex-wrap: wrap;
-          align-items: stretch;
-          height: 100%;
-          justify-content: flex-start; }
-          @media only screen and (max-width: 767px) {
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper {
-              flex-wrap: wrap;
-              align-content: flex-start;
-              height: auto; } }
-  @media only screen and (max-width: 767px) and (max-width: 480px) {
-    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper {
-      padding-top: 15px;
-      padding-bottom: 30px; } }
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col {
-            display: block;
-            float: left;
-            width: 100%;
-            padding: 0; }
-            @media only screen and (max-width: 767px) {
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col {
-                padding: 0; } }
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
-            font-family: "RobotoSlab-Regular", serif;
-            font-size: 45px;
-            color: #fff;
-            font-weight: bold;
-            line-height: 54px;
-            letter-spacing: 0px;
-            font-style: normal;
-            margin: 40px 0 20px; }
-            @media only screen and (max-width: 1199px) {
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
-                font-size: 35px; } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) {
-    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
-      font-size: 45px; } }
-  @media only screen and (max-width: 1199px) and (max-width: 991px) and (max-width: 767px) {
-    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
-      font-size: 30px;
-      line-height: 35px; } }
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title a, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title a span {
-              color: #ff5002; }
-          @media only screen and (max-width: 991px) {
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col {
-              margin-bottom: 20px; } }
-          @media only screen and (max-width: 991px) {
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form {
-              padding-left: 0; } }
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form:before, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form:after {
-            display: table;
-            content: " "; }
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form:after {
-            clear: both; }
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions {
-            display: inline-block; }
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields {
-            width: calc(100% - 100px);
-            position: relative;
-            margin-top: 0;
-            margin-bottom: 20px; }
-            @media only screen and (max-width: 480px) {
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields {
-                width: calc(100% - 65px);
-                margin-bottom: 0; } }
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email {
-              position: relative;
-              color: #3a3b3d; }
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email > label {
-                display: none; }
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email.active:after {
-                content: '';
-                position: absolute;
-                display: block;
-                bottom: -15px;
-                left: 50%;
-                margin-left: -20px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 20px 20px 0 20px;
-                border-color: #fff transparent transparent transparent;
-                z-index: 100; }
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control {
-                font-size: 20px;
-                padding: 15px;
-                padding-right: 10px;
-                height: 78px;
-                margin: 0;
-                width: 100%;
-                color: #3a3b3d; }
-                body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-webkit-input-placeholder {
-                  color: #979797;
-                  font-size: 20px;
-                  font-weight: normal; }
-                  @media only screen and (max-width: 480px) {
-                    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-webkit-input-placeholder {
-                      font-size: 14px; } }
-                body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-moz-placeholder {
-                  color: #979797;
-                  font-size: 20px;
-                  font-weight: normal; }
-                  @media only screen and (max-width: 480px) {
-                    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-moz-placeholder {
-                      font-size: 14px; } }
-                body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-moz-placeholder {
-                  color: #979797;
-                  font-size: 20px;
-                  font-weight: normal; }
-                  @media only screen and (max-width: 480px) {
-                    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-moz-placeholder {
-                      font-size: 14px; } }
-                body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-ms-input-placeholder {
-                  color: #979797;
-                  font-size: 20px;
-                  font-weight: normal; }
-                  @media only screen and (max-width: 480px) {
-                    body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-ms-input-placeholder {
-                      font-size: 14px; } }
-                @media only screen and (max-width: 480px) {
-                  body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control {
-                    height: 55px;
-                    font-size: 14px; } }
-          body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions {
-            float: right;
-            width: 100px; }
-            @media only screen and (max-width: 480px) {
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions {
-                width: 65px; } }
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions:before, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions:after {
-              display: table;
-              content: " "; }
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions:after {
-              clear: both; }
-            body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default {
-              min-width: auto;
-              display: block;
-              width: 80px;
-              line-height: 78px;
-              height: 80px;
-              padding: 0;
-              background-color: #fff;
-              font-weight: normal;
-              color: #3a3b3d;
-              border: 1px solid #fff;
-              border-radius: 50%;
-              font-size: 0;
-              text-align: center;
-              transition: all 0.2s ease-out;
-              margin: 0 0 0 auto; }
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:after, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:after {
-                content: "";
-                /* use !important to prevent issues with browser extensions that change fonts */
-                font-family: 'literatur-icons' !important;
-                speak: none;
-                font-style: normal;
-                font-weight: normal;
-                font-variant: normal;
-                text-transform: none;
-                /* Better Font Rendering =========== */
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-                line-height: 78px;
-                font-size: 32px;
-                color: #3a3b3d; }
-              body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:hover, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:focus, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:active, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:hover, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:focus, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:active {
-                text-decoration: none;
-                outline: none;
-                background-color: #e6e6e6;
-                border-color: #e6e6e6;
-                transition: all 0.2s ease-out; }
-              @media only screen and (max-width: 480px) {
-                body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default {
-                  width: 55px;
-                  line-height: 53px;
-                  height: 55px; }
-                  body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:after, body.path-frontpage .main-container #articles-wrapper .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:after {
-                    font-size: 20px;
-                    line-height: 53px; } }
       body.path-frontpage .main-container #articles-wrapper .block.block-facebook-feed-block {
         margin-top: 15px;
         margin-bottom: 30px;
@@ -8866,6 +8661,212 @@ body {
   @media only screen and (max-width: 1199px) and (max-width: 767px) {
     body.path-frontpage .main-container #articles-wrapper .block.block-facebook-feed-block .block-title {
       line-height: 36px; } }
+
+.mailchimp-signup-subscribe-form {
+  background-color: #3a3b3d;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: calc(50% - 45px);
+  float: left;
+  padding-left: 50px;
+  padding-right: 35px;
+  margin-left: 30px; }
+  @media only screen and (max-width: 1199px) {
+    .mailchimp-signup-subscribe-form {
+      width: calc(50% - 15px);
+      margin-left: 0; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .mailchimp-signup-subscribe-form {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 10px;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) and (max-width: 767px) {
+    .mailchimp-signup-subscribe-form {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  .mailchimp-signup-subscribe-form .content-wrapper {
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 100%;
+    justify-content: flex-start; }
+    @media only screen and (max-width: 767px) {
+      .mailchimp-signup-subscribe-form .content-wrapper {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: auto; } }
+  @media only screen and (max-width: 767px) and (max-width: 480px) {
+    .mailchimp-signup-subscribe-form .content-wrapper {
+      padding-top: 15px;
+      padding-bottom: 30px; } }
+    .mailchimp-signup-subscribe-form .content-wrapper .left-col, .mailchimp-signup-subscribe-form .content-wrapper .right-col {
+      display: block;
+      float: left;
+      width: 100%;
+      padding: 0; }
+      @media only screen and (max-width: 767px) {
+        .mailchimp-signup-subscribe-form .content-wrapper .left-col, .mailchimp-signup-subscribe-form .content-wrapper .right-col {
+          padding: 0; } }
+    .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
+      font-family: "RobotoSlab-Regular", serif;
+      font-size: 45px;
+      color: #fff;
+      font-weight: bold;
+      line-height: 54px;
+      letter-spacing: 0px;
+      font-style: normal;
+      margin: 40px 0 20px; }
+      @media only screen and (max-width: 1199px) {
+        .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
+          font-size: 35px; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) {
+    .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
+      font-size: 45px; } }
+  @media only screen and (max-width: 1199px) and (max-width: 991px) and (max-width: 767px) {
+    .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
+      font-size: 30px;
+      line-height: 35px; } }
+      .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title a, .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title a span {
+        color: #ff5002; }
+    @media only screen and (max-width: 991px) {
+      .mailchimp-signup-subscribe-form .content-wrapper .right-col {
+        margin-bottom: 20px; } }
+    @media only screen and (max-width: 991px) {
+      .mailchimp-signup-subscribe-form .content-wrapper .right-col form {
+        padding-left: 0; } }
+    .mailchimp-signup-subscribe-form .content-wrapper .right-col form:before, .mailchimp-signup-subscribe-form .content-wrapper .right-col form:after {
+      display: table;
+      content: " "; }
+    .mailchimp-signup-subscribe-form .content-wrapper .right-col form:after {
+      clear: both; }
+    .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions {
+      display: inline-block; }
+    .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields {
+      width: calc(100% - 100px);
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 20px; }
+      @media only screen and (max-width: 480px) {
+        .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields {
+          width: calc(100% - 65px);
+          margin-bottom: 0; } }
+      .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email {
+        position: relative;
+        color: #3a3b3d; }
+        .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email > label {
+          display: none; }
+        .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email.active:after {
+          content: '';
+          position: absolute;
+          display: block;
+          bottom: -15px;
+          left: 50%;
+          margin-left: -20px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 20px 0 20px;
+          border-color: #fff transparent transparent transparent;
+          z-index: 100; }
+        .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control {
+          font-size: 20px;
+          padding: 15px;
+          padding-right: 10px;
+          height: 78px;
+          margin: 0;
+          width: 100%;
+          color: #3a3b3d; }
+          .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-webkit-input-placeholder {
+            color: #979797;
+            font-size: 20px;
+            font-weight: normal; }
+            @media only screen and (max-width: 480px) {
+              .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-webkit-input-placeholder {
+                font-size: 14px; } }
+          .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-moz-placeholder {
+            color: #979797;
+            font-size: 20px;
+            font-weight: normal; }
+            @media only screen and (max-width: 480px) {
+              .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-moz-placeholder {
+                font-size: 14px; } }
+          .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-moz-placeholder {
+            color: #979797;
+            font-size: 20px;
+            font-weight: normal; }
+            @media only screen and (max-width: 480px) {
+              .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control::-moz-placeholder {
+                font-size: 14px; } }
+          .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-ms-input-placeholder {
+            color: #979797;
+            font-size: 20px;
+            font-weight: normal; }
+            @media only screen and (max-width: 480px) {
+              .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control:-ms-input-placeholder {
+                font-size: 14px; } }
+          @media only screen and (max-width: 480px) {
+            .mailchimp-signup-subscribe-form .content-wrapper .right-col form .mailchimp-newsletter-mergefields .form-type-email .form-control {
+              height: 55px;
+              font-size: 14px; } }
+    .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions {
+      float: right;
+      width: 100px; }
+      @media only screen and (max-width: 480px) {
+        .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions {
+          width: 65px; } }
+      .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions:before, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions:after {
+        display: table;
+        content: " "; }
+      .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions:after {
+        clear: both; }
+      .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default {
+        min-width: auto;
+        display: block;
+        width: 80px;
+        line-height: 78px;
+        height: 80px;
+        padding: 0;
+        background-color: #fff;
+        font-weight: normal;
+        color: #3a3b3d;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        font-size: 0;
+        text-align: center;
+        transition: all 0.2s ease-out;
+        margin: 0 0 0 auto; }
+        .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:after, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:after {
+          content: "";
+          /* use !important to prevent issues with browser extensions that change fonts */
+          font-family: 'literatur-icons' !important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          /* Better Font Rendering =========== */
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          line-height: 78px;
+          font-size: 32px;
+          color: #3a3b3d; }
+        .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:hover, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:focus, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:active, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:hover, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:focus, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:active {
+          text-decoration: none;
+          outline: none;
+          background-color: #e6e6e6;
+          border-color: #e6e6e6;
+          transition: all 0.2s ease-out; }
+        @media only screen and (max-width: 480px) {
+          .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default {
+            width: 55px;
+            line-height: 53px;
+            height: 55px; }
+            .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-primary:after, .mailchimp-signup-subscribe-form .content-wrapper .right-col form .form-actions .btn.btn-default:after {
+              font-size: 20px;
+              line-height: 53px; } }
 
 body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recent-reviews {
   margin-top: 30px; }
