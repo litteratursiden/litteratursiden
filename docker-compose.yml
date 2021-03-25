@@ -40,7 +40,7 @@ services:
       - .:/app:delegated
       - drush-cache:/root/.drush
 
-  nginx:
+  littnginx:
     image: nginx:latest
     networks:
       - app
@@ -62,7 +62,7 @@ services:
       - app
       - frontend
     depends_on:
-      - nginx
+      - littnginx
     environment:
       VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl
       VARNISH_SECRET: eca2b7c263eae74c0d746f147691e7ce

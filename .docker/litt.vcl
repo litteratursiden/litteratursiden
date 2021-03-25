@@ -9,7 +9,7 @@ import directors;
 # Default backend definition. Points to Apache, normally.
 # Apache is in this config on port 80.
 backend default {
-    .host = "nginx";
+    .host = "littnginx";
     .port = "80";
     .first_byte_timeout = 300s;
 }
