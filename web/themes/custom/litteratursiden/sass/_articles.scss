@@ -96,7 +96,7 @@
     }
 
     // Node Book overrides
-    &.book, &.group {
+    &.book, &.group, &.page{
       .social-block {
         .grow {
           @include respond-to(phones) {

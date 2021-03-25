@@ -90,14 +90,13 @@ view_mode ? view_mode|clean_class,
       </div>
     </div>
   </div>
-  <div class="accordion">
-    <div class="container">
-      <div class="right-col">
-        {% if content.group_additional_info %}
-          {{ content.group_additional_info }}
-        {% endif %}
-      </div>
+  <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      {% if content.group_additional_info %}
+        {{ content.group_additional_info }}
+      {% endif %}
     </div>
   </div>
   {{ content.field_block_reference }}
 </article>
+
