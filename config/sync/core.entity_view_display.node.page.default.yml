@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_block_reference
+    - field.field.node.page.field_dropdown_element
     - field.field.node.page.field_show_newsletter_signup
     - node.type.page
   module:
+    - entity_reference_revisions
     - text
     - user
 id: node.page.default
@@ -31,8 +33,26 @@ content:
     third_party_settings: {  }
     type: entity_reference_entity_view
     region: content
+  field_dropdown_element:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_show_newsletter_signup:
+    type: boolean
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      format: true-false
+      format_custom_true: ''
+      format_custom_false: ''
+    third_party_settings: {  }
 hidden:
-  field_show_newsletter_signup: true
   langcode: true
   links: true
   owner_full_name: true
