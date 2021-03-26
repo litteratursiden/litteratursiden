@@ -65,40 +65,30 @@
  *   in different view modes.
  */
 #}
-{% set classes = [
-node.bundle|clean_class,
-node.isPromoted() ? 'is-promoted',
-node.isSticky() ? 'is-sticky',
-not node.isPublished() ? 'is-unpublished',
-view_mode ? view_mode|clean_class,
-'clearfix',
-] %}
-<article{{ attributes.addClass(classes) }}>
-  <div class="container">
-    {{ title_prefix }}
-    <h2{{ title_attributes.addClass('title') }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-    {{ title_suffix }}
-    <div class="desktop-node-content">
-      <div{{ content_attributes.addClass('content') }}>
-        {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_block_reference', 'field_show_newsletter_signup') }}
-      </div>
-      {% if content.field_show_newsletter_signup['#items']['0'].value is defined and content.field_show_newsletter_signup['#items']['0'].value == 1 %}
-        <div class="container no-padding flex-row flex-md-nowrap flex-stretch">
-          {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_child_newsletter') }}
-          {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_newsletter') }}
-        </div>
-      {% endif %}
-    </div>
-  </div>
-  <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel panel-default">
-      {% if content.group_additional_info %}
-        {{ content.group_additional_info }}
-      {% endif %}
-    </div>
-  </div>
-  {{ content.field_block_reference }}
-</article>
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+    'topic',
+    'teaser'
+  ]
+%}
 
+<article{{ attributes.addClass(classes) }}>
+  <a href="{{ url }}">
+    <div class="title-holder">
+      {{ title_prefix }}
+      {% if not page %}
+        <h2>{{ label }}</h2>
+      {% endif %}
+      {{ title_suffix }}
+    </div>
+    <div class="content">
+      {{ content|without('links') }}
+    </div>
+  </a>
+</article>
