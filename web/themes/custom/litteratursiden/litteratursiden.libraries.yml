@@ -18,4 +18,7 @@ litteratursiden:
      - core/jquery
      - core/jquery.once
      - core/drupal
-         
+
+small-spots:
+  js:
+    js/small-spots-slider.js: {attributes: { type: "module" }}
