@@ -13,6 +13,7 @@ class SearchClient extends Client implements SearchClientInterface {
    * @inheritdoc
    */
   public function requestSearch(string $search, array $fields = ['pid', 'dcTitleFull', 'coverUrl42', 'creatorAut']): array {
+    $q = str_replace(' ',' AND ',trim($search)) . " AND term.language=Dansk AND term.type=Bog AND (term.accessType=physical OR term.accessType=online) NOT term.workType=movie NOT term.workType=article";
     $response = $this->request('POST', $this->buildUrl('search'), [
       'json' => [
         'pretty' => TRUE,

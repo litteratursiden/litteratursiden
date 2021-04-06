@@ -102,8 +102,11 @@ class LitNodeSelection extends NodeSelection {
         $image = $entity->get('field_book_cover_image')->first();
 
         if ($image && $fid = $image->get('target_id')->getValue()) {
-          $uri = File::load($fid)->getFileUri();
-          $theme['#image'] = ImageStyle::load('search_autocomplete')->buildUrl($uri);
+          $file = File::load($fid);
+          if (!is_null($file)) {
+            $uri = $file->getFileUri();
+            $theme['#image'] = ImageStyle::load('search_autocomplete')->buildUrl($uri);
+          }
         }
         else {
           if ($book_default_image) {

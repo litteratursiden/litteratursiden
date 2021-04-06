@@ -63,6 +63,57 @@ class LitCoverServiceCommands extends DrushCommands {
   }
 
   /**
+   * Fix books with broken cover image references.
+   *
+   * @usage lit_cover_service:fix_references
+   *
+   * @command lit_cover_service:fix_references
+   * @aliases fix_references
+   */
+  public function fixMissingReferences() {
+    $startBatch = 0;
+
+    $this->loggerChannelFactory->get('lit_cover_service')->info('Fix broken/missing cover references started');
+
+    $nids = $this->getBrokenReferencesNids();
+    $operations = [];
+
+    if (!empty($nids)) {
+      $chunks = array_chunk($nids, self::BATCH_SIZE);
+
+      $numOperations = count($nids);
+      $batchId = $startBatch;
+      $batchTotal = count($chunks);
+
+      $chunks = array_slice($chunks, $startBatch);
+      foreach ($chunks as $batchNids) {
+        $operations[] = [
+          '\Drupal\lit_cover_service\Service\BatchService::missingCoverReferences',
+          [
+            $batchId,
+            $batchTotal,
+            $batchNids
+          ],
+        ];
+        ++$batchId;
+      }
+    }
+    else {
+      $this->logger()->warning('No nodes of this type @type', ['@type' => 'book']);
+    }
+
+    $batch = [
+      'title' => t('Fixed broken cover references from @num "book" node(s)', ['@num' => $numOperations]),
+      'operations' => $operations,
+      'finished' => '\Drupal\lit_cover_service\Service\BatchService::batchFinished',
+    ];
+    batch_set($batch);
+    drush_backend_batch_process();
+    $this->loggerChannelFactory->get('lit_cover_service')->info('Broken cover references batch operations end.');
+    $this->logger()->success("Fixed broken cover references");
+  }
+
+  /**
    * Batch delete cover images from 'Books'
    *
    * This command is intended as a one time clean up command for migrating
@@ -270,6 +321,30 @@ class LitCoverServiceCommands extends DrushCommands {
     catch (\Exception $e) {
       $this->logger->error('Error found @e', ['@e' => $e]);
     }
+  }
+
+  /**
+   * Find all node id's of books with broken references.
+   *
+   * @return array
+   *   Array with node id's found.
+   */
+  private function getBrokenReferencesNids(): array
+  {
+    $database = \Drupal::database();
+    $query = $database->select('node__field_book_cover_image', 'bci');
+    $query->fields('bci', ['entity_id']);
+    $query->leftJoin('file_managed', 'fm', 'fm.fid = bci.field_book_cover_image_target_id');
+    $query->isNull('fm.uri');
+
+    $result = $query->execute();
+
+    $nids = $result->fetchAll();
+    $nids = array_map(function ($item) {
+      return $item->entity_id;
+    }, $nids);
+
+    return $nids;
   }
 
   /**
