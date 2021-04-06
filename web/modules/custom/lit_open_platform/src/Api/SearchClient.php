@@ -10,15 +10,23 @@ namespace Drupal\lit_open_platform\Api;
 class SearchClient extends Client implements SearchClientInterface {
 
   /**
+   * Types to search for in open search
+   */
+  private const MATERIAL_TYPES = ['bog', 'billedbog'];
+
+  /**
    * @inheritdoc
    */
   public function requestSearch(string $search, array $fields = ['pid', 'dcTitleFull', 'coverUrl42', 'creatorAut']): array {
-    $q = str_replace(' ',' AND ',trim($search)) . " AND term.language=Dansk AND term.type=Bog AND (term.accessType=physical OR term.accessType=online) NOT term.workType=movie NOT term.workType=article";
+    $types = implode(' OR ', array_map(function ($type) {
+      return 'term.type=' . $type;
+    }, self::MATERIAL_TYPES));
+
     $response = $this->request('POST', $this->buildUrl('search'), [
       'json' => [
         'pretty' => TRUE,
         'access_token' => $this->getAccessToken()['access_token'],
-        'q' => str_replace(' ',' AND ',trim($search)) . " AND term.language=Dansk AND term.type=Bog AND (term.accessType=physical OR term.accessType=online) NOT term.workType=movie NOT term.workType=article",
+        'q' => str_replace(' ',' AND ',trim($search)) . " AND term.language=Dansk AND (" . $types .") AND (term.accessType=physical OR term.accessType=online) NOT term.workType=movie NOT term.workType=article",
         'fields' => $fields,
       ],
     ]);
