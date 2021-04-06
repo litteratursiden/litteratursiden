@@ -383,8 +383,10 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
 }
 //
 // ACCORDIONS
-@mixin accordion($accordion-color:$accordion-list-bg,  $inverse-color: $inverse-text-color ) {
-  .field-group-accordion-wrapper {
+@mixin accordion($accordion-color:$accordion-list-bg,  $inverse-color: $inverse-text-color) {
+  background: $inverse-text-color;
+
+  .field-group-accordion-wrapper, .accordion-wrapper {
     margin-bottom: $xxlarge-spacer;
     @include respond-to(tablets-portrait) {
       margin-bottom: $large-spacer;
@@ -393,8 +395,9 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
       }
     }
 
-    .field-group-format-toggler.ui-accordion-header {
+    .field-group-format-toggler.ui-accordion-header, .accordion-item {
       padding: 0;
+      position: relative;
       margin: 0 0 1px;
       border: 0 none;
       line-height: $accordion-list-height;
@@ -405,7 +408,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
         line-height: $accordion-list-height*0.79;
       }
       &.ui-state-active {
-        > .ui-accordion-header-icon {
+        .ui-accordion-header-icon {
           &:after {
             -webkit-transform: rotateX(180deg);
             -moz-transform: rotateX(180deg);
@@ -415,7 +418,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
             @include transition(all 0.3s ease-in-out);
           }
         }
-        > a {
+        a {
           background-color: $brand-color;
         }
       }
@@ -450,7 +453,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
           }
         }
       }
-      > a {
+      a {
         line-height: $accordion-list-height;
         background-color: $accordion-color;
         @include transition(all 0.3s ease-in);
@@ -474,7 +477,8 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
         }
       }
     }
-    .field-group-format-wrapper {
+    .field-group-format-wrapper,
+    .collapse-content {
       border-color: transparent;
       background: none;
       background-color: transparent;

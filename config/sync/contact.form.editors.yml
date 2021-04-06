@@ -6,6 +6,7 @@ id: editors
 label: 'Spørg redaktionen'
 recipients:
   - litteratursiden@mkb.aarhus.dk
+  - thvgl@vejle.dk
 reply: ''
 weight: 1
 message: "Tak for din mail.\r\n\r\nVi vender tilbage til dig så hurtigt som muligt."

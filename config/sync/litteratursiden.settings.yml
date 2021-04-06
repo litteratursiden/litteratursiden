@@ -21,7 +21,7 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-background_path: 'public://stine_pilgaard_topbilledei_0.jpg'
+background_path: 'public://3435099-kirkegaard-kopi_1.jpg'
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'

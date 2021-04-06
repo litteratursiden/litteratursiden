@@ -1,0 +1,10 @@
+uuid: 48ce793b-fba2-4528-8bdb-4160ec20bf96
+langcode: da
+status: true
+dependencies: {  }
+id: dropdown_element
+label: 'Dropdown element'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

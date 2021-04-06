@@ -174,3 +174,65 @@ table.sticky-header {
 .spot .node-type {
   display: none;
 }
+
+.page-node-type-page .content {
+  .tns-controls {
+    outline: 0;
+  }
+  .tns-liveregion {
+    display: none;
+  }
+
+  .field--name-field-small-spots {
+
+    > .tns-item {
+      // Override inline styling.
+      width: calc(33%)!important;
+    }
+
+    .article-wrapper {
+      padding: 0 1em;
+    }
+
+    article {
+      background-color: #d8d8d8;
+      padding: 0;
+      width: 100%;
+
+      &:hover {
+        background-color: $brand-color;
+        color: $white;
+        transition: all .2s ease-out;
+
+        h2 {
+          color: $white;
+          &:after {
+           display: inline-block;
+          }
+        }
+      }
+
+      h2:after {
+        display: none;
+      }
+    }
+    h2 {
+      display: block;
+      height: 130px;
+      padding: 20px 15px;
+      font-size: 24px;
+      line-height: 35px;
+      margin: 0;
+
+      @include arrows-link($inverse-text-color, $inverse-text-color, $xlarge-spacer, $large-font-size, inline-block, static, $large-spacer, $large-spacer);
+
+      span {
+        color: inherit;
+      }
+    }
+    .field--type-image img.img-responsive {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
