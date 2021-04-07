@@ -12,14 +12,14 @@ class SearchClient extends Client implements SearchClientInterface {
   /**
    * Types to search for in open search
    */
-  private const MATERIAL_TYPES = ['bog', 'billedbog'];
+  private const MATERIAL_TYPES = ['bog', 'billedbog', 'graphic novel', 'tegneserie'];
 
   /**
    * @inheritdoc
    */
   public function requestSearch(string $search, array $fields = ['pid', 'dcTitleFull', 'coverUrl42', 'creatorAut']): array {
     $types = implode(' OR ', array_map(function ($type) {
-      return 'term.type=' . $type;
+      return 'term.type="' . $type . '"';
     }, self::MATERIAL_TYPES));
 
     $response = $this->request('POST', $this->buildUrl('search'), [
