@@ -196,10 +196,13 @@ class Client {
   /**
    * Send a request.
    *
-   * @param string $url
    * @param string $method
+   * @param string $uri
    * @param array $options
-   * @return mixed
+   *
+   * @return array|mixed
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   protected function request(string $method, string $uri, array $options = []) {
     $client = new RequestClient();

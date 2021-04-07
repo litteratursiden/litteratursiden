@@ -163,6 +163,44 @@ class BatchService implements BatchServiceInterface {
   }
 
   /**
+   * Fix missing covers references callback.
+   *
+   * @param int $batchId
+   *   Id of the batch
+   * @param $batchTotal
+   *   Total number of batch operations
+   * @param array $nids
+   *   The nids to process
+   * @param object $context
+   *   Context for operations
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  public function missingCoverReferences($batchId, $batchTotal, $nids, &$context)
+  {
+    $context['message'] = t('Processing batch @batchId of @batchTotal', [
+      '@batchId' => $batchId,
+      '@batchTotal' => $batchTotal,
+    ]);
+
+    $nodes = Node::loadMultiple($nids);
+    foreach ($nodes as $node) {
+      $node->set('field_book_cover_image', NULL);
+      self::setImageFile($node);
+      $node->save();
+
+      // Store some result for post-processing in the finished callback.
+      $context['results'][] = $node->nid;
+    }
+
+    // Inform the batch engine that we are not finished,
+    // and provide an estimation of the completion level we reached.
+    if ($batchId >= $batchTotal) {
+      $context['finished'] = $batchTotal / $batchId;
+    }
+  }
+
+  /**
    * Batch Finished callback.
    *
    * @param bool $success
