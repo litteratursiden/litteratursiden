@@ -22,3 +22,5 @@ litteratursiden:
 small-spots:
   js:
     js/small-spots-slider.js: {attributes: { type: "module" }}
+  dependencies:
+    - lit_slider/lit_slider
