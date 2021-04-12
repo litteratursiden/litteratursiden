@@ -1,31 +1,30 @@
-uuid: 3ed25962-4fae-40cb-b6e3-b6c532d44ae0
-langcode: da
+uuid: 88dadff1-2cfa-495b-91b1-9425754f8224
+langcode: en
 status: true
 dependencies:
   config:
-    - views.view.reviews_by_user
+    - views.view.front_blog
   module:
     - system
     - views
   theme:
     - litteratursiden
-id: views_block__reviews_by_user_block_1
+id: views_block__front_blog_block_front_blog
 theme: litteratursiden
 region: content
-weight: -6
+weight: -10
 provider: null
-plugin: 'views_block:reviews_by_user-block_1'
+plugin: 'views_block:front_blog-block_front_blog'
 settings:
-  id: 'views_block:reviews_by_user-block_1'
-  label: ''
+  id: 'views_block:front_blog-block_front_blog'
+  label: Blog
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: Blog
   items_per_page: none
-  context_mapping: {  }
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*'
+    pages: '<front>'
     negate: false
     context_mapping: {  }

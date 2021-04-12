@@ -10,12 +10,12 @@ dependencies:
 id: mailchimptilmeldingsformularsubscribetochildrennewsletter
 theme: litteratursiden
 region: content
-weight: 3
+weight: 1
 provider: null
 plugin: 'mailchimp_signup_subscribe_block:subscribe_to_child_newsletter'
 settings:
   id: 'mailchimp_signup_subscribe_block:subscribe_to_child_newsletter'
-  label: 'Få vores nyhedsbrev om børnebøger'
+  label: 'Få vores børnenyhedsbrev'
   provider: mailchimp_signup
   label_display: '0'
 visibility:

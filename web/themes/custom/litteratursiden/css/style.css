@@ -7963,6 +7963,8 @@ table.sticky-header {
   background-color: #d8d8d8;
   padding: 0;
   width: 100%; }
+  .page-node-type-page .content .field--name-field-small-spots article > a {
+    width: 100%; }
   .page-node-type-page .content .field--name-field-small-spots article:hover {
     background-color: #ff5002;
     color: #fff;
@@ -7971,6 +7973,9 @@ table.sticky-header {
       color: #fff; }
       .page-node-type-page .content .field--name-field-small-spots article:hover h2:after {
         display: inline-block; }
+  .page-node-type-page .content .field--name-field-small-spots article .content {
+    min-height: 126px;
+    background: #3a3b3d; }
   .page-node-type-page .content .field--name-field-small-spots article h2:after {
     display: none; }
 
