@@ -55,23 +55,27 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass(classes  ) }} id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel">
-        <div class="book-additional-info effect-none field-group-accordion-wrapper">
-          {% for key, item in items %}
-            <h3 class="field-group-format-toggler accordion-item panel-heading" role="tab" id="heading--{{ key }}">
-              <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
-              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse--{{ key }}" aria-expanded="true" aria-controls="collapse--{{ key }}">
-                {{ item.content['#paragraph'].field_dropdown_title.value|raw }}
-              </a>
-            </h3>
-            <div id="collapse--{{ key }}" class="panel-collapse collapse collapse-content book-review field-group-format-wrapper" role="tabpanel" aria-labelledby="heading--{{ key }}">
-              {{ item.content['#paragraph'].field_dropdown_content.value|raw }}
-            </div>
-          {% endfor %}
+    {% if items|length > 0 %}
+      <div{{ attributes.addClass(classes  ) }} id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel">
+          <div class="book-additional-info effect-none field-group-accordion-wrapper">
+            {% for key, item in items %}
+              {% if item.content['#paragraph'].field_dropdown_title.value is not empty %}
+                <h3 class="field-group-format-toggler accordion-item panel-heading" role="tab" id="heading--{{ key }}">
+                  <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse--{{ key }}" aria-expanded="true" aria-controls="collapse--{{ key }}">
+                    {{ item.content['#paragraph'].field_dropdown_title.value|raw }}
+                  </a>
+                </h3>
+                <div id="collapse--{{ key }}" class="panel-collapse collapse collapse-content book-review field-group-format-wrapper" role="tabpanel" aria-labelledby="heading--{{ key }}">
+                  {{ item.content['#paragraph'].field_dropdown_content.value|raw }}
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
       </div>
-    </div>
+    {% endif %}
   {% else %}
     {% for item in items %}
       <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>

@@ -8770,6 +8770,14 @@ body {
     align-items: stretch;
     height: 100%;
     justify-content: flex-start; }
+    .mailchimp-signup-subscribe-form .content-wrapper .left-col, .mailchimp-signup-subscribe-form .content-wrapper .right-col {
+      display: block;
+      float: left;
+      width: 100% !important;
+      padding: 0; }
+      @media only screen and (max-width: 767px) {
+        .mailchimp-signup-subscribe-form .content-wrapper .left-col, .mailchimp-signup-subscribe-form .content-wrapper .right-col {
+          padding: 0; } }
     @media only screen and (max-width: 767px) {
       .mailchimp-signup-subscribe-form .content-wrapper {
         flex-wrap: wrap;
@@ -8779,14 +8787,6 @@ body {
     .mailchimp-signup-subscribe-form .content-wrapper {
       padding-top: 15px;
       padding-bottom: 30px; } }
-    .mailchimp-signup-subscribe-form .content-wrapper .left-col, .mailchimp-signup-subscribe-form .content-wrapper .right-col {
-      display: block;
-      float: left;
-      width: 100%;
-      padding: 0; }
-      @media only screen and (max-width: 767px) {
-        .mailchimp-signup-subscribe-form .content-wrapper .left-col, .mailchimp-signup-subscribe-form .content-wrapper .right-col {
-          padding: 0; } }
     .mailchimp-signup-subscribe-form .content-wrapper .left-col .block-title {
       font-family: "RobotoSlab-Regular", serif;
       font-size: 45px;

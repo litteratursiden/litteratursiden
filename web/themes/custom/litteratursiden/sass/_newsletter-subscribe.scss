@@ -32,6 +32,18 @@
     align-items: stretch;
     height: 100%;
     justify-content: flex-start;
+
+    .left-col, .right-col {
+      display: block;
+      float: left;
+      width: 100%!important;
+      padding: 0;
+
+      @include respond-to(phones-landscape) {
+        padding: 0;
+      }
+    }
+
     @include respond-to(phones-landscape) {
       flex-wrap: wrap;
       align-content: flex-start;
@@ -39,15 +51,6 @@
       @include respond-to(phones) {
         padding-top: $regular-spacer;
         padding-bottom: $xlarge-spacer;
-      }
-    }
-    .left-col, .right-col {
-      display: block;
-      float: left;
-      width: 100%;
-      padding: 0;
-      @include respond-to(phones-landscape) {
-        padding: 0;
       }
     }
     .left-col {
