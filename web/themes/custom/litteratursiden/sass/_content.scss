@@ -199,6 +199,10 @@ table.sticky-header {
       padding: 0;
       width: 100%;
 
+      > a {
+        width: 100%;
+      }
+
       &:hover {
         background-color: $brand-color;
         color: $white;
@@ -210,6 +214,11 @@ table.sticky-header {
            display: inline-block;
           }
         }
+      }
+
+      .content {
+        min-height: 126px;
+        background: #3a3b3d;
       }
 
       h2:after {

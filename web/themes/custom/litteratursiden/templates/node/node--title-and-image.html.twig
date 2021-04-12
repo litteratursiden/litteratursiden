@@ -88,7 +88,15 @@
       {{ title_suffix }}
     </div>
     <div class="content">
-      {{ content|without('links') }}
+      {{ content.field_analysis_spotbox_image }}
+      {{ content.field_review_spotbox_image }}
+      {{ content.field_article_cover_image }}
+      {{ content.field_blog_cover_image }}
+      {{ content.field_book_spotbox_image }}
+      {{ content.field_book_list_spotbox_image }}
+      {{ content.field_author_portrait_image }}
+      {{ content.field_interview_images }}
+      {{ content.field_topic_spotbox_image }}
     </div>
   </a>
 </article>
