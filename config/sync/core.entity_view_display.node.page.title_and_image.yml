@@ -1,9 +1,9 @@
-uuid: 0c118776-48c4-4266-881e-fd7dfce24547
+uuid: 01085894-6771-410c-8027-2a9fb607b8bb
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.front
+    - core.entity_view_mode.node.title_and_image
     - field.field.node.page.body
     - field.field.node.page.field_block_reference
     - field.field.node.page.field_dropdown_element
@@ -11,34 +11,26 @@ dependencies:
     - field.field.node.page.field_small_spots
     - node.type.page
   module:
-    - text
     - user
-id: node.page.front
+id: node.page.title_and_image
 targetEntityType: node
 bundle: page
-mode: front
+mode: title_and_image
 content:
-  body:
-    label: hidden
-    type: text_trimmed
+  owner_portrait:
     weight: 0
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   field_block_reference: true
   field_dropdown_element: true
   field_show_newsletter_signup: true
   field_small_spots: true
   langcode: true
+  links: true
   owner_full_name: true
-  owner_portrait: true
   posted: true
   search_api_excerpt: true
   social_media: true

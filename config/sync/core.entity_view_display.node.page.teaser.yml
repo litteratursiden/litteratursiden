@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_block_reference
     - field.field.node.page.field_dropdown_element
     - field.field.node.page.field_show_newsletter_signup
+    - field.field.node.page.field_small_spots
     - node.type.page
   module:
     - text
@@ -29,6 +30,7 @@ hidden:
   field_block_reference: true
   field_dropdown_element: true
   field_show_newsletter_signup: true
+  field_small_spots: true
   langcode: true
   links: true
   owner_full_name: true

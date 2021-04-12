@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.page.field_block_reference
     - field.field.node.page.field_dropdown_element
     - field.field.node.page.field_show_newsletter_signup
+    - field.field.node.page.field_small_spots
     - node.type.page
   module:
     - paragraphs
@@ -35,7 +36,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_block_reference:
-    weight: 11
+    weight: 12
     settings:
       match_operator: CONTAINS
       size: 60
@@ -46,7 +47,7 @@ content:
     region: content
   field_dropdown_element:
     type: entity_reference_paragraphs
-    weight: 26
+    weight: 14
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -57,11 +58,21 @@ content:
     third_party_settings: {  }
     region: content
   field_show_newsletter_signup:
-    weight: 12
+    weight: 11
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
+    region: content
+  field_small_spots:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select

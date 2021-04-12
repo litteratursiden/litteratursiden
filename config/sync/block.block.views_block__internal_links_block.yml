@@ -13,7 +13,7 @@ dependencies:
 id: views_block__internal_links_block
 theme: litteratursiden
 region: content
-weight: -6
+weight: -8
 provider: null
 plugin: 'views_block:internal_links-internal_links_block'
 settings:
