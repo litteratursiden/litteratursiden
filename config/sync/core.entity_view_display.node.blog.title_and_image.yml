@@ -1,0 +1,57 @@
+uuid: d9fc477e-427c-4e60-9597-573010e2a1c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.title_and_image
+    - field.field.node.blog.field_block_reference
+    - field.field.node.blog.field_blog_body
+    - field.field.node.blog.field_blog_comments
+    - field.field.node.blog.field_blog_cover_image
+    - field.field.node.blog.field_blog_external_link
+    - field.field.node.blog.field_blog_files
+    - field.field.node.blog.field_blog_general_tags
+    - field.field.node.blog.field_blog_internal_link
+    - field.field.node.blog.field_blog_literature_type
+    - field.field.node.blog.field_blog_message_flag
+    - field.field.node.blog.field_teaser
+    - image.style.topic_teaser
+    - node.type.blog
+  module:
+    - image
+    - user
+id: node.blog.title_and_image
+targetEntityType: node
+bundle: blog
+mode: title_and_image
+content:
+  field_blog_cover_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: topic_teaser
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_block_reference: true
+  field_blog_body: true
+  field_blog_comments: true
+  field_blog_external_link: true
+  field_blog_files: true
+  field_blog_general_tags: true
+  field_blog_internal_link: true
+  field_blog_literature_type: true
+  field_blog_message_flag: true
+  field_teaser: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  search_api_excerpt: true
+  social_media: true

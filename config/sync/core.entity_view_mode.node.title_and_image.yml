@@ -1,0 +1,10 @@
+uuid: 7303df46-06ca-4079-9ced-30b002674fd5
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.title_and_image
+label: 'Title and image'
+targetEntityType: node
+cache: true

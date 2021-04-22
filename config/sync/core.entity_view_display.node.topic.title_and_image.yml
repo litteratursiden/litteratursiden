@@ -1,0 +1,59 @@
+uuid: c0405d09-a0fc-4608-823c-f57d0dc137d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.title_and_image
+    - field.field.node.topic.field_block_reference
+    - field.field.node.topic.field_teaser
+    - field.field.node.topic.field_topic_body
+    - field.field.node.topic.field_topic_comments
+    - field.field.node.topic.field_topic_cover_image
+    - field.field.node.topic.field_topic_excerpt
+    - field.field.node.topic.field_topic_files
+    - field.field.node.topic.field_topic_general_tags
+    - field.field.node.topic.field_topic_internal_link
+    - field.field.node.topic.field_topic_link_external
+    - field.field.node.topic.field_topic_spotbox_image
+    - field.field.node.topic.field_topic_theme_body_text
+    - image.style.topic_teaser
+    - node.type.topic
+  module:
+    - image
+    - user
+id: node.topic.title_and_image
+targetEntityType: node
+bundle: topic
+mode: title_and_image
+content:
+  field_topic_spotbox_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: topic_teaser
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_block_reference: true
+  field_teaser: true
+  field_topic_body: true
+  field_topic_comments: true
+  field_topic_cover_image: true
+  field_topic_excerpt: true
+  field_topic_files: true
+  field_topic_general_tags: true
+  field_topic_internal_link: true
+  field_topic_link_external: true
+  field_topic_theme_body_text: true
+  flag_bookmark: true
+  flag_like: true
+  flag_notifications: true
+  langcode: true
+  links: true
+  owner_full_name: true
+  owner_portrait: true
+  posted: true
+  search_api_excerpt: true
+  social_media: true

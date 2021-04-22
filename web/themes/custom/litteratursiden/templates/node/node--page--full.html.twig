@@ -82,18 +82,23 @@ view_mode ? view_mode|clean_class,
     {{ title_suffix }}
     <div class="desktop-node-content">
       <div{{ content_attributes.addClass('content') }}>
-        {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_block_reference') }}
+        {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_block_reference', 'field_show_newsletter_signup') }}
       </div>
+      {% if content.field_show_newsletter_signup['#items']['0'].value is defined and content.field_show_newsletter_signup['#items']['0'].value == 1 %}
+        <div class="no-padding flex-row flex-md-nowrap flex-stretch">
+          {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_child_newsletter') }}
+          {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_newsletter') }}
+        </div>
+      {% endif %}
     </div>
   </div>
-  <div class="accordion">
-    <div class="container">
-      <div class="right-col">
-        {% if content.group_additional_info %}
-          {{ content.group_additional_info }}
-        {% endif %}
-      </div>
+  <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+      {% if content.group_additional_info %}
+        {{ content.group_additional_info }}
+      {% endif %}
     </div>
   </div>
   {{ content.field_block_reference }}
 </article>
+

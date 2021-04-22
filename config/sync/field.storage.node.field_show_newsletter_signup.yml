@@ -1,0 +1,18 @@
+uuid: bc6cb3f6-ff7a-4cbe-8e3b-9953d0b6dcd2
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_show_newsletter_signup
+field_name: field_show_newsletter_signup
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

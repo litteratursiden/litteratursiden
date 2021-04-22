@@ -1,0 +1,32 @@
+uuid: 05152d68-c818-4084-b356-c48912751fc4
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.dropdown_element.field_dropdown_content
+    - field.field.paragraph.dropdown_element.field_dropdown_title
+    - paragraphs.paragraphs_type.dropdown_element
+  module:
+    - text
+id: paragraph.dropdown_element.default
+targetEntityType: paragraph
+bundle: dropdown_element
+mode: default
+content:
+  field_dropdown_content:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dropdown_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true
