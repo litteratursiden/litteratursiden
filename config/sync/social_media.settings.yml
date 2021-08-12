@@ -67,6 +67,39 @@ social_media:
     img: ''
     enable_forward: 0
     show_forward: '1'
+  pinterest:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
+  whatsapp:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
+  print:
+    enable: 0
+    api_url: ''
+    api_event: href
+    drupalSettings: ''
+    library: ''
+    text: ''
+    default_img: 0
+    img: ''
+    weight: ''
+    attributes: ''
 langcode: da
 _core:
   default_config_hash: qCSA11QHF4Sm_5gsBwSYn7d2LUmRv5Z-mkvtmP2b4sU
