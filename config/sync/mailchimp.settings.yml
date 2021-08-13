@@ -9,3 +9,4 @@ langcode: da
 enable_connected: false
 connected_id: null
 connected_paths: null
+api_timeout: 10

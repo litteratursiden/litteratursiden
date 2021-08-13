@@ -98,8 +98,6 @@ permissions:
   - 'edit own topic content'
   - 'edit terms in general_tags'
   - 'link to any page'
-  - 'manipulate all entityqueues'
-  - 'manipulate entityqueues'
   - 'override all authored by option'
   - 'override article published option'
   - 'override author_portrait published option'

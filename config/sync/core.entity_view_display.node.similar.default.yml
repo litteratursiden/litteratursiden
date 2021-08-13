@@ -95,4 +95,3 @@ hidden:
   field_similar_spotbox_image: true
   langcode: true
   owner_full_name: true
-  search_api_excerpt: true

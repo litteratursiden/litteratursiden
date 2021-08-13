@@ -10,7 +10,6 @@ dependencies:
     - flag
     - node
     - user
-    - view_unpublished
 _core:
   default_config_hash: vS-Njp41DTsjmwXi4MWQZCK77rWjpcs4DMe3x3r6YmY
 id: flag_bookmark

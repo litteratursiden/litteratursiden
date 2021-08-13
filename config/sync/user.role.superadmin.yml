@@ -189,8 +189,6 @@ permissions:
   - 'grant simple_oauth codes'
   - 'import configuration'
   - 'link to any page'
-  - 'manipulate all entityqueues'
-  - 'manipulate entityqueues'
   - 'never autoplay videos'
   - 'notify of path changes'
   - 'override analysis authored by option'

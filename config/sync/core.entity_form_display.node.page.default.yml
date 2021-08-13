@@ -5,12 +5,8 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_block_reference
-    - field.field.node.page.field_dropdown_element
-    - field.field.node.page.field_show_newsletter_signup
-    - field.field.node.page.field_small_spots
     - node.type.page
   module:
-    - paragraphs
     - path
     - scheduler
     - text
@@ -26,7 +22,6 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
-      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -36,41 +31,12 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_block_reference:
-    weight: 12
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_dropdown_element:
-    type: entity_reference_paragraphs
-    weight: 14
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_show_newsletter_signup:
-    weight: 11
-    settings:
-      display_label: true
-    third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
-  field_small_spots:
     weight: 10
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
@@ -104,7 +70,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
