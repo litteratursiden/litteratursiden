@@ -194,9 +194,6 @@
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
         "patches": {
-            "drupal/video_embed_html5": {
-              "add m4v format as mp4": "patches/video_embed_html5/m4v-format.patch"
-            },
             "drupal/search_api_solr": {
                 "grouping fix": "patches/search_api_solr/Issue-2900410-by-stdio-estoyausente-Error-when-using.patch"
             },
