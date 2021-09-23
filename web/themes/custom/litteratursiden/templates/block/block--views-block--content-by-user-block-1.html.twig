@@ -55,14 +55,15 @@
 {% set user_full_name = user['#user'].field_user_full_name[0].value %}
 
 <section{{ attributes.addClass(classes) }}>
-  {% if label %}
-    <div class="content-wrapper">
-      {{ title_prefix }}
-      q<h2 class="block-title">{{ 'Latest content by @user'|t({ '@user': user_full_name }) }}</h2>
-      {{ title_suffix }}
-    </div>
+  {% if drupal_view_result('content_by_user', 'block_1') is not empty %}
+    {% if label %}
+      <div class="content-wrapper">
+        {{ title_prefix }}
+        <h2 class="block-title">{{ 'Content by @user'|t({ '@user': user_full_name }) }}</h2>
+        {{ title_suffix }}
+      </div>
+    {% endif %}
   {% endif %}
-
   {% block content %}
     {{ content }}
   {% endblock %}

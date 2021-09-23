@@ -9407,6 +9407,69 @@ body.path-frontpage .main-container .block-views-blockrecent-reviews-block-recen
     margin-bottom: 0;
     margin-top: -20px; }
 
+.book-list .node-all {
+  display: none; }
+
+.book-list .read-more {
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 33px;
+  height: 35px;
+  display: inline-flex;
+  color: #fff !important;
+  font-size: 18px;
+  font-family: "Oswald-Regular", sans-serif;
+  letter-spacing: 0px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .book-list .read-more {
+      font-size: 14px;
+      line-height: 20px; } }
+  .book-list .read-more:hover, .book-list .read-more:focus {
+    color: #e6e6e6 !important; }
+  .book-list .read-more:hover, .book-list .read-more:focus {
+    color: #e6e6e6;
+    transition: all 0.2s ease-out; }
+    .book-list .read-more:hover:after, .book-list .read-more:focus:after {
+      color: #e6e6e6; }
+  .book-list .read-more:after {
+    content: "";
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'literatur-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    position: initial;
+    right: 20px;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    top: 15px;
+    font-size: 15px;
+    color: #fff;
+    transition: all 0.2s ease-out; }
+    @media only screen and (max-width: 767px) {
+      .book-list .read-more:after {
+        font-size: 14px; } }
+  @media only screen and (max-width: 767px) {
+    .book-list .read-more:after {
+      font-size: 14px;
+      line-height: 16px; } }
+
 .block-views-blockcontent-by-user-block-1,
 .block-views-blockcontent-by-user-block-2,
 .block-views-blockreviews-by-user-block-1,

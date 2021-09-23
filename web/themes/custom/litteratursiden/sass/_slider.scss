@@ -169,6 +169,30 @@ body.path-frontpage .main-container {
   }
 }
 
+.book-list .node-all {
+  display: none;
+}
+
+.book-list .read-more {
+  float: right;
+  @include btn-link(35px, transparent, $inverse-color!important, 18px, inline-flex);
+  @include align-center();
+  @include respond-to(phones-landscape) {
+    font-size: $font-size;
+    line-height: $large-font-size;
+  }
+  &:hover, &:focus {
+    color: darken($inverse-color, 10%)!important;
+  }
+  @include arrows-link($inverse-color, darken($inverse-color, 10%), $large-spacer, $regular-spacer, inline-block, initial, $regular-spacer, $regular-spacer);
+  &:after {
+    @include respond-to(phones-landscape) {
+      font-size: $font-size;
+      line-height: $medium-font-size;
+    }
+  }
+}
+
 .block-views-blockcontent-by-user-block-1,
 .block-views-blockcontent-by-user-block-2,
 .block-views-blockreviews-by-user-block-1,
