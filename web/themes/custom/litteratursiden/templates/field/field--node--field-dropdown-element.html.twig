@@ -68,7 +68,9 @@
                   </a>
                 </h3>
                 <div id="collapse--{{ key }}" class="panel-collapse collapse collapse-content book-review field-group-format-wrapper" role="tabpanel" aria-labelledby="heading--{{ key }}">
-                  {{ item.content['#paragraph'].field_dropdown_content.value|raw }}
+                  <div class="inner">
+                    {{ item.content['#paragraph'].field_dropdown_content.value|raw }}
+                  </div>
                 </div>
               {% endif %}
             {% endfor %}

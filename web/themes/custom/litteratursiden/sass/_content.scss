@@ -183,6 +183,11 @@ table.sticky-header {
     display: none;
   }
 
+  .tns-outer {
+    padding: 0 !important;
+    margin: 0 -15px 20px;
+  }
+
   .field--name-field-small-spots {
 
     > .tns-item {
@@ -244,4 +249,27 @@ table.sticky-header {
       width: 100%;
     }
   }
+
+  .field--name-field-dropdown-element {
+    .panel {
+      box-shadow: none;
+    }
+
+    .collapse-content {
+      box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+
+      .inner {
+        padding: 0 30px!important;
+      }
+    }
+  }
+}
+
+.page-node-type-page .newsletter {
+  margin: 0 -27px;
+}
+
+.page-node-type-page .accordion .panel {
+  border: 0;
+  box-shadow: none;
 }
