@@ -85,7 +85,7 @@ view_mode ? view_mode|clean_class,
         {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_block_reference', 'field_show_newsletter_signup') }}
       </div>
       {% if content.field_show_newsletter_signup['#items']['0'].value is defined and content.field_show_newsletter_signup['#items']['0'].value == 1 %}
-        <div class="no-padding flex-row flex-md-nowrap flex-stretch">
+        <div class="no-padding flex-row flex-md-nowrap flex-stretch newsletter">
           {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_child_newsletter') }}
           {{ drupal_block('mailchimp_signup_subscribe_block:subscribe_to_newsletter') }}
         </div>
