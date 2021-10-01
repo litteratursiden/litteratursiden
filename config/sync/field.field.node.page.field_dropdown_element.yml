@@ -1,0 +1,31 @@
+uuid: 88693d52-b501-4a16-8315-87cf4075ab87
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dropdown_element
+    - node.type.page
+    - paragraphs.paragraphs_type.dropdown_element
+  module:
+    - entity_reference_revisions
+id: node.page.field_dropdown_element
+field_name: field_dropdown_element
+entity_type: node
+bundle: page
+label: 'Dropdown element'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      dropdown_element: dropdown_element
+    target_bundles_drag_drop:
+      dropdown_element:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

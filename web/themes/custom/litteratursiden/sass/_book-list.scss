@@ -47,9 +47,68 @@
       @include ajax-pager();
     }
   }
+
   .pager {
     @include pager;
   }
 }
 
+.booklists {
+  background-color: $dark-bg;
+  padding-bottom: $large-spacer;
 
+  .views-exposed-form {
+    font-family: "RobotoSlab-Regular",serif;
+    @include container-fixed();
+    @include bs-container();
+    @include slider-paddings();
+    @include respond-to(phones) {
+      padding-left: 0;
+      padding-right: 0;
+
+      .block-title {
+        padding-left: $large-spacer;
+        padding-right: $large-spacer;
+      }
+    }
+
+    .form-inline {
+      position: relative;
+    }
+
+    .form-type-textfield {
+      padding: 0 1em;
+
+      label {
+        color: $white;
+        display: block;
+        font-size: 30px;
+        height: 50px;
+        margin: 0;
+      }
+
+      input {
+        height: 50px;
+      }
+    }
+
+    .form-actions {
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0 1em;
+      
+      @include respond-to(tablets-portrait) {
+        position: relative;
+      }
+
+      button {
+        height: 50px;
+      }
+    }
+  }
+
+  .pager {
+    @include pager;
+  }
+}

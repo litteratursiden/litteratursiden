@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_block_reference
+    - field.field.node.page.field_dropdown_element
+    - field.field.node.page.field_show_newsletter_signup
+    - field.field.node.page.field_small_spots
     - node.type.page
   module:
     - text
@@ -23,9 +27,14 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_block_reference: true
+  field_dropdown_element: true
+  field_show_newsletter_signup: true
+  field_small_spots: true
   langcode: true
   links: true
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true
   social_media: true
