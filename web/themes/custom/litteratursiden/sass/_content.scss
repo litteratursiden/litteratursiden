@@ -267,6 +267,12 @@ table.sticky-header {
 
 .page-node-type-page .newsletter {
   margin: 0 -27px;
+
+  .mailchimp-signup-subscribe-form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .page-node-type-page .accordion .panel {
