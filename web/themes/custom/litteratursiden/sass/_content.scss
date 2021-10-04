@@ -185,7 +185,7 @@ table.sticky-header {
 
   .tns-outer {
     padding: 0 !important;
-    margin: 0 -15px 20px;
+    margin: 0px -27px 20px -17px;
   }
 
   .field--name-field-small-spots {
@@ -266,7 +266,19 @@ table.sticky-header {
 }
 
 .page-node-type-page .newsletter {
-  margin: 0 -27px;
+  margin: 0 -1em;
+
+  .mailchimp-signup-subscribe-form {
+    width: 100%;
+    margin: 0 1em;
+    padding: 1em 2em;
+
+    // For some reason the same class appears twice.
+    .mailchimp-signup-subscribe-form {
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 
 .page-node-type-page .accordion .panel {
