@@ -8037,11 +8037,14 @@ table.sticky-header {
     padding: 0 30px !important; }
 
 .page-node-type-page .newsletter {
-  margin: 0 -27px; }
+  margin: 0 -1em; }
   .page-node-type-page .newsletter .mailchimp-signup-subscribe-form {
     width: 100%;
-    margin: 0;
-    padding: 0; }
+    margin: 0 1em;
+    padding: 1em 2em; }
+    .page-node-type-page .newsletter .mailchimp-signup-subscribe-form .mailchimp-signup-subscribe-form {
+      padding: 0;
+      margin: 0; }
 
 .page-node-type-page .accordion .panel {
   border: 0;

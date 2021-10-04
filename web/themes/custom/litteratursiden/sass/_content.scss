@@ -266,12 +266,18 @@ table.sticky-header {
 }
 
 .page-node-type-page .newsletter {
-  margin: 0 -27px;
+  margin: 0 -1em;
 
   .mailchimp-signup-subscribe-form {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 1em;
+    padding: 1em 2em;
+
+    // For some reason the same class appears twice.
+    .mailchimp-signup-subscribe-form {
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
