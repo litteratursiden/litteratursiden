@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fc2712a35958a5efb601635d62a6698",
+    "content-hash": "854f2cd838b33800e0b021cf146ba6d9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -219,6 +219,45 @@
                 "source": "https://github.com/aws/aws-sdk-php/tree/3.173.19"
             },
             "time": "2021-03-01T19:15:59+00:00"
+        },
+        {
+            "name": "bpi/sdk",
+            "version": "4.2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inleadmedia/bpi-client",
+                "reference": "7cf2bec2df3317630eec1c57aa2483534fdccf5b"
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "application",
+            "autoload": {
+                "psr-0": {
+                    "Bpi\\Sdk": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "authors": [
+                {
+                    "name": "George Mihailov",
+                    "email": "mihailoff@gmail.com",
+                    "homepage": "http://george.mihailoff.com/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "BPI SDK.",
+            "homepage": "https://github.com/bpi-dk/sdk",
+            "keywords": [
+                "rest"
+            ],
+            "time": "2017-12-17T17:55:32+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -11937,6 +11976,59 @@
             "time": "2015-12-17T08:42:14+00:00"
         },
         {
+            "name": "wikimedia/composer-merge-plugin",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+                "reference": "8ca2ed8ab97c8ebce6b39d9943e9909bb4f18912"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/8ca2ed8ab97c8ebce6b39d9943e9909bb4f18912",
+                "reference": "8ca2ed8ab97c8ebce6b39d9943e9909bb4f18912",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1||^2.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.1||^2.0",
+                "php-parallel-lint/php-parallel-lint": "~1.1.0",
+                "phpunit/phpunit": "^8.5||^9.0",
+                "squizlabs/php_codesniffer": "~3.5.4"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "class": "Wikimedia\\Composer\\Merge\\V2\\MergePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wikimedia\\Composer\\Merge\\V2\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bryan Davis",
+                    "email": "bd808@wikimedia.org"
+                }
+            ],
+            "description": "Composer plugin to merge multiple composer.json files",
+            "support": {
+                "issues": "https://github.com/wikimedia/composer-merge-plugin/issues",
+                "source": "https://github.com/wikimedia/composer-merge-plugin/tree/v2.0.1"
+            },
+            "time": "2021-02-24T05:28:06+00:00"
+        },
+        {
             "name": "zaporylie/composer-drupal-optimizations",
             "version": "1.2.0",
             "source": {
@@ -11998,11 +12090,14 @@
         "drupal/reroute_email": 10,
         "drupal/s3fs": 15,
         "drupal/view_unpublished": 15,
-        "itk-dev/web_accessibility_statement": 20
+        "itk-dev/web_accessibility_statement": 20,
+        "bpi/sdk": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^7.1"
+    },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
