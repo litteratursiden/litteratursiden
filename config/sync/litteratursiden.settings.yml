@@ -2,8 +2,8 @@ _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
 favicon:
   mimetype: image/png
-  path: 'public://favicon_litteratursiden_web_0_0.png'
-  url: 'http://litteratursiden.dk/sites/default/files/favicon_litteratursiden_web_0_0.png'
+  path: 'public://favicon_litteratursiden_web_1.png'
+  url: 'http://litteratursiden.dk/sites/default/files/favicon_litteratursiden_web_1.png'
   use_default: false
 schemas:
   bootstrap: 8000
@@ -21,7 +21,7 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-background_path: 'public://lone_hørslev_24_0.jpg'
+background_path: 'public://book-gff0a320bb_1920.jpg'
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'
