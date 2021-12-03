@@ -52,6 +52,10 @@ body {
     .node-page-container {
       @include make-row(30px);
       color: $inverse-text-color;
+
+      .block-views-blockrelated-content-related-content-block {
+        color: $primary-text-color;
+      }
     }
   }
 }
