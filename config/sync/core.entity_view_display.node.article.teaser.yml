@@ -14,20 +14,18 @@ dependencies:
     - field.field.node.article.field_teaser
     - node.type.article
   module:
-    - text
     - user
 id: node.article.teaser
 targetEntityType: node
 bundle: article
 mode: teaser
 content:
-  field_article_body:
-    type: text_trimmed
+  field_teaser:
+    type: basic_string
     weight: 1
     region: content
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
   links:
     weight: 2
@@ -40,13 +38,13 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_article_body: true
   field_article_comments: true
   field_article_cover_image: true
   field_article_general_tags: true
   field_article_internal_link: true
   field_article_link_external: true
   field_block_reference: true
-  field_teaser: true
   flag_bookmark: true
   flag_like: true
   flag_notifications: true
