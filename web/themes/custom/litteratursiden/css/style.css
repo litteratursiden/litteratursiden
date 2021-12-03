@@ -7650,6 +7650,8 @@ body {
       content: " "; }
     .path-node .main-container .node-page-container:after, .path-group .main-container .node-page-container:after, .path-user .main-container .node-page-container:after {
       clear: both; }
+    .path-node .main-container .node-page-container .block-views-blockrelated-content-related-content-block, .path-group .main-container .node-page-container .block-views-blockrelated-content-related-content-block, .path-user .main-container .node-page-container .block-views-blockrelated-content-related-content-block {
+      color: #3a3b3d; }
 
 .path-saved-content .region-content, .path-comment .region-content, .path-da .region-content, .path-en .region-content, .path-book-lists-overview .region-content {
   padding-top: 30px;
