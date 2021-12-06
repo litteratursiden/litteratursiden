@@ -18,6 +18,7 @@ dependencies:
     - comment
     - file
     - image
+    - image_widget_crop
     - path
     - scheduler
     - text
@@ -104,10 +105,17 @@ content:
   field_book_list_spotbox_image:
     weight: 3
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: facebook_display
+      crop_list:
+        - facebook
+      progress_indicator: throbber
+      crop_types_required: {  }
+      show_crop_area: false
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   langcode:
     type: language_select
