@@ -1,0 +1,12 @@
+uuid: 4a97018b-0b0c-4e89-a3b7-3defe0cbaa26
+langcode: da
+status: true
+dependencies: {  }
+id: facebook
+label: Facebook
+description: 'Crop to be used when sharing content on Facebook.'
+aspect_ratio: '191:100'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 900
+hard_limit_height: 472
