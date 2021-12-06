@@ -8,8 +8,11 @@ dependencies:
     - field.field.node.page.field_dropdown_element
     - field.field.node.page.field_show_newsletter_signup
     - field.field.node.page.field_small_spots
+    - field.field.node.page.field_spotbox_image
+    - image.style.thumbnail
     - node.type.page
   module:
+    - image
     - paragraphs
     - path
     - scheduler
@@ -36,7 +39,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_block_reference:
-    weight: 12
+    weight: 13
     settings:
       match_operator: CONTAINS
       size: 60
@@ -47,7 +50,7 @@ content:
     region: content
   field_dropdown_element:
     type: entity_reference_paragraphs
-    weight: 14
+    weight: 15
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -58,14 +61,14 @@ content:
     third_party_settings: {  }
     region: content
   field_show_newsletter_signup:
-    weight: 11
+    weight: 12
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_small_spots:
-    weight: 10
+    weight: 11
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -73,6 +76,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_spotbox_image:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   langcode:
     type: language_select
@@ -104,7 +115,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 13
+    weight: 14
     region: content
     third_party_settings: {  }
   sticky:

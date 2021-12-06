@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.blog.field_blog_internal_link
     - field.field.node.blog.field_blog_literature_type
     - field.field.node.blog.field_blog_message_flag
+    - field.field.node.blog.field_spotbox_image
     - field.field.node.blog.field_teaser
     - image.style.spot
     - node.type.blog
@@ -59,6 +60,7 @@ hidden:
   field_blog_internal_link: true
   field_blog_literature_type: true
   field_blog_message_flag: true
+  field_spotbox_image: true
   flag_bookmark: true
   flag_like: true
   flag_notifications: true

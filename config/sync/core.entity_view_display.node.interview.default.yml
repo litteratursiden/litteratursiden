@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.interview.field_interview_reference_author
     - field.field.node.interview.field_interview_video
     - field.field.node.interview.field_interview_video_text
+    - field.field.node.interview.field_spotbox_image
     - field.field.node.interview.field_teaser
     - node.type.interview
   module:
@@ -103,6 +104,7 @@ hidden:
   field_interview_images: true
   field_interview_internal_lin: true
   field_interview_reference_author: true
+  field_spotbox_image: true
   field_teaser: true
   langcode: true
   owner_full_name: true

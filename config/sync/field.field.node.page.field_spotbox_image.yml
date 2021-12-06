@@ -1,16 +1,16 @@
-uuid: f32e1d70-fa4e-4f6c-80d5-0f46772f928c
-langcode: en
+uuid: abf09bd0-36a6-434f-8d07-de33b0258ab7
+langcode: da
 status: true
 dependencies:
   config:
-    - field.storage.node.field_book_list_spotbox_image
-    - node.type.book_list
+    - field.storage.node.field_spotbox_image
+    - node.type.page
   module:
     - image
-id: node.book_list.field_book_list_spotbox_image
-field_name: field_book_list_spotbox_image
+id: node.page.field_spotbox_image
+field_name: field_spotbox_image
 entity_type: node
-bundle: book_list
+bundle: page
 label: 'Spotbox image'
 description: 'Anvendes til promovering med spotboxes. Billedet der anvendes bør være landskabsformat. Anbefalet størrelse er 1200x500 pixel.'
 required: false
@@ -18,9 +18,9 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: field_book_list_spotbox_image
+  file_directory: field_spotbox_image
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '8'
+  max_filesize: ''
   max_resolution: ''
   min_resolution: 900x472
   alt_field: true
@@ -28,11 +28,11 @@ settings:
   title_field: true
   title_field_required: false
   default_image:
-    uuid: 6448fa19-3f6c-4b42-a800-bd495f697411
+    uuid: ''
     alt: ''
     title: ''
-    width: 186
-    height: 287
+    width: null
+    height: null
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

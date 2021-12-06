@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_dropdown_element
     - field.field.node.page.field_show_newsletter_signup
     - field.field.node.page.field_small_spots
+    - field.field.node.page.field_spotbox_image
     - node.type.page
   module:
     - text
@@ -36,6 +37,7 @@ hidden:
   field_dropdown_element: true
   field_show_newsletter_signup: true
   field_small_spots: true
+  field_spotbox_image: true
   langcode: true
   owner_full_name: true
   owner_portrait: true

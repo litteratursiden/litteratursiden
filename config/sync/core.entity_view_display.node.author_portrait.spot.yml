@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.author_portrait.field_author_portrait_surname
     - field.field.node.author_portrait.field_author_portrait_tags
     - field.field.node.author_portrait.field_block_reference
+    - field.field.node.author_portrait.field_spotbox_image
     - field.field.node.author_portrait.field_teaser
     - image.style.spot
     - node.type.author_portrait
@@ -59,6 +60,7 @@ hidden:
   field_author_portrait_surname: true
   field_author_portrait_tags: true
   field_block_reference: true
+  field_spotbox_image: true
   flag_bookmark: true
   flag_like: true
   langcode: true
