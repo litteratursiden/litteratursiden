@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.page.field_show_newsletter_signup
     - field.field.node.page.field_small_spots
     - field.field.node.page.field_spotbox_image
-    - image.style.thumbnail
+    - image.style.crop_thumbnail
     - node.type.page
   module:
     - image_widget_crop
@@ -82,8 +82,8 @@ content:
     settings:
       show_default_crop: true
       warn_multiple_usages: true
-      preview_image_style: thumbnail
-      crop_preview_image_style: facebook_display
+      preview_image_style: crop_thumbnail
+      crop_preview_image_style: crop_thumbnail
       crop_list:
         - facebook
       progress_indicator: throbber

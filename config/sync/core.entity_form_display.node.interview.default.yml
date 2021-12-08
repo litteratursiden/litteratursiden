@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.interview.field_interview_video_text
     - field.field.node.interview.field_spotbox_image
     - field.field.node.interview.field_teaser
+    - image.style.crop_thumbnail
     - image.style.thumbnail
     - node.type.interview
   module:
@@ -107,8 +108,8 @@ content:
     settings:
       show_default_crop: true
       warn_multiple_usages: true
-      preview_image_style: thumbnail
-      crop_preview_image_style: facebook_display
+      preview_image_style: crop_thumbnail
+      crop_preview_image_style: crop_thumbnail
       crop_list:
         - facebook
       progress_indicator: throbber

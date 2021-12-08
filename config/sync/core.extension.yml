@@ -54,6 +54,7 @@ module:
   lit_cover_service: 0
   lit_fields: 0
   lit_notifications: 0
+  lit_og_image: 0
   lit_open_platform: 0
   lit_search: 0
   lit_share: 0
