@@ -1,11 +1,11 @@
-uuid: 3eff42d5-7f54-4e8d-ae35-29810775d81a
+uuid: 84c56562-7b7e-4d81-9759-953b34b79ed6
 langcode: da
 status: true
 dependencies: {  }
-id: node__blog
-label: 'Indhold: Blog'
+id: node__page
+label: 'Indhold: Side'
 tags:
-  og_description: '[node:field_blog_body]'
+  og_description: '[node:body]'
   og_image: '[node:field_spotbox_image:facebook_display:url]'
   og_image_alt: '[node:field_spotbox_image:alt]'
   og_image_height: '[node:field_spotbox_image:facebook_display:height]'

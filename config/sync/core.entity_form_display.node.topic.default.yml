@@ -15,7 +15,7 @@ dependencies:
     - field.field.node.topic.field_topic_link_external
     - field.field.node.topic.field_topic_spotbox_image
     - field.field.node.topic.field_topic_theme_body_text
-    - image.style.crop_thumbnail
+    - image.style.facebook_display
     - image.style.thumbnail
     - node.type.topic
   module:
@@ -131,7 +131,7 @@ content:
     settings:
       show_default_crop: true
       warn_multiple_usages: true
-      preview_image_style: crop_thumbnail
+      preview_image_style: facebook_display
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - facebook

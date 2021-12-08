@@ -25,7 +25,7 @@ dependencies:
     - field.field.node.book.field_book_spotbox_image
     - field.field.node.book.field_book_subject_number
     - field.field.node.book.field_book_translater
-    - image.style.crop_thumbnail
+    - image.style.facebook_display
     - image.style.thumbnail
     - node.type.book
   module:
@@ -199,7 +199,7 @@ content:
     settings:
       show_default_crop: true
       warn_multiple_usages: true
-      preview_image_style: crop_thumbnail
+      preview_image_style: facebook_display
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - facebook

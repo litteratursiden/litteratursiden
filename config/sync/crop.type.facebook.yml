@@ -5,7 +5,7 @@ dependencies: {  }
 id: facebook
 label: Facebook
 description: 'Crop to be used when sharing content on Facebook.'
-aspect_ratio: '191:100'
+aspect_ratio: '900:472'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: 900

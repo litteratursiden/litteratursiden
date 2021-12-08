@@ -215,6 +215,9 @@
             },
             "drupal/redis": {
                 "Flood: Compatibility with Flood unblock": "https://www.drupal.org/files/issues/redis-flood_unblock_external_flood-2928007-2.patch"
+            },
+            "drupal/image_widget_crop": {
+                "Fix floating point issue": "https://www.drupal.org/files/issues/2020-06-22/3153736-2.patch"
             }
         },
         "merge-plugin": {
