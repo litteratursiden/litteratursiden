@@ -1,0 +1,3 @@
+services:
+  Drupal\lit_og_image\Helper\Helper:
+    class: Drupal\lit_og_image\Helper\Helper
