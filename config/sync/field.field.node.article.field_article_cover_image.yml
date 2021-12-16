@@ -12,14 +12,14 @@ field_name: field_article_cover_image
 entity_type: node
 bundle: article
 label: 'Cover Image'
-description: '''Anvendes til promovering med spotboxes. Billedet der anvendes bør være landskabsformat. Anbefalet størrelse er 1200x500 pixel.'''
+description: 'Anvendes til promovering med spotboxes. Billedet der anvendes bør være landskabsformat. Anbefalet størrelse er 1200x500 pixel.'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: field_article_cover_image
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: 'png jpg jpeg'
   max_filesize: '8 MB'
   max_resolution: ''
   min_resolution: 900x472
