@@ -1,0 +1,18 @@
+uuid: d285fce1-ca83-4155-9553-e1fda0c8f258
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.facebook
+  module:
+    - crop
+name: facebook_display
+label: 'Facebook display'
+effects:
+  042ea063-9d03-4db7-98ea-389ce3cf270a:
+    uuid: 042ea063-9d03-4db7-98ea-389ce3cf270a
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: facebook
+pipeline: ''
