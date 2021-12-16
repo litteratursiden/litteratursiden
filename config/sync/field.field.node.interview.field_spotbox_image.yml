@@ -19,7 +19,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: field_spotbox_image
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: 'png jpg jpeg'
   max_filesize: '8 MB'
   max_resolution: ''
   min_resolution: 900x472
