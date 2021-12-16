@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_dropdown_element
     - field.field.node.page.field_show_newsletter_signup
     - field.field.node.page.field_small_spots
+    - field.field.node.page.field_spotbox_image
     - node.type.page
   module:
     - entity_reference_revisions
@@ -36,7 +37,7 @@ content:
     region: content
   field_dropdown_element:
     type: entity_reference_revisions_entity_view
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       view_mode: default
@@ -45,7 +46,7 @@ content:
     region: content
   field_show_newsletter_signup:
     type: boolean
-    weight: 3
+    weight: 2
     region: content
     label: hidden
     settings:
@@ -54,7 +55,7 @@ content:
       format_custom_false: ''
     third_party_settings: {  }
   field_small_spots:
-    weight: 5
+    weight: 4
     label: hidden
     settings:
       view_mode: title_and_image
@@ -63,6 +64,7 @@ content:
     type: entity_reference_entity_view
     region: content
 hidden:
+  field_spotbox_image: true
   langcode: true
   links: true
   owner_full_name: true
