@@ -1,0 +1,8 @@
+lit_print.print:
+  path: '/node/{node}/print'
+  defaults:
+    _entity_view: 'node.print'
+    _title: 'Print'
+  requirements:
+    node: '\d+'
+    _entity_access: 'node.view'

@@ -1,0 +1,22 @@
+<?php
+
+function lit_print_theme($existing, $type, $theme, $path) {
+  return [
+    'html__node__print' => [
+      'template' => 'html--node--print',
+      'base hook' => 'html'
+    ],
+    'page__node__print' => [
+      'template' => 'page--node--print',
+      'base hook' => 'page'
+    ],
+    'node__book_list__print' => [
+      'template' => 'node--book-list--print',
+      'base hook' => 'node'
+    ],
+    'node__book__print_list_item' => [
+      'template' => 'node--book--print-list-item',
+      'base hook' => 'node'
+    ],
+  ];
+}

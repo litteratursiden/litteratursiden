@@ -1,0 +1,6 @@
+name: Litteratursiden Print
+type: module
+description: Adds print route for content
+core: 8.x
+package: Litteratursiden
+

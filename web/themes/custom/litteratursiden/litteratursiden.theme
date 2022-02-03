@@ -37,10 +37,19 @@ function litteratursiden_preprocess_html(&$variables) {
  * Implements hook_page_attachments_alter().
  */
 function litteratursiden_page_attachments_alter(array &$attachments) {
+  $route_name = \Drupal::routeMatch()->getRouteName();
   foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
     if ($attachment[1] == 'system_meta_generator') {
       unset($attachments['#attached']['html_head'][$key]);
     }
+  }
+
+  if ('lit_print.print' === $route_name) {
+    unset($attachments['#cache']);
+    foreach ($attachments['#attached']['library'] as $key => $library) {
+      unset($attachments['#attached']['library'][$key]);
+    }
+    $attachments['#attached']['library'][] = 'lit_print/lit_print';
   }
 }
 
