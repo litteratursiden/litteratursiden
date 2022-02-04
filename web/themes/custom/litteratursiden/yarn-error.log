@@ -1,0 +1,84 @@
+Arguments: 
+  /Users/martingranath/.nvm/versions/node/v14.17.4/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/martingranath/.nvm/versions/node/v14.17.4/bin:/usr/local/sbin:/Users/martingranath/projects/itkdev-docker/scripts:/scripts:/Users/martingranath/.symfony/bin:/Users/martingranath/.composer/vendor/bin:/Users/martingranath/.yarn/bin:/Users/martingranath/.config/yarn/global/node_modules/.bin:/usr/local/opt/php-code-sniffer@2.9/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/martingranath/.composer/vendor/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://npm.fontawesome.com/@fortawesome%2ffontawesome-free: authentication required
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:67029:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:140883:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:141855:10)
+      at Request.emit (events.js:400:28)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:141777:12)
+      at Object.onceWrapper (events.js:519:28)
+      at IncomingMessage.emit (events.js:412:35)
+      at endReadableNT (internal/streams/readable.js:1317:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "litteratursiden",
+    "version": "1.0.0",
+    "description": "Drupal theme for litteratursiden",
+    "scripts": {
+      "check-coding-standards-stylelint": "stylelint --config=.stylelintrc.js 'assets/**/*.scss'",
+      "check-coding-standards-scss": "npm run check-coding-standards-stylelint",
+      "check-coding-standards-eslint": "eslint --config .eslintrc.js 'assets/**/*.js'",
+      "check-coding-standards-js": "npm run check-coding-standards-eslint",
+      "check-coding-standards": "npm run check-coding-standards-scss; npm run check-coding-standards-js",
+      "apply-coding-standards-stylelint": "stylelint --config=.stylelintrc.js 'assets/**/*.scss' --fix",
+      "apply-coding-standards-scss": "npm run apply-coding-standards-stylelint",
+      "apply-coding-standards-eslint": "eslint --config .eslintrc.js 'assets/**/*.js' --fix",
+      "apply-coding-standards-js": "npm run apply-coding-standards-eslint",
+      "apply-coding-standards": "npm run apply-coding-standards-scss; npm run apply-coding-standards-js",
+      "build": "encore production",
+      "dev": "encore dev",
+      "watch": "encore dev --watch"
+    },
+    "author": "Martin Yde",
+    "license": "GPL",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/litteratursiden/litteratursiden"
+    },
+    "private": true,
+    "devDependencies": {
+      "@fortawesome/fontawesome-free": "^5.12.1",
+      "@fortawesome/fontawesome-pro": "^5.12.1",
+      "@fortawesome/fontawesome-svg-core": "^1.2.25",
+      "@fortawesome/free-brands-svg-icons": "^5.15.1",
+      "@fortawesome/free-solid-svg-icons": "^5.12.1",
+      "@fortawesome/pro-light-svg-icons": "^5.12.1",
+      "@symfony/webpack-encore": "^1.5.0",
+      "autoprefixer": "^9.4.2",
+      "copy-webpack-plugin": "^6.1.0",
+      "node-sass": "^4.14.1",
+      "node-sass-import-once": "^1.2.0",
+      "sass-lint": "^1.7.0",
+      "sass-loader": "^12.1.0",
+      "stylelint": "^13.13.1",
+      "stylelint-config-sass-guidelines": "^7.1.0",
+      "stylelint-config-standard-scss": "^1.1.0",
+      "stylelint-scss": "^3.20.1",
+      "webpack-notifier": "^1.6.0"
+    },
+    "dependencies": {
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

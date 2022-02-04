@@ -1,7 +1,7 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
+      css/app.css: {}
 
 match-height:
   js:
