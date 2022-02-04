@@ -128,8 +128,7 @@ h6 {
 /* Litteratur icons */
 @font-face {
   font-family: "literatur-icons";
-  src: url("/themes/custom/litteratursiden/fonts/literatur-icons.woff")
-    format("woff");
+  src: url("../literatur-icons.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -213,7 +212,7 @@ strong {
 
 /* Background decoration */
 .body-background-image {
-  background-image: url("/themes/custom/litteratursiden/images/Litteratur_bg_footer.svg");
+  background-image: url("../Litteratur_bg_footer.svg");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
