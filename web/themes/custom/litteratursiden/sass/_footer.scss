@@ -9,7 +9,7 @@ footer.footer {
   > .container {
     padding-top: 57px;
     min-height: 464px;
-    background: transparent url('/themes/custom/litteratursiden/images/Litteratur_bg_footer.svg') no-repeat 85px 75%;
+    background: transparent url('../images/Litteratur_bg_footer.svg') no-repeat 85px 75%;
     background-size: 33.5%; ///390px;
     @include footer-paddings();
     @include respond-to(tablets-landscape) {
