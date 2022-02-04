@@ -65,14 +65,32 @@
  *   in different view modes.
  */
 #}
-<article>
-  <div>
-    {{ label }}
+
+<div class="body-background-image"></div>
+<header>
+  <div class="max-width-wrapper">
+    <img class="img-responsive" src="/themes/custom/litteratursiden/images/Logo.svg" alt="Logo">
   </div>
-  <div>
-    {{ content }}
+</header>
+<main>
+  <div class="max-width-wrapper">
+    <span class="list-type">Bogliste</span>
+    <h1>{{ label }}</h1>
+    {{ content.field_book_list_body }}
   </div>
-  <div>
-    {{ url('entity.node.canonical', { 'node': node.id() }) }}
+  <div class="max-width-wrapper">
+    <div class="book-list-header">
+      <h2>Bøger på listen</h2>
+    </div>
+    <div class="book-list">
+      {{ content|without('field_book_list_body') }}
+    </div>
   </div>
-</article>
+</main>
+<footer>
+  <div class="max-width-wrapper">
+    <p><strong>Find listen på</strong><br/>
+      <a href="{{ url('entity.node.canonical', { 'node': node.id() }) }}">{{ url('entity.node.canonical', { 'node': node.id() }) }}</a>
+    </p>
+  </div>
+</footer>
