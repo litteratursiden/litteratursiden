@@ -44,6 +44,7 @@ function litteratursiden_page_attachments_alter(array &$attachments) {
     }
   }
 
+  // Remove all libraries from print route provided from lit_print module.
   if ('lit_print.print' === $route_name) {
     unset($attachments['#cache']);
     foreach ($attachments['#attached']['library'] as $key => $library) {
