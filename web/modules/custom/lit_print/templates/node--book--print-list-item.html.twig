@@ -65,13 +65,11 @@
  *   in different view modes.
  */
 #}
-<article>
+<article class="book-item">
+  <img class="book-item-image" src="{{ file_url(node.field_book_cover_image.entity.uri.value) }}" alt="">
   <div>
-    {{ label }}
-  </div>
-  <div>
-    {{ file_url(node.field_book_cover_image.entity.uri.value) }}
-    <div>{{ node.field_book_author.entity.field_book_author.value }}</div>
-    {{ content.field_book_body }}
+    <h3 class="book-item-title">{{ label }}</h3>
+    <p class="book-item-author">{{ node.field_book_author.entity.field_book_author.value }}</p>
+    <p class="book-item-desc">{{ content.field_book_body }}</p>
   </div>
 </article>
