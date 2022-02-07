@@ -95,7 +95,7 @@ view_mode ? view_mode|clean_class,
             {{ content.flag_like }}
           </div>
           <div class="print--wrapper">
-            <a href="/node/{{ node.id() }}/print"><i class="fal fa-print"></i></a>
+            <a title="{{ 'Print'|t }}" href="/node/{{ node.id() }}/print"><i class="fal fa-print"></i></a>
           </div>
         </div>
         <div{{ content_attributes.addClass('content') }}>
@@ -111,7 +111,7 @@ view_mode ? view_mode|clean_class,
           {{ content.flag_like }}
         </div>
         <div class="print--wrapper">
-          <a href="/node/{{ node.id() }}/print"><i class="fal fa-print"></i></a>
+          <a title="{{ 'Print'|t }}" href="/node/{{ node.id() }}/print"><i class="fal fa-print"></i></a>
         </div>
       </div>
       <div{{ content_attributes.addClass('content') }}>
