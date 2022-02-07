@@ -4,6 +4,10 @@
 
 ###install tools and requirements
 
+#### Tested and working in:
+Node: v14.17.4
+Npm: 6.14.14
+
 ```sh
 FONTAWESOME_NPM_AUTH_TOKEN='YOUR_FONTAWESOME_TOKEN' \
   NPM_CONFIG_USERCONFIG=.npmrc.install

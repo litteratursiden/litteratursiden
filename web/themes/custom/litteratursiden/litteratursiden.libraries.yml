@@ -1,7 +1,9 @@
 global-styling:
+  js:
+    build/app.js: { preprocess: false }
   css:
     theme:
-      css/app.css: {}
+      build/app.css: {}
 
 match-height:
   js:

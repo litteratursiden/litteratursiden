@@ -7,13 +7,16 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
   Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
 }
 
+/**
+ * @todo add js files to this configuration.
+ */
 Encore
   // directory where compiled assets will be stored
-  .setOutputPath('css/')
+  .setOutputPath('build/')
   // public path used by the web server to access the output path
   .setPublicPath('.')
   // only needed for CDN's or sub-directory deploy
-  .setManifestKeyPrefix('css/')
+  .setManifestKeyPrefix('build/')
 
   /*
    * ENTRY CONFIG
@@ -39,30 +42,9 @@ Encore
   .enableBuildNotifications()
   .enableSourceMaps(!Encore.isProduction())
 
-  // enables @babel/preset-env polyfills
-  /*
-  .configureBabelPresetEnv((config) => {
-    config.useBuiltIns = 'usage';
-    config.corejs = 3;
-  })
-   */
-
   // enables Sass/SCSS support
   .enableSassLoader()
 
-  // uncomment if you're having problems with a jQuery plugin
-  //.autoProvidejQuery()
-
-  // Enable React
-  //.enableReactPreset()
-
-  /*
-  .addPlugin(new CopyWebpackPlugin({patterns : [{
-    from: 'assets/fonts/',
-    to: 'fonts/'
-  }]}))
-
-   */
 ;
 
 module.exports = Encore.getWebpackConfig();
