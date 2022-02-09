@@ -50,3 +50,20 @@
   }
 
  }
+
+/**
+ * ITK Print
+ *
+ * See lit print module for book list print styling.
+*/
+.print--wrapper {
+  position: relative;
+
+  a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 1.5em;
+  }
+}

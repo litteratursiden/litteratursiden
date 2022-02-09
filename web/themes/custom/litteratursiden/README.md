@@ -1,14 +1,40 @@
-# Litteratursiden Theme
-Theme based on "Sass Starterkit", see [separate readme](SASS_STARTERKIT.md) for instructions.
+# Dokk two theme
 
-## Dependencies
-Currently requires Node 6 to build because of legacy dependencies.
+## Quick guide
 
-## Build
- A `node:6` image is part of the projects docker file. To run the `gulp` build
- steps do:
+###install tools and requirements
 
- ```
- docker-compose run --rm node bash -c "cd /app/web/themes/custom/litteratursiden/ && npm install"
- docker-compose run --rm node bash -c "cd /app/web/themes/custom/litteratursiden/ && node_modules/.bin/gulp sass"
- ```
+#### Tested and working in:
+Node: v14.17.4
+Npm: 6.14.14
+
+```sh
+FONTAWESOME_NPM_AUTH_TOKEN='YOUR_FONTAWESOME_TOKEN' \
+  NPM_CONFIG_USERCONFIG=.npmrc.install
+```
+Copy .npmrc.install to .npmrc and replace:
+`"${FONTAWESOME_NPM_AUTH_TOKEN}"`
+with a token from your fontawesome account.
+
+
+### Install packages
+The package.json file contains the versions of all the node packages you need. To install them run:
+```sh
+yarn install
+```
+
+### Build assets
+Build for development:
+```sh
+yarn dev
+```
+
+Build for development and keep watching files:
+```sh
+yarn watch
+```
+
+Build for Production:
+```sh
+yarn build
+```

@@ -1,0 +1,4 @@
+lit_print:
+  css:
+    theme:
+      assets/css/print.css: {}

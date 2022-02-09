@@ -1,0 +1,10 @@
+uuid: bf56c9e6-142d-45e7-afcb-5cfdfcc3c8b9
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.print_list_item
+label: 'Print list item'
+targetEntityType: node
+cache: true
