@@ -57,6 +57,7 @@
  * See lit print module for book list print styling.
 */
 .print--wrapper {
+  min-height: 3em;
   position: relative;
 
   a {
