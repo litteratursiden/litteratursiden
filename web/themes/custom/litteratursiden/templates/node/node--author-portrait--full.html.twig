@@ -95,7 +95,6 @@ view_mode ? view_mode|clean_class,
             {{ content.flag_bookmark }}
             {{ content.flag_like }}
           </div>
-          {{ content.social_media }}
         </div>
         <div{{ content_attributes.addClass('content') }}>
           {{ content|without('links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book', 'field_block_reference') }}
@@ -110,7 +109,6 @@ view_mode ? view_mode|clean_class,
           {{ content.flag_bookmark }}
           {{ content.flag_like }}
         </div>
-        {{ content.social_media }}
       </div>
       <div{{ content_attributes.addClass('content') }}>
         {{ content|without( 'links','flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'field_author_portrait_first_name', 'field_author_portrait_surname', 'field_author_portrait_image', 'latest_reviewed_book', 'field_block_reference') }}

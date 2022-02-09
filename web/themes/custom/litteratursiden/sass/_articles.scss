@@ -62,7 +62,7 @@
       position: absolute;
       top: $small-spacer*5;
       left: 0;
-      background: transparent url(/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
+      background: transparent url('../images/Litteratur_bg.svg') no-repeat top left;
       background-size: contain;
       @include respond-to(tablets-portrait) {
         width: 85%;
@@ -555,7 +555,7 @@
                 }
                 &.twitter {
                   background-color: #1da1f2;
-                  background-image: url(/themes/custom/litteratursiden/images/twitter.svg);
+                  background-image: url('../images/twitter.svg');
                   background-position: $small-spacer center;
                   background-repeat: no-repeat;
                   background-size: contain;

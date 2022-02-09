@@ -689,7 +689,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
       font-weight: $font-weight-bold;
       color: $brand-color;
       &:before {
-        background: $brand-color url("/themes/custom/litteratursiden/images/check.svg") no-repeat center !important;
+        background: $brand-color url("../images/check.svg") no-repeat center !important;
       }
     }
   }
@@ -1343,7 +1343,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
     top: $xlarge-spacer;
     width: $small-spacer*2;
     height: $small-spacer*2;
-    background: $inverse-color url(/themes/custom/litteratursiden/images/loader.svg) no-repeat center;
+    background: $inverse-color url('../images/loader.svg') no-repeat center;
     background-size: cover;
     border-radius: 50%;
     margin: 0;
@@ -1610,7 +1610,7 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
               content: '';
               position: absolute;
               display: inline-block;
-              background: transparent url(/themes/custom/litteratursiden/images/indent-arrow.svg) no-repeat center / cover;
+              background: transparent url('../images/indent-arrow.svg') no-repeat center / cover;
               width: $large-spacer;
               height: $large-spacer;
               left: (-$xxlarge-spacer);

@@ -94,7 +94,6 @@ view_mode ? view_mode|clean_class,
             {{ content.flag_bookmark }}
             {{ content.flag_like }}
           </div>
-          {{ content.social_media }}
         </div>
         <div{{ content_attributes.addClass('content') }}>
           {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'posted', 'field_block_reference') }}
@@ -108,7 +107,6 @@ view_mode ? view_mode|clean_class,
           {{ content.flag_bookmark }}
           {{ content.flag_like }}
         </div>
-        {{ content.social_media }}
       </div>
       <div{{ content_attributes.addClass('content') }}>
         {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'posted', 'field_block_reference') }}

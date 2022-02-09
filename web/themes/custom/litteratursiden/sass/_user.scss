@@ -115,7 +115,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background: transparent url(/themes/custom/litteratursiden/images/Litteratur_bg.svg) no-repeat top left;
+        background: transparent url('../images/Litteratur_bg.svg') no-repeat top left;
         background-size: contain;
         @include respond-to(tablets-portrait) {
           width: 85%;

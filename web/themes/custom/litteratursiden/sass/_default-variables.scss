@@ -11,7 +11,7 @@
  */
 
 // Set the proper directory for the Bootstrap Glyphicon font.
-$icon-font-path: '/themes/custom/litteratursiden/fonts/bootstrap/';
+$icon-font-path: '../../fonts/bootstrap/';
 // Main  colors
 $white: #fff;
 $black: #000;
@@ -115,7 +115,7 @@ $container-sm: $container-tablet !default;
 //$grid-float-breakpoint: 4000px !default;
 
 // ICONS VARIABLES
-$custom-icon-font-path: "/themes/custom/litteratursiden/fonts" !default;
+$custom-icon-font-path: "../fonts" !default;
 $icon-accordion-down: "\e900";
 $icon-accordion-up: "\e901";
 $icon-book: "\e902";
@@ -146,9 +146,9 @@ $icon-writers: "\e91a";
 
 
 // SLICK Slider Default Variables
-$slick-font-path: "/themes/custom/litteratursiden/fonts/" !default;
+$slick-font-path: "../fonts/" !default;
 $slick-font-family: 'literatur-icons' !default;
-$slick-loader-path: "/themes/custom/litteratursiden/images/" !default;
+$slick-loader-path: "../images/" !default;
 $slick-arrow-color: $arrow-gray !default;
 $slick-arrow-hover-color: $inverse-text-color !default;
 $slick-arrow-font-size: $small-spacer*8.5 !default;
