@@ -10,7 +10,7 @@ type: 'canonical_entities:node'
 pattern: 'lister/[node:title]'
 selection_criteria:
   36024126-2744-4f77-bd9e-e74c02b4e4d5:
-    id: node_type
+    id: 'entity_bundle:node'
     bundles:
       book_list: book_list
     negate: false
