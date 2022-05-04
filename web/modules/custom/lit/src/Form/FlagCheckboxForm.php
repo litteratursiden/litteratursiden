@@ -27,10 +27,10 @@ class FlagCheckboxForm extends FormBase {
    *
    * @param FlagInterface $flag
    *   Flag entity.
-   * @param Entity $entity
+   * @param \Drupal\Core\Entity\EntityBase $entity
    *   Flaggable entity.
    */
-  public function buildForm(array $form, FormStateInterface $form_state, FlagInterface $flag = NULL, Entity $entity = NULL) {
+  public function buildForm(array $form, FormStateInterface $form_state, FlagInterface $flag = NULL, \Drupal\Core\Entity\EntityBase $entity = NULL) {
     if (!$flag || !$entity) {
       return $form;
     }

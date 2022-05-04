@@ -351,7 +351,7 @@ function bpi_error_message($http_code) {
       break;
   }
 
-  drupal_set_message($msg, 'error');
+  \Drupal::messenger()->addMessage($msg, 'error');
   \Drupal::logger('bpi')->error($msg);
 }
 
@@ -378,7 +378,7 @@ function bpi_service_is_configured() {
   $message = t('BPI: In order to push this content to the well, please check @settings_url.', ['@settings_url' => $settings_link->toString()]);
 
   if (empty($endpoint) || empty($agency_id) || empty($api_key) || empty($secret_key)) {
-    drupal_set_message($message, 'error');
+    \Drupal::messenger()->addMessage($message, 'error');
     $configured = FALSE;
   }
 
@@ -430,7 +430,7 @@ function bpi_find_field_instances($node_type, array $allowed_types): array {
     return [];
   }
 
-  $entityManager = \Drupal::service('entity.manager');
+  $entityManager = \Drupal::service('entity_field.manager');
   $node_fields = array_filter($entityManager->getFieldDefinitions('node', $node_type), function ($field_definition) {
     return $field_definition instanceof FieldConfigInterface;
   });

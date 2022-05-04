@@ -134,7 +134,9 @@ function lit_node_view(array &$build, NodeInterface $entity, EntityViewDisplayIn
   }
 
   if ($display->getComponent('latest_review') && $review = lit_get_latest_book_review($entity->id())) {
-    $build['latest_review'] = node_view($review, 'additional_info');
+    $build['latest_review'] = \Drupal::entityTypeManager()
+      ->getViewBuilder('node')
+      ->view($review, 'additional_info');
   }
 
   if ($display->getComponent('posted')) {
@@ -145,7 +147,9 @@ function lit_node_view(array &$build, NodeInterface $entity, EntityViewDisplayIn
   }
 
   if ($display->getComponent('latest_analysis') && $analysis = lit_get_latest_book_analisys($entity->id())) {
-    $build['latest_analysis'] = node_view($analysis, 'additional_info');
+    $build['latest_analysis'] = \Drupal::entityTypeManager()
+      ->getViewBuilder('node')
+      ->view($analysis, 'additional_info');
   }
 
   if ($display->getComponent('latest_review') || $display->getComponent('latest_analysis')) {

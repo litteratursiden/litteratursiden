@@ -150,7 +150,7 @@ class SearchController extends ControllerBase {
    * @return mixed|null
    */
   private function renderEntity($entity, string $view_mode) {
-    $render_controller = \Drupal::entityManager()->getViewBuilder($entity->getEntityTypeId());
+    $render_controller = \Drupal::entityTypeManager()->getViewBuilder($entity->getEntityTypeId());
     $pre_render = $render_controller->view($entity, $view_mode);
 
     return render($pre_render);

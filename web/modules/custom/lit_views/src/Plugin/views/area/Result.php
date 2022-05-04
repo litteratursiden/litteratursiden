@@ -36,7 +36,7 @@ class Result extends BaseResult {
         '@search_query -- the search query text',
       ],
     ];
-    $list = drupal_render($item_list);
+    $list = \Drupal::service('renderer')->render($item_list);
     $form['content'] = [
       '#title' => $this->t('Display'),
       '#type' => 'textarea',

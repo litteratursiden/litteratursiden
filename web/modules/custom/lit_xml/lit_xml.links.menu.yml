@@ -1,5 +1,0 @@
-lit_xml.admin_overview:
-  title: 'Xml export settings'
-  description: 'Litteratursiden xml export of meta-data to XML.'
-  route_name: lit_xml.settings
-  parent: system.admin_config_services

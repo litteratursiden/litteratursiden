@@ -126,7 +126,7 @@ class CoverService implements CoverServiceInterface {
     }
 
     if (!$largeImageUrl && !$originalImageUrl) {
-      drupal_set_message('No cover found for ISBN '.$isbn, 'warning');
+      \Drupal::messenger()->addMessage('No cover found for ISBN '.$isbn, 'warning');
     }
 
     // If cover doesn't have a  'large' cover fall back to use the original.

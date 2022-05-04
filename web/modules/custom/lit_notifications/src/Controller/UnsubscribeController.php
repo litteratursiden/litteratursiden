@@ -59,7 +59,7 @@ class UnsubscribeController extends ControllerBase {
     }
 
     $expected_hash = static::getHash($user, $node);
-    return AccessResult::allowedIf(Crypt::hashEquals($expected_hash, $hash));
+    return AccessResult::allowedIf(hash_equals($expected_hash, $hash));
   }
 
   /**
@@ -82,14 +82,14 @@ class UnsubscribeController extends ControllerBase {
 
       try {
         $flag_service->unflag($flag, $node, $user);
-        drupal_set_message(t("You've successfully unscubscribed from %node_title.", ['%node_title' => $node->getTitle()]));
+        \Drupal::messenger()->addMessage(t("You've successfully unscubscribed from %node_title.", ['%node_title' => $node->getTitle()]));
       }
       catch (\LogicException $exception) {
-        drupal_set_message(t('Something sent wrong during the unsubscribing. Please contact the administrator.'), 'error');
+        \Drupal::messenger()->addMessage(t('Something sent wrong during the unsubscribing. Please contact the administrator.'), 'error');
       }
     }
     else {
-      drupal_set_message(t("You already unscubscribed from %node_title.", ['%node_title' => $node->getTitle()]));
+      \Drupal::messenger()->addMessage(t("You already unscubscribed from %node_title.", ['%node_title' => $node->getTitle()]));
     }
 
     return new RedirectResponse($node->toUrl()->toString());

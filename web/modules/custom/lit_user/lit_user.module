@@ -185,7 +185,7 @@ function lit_user_login_form_ajax_submit(array &$form, FormStateInterface $form_
     $ajax_response->addCommand(new ShowErrorsCommand('.user-login-form', $errors));
 
     // Clearing error messages queue.
-    drupal_get_messages('error');
+    \Drupal::messenger()->addMessage('error');
   }
   else {
     $path = \Drupal::request()->getPathInfo();

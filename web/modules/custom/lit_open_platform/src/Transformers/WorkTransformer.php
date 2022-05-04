@@ -115,7 +115,7 @@ class WorkTransformer extends BaseTransformer {
     // Get image content from the url.
     $data = file_get_contents($url);
 
-    if ($data && file_prepare_directory($dir, FILE_CREATE_DIRECTORY)) {
+    if ($data && \Drupal::service('file_system')->prepareDirectory($dir, \Drupal\Core\File\FileSystemInterface::CREATE_DIRECTORY)) {
       // Generate unique filename based on the url.
       $filename = md5($url) . '.jpeg';
 

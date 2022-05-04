@@ -3,6 +3,7 @@
 namespace Drupal\lit_taxonomy\Form;
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Drupal\taxonomy\Form\OverviewTerms as BaseOverviewTerms;
 use Drupal\taxonomy\VocabularyInterface;
 
@@ -155,11 +156,12 @@ class OverviewTerms extends BaseOverviewTerms {
     $form['terms'] = [
       '#type' => 'table',
       '#header' => [$this->t('Name'), $this->t('Status'), $this->t('Weight'), $this->t('Operations')],
-      '#empty' => $this->t('No terms available. <a href=":link">Add term</a>.', [':link' => $this->url('entity.taxonomy_term.add_form', ['taxonomy_vocabulary' => $taxonomy_vocabulary->id()])]),
+      '#empty' => $this->t('No terms available. <a href=":link">Add term</a>.', [':link' => Url::fromRoute('entity.taxonomy_term.add_form', ['taxonomy_vocabulary' => $taxonomy_vocabulary->id()])]),
       '#attributes' => [
         'id' => 'taxonomy',
       ],
     ];
+    $term_storage = $this->entityTypeManager->getStorage('taxonomy_term');
     foreach ($current_page as $key => $term) {
       /** @var $term \Drupal\Core\Entity\EntityInterface */
       $term = $this->entityManager->getTranslationFromContext($term);
@@ -172,12 +174,14 @@ class OverviewTerms extends BaseOverviewTerms {
         ];
       }
       $form['terms'][$key]['term'] = [
-        '#prefix' => !empty($indentation) ? drupal_render($indentation) : '',
+        '#prefix' => !empty($indentation) ? \Drupal::service('renderer')->render($indentation) : '',
         '#type' => 'link',
         '#title' => $term->getName(),
         '#url' => $term->urlInfo(),
       ];
-      if ($taxonomy_vocabulary->getHierarchy() != VocabularyInterface::HIERARCHY_MULTIPLE && count($tree) > 1) {
+
+      /** @var $term_storage \Drupal\taxonomy\TermStorage */
+      if ($term_storage->getVocabularyHierarchyType($taxonomy_vocabulary->id()) != VocabularyInterface::HIERARCHY_MULTIPLE && count($tree) > 1) {
         $parent_fields = TRUE;
         $form['terms'][$key]['term']['tid'] = [
           '#type' => 'hidden',
@@ -300,7 +304,7 @@ class OverviewTerms extends BaseOverviewTerms {
       'group' => 'term-weight',
     ];
 
-    if ($taxonomy_vocabulary->getHierarchy() != VocabularyInterface::HIERARCHY_MULTIPLE && count($tree) > 1) {
+    if ($term_storage->getVocabularyHierarchyType($taxonomy_vocabulary->id()) != VocabularyInterface::HIERARCHY_MULTIPLE && count($tree) > 1) {
       $form['actions'] = ['#type' => 'actions', '#tree' => FALSE];
       $form['actions']['submit'] = [
         '#type' => 'submit',

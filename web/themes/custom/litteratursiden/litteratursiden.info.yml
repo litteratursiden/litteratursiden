@@ -21,3 +21,4 @@ libraries:
   - litteratursiden/match-height
   - litteratursiden/litteratursiden
   - litteratursiden/small-spots
+core_version_requirement: ^8 || ^9
