@@ -6,7 +6,6 @@ dependencies:
     - lit_views
     - node
     - user
-    - view_unpublished
 _core:
   default_config_hash: tS8PbpJX90aRFC3-UTgXzdqkq7_2frk2pz4TMijEebM
 id: content
@@ -32,11 +31,11 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -818,7 +817,7 @@ display:
         weight: -10
       display_extenders: {  }
     display_plugin: page
-    display_title: Page
+    display_title: Side
     id: page_1
     position: 1
     cache_metadata:

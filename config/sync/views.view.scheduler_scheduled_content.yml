@@ -2,6 +2,8 @@ uuid: 730fc1a4-6659-4796-8999-e696c874ccc2
 langcode: da
 status: true
 dependencies:
+  config:
+    - system.menu.admin
   module:
     - lit_views
     - node
@@ -30,11 +32,11 @@ display:
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -752,9 +754,9 @@ display:
     display_options:
       path: admin/content/scheduled
       menu:
-        type: tab
+        type: normal
         title: Scheduled
-        description: ''
+        description: 'Content scheduled for publishing and unpublishing'
         parent: system.admin_content
         weight: -10
         context: '0'
