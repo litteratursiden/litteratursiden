@@ -10,7 +10,6 @@ dependencies:
     - flag
     - node
     - user
-    - view_unpublished
 _core:
   default_config_hash: vS-Njp41DTsjmwXi4MWQZCK77rWjpcs4DMe3x3r6YmY
 id: flag_bookmark
@@ -46,11 +45,11 @@ display:
         options:
           submit_button: Udfør
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Gendan
+          exposed_sorts_label: 'Sortér efter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Faldende
       pager:
         type: full
         options:
@@ -65,12 +64,12 @@ display:
             last: 'last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Antal elementer'
             items_per_page_options: '5, 10, 20, 40, 60'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskydning
           quantity: 9
       style:
         type: default

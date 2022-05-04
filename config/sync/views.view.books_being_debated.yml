@@ -10,7 +10,6 @@ dependencies:
     - lit_views
     - node
     - user
-    - view_unpublished
 id: books_being_debated
 label: 'Books being debated'
 module: views
