@@ -33,7 +33,6 @@ field_settings:
         - field.storage.node.field_article_general_tags
       module:
         - taxonomy
-        - taxonomy
   field_author_portrait_tags:
     label: 'Author tags'
     datasource_id: 'entity:node'
@@ -45,7 +44,6 @@ field_settings:
         - field.storage.node.field_author_portrait_tags
       module:
         - taxonomy
-        - taxonomy
   field_blog_general_tags:
     label: 'Blog tags'
     datasource_id: 'entity:node'
@@ -56,7 +54,6 @@ field_settings:
       config:
         - field.storage.node.field_blog_general_tags
       module:
-        - taxonomy
         - taxonomy
   field_book_author:
     label: 'Author (text)'
@@ -78,7 +75,6 @@ field_settings:
         - field.storage.node.field_book_general_tags
       module:
         - taxonomy
-        - taxonomy
   field_book_list_general_tags:
     label: 'Book list tags'
     datasource_id: 'entity:node'
@@ -90,7 +86,6 @@ field_settings:
         - field.storage.node.field_book_list_general_tags
       module:
         - taxonomy
-        - taxonomy
   field_topic_general_tags:
     label: 'Topic tags'
     datasource_id: 'entity:node'
@@ -101,7 +96,6 @@ field_settings:
       config:
         - field.storage.node.field_topic_general_tags
       module:
-        - taxonomy
         - taxonomy
   lit_entity_authored_by:
     label: 'Authored by'
@@ -190,16 +184,51 @@ datasource_settings:
       selected: {  }
 processor_settings:
   add_entity_authored_by: {  }
-  add_entity_bundle_type: {  }
-  add_entity_bundle_type_machine: {  }
-  add_entity_bundle_type_weight: {  }
   add_entity_label: {  }
+  add_entity_bundle_type_machine: {  }
+  add_entity_bundle_type: {  }
+  add_entity_bundle_type_weight: {  }
+  rendered_item: {  }
   add_url: {  }
   aggregated_field: {  }
+  entity_type: {  }
+  entity_status: {  }
+  ignorecase:
+    all_fields: false
+    fields:
+      - field_article_general_tags
+      - field_author_portrait_tags
+      - field_blog_general_tags
+      - field_book_author
+      - field_book_general_tags
+      - field_book_list_general_tags
+      - field_topic_general_tags
+      - lit_entity_authored_by
+      - lit_entity_bundle_type
+      - lit_entity_label
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  ignore_character:
+    ignorable: '[''¿¡!?,.:;-]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+    all_fields: false
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+  language_with_fallback: {  }
   content_access:
     weights:
       preprocess_query: -30
-  entity_status: {  }
   html_filter:
     all_fields: false
     fields:
@@ -226,39 +255,6 @@ processor_settings:
     weights:
       preprocess_index: -15
       preprocess_query: -15
-  ignore_character:
-    ignorable: '[''¿¡!?,.:;-]'
-    ignorable_classes:
-      - Pc
-      - Pd
-      - Pe
-      - Pf
-      - Pi
-      - Po
-      - Ps
-    all_fields: false
-    weights:
-      preprocess_index: -10
-      preprocess_query: -10
-  ignorecase:
-    all_fields: false
-    fields:
-      - field_article_general_tags
-      - field_author_portrait_tags
-      - field_blog_general_tags
-      - field_book_author
-      - field_book_general_tags
-      - field_book_list_general_tags
-      - field_topic_general_tags
-      - lit_entity_authored_by
-      - lit_entity_bundle_type
-      - lit_entity_label
-      - rendered_item
-      - title
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
-  rendered_item: {  }
 tracker_settings:
   default:
     indexing_order: fifo
@@ -266,4 +262,5 @@ options:
   index_directly: true
   cron_limit: 50
   overridden_by_acquia_search: 2
+  track_changes_in_references: true
 server: elastic
