@@ -48,6 +48,7 @@ third_party_settings:
         id: book-additional-info
         classes: book-additional-info
       label: 'Additional info'
+      region: content
     group_book_details:
       children:
         - field_book_secondary_title
@@ -66,6 +67,7 @@ third_party_settings:
         id: book-additional-info-details
         classes: book-details
       label: 'Book details'
+      region: content
     group_book_review:
       children:
         - latest_review
@@ -78,6 +80,7 @@ third_party_settings:
         id: book-additional-info-review
         classes: book-review
       label: Review
+      region: content
     group_book_analysis:
       children:
         - latest_analysis
@@ -90,6 +93,7 @@ third_party_settings:
         id: book-additional-info-analysis
         classes: book-analysis
       label: Analysis
+      region: content
 id: node.book.default
 targetEntityType: node
 bundle: book
