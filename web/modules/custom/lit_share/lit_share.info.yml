@@ -3,3 +3,4 @@ type: module
 description: Provides general functionality of sharing for litteratursiden
 core: 8.x
 package: Litteratursiden
+core_version_requirement: ^8 || ^9

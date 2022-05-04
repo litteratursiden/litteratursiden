@@ -2,7 +2,8 @@
 
 namespace Drupal\lit_user\Controller;
 
-use Drupal\user_registrationpassword\Controller\UserRegistrationPassword as UserRegistrationPasswordDefault;
+use Drupal\Core\Url;
+use Drupal\user_registrationpassword\Controller\RegistrationController as UserRegistrationPasswordDefault;
 
 class UserRegistrationPassword extends UserRegistrationPasswordDefault {
 
@@ -20,7 +21,7 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
     if ($current_user->isAuthenticated()) {
       // The existing user is already logged in.
       if ($current_user->id() == $uid) {
-        drupal_set_message(t('You are currently authenticated as user %user.',
+        \Drupal::messenger()->addMessage(t('You are currently authenticated as user %user.',
           ['%user' => $current_user->getAccountName()]));
 
         // Redirect to user page.
@@ -31,11 +32,11 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
         // A different user is already logged in on the computer.
         $reset_link_account = $this->userStorage->load($uid);
         if (!empty($reset_link_account)) {
-          drupal_set_message($this->t('Another user (%other_user) is already logged into the site on this computer, but you tried to use a one-time link for user %resetting_user. Please <a href=":logout">log out</a> and try using the link again.',
+          \Drupal::messenger()->addMessage($this->t('Another user (%other_user) is already logged into the site on this computer, but you tried to use a one-time link for user %resetting_user. Please <a href=":logout">log out</a> and try using the link again.',
             [
               '%other_user' => $current_user->getDisplayName(),
               '%resetting_user' => $reset_link_account->getDisplayName(),
-              ':logout' => $this->url('user.logout'),
+              ':logout' => Url::fromRoute('user.logout'),
             ]), 'warning');
         }
         else {
@@ -89,7 +90,7 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
           user_login_finalize($account);
 
           // Display default welcome message.
-          drupal_set_message(t('You have just used your one-time login link. Your account is now active and you are authenticated.'));
+          \Drupal::messenger()->addMessage(t('You have just used your one-time login link. Your account is now active and you are authenticated.'));
 
           // Redirect to user.
           $route_name = 'entity.user.edit_form';

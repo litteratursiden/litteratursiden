@@ -24,5 +24,5 @@ function lit_user_form_user_form_alter (&$form , \Drupal\Core\Form\FormStateInte
 function lit_user_form_user_form_first_time_logging ($form , FormStateInterface $form_state)
 {
     $form_state->setRedirect('<front>');
-    drupal_set_message(t('You\'re log in.'));
+    \Drupal::messenger()->addMessage('You\'re log in.');
 }

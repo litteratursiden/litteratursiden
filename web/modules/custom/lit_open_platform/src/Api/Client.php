@@ -215,7 +215,7 @@ class Client {
       $result = json_decode($response->getBody(), TRUE);
     }
     catch (ClientException $exception) {
-      drupal_set_message("The Open Platform " . $exception->getMessage(), 'error');
+      \Drupal::messenger()->addMessage("The Open Platform " . $exception->getMessage(), 'error');
     }
 
     return $result;

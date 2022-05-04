@@ -5,6 +5,7 @@ namespace Drupal\litteratursiden\Plugin\Form;
 use Drupal\bootstrap\Plugin\Form\SystemThemeSettings;
 use Drupal\bootstrap\Utility\Element;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\StreamWrapper\StreamWrapperManager;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -19,6 +20,7 @@ class UploadBgImage extends SystemThemeSettings {
    * {@inheritdoc}
    */
   public function alterForm(array &$form, FormStateInterface $form_state, $form_id = NULL) {
+    $a =1;
     // Call the parent method from the base theme, if applicable (which it is
     // in this case because Bootstrap actually implements this alter).
     parent::alterForm($form, $form_state, $form_id);
@@ -85,7 +87,10 @@ class UploadBgImage extends SystemThemeSettings {
     // If the user uploaded a new background, save it to a permanent location
     // and use it in place of the default theme-provided file.
     if (!empty($values['background_upload'])) {
-      $filename = file_unmanaged_copy($values['background_upload']->getFileUri());
+      $source = $values['background_upload']->getFileUri();
+      $file_system = \Drupal::service('file_system');
+      $destination = file_build_uri($file_system->basename($source));
+      $filename = $file_system->copy($source, $destination);
       $values['background_path'] = $filename;
     }
 
@@ -118,7 +123,7 @@ class UploadBgImage extends SystemThemeSettings {
    */
   protected static function validatePath($path) {
     // Absolute local file paths are invalid.
-    if (drupal_realpath($path) == $path) {
+    if (\Drupal::service('file_system')->realpath($path) == $path) {
       return FALSE;
     }
     // A path relative to the Drupal root or a fully qualified URI is valid.
@@ -126,7 +131,7 @@ class UploadBgImage extends SystemThemeSettings {
       return $path;
     }
     // Prepend 'public://' for relative file paths within public filesystem.
-    if (file_uri_scheme($path) === FALSE) {
+    if (StreamWrapperManager::getScheme($path) === FALSE) {
       $path = 'public://' . $path;
     }
     if (is_file($path)) {

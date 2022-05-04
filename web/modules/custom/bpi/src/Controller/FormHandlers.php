@@ -37,7 +37,7 @@ class FormHandlers {
         $t = [
           '%title' => $node->getTitle(),
         ];
-        drupal_set_message(t('BPI: Node %title was already pushed to the well.', $t), 'warning');
+        \Drupal::messenger()->addMessage(t('BPI: Node %title was already pushed to the well.', $t), 'warning');
         return;
       }
     }
@@ -57,10 +57,10 @@ class FormHandlers {
       if (!empty($push_result['id'])) {
         $data['bid'] = $push_result['id'];
         bpi_update_syndicated($node->id(), BpiCore::BPI_PUSHED, $push_result['id'], $data);
-        drupal_set_message(t('BPI: Node %title was successfully pushed to the well.', ['%title' => $node->getTitle()]));
+        \Drupal::messenger()->addMessage(t('BPI: Node %title was successfully pushed to the well.', ['%title' => $node->getTitle()]));
       }
       else {
-        drupal_set_message(t('BPI: Error while pushing content to the well.'), 'error');
+        \Drupal::messenger()->addMessage(t('BPI: Error while pushing content to the well.'), 'error');
         \Drupal::logger('bpi')
           ->error(t('An error occurred when pushing content to BPI.'));
       }

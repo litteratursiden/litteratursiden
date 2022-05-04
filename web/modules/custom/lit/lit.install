@@ -38,14 +38,14 @@ function _setup_default_images() {
     '6169fc89-4315-435b-8492-0c663dc0e97a',
   ];
 
-  if (file_prepare_directory($dir, FILE_CREATE_DIRECTORY)) {
+  if (\Drupal::service('file_system')->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
     foreach ($uuids as $uuid) {
       $exist = (bool) \Drupal::entityQuery('file')
         ->condition('uuid', $uuid)
         ->execute();
 
       if ($exist == FALSE) {
-        $uri = file_unmanaged_copy($placeholder, 'public://default_images/placeholder.png');
+        $uri = \Drupal::service('file_system')->copy($placeholder, 'public://default_images/placeholder.png');
         if ($uri) {
           $file = File::create([
             'uuid' => $uuid,

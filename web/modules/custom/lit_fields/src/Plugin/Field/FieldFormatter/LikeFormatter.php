@@ -148,7 +148,6 @@ class LikeFormatter extends FormatterBase implements ContainerFactoryPluginInter
     ];
 
     $elements['#attached']['library'][] = 'core/drupal.ajax';
-    $elements['#attached']['library'][] = 'like_dislike/like_dislike';
 
     // Set the cache for the element.
     $elements['#cache']['max-age'] = 0;
