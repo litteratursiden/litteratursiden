@@ -109,7 +109,7 @@ function litteratursiden_preprocess_node(&$variables) {
   // Get node author info.
   $variables['node_author'] = $author->get('field_user_full_name')->getString();
   if ($author->get('field_user_picture')->isEmpty() === FALSE) {
-    $variables['node_author_picture'] = $author->get('field_user_picture')->entity->url();
+    $variables['node_author_picture'] = $author->get('field_user_picture')->entity->getFileUri();
   }
 
   // Get and style image for spot display type.
@@ -163,7 +163,7 @@ function litteratursiden_preprocess_node(&$variables) {
 
     if ($item && $item->entity) {
       $variables['label'] = $item->entity->label();
-      $variables['url'] = $item->entity->url();
+      $variables['url'] = $item->entity->toUrl()->toString();
     }
   }
 }
