@@ -5,7 +5,6 @@
  * Contains lit_user.module.
  */
 
-require_once __DIR__ . '/includes/lit_user.block.inc';
 require_once __DIR__ . '/includes/lit_user.form.inc';
 
 use Drupal\Core\Routing\RouteMatchInterface;
