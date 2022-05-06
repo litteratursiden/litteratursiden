@@ -13,22 +13,22 @@ bundle: comment
 mode: default
 content:
   comment_body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   flag_comment_like:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
   owner_full_name: true

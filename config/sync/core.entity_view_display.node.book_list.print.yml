@@ -24,20 +24,20 @@ mode: print
 content:
   field_book_list_body:
     type: text_default
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_book_list_reference_book:
     type: entity_reference_entity_view
-    weight: 1
-    region: content
     label: hidden
     settings:
       view_mode: print_list_item
       link: false
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_block_reference: true
   field_book_list_comments: true

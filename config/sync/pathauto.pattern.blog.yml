@@ -11,12 +11,12 @@ pattern: 'blogs/[node:author:field_user_full_name]/[node:title]'
 selection_criteria:
   8b62492c-b63f-47a0-a552-ff3f7243f20e:
     id: 'entity_bundle:node'
-    bundles:
-      blog: blog
     negate: false
+    uuid: 8b62492c-b63f-47a0-a552-ff3f7243f20e
     context_mapping:
       node: node
-    uuid: 8b62492c-b63f-47a0-a552-ff3f7243f20e
+    bundles:
+      blog: blog
 selection_logic: and
 weight: -7
 relationships: {  }

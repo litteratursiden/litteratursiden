@@ -1,4 +1,4 @@
-minifier: 2
+langcode: da
 _core:
   default_config_hash: kjloycaorPxucU1MyqCvnQPEHqOfcgdNVIfFzki6wOE
-langcode: da
+minifier: 2

@@ -38,18 +38,18 @@ mode: title_and_image
 content:
   field_book_cover_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: topic_teaser
       image_link: ''
+      image_style: topic_teaser
     third_party_settings: {  }
-  latest_revew:
-    weight: 7
+    weight: 0
     region: content
+  latest_revew:
     settings: {  }
     third_party_settings: {  }
+    weight: 7
+    region: content
 hidden:
   field_bibliotekdk: true
   field_block_reference: true

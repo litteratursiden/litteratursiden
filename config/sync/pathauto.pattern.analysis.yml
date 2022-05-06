@@ -11,12 +11,12 @@ pattern: 'analyser/[node:title]'
 selection_criteria:
   ca6af088-8280-42db-8481-66dfab21c8a5:
     id: 'entity_bundle:node'
-    bundles:
-      analysis: analysis
     negate: false
+    uuid: ca6af088-8280-42db-8481-66dfab21c8a5
     context_mapping:
       node: node
-    uuid: ca6af088-8280-42db-8481-66dfab21c8a5
+    bundles:
+      analysis: analysis
 selection_logic: and
 weight: -4
 relationships: {  }

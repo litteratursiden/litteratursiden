@@ -13,15 +13,15 @@ bundle: overview
 mode: default
 content:
   field_views_reference:
+    type: viewsreference_autocomplete
     weight: 26
+    region: content
     settings:
       match_operator: CONTAINS
       size: '60'
       placeholder: ''
       match_limit: 10
     third_party_settings: {  }
-    type: viewsreference_autocomplete
-    region: content
   info:
     type: string_textfield
     weight: -5

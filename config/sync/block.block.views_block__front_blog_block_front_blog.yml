@@ -18,13 +18,13 @@ plugin: 'views_block:front_blog-block_front_blog'
 settings:
   id: 'views_block:front_blog-block_front_blog'
   label: Blog
-  provider: views
   label_display: visible
+  provider: views
   views_label: Blog
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

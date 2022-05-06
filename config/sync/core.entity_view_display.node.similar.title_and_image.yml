@@ -26,13 +26,13 @@ mode: title_and_image
 content:
   field_similar_spotbox_image:
     type: image
-    weight: 0
-    region: content
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_block_reference: true
   field_similar_author: true

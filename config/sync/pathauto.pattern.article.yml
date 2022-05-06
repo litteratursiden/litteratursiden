@@ -11,12 +11,12 @@ pattern: 'artikler/[node:title]'
 selection_criteria:
   1b867f6b-d9c4-4523-9459-b6868a7e0982:
     id: 'entity_bundle:node'
-    bundles:
-      article: article
     negate: false
+    uuid: 1b867f6b-d9c4-4523-9459-b6868a7e0982
     context_mapping:
       node: node
-    uuid: 1b867f6b-d9c4-4523-9459-b6868a7e0982
+    bundles:
+      article: article
 selection_logic: and
 weight: -6
 relationships: {  }

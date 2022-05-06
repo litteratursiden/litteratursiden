@@ -1,28 +1,28 @@
+_core:
+  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
+langcode: da
 definitions:
   contact__site_page:
-    enabled: true
     menu_name: footer
     parent: ''
-    expanded: false
     weight: -48
+    expanded: false
+    enabled: true
   user__page:
+    menu_name: account
+    parent: ''
     weight: -50
-    menu_name: account
-    parent: ''
-    enabled: true
     expanded: false
+    enabled: true
   user__logout:
-    weight: -47
     menu_name: account
     parent: ''
-    enabled: true
+    weight: -47
     expanded: false
+    enabled: true
   lit__books:
     menu_name: main
     parent: ''
     weight: 5
     expanded: false
     enabled: true
-_core:
-  default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
-langcode: da

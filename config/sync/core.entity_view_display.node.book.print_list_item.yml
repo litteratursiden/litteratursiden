@@ -39,25 +39,25 @@ mode: print_list_item
 content:
   field_book_body:
     type: text_trimmed
-    weight: 1
-    region: content
     label: hidden
     settings:
       trim_length: 300
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_book_cover_image:
-    weight: 0
+    type: image_url
     label: hidden
     settings:
       image_style: book_cover
     third_party_settings: {  }
-    type: image_url
+    weight: 0
     region: content
   latest_revew:
-    weight: 7
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 7
+    region: content
 hidden:
   field_bibliotekdk: true
   field_block_reference: true

@@ -28,18 +28,18 @@ mode: teaser
 content:
   field_topic_cover_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: topic_teaser
       image_link: content
+      image_style: topic_teaser
     third_party_settings: {  }
-  posted:
-    weight: 1
+    weight: 0
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_block_reference: true
   field_teaser: true

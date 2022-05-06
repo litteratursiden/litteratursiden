@@ -24,34 +24,34 @@ bundle: article
 mode: spot
 content:
   field_article_body:
-    weight: 1
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 1
     region: content
   field_article_cover_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: spot
       image_link: ''
+      image_style: spot
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_teaser:
     type: basic_string
-    weight: 3
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  posted:
-    weight: 2
+    weight: 3
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   field_article_comments: true
   field_article_general_tags: true

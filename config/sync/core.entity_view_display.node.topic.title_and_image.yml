@@ -28,13 +28,13 @@ mode: title_and_image
 content:
   field_topic_spotbox_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: topic_teaser
       image_link: ''
+      image_style: topic_teaser
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_block_reference: true
   field_teaser: true

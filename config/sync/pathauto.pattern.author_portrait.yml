@@ -11,12 +11,12 @@ pattern: 'forfattere/[node:title]'
 selection_criteria:
   c5e2b7c5-7f60-460d-abc0-ef38ef295aac:
     id: 'entity_bundle:node'
-    bundles:
-      author_portrait: author_portrait
     negate: false
+    uuid: c5e2b7c5-7f60-460d-abc0-ef38ef295aac
     context_mapping:
       node: node
-    uuid: c5e2b7c5-7f60-460d-abc0-ef38ef295aac
+    bundles:
+      author_portrait: author_portrait
 selection_logic: and
 weight: -5
 relationships: {  }

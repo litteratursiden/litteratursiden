@@ -27,35 +27,35 @@ bundle: author_portrait
 mode: slick_item
 content:
   field_author_portrait_first_name:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_author_portrait_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: slick_item
       image_link: ''
+      image_style: slick_item
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_author_portrait_surname:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   social_media:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_author_portrait_body: true
   field_author_portrait_country: true

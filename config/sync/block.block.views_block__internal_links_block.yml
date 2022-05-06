@@ -19,21 +19,21 @@ plugin: 'views_block:internal_links-internal_links_block'
 settings:
   id: 'views_block:internal_links-internal_links_block'
   label: 'Noget der ligner'
-  provider: views
   label_display: visible
+  provider: views
+  context_mapping: {  }
   views_label: 'Noget der ligner'
   items_per_page: none
-  context_mapping: {  }
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      similar: similar
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/node/*/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: '/node/*/*'
-    negate: true
-    context_mapping: {  }
+    bundles:
+      similar: similar

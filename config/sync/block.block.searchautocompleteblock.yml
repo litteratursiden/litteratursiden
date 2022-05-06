@@ -16,11 +16,11 @@ plugin: lit_search_autocomplete_block
 settings:
   id: lit_search_autocomplete_block
   label: 'Inspiration og debat om litteratur'
-  provider: lit_search
   label_display: visible
+  provider: lit_search
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

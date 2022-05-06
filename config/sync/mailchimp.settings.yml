@@ -1,12 +1,12 @@
+_core:
+  default_config_hash: x8k6uOqmSHPqpp71jYGxHF3_SAs3U-Pha3YCntQIhPU
+langcode: da
 api_key: ChangeMe
+api_timeout: 10
 cron: false
 batch_limit: 100
 api_classname: Mailchimp\Mailchimp
 test_mode: false
-_core:
-  default_config_hash: x8k6uOqmSHPqpp71jYGxHF3_SAs3U-Pha3YCntQIhPU
-langcode: da
 enable_connected: false
 connected_id: null
 connected_paths: null
-api_timeout: 10

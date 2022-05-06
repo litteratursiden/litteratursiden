@@ -1,15 +1,26 @@
-comment_insert:
-  body: "Hello [user:display-name],\r\n<br><br>\r\nHere are your messages:\r\n<br><br>\r\n<b>New comment has been added to [node:title]</b>\r\n<br><br>\r\n<b>- [node:title]</b>\r\n<br><br>\r\n<a href=\"[node:url]\">Read more</a>\r\n<br><br>\r\n<a href=\"[site:url]\">— [site:name]</a>\r\n<br><br>\r\nThis is an automatic message from the literature page.<br>\r\nIf you do not want to receive news mail about <b>[node:title]</b> anymore, you can unsubscribe <a href='[lit_notifications:unsubscribe]'>here</a>"
-  subject: 'New comment has been added to [node:title]'
-comment_reply:
-  body: "Hello [user:display-name],\n<br><br>\nHere are your messages:\n<br><br>\n<b>You have a reply on your comment in [node:title]</b>\n<br><br>\n<b>- [node:title]\n<br><br>\n<a href=\"[comment:url]\">Read more</a>\n<br><br>\n<a href=\"[site:url]\">— [site:name]</a>"
-  subject: 'You have a comment reply'
-comment_update:
-  body: "Hello [user:display-name],\r\n<br><br>\r\nHere are your messages:\r\n<br><br>\r\n<b>Your comment has been updated in [node:title]</b>\r\n<br><br>\r\n<b>- [node:title]\r\n<br><br>\r\n<a href=\"[comment:url]\">Read more</a>\r\n<br><br>\r\n<a href=\"[site:url]\">— [site:name]</a>"
-  subject: 'Your comment has been updated'
-comment_delete:
-  body: "Hello [user:display-name],\r\n<br><br>\r\nHere are your messages:\r\n<br><br>\r\n<b>Your comment has been deleted in [node:title]</b>\r\n<br><br>\r\n<b>- [node:title]</b>\r\n<br><br>\r\n<a href=\"[site:url]\">— [site:name]</a>"
-  subject: 'Your comment has been deleted'
-langcode: da
 _core:
   default_config_hash: rsC51oyioiethEbbxbGU7F4T6XIWDtHkP6NisoDxTJs
+langcode: da
+comment_insert:
+  subject: 'New comment has been added to [node:title]'
+  body: "Hello [user:display-name],\r\n<br><br>\r\nHere are your messages:\r\n<br><br>\r\n<b>New comment has been added to [node:title]</b>\r\n<br><br>\r\n<b>- [node:title]</b>\r\n<br><br>\r\n<a href=\"[node:url]\">Read more</a>\r\n<br><br>\r\n<a href=\"[site:url]\">— [site:name]</a>\r\n<br><br>\r\nThis is an automatic message from the literature page.<br>\r\nIf you do not want to receive news mail about <b>[node:title]</b> anymore, you can unsubscribe <a href='[lit_notifications:unsubscribe]'>here</a>"
+comment_reply:
+  subject: 'You have a comment reply'
+  body: |-
+    Hello [user:display-name],
+    <br><br>
+    Here are your messages:
+    <br><br>
+    <b>You have a reply on your comment in [node:title]</b>
+    <br><br>
+    <b>- [node:title]
+    <br><br>
+    <a href="[comment:url]">Read more</a>
+    <br><br>
+    <a href="[site:url]">— [site:name]</a>
+comment_update:
+  subject: 'Your comment has been updated'
+  body: "Hello [user:display-name],\r\n<br><br>\r\nHere are your messages:\r\n<br><br>\r\n<b>Your comment has been updated in [node:title]</b>\r\n<br><br>\r\n<b>- [node:title]\r\n<br><br>\r\n<a href=\"[comment:url]\">Read more</a>\r\n<br><br>\r\n<a href=\"[site:url]\">— [site:name]</a>"
+comment_delete:
+  subject: 'Your comment has been deleted'
+  body: "Hello [user:display-name],\r\n<br><br>\r\nHere are your messages:\r\n<br><br>\r\n<b>Your comment has been deleted in [node:title]</b>\r\n<br><br>\r\n<b>- [node:title]</b>\r\n<br><br>\r\n<a href=\"[site:url]\">— [site:name]</a>"

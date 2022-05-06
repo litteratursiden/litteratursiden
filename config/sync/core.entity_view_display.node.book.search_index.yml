@@ -37,38 +37,38 @@ bundle: book
 mode: search_index
 content:
   field_book_author:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_book_body:
     type: text_summary_or_trimmed
-    weight: 2
-    region: content
     label: hidden
     settings:
       trim_length: 190
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_book_cover_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: search_index
       image_link: ''
+      image_style: search_index
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_book_general_tags:
     type: entity_reference_label
-    weight: 3
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   field_bibliotekdk: true
   field_book_comments: true
