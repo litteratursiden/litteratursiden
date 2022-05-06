@@ -26,32 +26,32 @@ mode: favorite_content_teaser
 content:
   field_interview_images:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: medium
       image_link: content
+      image_style: medium
     third_party_settings: {  }
+    weight: 0
+    region: content
   flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 2
     region: content
+  owner_full_name:
     settings: {  }
     third_party_settings: {  }
-  owner_full_name:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
   posted:
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_block_reference: true

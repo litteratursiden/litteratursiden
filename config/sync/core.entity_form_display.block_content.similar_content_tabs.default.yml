@@ -17,29 +17,29 @@ bundle: similar_content_tabs
 mode: default
 content:
   field_similar_content_bg:
+    type: color_field_widget_html5
     weight: 4
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: color_field_widget_html5
-    region: content
   field_similar_content_icon:
+    type: image_image
     weight: 3
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_similar_content_reference:
+    type: entity_reference_autocomplete
     weight: 2
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   info:
     type: string_textfield
     weight: 0

@@ -26,26 +26,26 @@ bundle: interview
 mode: search_index
 content:
   field_interview_body:
-    weight: 2
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 2
     region: content
   field_interview_images:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: search_index
       image_link: ''
+      image_style: search_index
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   posted:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_block_reference: true
   field_interview_external_links: true

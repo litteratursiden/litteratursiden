@@ -11,12 +11,12 @@ pattern: 'videoer/[node:title]'
 selection_criteria:
   d6425b9a-69d8-41f6-870b-126a3f70dc17:
     id: 'entity_bundle:node'
-    bundles:
-      interview: interview
     negate: false
+    uuid: d6425b9a-69d8-41f6-870b-126a3f70dc17
     context_mapping:
       node: node
-    uuid: d6425b9a-69d8-41f6-870b-126a3f70dc17
+    bundles:
+      interview: interview
 selection_logic: and
 weight: -5
 relationships: {  }

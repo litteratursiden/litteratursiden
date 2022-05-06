@@ -18,6 +18,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: field_topic_spotbox_image
   file_extensions: 'png gif jpg jpeg'
   max_filesize: '8 MB'
@@ -33,6 +35,4 @@ settings:
     title: ''
     width: 186
     height: 287
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: image

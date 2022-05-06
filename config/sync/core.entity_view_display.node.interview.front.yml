@@ -25,17 +25,17 @@ mode: front
 content:
   field_interview_body:
     type: text_trimmed
-    weight: 0
-    region: content
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-  links:
-    weight: 1
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_block_reference: true
   field_interview_external_links: true

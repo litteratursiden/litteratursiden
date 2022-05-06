@@ -37,36 +37,36 @@ mode: favorite_content_teaser
 content:
   field_book_author:
     type: string
-    weight: 1
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_book_cover_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: content
+      image_style: medium
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
+  latest_revew:
     settings: {  }
     third_party_settings: {  }
-  latest_revew:
     weight: 7
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_bibliotekdk: true
   field_book_body: true

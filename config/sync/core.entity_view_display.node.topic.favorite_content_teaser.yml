@@ -27,34 +27,34 @@ bundle: topic
 mode: favorite_content_teaser
 content:
   field_topic_cover_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: content
+      image_style: medium
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 2
     region: content
+  owner_full_name:
     settings: {  }
     third_party_settings: {  }
-  owner_full_name:
     weight: 1
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
-  posted:
     weight: 4
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_block_reference: true
   field_teaser: true

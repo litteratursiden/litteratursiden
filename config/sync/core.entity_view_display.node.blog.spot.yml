@@ -28,29 +28,29 @@ bundle: blog
 mode: spot
 content:
   field_blog_body:
-    weight: 1
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 1
     region: content
   field_blog_cover_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: spot
       image_link: ''
+      image_style: spot
     third_party_settings: {  }
+    weight: 0
+    region: content
   field_teaser:
     type: basic_string
-    weight: 2
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   field_block_reference: true
   field_blog_comments: true

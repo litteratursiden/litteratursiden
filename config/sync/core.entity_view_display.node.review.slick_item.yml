@@ -26,51 +26,51 @@ bundle: review
 mode: slick_item
 content:
   book_links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 7
     region: content
+  field_book_author:
     settings: {  }
     third_party_settings: {  }
-  field_book_author:
     weight: 3
     region: content
+  field_book_body:
     settings: {  }
     third_party_settings: {  }
-  field_book_body:
     weight: 5
     region: content
+  field_book_cover_image:
     settings: {  }
     third_party_settings: {  }
-  field_book_cover_image:
     weight: 1
     region: content
+  field_book_original_title:
     settings: {  }
     third_party_settings: {  }
-  field_book_original_title:
     weight: 2
     region: content
+  field_book_reference_author:
     settings: {  }
     third_party_settings: {  }
-  field_book_reference_author:
     weight: 4
     region: content
-    settings: {  }
-    third_party_settings: {  }
   field_review_body:
     type: text_default
-    weight: 6
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 6
+    region: content
   field_review_cover_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: slick_item
       image_link: ''
+      image_style: slick_item
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_review_comments: true
   field_review_excerpt: true

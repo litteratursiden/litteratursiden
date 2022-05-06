@@ -11,12 +11,12 @@ pattern: 'debat/[node:title]'
 selection_criteria:
   266b77e9-0fd2-41df-99ae-46cc1d30e3f7:
     id: 'entity_bundle:node'
-    bundles:
-      book_debate: book_debate
     negate: false
+    uuid: 266b77e9-0fd2-41df-99ae-46cc1d30e3f7
     context_mapping:
       node: node
-    uuid: 266b77e9-0fd2-41df-99ae-46cc1d30e3f7
+    bundles:
+      book_debate: book_debate
 selection_logic: and
 weight: -9
 relationships: {  }

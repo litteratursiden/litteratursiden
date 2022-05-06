@@ -16,11 +16,11 @@ plugin: 'mailchimp_signup_subscribe_block:subscribe_to_newsletter'
 settings:
   id: 'mailchimp_signup_subscribe_block:subscribe_to_newsletter'
   label: 'Hold dig opdateret'
-  provider: mailchimp_signup
   label_display: visible
+  provider: mailchimp_signup
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

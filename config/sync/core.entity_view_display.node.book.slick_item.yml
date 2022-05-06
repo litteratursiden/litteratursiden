@@ -38,50 +38,50 @@ mode: slick_item
 content:
   field_book_author:
     type: string
-    weight: 2
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_book_body:
-    weight: 4
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 300
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 4
     region: content
   field_book_cover_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: slick_item
       image_link: ''
+      image_style: slick_item
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_book_original_title:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_book_reference_author:
     type: entity_reference_label
-    weight: 3
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-  links:
-    weight: 5
+    weight: 3
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 5
+    region: content
 hidden:
   field_bibliotekdk: true
   field_book_comments: true

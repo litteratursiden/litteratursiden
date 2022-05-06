@@ -23,7 +23,6 @@ bundles:
   - topic
 entity_type: node
 global: false
-weight: 0
 flag_short: Like
 flag_long: ''
 flag_message: ''
@@ -31,6 +30,7 @@ unflag_short: Unlike
 unflag_long: ''
 unflag_message: ''
 unflag_denied_text: ''
+weight: 0
 flag_type: 'entity:node'
 link_type: ajax_link
 flagTypeConfig:

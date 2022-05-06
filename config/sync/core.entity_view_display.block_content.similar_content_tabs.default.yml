@@ -18,30 +18,30 @@ bundle: similar_content_tabs
 mode: default
 content:
   field_similar_content_bg:
-    weight: 2
+    type: color_field_formatter_text
     label: hidden
     settings:
       format: hex
-      opacity: '1'
+      opacity: true
     third_party_settings: {  }
-    type: color_field_formatter_text
+    weight: 2
     region: content
   field_similar_content_icon:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: slick_item
       image_link: ''
+      image_style: slick_item
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   field_similar_content_reference:
-    weight: 0
+    type: entity_reference_tab_formatter
     label: hidden
     settings:
       mode: internal_links_carousel
     third_party_settings: {  }
-    type: entity_reference_tab_formatter
+    weight: 0
     region: content
 hidden:
   langcode: true

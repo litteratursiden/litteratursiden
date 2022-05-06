@@ -26,33 +26,33 @@ bundle: similar
 mode: search_index
 content:
   field_similar_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   field_similar_cover_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: search_index
       image_link: ''
+      image_style: search_index
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_similar_general_tags:
-    weight: 2
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 2
     region: content
   posted:
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_similar_author: true

@@ -6,5 +6,4 @@ id: api
 label: API
 weight: 5
 is_admin: null
-permissions:
-  - 'view own simple_oauth entities'
+permissions: {  }

@@ -11,6 +11,9 @@ field_name: field_book_cover_image
 entity_type: node
 type: image
 settings:
+  target_type: file
+  display_field: false
+  display_default: false
   uri_scheme: public
   default_image:
     uuid: 057fdaf1-2f38-4fa8-9dfd-4d927488a36f
@@ -18,9 +21,6 @@ settings:
     title: 'Bogens forside'
     width: 100
     height: 150
-  target_type: file
-  display_field: false
-  display_default: false
 module: image
 locked: false
 cardinality: 1

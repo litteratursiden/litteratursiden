@@ -27,22 +27,22 @@ mode: teaser
 content:
   field_blog_body:
     type: text_trimmed
-    weight: 1
-    region: content
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
+    region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  owner_full_name:
     settings: {  }
     third_party_settings: {  }
-  owner_full_name:
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_block_reference: true
   field_blog_comments: true

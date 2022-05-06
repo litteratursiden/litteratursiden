@@ -19,27 +19,27 @@ bundle: user
 mode: content_author
 content:
   field_user_full_name:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_user_picture:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: avatar
       image_link: content
+      image_style: avatar
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   roles:
-    weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   contact_link: true
   created: true

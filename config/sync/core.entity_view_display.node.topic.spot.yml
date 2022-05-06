@@ -29,38 +29,38 @@ mode: spot
 content:
   field_teaser:
     type: basic_string
-    weight: 2
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_topic_body:
-    weight: 0
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 300
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 0
     region: content
   field_topic_spotbox_image:
     type: image
-    weight: 1
-    region: content
     label: hidden
     settings:
-      image_style: spot
       image_link: ''
+      image_style: spot
     third_party_settings: {  }
+    weight: 1
+    region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
-  posted:
     weight: 4
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_block_reference: true
   field_topic_comments: true

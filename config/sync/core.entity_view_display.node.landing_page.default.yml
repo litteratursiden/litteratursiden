@@ -13,29 +13,29 @@ bundle: landing_page
 mode: default
 content:
   field_block_reference:
-    weight: 101
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 101
     region: content
   links:
+    settings: {  }
+    third_party_settings: {  }
     weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
   posted:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   social_media:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   langcode: true
   owner_full_name: true
