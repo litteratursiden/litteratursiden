@@ -1,3 +1,4 @@
+
 var slider = tns({
   container: '.small-spots-slider',
   items: 3,
