@@ -33,16 +33,16 @@ class TermSelection extends BaseTermSelection {
 
     $options = [];
 
-    $bundles = $this->entityManager->getBundleInfo('taxonomy_term');
+    $bundles = $this->entityTypeManager->getBundleInfo('taxonomy_term');
     $handler_settings = $this->configuration['handler_settings'];
     $bundle_names = !empty($handler_settings['target_bundles']) ? $handler_settings['target_bundles'] : array_keys($bundles);
 
     foreach ($bundle_names as $bundle) {
       if ($vocabulary = Vocabulary::load($bundle)) {
-        if ($terms = $this->entityManager->getStorage('taxonomy_term')->loadTree($vocabulary->id(), 0, NULL, TRUE)) {
+        if ($terms = $this->entityTypeManager->getStorage('taxonomy_term')->loadTree($vocabulary->id(), 0, NULL, TRUE)) {
           foreach ($terms as $term) {
             if (Term::access($term, 'view', $account)->isAllowed()) {
-              $options[$vocabulary->id()][$term->id()] = str_repeat('-', $term->depth) . Html::escape($this->entityManager->getTranslationFromContext($term)->label());
+              $options[$vocabulary->id()][$term->id()] = str_repeat('-', $term->depth) . Html::escape($this->entityRepository->getTranslationFromContext($term)->label());
             }
           }
         }
@@ -72,11 +72,11 @@ class TermSelection extends BaseTermSelection {
     }
 
     $options = [];
-    $entities = $this->entityManager->getStorage('taxonomy_term')->loadMultiple($result);
+    $entities = $this->entityTypeManager->getStorage('taxonomy_term')->loadMultiple($result);
     foreach ($entities as $entity_id => $entity) {
       if (Term::access($entity, 'view', $account)->isAllowed()) {
         $bundle = $entity->bundle();
-        $options[$bundle][$entity_id] = Html::escape($this->entityManager->getTranslationFromContext($entity)
+        $options[$bundle][$entity_id] = Html::escape($this->entityRepository->getTranslationFromContext($entity)
           ->label());
       }
     }
