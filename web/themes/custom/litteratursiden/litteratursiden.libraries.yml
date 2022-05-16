@@ -9,17 +9,18 @@ match-height:
   js:
     js/jquery.matchHeight.js: {}
   dependencies:
-     - core/jquery
-     - core/jquery.once
+     - jquery_ui/core
+     - core/once
      - core/drupal
 
 litteratursiden:
   js:
     js/litteratursiden.js: {}
   dependencies:
-     - core/jquery
-     - core/jquery.once
+     - core/once
      - core/drupal
+     - jquery_ui/core
+     - jquery_ui_accordion/accordion
 
 small-spots:
   js:

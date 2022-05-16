@@ -544,3 +544,23 @@ function lit_page_attachments_alter(array &$attachments) {
     }
   }
 }
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ *
+ * Disable certain local tasks for non-admin users.
+ */
+function lit_menu_local_tasks_alter(&$data) {
+  $current_user = \Drupal::currentUser();
+  $roles = $current_user->getRoles();
+  $tasks = $data['tabs'][0];
+  if(!in_array('superadmin', $roles)) {
+    if (array_key_exists('entityqueue.entities:entity.node.entityqueue', $tasks)) {
+      unset($data['tabs'][0]['entityqueue.entities:entity.node.entityqueue']);
+    }
+
+    if (array_key_exists('entity.node.version_history', $tasks)) {
+      unset($data['tabs'][0]['entity.node.version_history']);
+    }
+  }
+}

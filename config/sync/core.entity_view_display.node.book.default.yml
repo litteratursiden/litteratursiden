@@ -45,7 +45,6 @@ third_party_settings:
       weight: 12
       format_type: accordion
       format_settings:
-        label: 'Additional info'
         classes: book-additional-info
         id: book-additional-info
         effect: none
@@ -58,40 +57,40 @@ third_party_settings:
         - field_book_graphic
         - field_book_isbn
         - field_book_number_of_pages
-      label: 'Book details'
+      label: Bogdetaljer
       parent_name: group_additional_info
       region: content
       weight: 11
       format_type: accordion_item
       format_settings:
-        label: 'Book details'
         classes: book-details
+        show_empty_fields: false
         id: book-additional-info-details
         formatter: closed
     group_book_review:
       children:
         - latest_review
-      label: Review
+      label: Anmeldelse
       parent_name: group_additional_info
       region: content
       weight: 9
       format_type: accordion_item
       format_settings:
-        label: Review
         classes: book-review
+        show_empty_fields: false
         id: book-additional-info-review
         formatter: closed
     group_book_analysis:
       children:
         - latest_analysis
-      label: Analysis
+      label: Analyse
       parent_name: group_additional_info
       region: content
       weight: 10
       format_type: accordion_item
       format_settings:
-        label: Analysis
         classes: book-analysis
+        show_empty_fields: false
         id: book-additional-info-analysis
         formatter: closed
 id: node.book.default
