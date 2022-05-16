@@ -112,6 +112,8 @@
         "drupal/group": "^1.0-rc1",
         "drupal/image_widget_crop": "^2.3",
         "drupal/imageapi_optimize": "^4.0",
+        "drupal/jquery_ui": "^1.4",
+        "drupal/jquery_ui_accordion": "^1.1",
         "drupal/mailchimp": "^2.0",
         "drupal/mailsystem": "^4.1",
         "drupal/maxlength": "^1.0@beta",
