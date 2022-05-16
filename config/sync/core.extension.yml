@@ -87,7 +87,6 @@ module:
   purge_queuer_coretags: 0
   purge_tokens: 0
   purge_ui: 0
-  purge_users: 0
   reroute_email: 0
   rest: 0
   rest_views: 0
