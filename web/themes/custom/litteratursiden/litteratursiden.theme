@@ -304,7 +304,3 @@ function litteratursiden_preprocess_user(&$variables) {
           ->getPath())->toString() . '/view-page';
   }
 }
-
-function litteratursiden_local_tasks_alter(&$local_tasks) {
-    unset($local_tasks);
-}
