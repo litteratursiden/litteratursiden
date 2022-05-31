@@ -60,7 +60,7 @@ class SearchController extends ControllerBase {
         $groups = $response['aggregations']['groups']['buckets'] ?? [];
 
         // Get total number of result.
-        $total = $response['hits']['total'];
+        $total = $response['hits']['total']['value'];
 
         // Create and theme response.
         $items = $this->transformResults($groups);
