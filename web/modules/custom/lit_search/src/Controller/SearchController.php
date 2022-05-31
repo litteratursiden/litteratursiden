@@ -2,12 +2,11 @@
 
 namespace Drupal\lit_search\Controller;
 
-use Drupal\Core\Cache\CacheBackendInterface;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\lit_search\SearchGroup;
 use Drupal\search_api\Entity\Index;
 use Symfony\Component\HttpFoundation\Request;
-use Zend\Diactoros\Response\JsonResponse;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * Class SearchController.
@@ -43,7 +42,7 @@ class SearchController extends ControllerBase {
    */
   public function autocomplete(Request $request) {
     $match = $request->query->get('q');
-    $total = 0;
+    $data = [];
 
     if ($match && strlen($match) >= 3) {
       // Check if cached result exists.
@@ -82,7 +81,7 @@ class SearchController extends ControllerBase {
 
         $data = [
           'total' => $total,
-          'data' => render($theme),
+          'data' => \Drupal::service('renderer')->render($theme),
         ];
 
         \Drupal::cache()->set($cid, $data, \Drupal::time()->getRequestTime() + 300, ['search_autocomplete']);
@@ -153,7 +152,7 @@ class SearchController extends ControllerBase {
     $render_controller = \Drupal::entityTypeManager()->getViewBuilder($entity->getEntityTypeId());
     $pre_render = $render_controller->view($entity, $view_mode);
 
-    return render($pre_render);
+    return \Drupal::service('renderer')->render($pre_render);
   }
 
   /**
