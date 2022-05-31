@@ -20,10 +20,9 @@
                 "name": "kenwheeler/slick",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/kenwheeler/slick.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
@@ -33,10 +32,9 @@
                 "name": "dinbror/blazy",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/dinbror/blazy.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/dinbror/blazy/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
@@ -46,10 +44,9 @@
                 "name": "gdsmith/easing",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/gdsmith/jquery.easing.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/gdsmith/jquery.easing/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
@@ -71,10 +68,9 @@
                 "name": "ganlanyuan/tiny-slider",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/ganlanyuan/tiny-slider.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/ganlanyuan/tiny-slider/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         }

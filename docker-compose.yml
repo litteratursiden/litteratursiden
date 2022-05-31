@@ -1,4 +1,4 @@
-# itk-version: 2.0.0
+# itk-version: 2.0.1
 version: "3"
 
 networks:
@@ -35,7 +35,7 @@ services:
       - PHP_MEMORY_LIMIT=256M
       # - PHP_MAIL=1 # Uncomment to enable mailhog.
       - DOCKER_HOST_DOMAIN=${COMPOSE_DOMAIN}
-      - COMPOSER_VERSION=1
+      - COMPOSER_VERSION=2
     depends_on:
       - mariadb
       - memcached
