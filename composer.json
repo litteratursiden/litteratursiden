@@ -120,12 +120,12 @@
         "drupal/pathauto": "^1.2",
         "drupal/purge": "^3.0@beta",
         "drupal/purge_users": "^3.0",
-        "drupal/redis": "^1.0@RC",
         "drupal/reroute_email": "^2.1",
         "drupal/rest_views": "^2.0",
         "drupal/restui": "^1.15",
         "drupal/s3fs": "^3.0@alpha",
         "drupal/scheduler": "^1.0",
+        "drupal/search_api": "^1.23",
         "drupal/social_media": "^1.9-rc2",
         "drupal/swiftmailer": "^2.2",
         "drupal/system_status": "^2.8",
@@ -167,25 +167,6 @@
             "zaporylie/composer-drupal-optimizations": true
         }
     },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "scripts": {
-        "pre-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    },
     "extra": {
         "drupal-scaffold": {
             "locations": {
@@ -204,16 +185,11 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
+        "enable-patching": true,
         "patches": {
-            "drupal/search_api_solr": {
-                "grouping fix": "patches/search_api_solr/Issue-2900410-by-stdio-estoyausente-Error-when-using.patch"
-            },
             "drupal/core": {
                 "comment settings patch": "patches/core/comment_settings_tabs.patch",
                 "invalid property": "patches/core/invalid_property.patch"
-            },
-            "drupal/redis": {
-                "Flood: Compatibility with Flood unblock": "https://www.drupal.org/files/issues/redis-flood_unblock_external_flood-2928007-2.patch"
             },
             "drupal/image_widget_crop": {
                 "Fix floating point issue": "https://www.drupal.org/files/issues/2020-06-22/3153736-2.patch"

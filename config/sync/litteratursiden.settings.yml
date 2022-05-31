@@ -4,8 +4,8 @@ langcode: da
 favicon:
   mimetype: image/png
   path: 'public://favicon_litteratursiden_web_1.png'
-  url: 'http://0.0.0.0:62577/themes/custom/litteratursiden/favicon.ico'
-  use_default: true
+  url: 'http://litteratursiden.dk/sites/default/files/favicon_litteratursiden_web_1.png'
+  use_default: false
 features:
   comment_user_picture: true
   comment_user_verification: true
@@ -31,7 +31,7 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-background_path: 'public://2000.jpg'
+background_path: 'public://126821_7063_c5593752ef0947b5915210444faf4e14_original (6).jpg'
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'

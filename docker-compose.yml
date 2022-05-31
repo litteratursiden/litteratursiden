@@ -81,9 +81,10 @@ services:
       - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_DOMAIN}`)"
 
   es:
-    image: elasticsearch:6.7.0
+    image: elasticsearch:7.17.4
     networks:
       - app
+      - frontend
     environment:
       - discovery.type=single-node
     ports:

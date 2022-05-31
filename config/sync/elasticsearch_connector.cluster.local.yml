@@ -11,4 +11,9 @@ options:
   authentication_type: Basic
   username: ''
   password: ''
-  timeout: '3'
+  timeout: '10'
+  rewrite:
+    rewrite_index: 0
+    index:
+      prefix: ''
+      suffix: ''

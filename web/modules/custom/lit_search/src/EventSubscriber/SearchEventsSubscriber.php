@@ -53,7 +53,7 @@ class SearchEventsSubscriber implements EventSubscriberInterface {
     ];
 
     $event_params = $event->getElasticSearchParams();
-    $params = array_replace_recursive($event_params, $params);
+    $params = array_replace_recursive((array) $event_params, $params);
     $event->setElasticSearchParams($params);
   }
 }
