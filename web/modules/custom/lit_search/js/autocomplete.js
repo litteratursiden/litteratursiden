@@ -1,10 +1,17 @@
 (function ($, Drupal, drupalSettings) {
   'use strict';
 
-  var length = 3;
+  let length = 3;
+  let lastString = '';
 
-  var _delay = function _delay() {
-    var timer = 0;
+  /**
+   * Helper function to delay the input and search execution.
+   *
+   * @type {(function(*, *): void)|*}
+   * @private
+   */
+  let _delay = function _delay() {
+    let timer = 0;
     return function (callback, ms) {
       clearTimeout(timer);
       timer = setTimeout(callback, ms);
@@ -14,9 +21,15 @@
   Drupal.behaviors.lit_search_autocomplete = {
     attach: function attach(context, settings) {
       $('.lit-search-autocomplete-field').on('keyup', function () {
-        var el = $(this);
-        var totalEl = el.parent().next('.lit-search-autocomplete-total');
-        var resultsEl = totalEl.parent().next('.lit-search-autocomplete-results');
+        let el = $(this);
+        let totalEl = el.parent().next('.lit-search-autocomplete-total');
+        let resultsEl = totalEl.parent().next('.lit-search-autocomplete-results');
+
+        console.log(el.val(),'->',lastString);
+        if (el.val() === lastString) {
+          return;
+        }
+        lastString = el.val();
 
         el.parent().find('.loader').remove();
         el.parent().append('<div class="loader"></div>');
@@ -42,13 +55,12 @@
                     $(document).find('.lit-search-autocomplete-total').html('');
                     $(document).find('.lit-search-autocomplete-results').html('');
                     el.parent().removeClass('active');
+                    lastString = '';
                   }
                 });
                 $('body').on('click', function (e) {
                   if (e.target.id === 'edit-search-results' || e.target.id === 'edit-search-results--2' ) {
                     return false
-                  } else {
-
                   }
                 });
               }
@@ -59,6 +71,7 @@
             totalEl.html('');
             resultsEl.html('');
             $(document).find('#bodyOverlay').remove();
+            lastString = '';
           }
         }, 300);
       });
