@@ -6,7 +6,6 @@
       'use strict';
 
       $('.book-analysis .content > .form-type-item').insertAfter('.book-analysis .review-author .user-roles');
-
       jQuery.fn.exists = function () {
         return jQuery(this).length > 0;
       };
@@ -156,7 +155,6 @@
 
         $('.panel-group').on('hidden.bs.collapse', toggleIcon);
         $('.panel-group').on('shown.bs.collapse', toggleIcon);
-
         // Collapse comments at mobiles
         if ($(window).width() < 767) {
           $('.comments-body').addClass('collapse in');

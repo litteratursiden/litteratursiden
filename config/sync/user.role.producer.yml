@@ -1,7 +1,25 @@
 uuid: d4445f45-d261-40ec-a90a-2dd4491413d7
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.full_html
+    - node.type.analysis
+    - node.type.article
+    - node.type.author_portrait
+    - node.type.blog
+    - node.type.book
+    - node.type.book_list
+    - node.type.interview
+    - node.type.review
+    - node.type.similar
+    - node.type.topic
+  module:
+    - bpi
+    - comment
+    - filter
+    - node
 id: producer
 label: Skribent
 weight: 2
@@ -14,7 +32,6 @@ permissions:
   - 'create author_portrait content'
   - 'create blog content'
   - 'create book content'
-  - 'create book_debate content'
   - 'create book_list content'
   - 'create interview content'
   - 'create review content'
@@ -25,7 +42,6 @@ permissions:
   - 'delete own author_portrait content'
   - 'delete own blog content'
   - 'delete own book content'
-  - 'delete own book_debate content'
   - 'delete own book_list content'
   - 'delete own interview content'
   - 'delete own review content'
@@ -37,7 +53,6 @@ permissions:
   - 'edit own author_portrait content'
   - 'edit own blog content'
   - 'edit own book content'
-  - 'edit own book_debate content'
   - 'edit own book_list content'
   - 'edit own interview content'
   - 'edit own similar content'

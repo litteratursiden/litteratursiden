@@ -15,6 +15,6 @@ plugin: lit_search_autocomplete_block
 settings:
   id: lit_search_autocomplete_block
   label: 'Search autocomplete dropdown'
-  provider: lit_search
   label_display: '0'
+  provider: lit_search
 visibility: {  }

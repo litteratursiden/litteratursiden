@@ -35,23 +35,23 @@ bundle: book
 mode: front
 content:
   field_book_body:
-    weight: 0
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 0
     region: content
   latest_revew:
+    settings: {  }
+    third_party_settings: {  }
     weight: 7
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_bibliotekdk: true
   field_book_author: true

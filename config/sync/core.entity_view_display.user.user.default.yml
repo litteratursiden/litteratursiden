@@ -18,49 +18,49 @@ bundle: user
 mode: default
 content:
   contact_link:
+    settings: {  }
+    third_party_settings: {  }
     weight: 3
     region: content
+  edit_profile_link:
     settings: {  }
     third_party_settings: {  }
-  edit_profile_link:
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
   field_user_body:
-    weight: 6
+    type: basic_string
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 6
     region: content
   field_user_full_name:
-    weight: 4
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_user_picture:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: avatar
       image_link: ''
+      image_style: avatar
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   member_for:
+    settings: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
+  tools:
     settings: {  }
     third_party_settings: {  }
-  tools:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   created: true
   field_user_birth: true

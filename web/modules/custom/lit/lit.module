@@ -448,71 +448,8 @@ function lit_block_build_alter(array &$build, \Drupal\Core\Block\BlockPluginInte
  */
 function lit_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
   if ($block->getPluginId() == 'facet_block:type') {
-    $build['#pre_render'][] = '_lit_facet_type_prerender';
+    $build['#pre_render'][] = [\Drupal\lit\FacetTypePrerender::class, 'preRender'];
   }
-}
-
-/**
- * Pre render block facet type.
- */
-function _lit_facet_type_prerender(array $build) {
-  if (!isset($build['content'])) {
-    return $build;
-  }
-
-  $items = $build['content'][0]['#items'];
-
-
-  $sorted = [];
-  foreach ($items as $i => $item) {
-    switch ($item['#title']['#value']) {
-      case 'book':
-        $item['#title']['#value'] = t('Books');
-        $sorted[0] = $item;
-        unset($items[$i]);
-        break;
-
-      case 'author_portrait':
-        $item['#title']['#value'] = t('Author portraits');
-        $sorted[1] = $item;
-        unset($items[$i]);
-        break;
-
-      case 'topic':
-        $item['#title']['#value'] = t('Topics');
-        $sorted[2] = $item;
-        unset($items[$i]);
-        break;
-
-      case 'article':
-        $item['#title']['#value'] = t('Articles');
-        $sorted[3] = $item;
-        unset($items[$i]);
-        break;
-
-      case 'blog':
-        $item['#title']['#value'] = t('Blogs');
-        $sorted[4] = $item;
-        unset($items[$i]);
-        break;
-
-      case 'book_list':
-        $item['#title']['#value'] = t('Book lists');
-        $sorted[5] = $item;
-        unset($items[$i]);
-        break;
-
-      default:
-        break;
-    }
-  }
-
-  ksort($sorted);
-  $build['content'][0]['#items'] = array_merge($sorted, $items);
-  $build['content'][0]['#prefix'] = '<div class="facets-widget-checkbox">';
-  $build['content'][0]['#suffix'] = '</div>';
-
-  return $build;
 }
 
 /**
@@ -543,4 +480,27 @@ function lit_page_attachments_alter(array &$attachments) {
       }
     }
   }
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ *
+ * Disable certain local tasks for non-admin users.
+ */
+function lit_menu_local_tasks_alter(&$data) {
+  $current_user = \Drupal::currentUser();
+  $roles = $current_user->getRoles();
+  if($data['tabs'][0]) {
+    $tasks = $data['tabs'][0];
+    if(!in_array('superadmin', $roles)) {
+      if (array_key_exists('entityqueue.entities:entity.node.entityqueue', $tasks)) {
+        unset($data['tabs'][0]['entityqueue.entities:entity.node.entityqueue']);
+      }
+
+      if (array_key_exists('entity.node.version_history', $tasks)) {
+        unset($data['tabs'][0]['entity.node.version_history']);
+      }
+    }
+  }
+
 }

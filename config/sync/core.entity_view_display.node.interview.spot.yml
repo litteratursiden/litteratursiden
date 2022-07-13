@@ -26,34 +26,34 @@ bundle: interview
 mode: spot
 content:
   field_interview_body:
-    weight: 2
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 2
     region: content
   field_interview_images:
     type: image
-    weight: 1
-    region: content
     label: hidden
     settings:
-      image_style: spot
       image_link: ''
+      image_style: spot
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_teaser:
     type: basic_string
-    weight: 3
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-  posted:
-    weight: 0
+    weight: 3
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_block_reference: true
   field_interview_external_links: true

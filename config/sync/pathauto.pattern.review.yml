@@ -11,12 +11,12 @@ pattern: 'anmeldelser/[node:title]'
 selection_criteria:
   ca667b24-1c7b-4dfd-90b2-17b79308b3f5:
     id: 'entity_bundle:node'
-    bundles:
-      review: review
     negate: false
+    uuid: ca667b24-1c7b-4dfd-90b2-17b79308b3f5
     context_mapping:
       node: node
-    uuid: ca667b24-1c7b-4dfd-90b2-17b79308b3f5
+    bundles:
+      review: review
 selection_logic: and
 weight: -5
 relationships: {  }

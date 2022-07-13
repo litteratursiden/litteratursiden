@@ -11,12 +11,12 @@ pattern: 'noget-der-ligner/[node:title]'
 selection_criteria:
   0a98b513-125a-4973-844d-8fa7dd4b3a75:
     id: 'entity_bundle:node'
-    bundles:
-      similar: similar
     negate: false
+    uuid: 0a98b513-125a-4973-844d-8fa7dd4b3a75
     context_mapping:
       node: node
-    uuid: 0a98b513-125a-4973-844d-8fa7dd4b3a75
+    bundles:
+      similar: similar
 selection_logic: and
 weight: -5
 relationships: {  }

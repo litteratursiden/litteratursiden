@@ -13,19 +13,19 @@ bundle: landing_page
 mode: teaser
 content:
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
   posted:
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   social_media:
-    weight: 0
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_block_reference: true

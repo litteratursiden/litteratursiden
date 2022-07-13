@@ -26,16 +26,14 @@ bundle: analysis
 mode: default
 content:
   field_analysis_excerpt:
-    weight: 7
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 7
     region: content
   field_analysis_external_link:
     type: link
-    weight: 9
-    region: content
     label: above
     settings:
       trim_length: 80
@@ -44,70 +42,72 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 9
+    region: content
   field_analysis_general_tags:
-    weight: 8
+    type: entity_reference_label
     label: inline
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 8
     region: content
   field_analysis_internal_link:
     type: entity_reference_label
-    weight: 10
-    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
+    weight: 10
+    region: content
   field_analysis_spotbox_image:
     type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: spot
+    third_party_settings: {  }
     weight: 6
     region: content
-    label: hidden
-    settings:
-      image_style: spot
-      image_link: ''
-    third_party_settings: {  }
   field_block_reference:
-    weight: 11
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 11
     region: content
   flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  flag_like:
     settings: {  }
     third_party_settings: {  }
-  flag_like:
     weight: 3
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 5
     region: content
+  owner_portrait:
     settings: {  }
     third_party_settings: {  }
-  owner_portrait:
     weight: 0
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
-  posted:
     weight: 1
     region: content
+  social_media:
     settings: {  }
     third_party_settings: {  }
-  social_media:
     weight: 4
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_analysis_comments: true
   field_analysis_cover_image: true

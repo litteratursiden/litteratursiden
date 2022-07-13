@@ -15,20 +15,20 @@ bundle: basic
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_basic_background:
-    weight: 0
+    type: color_field_formatter_text
     label: hidden
     settings:
       format: hex
-      opacity: '1'
+      opacity: true
     third_party_settings: {  }
-    type: color_field_formatter_text
+    weight: 0
     region: content
 hidden:
   langcode: true

@@ -11,12 +11,12 @@ pattern: 'boeger/[node:title]'
 selection_criteria:
   4239fda0-7107-4080-bac6-f3541a87c0d6:
     id: 'entity_bundle:node'
-    bundles:
-      book: book
     negate: false
+    uuid: 4239fda0-7107-4080-bac6-f3541a87c0d6
     context_mapping:
       node: node
-    uuid: 4239fda0-7107-4080-bac6-f3541a87c0d6
+    bundles:
+      book: book
 selection_logic: and
 weight: -10
 relationships: {  }

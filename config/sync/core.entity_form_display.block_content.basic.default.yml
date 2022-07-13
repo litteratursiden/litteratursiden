@@ -17,18 +17,18 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 3
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-    region: content
   field_basic_background:
+    type: color_field_widget_html5
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: color_field_widget_html5
-    region: content
   info:
     type: string_textfield
     weight: 0

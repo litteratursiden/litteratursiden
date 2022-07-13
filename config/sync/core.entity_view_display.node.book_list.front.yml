@@ -22,18 +22,18 @@ bundle: book_list
 mode: front
 content:
   field_book_list_body:
-    weight: 0
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 0
     region: content
   links:
-    weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_book_list_comments: true
   field_book_list_cover_image: true

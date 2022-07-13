@@ -1,4 +1,4 @@
-# itk-version: 2.0.0
+# itk-version: 2.0.1
 version: "3"
 
 networks:
@@ -35,7 +35,8 @@ services:
       - PHP_MEMORY_LIMIT=256M
       # - PHP_MAIL=1 # Uncomment to enable mailhog.
       - DOCKER_HOST_DOMAIN=${COMPOSE_DOMAIN}
-      - COMPOSER_VERSION=1
+      - PHP_IDE_CONFIG=serverName=localhost
+      - COMPOSER_VERSION=2
     depends_on:
       - mariadb
       - memcached
@@ -81,9 +82,10 @@ services:
       - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_DOMAIN}`)"
 
   es:
-    image: elasticsearch:6.7.0
+    image: elasticsearch:7.17.4
     networks:
       - app
+      - frontend
     environment:
       - discovery.type=single-node
     ports:

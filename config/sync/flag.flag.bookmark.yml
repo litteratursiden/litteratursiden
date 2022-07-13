@@ -23,7 +23,6 @@ bundles:
   - topic
 entity_type: node
 global: false
-weight: 0
 flag_short: 'Tilføj til favoritter'
 flag_long: 'Tilføj til dine favoritter'
 flag_message: 'Tilføjet til dine bogmærker'
@@ -31,6 +30,7 @@ unflag_short: 'Fjern favorit'
 unflag_long: 'Remove this post from your bookmarks'
 unflag_message: 'Fjernet fra dine bogmærker'
 unflag_denied_text: ''
+weight: 0
 flag_type: 'entity:node'
 link_type: ajax_link
 flagTypeConfig:

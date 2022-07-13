@@ -18,31 +18,31 @@ bundle: content_carousel
 mode: default
 content:
   field_content_carousel_bg:
-    weight: 5
+    type: color_field_formatter_text
     label: hidden
     settings:
       format: hex
-      opacity: '1'
+      opacity: true
     third_party_settings: {  }
-    type: color_field_formatter_text
+    weight: 5
     region: content
   field_content_carousel_icon:
-    weight: 4
+    type: image
     label: hidden
     settings:
-      image_style: slick_icon
       image_link: ''
+      image_style: slick_icon
     third_party_settings: {  }
-    type: image
+    weight: 4
     region: content
   field_content_carousel_reference:
-    weight: 0
+    type: slider_entity_reference
     label: hidden
     settings:
       view_mode: slick_item
       link: false
     third_party_settings: {  }
-    type: slider_entity_reference
+    weight: 0
     region: content
 hidden:
   langcode: true

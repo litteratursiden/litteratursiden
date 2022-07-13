@@ -24,17 +24,17 @@ mode: teaser
 content:
   field_analysis_excerpt:
     type: text_trimmed
-    weight: 0
-    region: content
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
-  links:
-    weight: 1
+    weight: 0
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   field_analysis_comments: true
   field_analysis_cover_image: true

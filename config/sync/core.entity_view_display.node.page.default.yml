@@ -20,48 +20,48 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_block_reference:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 1
     region: content
   field_dropdown_element:
     type: entity_reference_revisions_entity_view
-    weight: 3
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    weight: 3
     region: content
   field_show_newsletter_signup:
     type: boolean
-    weight: 2
-    region: content
     label: hidden
     settings:
       format: true-false
-      format_custom_true: ''
       format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_small_spots:
-    weight: 4
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: title_and_image
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 4
     region: content
 hidden:
   field_spotbox_image: true

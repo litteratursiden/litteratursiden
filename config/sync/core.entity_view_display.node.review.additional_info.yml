@@ -25,21 +25,21 @@ mode: additional_info
 content:
   field_review_body:
     type: text_default
-    weight: 2
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   owner_portrait:
+    settings: {  }
+    third_party_settings: {  }
     weight: 1
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
-  posted:
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   book_links: true
   field_book_author: true

@@ -52,7 +52,7 @@ class AddEntityAuthoredBy extends ProcessorPluginBase {
 
     $authored_by = $user->getDisplayName();
 
-    if ($label = $entity->label()) {
+    if ($entity->label()) {
       $fields = $this->getFieldsHelper()
         ->filterForPropertyPath($item->getFields(), NULL, 'lit_search_api_entity_authored_by');
 

@@ -24,13 +24,13 @@ mode: title_and_image
 content:
   field_article_cover_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: topic_teaser
       image_link: ''
+      image_style: topic_teaser
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_article_body: true
   field_article_comments: true

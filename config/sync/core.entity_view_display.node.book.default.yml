@@ -39,16 +39,15 @@ third_party_settings:
         - group_book_review
         - group_book_analysis
         - group_book_details
+      label: 'Additional info'
       parent_name: ''
+      region: content
       weight: 12
       format_type: accordion
       format_settings:
-        label: 'Additional info'
-        effect: none
-        id: book-additional-info
         classes: book-additional-info
-      label: 'Additional info'
-      region: content
+        id: book-additional-info
+        effect: none
     group_book_details:
       children:
         - field_book_secondary_title
@@ -58,210 +57,210 @@ third_party_settings:
         - field_book_graphic
         - field_book_isbn
         - field_book_number_of_pages
+      label: Bogdetaljer
       parent_name: group_additional_info
+      region: content
       weight: 11
       format_type: accordion_item
       format_settings:
-        label: 'Book details'
-        formatter: closed
-        id: book-additional-info-details
         classes: book-details
-      label: 'Book details'
-      region: content
+        show_empty_fields: false
+        id: book-additional-info-details
+        formatter: closed
     group_book_review:
       children:
         - latest_review
+      label: Anmeldelse
       parent_name: group_additional_info
+      region: content
       weight: 9
       format_type: accordion_item
       format_settings:
-        label: Review
-        formatter: closed
-        id: book-additional-info-review
         classes: book-review
-      label: Review
-      region: content
+        show_empty_fields: false
+        id: book-additional-info-review
+        formatter: closed
     group_book_analysis:
       children:
         - latest_analysis
+      label: Analyse
       parent_name: group_additional_info
+      region: content
       weight: 10
       format_type: accordion_item
       format_settings:
-        label: Analysis
-        formatter: closed
-        id: book-additional-info-analysis
         classes: book-analysis
-      label: Analysis
-      region: content
+        show_empty_fields: false
+        id: book-additional-info-analysis
+        formatter: closed
 id: node.book.default
 targetEntityType: node
 bundle: book
 mode: default
 content:
   field_bibliotekdk:
-    weight: 5
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 5
+    region: content
   field_block_reference:
-    weight: 13
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 13
     region: content
   field_book_author:
     type: string
-    weight: 3
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_book_body:
-    weight: 10
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 10
     region: content
   field_book_cover_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: book_cover
       image_link: ''
+      image_style: book_cover
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_book_general_tags:
-    weight: 11
+    type: entity_reference_label
     label: inline
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 11
     region: content
   field_book_graphic:
     type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 9
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_book_isbn:
     type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 10
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_book_number_of_pages:
     type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
     weight: 11
     region: content
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
   field_book_old_library_key:
     type: string
-    weight: 8
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 8
+    region: content
   field_book_original_title:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_book_published_year:
-    weight: 4
+    type: number_integer
     label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 4
     region: content
   field_book_publisher:
     type: string
-    weight: 6
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 6
+    region: content
   field_book_reference_author:
-    weight: 2
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 2
     region: content
   field_book_secondary_title:
     type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 4
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_book_translater:
     type: string
-    weight: 7
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  flag_bookmark:
     weight: 7
     region: content
+  flag_bookmark:
     settings: {  }
     third_party_settings: {  }
+    weight: 7
+    region: content
   flag_like:
+    settings: {  }
+    third_party_settings: {  }
     weight: 8
     region: content
-    settings: {  }
-    third_party_settings: {  }
   latest_analysis:
-    weight: 7
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 7
+    region: content
   latest_revew:
-    weight: 7
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 7
+    region: content
   latest_review:
+    settings: {  }
+    third_party_settings: {  }
     weight: 10
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 6
     region: content
+  social_media:
     settings: {  }
     third_party_settings: {  }
-  social_media:
     weight: 9
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_book_comments: true
   field_book_debates: true

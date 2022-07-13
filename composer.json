@@ -20,10 +20,9 @@
                 "name": "kenwheeler/slick",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/kenwheeler/slick.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
@@ -33,10 +32,9 @@
                 "name": "dinbror/blazy",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/dinbror/blazy.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/dinbror/blazy/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
@@ -46,10 +44,9 @@
                 "name": "gdsmith/easing",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/gdsmith/jquery.easing.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/gdsmith/jquery.easing/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         },
@@ -71,10 +68,9 @@
                 "name": "ganlanyuan/tiny-slider",
                 "version": "master",
                 "type": "drupal-library",
-                "source": {
-                    "url": "https://github.com/ganlanyuan/tiny-slider.git",
-                    "type": "git",
-                    "reference":"master"
+                "dist": {
+                    "url": "https://github.com/ganlanyuan/tiny-slider/archive/refs/heads/master.zip",
+                    "type": "zip"
                 }
             }
         }
@@ -94,10 +90,9 @@
         "drupal/config_filter": "^1.0",
         "drupal/config_ignore": "^2.1",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.6",
-        "drupal/core-composer-scaffold": "^8.9",
-        "drupal/core-project-message": "^8.9",
-        "drupal/core-recommended": "^8.9",
+        "drupal/core-composer-scaffold": "^9.3",
+        "drupal/core-project-message": "^9.3",
+        "drupal/core-recommended": "^9.3",
         "drupal/crop": "^2.1",
         "drupal/elasticsearch_connector": "^7.0@alpha",
         "drupal/elasticsearch_connector_autocomp": "^1.0",
@@ -113,6 +108,8 @@
         "drupal/group": "^1.0-rc1",
         "drupal/image_widget_crop": "^2.3",
         "drupal/imageapi_optimize": "^4.0",
+        "drupal/jquery_ui": "^1.4",
+        "drupal/jquery_ui_accordion": "^1.1",
         "drupal/mailchimp": "^2.0",
         "drupal/mailsystem": "^4.1",
         "drupal/maxlength": "^1.0@beta",
@@ -123,12 +120,12 @@
         "drupal/pathauto": "^1.2",
         "drupal/purge": "^3.0@beta",
         "drupal/purge_users": "^3.0",
-        "drupal/redis": "^1.0@RC",
         "drupal/reroute_email": "^2.1",
         "drupal/rest_views": "^2.0",
         "drupal/restui": "^1.15",
         "drupal/s3fs": "^3.0@alpha",
         "drupal/scheduler": "^1.0",
+        "drupal/search_api": "^1.23",
         "drupal/social_media": "^1.9-rc2",
         "drupal/swiftmailer": "^2.2",
         "drupal/system_status": "^2.8",
@@ -139,7 +136,7 @@
         "drupal/video_embed_field": "^2.4",
         "drupal/video_embed_html5": "1.2",
         "drupal/view_unpublished": "^1.0@alpha",
-        "drupal/views_infinite_scroll": "^1.5",
+        "drupal/views_infinite_scroll": "^2.0",
         "drupal/viewsreference": "^1.4",
         "drush/drush": "^10.0",
         "ganlanyuan/tiny-slider": "master",
@@ -170,25 +167,6 @@
             "zaporylie/composer-drupal-optimizations": true
         }
     },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "scripts": {
-        "pre-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    },
     "extra": {
         "drupal-scaffold": {
             "locations": {
@@ -207,16 +185,11 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
+        "enable-patching": true,
         "patches": {
-            "drupal/search_api_solr": {
-                "grouping fix": "patches/search_api_solr/Issue-2900410-by-stdio-estoyausente-Error-when-using.patch"
-            },
             "drupal/core": {
                 "comment settings patch": "patches/core/comment_settings_tabs.patch",
                 "invalid property": "patches/core/invalid_property.patch"
-            },
-            "drupal/redis": {
-                "Flood: Compatibility with Flood unblock": "https://www.drupal.org/files/issues/redis-flood_unblock_external_flood-2928007-2.patch"
             },
             "drupal/image_widget_crop": {
                 "Fix floating point issue": "https://www.drupal.org/files/issues/2020-06-22/3153736-2.patch"

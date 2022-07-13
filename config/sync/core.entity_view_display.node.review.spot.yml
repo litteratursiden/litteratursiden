@@ -27,26 +27,26 @@ mode: spot
 content:
   field_review_body:
     type: text_trimmed
-    weight: 1
-    region: content
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_review_spotbox_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: spot
       image_link: ''
+      image_style: spot
     third_party_settings: {  }
-  posted:
-    weight: 2
+    weight: 0
     region: content
+  posted:
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   book_links: true
   field_book_author: true

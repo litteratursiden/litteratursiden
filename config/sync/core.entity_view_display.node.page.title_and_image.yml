@@ -19,10 +19,10 @@ bundle: page
 mode: title_and_image
 content:
   owner_portrait:
-    weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   field_block_reference: true

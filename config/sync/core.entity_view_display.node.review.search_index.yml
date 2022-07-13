@@ -26,35 +26,35 @@ bundle: review
 mode: search_index
 content:
   field_review_body:
-    weight: 1
+    type: text_trimmed
     label: hidden
     settings:
       trim_length: 190
     third_party_settings: {  }
-    type: text_trimmed
+    weight: 1
     region: content
   field_review_cover_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: search_index
       image_link: ''
+      image_style: search_index
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_review_generel_tags:
-    weight: 2
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 2
     region: content
   posted:
-    weight: 3
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   book_links: true
   field_book_author: true

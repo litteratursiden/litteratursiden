@@ -19,14 +19,22 @@ plugin: 'views_block:comments-comments_block'
 settings:
   id: 'views_block:comments-comments_block'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
-  context_mapping: {  }
 visibility:
-  node_type:
-    id: node_type
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/node/*/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
     bundles:
       analysis: analysis
       article: article
@@ -34,11 +42,3 @@ visibility:
       book_debate: book_debate
       review: review
       topic: topic
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: '/node/*/*'
-    negate: true
-    context_mapping: {  }

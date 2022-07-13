@@ -28,23 +28,23 @@ mode: favorite_content_teaser
 content:
   field_author_portrait_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: medium
       image_link: content
+      image_style: medium
     third_party_settings: {  }
+    weight: 0
+    region: content
   flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 1
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_author_portrait_body: true
   field_author_portrait_country: true

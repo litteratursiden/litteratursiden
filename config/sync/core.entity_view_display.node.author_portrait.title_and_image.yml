@@ -27,13 +27,13 @@ bundle: author_portrait
 mode: title_and_image
 content:
   field_author_portrait_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: topic_teaser
       image_link: ''
+      image_style: topic_teaser
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
 hidden:
   field_author_portrait_body: true
