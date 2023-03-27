@@ -10,7 +10,7 @@ import directors;
 # Apache is in this config on port 80.
 backend default {
     .host = "littnginx";
-    .port = "80";
+    .port = "8080";
     .first_byte_timeout = 300s;
 }
 
