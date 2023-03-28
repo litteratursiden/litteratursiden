@@ -19,7 +19,11 @@
     {% if site_logo %}
         <div class="logo-holder">
             <a class="logo" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
-                <div class="navbar-text"><img class="img-responsive" src="/themes/custom/litteratursiden/images/Logo.svg" alt="Logo"></div>
+                <div class="navbar-text">
+                    <img class="img-responsive" src="/themes/custom/litteratursiden/images/Logo.svg" alt="Logo">
+                    <div class="header--sub-text">- bibliotekernes side om litteratur</div>
+                </div>
+
             </a>
         </div>
     {% endif %}
