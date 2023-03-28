@@ -67,6 +67,8 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 7
     region: content
@@ -174,6 +176,8 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 18
     region: content
@@ -223,6 +227,7 @@ content:
     region: content
 hidden:
   field_bibliotekdk: true
+  field_block_reference: true
   field_book_debate_enable: true
   field_book_debates: true
   field_book_like: true
@@ -233,3 +238,4 @@ hidden:
   latest_review: true
   owner_full_name: true
   owner_portrait: true
+  search_api_excerpt: true

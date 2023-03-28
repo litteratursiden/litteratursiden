@@ -49,11 +49,14 @@ content:
     settings:
       image_link: ''
       image_style: search_autocomplete
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   field_bibliotekdk: true
+  field_block_reference: true
   field_book_body: true
   field_book_comments: true
   field_book_debates: true
@@ -83,4 +86,5 @@ hidden:
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true
   social_media: true

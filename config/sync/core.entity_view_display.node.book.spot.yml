@@ -50,6 +50,8 @@ content:
     settings:
       image_link: ''
       image_style: spot
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content
@@ -65,6 +67,7 @@ content:
     region: content
 hidden:
   field_bibliotekdk: true
+  field_block_reference: true
   field_book_author: true
   field_book_comments: true
   field_book_cover_image: true
@@ -93,4 +96,5 @@ hidden:
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true
   social_media: true

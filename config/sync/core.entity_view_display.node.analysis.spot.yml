@@ -38,6 +38,8 @@ content:
     settings:
       image_link: ''
       image_style: spot
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
@@ -54,6 +56,7 @@ hidden:
   field_analysis_general_tags: true
   field_analysis_internal_link: true
   field_analysis_reference_book: true
+  field_block_reference: true
   flag_bookmark: true
   flag_like: true
   flag_notifications: true
@@ -61,4 +64,5 @@ hidden:
   links: true
   owner_full_name: true
   owner_portrait: true
+  search_api_excerpt: true
   social_media: true

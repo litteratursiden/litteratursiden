@@ -13,6 +13,10 @@ settings:
     rows:
       -
         -
+          name: Headers
+          items:
+            - Format
+        -
           name: Formatting
           items:
             - Bold
@@ -43,10 +47,6 @@ settings:
             - PasteFromWord
             - Source
   plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
     video_embed:
       defaults:
         children:
