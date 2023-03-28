@@ -194,3 +194,5 @@ private-files/
 
 # Ignore VS-code
 .vscode
+
+settings.local.php
