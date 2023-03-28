@@ -41,13 +41,13 @@ function bpi_form_node_form_alter(&$form, FormStateInterface $form_state, $form_
     '#type' => 'checkbox',
     '#title' => t('Send to BPI'),
     '#disabled' => $bpi_configured === FALSE,
-    '#default_value' => $bpi_configured,
+    '#default_value' => FALSE,
   ];
 
   $form['bpi_settings']['configurations'] = [
     '#type' => 'fieldset',
     '#collapsible' => FALSE,
-    '#collapsed' => FALSE,
+    '#collapsed' => TRUE,
     '#states' => [
       'visible' => [
         ':input[name="send_to_bpi"]' => [
