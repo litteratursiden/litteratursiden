@@ -16,6 +16,7 @@ match-height:
 litteratursiden:
   js:
     js/litteratursiden.js: {}
+    js/dropdown-list.js: {}
   dependencies:
      - core/once
      - core/drupal

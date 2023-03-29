@@ -422,3 +422,15 @@ body.path-frontpage .main-container {
     }
   }
 }
+
+.custom-small-spots {
+  padding: 30px;
+
+  .tns-nav {
+    margin-bottom: -30px;
+  }
+
+  .tns-nav-active:before {
+    color: #d8d8d8!important;
+  }
+}
