@@ -121,6 +121,7 @@
         "drupal/pathauto": "^1.2",
         "drupal/purge": "^3.0@beta",
         "drupal/purge_users": "^3.0",
+        "drupal/redirect404_home": "^2.0",
         "drupal/reroute_email": "^2.1",
         "drupal/rest_views": "^2.0",
         "drupal/restui": "^1.15",
@@ -139,6 +140,7 @@
         "drupal/view_unpublished": "^1.0@alpha",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/viewsreference": "^1.4",
+        "drupal/xmlsitemap": "^1.4",
         "drush/drush": "^10.0",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
@@ -194,6 +196,9 @@
             },
             "drupal/image_widget_crop": {
                 "Fix floating point issue": "https://www.drupal.org/files/issues/2020-06-22/3153736-2.patch"
+            },
+            "drupal/redirect404_home": {
+                "https://www.drupal.org/project/redirect404_home/issues/3343349": "https://www.drupal.org/files/issues/2023-02-21/3343349-3.patch"
             }
         },
         "merge-plugin": {

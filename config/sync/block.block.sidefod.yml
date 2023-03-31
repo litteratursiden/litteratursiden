@@ -16,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: Footer
+  label: '- bibliotekernes side om litteratur'
   label_display: '0'
   provider: system
   level: 1

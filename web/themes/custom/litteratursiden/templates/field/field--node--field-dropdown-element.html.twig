@@ -61,7 +61,7 @@
           <div class="book-additional-info effect-none field-group-accordion-wrapper">
             {% for key, item in items %}
               {% if item.content['#paragraph'].field_dropdown_title.value is not empty %}
-                <h3 class="field-group-format-toggler accordion-item panel-heading" role="tab" id="heading--{{ key }}">
+                <h3 class="custom-accordion field-group-format-toggler accordion-item ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="heading--{{ key }}">
                   <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
                   <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse--{{ key }}" aria-expanded="true" aria-controls="collapse--{{ key }}">
                     {{ item.content['#paragraph'].field_dropdown_title.value|raw }}

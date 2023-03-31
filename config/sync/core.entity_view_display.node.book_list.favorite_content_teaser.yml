@@ -28,6 +28,8 @@ content:
     settings:
       image_link: content
       image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
@@ -52,6 +54,7 @@ content:
     weight: 4
     region: content
 hidden:
+  field_block_reference: true
   field_book_list_body: true
   field_book_list_comments: true
   field_book_list_files: true
@@ -62,4 +65,5 @@ hidden:
   flag_like: true
   langcode: true
   owner_portrait: true
+  search_api_excerpt: true
   social_media: true

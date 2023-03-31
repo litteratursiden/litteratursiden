@@ -68,10 +68,13 @@ content:
     settings:
       image_link: ''
       image_style: slick_item
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_block_reference: true
   field_review_comments: true
   field_review_excerpt: true
   field_review_generel_tags: true
@@ -88,4 +91,5 @@ hidden:
   owner_full_name: true
   owner_portrait: true
   posted: true
+  search_api_excerpt: true
   social_media: true

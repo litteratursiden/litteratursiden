@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: 1pHC2L99jhjgDNr7PzNNykLsdoXA7hP-vmZbDa9zViE
+langcode: da
+redirection: '301'
+status_message: 'Siden du forsøgte at besøge findes ikke.'
+status_message_color: error

@@ -2,11 +2,8 @@ uuid: 88dadff1-2cfa-495b-91b1-9425754f8224
 langcode: en
 status: true
 dependencies:
-  config:
-    - views.view.front_blog
   module:
     - system
-    - views
   theme:
     - litteratursiden
 id: views_block__front_blog_block_front_blog
