@@ -92,7 +92,8 @@ body.path-frontpage .main-container {
 .block-type-overview,
 .block-type-content_carousel,
 .block-type-book_list_carousel,
-.block-type-similar_content_tabs {
+.block-type-similar_content_tabs,
+.block-type-list_of_book_lists {
   background-color: $dark-bg;
   padding-bottom: $large-spacer;
 
@@ -204,7 +205,8 @@ body.path-frontpage .main-container {
 .block-views-blockrelated-books-related-books-by-author-block,
 .block-views-blockrelated-books-related-books-by-tags-block,
 .view-book-list-filter-book_list-book_list_block,
-.book-list-carousel {
+.book-list-carousel,
+.block-type-list_of_book_lists {
   background-color: $dark-bg;
   padding-bottom: $large-spacer;
 

@@ -1,0 +1,38 @@
+uuid: e676fcf1-39bf-426d-9712-b940d0c8d612
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.list_of_book_lists
+    - field.field.block_content.list_of_book_lists.field_small_spots
+id: block_content.list_of_book_lists.default
+targetEntityType: block_content
+bundle: list_of_book_lists
+mode: default
+content:
+  field_small_spots:
+    type: entity_reference_autocomplete
+    weight: 26
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }
