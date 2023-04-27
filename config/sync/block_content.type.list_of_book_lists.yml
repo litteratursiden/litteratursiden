@@ -1,0 +1,8 @@
+uuid: 93c18bd5-c15a-4b30-8127-9077397ea3a4
+langcode: da
+status: true
+dependencies: {  }
+id: list_of_book_lists
+label: 'List of book lists'
+revision: 0
+description: ''

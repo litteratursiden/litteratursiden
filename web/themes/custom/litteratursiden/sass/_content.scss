@@ -179,7 +179,9 @@ table.sticky-header {
   display: none;
 }
 
-.page-node-type-page .content {
+.page-node-type-page .content,
+.page-node-type-landing-page .region {
+
   .tns-controls {
     outline: 0;
   }
@@ -296,4 +298,16 @@ table.sticky-header {
 .page-node-type-page .accordion .panel {
   border: 0;
   box-shadow: none;
+}
+
+.block-type-list_of_book_lists {
+  max-height: 450px;
+  overflow: hidden;
+}
+.field--name-field-small-spots > .field--item:not(.tns-item) {
+  display: inline-grid;
+  width: 33%;
+}
+.field--name-field-small-spots > .field--item:not(.tns-item):not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+  display: none;
 }
