@@ -27,8 +27,8 @@ services:
     depends_on:
       - nginx
     environment:
-      VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl
-      VARNISH_SECRET: eca2b7c263eae74c0d746f147691e7ce
+      - "VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl"
+      - "VARNISH_SECRET=${VARNISH_SECRET}"
     volumes:
       - ./.docker/litt.vcl:/etc/varnish/litt.vcl:ro
       - .:/app
