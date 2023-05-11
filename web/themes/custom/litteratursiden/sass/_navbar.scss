@@ -324,7 +324,7 @@
           }
           &.l-1 {
             &:after {
-              content: $icon-book;
+              content: $icon-writers;
               font-size: $h4-font-size;
               @include respond-to(phones-landscape) {
                 font-size: $large-font-size;
@@ -333,7 +333,7 @@
           }
           &.l-2 {
             &:after {
-              content: $icon-writers;
+              content: $icon-book;
             }
           }
           &.l-3 {

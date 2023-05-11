@@ -463,7 +463,7 @@ display:
         type: normal
         title: Boglister
         description: ''
-        weight: 100
+        weight: -48
         expanded: false
         menu_name: main
         parent: ''
