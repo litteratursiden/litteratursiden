@@ -432,7 +432,13 @@ body.path-frontpage .main-container {
     margin-bottom: -30px;
   }
 
-  .tns-nav-active:before {
-    color: #d8d8d8!important;
+  .tns-outer .tns-controls button:hover, .tns-outer .tns-controls button:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+  }
+
+  .tns-outer .tns-controls button:hover:before, .tns-outer .tns-controls button:focus:before {
+    color: #3a3b3d;
   }
 }
