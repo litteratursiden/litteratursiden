@@ -9,16 +9,10 @@ import directors;
 # Default backend definition. Points to Apache, normally.
 # Apache is in this config on port 80.
 backend default {
-    .host = "littnginx";
+    .host = "nginx";
     .port = "8080";
     .first_byte_timeout = 300s;
 }
-
-# Access control list for PURGE requests.
-# Here you need to put the IP address of your web server
-#acl purge {
-#    "127.0.0.1";
-#}
 
 # Respond to incoming requests.
 sub vcl_recv {

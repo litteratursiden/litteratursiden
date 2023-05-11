@@ -4927,8 +4927,12 @@
             ],
             "authors": [
                 {
-                    "name": "Andras_Szilagyi",
-                    "homepage": "https://www.drupal.org/user/1217938"
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
+                {
+                    "name": "Er.Sajal",
+                    "homepage": "https://www.drupal.org/user/3418765"
                 },
                 {
                     "name": "jim.applebee",
@@ -5276,7 +5280,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1673107194",
+                    "datestamp": "1683719323",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5434,8 +5438,12 @@
                 },
                 {
                     "name": "Jack Over",
-                    "homepage": "https://www.drupal.org/user/252386",
+                    "homepage": "https://www.drupal.org/user/953390",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "takim",
+                    "homepage": "https://www.drupal.org/user/252386"
                 }
             ],
             "description": "Share current page to social media",
@@ -5910,10 +5918,6 @@
             ],
             "authors": [
                 {
-                    "name": "MiSc",
-                    "homepage": "https://www.drupal.org/user/382892"
-                },
-                {
                     "name": "deadbeef",
                     "homepage": "https://www.drupal.org/user/93644"
                 },
@@ -5924,6 +5928,10 @@
                 {
                     "name": "littlethoughts",
                     "homepage": "https://www.drupal.org/user/2479724"
+                },
+                {
+                    "name": "MiSc",
+                    "homepage": "https://www.drupal.org/user/382892"
                 }
             ],
             "homepage": "https://www.drupal.org/project/varnish_purge",
@@ -6087,6 +6095,14 @@
                 {
                     "name": "entendu",
                     "homepage": "https://www.drupal.org/user/173461"
+                },
+                {
+                    "name": "fathima.asmat",
+                    "homepage": "https://www.drupal.org/user/3622664"
+                },
+                {
+                    "name": "tobiasb",
+                    "homepage": "https://www.drupal.org/user/183956"
                 }
             ],
             "description": "Select which roles should be able to see unpublished nodes.",
@@ -6303,6 +6319,10 @@
                 {
                     "name": "pifagor",
                     "homepage": "https://www.drupal.org/user/2375692"
+                },
+                {
+                    "name": "poker10",
+                    "homepage": "https://www.drupal.org/user/272316"
                 },
                 {
                     "name": "RenatoG",

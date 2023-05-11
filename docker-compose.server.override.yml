@@ -1,0 +1,59 @@
+version: "3"
+
+networks:
+  frontend:
+    external: true
+  app:
+    driver: bridge
+    internal: false
+
+services:
+  phpfpm:
+    environment:
+      - PHP_MAX_EXECUTION_TIME=30
+      - PHP_MEMORY_LIMIT=256M
+      - PHP_PM_MAX_CHILDREN=12
+      - COMPOSER_VERSION=2
+    depends_on:
+      - memcached
+    volumes:
+      - .:/app
+
+  varnish:
+    image: 'wodby/varnish:6'
+    networks:
+      - app
+      - frontend
+    depends_on:
+      - nginx
+    environment:
+      - "VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl"
+      - "VARNISH_SECRET=${VARNISH_SECRET}"
+    volumes:
+      - ./.docker/litt.vcl:/etc/varnish/litt.vcl:ro
+      - .:/app
+    labels:
+      - "traefik.enable=true"
+      - "traefik.port=6081"
+      - "traefik.docker.network=frontend"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}-http.rule=Host(`${COMPOSE_SERVER_DOMAIN}`)"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}-http.entrypoints=web"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}-http.middlewares=redirect-to-https"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_SERVER_DOMAIN}`)"
+      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.entrypoints=websecure"
+
+  es:
+    image: elasticsearch:7.17.4
+    networks:
+      - app
+      - frontend
+    environment:
+      - discovery.type=single-node
+
+  memcached:
+    image: 'memcached:latest'
+    networks:
+      - app
+    environment:
+      - MEMCACHED_CACHE_SIZE=64

@@ -43,7 +43,7 @@ services:
     volumes:
       - .:/app
 
-  littnginx:
+  nginx:
     image: nginxinc/nginx-unprivileged:alpine
     networks:
       - app
@@ -58,9 +58,9 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=frontend"
-      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_DOMAIN}`)"
+      - "traefik.http.routers.${nginx-COMPOSE_PROJECT_NAME}.rule=Host(`nginx-${COMPOSE_DOMAIN}`)"
 #      HTTPS config - uncomment to enable redirect from :80 to :443
-#      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.middlewares=redirect-to-https"
+#      - "traefik.http.routers.${nginx-COMPOSE_PROJECT_NAME}.middlewares=redirect-to-https"
 #      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
 
   varnish:
@@ -71,7 +71,7 @@ services:
       - app
       - frontend
     depends_on:
-      - littnginx
+      - nginx
     environment:
       VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl
       VARNISH_SECRET: eca2b7c263eae74c0d746f147691e7ce
