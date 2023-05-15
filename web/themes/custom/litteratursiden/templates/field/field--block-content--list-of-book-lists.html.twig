@@ -53,43 +53,33 @@
     label_display == 'visually_hidden' ? 'sr-only',
   ]
 %}
-<h3>Hello World!  {{ content.field_label }}</h3>
-{% if content.field_label %}
-        <h2{{ title_attributes.addClass('block-title') }}>
-          {% set icon = content.field_book_list_carousel_icon|render %}
-          {# <span class="block-icon"> #}
-              {# {% if icon %}{{ content.field_book_list_carousel_icon }}
-              {% else %}<span class="icon"></span>
-              {% endif %} #}
-            {# </span> #}
-
-
-
-        </h2>
-    {% endif %}
-{% if label_hidden %}
-  {% if multiple %}
-    <div{{ attributes.addClass(classes, 'field--items small-spots-slider') }}>
-      {% for item in items %}
-        <div{{ item.attributes.addClass('field--item') }}><div class="article-wrapper">{{ item.content }}</div></div>
-      {% endfor %}
-    </div>
-  {% else %}
-    {% for item in items %}
-      <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-  {% endif %}
-{% else %}
-  <div{{ attributes.addClass(classes) }}>
-    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+<h3 class="custom-small-spots--header">{{ element['#object'].info.value }}</h3>
+<div class="custom-small-spots">
+  {% if label_hidden %}
     {% if multiple %}
-      <div class="field--items">
-    {% endif %}
-    {% for item in items %}
-      <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
-    {% endfor %}
-    {% if multiple %}
+      <div{{ attributes.addClass(classes, 'field--items small-spots-slider') }}>
+        {% for item in items %}
+          <div{{ item.attributes.addClass('field--item') }}><div class="article-wrapper">{{ item.content }}</div></div>
+        {% endfor %}
       </div>
+    {% else %}
+      {% for item in items %}
+        <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
+      {% endfor %}
     {% endif %}
-  </div>
-{% endif %}
+  {% else %}
+    <div{{ attributes.addClass(classes) }}>
+      <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+      {% if multiple %}
+      <div class="field--items">
+        {% endif %}
+        {% for item in items %}
+          <div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>
+        {% endfor %}
+        {% if multiple %}
+      </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+

@@ -1,0 +1,10 @@
+uuid: 736b73da-f80d-49ed-a6f2-581bc6cc0655
+langcode: da
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.book_list_list_display
+label: 'Book list - list display'
+targetEntityType: block_content
+cache: true

@@ -1,20 +1,22 @@
-uuid: a96d698f-d039-4800-8c4a-6bb82b539fd0
+uuid: cd0f4ae6-747b-459d-be8c-e06b9f74bb44
 langcode: da
 status: true
 dependencies:
   config:
     - block_content.type.list_of_book_lists
+    - core.entity_view_mode.block_content.book_list_list_display
     - field.field.block_content.list_of_book_lists.field_small_spots
-id: block_content.list_of_book_lists.default
+id: block_content.list_of_book_lists.book_list_list_display
 targetEntityType: block_content
 bundle: list_of_book_lists
-mode: default
+mode: book_list_list_display
 content:
   field_small_spots:
-    type: entity_reference_label
-    label: above
+    type: entity_reference_entity_view
+    label: hidden
     settings:
-      link: true
+      view_mode: title_and_image
+      link: false
     third_party_settings: {  }
     weight: 0
     region: content
