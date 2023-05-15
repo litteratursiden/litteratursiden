@@ -9,9 +9,7 @@ header.main-header {
   color: $white;
   font-size: 17px;
   @media only screen and (max-width: 767px) {
-    #navbar.navbar-default .navbar-header .region-navigation .logo-holder {
-      font-size: 12px;
-    }
+    font-size: 12px;
   }
 }
 
