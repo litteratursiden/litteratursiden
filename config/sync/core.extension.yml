@@ -82,12 +82,6 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
-  purge: 0
-  purge_drush: 0
-  purge_processor_cron: 0
-  purge_queuer_coretags: 0
-  purge_tokens: 0
-  purge_ui: 0
   redirect404_home: 0
   reroute_email: 0
   rest: 0
