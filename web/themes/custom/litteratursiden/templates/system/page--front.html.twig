@@ -186,11 +186,10 @@
         {% block content %}
           <a id="main-content"></a>
           <div class="front-page-container">
-            {{ page.content|without('views_block__front_blog_block_front_blog', 'views_block__front_article_block', 'mailchimpsubscriptionformsubscribetonewsletter', 'mailchimptilmeldingsformularsubscribetochildrennewsletter') }}
+            {{ page.content|without('views_block__front_article_block', 'mailchimpsubscriptionformsubscribetonewsletter', 'mailchimptilmeldingsformularsubscribetochildrennewsletter') }}
             <div id="articles-wrapper">
               <div class="container no-padding">
                 {{ page.content.views_block__front_article_block }}
-                {{ page.content.views_block__front_blog_block_front_blog }}
               </div>
               <div class="container no-padding flex-row flex-md-nowrap flex-stretch">
                 {{ page.content.mailchimpsubscriptionformsubscribetonewsletter }}

@@ -119,7 +119,7 @@ function lit_views_views_pre_render(ViewExecutable $view) {
 function lit_views_preprocess_block(&$variables) {
     if (
         $variables['base_plugin_id'] == 'views_block' &&
-        ($variables['plugin_id'] == 'views_block:front_article-block_front_article' || $variables['plugin_id'] == 'views_block:front_blog-block_front_blog')
+        ($variables['plugin_id'] == 'views_block:front_article-block_front_article')
     ) {
         $view = $variables['content']['#view'];
 
