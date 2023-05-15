@@ -8,6 +8,11 @@ header.main-header {
 .header--sub-text {
   color: $white;
   font-size: 17px;
+  @media only screen and (max-width: 767px) {
+    #navbar.navbar-default .navbar-header .region-navigation .logo-holder {
+      font-size: 12px;
+    }
+  }
 }
 
 // Sub Header for Nodes
