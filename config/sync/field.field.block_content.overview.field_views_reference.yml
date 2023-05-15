@@ -41,7 +41,6 @@ settings:
     flag_bookmark: 0
     frontpage: 0
     front_article: 0
-    front_blog: 0
     internal_links: 0
     related_books: 0
     related_content: 0
