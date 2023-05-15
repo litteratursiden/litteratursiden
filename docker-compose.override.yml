@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  es:
+    image: elasticsearch:7.17.4
+    networks:
+      - app
+      - frontend
+    deploy:
+      resources:
+        limits:
+          memory: 4096M
+        reservations:
+          memory: 4096M
+    environment:
+      - discovery.type=single-node
+
+  phpfpm:
+    depends_on:
+      - es

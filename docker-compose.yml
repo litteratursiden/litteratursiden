@@ -31,8 +31,8 @@ services:
       - app
     environment:
       - PHP_XDEBUG_MODE=${PHP_XDEBUG_MODE:-off}
-      - PHP_MAX_EXECUTION_TIME=60
-      - PHP_MEMORY_LIMIT=512M
+      - PHP_MAX_EXECUTION_TIME=30
+      - PHP_MEMORY_LIMIT=256M
       # - PHP_MAIL=1 # Uncomment to enable mailhog.
       - DOCKER_HOST_DOMAIN=${COMPOSE_DOMAIN}
       - COMPOSER_VERSION=2
@@ -58,42 +58,10 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=frontend"
-      - "traefik.http.routers.${nginx-COMPOSE_PROJECT_NAME}.rule=Host(`nginx-${COMPOSE_DOMAIN}`)"
-#      HTTPS config - uncomment to enable redirect from :80 to :443
-#      - "traefik.http.routers.${nginx-COMPOSE_PROJECT_NAME}.middlewares=redirect-to-https"
-#      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-
-  varnish:
-    image: 'wodby/varnish:6'
-    ports:
-      - '6081'
-    networks:
-      - app
-      - frontend
-    depends_on:
-      - nginx
-    environment:
-      VARNISHD_VCL_SCRIPT: /etc/varnish/litt.vcl
-      VARNISH_SECRET: eca2b7c263eae74c0d746f147691e7ce
-    volumes:
-      - ${PWD}/.docker/litt.vcl:/etc/varnish/litt.vcl:ro
-      - .:/app
-    labels:
-      - "traefik.enable=true"
-      - "traefik.port=6081"
-      - "traefik.docker.network=frontend"
       - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${COMPOSE_DOMAIN}`)"
-
-  es:
-    image: elasticsearch:7.17.4
-    networks:
-      - app
-      - frontend
-    environment:
-      - discovery.type=single-node
-    ports:
-      - "9200"
-      - "9300"
+#      HTTPS config - uncomment to enable redirect from :80 to :443
+#      - "traefik.http.routers.${COMPOSE_PROJECT_NAME}.middlewares=redirect-to-https"
+#      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
 
   memcached:
     image: 'memcached:latest'
