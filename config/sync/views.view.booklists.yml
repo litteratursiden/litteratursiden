@@ -1,6 +1,6 @@
 uuid: b92f08de-6e10-486f-9603-894acfb45df3
 langcode: da
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.slick_item

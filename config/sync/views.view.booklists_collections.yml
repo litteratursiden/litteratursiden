@@ -1,17 +1,18 @@
-uuid: d23b5b07-9ef2-45ca-8c11-55522143e977
+uuid: 2cd4cfcd-ae54-4753-bd04-8b4a46be4598
 langcode: da
-status: false
+status: true
 dependencies:
   config:
     - block_content.type.list_of_book_lists
     - core.entity_view_mode.block_content.book_list_list_display
     - entityqueue.entity_queue.book_list_collections
     - field.storage.block_content.field_small_spots
+    - system.menu.main
   module:
     - block_content
     - entityqueue
-id: booklists_page_attachment
-label: 'Booklists page attachment'
+id: booklists_collections
+label: 'Booklists collections'
 module: views
 description: ''
 tag: ''
@@ -24,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Booklists page attachment'
+      title: 'Booklists collections'
       fields:
         info:
           id: info
@@ -316,6 +317,33 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:entityqueue.entity_queue.book_list_collections'
+        - 'config:field.storage.block_content.field_small_spots'
+        - entity_field_info
+        - views_data
+  page_1:
+    id: page_1
+    display_title: Side
+    display_plugin: page
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: boglister
+      menu:
+        type: normal
+        title: Boglister
+        description: ''
+        weight: -48
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
