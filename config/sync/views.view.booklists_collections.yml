@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Booklists collections'
+      title: Boglister
       fields:
         info:
           id: info
