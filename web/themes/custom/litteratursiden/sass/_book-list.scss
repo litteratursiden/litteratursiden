@@ -113,3 +113,15 @@
     @include pager;
   }
 }
+
+.booklists-collections {
+  background-color: $dark-bg;
+
+  .custom-small-spots--header {
+    color:$white;
+  }
+
+  .field--type-image.image--default img {
+    border: 0;
+  }
+}
