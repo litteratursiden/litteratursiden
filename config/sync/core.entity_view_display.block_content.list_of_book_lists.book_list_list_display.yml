@@ -1,0 +1,25 @@
+uuid: cd0f4ae6-747b-459d-be8c-e06b9f74bb44
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.list_of_book_lists
+    - core.entity_view_mode.block_content.book_list_list_display
+    - field.field.block_content.list_of_book_lists.field_small_spots
+id: block_content.list_of_book_lists.book_list_list_display
+targetEntityType: block_content
+bundle: list_of_book_lists
+mode: book_list_list_display
+content:
+  field_small_spots:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: title_and_image
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

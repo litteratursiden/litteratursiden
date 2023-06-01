@@ -5,6 +5,14 @@ header.main-header {
   }
 }
 
+.header--sub-text {
+  color: $white;
+  font-size: 17px;
+  @media only screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+}
+
 // Sub Header for Nodes
 .header-wrapper {
   background-color: $btn-gray;

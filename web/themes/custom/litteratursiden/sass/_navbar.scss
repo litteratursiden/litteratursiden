@@ -213,6 +213,7 @@
           .logo {
             display: block;
             margin: 0;
+            min-width: 190px;
             padding: 0 $regular-spacer;
             @include respond-to(tablets-portrait) {
               padding: 0;
@@ -324,7 +325,7 @@
           }
           &.l-1 {
             &:after {
-              content: $icon-book;
+              content: $icon-writers;
               font-size: $h4-font-size;
               @include respond-to(phones-landscape) {
                 font-size: $large-font-size;
@@ -333,7 +334,7 @@
           }
           &.l-2 {
             &:after {
-              content: $icon-writers;
+              content: $icon-book;
             }
           }
           &.l-3 {

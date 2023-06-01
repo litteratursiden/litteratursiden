@@ -92,7 +92,8 @@ body.path-frontpage .main-container {
 .block-type-overview,
 .block-type-content_carousel,
 .block-type-book_list_carousel,
-.block-type-similar_content_tabs {
+.block-type-similar_content_tabs,
+.block-type-list_of_book_lists {
   background-color: $dark-bg;
   padding-bottom: $large-spacer;
 
@@ -420,5 +421,29 @@ body.path-frontpage .main-container {
         opacity: $slick-opacity-default;
       }
     }
+  }
+}
+
+.custom-small-spots {
+
+  &--header {
+    margin-top: 50px;
+    padding-left: 30px;
+  }
+
+  padding: 30px;
+
+  .tns-nav {
+    margin-bottom: -30px;
+  }
+
+  .tns-outer .tns-controls button:hover, .tns-outer .tns-controls button:focus {
+    outline: none;
+    background: transparent;
+    color: transparent;
+  }
+
+  .tns-outer .tns-controls button:hover:before, .tns-outer .tns-controls button:focus:before {
+    color: #3a3b3d;
   }
 }

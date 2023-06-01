@@ -1,0 +1,41 @@
+version: "3"
+
+networks:
+  frontend:
+    external: true
+  app:
+    driver: bridge
+    internal: false
+
+services:
+  phpfpm:
+    environment:
+      - PHP_MAX_EXECUTION_TIME=30
+      - PHP_MEMORY_LIMIT=256M
+      - PHP_PM_MAX_CHILDREN=12
+      - COMPOSER_VERSION=2
+    depends_on:
+      - memcached
+    volumes:
+      - .:/app
+
+  es:
+    image: elasticsearch:7.17.4
+    networks:
+      - app
+      - frontend
+    deploy:
+      resources:
+        limits:
+          memory: 4096M
+        reservations:
+          memory: 4096M
+    environment:
+      - discovery.type=single-node
+
+  memcached:
+    image: 'memcached:latest'
+    networks:
+      - app
+    environment:
+      - MEMCACHED_CACHE_SIZE=64

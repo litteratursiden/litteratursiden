@@ -41,6 +41,8 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 103
     region: content
@@ -100,6 +102,8 @@ content:
     settings:
       image_link: ''
       image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 104
     region: content
@@ -130,7 +134,9 @@ content:
     region: content
 hidden:
   field_analysis_like: true
+  field_block_reference: true
   flag_notifications: true
   langcode: true
   owner_full_name: true
   owner_portrait: true
+  search_api_excerpt: true

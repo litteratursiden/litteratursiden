@@ -16,14 +16,21 @@ dependencies:
     - field.field.node.interview.field_teaser
     - node.type.interview
   module:
+    - image
     - user
 id: node.interview.title_and_image
 targetEntityType: node
 bundle: interview
 mode: title_and_image
 content:
-  owner_portrait:
-    settings: {  }
+  field_spotbox_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
@@ -36,13 +43,13 @@ hidden:
   field_interview_reference_author: true
   field_interview_video: true
   field_interview_video_text: true
-  field_spotbox_image: true
   field_teaser: true
   flag_bookmark: true
   flag_like: true
   langcode: true
   links: true
   owner_full_name: true
+  owner_portrait: true
   posted: true
   search_api_excerpt: true
   social_media: true

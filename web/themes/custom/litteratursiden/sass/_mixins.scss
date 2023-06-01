@@ -422,7 +422,8 @@ Mixin for responsive (relative) font-sizes depending on the screen size using me
           background-color: $brand-color;
         }
       }
-      > .ui-accordion-header-icon.ui-icon {
+      > .ui-accordion-header-icon.ui-icon,
+      > a > .ui-accordion-header-icon.ui-icon {
         overflow: inherit;
         width: 36px;
         height: $large-spacer;

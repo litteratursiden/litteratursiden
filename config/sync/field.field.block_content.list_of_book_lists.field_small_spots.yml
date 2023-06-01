@@ -1,0 +1,51 @@
+uuid: a3718d4f-0671-4c89-8423-23869fda9329
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.list_of_book_lists
+    - field.storage.block_content.field_small_spots
+    - node.type.analysis
+    - node.type.article
+    - node.type.author_portrait
+    - node.type.blog
+    - node.type.book
+    - node.type.book_list
+    - node.type.interview
+    - node.type.landing_page
+    - node.type.page
+    - node.type.review
+    - node.type.similar
+    - node.type.topic
+id: block_content.list_of_book_lists.field_small_spots
+field_name: field_small_spots
+entity_type: block_content
+bundle: list_of_book_lists
+label: 'små spots'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      analysis: analysis
+      review: review
+      article: article
+      blog: blog
+      book: book
+      book_list: book_list
+      author_portrait: author_portrait
+      interview: interview
+      landing_page: landing_page
+      similar: similar
+      page: page
+      topic: topic
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: analysis
+field_type: entity_reference

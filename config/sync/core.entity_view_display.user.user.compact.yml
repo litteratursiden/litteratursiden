@@ -32,6 +32,8 @@ content:
     settings:
       image_link: content
       image_style: avatar
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
@@ -45,4 +47,5 @@ hidden:
   langcode: true
   member_for: true
   roles: true
+  search_api_excerpt: true
   tools: true
