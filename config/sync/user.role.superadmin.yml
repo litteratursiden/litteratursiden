@@ -39,7 +39,6 @@ dependencies:
     - image
     - imageapi_optimize
     - language
-    - lit_taxonomy
     - locale
     - mailchimp
     - mailchimp_campaign
@@ -307,7 +306,6 @@ permissions:
   - 'view book_list revisions'
   - 'view interview revisions'
   - 'view own unpublished content'
-  - 'view own unpublished taxonomy term'
   - 'view review revisions'
   - 'view scheduled content'
   - 'view similar revisions'
