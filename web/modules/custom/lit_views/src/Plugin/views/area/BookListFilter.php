@@ -129,6 +129,7 @@ class BookListFilter extends AreaPluginBase {
     }
 
     $book_list_ids = \Drupal::entityQuery('node')
+      ->accessCheck()
       ->condition('type', 'book_list')
       ->condition('promote', Node::PROMOTED)
       ->sort('created')

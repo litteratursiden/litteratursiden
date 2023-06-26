@@ -101,6 +101,7 @@ class BookAuthor extends ArgumentDefaultPluginBase implements CacheableDependenc
         $author_ids = [];
         if ($node_ids) {
           $author_ids = \Drupal::entityQuery('node')
+            ->accessCheck()
             ->condition('type', 'author_portrait')
             ->condition('nid', $node_ids, 'IN')
             ->range(0, 1)

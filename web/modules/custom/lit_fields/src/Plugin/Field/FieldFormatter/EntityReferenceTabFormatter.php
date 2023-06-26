@@ -68,6 +68,7 @@ class EntityReferenceTabFormatter extends FormatterBase {
     $entity_type = $field_settings['target_type'];
 
     $view_mode_ids = \Drupal::entityQuery('entity_view_mode')
+      ->accessCheck('FALSE')
       ->condition('targetEntityType', $entity_type)
       ->execute();
 

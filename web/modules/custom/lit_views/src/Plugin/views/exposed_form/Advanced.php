@@ -77,7 +77,7 @@ class Advanced extends Basic {
       $form_state->set('ajax', TRUE);
     }
 
-    $form = \Drupal::formBuilder()->buildForm('\Drupal\lit_views\Form\ViewsExposedForm', $form_state);
+    $form = \Drupal::formBuilder()->buildForm('\Drupal\views\Form\ViewsExposedForm', $form_state);
     $errors = $form_state->getErrors();
 
     // If the exposed form had errors, do not build the view.

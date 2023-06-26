@@ -65,7 +65,7 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
         // Check if we have to enforce expiration for activation links.
         if ($this->config('user_registrationpassword.settings')
             ->get('registration_ftll_expire') && !$account->getLastLoginTime() && $current - $timestamp > $timeout) {
-          $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+          $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
         }
         // Else try to activate the account.
         // Password = user's password - timestamp = current request - login = username.
@@ -100,17 +100,59 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
         // Something else is wrong, redirect to the password
         // reset form to request a new activation e-mail.
         else {
-          $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+          $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
         }
       }
       else {
         // Deny access, no more clues.
         // Everything will be in the watchdog's
         // URL for the administrator to check.
-        $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+        $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
       }
     }
 
     return $this->redirect($route_name, $route_options, $url_options);
+  }
+
+  /**
+   * Set message for user registration.
+   *
+   * Blatantly stolen from deprecated user_registrationpassword_set_message()
+   * in user_registrationpassword module.
+   *
+   * @param string $type
+   *   The type of message.
+   *
+   * @param string $redirect
+   *   Whether to redirect.
+   *
+   * @return string
+   *   The redirect route
+   */
+  private function userRegistrationpasswordSetMessage(string $type = 'welcome', string $redirect = ''): string {
+    $route_name = '';
+
+    // Select what message to display.
+    switch ($type) {
+      case 'linkerror':
+        \Drupal::messenger()->addStatus(t('You have tried to use a one-time login link that has either been used or is no longer valid. Please request a new one using the form below.'));
+
+        // Redirect to user/pass.
+        if (!empty($redirect)) {
+          $route_name = 'user.pass';
+        }
+        break;
+
+      case 'welcome':
+        \Drupal::messenger()->addStatus(t('Further instructions have been sent to your email address.'));
+        // Redirect to front.
+        if (!empty($redirect)) {
+          $route_name = '<front>';
+        }
+        break;
+
+    }
+
+    return $route_name;
   }
 }

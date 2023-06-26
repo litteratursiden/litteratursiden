@@ -18,7 +18,7 @@ class FacetTypePrerender implements TrustedCallbackInterface {
       return $build;
     }
 
-    $items = $build['content'][0]['#items'];
+    $items = $build['content'][0]['#items'] ?? [];
 
     $sorted = [];
     foreach ($items as $i => $item) {
