@@ -196,3 +196,4 @@ private-files/
 .vscode
 
 settings.local.php
+.env.docker.local
