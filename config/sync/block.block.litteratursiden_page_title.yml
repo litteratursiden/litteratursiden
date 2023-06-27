@@ -1,0 +1,20 @@
+uuid: 8dff8cb0-6e0b-40a8-b89a-d1d16021679b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - litteratursiden
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: litteratursiden_page_title
+theme: litteratursiden
+region: sub_header
+weight: -13
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: '- bibliotekernes side om litteratur'
+  label_display: visible
+  provider: core
+visibility: {  }

@@ -16,7 +16,7 @@ provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: Logo
+  label: '- bibliotekernes side om litteratur'
   label_display: visible
   provider: system
   use_site_logo: true
