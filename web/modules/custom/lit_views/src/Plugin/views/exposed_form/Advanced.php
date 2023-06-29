@@ -194,7 +194,6 @@ class Advanced extends Basic {
         $query['sort_order'] = $default_sort;
       }
 
-
       $classes[] = strtolower($query['sort_order']);
 
       $form['sort_links'][$name] = [

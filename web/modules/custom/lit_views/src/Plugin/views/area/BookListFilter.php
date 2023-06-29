@@ -119,7 +119,7 @@ class BookListFilter extends AreaPluginBase {
    * Gets an array of book lists.
    *
    * @return array
-   *    Array of book lists keyed by ID and valued by title.
+   *   Array of book lists keyed by ID and valued by title.
    */
   protected function getBookLists() {
     $book_lists_number = $this->options['book_lists_number'];
@@ -136,7 +136,7 @@ class BookListFilter extends AreaPluginBase {
       ->range(0, $book_lists_number)
       ->execute();
 
-    /** @var Node[] $book_list_nodes */
+    /** @var \Drupal\node\Entity\Node[] $book_list_nodes */
     $book_list_nodes = Node::loadMultiple($book_list_ids);
 
     $book_lists = [];

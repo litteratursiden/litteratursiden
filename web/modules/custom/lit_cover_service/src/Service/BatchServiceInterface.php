@@ -2,7 +2,6 @@
 
 namespace Drupal\lit_cover_service\Service;
 
-
 /**
  * Class BatchService.
  */
@@ -12,13 +11,13 @@ interface BatchServiceInterface {
    * Batch delete process callback.
    *
    * @param int $batchId
-   *   Id of the batch
+   *   Id of the batch.
    * @param $batchTotal
    *   Total number of batch operations
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
@@ -28,13 +27,13 @@ interface BatchServiceInterface {
    * Batch fetch process callback.
    *
    * @param int $batchId
-   *   Id of the batch
+   *   Id of the batch.
    * @param $batchTotal
    *   Total number of batch operations
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
@@ -44,13 +43,13 @@ interface BatchServiceInterface {
    * Replace process callback.
    *
    * @param int $batchId
-   *   Id of the batch
+   *   Id of the batch.
    * @param $batchTotal
    *   Total number of batch operations
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */

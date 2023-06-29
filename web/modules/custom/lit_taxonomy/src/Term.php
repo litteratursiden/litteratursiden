@@ -7,7 +7,8 @@ use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Session\AccountInterface;
 
 /**
- * Class Term
+ * Class Term.
+ *
  * @package Drupal\lit_taxonomy
  */
 class Term {

@@ -6,8 +6,8 @@
  */
 
 use Drupal\Core\Database\Database;
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Field\FieldConfigInterface;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
 use Drupal\node\Entity\Node;
@@ -192,7 +192,7 @@ function bpi_convert_to_bpi(Node $node, $category, $audience, $with_images = FAL
     $body = !empty($body_field_values[0]['value']) ? $body_field_values[0]['value'] : '';
     $bpi_content['body'] = html_entity_decode($body);
 
-    // TODO: Image pushing/syndication is not supported for inline images.
+    // @todo Image pushing/syndication is not supported for inline images.
     $bpi_content['body'] = preg_replace(
       '~(<p>)?<img.+?/>(</p>)?~is',
       '',
@@ -245,7 +245,7 @@ function bpi_convert_to_bpi(Node $node, $category, $audience, $with_images = FAL
       foreach ($image_field['#items'] as $item) {
         $file_uri = $item->entity->getFileUri();
 
-        // TODO: Image pushing/syndication is broken.
+        // @todo Image pushing/syndication is broken.
         $bpi_content['assets'][] = [
           'path' => file_create_url($file_uri),
           'alt' => $item->alt ?: $item->entity->getFilename(),
@@ -263,7 +263,7 @@ function bpi_convert_to_bpi(Node $node, $category, $audience, $with_images = FAL
   if (!empty($materials_field_setting) && !empty($node->get($materials_field_setting)->getValue())) {
     $materials_field = $node->get($materials_field_setting)->view();
     $materials = [];
-    // TODO: Sanitize this part.
+    // @todo Sanitize this part.
     if ($materials_field['#field_type'] == 'entity_reference') {
       foreach ($materials_field['#items']->referencedEntities() as $referencedEntity) {
         if ($referencedEntity->getType() == 'book') {
@@ -285,7 +285,7 @@ function bpi_convert_to_bpi(Node $node, $category, $audience, $with_images = FAL
       }
     }
 
-    // TODO:
+    // @todo
     // Small hack for BPI validation, this might not be suitable id at all.
     array_walk($materials, function (&$v, $k) {
         $v = '870970-basis:' . $v;
@@ -449,7 +449,7 @@ function bpi_find_field_instances($node_type, array $allowed_types): array {
 /**
  * Compute the image type from a field name on a node.
  *
- * TODO: Purpose of this is unknown.
+ * @todo Purpose of this is unknown.
  *
  * @param string $image_field_name
  *   The image field name.

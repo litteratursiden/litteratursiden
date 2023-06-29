@@ -2,19 +2,18 @@
 
 namespace Drupal\lit_search\EventSubscriber;
 
-
 use Drupal\elasticsearch_connector\Event\BuildSearchParamsEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
- * Class SearchEventsSubscriber
+ * Class SearchEventsSubscriber.
  *
  * @package Drupal\lit_search\EventSubscriber
  */
 class SearchEventsSubscriber implements EventSubscriberInterface {
 
   /**
-   * @inheritDoc
+   * {@inheritDoc}
    */
   public static function getSubscribedEvents() {
     return [
@@ -40,13 +39,13 @@ class SearchEventsSubscriber implements EventSubscriberInterface {
                 'top_hits' => [
                   '_source' => [
                     'includes' => [
-                      'title'
-                    ]
+                      'title',
+                    ],
                   ],
-                  'size' => 3
-                ]
-              ]
-            ]
+                  'size' => 3,
+                ],
+              ],
+            ],
           ],
         ],
       ],
@@ -56,4 +55,5 @@ class SearchEventsSubscriber implements EventSubscriberInterface {
     $params = array_replace_recursive((array) $event_params, $params);
     $event->setElasticSearchParams($params);
   }
+
 }

@@ -5,11 +5,11 @@
  * Contains lit_bibliotekdk.module.
  */
 
-use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\node\NodeInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Link;
+use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
 
 const BIBLIOTEK_DK_URL = 'https://bibliotek.dk/da/search/work/';
 

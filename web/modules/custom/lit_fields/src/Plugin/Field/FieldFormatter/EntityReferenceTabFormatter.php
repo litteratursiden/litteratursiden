@@ -36,12 +36,12 @@ class EntityReferenceTabFormatter extends FormatterBase {
    * {@inheritdoc}
    */
   public function settingsForm(array $form, FormStateInterface $form_state) {
-    $form['mode'] = array(
+    $form['mode'] = [
       '#type' => 'select',
       '#options' => $this->getEntityViewModes(),
       '#title' => $this->t('Select an entity view mode.'),
       '#default_value' => $this->getSetting('mode'),
-    );
+    ];
 
     return $form;
   }
@@ -118,9 +118,9 @@ class EntityReferenceTabFormatter extends FormatterBase {
         /** @var \Drupal\Core\Entity\EntityInterface $entity */
         if ($entity = $item->entity) {
           $route_params = $default_route_params + [
-              'entity_type' => $entity->getEntityTypeId(),
-              'entity' => $entity->id(),
-            ];
+            'entity_type' => $entity->getEntityTypeId(),
+            'entity' => $entity->id(),
+          ];
 
           $element['tabs']['#items'][] = [
             '#type' => 'link',
@@ -147,7 +147,6 @@ class EntityReferenceTabFormatter extends FormatterBase {
 
     // By default the first tab is active.
     $element['tabs']['#items'][0]['#wrapper_attributes']['class'][] = 'active';
-
 
     if ($first = $items->first()) {
       $entity = $first->entity;

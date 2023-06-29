@@ -4,10 +4,10 @@ namespace Drupal\lit_comment_extra\Plugin\Field\FieldFormatter;
 
 use Drupal\comment\Plugin\Field\FieldFormatter\CommentDefaultFormatter;
 use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;
-use Drupal\lit_comment_extra\Controller\CommentLoadMoreController;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\lit_comment_extra\CommentStorageExtraInterface;
+use Drupal\lit_comment_extra\Controller\CommentLoadMoreController;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**

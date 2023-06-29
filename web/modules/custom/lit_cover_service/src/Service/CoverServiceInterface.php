@@ -2,16 +2,15 @@
 
 namespace Drupal\lit_cover_service\Service;
 
-
 use Drupal\file\FileInterface;
 
 /**
- * Class CoverService
+ * Class CoverService.
  */
 interface CoverServiceInterface {
 
   /**
-   * Get cover image from ISBN
+   * Get cover image from ISBN.
    *
    * @param string $isbn
    *

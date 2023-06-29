@@ -5,6 +5,9 @@ namespace Drupal\lit_user\Controller;
 use Drupal\Core\Url;
 use Drupal\user_registrationpassword\Controller\RegistrationController as UserRegistrationPasswordDefault;
 
+/**
+ *
+ */
 class UserRegistrationPassword extends UserRegistrationPasswordDefault {
 
   /**
@@ -64,7 +67,7 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
       if ($timestamp_created <= $current && !empty($users) && $account = $this->userStorage->load(reset($users))) {
         // Check if we have to enforce expiration for activation links.
         if ($this->config('user_registrationpassword.settings')
-            ->get('registration_ftll_expire') && !$account->getLastLoginTime() && $current - $timestamp > $timeout) {
+          ->get('registration_ftll_expire') && !$account->getLastLoginTime() && $current - $timestamp > $timeout) {
           $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
         }
         // Else try to activate the account.
@@ -155,4 +158,5 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
 
     return $route_name;
   }
+
 }

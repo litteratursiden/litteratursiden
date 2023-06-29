@@ -1,13 +1,7 @@
 <?php
 
-/**
- * @file
- * Batch service to support the commands defined in the module.
- */
-
 namespace Drupal\lit_cover_service\Service;
 
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
 
@@ -20,13 +14,13 @@ class BatchService implements BatchServiceInterface {
    * Batch delete process callback.
    *
    * @param int $batchId
-   *   Id of the batch
+   *   Id of the batch.
    * @param $batchTotal
    *   Total number of batch operations
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
@@ -69,13 +63,13 @@ class BatchService implements BatchServiceInterface {
    * Batch fetch process callback.
    *
    * @param int $batchId
-   *   Id of the batch
+   *   Id of the batch.
    * @param $batchTotal
    *   Total number of batch operations
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
@@ -115,13 +109,13 @@ class BatchService implements BatchServiceInterface {
    * Replace process callback.
    *
    * @param int $batchId
-   *   Id of the batch
+   *   Id of the batch.
    * @param $batchTotal
    *   Total number of batch operations
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
@@ -166,18 +160,17 @@ class BatchService implements BatchServiceInterface {
    * Fix missing covers references callback.
    *
    * @param int $batchId
-   *   Id of the batch
+   *   Id of the batch.
    * @param $batchTotal
    *   Total number of batch operations
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function missingCoverReferences($batchId, $batchTotal, $nids, &$context)
-  {
+  public function missingCoverReferences($batchId, $batchTotal, $nids, &$context) {
     $context['message'] = t('Processing batch @batchId of @batchTotal', [
       '@batchId' => $batchId,
       '@batchTotal' => $batchTotal,
@@ -231,7 +224,7 @@ class BatchService implements BatchServiceInterface {
   }
 
   /**
-   * Clear the cover image field
+   * Clear the cover image field.
    *
    * @param \Drupal\node\Entity\Node $node
    *
@@ -247,7 +240,7 @@ class BatchService implements BatchServiceInterface {
   }
 
   /**
-   * Set the image file
+   * Set the image file.
    *
    * @param \Drupal\node\Entity\Node $node
    */
@@ -264,14 +257,15 @@ class BatchService implements BatchServiceInterface {
           'title' => $node->getTitle(),
         ];
         $node->set('field_book_cover_image', $imageField);
-      } else {
-        \Drupal::logger('lit_cover_service')->info('No cover found for ISBN '.$isbn);
+      }
+      else {
+        \Drupal::logger('lit_cover_service')->info('No cover found for ISBN ' . $isbn);
       }
     }
   }
 
   /**
-   * Delete files
+   * Delete files.
    *
    * @param \Drupal\file\Entity\File[] $files
    */
@@ -279,12 +273,14 @@ class BatchService implements BatchServiceInterface {
     $files = array_filter($files);
 
     try {
-      /** @var EntityTypeManagerInterface $entityManager */
+      /** @var \Drupal\Core\Entity\EntityTypeManagerInterface $entityManager */
       $entityManager = \Drupal::service('entity.manager');
       $storage = $entityManager->getStorage('file');
       $storage->delete($files);
-    } catch (\Exception $e) {
+    }
+    catch (\Exception $e) {
       \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
   }
+
 }

@@ -9,11 +9,11 @@ use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\TempStore\PrivateTempStoreFactory;
 use Drupal\lit_open_platform\Api\SearchClient as Client;
 use Drupal\lit_open_platform\Transformers\WorkTransformer;
 use Drupal\node\Entity\Node;
 use Drupal\node\NodeForm;
-use Drupal\Core\TempStore\PrivateTempStoreFactory;
 
 /**
  * Form handler for the node edit forms.
@@ -28,7 +28,7 @@ class LitNodeForm extends NodeForm {
   protected $client;
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public function __construct(EntityRepositoryInterface $entity_repository, PrivateTempStoreFactory $temp_store_factory, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL, AccountInterface $current_user, DateFormatterInterface $date_formatter) {
     parent::__construct($entity_repository, $temp_store_factory, $entity_type_bundle_info, $time, $current_user, $date_formatter);
@@ -43,7 +43,7 @@ class LitNodeForm extends NodeForm {
   }
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   protected function copyFormValuesToEntity(EntityInterface $entity, array $form, FormStateInterface $form_state) {
     $fields = $this->getFieldsWithBookReference($entity->getFieldDefinitions());
@@ -69,7 +69,9 @@ class LitNodeForm extends NodeForm {
    * Create new books from the open platform.
    *
    * @param array $pids
+   *
    * @return array
+   *
    * @throws \Exception
    */
   protected function createBooksFromPids(array $pids): array {
@@ -117,7 +119,8 @@ class LitNodeForm extends NodeForm {
    * Get nid of the book by the pid.
    *
    * @param string $pid
-   * @return integer|boolean
+   *
+   * @return int|bool
    */
   protected function getBookByPid(string $pid) {
     $query = \Drupal::entityQuery('node')
@@ -134,6 +137,7 @@ class LitNodeForm extends NodeForm {
    * Get the open platform pids.
    *
    * @param array $values
+   *
    * @return array
    */
   private function getPids(array $values): array {
@@ -152,6 +156,7 @@ class LitNodeForm extends NodeForm {
    * Get fields name that has reference to the book content type.
    *
    * @param $field_definitions
+   *
    * @return array
    */
   protected function getFieldsWithBookReference($field_definitions) {

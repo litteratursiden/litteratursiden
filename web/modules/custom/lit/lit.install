@@ -6,10 +6,10 @@
  */
 
 use Drupal\file\Entity\File;
-use Drupal\node\Entity\Node;
+use Drupal\locale\SourceString;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
+use Drupal\node\Entity\Node;
 use Drupal\pathauto\PathautoState;
-use \Drupal\locale\SourceString;
 
 /**
  * Set up default images.
@@ -110,7 +110,7 @@ function lit_update_8104() {
     'path' => [
       'alias' => '/frontpage',
       'pathauto' => PathautoState::SKIP,
-    ]
+    ],
   ]);
   $node->save();
 
@@ -120,7 +120,7 @@ function lit_update_8104() {
     'path' => [
       'alias' => '/boerneboeger',
       'pathauto' => PathautoState::SKIP,
-    ]
+    ],
   ]);
   $node->save();
 
@@ -130,7 +130,7 @@ function lit_update_8104() {
     'path' => [
       'alias' => '/forfattere',
       'pathauto' => PathautoState::SKIP,
-    ]
+    ],
   ]);
   $node->save();
 
@@ -151,10 +151,10 @@ function lit_update_8104() {
  * Enable module.
  */
 function lit_update_8105() {
-  $modules = array(
+  $modules = [
     'twig_tweak',
-    'viewsreference'
-  );
+    'viewsreference',
+  ];
   \Drupal::service('module_installer')->install($modules);
 }
 
@@ -171,7 +171,7 @@ function lit_update_8106() {
 }
 
 /**
- * Translate a string
+ * Translate a string.
  *
  * @param string $source_string
  *   The string to translate.
@@ -185,7 +185,7 @@ function lit_update_8106() {
 function _lit_add_translation(string $source_string, string $translated_string, string $langcode) {
   // Find existing source string.
   $storage = \Drupal::service('locale.storage');
-  $string = $storage->findString(array('source' => $source_string));
+  $string = $storage->findString(['source' => $source_string]);
   if (is_null($string)) {
     $string = new SourceString();
     $string->setString($source_string);
@@ -193,9 +193,9 @@ function _lit_add_translation(string $source_string, string $translated_string, 
     $string->save();
   }
   // Create translation. If one already exists, it will be replaced.
-  $translation = $storage->createTranslation(array(
+  $translation = $storage->createTranslation([
     'lid' => $string->lid,
     'language' => $langcode,
     'translation' => $translated_string,
-  ))->save();
+  ])->save();
 }

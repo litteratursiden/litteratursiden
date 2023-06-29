@@ -20,7 +20,7 @@ class UploadBgImage extends SystemThemeSettings {
    * {@inheritdoc}
    */
   public function alterForm(array &$form, FormStateInterface $form_state, $form_id = NULL) {
-    $a =1;
+    $a = 1;
     // Call the parent method from the base theme, if applicable (which it is
     // in this case because Bootstrap actually implements this alter).
     parent::alterForm($form, $form_state, $form_id);
@@ -41,7 +41,7 @@ class UploadBgImage extends SystemThemeSettings {
       '#type' => 'file',
       '#title' => t('Upload background image'),
       '#maxlength' => 40,
-      '#description' => t("If you don't have direct file access to the server, use this field to upload your background.")
+      '#description' => t("If you don't have direct file access to the server, use this field to upload your background."),
     ];
   }
 
@@ -117,6 +117,7 @@ class UploadBgImage extends SystemThemeSettings {
    * @param string $path
    *   A path relative to the Drupal root or to the public files directory, or
    *   a stream wrapper URI.
+   *
    * @return mixed
    *   A valid path that can be displayed through the theme system, or FALSE if
    *   the path could not be validated.

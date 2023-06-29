@@ -16,8 +16,7 @@ use Drupal\node\Entity\NodeType;
  * @coversDefaultClass \Drupal\lit\EventSubscriber\ConfigImportSubscriber
  * @group lit
  */
-class ConfigImportSubscriberTest extends KernelTestBase
-{
+class ConfigImportSubscriberTest extends KernelTestBase {
   /**
    * @const string
    */

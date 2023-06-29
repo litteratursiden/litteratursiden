@@ -4,11 +4,11 @@ namespace Drupal\lit\Form;
 
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\InvokeCommand;
+use Drupal\Core\Entity\EntityBase;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\flag\Entity\Flag;
 use Drupal\flag\FlagInterface;
-use Drupal\Core\Entity\Entity;
 
 /**
  * Builds form with checkbox for flagging content.
@@ -25,20 +25,19 @@ class FlagCheckboxForm extends FormBase {
   /**
    * {@inheritdoc}
    *
-   * @param FlagInterface $flag
+   * @param \Drupal\flag\Entity\FlagInterface $flag
    *   Flag entity.
    * @param \Drupal\Core\Entity\EntityBase $entity
    *   Flaggable entity.
    */
-  public function buildForm(array $form, FormStateInterface $form_state, FlagInterface $flag = NULL, \Drupal\Core\Entity\EntityBase $entity = NULL) {
+  public function buildForm(array $form, FormStateInterface $form_state, FlagInterface $flag = NULL, EntityBase $entity = NULL) {
     if (!$flag || !$entity) {
       return $form;
     }
 
     // Caching form causes bug with ajax response when you click on the
     // checkbox second time. That's why it's disabled for this form.
-    //$form_state->disableCache();
-
+    // $form_state->disableCache();
     $form['flag_id'] = [
       '#type' => 'hidden',
       '#value' => $flag->id(),

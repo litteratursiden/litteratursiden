@@ -55,21 +55,27 @@ class AddEntityBundleTypeWeight extends ProcessorPluginBase {
         case "book":
           $bundle_type_weight = 100;
           break;
+
         case "author_portrait":
           $bundle_type_weight = 90;
           break;
+
         case "topic":
           $bundle_type_weight = 80;
           break;
+
         case "article":
           $bundle_type_weight = 70;
           break;
+
         case "blog":
           $bundle_type_weight = 60;
           break;
+
         case "book_list":
           $bundle_type_weight = 50;
           break;
+
         default:
           break;
       }

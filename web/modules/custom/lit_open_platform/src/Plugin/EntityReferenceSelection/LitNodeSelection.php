@@ -12,7 +12,7 @@ use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\lit_open_platform\Api\SearchClient as Client;
 use Drupal\lit_open_platform\Transformers\SearchTransformer;
-use \Drupal\node\Plugin\EntityReferenceSelection\NodeSelection;
+use Drupal\node\Plugin\EntityReferenceSelection\NodeSelection;
 
 /**
  * Provides specific access control for the node entity type.
@@ -35,9 +35,9 @@ class LitNodeSelection extends NodeSelection {
   private $client;
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition,EntityTypeManagerInterface $entity_type_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user, EntityFieldManagerInterface $entity_field_manager, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, EntityRepositoryInterface $entity_repository) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entity_type_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user, EntityFieldManagerInterface $entity_field_manager, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, EntityRepositoryInterface $entity_repository) {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $entity_type_manager, $module_handler, $current_user, $entity_field_manager, $entity_type_bundle_info, $entity_repository);
 
     // Get module config.
@@ -58,7 +58,7 @@ class LitNodeSelection extends NodeSelection {
     // Search books on the open platform and transform they to drupal format.
     $books = SearchTransformer::transformCollection($this->client->requestSearch($match));
 
-    // Search locally
+    // Search locally.
     $query = $this->buildEntityQuery($match, $match_operator);
     if ($limit > 0) {
       $query->range(0, $limit);
@@ -66,9 +66,9 @@ class LitNodeSelection extends NodeSelection {
 
     $result = $query->execute();
 
-    // if no local results - only return results from the open platform
+    // If no local results - only return results from the open platform.
     if (empty($result)) {
-        return $this->processEntities([], $books);
+      return $this->processEntities([], $books);
     }
 
     $entities = $this->entityTypeManager->getStorage($target_type)->loadMultiple($result);
@@ -81,13 +81,14 @@ class LitNodeSelection extends NodeSelection {
    *
    * @param array $entities
    * @param array $books
+   *
    * @return array
    */
   private function processEntities(array $entities, array $books): array {
     $entity_labels = [];
     $options = [];
 
-    $book_default_image = null;
+    $book_default_image = NULL;
 
     // Process local books.
     foreach ($entities as $entity_id => $entity) {
@@ -144,7 +145,7 @@ class LitNodeSelection extends NodeSelection {
           '#label' => $book['title'],
           '#image' => $book['image'] ?: $book_default_image,
           '#author' => $book['author'],
-          '#storage' => t('Open platform')
+          '#storage' => t('Open platform'),
         ];
 
         $options['book'][$book['pid']] = render($theme);
@@ -166,12 +167,15 @@ class LitNodeSelection extends NodeSelection {
 
     asort($titles, SORT_NATURAL);
 
-    $max = 10; $i = 1;
+    $max = 10;
+    $i = 1;
     foreach ($titles as $id => $title) {
       if (isset($books[$id])) {
         $result[$id] = $books[$id];
 
-        if ($i > $max) break;
+        if ($i > $max) {
+          break;
+        }
         $i++;
       }
     }

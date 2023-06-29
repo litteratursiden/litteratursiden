@@ -5,8 +5,8 @@ namespace Drupal\lit_search\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\lit_search\SearchGroup;
 use Drupal\search_api\Entity\Index;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class SearchController.
@@ -37,7 +37,8 @@ class SearchController extends ControllerBase {
   /**
    * Autocomplete search result.
    *
-   * @param Request $request
+   * @param \Symfony\Component\HttpFoundation\Request $request
+   *
    * @return string
    */
   public function autocomplete(Request $request) {
@@ -89,7 +90,7 @@ class SearchController extends ControllerBase {
       else {
         $data = $data->data;
       }
-   }
+    }
 
     return new JsonResponse($data);
   }
@@ -113,7 +114,6 @@ class SearchController extends ControllerBase {
     return $result;
   }
 
-
   /**
    *
    *
@@ -130,7 +130,8 @@ class SearchController extends ControllerBase {
 
       try {
         $entity = \Drupal::entityTypeManager()->getStorage($matches[2])->load($matches[3]);
-        $result[] = $this->renderEntity($entity, self::VIEW_MODE);;
+        $result[] = $this->renderEntity($entity, self::VIEW_MODE);
+        ;
       }
       catch (\Exception $e) {
         // No action a item simply was not loaded.

@@ -7,11 +7,11 @@ use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\AppendCommand;
 use Drupal\Core\Ajax\ReplaceCommand;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Drupal\Core\Entity\EntityInterface;
 
 /**
  * Defines a controller for comments load more formatter.
@@ -66,7 +66,7 @@ class CommentLoadMoreController extends ControllerBase {
    *
    * @param string $js
    *   Defines whether the request is 'ajax' or 'nojs'.
-   * @param EntityInterface $entity
+   * @param \Drupal\Core\Entity\EntityInterface $entity
    *   The entity whose comment(s) needs rendering.
    * @param string $field_name
    *   The field_name whose comment(s) needs rendering.
@@ -105,7 +105,7 @@ class CommentLoadMoreController extends ControllerBase {
   /**
    * Builds renderable array for comments with "load more" button.
    *
-   * @param EntityInterface $entity
+   * @param \Drupal\Core\Entity\EntityInterface $entity
    *   The entity whose comment(s) needs rendering.
    * @param string $field_name
    *   The field_name whose comment(s) needs rendering.

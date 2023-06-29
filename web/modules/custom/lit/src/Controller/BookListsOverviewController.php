@@ -3,6 +3,7 @@
 namespace Drupal\lit\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Url;
 
 /**
  * Controller for book lists overview page.
@@ -43,11 +44,12 @@ class BookListsOverviewController extends ControllerBase {
     $grouped = [];
 
     foreach ($book_lists as $nid => $book_list) {
-      //$book_list->url = \Drupal::service('path.alias_manager')->getAliasByPath('/node/' . $nid);
-      $book_list->url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $nid], ['absolute' => TRUE]);
+      // $book_list->url = \Drupal::service('path.alias_manager')->getAliasByPath('/node/' . $nid);
+      $book_list->url = Url::fromRoute('entity.node.canonical', ['node' => $nid], ['absolute' => TRUE]);
       $grouped[strtoupper($book_list->firstchar)][] = $book_list;
     }
 
     return $grouped;
   }
+
 }

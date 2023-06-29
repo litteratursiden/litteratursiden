@@ -77,13 +77,12 @@ class TermForm extends BaseTermForm {
     return $element;
   }
 
-
   /**
    * Entity builder updating the term status with the submitted value.
    *
    * @param string $entity_type_id
    *   The entity type identifier.
-   * @param TermInterface $term
+   * @param \Drupal\taxonomy\TermInterface $term
    *   The node updated with the submitted values.
    * @param array $form
    *   The complete form array.

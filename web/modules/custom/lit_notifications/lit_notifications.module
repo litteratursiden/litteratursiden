@@ -6,15 +6,15 @@
  */
 
 use Drupal\comment\CommentInterface;
-use Drupal\Core\Session\AccountInterface;
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\Component\Render\PlainTextOutput;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\BubbleableMetadata;
 use Drupal\Core\Render\Markup;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+use Drupal\lit_notifications\Controller\UnsubscribeController;
 use Drupal\node\NodeInterface;
 use Drupal\user\UserInterface;
-use Drupal\lit_notifications\Controller\UnsubscribeController;
-use Drupal\Core\Url;
-use Drupal\Core\Render\BubbleableMetadata;
 
 /**
  * Implements hook_comment_insert().
@@ -29,7 +29,7 @@ function lit_notifications_comment_insert(CommentInterface $comment) {
  * Implements hook_comment_update().
  */
 function lit_notifications_comment_update(CommentInterface $comment) {
-  /** @var CommentInterface $comment_original */
+  /** @var \Drupal\comment\CommentInterface $comment_original */
   $comment_original = $comment->original;
   if (!$comment_original->isPublished() && $comment->isPublished()) {
     _lit_notification_send_comment_insert_notification($comment);
@@ -184,7 +184,7 @@ function lit_notifications_mail_alter(&$message) {
  *
  * @param string $key
  *   Email key.
- * @param AccountInterface $account
+ * @param \Drupal\Core\Session\AccountInterface $account
  *   Account to whom email should be sent.
  * @param array $token_data
  *   Data for token replacements. For instance node or comment.
@@ -201,7 +201,7 @@ function _lit_notifications_comment_notify($key, AccountInterface $account, $tok
 /**
  * Sends email notification about creating a new comment.
  *
- * @param CommentInterface $comment
+ * @param \Drupal\comment\CommentInterface $comment
  *   Comment entity which was created.
  */
 function _lit_notification_send_comment_insert_notification(CommentInterface $comment) {

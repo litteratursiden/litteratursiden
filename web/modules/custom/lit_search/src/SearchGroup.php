@@ -3,7 +3,7 @@
 namespace Drupal\lit_search;
 
 /**
- * Class SearchGroup
+ * Class SearchGroup.
  *
  * @package Drupal\lit_search
  */

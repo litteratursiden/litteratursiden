@@ -73,6 +73,7 @@ class Client {
    * Set the client id.
    *
    * @param string $clientId
+   *
    * @return $this
    */
   public function setClientId(string $clientId) {
@@ -94,6 +95,7 @@ class Client {
    * Set the client secret.
    *
    * @param string $clientSecret
+   *
    * @return $this
    */
   public function setClientSecret(string $clientSecret) {
@@ -115,6 +117,7 @@ class Client {
    * Set the access token.
    *
    * @param array $token
+   *
    * @return $this
    */
   public function setAccessToken(array $token) {
@@ -149,6 +152,7 @@ class Client {
    * Check if the access token is valid.
    *
    * @param array $token
+   *
    * @return bool
    */
   public function verifyToken(array $token): bool {
@@ -168,6 +172,7 @@ class Client {
    * Build request url to the API.
    *
    * @param string $uri
+   *
    * @return string
    */
   protected function buildUrl(string $uri): string {
@@ -226,6 +231,7 @@ class Client {
    *
    * @param string $clientId
    * @param string $clientSecret
+   *
    * @return \Drupal\lit_open_platform\Api\Client
    */
   public static function getInstance(string $clientId, string $clientSecret) {

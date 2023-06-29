@@ -31,7 +31,8 @@ class Bundle extends BaseBundle {
 
       asort($options);
       $this->valueOptions = $options;
-    } else {
+    }
+    else {
       $this->valueOptions = parent::getValueOptions();
     }
 

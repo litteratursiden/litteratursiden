@@ -1,6 +1,10 @@
 <?php
 
-use \Drupal\taxonomy\Entity\Term;
+/**
+ * @file
+ */
+
+use Drupal\taxonomy\Entity\Term;
 
 /**
  * @file
@@ -35,7 +39,7 @@ function lit_slider_requirements($phase) {
 }
 
 /**
- * Add Children's books taxonomy term
+ * Add Children's books taxonomy term.
  */
 function lit_slider_update_8100() {
   $term = Term::create([

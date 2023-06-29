@@ -25,7 +25,7 @@ class LitBlockContentForm extends BlockContentForm {
   protected $client;
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public function __construct(EntityRepositoryInterface $entity_repository, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL) {
     parent::__construct($entity_repository, $entity_type_bundle_info, $time);
@@ -40,7 +40,7 @@ class LitBlockContentForm extends BlockContentForm {
   }
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   protected function copyFormValuesToEntity(EntityInterface $entity, array $form, FormStateInterface $form_state) {
     $fields = $this->getFieldsWithBookReference($entity->getFieldDefinitions());
@@ -66,7 +66,9 @@ class LitBlockContentForm extends BlockContentForm {
    * Create new books from the open platform.
    *
    * @param array $pids
+   *
    * @return array
+   *
    * @throws \Exception
    */
   protected function createBooksFromPids(array $pids): array {
@@ -114,7 +116,8 @@ class LitBlockContentForm extends BlockContentForm {
    * Get nid of the book by the pid.
    *
    * @param string $pid
-   * @return integer|boolean
+   *
+   * @return int|bool
    */
   protected function getBookByPid(string $pid) {
     $query = \Drupal::entityQuery('node')
@@ -131,6 +134,7 @@ class LitBlockContentForm extends BlockContentForm {
    * Get the open platform pids.
    *
    * @param array $values
+   *
    * @return array
    */
   private function getPids(array $values): array {
@@ -149,6 +153,7 @@ class LitBlockContentForm extends BlockContentForm {
    * Get fields name that has reference to the book content type.
    *
    * @param $field_definitions
+   *
    * @return array
    */
   protected function getFieldsWithBookReference($field_definitions) {

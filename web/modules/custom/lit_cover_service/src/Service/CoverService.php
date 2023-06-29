@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Cover service to find local covers or fetch remote covers bu ISBN.
- */
-
 namespace Drupal\lit_cover_service\Service;
 
 use CoverService\Api\CoverApi;
@@ -17,7 +12,7 @@ use Drupal\lit_cover_service\OpenPlatform\TokenClient;
 use GuzzleHttp\ClientInterface;
 
 /**
- * Class CoverService
+ * Class CoverService.
  */
 class CoverService implements CoverServiceInterface {
 
@@ -39,7 +34,7 @@ class CoverService implements CoverServiceInterface {
   }
 
   /**
-   * Get cover image from ISBN
+   * Get cover image from ISBN.
    *
    * @param string $isbn
    *
@@ -63,7 +58,7 @@ class CoverService implements CoverServiceInterface {
   }
 
   /**
-   * Find local cover file from ISBN
+   * Find local cover file from ISBN.
    *
    * @param string $isbn
    *
@@ -71,7 +66,7 @@ class CoverService implements CoverServiceInterface {
    */
   private function findLocalImageFile(string $isbn): ?FileInterface {
     $result = \Drupal::entityQuery('file')
-      ->condition('uri', self::DRUPAL_FILE_PATH.'/'.$isbn.'.', 'STARTS_WITH')
+      ->condition('uri', self::DRUPAL_FILE_PATH . '/' . $isbn . '.', 'STARTS_WITH')
       ->execute();
 
     if ($result) {
@@ -121,12 +116,13 @@ class CoverService implements CoverServiceInterface {
           }
         }
       }
-    } catch (\Exception $e) {
+    }
+    catch (\Exception $e) {
       \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
 
     if (!$largeImageUrl && !$originalImageUrl) {
-      \Drupal::messenger()->addMessage('No cover found for ISBN '.$isbn, 'warning');
+      \Drupal::messenger()->addMessage('No cover found for ISBN ' . $isbn, 'warning');
     }
 
     // If cover doesn't have a  'large' cover fall back to use the original.
@@ -134,7 +130,7 @@ class CoverService implements CoverServiceInterface {
   }
 
   /**
-   * Fetch image file and save it to local file system
+   * Fetch image file and save it to local file system.
    *
    * @param string $imageUrl
    *
@@ -151,16 +147,18 @@ class CoverService implements CoverServiceInterface {
       $dir = self::DRUPAL_FILE_PATH;
       $destination = self::DRUPAL_FILE_PATH . '/' . basename($imageUrl);
 
-      $dirWritable = $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY) && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::MODIFY_PERMISSIONS);;
+      $dirWritable = $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY) && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::MODIFY_PERMISSIONS);
+      ;
       if (!$dirWritable) {
-        throw new DirectoryNotReadyException('Cannot write to: '.$dir);
+        throw new DirectoryNotReadyException('Cannot write to: ' . $dir);
       }
 
       if ($data && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
         $file = file_save_data($data, $destination, FileSystemInterface::EXISTS_REPLACE);
         return (FALSE !== $file) ? $file : NULL;
       }
-    } catch (\Exception $e) {
+    }
+    catch (\Exception $e) {
       \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
 
@@ -168,7 +166,7 @@ class CoverService implements CoverServiceInterface {
   }
 
   /**
-   * Get Adgangsplatform access token
+   * Get Adgangsplatform access token.
    *
    * @return string|null
    */
@@ -180,11 +178,11 @@ class CoverService implements CoverServiceInterface {
     $clientId = $config->get('client_id') ?? '';
     $clientSecret = $config->get('client_secret') ?? '';
 
-    // Get access token
+    // Get access token.
     $tokenClient = new TokenClient($clientId, $clientSecret);
     $token = $tokenClient->getAccessToken();
 
-    return $token['access_token'] ?? null;
+    return $token['access_token'] ?? NULL;
   }
 
 }

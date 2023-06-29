@@ -2,11 +2,10 @@
 
 namespace Drupal\lit\Commands;
 
-use Drupal;
-use Drupal\node\Entity\Node;
-use Drush\Commands\DrushCommands;
 use Drupal\block_content\Entity\BlockContent;
-use Exception;
+use Drupal\node\Entity\Node;
+use Drupal\node\Entity\NodeType;
+use Drush\Commands\DrushCommands;
 
 /**
  * Migrate config to block references.
@@ -30,15 +29,15 @@ class ConfigToBlockReference extends DrushCommands {
     $this->checkState();
 
     // Get all block entities.
-    $blockEntities = Drupal::entityQuery('block')->execute();
+    $blockEntities = \Drupal::entityQuery('block')->execute();
     // Load all block config.
     foreach ($blockEntities as $blockName) {
-      $blockList[] = Drupal::config('block.block.' . $blockName)->getRawData();
+      $blockList[] = \Drupal::config('block.block.' . $blockName)->getRawData();
     }
 
     $noOfBlocks = count($blockList);
     // Sort config by block weight to ensure proper order when migrated.
-    usort($blockList, function($a, $b) {
+    usort($blockList, function ($a, $b) {
       return $a['weight'] - $b['weight'];
     });
 
@@ -65,7 +64,7 @@ class ConfigToBlockReference extends DrushCommands {
             // The old main menu landing pages URLs have changed.
             $trimmedUrl = $this->handleLandingPages($trimmedUrl);
 
-            $url = Drupal::service('path.alias_manager')->getPathByAlias($trimmedUrl);
+            $url = \Drupal::service('path.alias_manager')->getPathByAlias($trimmedUrl);
             $urlExploded = explode('/', $url);
             if (
               isset($urlExploded['2']) &&
@@ -96,13 +95,13 @@ class ConfigToBlockReference extends DrushCommands {
             'field_views_reference' => [
               'target_id' => 'recent_reviews',
               'display_id' => 'block_recent_reviews',
-              'argument' => null,
+              'argument' => NULL,
               'title' => '1',
-              'data' => null
-            ]
+              'data' => NULL,
+            ],
           ]);
           $block->save();
-          $url = Drupal::service('path.alias_manager')->getPathByAlias('/frontpage');
+          $url = \Drupal::service('path.alias_manager')->getPathByAlias('/frontpage');
           $urlExploded = explode('/', $url);
           $node = Node::load($urlExploded['2']);
           if (isset($node)) {
@@ -126,7 +125,7 @@ class ConfigToBlockReference extends DrushCommands {
       }
 
       if ($count > $noOfBlocks) {
-         break;
+        break;
       }
     }
 
@@ -137,7 +136,7 @@ class ConfigToBlockReference extends DrushCommands {
     $this->output()->writeln('--- Handled urls ---');
     $this->output()->writeln($handledUrls);
 
-    Drupal::state()->set('block_migration_status', 'migrated');
+    \Drupal::state()->set('block_migration_status', 'migrated');
   }
 
   /**
@@ -187,18 +186,19 @@ class ConfigToBlockReference extends DrushCommands {
    * Create a block reference on an entity.
    *
    * @param int $nid
-   *   A node to add reference to
+   *   A node to add reference to.
    * @param array $blockConfig
    *   The block that holds the old config.
    *
    * @return array
    *   A summary array of action.
+   *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
   private function addReferenceToNode(int $nid, array $blockConfig) {
     $blockContentId = explode(':', $blockConfig['settings']['id']);
     $blockContentUuid = $blockContentId['1'];
-    $block = Drupal::service('entity.repository')->loadEntityByUuid('block_content', $blockContentUuid);
+    $block = \Drupal::service('entity.repository')->loadEntityByUuid('block_content', $blockContentUuid);
     if (isset($block)) {
       // Move block label to spotbox block_content if block label display is set.
       if ($blockConfig['settings']['label_display'] == 'visible') {
@@ -235,7 +235,7 @@ class ConfigToBlockReference extends DrushCommands {
    *   An array containing block configuration.
    */
   private function deleteConfig(array $blockConfig) {
-    Drupal::configFactory()->getEditable('block.block.' . $blockConfig['id'])->delete();
+    \Drupal::configFactory()->getEditable('block.block.' . $blockConfig['id'])->delete();
   }
 
   /**
@@ -244,8 +244,8 @@ class ConfigToBlockReference extends DrushCommands {
    * @throws \Exception
    */
   private function checkState() {
-    if (Drupal::state()->get('block_migration_status')) {
-      throw new Exception(dt('Data has already been migrated.'));
+    if (\Drupal::state()->get('block_migration_status')) {
+      throw new \Exception(dt('Data has already been migrated.'));
     }
 
     $landing_pages = [
@@ -253,29 +253,30 @@ class ConfigToBlockReference extends DrushCommands {
       'boerneboeger' => '/boerneboeger',
       'forfattere' => '/forfattere',
     ];
-    $nodeTypes = \Drupal\node\Entity\NodeType::loadMultiple();
+    $nodeTypes = NodeType::loadMultiple();
 
     // Check for existing landing pages.
     foreach ($landing_pages as $name => $alias) {
-      $nodeUrl = Drupal::service('path.alias_manager')->getPathByAlias($alias);
+      $nodeUrl = \Drupal::service('path.alias_manager')->getPathByAlias($alias);
       $urlExploded = explode('/', $nodeUrl);
       if (isset($urlExploded['2']) && is_numeric($urlExploded['2'])) {
         continue;
       }
       else {
-        throw new Exception(dt('Missing landing page: !name', ['!name' => $name]));
+        throw new \Exception(dt('Missing landing page: !name', ['!name' => $name]));
       }
     }
 
     // Check for existing reference field on all nodes.
     foreach ($nodeTypes as $name => $type) {
       $definitions = \Drupal::service('entity_field.manager')->getFieldDefinitions('node', $name);
-      if(isset($definitions['field_block_reference'])) {
+      if (isset($definitions['field_block_reference'])) {
         continue;
       }
       else {
-        throw new Exception(dt('Missing block reference field on: !nod  eType', ['!nodeType' => $name]));
+        throw new \Exception(dt('Missing block reference field on: !nod  eType', ['!nodeType' => $name]));
       }
     }
   }
+
 }

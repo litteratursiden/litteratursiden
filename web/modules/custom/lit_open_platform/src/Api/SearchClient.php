@@ -10,12 +10,12 @@ namespace Drupal\lit_open_platform\Api;
 class SearchClient extends Client implements SearchClientInterface {
 
   /**
-   * Types to search for in open search
+   * Types to search for in open search.
    */
   private const MATERIAL_TYPES = ['bog', 'billedbog', 'graphic novel', 'tegneserie'];
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public function requestSearch(string $search, array $fields = ['pid', 'dcTitleFull', 'coverUrl42', 'creatorAut']): array {
     $types = implode(' OR ', array_map(function ($type) {
@@ -26,7 +26,7 @@ class SearchClient extends Client implements SearchClientInterface {
       'json' => [
         'pretty' => TRUE,
         'access_token' => $this->getAccessToken()['access_token'],
-        'q' => str_replace(' ',' AND ',trim($search)) . " AND term.language=Dansk AND (" . $types .") AND (term.accessType=physical OR term.accessType=online) NOT term.workType=movie NOT term.workType=article",
+        'q' => str_replace(' ', ' AND ', trim($search)) . " AND term.language=Dansk AND (" . $types . ") AND (term.accessType=physical OR term.accessType=online) NOT term.workType=movie NOT term.workType=article",
         'fields' => $fields,
       ],
     ]);
@@ -35,7 +35,7 @@ class SearchClient extends Client implements SearchClientInterface {
   }
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public function requestWork(array $pids, array $fields = [
     'pid', 'dcTitleFull', 'identifierISBN', 'coverUrlFull', 'creatorAut', 'abstract',
@@ -55,7 +55,7 @@ class SearchClient extends Client implements SearchClientInterface {
   }
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public function requestPidByIsbn(string $isbn): ?string {
     $response = $this->request('POST', $this->buildUrl('search'), [

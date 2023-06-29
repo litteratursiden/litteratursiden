@@ -2,6 +2,7 @@
 
 namespace Drupal\lit_open_platform\Transformers;
 
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\taxonomy\Entity\Term;
 
 /**
@@ -25,7 +26,7 @@ class WorkTransformer extends BaseTransformer {
   private const VOCABULARY_GENERAL_TYPES = 'general_tags';
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public static function transform($item): array {
     $pid = $item['pid'][0] ?? NULL;
@@ -105,8 +106,9 @@ class WorkTransformer extends BaseTransformer {
    *
    * @param string $url
    * @param string $dir
-   * @param string|NULL $alt
-   * @param string|NULL $title
+   * @param string|null $alt
+   * @param string|null $title
+   *
    * @return array|null
    */
   private static function transformImage(string $url, string $dir, string $alt = NULL, string $title = NULL): ?array {
@@ -115,7 +117,7 @@ class WorkTransformer extends BaseTransformer {
     // Get image content from the url.
     $data = file_get_contents($url);
 
-    if ($data && \Drupal::service('file_system')->prepareDirectory($dir, \Drupal\Core\File\FileSystemInterface::CREATE_DIRECTORY)) {
+    if ($data && \Drupal::service('file_system')->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
       // Generate unique filename based on the url.
       $filename = md5($url) . '.jpeg';
 
@@ -137,6 +139,7 @@ class WorkTransformer extends BaseTransformer {
    *
    * @param array $name
    * @param string $vocabulary
+   *
    * @return array
    */
   private static function transformTerm(array $names, string $vocabulary): array {
@@ -172,6 +175,7 @@ class WorkTransformer extends BaseTransformer {
    *
    * @param array $names
    * @param string $type
+   *
    * @return array
    */
   private static function transformNode(array $titles, string $type): array {
@@ -193,4 +197,3 @@ class WorkTransformer extends BaseTransformer {
   }
 
 }
-

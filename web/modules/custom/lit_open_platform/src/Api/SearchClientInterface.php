@@ -3,7 +3,7 @@
 namespace Drupal\lit_open_platform\Api;
 
 /**
- * Interface SearchClientInterface
+ * Interface SearchClientInterface.
  */
 interface SearchClientInterface {
 
@@ -12,6 +12,7 @@ interface SearchClientInterface {
    *
    * @param string $search
    * @param array $fields
+   *
    * @return array
    */
   public function requestSearch(string $search, array $fields = []): array;
@@ -21,6 +22,7 @@ interface SearchClientInterface {
    *
    * @param array $pids
    * @param array $fields
+   *
    * @return array
    */
   public function requestWork(array $pids, array $fields = []): array;

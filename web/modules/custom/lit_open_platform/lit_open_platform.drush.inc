@@ -1,8 +1,12 @@
 <?php
 
+/**
+ * @file
+ */
+
 use Drupal\lit_open_platform\Api\SearchClient;
-use Drupal\node\Entity\Node;
 use Drupal\lit_open_platform\Transformers\WorkTransformer;
+use Drupal\node\Entity\Node;
 
 /**
  * Implements hook_drush_command().
@@ -68,7 +72,7 @@ function drush_lit_open_platform_lit_fill_out_pid() {
     $client = SearchClient::getInstance($client_id, $client_secret);
 
     $operations = [
-      ['lit_open_platform_batch_fill_pid_process', [$offset, $limit, $client]]
+      ['lit_open_platform_batch_fill_pid_process', [$offset, $limit, $client]],
     ];
     $batch = [
       'operations' => $operations,
@@ -90,7 +94,7 @@ function drush_lit_open_platform_lit_fill_out_pid() {
 /**
  * @param $offset
  * @param $limit
- * @param SearchClient $client
+ * @param \Drupal\lit_open_platform\Api\SearchClient $client
  * @param $context
  */
 function lit_open_platform_batch_fill_pid_process($offset, $limit, $client, &$context) {
@@ -126,19 +130,20 @@ function lit_open_platform_batch_fill_pid_process($offset, $limit, $client, &$co
     $context['sandbox']['progress']++;
     $context['sandbox']['current_node'] = $book->nid;
 
-    if( NULL !== $pid) {
-        $context['message'] = t('Book @iterator with nid: @nid and ISBN: @isbn has been processed... We found pid: @pid ', [
-            '@iterator' => $context['sandbox']['progress'],
-            '@nid' => $book->nid,
-            '@isbn' => $book->isbn,
-            '@pid' => $pid
-        ]);
-    } else {
-        $context['message'] = t('Book @iterator with nid: @nid and ISBN: @isbn has been processed... No pid found ', [
-            '@iterator' => $context['sandbox']['progress'],
-            '@nid' => $book->nid,
-            '@isbn' => $book->isbn
-        ]);
+    if (NULL !== $pid) {
+      $context['message'] = t('Book @iterator with nid: @nid and ISBN: @isbn has been processed... We found pid: @pid ', [
+        '@iterator' => $context['sandbox']['progress'],
+        '@nid' => $book->nid,
+        '@isbn' => $book->isbn,
+        '@pid' => $pid,
+      ]);
+    }
+    else {
+      $context['message'] = t('Book @iterator with nid: @nid and ISBN: @isbn has been processed... No pid found ', [
+        '@iterator' => $context['sandbox']['progress'],
+        '@nid' => $book->nid,
+        '@isbn' => $book->isbn,
+      ]);
     }
   }
 
@@ -157,7 +162,6 @@ function lit_open_platform_batch_fill_pid_finished($success, $results, $operatio
     drush_print(dt('@count books have successfully been processed.', ['@count' => count($results)]));
   }
 }
-
 
 /**
  * Implements drush_[MODULE_NAME]_[COMMAND_NAME]().
@@ -181,7 +185,7 @@ function drush_lit_open_platform_lit_sync_books() {
     'field_book_publisher',
     'field_book_cover_image',
     'field_book_translater',
-    'field_book_old_library_key'
+    'field_book_old_library_key',
   ];
 
   // Replace default fields with user fields.
@@ -231,7 +235,7 @@ function drush_lit_open_platform_lit_sync_books() {
     $client = SearchClient::getInstance($client_id, $client_secret);
 
     $operations = [
-      ['lit_open_platform_batch_sync_books_process', [$fields, $offset, $limit, $last_sync_nid, $delta_timestamp, $client]]
+      ['lit_open_platform_batch_sync_books_process', [$fields, $offset, $limit, $last_sync_nid, $delta_timestamp, $client]],
     ];
     $batch = [
       'operations' => $operations,
@@ -255,7 +259,7 @@ function drush_lit_open_platform_lit_sync_books() {
  * @param $offset
  * @param $limit
  * @param $last_sync_nid
- * @param SearchClient $client
+ * @param \Drupal\lit_open_platform\Api\SearchClient $client
  * @param $context
  */
 function lit_open_platform_batch_sync_books_process($fields, $offset, $limit, $last_sync_nid, $delta, $client, &$context) {
@@ -310,9 +314,9 @@ function lit_open_platform_batch_sync_books_process($fields, $offset, $limit, $l
     if ($open_platform_book) {
       foreach ($fields as $field) {
 
-        // guard for empty fields
+        // Guard for empty fields.
         if (NULL === $open_platform_book->$field) {
-            continue;
+          continue;
         }
 
         // Get current field values.
@@ -320,7 +324,7 @@ function lit_open_platform_batch_sync_books_process($fields, $offset, $limit, $l
 
         // Unique logic for tags field.
         if ($field == 'field_book_general_tags') {
-          // be sure we have arrays to merge
+          // Be sure we have arrays to merge.
           $values = is_array($values) ? $values : [];
           $open_platform_book->$field = is_array($open_platform_book->$field) ? $open_platform_book->$field : [];
 
@@ -329,21 +333,21 @@ function lit_open_platform_batch_sync_books_process($fields, $offset, $limit, $l
 
           // Set only unique tags.
           $book->set($field, $merged_tags);
-          $diff = count($merged_tags)-count($values);
+          $diff = count($merged_tags) - count($values);
           if ($diff > 0) {
-            drush_print('Updating book ' . $book->title->value . '('. (string)$book->nid->value . ') ' . $field . ' with ' . $diff . ' new tags');
+            drush_print('Updating book ' . $book->title->value . '(' . (string) $book->nid->value . ') ' . $field . ' with ' . $diff . ' new tags');
           }
           continue;
         }
 
         // Set other fields if not defined already in db.
         if (!$values && $open_platform_book->$field) {
-          drush_print('Updating book ' . $book->title->value . '('. (string)$book->nid->value . ') ' . $field . ' with ' . (string)$open_platform_book->$field);
+          drush_print('Updating book ' . $book->title->value . '(' . (string) $book->nid->value . ') ' . $field . ' with ' . (string) $open_platform_book->$field);
           $book->set($field, $open_platform_book->$field);
         }
       }
 
-      drush_print('Saving book ' . $book->title->value . '('. (string)$book->nid->value . ')');
+      drush_print('Saving book ' . $book->title->value . '(' . (string) $book->nid->value . ')');
       $book->save();
     }
 
@@ -352,8 +356,8 @@ function lit_open_platform_batch_sync_books_process($fields, $offset, $limit, $l
     // Update our progress information.
     $context['sandbox']['progress']++;
     $context['sandbox']['current_node'] = $book->id();
-    $context['message'] = t('The @iterator book ('. $book->id() .') is processing...', [
-      '@iterator' => $context['sandbox']['progress']
+    $context['message'] = t('The @iterator book (' . $book->id() . ') is processing...', [
+      '@iterator' => $context['sandbox']['progress'],
     ]);
   }
 

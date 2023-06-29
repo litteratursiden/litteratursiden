@@ -4,8 +4,14 @@ namespace Drupal\lit;
 
 use Drupal\Core\Security\TrustedCallbackInterface;
 
+/**
+ *
+ */
 class FacetTypePrerender implements TrustedCallbackInterface {
 
+  /**
+   *
+   */
   public static function trustedCallbacks() {
     return ['preRender'];
   }
@@ -71,4 +77,5 @@ class FacetTypePrerender implements TrustedCallbackInterface {
 
     return $build;
   }
+
 }

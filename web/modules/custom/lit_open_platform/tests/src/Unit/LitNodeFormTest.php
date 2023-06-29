@@ -4,9 +4,9 @@ namespace Drupal\Tests\lit_open_platform\Unit;
 
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\KernelTests\KernelTestBase;
 use Drupal\lit_open_platform\Form\LitNodeForm;
 use Drupal\node\Entity\Node;
-use Drupal\KernelTests\KernelTestBase;
 use Drupal\node\Entity\NodeType;
 
 /**
