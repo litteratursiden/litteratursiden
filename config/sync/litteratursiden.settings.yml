@@ -31,7 +31,7 @@ region_wells:
   footer: ''
 table_responsive: '-1'
 table: ''
-background_path: 'public://indblik i Livs bogreol1200x628_top-kopi_0.jpg'
+background_path: 'public://lise 3.png'
 cdn_theme: bootstrap
 cdn_cache_ttl_versions: '604800'
 cdn_cache_ttl_themes: '604800'
