@@ -128,7 +128,7 @@ function bpi_get_bpi_dictionaries() {
     $dictionaries = $bpiService->getInstance()->getDictionaries();
   }
   catch (\Exception $e) {
-   // \Drupal::logger('bpi')->error($e->getMessage());
+    \Drupal::logger('bpi')->error($e->getMessage());
   }
 
   return $dictionaries;
