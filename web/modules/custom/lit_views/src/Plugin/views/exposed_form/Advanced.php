@@ -156,11 +156,14 @@ class Advanced extends Basic {
   /**
    * Render exposed sorts as links.
    *
-   * @param $exposed_sorts
-   * @param $form
-   * @param $form_state
+   * @param array $exposed_sorts
+   *   Exposed sorts.
+   * @param array $form
+   *   A form.
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *   The state of the form.
    */
-  private function exposedSortsAsLinks($exposed_sorts, &$form, &$form_state) {
+  private function exposedSortsAsLinks(array $exposed_sorts, array &$form, FormStateInterface &$form_state): void {
     $user_input = $form_state->getUserInput();
 
     $form['sort_links'] = [
@@ -216,11 +219,14 @@ class Advanced extends Basic {
   /**
    * Render exposed sorts as default fields.
    *
-   * @param $exposed_sorts
-   * @param $form
-   * @param $form_state
+   * @param array $exposed_sorts
+   *   Exposed sorts.
+   * @param array $form
+   *   A form.
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *   The state of the form.
    */
-  private function exposedSortsAsDefault($exposed_sorts, &$form, &$form_state) {
+  private function exposedSortsAsDefault(array $exposed_sorts, array &$form, FormStateInterface &$form_state): void {
     $form['sort_by'] = [
       '#type' => 'select',
       '#options' => $exposed_sorts,

@@ -16,7 +16,7 @@ use Drupal\user\Entity\User;
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function bpi_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+function bpi_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id): void {
   $selected_content_type = \Drupal::config('bpi.content_mapping')
     ->get('bpi_content_type');
   $user_has_access = \Drupal::currentUser()->hasPermission('bpi push content');
@@ -128,7 +128,7 @@ function bpi_get_bpi_dictionaries() {
     $dictionaries = $bpiService->getInstance()->getDictionaries();
   }
   catch (\Exception $e) {
-    \Drupal::logger('bpi')->error($e->getMessage());
+   // \Drupal::logger('bpi')->error($e->getMessage());
   }
 
   return $dictionaries;
@@ -154,11 +154,8 @@ function bpi_get_bpi_dictionaries() {
  *
  * @return array
  *   An array of node values, used by the BPI web service.
- *
- * @todo Add a hook allowing changing the values before they are sent to BPI.
- * @todo Split this function into smaller parts (ex: images, texts).
  */
-function bpi_convert_to_bpi(Node $node, $category, $audience, $with_images = FALSE, $anonymous = FALSE, $editable = 1, $with_refs = TRUE): array {
+function bpi_convert_to_bpi(Node $node, string $category, string $audience, bool $with_images = FALSE, bool $anonymous = FALSE, int $editable = 1, bool $with_refs = TRUE): array {
   $bpi_content = [];
 
   $bpi_service_settings = \Drupal::config('bpi.service_settings');
@@ -285,8 +282,7 @@ function bpi_convert_to_bpi(Node $node, $category, $audience, $with_images = FAL
       }
     }
 
-    // @todo
-    // Small hack for BPI validation, this might not be suitable id at all.
+    // @todo Avoid Small hack for BPI validation.
     array_walk($materials, function (&$v, $k) {
         $v = '870970-basis:' . $v;
     });

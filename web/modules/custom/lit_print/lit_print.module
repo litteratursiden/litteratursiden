@@ -2,12 +2,13 @@
 
 /**
  * @file
+ * Hooks related to lit_print module.
  */
 
 /**
  * Implements hook_theme().
  */
-function lit_print_theme($existing, $type, $theme, $path) {
+function lit_print_theme($existing, $type, $theme, $path): array {
   return [
     'html__node__print' => [
       'template' => 'html--node--print',

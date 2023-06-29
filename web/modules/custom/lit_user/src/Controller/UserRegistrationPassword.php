@@ -6,7 +6,7 @@ use Drupal\Core\Url;
 use Drupal\user_registrationpassword\Controller\RegistrationController as UserRegistrationPasswordDefault;
 
 /**
- *
+ * Custom user registration password handling.
  */
 class UserRegistrationPassword extends UserRegistrationPasswordDefault {
 
@@ -49,7 +49,8 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
       }
     }
     else {
-      // Time out, in seconds, until login URL expires. 24 hours = 86400 seconds.
+      // Time out, in seconds, until login URL expires.
+      // 24 hours = 86400 seconds.
       $timeout = $this->config('user_registrationpassword.settings')
         ->get('registration_ftll_timeout');
       $current = REQUEST_TIME;
@@ -71,7 +72,8 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
           $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
         }
         // Else try to activate the account.
-        // Password = user's password - timestamp = current request - login = username.
+        // Password = user's password - timestamp = current request - login =
+        // username.
         // user_pass_rehash($password, $timestamp, $login, $uid)
         elseif ($account->id() && $timestamp >= $account->getCreatedTime() && !$account->getLastLoginTime() && $hash == user_pass_rehash($account,
             $timestamp)
@@ -125,7 +127,6 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
    *
    * @param string $type
    *   The type of message.
-   *
    * @param string $redirect
    *   Whether to redirect.
    *

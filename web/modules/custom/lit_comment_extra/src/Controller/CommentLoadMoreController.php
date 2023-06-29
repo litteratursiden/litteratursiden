@@ -46,11 +46,16 @@ class CommentLoadMoreController extends ControllerBase {
    *   Entity type to which comments are belong to.
    * @param int $entity
    *   ID of the entity to which comments are belong to.
+   * @param string $field_name
+   *   The name of the field.
    *
-   * @return \Drupal\Core\Access\AccessResult
+   * @return \Drupal\Core\Access\AccessResult|\Drupal\Core\Access\AccessResultAllowed|\Drupal\Core\Access\AccessResultForbidden|\Drupal\Core\Access\AccessResultNeutral
    *   Whether user has access.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function ajaxLoadMoreAccess($entity_type, $entity, $field_name) {
+  public function ajaxLoadMoreAccess(string $entity_type, int $entity, $field_name) {
     $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
     if (!$storage) {
       return AccessResult::forbidden('The entity type is invalid.');

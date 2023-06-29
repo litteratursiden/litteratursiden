@@ -24,11 +24,6 @@ class FlagCheckboxForm extends FormBase {
 
   /**
    * {@inheritdoc}
-   *
-   * @param \Drupal\flag\Entity\FlagInterface $flag
-   *   Flag entity.
-   * @param \Drupal\Core\Entity\EntityBase $entity
-   *   Flaggable entity.
    */
   public function buildForm(array $form, FormStateInterface $form_state, FlagInterface $flag = NULL, EntityBase $entity = NULL) {
     if (!$flag || !$entity) {
@@ -93,7 +88,12 @@ class FlagCheckboxForm extends FormBase {
       // If it's not we'll set up the real state of the checkbox on the form.
       $is_flagged = $flag->isFlagged($entity);
       if ($input['is_flagged'] != $is_flagged) {
-        $ajax_response->addCommand(new InvokeCommand("#flag-checkbox-{$flag->id()}-{$entity->id()}", 'prop', ['checked', (int) $is_flagged]));
+        $ajax_response->addCommand(
+          new InvokeCommand(
+            "#flag-checkbox-{$flag->id()}-{$entity->id()}",
+            'prop', ['checked', (int) $is_flagged]
+          )
+        );
       }
     }
 

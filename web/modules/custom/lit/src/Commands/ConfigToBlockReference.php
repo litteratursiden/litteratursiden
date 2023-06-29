@@ -200,7 +200,8 @@ class ConfigToBlockReference extends DrushCommands {
     $blockContentUuid = $blockContentId['1'];
     $block = \Drupal::service('entity.repository')->loadEntityByUuid('block_content', $blockContentUuid);
     if (isset($block)) {
-      // Move block label to spotbox block_content if block label display is set.
+      // Move block label to spotbox block_content if block label
+      // display is set.
       if ($blockConfig['settings']['label_display'] == 'visible') {
         if ($block->bundle() == 'spot') {
           $block->field_label = $blockConfig['settings']['label'];

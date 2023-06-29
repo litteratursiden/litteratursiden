@@ -19,6 +19,8 @@ use Drupal\node\Entity\NodeType;
 class LitNodeFormTest extends KernelTestBase {
 
   /**
+   * A book PID.
+   *
    * @const string
    */
   public const PID = '810015-katalog:005177353';
@@ -100,7 +102,7 @@ class LitNodeFormTest extends KernelTestBase {
       ->disableOriginalConstructor()
       ->getMock();
 
-    // Get a reflected, accessible version of the protected ::getBookByPid() method.
+    // Get a reflected, accessible version of the protected ::getBookByPid()
     $method = $this->getAccessibleMethod(LitNodeForm::class, 'getBookByPid');
     $nid = $method->invokeArgs($form, [self::PID]);
 

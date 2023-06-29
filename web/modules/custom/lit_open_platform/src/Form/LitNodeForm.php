@@ -69,8 +69,10 @@ class LitNodeForm extends NodeForm {
    * Create new books from the open platform.
    *
    * @param array $pids
+   *   A list of pids.
    *
    * @return array
+   *   A list of nids.
    *
    * @throws \Exception
    */
@@ -119,8 +121,10 @@ class LitNodeForm extends NodeForm {
    * Get nid of the book by the pid.
    *
    * @param string $pid
+   *   A pid.
    *
    * @return int|bool
+   *   A node id if one was found.
    */
   protected function getBookByPid(string $pid) {
     $query = \Drupal::entityQuery('node')
@@ -137,8 +141,10 @@ class LitNodeForm extends NodeForm {
    * Get the open platform pids.
    *
    * @param array $values
+   *   A list of pid values.
    *
    * @return array
+   *   A list of pids.
    */
   private function getPids(array $values): array {
     $pids = [];
@@ -155,11 +161,13 @@ class LitNodeForm extends NodeForm {
   /**
    * Get fields name that has reference to the book content type.
    *
-   * @param $field_definitions
+   * @param array $field_definitions
+   *   A list of field definitions.
    *
    * @return array
+   *   A list of field names.
    */
-  protected function getFieldsWithBookReference($field_definitions) {
+  protected function getFieldsWithBookReference(array $field_definitions) {
     $result = [];
     foreach ($field_definitions as $field_definition) {
       if ($field_definition->getType() == 'entity_reference') {

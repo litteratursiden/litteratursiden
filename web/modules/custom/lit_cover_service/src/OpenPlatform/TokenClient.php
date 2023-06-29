@@ -1,11 +1,12 @@
 <?php
+// phpcs:ignoreFile - Avoid Possible useless method overriding detected
 
 namespace Drupal\lit_cover_service\OpenPlatform;
 
 use Drupal\lit_open_platform\Api\Client;
 
 /**
- * Class TokenClient.
+ * Class for tokenClient.
  */
 class TokenClient extends Client {
 

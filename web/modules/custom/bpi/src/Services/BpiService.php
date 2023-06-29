@@ -11,7 +11,12 @@ use Bpi\Sdk\Bpi;
  */
 class BpiService {
 
-  private $bpiInstance = NULL;
+  /**
+   * The BPI Instance.
+   *
+   * @var \Bpi\Sdk\Bpi|null
+   */
+  private ?Bpi $bpiInstance = NULL;
 
   /**
    * BpiService constructor.
@@ -25,7 +30,7 @@ class BpiService {
    * @param string $privateKey
    *   Private key.
    */
-  public function __construct($url, $agency, $publicKey, $privateKey) {
+  public function __construct(string $url, string $agency, string $publicKey, string $privateKey) {
     $this->bpiInstance = new Bpi($url, $agency, $publicKey, $privateKey);
   }
 
@@ -43,10 +48,8 @@ class BpiService {
    *   Public key.
    * @param string $privateKey
    *   Private key.
-   *
-   * @throws \Bpi\Sdk\Exception\SDKException
    */
-  public function checkConnectivity($url, $agency, $publicKey, $privateKey) {
+  public function checkConnectivity(string $url, string $agency, string $publicKey, string $privateKey): void {
     $bpi = new Bpi($url, $agency, $publicKey, $privateKey);
 
     // Fake a request, to check connectivity.

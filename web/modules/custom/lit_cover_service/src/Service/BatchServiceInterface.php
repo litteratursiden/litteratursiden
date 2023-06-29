@@ -12,8 +12,8 @@ interface BatchServiceInterface {
    *
    * @param int $batchId
    *   Id of the batch.
-   * @param $batchTotal
-   *   Total number of batch operations
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
    *   The nids to process.
    * @param object $context
@@ -21,15 +21,15 @@ interface BatchServiceInterface {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function deleteBookCovers($batchId, $batchTotal, $nids, &$context);
+  public function deleteBookCovers(int $batchId, int $batchTotal, array $nids, object &$context);
 
   /**
    * Batch fetch process callback.
    *
    * @param int $batchId
    *   Id of the batch.
-   * @param $batchTotal
-   *   Total number of batch operations
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
    *   The nids to process.
    * @param object $context
@@ -37,15 +37,15 @@ interface BatchServiceInterface {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function fetchBookCovers($batchId, $batchTotal, $nids, &$context);
+  public function fetchBookCovers(int $batchId, int $batchTotal, array $nids, object &$context);
 
   /**
    * Replace process callback.
    *
    * @param int $batchId
    *   Id of the batch.
-   * @param $batchTotal
-   *   Total number of batch operations
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
    *   The nids to process.
    * @param object $context
@@ -53,7 +53,7 @@ interface BatchServiceInterface {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function replaceBookCovers($batchId, $batchTotal, $nids, &$context);
+  public function replaceBookCovers(int $batchId, int $batchTotal, array $nids, object &$context);
 
   /**
    * Batch Finished callback.
@@ -65,6 +65,6 @@ interface BatchServiceInterface {
    * @param array $operations
    *   Array of operations.
    */
-  public function batchFinished($success, array $results, array $operations);
+  public function batchFinished(bool $success, array $results, array $operations);
 
 }

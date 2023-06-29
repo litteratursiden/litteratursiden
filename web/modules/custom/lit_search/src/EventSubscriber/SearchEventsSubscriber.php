@@ -6,7 +6,7 @@ use Drupal\elasticsearch_connector\Event\BuildSearchParamsEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
- * Class SearchEventsSubscriber.
+ * EventsSubscriber for search.
  *
  * @package Drupal\lit_search\EventSubscriber
  */
@@ -25,6 +25,7 @@ class SearchEventsSubscriber implements EventSubscriberInterface {
    * Extend elastic search query with aggregations to create groups.
    *
    * @param \Drupal\elasticsearch_connector\Event\BuildSearchParamsEvent $event
+   *   The event to react on.
    */
   public function buildQuery(BuildSearchParamsEvent $event) {
     $params = [

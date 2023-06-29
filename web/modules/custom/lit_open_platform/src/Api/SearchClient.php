@@ -3,7 +3,7 @@
 namespace Drupal\lit_open_platform\Api;
 
 /**
- * Class SearchClient.
+ * Class for SearchClient.
  *
  * @todo check different client creating, static $client
  */
@@ -12,12 +12,22 @@ class SearchClient extends Client implements SearchClientInterface {
   /**
    * Types to search for in open search.
    */
-  private const MATERIAL_TYPES = ['bog', 'billedbog', 'graphic novel', 'tegneserie'];
+  private const MATERIAL_TYPES = [
+    'bog',
+    'billedbog',
+    'graphic novel',
+    'tegneserie',
+  ];
 
   /**
    * {@inheritdoc}
    */
-  public function requestSearch(string $search, array $fields = ['pid', 'dcTitleFull', 'coverUrl42', 'creatorAut']): array {
+  public function requestSearch(string $search, array $fields = [
+    'pid',
+    'dcTitleFull',
+    'coverUrl42',
+    'creatorAut',
+  ]): array {
     $types = implode(' OR ', array_map(function ($type) {
       return 'term.type="' . $type . '"';
     }, self::MATERIAL_TYPES));

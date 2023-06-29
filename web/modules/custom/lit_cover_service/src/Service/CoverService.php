@@ -12,21 +12,34 @@ use Drupal\lit_cover_service\OpenPlatform\TokenClient;
 use GuzzleHttp\ClientInterface;
 
 /**
- * Class CoverService.
+ * Cover Service.
  */
 class CoverService implements CoverServiceInterface {
 
   private const COVER_SERVICE_HOST = 'https://cover.dandigbib.org';
   private const DRUPAL_FILE_PATH = 'public://cover_dandigbib_org';
 
-  private $httpClient;
-  private $fileSystem;
+  /**
+   * The http client interface.
+   *
+   * @var \GuzzleHttp\ClientInterface
+   */
+  private ClientInterface $httpClient;
+
+  /**
+   * The file system interface.
+   *
+   * @var \Drupal\Core\File\FileSystemInterface
+   */
+  private FileSystemInterface $fileSystem;
 
   /**
    * CoverService constructor.
    *
    * @param \GuzzleHttp\ClientInterface $httpClient
+   *   The http client interface.
    * @param \Drupal\Core\File\FileSystemInterface $fileSystem
+   *   The file system interface.
    */
   public function __construct(ClientInterface $httpClient, FileSystemInterface $fileSystem) {
     $this->httpClient = $httpClient;
@@ -37,8 +50,10 @@ class CoverService implements CoverServiceInterface {
    * Get cover image from ISBN.
    *
    * @param string $isbn
+   *   An isbn number.
    *
    * @return \Drupal\file\FileInterface|null
+   *   The file.
    */
   public function getCoverImage(string $isbn): ?FileInterface {
     $isbn = trim($isbn);
@@ -61,8 +76,10 @@ class CoverService implements CoverServiceInterface {
    * Find local cover file from ISBN.
    *
    * @param string $isbn
+   *   An isbn number.
    *
    * @return \Drupal\file\FileInterface|null
+   *   The file.
    */
   private function findLocalImageFile(string $isbn): ?FileInterface {
     $result = \Drupal::entityQuery('file')
@@ -78,9 +95,13 @@ class CoverService implements CoverServiceInterface {
   }
 
   /**
+   * Get cover url from ISBN.
+   *
    * @param string $isbn
+   *   An isbn number.
    *
    * @return string|null
+   *   THe url.
    */
   private function getCoverUrlForIsbn(string $isbn): ?string {
     $originalImageUrl = NULL;
@@ -133,10 +154,14 @@ class CoverService implements CoverServiceInterface {
    * Fetch image file and save it to local file system.
    *
    * @param string $imageUrl
+   *   The image url.
    *
    * @return \Drupal\file\FileInterface|null
+   *   The file.
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
-  private function fetchRemoteImageFile(string $imageUrl) {
+  private function fetchRemoteImageFile(string $imageUrl): ?FileInterface {
     try {
       $response = $this->httpClient->request('get', $imageUrl, [
         'headers' => [
@@ -169,6 +194,7 @@ class CoverService implements CoverServiceInterface {
    * Get Adgangsplatform access token.
    *
    * @return string|null
+   *   The access token.
    */
   private function getToken(): ?string {
     // Get Open Platform module settings.

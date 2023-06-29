@@ -80,9 +80,12 @@ class LitNodeSelection extends NodeSelection {
    * Process entities to union drupal results with the open platform results.
    *
    * @param array $entities
+   *   A list of entities.
    * @param array $books
+   *   A list of books.
    *
    * @return array
+   *   A list of options.
    */
   private function processEntities(array $entities, array $books): array {
     $entity_labels = [];
@@ -158,11 +161,17 @@ class LitNodeSelection extends NodeSelection {
   }
 
   /**
-   * @param $books
-   * @param $titles
+   * Sort books.
+   *
+   * @param array|null $books
+   *   A list of books.
+   * @param array $titles
+   *   A list of titles.
+   *
    * @return array
+   *   A list of sorted books.
    */
-  private function sortBooks($books, $titles): array {
+  private function sortBooks(?array $books, array $titles): array {
     $result = [];
 
     asort($titles, SORT_NATURAL);

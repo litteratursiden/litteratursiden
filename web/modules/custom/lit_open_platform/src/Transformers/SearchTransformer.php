@@ -3,7 +3,7 @@
 namespace Drupal\lit_open_platform\Transformers;
 
 /**
- * Class SearchTransformer.
+ * Class transform search.
  */
 class SearchTransformer extends BaseTransformer {
 

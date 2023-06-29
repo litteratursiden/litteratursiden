@@ -19,7 +19,7 @@ class UploadBgImage extends SystemThemeSettings {
   /**
    * {@inheritdoc}
    */
-  public function alterForm(array &$form, FormStateInterface $form_state, $form_id = NULL) {
+  public function alterForm(array &$form, FormStateInterface $form_state, $form_id = NULL): void {
     $a = 1;
     // Call the parent method from the base theme, if applicable (which it is
     // in this case because Bootstrap actually implements this alter).
@@ -48,7 +48,7 @@ class UploadBgImage extends SystemThemeSettings {
   /**
    * {@inheritdoc}
    */
-  public static function validateForm(array &$form, FormStateInterface $form_state) {
+  public static function validateForm(array &$form, FormStateInterface $form_state): void {
     // Handle file uploads.
     $validators = ['file_validate_is_image' => []];
 
@@ -79,7 +79,7 @@ class UploadBgImage extends SystemThemeSettings {
   /**
    * {@inheritdoc}
    */
-  public static function submitFormElement(Element $form, FormStateInterface $form_state) {
+  public static function submitFormElement(Element $form, FormStateInterface $form_state): void {
     // This method is automatically called when the form is submitted.
     // Load the file via file.fid.
     $values = $form_state->getValues();
@@ -96,8 +96,8 @@ class UploadBgImage extends SystemThemeSettings {
 
     unset($values['background_upload']);
 
-    // If the user entered a path relative to the system files directory for
-    // a logo or favicon, store a public:// URI so the theme system can handle it.
+    // If the user entered a path relative to the system files directory for a
+    // logo or favicon, store a public:// URI so the theme system can handle it.
     if (!empty($values['background_path'])) {
       $values['background_path'] = static::validatePath($values['background_path']);
     }
@@ -110,7 +110,7 @@ class UploadBgImage extends SystemThemeSettings {
   /**
    * Helper function for the system_theme_settings form.
    *
-   * Attempts to validate normal system paths, paths relative to the public files
+   * Attempts to validate normal system paths, paths relative to  public files
    * directory, or stream wrapper URIs. If the given path is any of the above,
    * returns a valid path or URI that the theme system can display.
    *
@@ -122,7 +122,7 @@ class UploadBgImage extends SystemThemeSettings {
    *   A valid path that can be displayed through the theme system, or FALSE if
    *   the path could not be validated.
    */
-  protected static function validatePath($path) {
+  protected static function validatePath($path): mixed {
     // Absolute local file paths are invalid.
     if (\Drupal::service('file_system')->realpath($path) == $path) {
       return FALSE;

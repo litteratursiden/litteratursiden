@@ -15,16 +15,22 @@ use Drupal\lit_open_platform\Api\Client;
 class ClientTest extends KernelTestBase {
 
   /**
+   * A client id.
+   *
    * @const string
    */
   protected const CLIENT_ID = 'client_id';
 
   /**
+   * The client secret.
+   *
    * @const string
    */
   protected const CLIENT_SECRET = 'client_secret';
 
   /**
+   * The API client.
+   *
    * @var \Drupal\lit_open_platform\Api\Client
    */
   protected $client;

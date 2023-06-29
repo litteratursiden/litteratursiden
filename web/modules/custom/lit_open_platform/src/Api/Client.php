@@ -6,7 +6,7 @@ use GuzzleHttp\Client as RequestClient;
 use GuzzleHttp\Exception\ClientException;
 
 /**
- * Class Client.
+ * A class for GuzzleHttp Client.
  */
 class Client {
 
@@ -62,7 +62,9 @@ class Client {
    * Client constructor.
    *
    * @param string $clientId
+   *   The client id.
    * @param string $clientSecret
+   *   The client secret.
    */
   protected function __construct(string $clientId, string $clientSecret) {
     $this->setClientId($clientId);
@@ -73,8 +75,10 @@ class Client {
    * Set the client id.
    *
    * @param string $clientId
+   *   The clinet id.
    *
    * @return $this
+   *   The class with client id.
    */
   public function setClientId(string $clientId) {
     $this->clientId = $clientId;
@@ -86,6 +90,7 @@ class Client {
    * Get the client id.
    *
    * @return string
+   *   The client id.
    */
   public function getClientId() {
     return $this->clientId;
@@ -95,8 +100,10 @@ class Client {
    * Set the client secret.
    *
    * @param string $clientSecret
+   *   A client secret.
    *
    * @return $this
+   *   The class with client secret.
    */
   public function setClientSecret(string $clientSecret) {
     $this->clientSecret = $clientSecret;
@@ -108,6 +115,7 @@ class Client {
    * Get the client secret.
    *
    * @return string
+   *   The client secret.
    */
   public function getClientSecret() {
     return $this->clientSecret;
@@ -117,8 +125,10 @@ class Client {
    * Set the access token.
    *
    * @param array $token
+   *   The access token.
    *
    * @return $this
+   *   The class with access token included.
    */
   public function setAccessToken(array $token) {
     if ($this->verifyToken($token)) {
@@ -135,6 +145,9 @@ class Client {
    * Get the access token.
    *
    * @return array
+   *   The access token.
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function getAccessToken(): array {
     if ($cache = \Drupal::cache()->get('lit_open_platform_access_token')) {
@@ -152,8 +165,10 @@ class Client {
    * Check if the access token is valid.
    *
    * @param array $token
+   *   The access token.
    *
    * @return bool
+   *   Whether the token validates.
    */
   public function verifyToken(array $token): bool {
     return isset($token['token_type'], $token['access_token'], $token['expires_in']);
@@ -163,6 +178,7 @@ class Client {
    * Get token for basic auth.
    *
    * @return string
+   *   A base64 encoded client id and secret.
    */
   public function getBasicToken(): string {
     return base64_encode($this->getClientId() . ':' . $this->getClientSecret());
@@ -172,8 +188,10 @@ class Client {
    * Build request url to the API.
    *
    * @param string $uri
+   *   The api uri.
    *
    * @return string
+   *   A full api url.
    */
   protected function buildUrl(string $uri): string {
     return implode('/', [self::API_BASE_PATH, self::VERSION, ltrim($uri, '/')]);
@@ -183,6 +201,9 @@ class Client {
    * Request for the access token.
    *
    * @return array
+   *   Te access token.
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function requestAccessToken(): array {
     return $this->request('POST', self::OAUTH2_TOKEM_URL, [
@@ -202,14 +223,18 @@ class Client {
    * Send a request.
    *
    * @param string $method
+   *   The request method.
    * @param string $uri
+   *   The request uri.
    * @param array $options
+   *   THe request options.
    *
    * @return array|mixed
+   *   The request result.
    *
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
-  protected function request(string $method, string $uri, array $options = []) {
+  protected function request(string $method, string $uri, array $options = []): mixed {
     $client = new RequestClient();
 
     $result = [];
@@ -230,9 +255,12 @@ class Client {
    * Get instance of client.
    *
    * @param string $clientId
+   *   The client id.
    * @param string $clientSecret
+   *   The client secret.
    *
    * @return \Drupal\lit_open_platform\Api\Client
+   *   The lit open platform api client.
    */
   public static function getInstance(string $clientId, string $clientSecret) {
     return static::$client = static::$client ?? new static($clientId, $clientSecret);

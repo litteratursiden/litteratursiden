@@ -11,7 +11,7 @@ use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
 use Drupal\node\NodeInterface;
 
-const BIBLIOTEK_DK_URL = 'https://bibliotek.dk/da/search/work/';
+const LIT_BIBLIOTEKDK_URL = 'https://bibliotek.dk/da/search/work/';
 
 /**
  * Implements hook_help().
@@ -32,7 +32,7 @@ function lit_bibliotekdk_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_entity_extra_field_info().
  */
-function lit_bibliotekdk_entity_extra_field_info() {
+function lit_bibliotekdk_entity_extra_field_info(): array {
   $extra = [];
 
   // Add bibliotek.dk field to the book content type.
@@ -49,7 +49,7 @@ function lit_bibliotekdk_entity_extra_field_info() {
 /**
  * Implements hook_node_view().
  */
-function lit_bibliotekdk_node_view(array &$build, NodeInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+function lit_bibliotekdk_node_view(array &$build, NodeInterface $entity, EntityViewDisplayInterface $display, $view_mode): void {
   if ($entity->bundle() == 'book') {
     // Display bibliotek.dk field on the book content type.
     if ($display->getComponent('field_bibliotekdk')) {
@@ -57,7 +57,7 @@ function lit_bibliotekdk_node_view(array &$build, NodeInterface $entity, EntityV
       $pid = $pid_value[0]['value'] ?? NULL;
 
       if ($pid) {
-        $url = Url::fromUri(BIBLIOTEK_DK_URL, [
+        $url = Url::fromUri(LIT_BIBLIOTEKDK_URL, [
           'query' => [
             'search_block_form' => $pid,
             'fragment' => 'content',

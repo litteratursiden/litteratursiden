@@ -108,13 +108,13 @@ class LitCoverServiceCommands extends DrushCommands {
   }
 
   /**
-   * Batch delete cover images from 'Books'
+   * Batch delete cover images from 'Books'.
    *
    * This command is intended as a one time clean up command for migrating
    * from 'MoreInfo' to DDB Cover Service.
    *
-   * @param $startBatch
-   *   The batch number to start with
+   * @param string $startBatch
+   *   The batch number to start with.
    *
    * @usage lit_cover_service:delete_covers 100
    *   Delete covers from 'Books', restart batch at 100
@@ -122,7 +122,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @command lit_cover_service:delete_covers
    * @aliases delete_covers
    */
-  public function deleteCovers($startBatch = self::START_BATCH) {
+  public function deleteCovers(string $startBatch = self::START_BATCH): void {
     $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Delete covers batch operations start');
@@ -167,8 +167,8 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch fetch cover images for 'Books' for books with no cover.
    *
-   * @param $startBatch
-   *   The batch number to start with
+   * @param string $startBatch
+   *   The batch number to start with.
    *
    * @usage lit_cover_service:fetch_covers 100
    *   Fetch covers for 'Books', restart batch at 100
@@ -176,7 +176,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @command lit_cover_service:fetch_missing_covers
    * @aliases fetch_missing_covers
    */
-  public function fetchMissingCovers($startBatch = self::START_BATCH) {
+  public function fetchMissingCovers(string $startBatch = self::START_BATCH): void {
     $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');
@@ -223,8 +223,8 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch fetch cover images for all 'Books' replacing existing covers.
    *
-   * @param $startBatch
-   *   The batch number to start with
+   * @param string $startBatch
+   *   The batch number to start with.
    *
    * @usage lit_cover_service:fetch_covers 100
    *   Fetch covers for 'Books', restart batch at 100
@@ -232,7 +232,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @command lit_cover_service:add_or_replace_covers
    * @aliases add_or_replace_covers
    */
-  public function addOrReplaceCovers($startBatch = self::START_BATCH) {
+  public function addOrReplaceCovers(string $startBatch = self::START_BATCH): void {
     $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');

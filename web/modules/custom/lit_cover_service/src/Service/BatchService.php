@@ -6,7 +6,7 @@ use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
 
 /**
- * Class BatchService.
+ * Class for batch service.
  */
 class BatchService implements BatchServiceInterface {
 
@@ -15,8 +15,8 @@ class BatchService implements BatchServiceInterface {
    *
    * @param int $batchId
    *   Id of the batch.
-   * @param $batchTotal
-   *   Total number of batch operations
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
    *   The nids to process.
    * @param object $context
@@ -24,7 +24,7 @@ class BatchService implements BatchServiceInterface {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function deleteBookCovers($batchId, $batchTotal, $nids, &$context) {
+  public function deleteBookCovers(int $batchId, int $batchTotal, array $nids, object &$context): void {
     if (!isset($context['sandbox']['progress'])) {
       $context['sandbox']['progress'] = 0;
       $context['sandbox']['current_node'] = 0;
@@ -64,8 +64,8 @@ class BatchService implements BatchServiceInterface {
    *
    * @param int $batchId
    *   Id of the batch.
-   * @param $batchTotal
-   *   Total number of batch operations
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
    *   The nids to process.
    * @param object $context
@@ -73,7 +73,7 @@ class BatchService implements BatchServiceInterface {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function fetchBookCovers($batchId, $batchTotal, $nids, &$context) {
+  public function fetchBookCovers(int $batchId, int $batchTotal, array $nids, object &$context): void {
     if (!isset($context['sandbox']['progress'])) {
       $context['sandbox']['progress'] = 0;
       $context['sandbox']['current_node'] = 0;
@@ -110,8 +110,8 @@ class BatchService implements BatchServiceInterface {
    *
    * @param int $batchId
    *   Id of the batch.
-   * @param $batchTotal
-   *   Total number of batch operations
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
    *   The nids to process.
    * @param object $context
@@ -119,7 +119,7 @@ class BatchService implements BatchServiceInterface {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function replaceBookCovers($batchId, $batchTotal, $nids, &$context) {
+  public function replaceBookCovers(int $batchId, int $batchTotal, array $nids, object &$context): void {
     if (!isset($context['sandbox']['progress'])) {
       $context['sandbox']['progress'] = 0;
       $context['sandbox']['current_node'] = 0;
@@ -161,8 +161,8 @@ class BatchService implements BatchServiceInterface {
    *
    * @param int $batchId
    *   Id of the batch.
-   * @param $batchTotal
-   *   Total number of batch operations
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
    *   The nids to process.
    * @param object $context
@@ -170,7 +170,7 @@ class BatchService implements BatchServiceInterface {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function missingCoverReferences($batchId, $batchTotal, $nids, &$context) {
+  public function missingCoverReferences(int $batchId, int $batchTotal, array $nids, object &$context): void {
     $context['message'] = t('Processing batch @batchId of @batchTotal', [
       '@batchId' => $batchId,
       '@batchTotal' => $batchTotal,
@@ -203,7 +203,7 @@ class BatchService implements BatchServiceInterface {
    * @param array $operations
    *   Array of operations.
    */
-  public function batchFinished($success, array $results, array $operations) {
+  public function batchFinished(bool $success, array $results, array $operations): void {
     $messenger = \Drupal::messenger();
     if ($success) {
       $messenger->addMessage(t('@count books processed.', ['@count' => count($results)]));
@@ -227,8 +227,10 @@ class BatchService implements BatchServiceInterface {
    * Clear the cover image field.
    *
    * @param \Drupal\node\Entity\Node $node
+   *   A node entity.
    *
    * @return \Drupal\file\Entity\File|null
+   *   A file entity.
    */
   private static function clearImageField(Node $node): ?File {
     /** @var \Drupal\file\Plugin\Field\FieldType\FileFieldItemList $deletedImageField */
@@ -243,6 +245,7 @@ class BatchService implements BatchServiceInterface {
    * Set the image file.
    *
    * @param \Drupal\node\Entity\Node $node
+   *   A node entity.
    */
   private static function setImageFile(Node $node): void {
     $isbn = $node->get('field_book_isbn')->getString();
@@ -268,6 +271,7 @@ class BatchService implements BatchServiceInterface {
    * Delete files.
    *
    * @param \Drupal\file\Entity\File[] $files
+   *   A file entity.
    */
   private static function deleteFileEntities(array $files): void {
     $files = array_filter($files);

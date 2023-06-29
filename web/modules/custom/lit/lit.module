@@ -202,7 +202,12 @@ function lit_entity_view(array &$build, EntityInterface $entity, EntityViewDispl
  * Implements hook_node_links_alter().
  */
 function lit_node_links_alter(array &$links, NodeInterface $entity, array &$context) {
-  $read_more_modes = ['slick_item', 'spot', 'favorite_content_teaser', 'internal_links_carousel'];
+  $read_more_modes = [
+    'slick_item',
+    'spot',
+    'favorite_content_teaser',
+    'internal_links_carousel',
+  ];
   if (!empty($context['view_mode']) && in_array($context['view_mode'], $read_more_modes)) {
     $node_title_stripped = strip_tags($entity->label());
 

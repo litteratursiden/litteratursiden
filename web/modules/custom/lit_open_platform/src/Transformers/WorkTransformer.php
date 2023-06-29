@@ -6,7 +6,7 @@ use Drupal\Core\File\FileSystemInterface;
 use Drupal\taxonomy\Entity\Term;
 
 /**
- * Class WorkTransformer.
+ * Class Transformer for work.
  */
 class WorkTransformer extends BaseTransformer {
 
@@ -28,7 +28,7 @@ class WorkTransformer extends BaseTransformer {
   /**
    * {@inheritdoc}
    */
-  public static function transform($item): array {
+  public static function transform(array $item): array {
     $pid = $item['pid'][0] ?? NULL;
     $faustnummer = ltrim(stristr($pid, ":"), ':');
 
@@ -86,9 +86,15 @@ class WorkTransformer extends BaseTransformer {
   }
 
   /**
+   * Transform a collection and group it.
+   *
    * @param string $field
+   *   The field name to group by.
    * @param array $items
+   *   A list of items to transform.
+   *
    * @return array
+   *   The transformed items grouped by field name.
    */
   public static function transformCollectionAndGroupBy(string $field, array $items): array {
     $result = [];
@@ -105,11 +111,18 @@ class WorkTransformer extends BaseTransformer {
    * Transform url to the image field.
    *
    * @param string $url
+   *   The url to transform.
    * @param string $dir
+   *   The directory.
    * @param string|null $alt
+   *   The alt text for the field.
    * @param string|null $title
+   *   The image title.
    *
    * @return array|null
+   *   The image to save.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   private static function transformImage(string $url, string $dir, string $alt = NULL, string $title = NULL): ?array {
     $url = strpos($url, '://') === FALSE ? 'http:' . $url : $url;
@@ -137,10 +150,15 @@ class WorkTransformer extends BaseTransformer {
   /**
    * Transform string to the taxonomy term reference field.
    *
-   * @param array $name
+   * @param array $names
+   *   A list of term names.
    * @param string $vocabulary
+   *   A vocabulary id.
    *
    * @return array
+   *   A list of term ids.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   private static function transformTerm(array $names, string $vocabulary): array {
     $result = [];
@@ -173,10 +191,13 @@ class WorkTransformer extends BaseTransformer {
   /**
    * Transform string to the node reference field.
    *
-   * @param array $names
+   * @param array $titles
+   *   A list of node titles.
    * @param string $type
+   *   The node type.
    *
    * @return array
+   *   A list of nodes.
    */
   private static function transformNode(array $titles, string $type): array {
     $result = [];
