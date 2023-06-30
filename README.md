@@ -135,7 +135,7 @@ echo "http://$(docker-compose port nginx 80)"
 docker-compose exec phpfpm vendor/bin/drush --yes --uri="http://$(docker-compose port nginx 80)" user:login
 ```
 
-Sign in as admin:
+Sign in as admins:
 
 ```sh
 docker-compose exec phpfpm vendor/bin/drush --uri=http://$(docker-compose port nginx 80) user:login
