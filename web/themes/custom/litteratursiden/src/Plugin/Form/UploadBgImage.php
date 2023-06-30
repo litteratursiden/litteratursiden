@@ -20,7 +20,6 @@ class UploadBgImage extends SystemThemeSettings {
    * {@inheritdoc}
    */
   public function alterForm(array &$form, FormStateInterface $form_state, $form_id = NULL): void {
-    $a = 1;
     // Call the parent method from the base theme, if applicable (which it is
     // in this case because Bootstrap actually implements this alter).
     parent::alterForm($form, $form_state, $form_id);
@@ -40,7 +39,6 @@ class UploadBgImage extends SystemThemeSettings {
     $form['background']['background_upload'] = [
       '#type' => 'file',
       '#title' => t('Upload background image'),
-      '#maxlength' => 40,
       '#description' => t("If you don't have direct file access to the server, use this field to upload your background."),
     ];
   }
@@ -88,8 +86,9 @@ class UploadBgImage extends SystemThemeSettings {
     // and use it in place of the default theme-provided file.
     if (!empty($values['background_upload'])) {
       $source = $values['background_upload']->getFileUri();
+      $destination = \Drupal::config('system.file')->get('default_scheme') . '://' . $values['background_upload']->getFileUri();
+
       $file_system = \Drupal::service('file_system');
-      $destination = file_build_uri($file_system->basename($source));
       $filename = $file_system->copy($source, $destination);
       $values['background_path'] = $filename;
     }

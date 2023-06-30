@@ -135,15 +135,18 @@ class SearchController extends ControllerBase {
 
     foreach ($hits as $hit) {
       // Get entity type and id form the elastic search id.
-      preg_match('/(\w*):(\w*)\/(\d*):(\w*)/', $hit['_id'], $matches);
 
-      try {
-        $entity = \Drupal::entityTypeManager()->getStorage($matches[2])->load($matches[3]);
-        $result[] = $this->renderEntity($entity);
-        ;
-      }
-      catch (\Exception $e) {
-        // No action a item simply was not loaded.
+      if ($hit['_id']) {
+        preg_match('/(\w*):(\w*)\/(\d*):(\w*)/', $hit['_id'], $matches);
+
+        try {
+          $entity = \Drupal::entityTypeManager()->getStorage($matches[2])->load($matches[3]);
+          $result[] = $this->renderEntity($entity);
+          ;
+        }
+        catch (\Exception $e) {
+          // No action a item simply was not loaded.
+        }
       }
     }
 

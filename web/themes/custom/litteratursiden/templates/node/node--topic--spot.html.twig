@@ -95,11 +95,11 @@ view_mode ? view_mode|clean_class,
             {% if use_teaser %}
               <div class="field--type-text-long">{{ content.field_teaser }}</div>
             {% else %}
-              {% spaceless %}
+              {% apply spaceless %}
                 <div class="field--name-field-topic-body field--type-text-long">
                   {{ content.field_topic_body|render|striptags|raw }}
                 </div>
-              {% endspaceless %}
+              {% endapply %}
             {% endif %}
             <a class="btn-link" href="{{ url }}" rel="bookmark">{{ 'Read more'|t }}</a>
           </div>

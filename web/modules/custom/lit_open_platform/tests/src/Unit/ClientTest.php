@@ -38,7 +38,7 @@ class ClientTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->client = Client::getInstance(self::CLIENT_ID, self::CLIENT_SECRET);

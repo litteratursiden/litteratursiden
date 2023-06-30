@@ -4,6 +4,8 @@ namespace Drupal\lit_open_platform\Form;
 
 use Drupal\block_content\BlockContentForm;
 use Drupal\Component\Datetime\TimeInterface;
+use Drupal\Core\Entity\ContentEntityForm;
+use Drupal\Core\Entity\ContentEntityFormInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
@@ -15,7 +17,7 @@ use Drupal\node\Entity\Node;
 /**
  * Form handler for the node edit forms.
  */
-class LitBlockContentForm extends BlockContentForm {
+class LitBlockContentForm extends ContentEntityForm implements ContentEntityFormInterface {
 
   /**
    * The client instance.
@@ -125,6 +127,7 @@ class LitBlockContentForm extends BlockContentForm {
    */
   protected function getBookByPid(string $pid) {
     $query = \Drupal::entityQuery('node')
+      ->accessCheck(FALSE)
       ->condition('status', 1)
       ->condition('type', 'book')
       ->condition('field_book_pid.value', $pid);
@@ -147,8 +150,10 @@ class LitBlockContentForm extends BlockContentForm {
     $pids = [];
 
     foreach ($values as $i => $value) {
-      if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
-        $pids[$i] = $value['target_id'];
+      if ($value['target_id']) {
+        if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
+          $pids[$i] = $value['target_id'];
+        }
       }
     }
 

@@ -83,6 +83,7 @@ class CoverService implements CoverServiceInterface {
    */
   private function findLocalImageFile(string $isbn): ?FileInterface {
     $result = \Drupal::entityQuery('file')
+      ->accessCheck(FALSE)
       ->condition('uri', self::DRUPAL_FILE_PATH . '/' . $isbn . '.', 'STARTS_WITH')
       ->execute();
 
@@ -179,7 +180,7 @@ class CoverService implements CoverServiceInterface {
       }
 
       if ($data && $this->fileSystem->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
-        $file = file_save_data($data, $destination, FileSystemInterface::EXISTS_REPLACE);
+        $file = \Drupal::service('file.repository')->writeData($data, $destination, FileSystemInterface::EXISTS_REPLACE);
         return (FALSE !== $file) ? $file : NULL;
       }
     }

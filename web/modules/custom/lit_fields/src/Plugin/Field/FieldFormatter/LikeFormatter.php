@@ -23,7 +23,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
  *   }
  * )
  */
-class LikeFormatter extends FormatterBase implements ContainerFactoryPluginInterface {
+final class LikeFormatter extends FormatterBase implements ContainerFactoryPluginInterface {
 
   /**
    * The current user.

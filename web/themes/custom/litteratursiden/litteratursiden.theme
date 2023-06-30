@@ -11,7 +11,7 @@ use Drupal\Core\Url;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
 use Drupal\user\Entity\User;
-use Symfony\Cmf\Component\Routing\RouteObjectInterface;
+use Drupal\Core\Routing\RouteObjectInterface;
 
 /**
  * Implements hook_preprocess_html().
@@ -91,10 +91,10 @@ function litteratursiden_preprocess_page(&$variables) {
 
   $data = $config->getRawData();
   if ($data['background_path']) {
-    $variables['header_bg_image'] = file_create_url($data['background_path']);
+    $variables['header_bg_image'] = \Drupal::service('file_url_generator')->generateAbsoluteString($data['background_path']);
 
     // Fix that the URL handles http vs. https.
-    $variables['header_bg_image'] = file_url_transform_relative($variables['header_bg_image']);
+    $variables['header_bg_image'] = \Drupal::service('file_url_generator')->transformRelative($variables['header_bg_image']);
   }
 }
 
@@ -147,7 +147,7 @@ function litteratursiden_preprocess_node(&$variables) {
             ->buildUrl($spotbox_image_original_uri);
 
           // Ensure URL is relative to make https work.
-          $variables['spotbox_image'] = file_url_transform_relative($variables['spotbox_image']);
+          $variables['spotbox_image'] = \Drupal::service('file_url_generator')->transformRelative($variables['spotbox_image']);
         }
       }
     }

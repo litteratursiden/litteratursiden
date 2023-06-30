@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "564e4d6f5e95c554cc9329625331f39f",
+    "content-hash": "b3fd6370606275266540ceca0c7b7f5c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -186,16 +186,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.274.1",
+            "version": "3.275.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "92907084c3b71859672ef6399194ef9c1f772b1a"
+                "reference": "a0dfb094d3f94da2ebc86ed9583e14fdc9000f06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/92907084c3b71859672ef6399194ef9c1f772b1a",
-                "reference": "92907084c3b71859672ef6399194ef9c1f772b1a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a0dfb094d3f94da2ebc86ed9583e14fdc9000f06",
+                "reference": "a0dfb094d3f94da2ebc86ed9583e14fdc9000f06",
                 "shasum": ""
             },
             "require": {
@@ -275,9 +275,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.274.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.0"
             },
-            "time": "2023-06-28T18:21:54+00:00"
+            "time": "2023-06-29T19:21:55+00:00"
         },
         {
             "name": "bpi/sdk",
@@ -6978,27 +6978,26 @@
         },
         {
             "name": "itk-dev/web_accessibility_statement",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/itk-dev/web_accessibility_statement.git",
-                "reference": "b27f2ea237f0712896f7440727c17c47a543e3ea"
+                "reference": "443bfc52b4ba6ffaf27317f7866ad67d097139b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/web_accessibility_statement/zipball/b27f2ea237f0712896f7440727c17c47a543e3ea",
-                "reference": "b27f2ea237f0712896f7440727c17c47a543e3ea",
+                "url": "https://api.github.com/repos/itk-dev/web_accessibility_statement/zipball/443bfc52b4ba6ffaf27317f7866ad67d097139b0",
+                "reference": "443bfc52b4ba6ffaf27317f7866ad67d097139b0",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Provides path for accessibility statement",
             "support": {
                 "issues": "https://github.com/itk-dev/web_accessibility_statement/issues",
-                "source": "https://github.com/itk-dev/web_accessibility_statement/tree/1.0.0"
+                "source": "https://github.com/itk-dev/web_accessibility_statement/tree/1.1.0"
             },
-            "time": "2021-03-15T09:57:10+00:00"
+            "time": "2023-06-30T10:13:03+00:00"
         },
         {
             "name": "jquery_validation/jqueryvalidate",
@@ -16657,8 +16656,7 @@
         "drupal/purge": 10,
         "drupal/rest_views": 20,
         "drupal/s3fs": 15,
-        "drupal/viewsreference": 10,
-        "itk-dev/web_accessibility_statement": 20
+        "drupal/viewsreference": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,

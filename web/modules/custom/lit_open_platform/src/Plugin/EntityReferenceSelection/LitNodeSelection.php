@@ -130,7 +130,7 @@ class LitNodeSelection extends NodeSelection {
           }
         }
 
-        $options[$bundle][$entity_id] = render($theme);
+        $options[$bundle][$entity_id] = \Drupal::service('renderer')->render($theme);
       }
       else {
         $options[$bundle][$entity_id] = $entity_labels[$entity_id];
@@ -151,8 +151,12 @@ class LitNodeSelection extends NodeSelection {
           '#storage' => t('Open platform'),
         ];
 
-        $options['book'][$book['pid']] = render($theme);
+        $options['book'][$book['pid']] = \Drupal::service('renderer')->render($theme);
       }
+    }
+
+    if (empty($options['book'])) {
+      return [];
     }
 
     $options['book'] = $this->sortBooks($options['book'], $entity_labels);

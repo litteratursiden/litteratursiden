@@ -87,7 +87,7 @@ view_mode ? view_mode|clean_class,
 
 <article{{ attributes.addClass(classes) }}>
   <div class="media">
-    {% spaceless %}
+    {% apply spaceless %}
       <div class="media-left">
 
         {% if content.field_book_cover_image|render is not empty %}
@@ -129,7 +129,7 @@ view_mode ? view_mode|clean_class,
           </a>
         {% endif %}
       </div>
-    {% endspaceless %}
+    {% endapply %}
     <div {{ content_attributes.addClass('media-body ') }}>
       <span class="content-tag">{{ node.type.entity.label }}</span>
       {{ title_prefix }}

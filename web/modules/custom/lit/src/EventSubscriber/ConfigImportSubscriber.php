@@ -162,6 +162,7 @@ class ConfigImportSubscriber implements EventSubscriberInterface {
    */
   protected function getRandomNodeIds($type, $required_fields = [], $amount = 1) {
     $query = \Drupal::entityQuery('node')
+      ->accessCheck(TRUE)
       ->condition('type', $type)
       ->range(rand(0, 10), $amount);
 
@@ -186,6 +187,7 @@ class ConfigImportSubscriber implements EventSubscriberInterface {
    */
   protected function isContentExists($entity_type, $uuid) {
     return (bool) \Drupal::entityQuery($entity_type)
+      ->accessCheck(FALSE)
       ->condition('uuid', $uuid)
       ->execute();
   }

@@ -44,7 +44,12 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
         }
         else {
           // Invalid one-time link specifies an unknown user.
-          $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+          \Drupal::messenger()->addStatus(t('You have tried to use a one-time login link that has either been used or is no longer valid. Please request a new one using the form below.'));
+
+          // Redirect to user/pass.
+          if (!empty($redirect)) {
+            $route_name = 'user.pass';
+          }
         }
       }
     }
@@ -53,11 +58,11 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
       // 24 hours = 86400 seconds.
       $timeout = $this->config('user_registrationpassword.settings')
         ->get('registration_ftll_timeout');
-      $current = REQUEST_TIME;
+      $current = \Drupal::time()->getRequestTime();
       $timestamp_created = $timestamp - $timeout;
 
-      // Some redundant checks for extra security ?
-      $users = $this->entityQuery
+      $users = \Drupal::entityQuery('user')
+        ->accessCheck(FALSE)
         ->condition('uid', $uid)
         ->condition('status', 0)
         ->condition('access', 0)

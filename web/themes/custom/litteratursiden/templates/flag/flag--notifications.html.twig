@@ -12,7 +12,7 @@
  * - flag_counter: The amount of flags made for the flaggable entity.
  */
 #}
-{% spaceless %}
+{% apply spaceless %}
 {# Attach the flag CSS library.#}
 {{ attach_library('flag/flag.link') }}
 
@@ -42,4 +42,4 @@ action_class
     {{ checkbox_form }}
     <span class="toggle-on">{{ 'On'|t }}</span>
 </div>
-{% endspaceless %}
+{% endapply %}

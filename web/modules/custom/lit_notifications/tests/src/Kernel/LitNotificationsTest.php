@@ -49,7 +49,7 @@ class LitNotificationsTest extends FlagKernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->installEntitySchema('comment');

@@ -46,7 +46,7 @@ class ConfigImportSubscriberTest extends KernelTestBase {
    *
    * @var array
    */
-  private $contentTypes = [
+  private array $contentTypes = [
     'author_portrait',
     'book',
     'similar',
@@ -56,7 +56,7 @@ class ConfigImportSubscriberTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->installEntitySchema('menu_link_content');
@@ -211,7 +211,7 @@ class ConfigImportSubscriberTest extends KernelTestBase {
     $first = $method->invokeArgs($subscriber, ['topic', [], 1]);
     $second = $method->invokeArgs($subscriber, ['topic', [], 1]);
 
-    $this->assertInternalType('array', $first);
+    $this->assertIsResource('array', $first);
     $this->assertCount(1, $first);
     $this->assertNotEquals($first, $second);
   }
@@ -232,6 +232,7 @@ class ConfigImportSubscriberTest extends KernelTestBase {
     $count = $entity = \Drupal::entityTypeManager()
       ->getStorage('block_content')
       ->getQuery()
+      ->accessCheck(FALSE)
       ->condition('uuid', [
         Subscriber::BLOCK_TOPIC_MONTH_UUID,
         Subscriber::BLOCK_BOOK_MONTH_UUID,

@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 /**
  * Defines a controller for comments load more formatter.
  */
-class CommentLoadMoreController extends ControllerBase {
+final class CommentLoadMoreController extends ControllerBase {
 
   /**
    * The current user.
@@ -36,7 +36,7 @@ class CommentLoadMoreController extends ControllerBase {
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
-    return new static($container->get('current_user'));
+    return new CommentLoadMoreController($container->get('current_user'));
   }
 
   /**
@@ -55,7 +55,7 @@ class CommentLoadMoreController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function ajaxLoadMoreAccess(string $entity_type, int $entity, $field_name) {
+  public function ajaxLoadMoreAccess(string $entity_type, int $entity, $field_name): \Drupal\Core\Access\AccessResultForbidden|\Drupal\Core\Access\AccessResultNeutral|AccessResult|\Drupal\Core\Access\AccessResultAllowed {
     $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
     if (!$storage) {
       return AccessResult::forbidden('The entity type is invalid.');
@@ -80,17 +80,17 @@ class CommentLoadMoreController extends ControllerBase {
    * @param int $last_comment_id
    *   Comment ID after which other comments should be loaded.
    *
-   * @return \Symfony\Component\HttpFoundation\Response
-   *   Ajax response.
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Drupal\Core\Ajax\AjaxResponse|\Symfony\Component\HttpFoundation\Response
+   *   An ajax response.
    */
-  public function ajaxLoadMore($js, EntityInterface $entity, $field_name, $view_mode, $last_comment_id) {
+  public function ajaxLoadMore($js, EntityInterface $entity, $field_name, $view_mode, $last_comment_id): RedirectResponse|AjaxResponse|\Symfony\Component\HttpFoundation\Response {
     if ($js != 'ajax') {
       // Redirect user to home page in case if it's not an ajax request.
       return new RedirectResponse('/');
     }
 
     $ajax_response = new AjaxResponse();
-    $comments = static::buildComments($entity, $field_name, $view_mode, $last_comment_id);
+    $comments = CommentLoadMoreController::buildComments($entity, $field_name, $view_mode, $last_comment_id);
 
     $load_more = FALSE;
     if (isset($comments['load_more'])) {
@@ -122,7 +122,7 @@ class CommentLoadMoreController extends ControllerBase {
    * @return array
    *   Renderable array ready for displaying.
    */
-  public static function buildComments(EntityInterface $entity, $field_name, $view_mode, $last_comment_id = 0) {
+  public static function buildComments(EntityInterface $entity, string $field_name, string $view_mode, int $last_comment_id = 0): array {
     $build = [];
 
     $comment_field = $entity->get($field_name);

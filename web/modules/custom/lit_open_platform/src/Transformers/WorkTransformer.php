@@ -135,7 +135,7 @@ class WorkTransformer extends BaseTransformer {
       $filename = md5($url) . '.jpeg';
 
       // Save image.
-      $file = file_save_data($data, "$dir/$filename");
+      $file = \Drupal::service('file.repository')->writeData($data, "$dir/$filename");
 
       return [
         'target_id' => $file->id(),
@@ -166,6 +166,7 @@ class WorkTransformer extends BaseTransformer {
     foreach ($names as $name) {
       // Check if the taxonomy term exists.
       $tid = \Drupal::entityQuery('taxonomy_term')
+        ->accessCheck(FALSE)
         ->condition('vid', $vocabulary)
         ->condition('name', $name)
         ->execute();
@@ -205,6 +206,7 @@ class WorkTransformer extends BaseTransformer {
     foreach ($titles as $title) {
       // Check if the node exists.
       $nid = \Drupal::entityQuery('node')
+        ->accessCheck(FALSE)
         ->condition('type', $type)
         ->condition('title', $title)
         ->execute();

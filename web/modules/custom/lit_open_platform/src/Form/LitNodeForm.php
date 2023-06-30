@@ -4,6 +4,10 @@ namespace Drupal\lit_open_platform\Form;
 
 use Drupal\Component\Datetime\TimeInterface;
 use Drupal\Core\Datetime\DateFormatterInterface;
+use Drupal\Core\Entity\ContentEntityForm;
+use Drupal\Core\Entity\ContentEntityFormInterface;
+use Drupal\Core\Entity\EntityForm;
+use Drupal\Core\Entity\EntityFormInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
@@ -18,7 +22,7 @@ use Drupal\node\NodeForm;
 /**
  * Form handler for the node edit forms.
  */
-class LitNodeForm extends NodeForm {
+class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterface {
 
   /**
    * The client instance.
@@ -30,8 +34,8 @@ class LitNodeForm extends NodeForm {
   /**
    * {@inheritdoc}
    */
-  public function __construct(EntityRepositoryInterface $entity_repository, PrivateTempStoreFactory $temp_store_factory, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL, AccountInterface $current_user, DateFormatterInterface $date_formatter) {
-    parent::__construct($entity_repository, $temp_store_factory, $entity_type_bundle_info, $time, $current_user, $date_formatter);
+  public function __construct(EntityRepositoryInterface $entity_repository, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL) {
+    parent::__construct($entity_repository, $entity_type_bundle_info, $time);
 
     // Get module config.
     $config = \Drupal::config('lit_open_platform.settings');
@@ -45,7 +49,7 @@ class LitNodeForm extends NodeForm {
   /**
    * {@inheritdoc}
    */
-  protected function copyFormValuesToEntity(EntityInterface $entity, array $form, FormStateInterface $form_state) {
+  protected function copyFormValuesToEntity(EntityInterface $entity, array $form, FormStateInterface $form_state): void {
     $fields = $this->getFieldsWithBookReference($entity->getFieldDefinitions());
     $values = $form_state->getValues();
 
@@ -128,6 +132,7 @@ class LitNodeForm extends NodeForm {
    */
   protected function getBookByPid(string $pid) {
     $query = \Drupal::entityQuery('node')
+      ->accessCheck(FALSE)
       ->condition('status', 1)
       ->condition('type', 'book')
       ->condition('field_book_pid.value', $pid);
@@ -150,8 +155,10 @@ class LitNodeForm extends NodeForm {
     $pids = [];
 
     foreach ($values as $i => $value) {
-      if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
-        $pids[$i] = $value['target_id'];
+      if (is_array($value) &&$value['target_id']) {
+        if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
+          $pids[ $i ] = $value['target_id'];
+        }
       }
     }
 

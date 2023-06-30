@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   title = @Translation("Author country from the current node")
  * )
  */
-class AuthorCountry extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
+final class AuthorCountry extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
 
   /**
    * The route match.

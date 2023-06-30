@@ -5,6 +5,7 @@
  * Contains lit.install.
  */
 
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\file\Entity\File;
 use Drupal\locale\SourceString;
 use Drupal\menu_link_content\Entity\MenuLinkContent;
@@ -16,7 +17,7 @@ use Drupal\pathauto\PathautoState;
  */
 function _setup_default_images() {
   $dir = 'public://default_images';
-  $placeholder = drupal_get_path('module', 'lit') . '/img/placeholder.png';
+  $placeholder = \Drupal::service('extension.path.resolver')->getPath('module', 'lit') . '/img/placeholder.png';
 
   $uuids = [
     '1654623a-2c96-4233-8f8f-b11c0bbe14e9',
@@ -41,6 +42,7 @@ function _setup_default_images() {
   if (\Drupal::service('file_system')->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
     foreach ($uuids as $uuid) {
       $exist = (bool) \Drupal::entityQuery('file')
+        ->accessCheck(FALSE)
         ->condition('uuid', $uuid)
         ->execute();
 

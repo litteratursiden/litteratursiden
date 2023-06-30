@@ -283,13 +283,14 @@ class LitCoverServiceCommands extends DrushCommands {
    *   Should the books have covers. Default 'all' books. Valid values are
    *   self::ALL_BOOKS, self::HAS_COVER, self::NO_COVER.
    *
-   * @return array
-   *   Array of nids
+   * @return array|null Array of nids.
+   *   Array of nids.
    */
-  private function getBookNids(string $cover = self::ALL_BOOKS): array {
+  private function getBookNids(string $cover = self::ALL_BOOKS): ?array {
     try {
       $storage = $this->entityTypeManager->getStorage('node');
       $query = $storage->getQuery()
+        ->accessCheck(FALSE)
         ->condition('type', 'book')
         ->sort('nid', 'DESC');
 
@@ -314,6 +315,8 @@ class LitCoverServiceCommands extends DrushCommands {
     catch (\Exception $e) {
       $this->logger->error('Error found @e', ['@e' => $e]);
     }
+
+    return NULL;
   }
 
   /**

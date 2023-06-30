@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   title = @Translation("Book author node ID from URL")
  * )
  */
-class BookAuthor extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
+final class BookAuthor extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
 
   /**
    * The route match.

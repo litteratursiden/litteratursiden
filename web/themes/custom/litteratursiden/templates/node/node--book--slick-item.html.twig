@@ -91,7 +91,7 @@ view_mode ? view_mode|clean_class,
       <h2{{ title_attributes }}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
-      {% spaceless %}
+      {% apply spaceless %}
         <div class="author">
             {% if content.field_book_author|render is not empty %}
               {{ 'Af'|t }} {{ content.field_book_author|render|striptags|raw }}
@@ -99,7 +99,7 @@ view_mode ? view_mode|clean_class,
               {{ 'Af'|t }} {{ content.field_book_reference_author|render|striptags|raw }}
             {% endif %}
         </div>
-      {% endspaceless %}
+      {% endapply %}
     {% endif %}
     {{ title_suffix }}
 

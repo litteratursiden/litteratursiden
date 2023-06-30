@@ -35,28 +35,28 @@ class Client {
    *
    * @var string
    */
-  protected $clientId = '';
+  protected string $clientId = '';
 
   /**
    * The client secret.
    *
    * @var string
    */
-  protected $clientSecret = '';
+  protected string $clientSecret = '';
 
   /**
    * The access token.
    *
    * @var array
    */
-  protected $token = [];
+  protected array $token = [];
 
   /**
    * The client instance.
    *
    * @var \Drupal\lit_open_platform\Api\Client
    */
-  protected static $client;
+  protected static Client $client;
 
   /**
    * Client constructor.
@@ -66,7 +66,7 @@ class Client {
    * @param string $clientSecret
    *   The client secret.
    */
-  protected function __construct(string $clientId, string $clientSecret) {
+  final public function __construct(string $clientId, string $clientSecret) {
     $this->setClientId($clientId);
     $this->setClientSecret($clientSecret);
   }
@@ -80,7 +80,7 @@ class Client {
    * @return $this
    *   The class with client id.
    */
-  public function setClientId(string $clientId) {
+  public function setClientId(string $clientId): static {
     $this->clientId = $clientId;
 
     return $this;
@@ -92,7 +92,7 @@ class Client {
    * @return string
    *   The client id.
    */
-  public function getClientId() {
+  public function getClientId(): string {
     return $this->clientId;
   }
 
@@ -105,7 +105,7 @@ class Client {
    * @return $this
    *   The class with client secret.
    */
-  public function setClientSecret(string $clientSecret) {
+  public function setClientSecret(string $clientSecret): static {
     $this->clientSecret = $clientSecret;
 
     return $this;
@@ -117,7 +117,7 @@ class Client {
    * @return string
    *   The client secret.
    */
-  public function getClientSecret() {
+  public function getClientSecret(): string {
     return $this->clientSecret;
   }
 
@@ -130,7 +130,7 @@ class Client {
    * @return $this
    *   The class with access token included.
    */
-  public function setAccessToken(array $token) {
+  public function setAccessToken(array $token): static {
     if ($this->verifyToken($token)) {
       $this->token = $token;
 
@@ -262,7 +262,7 @@ class Client {
    * @return \Drupal\lit_open_platform\Api\Client
    *   The lit open platform api client.
    */
-  public static function getInstance(string $clientId, string $clientSecret) {
+  public static function getInstance(string $clientId, string $clientSecret): Client {
     return static::$client = static::$client ?? new static($clientId, $clientSecret);
   }
 
