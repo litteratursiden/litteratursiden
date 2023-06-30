@@ -170,7 +170,7 @@ jobs:
           docker compose exec --user root phpfpm composer install --no-interaction
 
           # Install the site
-          docker compose exec --user root phpfpm vendor/bin/drush site:install minimal --existing-config --yes
+          docker compose exec --user root phpfpm vendor/bin/drush site:install --existing-config --yes
 
           # Build theme assets
           docker compose run --rm node yarn --cwd /app/web/themes/custom/litteratursiden install
