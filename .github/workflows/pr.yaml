@@ -137,7 +137,6 @@ jobs:
           docker compose run --rm node yarn --cwd /app/web/themes/custom/litteratursiden check-coding-standards
 
   check-custom-theme-assets:
-    if: false # Disable this job for now
     name: Check custom theme assets are up to date
     runs-on: ubuntu-latest
     steps:
@@ -156,7 +155,6 @@ jobs:
         run: git diff --diff-filter=ACMRT --exit-code web/themes/custom/litteratursiden/build
 
   install-site:
-    if: false # Disable this job for now
     name: Check that site can be installed
     runs-on: ubuntu-latest
     steps:

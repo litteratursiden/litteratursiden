@@ -42,6 +42,7 @@ function lit_theme($existing, $type, $theme, $path) {
  * Implements hook_entity_extra_field_info().
  */
 function lit_entity_extra_field_info() {
+  $a = 1;
   $extra = [];
 
   /** @var \Drupal\field\Entity\FieldConfig[] $book_fields_info */
