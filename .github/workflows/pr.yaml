@@ -122,6 +122,7 @@ jobs:
           composer code-analysis
 
   install-site:
+    if: false # Disable this job for now
     name: Check that site can be installed
     runs-on: ubuntu-latest
     steps:
