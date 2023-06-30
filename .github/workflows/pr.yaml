@@ -122,7 +122,6 @@ jobs:
           composer code-analysis
 
   coding-standards-custom-themes:
-    if: false # Disable this job for now
     name: Yarn - Check Coding Standards in custom themes
     runs-on: ubuntu-latest
     steps:
