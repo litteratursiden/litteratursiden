@@ -3,6 +3,9 @@
 namespace Drupal\lit_comment_extra\Controller;
 
 use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Access\AccessResultAllowed;
+use Drupal\Core\Access\AccessResultForbidden;
+use Drupal\Core\Access\AccessResultNeutral;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\AppendCommand;
 use Drupal\Core\Ajax\ReplaceCommand;
@@ -12,6 +15,7 @@ use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Defines a controller for comments load more formatter.
@@ -55,7 +59,7 @@ final class CommentLoadMoreController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function ajaxLoadMoreAccess(string $entity_type, int $entity, $field_name): \Drupal\Core\Access\AccessResultForbidden|\Drupal\Core\Access\AccessResultNeutral|AccessResult|\Drupal\Core\Access\AccessResultAllowed {
+  public function ajaxLoadMoreAccess(string $entity_type, int $entity, $field_name): AccessResultForbidden|AccessResultNeutral|AccessResult|AccessResultAllowed {
     $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
     if (!$storage) {
       return AccessResult::forbidden('The entity type is invalid.');
@@ -83,7 +87,7 @@ final class CommentLoadMoreController extends ControllerBase {
    * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Drupal\Core\Ajax\AjaxResponse|\Symfony\Component\HttpFoundation\Response
    *   An ajax response.
    */
-  public function ajaxLoadMore($js, EntityInterface $entity, $field_name, $view_mode, $last_comment_id): RedirectResponse|AjaxResponse|\Symfony\Component\HttpFoundation\Response {
+  public function ajaxLoadMore($js, EntityInterface $entity, $field_name, $view_mode, $last_comment_id): RedirectResponse|AjaxResponse|Response {
     if ($js != 'ajax') {
       // Redirect user to home page in case if it's not an ajax request.
       return new RedirectResponse('/');

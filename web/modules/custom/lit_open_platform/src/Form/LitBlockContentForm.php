@@ -2,7 +2,6 @@
 
 namespace Drupal\lit_open_platform\Form;
 
-use Drupal\block_content\BlockContentForm;
 use Drupal\Component\Datetime\TimeInterface;
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Entity\ContentEntityFormInterface;

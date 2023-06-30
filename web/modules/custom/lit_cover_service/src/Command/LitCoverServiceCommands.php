@@ -283,7 +283,7 @@ class LitCoverServiceCommands extends DrushCommands {
    *   Should the books have covers. Default 'all' books. Valid values are
    *   self::ALL_BOOKS, self::HAS_COVER, self::NO_COVER.
    *
-   * @return array|null Array of nids.
+   * @return array|null
    *   Array of nids.
    */
   private function getBookNids(string $cover = self::ALL_BOOKS): ?array {

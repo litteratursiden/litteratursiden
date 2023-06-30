@@ -3,21 +3,15 @@
 namespace Drupal\lit_open_platform\Form;
 
 use Drupal\Component\Datetime\TimeInterface;
-use Drupal\Core\Datetime\DateFormatterInterface;
 use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Entity\ContentEntityFormInterface;
-use Drupal\Core\Entity\EntityForm;
-use Drupal\Core\Entity\EntityFormInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Session\AccountInterface;
-use Drupal\Core\TempStore\PrivateTempStoreFactory;
 use Drupal\lit_open_platform\Api\SearchClient as Client;
 use Drupal\lit_open_platform\Transformers\WorkTransformer;
 use Drupal\node\Entity\Node;
-use Drupal\node\NodeForm;
 
 /**
  * Form handler for the node edit forms.
@@ -157,7 +151,7 @@ class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterfac
     foreach ($values as $i => $value) {
       if (is_array($value) &&$value['target_id']) {
         if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
-          $pids[ $i ] = $value['target_id'];
+          $pids[$i] = $value['target_id'];
         }
       }
     }

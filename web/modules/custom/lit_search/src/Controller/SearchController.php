@@ -135,7 +135,6 @@ class SearchController extends ControllerBase {
 
     foreach ($hits as $hit) {
       // Get entity type and id form the elastic search id.
-
       if ($hit['_id']) {
         preg_match('/(\w*):(\w*)\/(\d*):(\w*)/', $hit['_id'], $matches);
 
