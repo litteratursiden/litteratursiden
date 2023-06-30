@@ -197,3 +197,4 @@ private-files/
 
 settings.local.php
 .env.docker.local
+node_modules
