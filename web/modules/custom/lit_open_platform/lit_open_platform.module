@@ -48,8 +48,10 @@ function lit_open_platform_field_widget_form_alter(&$element, FormStateInterface
  * Implements hook_entity_type_alter().
  */
 function lit_open_platform_entity_type_alter(array &$entity_types) {
-  $entity_types['node']->setFormClass('default', 'Drupal\lit_open_platform\Form\LitNodeForm');
-  $entity_types['node']->setFormClass('edit', 'Drupal\lit_open_platform\Form\LitNodeForm');
+  if (isset($entity_types['node'])) {
+    $entity_types['node']->setFormClass('default', 'Drupal\lit_open_platform\Form\LitNodeForm');
+    $entity_types['node']->setFormClass('edit', 'Drupal\lit_open_platform\Form\LitNodeForm');
+  }
 
   if (isset($entity_types['block_content'])) {
     $entity_types['block_content']->setFormClass('default', 'Drupal\lit_open_platform\Form\LitBlockContentForm');
