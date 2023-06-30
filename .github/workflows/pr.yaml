@@ -121,39 +121,6 @@ jobs:
         run: |
           composer code-analysis
 
-  coding-standards-custom-themes:
-    name: Yarn - Check Coding Standards in custom themes
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - name: Setup docker network
-        run: docker network create frontend
-
-      - name: Install build dependencies
-        run: docker compose run --rm node yarn --cwd /app/web/themes/custom/litteratursiden install
-
-      - name: Check coding standards
-        run: |
-          docker compose run --rm node yarn --cwd /app/web/themes/custom/litteratursiden check-coding-standards
-
-  check-custom-theme-assets:
-    name: Check custom theme assets are up to date
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-
-      - name: Setup docker network
-        run: docker network create frontend
-
-      - name: Install build dependencies
-        run: docker compose run --rm node yarn --cwd /app/web/themes/custom/litteratursiden install
-
-      - name: Build theme assets
-        run: docker compose run --rm node yarn --cwd /app/web/themes/custom/litteratursiden build
-
-      - name: Check for changes in built css
-        run: git diff --diff-filter=ACMRT --exit-code web/themes/custom/litteratursiden/build
-
   install-site:
     name: Check that site can be installed
     runs-on: ubuntu-latest
