@@ -1,0 +1,8 @@
+services:
+  bpi.service:
+    class: 'Drupal\bpi\Services\BpiService'
+    factory: 'bpi.service.factory:create'
+    arguments: ['@config.factory']
+
+  bpi.service.factory:
+    class: 'Drupal\bpi\Services\BpiServiceFactory'

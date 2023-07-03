@@ -1,0 +1,6 @@
+'administer bpi':
+  title: 'Administer BPI settings'
+  description: 'Set the web-service end-point and configure the service.'
+'bpi push content':
+  title: 'Push content'
+  description: 'Push content to the service.'
