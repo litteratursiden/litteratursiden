@@ -15,6 +15,10 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+          "type": "composer",
+          "url": "https://packagist.org"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "kenwheeler/slick",
@@ -73,13 +77,26 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+          "type": "package",
+          "package": {
+            "name": "litteratursiden/ddb-cover-service-php-client",
+            "version": "1.0.0",
+            "type": "drupal-module",
+            "source": {
+              "url": "https://github.com/litteratursiden/ddb-cover-service-php-client.git",
+              "type": "git",
+              "reference": "master"
+            }
+          }
         }
     ],
     "require": {
         "php": "^8.1",
+        "bpi/sdk": "^4.2",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
-        "danskernesdigitalebibliotek/ddb-cover-service-php-client": "dev-master",
         "dinbror/blazy": "master",
         "drupal/advagg": "^6.0@alpha",
         "drupal/antibot": "^2.0",
@@ -88,10 +105,9 @@
         "drupal/color_field": "^3.0",
         "drupal/config_filter": "^1.0",
         "drupal/config_ignore": "^2.1",
-        "drupal/console": "^1.0.2",
-        "drupal/core-composer-scaffold": "^9.3",
-        "drupal/core-project-message": "^9.3",
-        "drupal/core-recommended": "^9.3",
+        "drupal/core-composer-scaffold": "^10.1",
+        "drupal/core-project-message": "^10.1",
+        "drupal/core-recommended": "^10.1",
         "drupal/crop": "^2.1",
         "drupal/elasticsearch_connector": "^7.0@alpha",
         "drupal/email_registration": "^1.2",
@@ -126,7 +142,6 @@
         "drupal/search_api": "^1.23",
         "drupal/social_media": "^2.0",
         "drupal/swiftmailer": "^2.2",
-        "drupal/system_status": "^2.8",
         "drupal/twig_tweak": "^3.2",
         "drupal/user_registrationpassword": "^2.0",
         "drupal/varnish_purge": "^2.1",
@@ -136,12 +151,13 @@
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/xmlsitemap": "^1.4",
-        "drush/drush": "^10.0",
+        "drush/drush": "^12.0",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
         "itk-dev/web_accessibility_statement": "^1.1",
         "jquery_validation/jqueryvalidate": "~1.0",
         "kenwheeler/slick": "master",
+        "litteratursiden/ddb-cover-service-php-client": "^1.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -150,8 +166,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
-      "drupal/core-dev": "^9.3",
-      "drupal/upgrade_status": "^3.14",
+      "drupal/core-dev": "^10.1",
       "mglaman/phpstan-drupal": "^1.1",
       "phpstan/extension-installer": "^1.2",
       "phpstan/phpstan-deprecation-rules": "^1.1"

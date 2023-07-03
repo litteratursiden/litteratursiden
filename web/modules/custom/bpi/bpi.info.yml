@@ -1,9 +1,0 @@
-name: BPI
-type: module
-description: 'Provides integration with BPI services.'
-core: 8.x
-package: BPI
-configure: bpi.settings
-'interface translation project': bpi
-'interface translation server pattern': modules/custom/bpi/translations/da.po
-core_version_requirement: ^8 || ^9 || ^10
