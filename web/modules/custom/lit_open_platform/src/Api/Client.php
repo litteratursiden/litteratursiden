@@ -3,7 +3,6 @@
 namespace Drupal\lit_open_platform\Api;
 
 use GuzzleHttp\Client as RequestClient;
-use GuzzleHttp\Exception\ClientException;
 
 /**
  * A class for GuzzleHttp Client.
@@ -244,8 +243,9 @@ class Client {
 
       $result = json_decode($response->getBody(), TRUE, 512, JSON_THROW_ON_ERROR);
     }
-    catch (ClientException $exception) {
-      \Drupal::messenger()->addMessage("The Open Platform " . $exception->getMessage(), 'error');
+    catch (\Exception $exception) {
+      \Drupal::messenger()
+        ->addMessage("The Open Platform " . $exception->getMessage(), 'error');
     }
 
     return $result;

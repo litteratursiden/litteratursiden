@@ -155,7 +155,7 @@ class LitNodeSelection extends NodeSelection {
       }
     }
 
-    if (empty($options['book'] || is_null($options['book']))) {
+    if (is_null($options['book']) || empty($options['book'])) {
       return [];
     }
 
