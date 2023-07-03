@@ -11,6 +11,10 @@
     ],
     "repositories": [
         {
+          "type": "vcs",
+          "url": "https://github.com/litteratursiden/ddb-cover-service-php-client.git"
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
@@ -77,19 +81,6 @@
                     "type": "zip"
                 }
             }
-        },
-        {
-          "type": "package",
-          "package": {
-            "name": "litteratursiden/ddb-cover-service-php-client",
-            "version": "1.0.0",
-            "type": "drupal-module",
-            "source": {
-              "url": "https://github.com/litteratursiden/ddb-cover-service-php-client.git",
-              "type": "git",
-              "reference": "master"
-            }
-          }
         }
     ],
     "require": {
@@ -97,6 +88,7 @@
         "bpi/sdk": "^4.2",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
+        "danskernesdigitalebibliotek/ddb-cover-service-php-client": "dev-master",
         "dinbror/blazy": "master",
         "drupal/advagg": "^6.0@alpha",
         "drupal/antibot": "^2.0",
@@ -157,7 +149,6 @@
         "itk-dev/web_accessibility_statement": "^1.1",
         "jquery_validation/jqueryvalidate": "~1.0",
         "kenwheeler/slick": "master",
-        "litteratursiden/ddb-cover-service-php-client": "^1.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",

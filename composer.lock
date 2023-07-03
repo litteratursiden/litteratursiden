@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f4376917a21c247420d0ba827ebdd84",
+    "content-hash": "07702e2c7a9f5c428c6829ddeea728e8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1113,6 +1113,57 @@
                 "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
             },
             "time": "2022-12-20T22:53:13+00:00"
+        },
+        {
+            "name": "danskernesdigitalebibliotek/ddb-cover-service-php-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/litteratursiden/ddb-cover-service-php-client.git",
+                "reference": "4890a36e7c397d48afd0f886573c766bd00ce2ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/litteratursiden/ddb-cover-service-php-client/zipball/4890a36e7c397d48afd0f886573c766bd00ce2ff",
+                "reference": "4890a36e7c397d48afd0f886573c766bd00ce2ff",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "guzzlehttp/guzzle": "^6.2 || ^7.4",
+                "php": ">=7"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CoverService\\": "lib/"
+                }
+            },
+            "scripts": {
+                "coding-standards-apply": [
+                    "php-cs-fixer fix"
+                ],
+                "coding-standards-check": [
+                    "php-cs-fixer fix --dry-run --format=checkstyle"
+                ],
+                "actions/phpcsfixer": [
+                    "php-cs-fixer fix --dry-run --format=checkstyle"
+                ]
+            },
+            "license": [
+                "AGPL-3.0-only"
+            ],
+            "description": "Api Client for DDF Cover Service",
+            "homepage": "https://github.com/danskernesdigitalebibliotek/ddb-cover-service-php-client",
+            "support": {
+                "source": "https://github.com/litteratursiden/ddb-cover-service-php-client/tree/master"
+            },
+            "time": "2023-07-03T12:34:51+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -6290,16 +6341,6 @@
                 }
             ],
             "time": "2021-11-16T10:29:06+00:00"
-        },
-        {
-            "name": "litteratursiden/ddb-cover-service-php-client",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/litteratursiden/ddb-cover-service-php-client.git",
-                "reference": "master"
-            },
-            "type": "drupal-module"
         },
         {
             "name": "makinacorpus/php-lucene",
@@ -15303,6 +15344,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "danskernesdigitalebibliotek/ddb-cover-service-php-client": 20,
         "drupal/advagg": 15,
         "drupal/elasticsearch_connector": 15,
         "drupal/facets": 10,
