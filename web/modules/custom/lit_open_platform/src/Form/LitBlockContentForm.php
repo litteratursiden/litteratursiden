@@ -126,7 +126,7 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
    */
   protected function getBookByPid(string $pid) {
     $query = \Drupal::entityQuery('node')
-      ->accessCheck(FALSE)
+      ->accessCheck()
       ->condition('status', 1)
       ->condition('type', 'book')
       ->condition('field_book_pid.value', $pid);
@@ -149,7 +149,7 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
     $pids = [];
 
     foreach ($values as $i => $value) {
-      if ($value['target_id']) {
+      if (!is_null($value['target_id'])) {
         if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
           $pids[$i] = $value['target_id'];
         }

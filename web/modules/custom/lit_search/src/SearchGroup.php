@@ -59,7 +59,7 @@ class SearchGroup {
    * @return $this
    *   The class with title included.
    */
-  public function setTitle(string $title): static {
+  public function setTitle(string $title): SearchGroup {
     $this->title = $title;
 
     return $this;
@@ -84,7 +84,7 @@ class SearchGroup {
    * @return $this
    *   The class with count included.
    */
-  public function setCount(int $count): static {
+  public function setCount(int $count): SearchGroup {
     $this->count = $count;
 
     return $this;
@@ -109,7 +109,7 @@ class SearchGroup {
    * @return $this
    *   The class with items included.
    */
-  public function setItems(array $items): static {
+  public function setItems(array $items): SearchGroup {
     $this->items = $items;
 
     return $this;

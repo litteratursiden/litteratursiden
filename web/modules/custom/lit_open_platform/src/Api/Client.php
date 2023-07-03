@@ -18,7 +18,7 @@ class Client {
   /**
    * The OAuth2 token url.
    */
-  public const OAUTH2_TOKEM_URL = 'https://auth.dbc.dk/oauth/token';
+  public const OAUTH2_TOKEN_URL = 'https://auth.dbc.dk/oauth/token';
 
   /**
    * The API base path.
@@ -80,7 +80,7 @@ class Client {
    * @return $this
    *   The class with client id.
    */
-  public function setClientId(string $clientId): static {
+  public function setClientId(string $clientId): self {
     $this->clientId = $clientId;
 
     return $this;
@@ -105,7 +105,7 @@ class Client {
    * @return $this
    *   The class with client secret.
    */
-  public function setClientSecret(string $clientSecret): static {
+  public function setClientSecret(string $clientSecret): self {
     $this->clientSecret = $clientSecret;
 
     return $this;
@@ -130,7 +130,7 @@ class Client {
    * @return $this
    *   The class with access token included.
    */
-  public function setAccessToken(array $token): static {
+  public function setAccessToken(array $token): self {
     if ($this->verifyToken($token)) {
       $this->token = $token;
 
@@ -206,7 +206,7 @@ class Client {
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function requestAccessToken(): array {
-    return $this->request('POST', self::OAUTH2_TOKEM_URL, [
+    return $this->request('POST', self::OAUTH2_TOKEN_URL, [
       'headers' => [
         'Authorization' => 'Basic ' . $this->getBasicToken(),
         'Content-type' => 'application/x-www-form-urlencoded',
@@ -242,7 +242,7 @@ class Client {
     try {
       $response = $client->request($method, $uri, $options);
 
-      $result = json_decode($response->getBody(), TRUE);
+      $result = json_decode($response->getBody(), TRUE, 512, JSON_THROW_ON_ERROR);
     }
     catch (ClientException $exception) {
       \Drupal::messenger()->addMessage("The Open Platform " . $exception->getMessage(), 'error');

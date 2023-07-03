@@ -155,7 +155,7 @@ class LitNodeSelection extends NodeSelection {
       }
     }
 
-    if (empty($options['book'])) {
+    if (empty($options['book'] || is_null($options['book']))) {
       return [];
     }
 
@@ -167,7 +167,7 @@ class LitNodeSelection extends NodeSelection {
   /**
    * Sort books.
    *
-   * @param array|null $books
+   * @param array $books
    *   A list of books.
    * @param array $titles
    *   A list of titles.
@@ -175,7 +175,7 @@ class LitNodeSelection extends NodeSelection {
    * @return array
    *   A list of sorted books.
    */
-  private function sortBooks(?array $books, array $titles): array {
+  private function sortBooks(array $books, array $titles): array {
     $result = [];
 
     asort($titles, SORT_NATURAL);
