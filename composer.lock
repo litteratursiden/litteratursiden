@@ -213,16 +213,16 @@
         },
         {
             "name": "bpi/sdk",
-            "version": "4.2.3",
+            "version": "4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/litteratursiden/bpi-client.git",
-                "reference": "a871a8c1c335d87f76ed340d734bfd0076080321"
+                "reference": "4601aa09081a160a0531fb535b7f6bb2d1b61c0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/litteratursiden/bpi-client/zipball/a871a8c1c335d87f76ed340d734bfd0076080321",
-                "reference": "a871a8c1c335d87f76ed340d734bfd0076080321",
+                "url": "https://api.github.com/repos/litteratursiden/bpi-client/zipball/4601aa09081a160a0531fb535b7f6bb2d1b61c0f",
+                "reference": "4601aa09081a160a0531fb535b7f6bb2d1b61c0f",
                 "shasum": ""
             },
             "require": {
@@ -253,9 +253,9 @@
                 "rest"
             ],
             "support": {
-                "source": "https://github.com/litteratursiden/bpi-client/tree/4.2.3"
+                "source": "https://github.com/litteratursiden/bpi-client/tree/4.2.4"
             },
-            "time": "2023-07-03T09:19:58+00:00"
+            "time": "2023-07-04T09:14:15+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
