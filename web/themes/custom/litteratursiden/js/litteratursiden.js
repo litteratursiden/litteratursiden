@@ -57,7 +57,7 @@
         $(this).parents('.form-item').addClass('error');
       }
 
-      $(document).once('Litteratursiden').each(function () {
+      $(once('Litteratursiden', document)).each(function () {
 
         $(document).on('click', '.comment .comment-body-wrapper .show-more, .comment .comment-body-wrapper .show-less', function () {
             $(this).parent().toggleClass('show');
