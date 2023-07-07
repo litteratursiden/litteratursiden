@@ -19,15 +19,6 @@ function lit_taxonomy_install() {
     ])
     ->isNull('status')
     ->execute();
-
-  // Set taxonomy term owner to anonym.
-  Database::getConnection()
-    ->update('taxonomy_term_field_data')
-    ->fields([
-      'uid' => 0,
-    ])
-    ->isNull('uid')
-    ->execute();
 }
 
 /**
@@ -40,44 +31,5 @@ function lit_taxonomy_update_8001() {
       'status' => TAXONOMY_TERM_PUBLISHED,
     ])
     ->condition('status', NULL)
-    ->execute();
-}
-
-/**
- * Set taxonomy term owner to anonym.
- */
-function lit_taxonomy_update_8002() {
-  Database::getConnection()
-    ->update('taxonomy_term_field_data')
-    ->fields([
-      'uid' => 0,
-    ])
-    ->condition('uid', NULL)
-    ->execute();
-}
-
-/**
- * Set taxonomy term status to publish.
- */
-function lit_taxonomy_update_8003() {
-  Database::getConnection()
-    ->update('taxonomy_term_field_data')
-    ->fields([
-      'status' => TAXONOMY_TERM_PUBLISHED,
-    ])
-    ->isNull('status')
-    ->execute();
-}
-
-/**
- * Set taxonomy term owner to anonym.
- */
-function lit_taxonomy_update_8004() {
-  Database::getConnection()
-    ->update('taxonomy_term_field_data')
-    ->fields([
-      'uid' => 0,
-    ])
-    ->isNull('uid')
     ->execute();
 }

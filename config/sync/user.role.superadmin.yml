@@ -17,8 +17,6 @@ dependencies:
     - node.type.review
     - node.type.similar
     - node.type.topic
-    - taxonomy.vocabulary.general_tags
-    - taxonomy.vocabulary.literature_type
   module:
     - action
     - advagg
@@ -72,6 +70,7 @@ permissions:
   - 'access mailchimp signup pages'
   - 'access site in maintenance mode'
   - 'access site reports'
+  - 'access taxonomy overview'
   - 'access toolbar'
   - 'access user profiles'
   - 'administer account settings'
@@ -181,8 +180,6 @@ permissions:
   - 'delete own topic content'
   - 'delete review revisions'
   - 'delete similar revisions'
-  - 'delete terms in general_tags'
-  - 'delete terms in literature_type'
   - 'delete topic revisions'
   - 'edit any analysis content'
   - 'edit any article content'
@@ -207,8 +204,6 @@ permissions:
   - 'edit own review content'
   - 'edit own similar content'
   - 'edit own topic content'
-  - 'edit terms in general_tags'
-  - 'edit terms in literature_type'
   - 'export configuration'
   - 'flag bookmark'
   - 'import configuration'
