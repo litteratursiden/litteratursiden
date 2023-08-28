@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * Denotes that the taxonomy term is published.
+ */
+const TAXONOMY_TERM_PUBLISHED = 1;
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function lit_taxonomy_entity_type_alter(array &$entity_types) {
+  // Drupal\taxonomy\TermAccessControlHandler
+  $entity_types['taxonomy_term']->setAccessClass('Drupal\taxonomy\TermAccessControlHandler');
+  // Drupal\taxonomy\TermStorage
+  $entity_types['taxonomy_term']->setStorageClass('Drupal\taxonomy\TermStorage');
+  // Drupal\taxonomy\TermForm
+  $entity_types['taxonomy_term']->setFormClass('default', 'Drupal\taxonomy\TermForm');
+}

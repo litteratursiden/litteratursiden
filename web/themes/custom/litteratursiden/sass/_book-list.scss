@@ -125,3 +125,26 @@
     border: 0;
   }
 }
+
+.block-type-content_carousel,
+.block-type-overview,
+.block-type-book_list_carousel {
+  .tns-outer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tns-nav {
+    order: 4;
+    position: relative;
+    flex: 0 0 100%;
+    padding: 1em 0;
+  }
+
+  .tns-ovh {
+    display: block;
+    order: 3;
+    flex: 0 0 100%;
+  }
+}

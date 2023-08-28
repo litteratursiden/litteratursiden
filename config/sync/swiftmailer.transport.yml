@@ -1,16 +1,16 @@
 _core:
   default_config_hash: 0SeYZshzgoabDrbz-junYqeQOQ9BypPv2gaFcnqKy0M
 langcode: da
-transport: sendmail
-smtp_host: smtp.mandrillapp.com
-smtp_port: 587
-smtp_encryption: tls
+transport: smtp
+smtp_host: host.docker.internal
+smtp_port: 25
+smtp_encryption: '0'
 sendmail_path: /usr/sbin/sendmail
 sendmail_mode: bs
 smtp_credential_provider: swiftmailer
 smtp_credentials:
   swiftmailer:
-    username: redaktionen@litteratursiden.dk
+    username: ''
     password: vhDjm_66RNS72zdtR6rkCw
 spool_directory: ''
 smtp_username: redaktionen@litteratursiden.dk

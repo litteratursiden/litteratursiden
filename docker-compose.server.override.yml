@@ -1,12 +1,5 @@
 version: "3"
 
-networks:
-  frontend:
-    external: true
-  app:
-    driver: bridge
-    internal: false
-
 services:
   phpfpm:
     environment:
@@ -21,6 +14,7 @@ services:
 
   es:
     image: elasticsearch:7.17.4
+    restart: unless-stopped
     networks:
       - app
       - frontend
@@ -30,11 +24,15 @@ services:
           memory: 4096M
         reservations:
           memory: 4096M
+    user: "1042"
+    volumes:
+      - ./../esdata01:/usr/share/elasticsearch/data
     environment:
       - discovery.type=single-node
 
   memcached:
     image: 'memcached:latest'
+    restart: unless-stopped
     networks:
       - app
     environment:
