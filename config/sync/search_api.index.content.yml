@@ -27,7 +27,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'field_article_general_tags:entity:name'
     type: text
-    boost: !!float 2
+    boost: 2.0
     dependencies:
       config:
         - field.storage.node.field_article_general_tags
@@ -38,7 +38,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'field_author_portrait_tags:entity:name'
     type: text
-    boost: !!float 2
+    boost: 2.0
     dependencies:
       config:
         - field.storage.node.field_author_portrait_tags
@@ -49,7 +49,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'field_blog_general_tags:entity:name'
     type: text
-    boost: !!float 2
+    boost: 2.0
     dependencies:
       config:
         - field.storage.node.field_blog_general_tags
@@ -60,7 +60,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: field_book_author
     type: text
-    boost: !!float 3
+    boost: 3.0
     dependencies:
       config:
         - field.storage.node.field_book_author
@@ -69,7 +69,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'field_book_general_tags:entity:name'
     type: text
-    boost: !!float 2
+    boost: 2.0
     dependencies:
       config:
         - field.storage.node.field_book_general_tags
@@ -80,7 +80,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'field_book_list_general_tags:entity:name'
     type: text
-    boost: !!float 2
+    boost: 2.0
     dependencies:
       config:
         - field.storage.node.field_book_list_general_tags
@@ -91,7 +91,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: 'field_topic_general_tags:entity:name'
     type: text
-    boost: !!float 2
+    boost: 2.0
     dependencies:
       config:
         - field.storage.node.field_topic_general_tags
@@ -154,7 +154,7 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: title
     type: text
-    boost: !!float 13
+    boost: 13.0
     dependencies:
       module:
         - node
@@ -226,7 +226,7 @@ processor_settings:
       preprocess_index: -10
       preprocess_query: -10
     all_fields: false
-    ignorable: '[''¿¡!?,.:;-]'
+    ignorable: "['¿¡!?,.:;-]"
     ignorable_classes:
       - Pc
       - Pd

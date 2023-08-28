@@ -3,10 +3,6 @@ _core:
 langcode: da
 module:
   action: 0
-  advagg: 0
-  advagg_css_minify: 0
-  advagg_ext_minify: 0
-  advagg_js_minify: 0
   antibot: 0
   block: 0
   block_content: 0
@@ -94,8 +90,8 @@ module:
   system: 0
   taxonomy: 0
   text: 0
-  token: 0
   toolbar: 0
+  token: 0
   twig_tweak: 0
   update: 0
   user: 0
@@ -118,4 +114,5 @@ theme:
   bootstrap: 0
   litteratursiden: 0
   claro: 0
+  stark: 0
 profile: minimal

@@ -1,0 +1,26 @@
+uuid: f140fc97-e030-427c-9b47-879b7915ffe6
+langcode: en
+status: false
+dependencies:
+  module:
+    - lit_search
+    - system
+  theme:
+    - stark
+id: stark_searchblock
+theme: stark
+region: header
+weight: 1
+provider: null
+plugin: lit_search_block
+settings:
+  id: lit_search_block
+  label: 'Søg Litteratursiden'
+  label_display: visible
+  provider: lit_search
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /search

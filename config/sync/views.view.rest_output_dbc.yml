@@ -699,15 +699,15 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: 0
+            link: false
           group_column: target_id
           group_columns: {  }
-          group_rows: 1
-          delta_limit: '0'
-          delta_offset: '0'
-          delta_reversed: 0
-          delta_first_last: 0
-          field_api_classes: 0
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          field_api_classes: false
         field_analysis_general_tags_export:
           id: field_analysis_general_tags_export
           table: node__field_analysis_general_tags
@@ -760,15 +760,15 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: 0
+            link: false
           group_column: target_id
           group_columns: {  }
-          group_rows: 1
-          delta_limit: '0'
-          delta_offset: '0'
-          delta_reversed: 0
-          delta_first_last: 0
-          field_api_classes: 0
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          field_api_classes: false
         field_author_portrait_tags_export:
           id: field_author_portrait_tags_export
           table: node__field_author_portrait_tags
@@ -821,15 +821,15 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: 0
+            link: false
           group_column: target_id
           group_columns: {  }
-          group_rows: 1
-          delta_limit: '0'
-          delta_offset: '0'
-          delta_reversed: 0
-          delta_first_last: 0
-          field_api_classes: 0
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          field_api_classes: false
         field_article_general_tags_export:
           id: field_article_general_tags_export
           table: node__field_article_general_tags
@@ -882,15 +882,15 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: 0
+            link: false
           group_column: target_id
           group_columns: {  }
-          group_rows: 1
-          delta_limit: '0'
-          delta_offset: '0'
-          delta_reversed: 0
-          delta_first_last: 0
-          field_api_classes: 0
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          field_api_classes: false
         created:
           id: created
           table: node_field_data
@@ -948,6 +948,15 @@ display:
             date_format: html_date
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -1015,6 +1024,15 @@ display:
             date_format: html_date
             custom_date_format: ''
             timezone: ''
+            tooltip:
+              date_format: ''
+              custom_date_format: ''
+            time_diff:
+              enabled: false
+              future_format: '@interval hence'
+              past_format: '@interval ago'
+              granularity: 2
+              refresh: 60
           group_column: value
           group_columns: {  }
           group_rows: true
