@@ -17,7 +17,6 @@ dependencies:
     - node.type.review
     - node.type.similar
     - node.type.topic
-    - taxonomy.vocabulary.general_tags
   module:
     - action
     - block
@@ -57,6 +56,7 @@ permissions:
   - 'administer flags'
   - 'administer menu'
   - 'administer nodes'
+  - 'administer taxonomy'
   - 'administer themes'
   - 'administer users'
   - 'bpi push content'
@@ -95,7 +95,6 @@ permissions:
   - 'delete own review content'
   - 'delete own similar content'
   - 'delete own topic content'
-  - 'delete terms in general_tags'
   - 'edit any analysis content'
   - 'edit any article content'
   - 'edit any author_portrait content'
@@ -120,7 +119,6 @@ permissions:
   - 'edit own review content'
   - 'edit own similar content'
   - 'edit own topic content'
-  - 'edit terms in general_tags'
   - 'link to any page'
   - 'manipulate all entityqueues'
   - 'manipulate entityqueues'
