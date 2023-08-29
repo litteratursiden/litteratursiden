@@ -6,6 +6,8 @@ global-styling:
       build/app.css: {}
   dependencies:
     - core/drupal
+    - core/jquery
+    - core/once
 
 match-height:
   js:
