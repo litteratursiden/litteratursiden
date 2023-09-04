@@ -58,6 +58,7 @@ class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterfac
       }
     }
 
+    $form_state->setRedirect('system.admin_content');
     $form_state->setValues($values);
 
     parent::copyFormValuesToEntity($entity, $form, $form_state);
