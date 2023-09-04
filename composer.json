@@ -141,6 +141,7 @@
         "drupal/video_embed_html5": "^2.0",
         "drupal/view_unpublished": "^1.1",
         "drupal/views_infinite_scroll": "^2.0",
+        "drupal/views_show_more": "^2.0",
         "drupal/viewsreference": "^2.0@beta",
         "drupal/xmlsitemap": "^1.4",
         "drush/drush": "^12.0",
@@ -237,6 +238,12 @@
             },
             "drupal/redirect404_home": {
                 "https://www.drupal.org/project/redirect404_home/issues/3343349": "https://www.drupal.org/files/issues/2023-02-21/3343349-3.patch"
+            },
+            "drupal/views_infinite_scroll": {
+              "https://www.drupal.org/project/views_infinite_scroll/issues/2877652": "https://www.drupal.org/files/issues/2022-08-17/2877652-33-fix_views_infinite_scroll_pager_when_multi_views_on_single_page.patch"
+            },
+            "drupal/pathauto": {
+              "https://www.drupal.org/project/pathauto/issues/3370089": "https://www.drupal.org/files/issues/2023-07-13/must-be-of-type-array-3370089-5.patch"
             }
         },
         "merge-plugin": {
