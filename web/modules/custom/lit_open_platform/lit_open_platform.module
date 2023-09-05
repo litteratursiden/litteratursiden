@@ -7,6 +7,8 @@
 
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
  * Implements hook_help().
@@ -74,4 +76,19 @@ function lit_open_platform_theme($existing, $type, $theme, $path) {
       ],
     ],
   ];
+}
+
+/**
+ * Redirect to node display after creation.
+ *
+ * Overriding default form class above disrupts the usual node save routine,
+ * and breaks the usual redirect flow, so we add it manually.
+ *
+ * @return void
+ */
+function lit_open_platform_node_insert(\Drupal\Core\Entity\EntityInterface $entity) {
+  $url = Url::fromRoute('entity.node.canonical', ['node' => $entity->id()])->toString();
+
+  $response = new RedirectResponse($url);
+  $response->send();
 }
