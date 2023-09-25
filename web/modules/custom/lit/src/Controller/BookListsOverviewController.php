@@ -3,6 +3,7 @@
 namespace Drupal\lit\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Url;
 
 /**
  * Controller for book lists overview page.
@@ -36,18 +37,23 @@ class BookListsOverviewController extends ControllerBase {
   }
 
   /**
+   * Process book lists.
+   *
    * @param array $book_lists
+   *   A list of book lists.
+   *
    * @return array
+   *   A list of book lists grouped by first character.
    */
   private function processBookLists(array $book_lists): array {
     $grouped = [];
 
     foreach ($book_lists as $nid => $book_list) {
-      //$book_list->url = \Drupal::service('path.alias_manager')->getAliasByPath('/node/' . $nid);
-      $book_list->url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $nid], ['absolute' => TRUE]);
+      $book_list->url = Url::fromRoute('entity.node.canonical', ['node' => $nid], ['absolute' => TRUE]);
       $grouped[strtoupper($book_list->firstchar)][] = $book_list;
     }
 
     return $grouped;
   }
+
 }

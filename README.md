@@ -3,6 +3,7 @@
 ## Production / Staging
 
 ### Create settings file with database connection
+
 ```php
 <?php
 
@@ -123,6 +124,7 @@ $settings['config_sync_directory'] = '../config/sync';
 ```
 
 ### Install site
+
 ```sh
 docker-compose up --detach
 docker-compose exec phpfpm composer install

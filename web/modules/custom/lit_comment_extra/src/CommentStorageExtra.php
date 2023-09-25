@@ -2,9 +2,9 @@
 
 namespace Drupal\lit_comment_extra;
 
-use Drupal\comment\CommentStorage;
 use Drupal\comment\CommentInterface;
 use Drupal\comment\CommentManagerInterface;
+use Drupal\comment\CommentStorage;
 use Drupal\comment\Entity\Comment;
 use Drupal\Core\Entity\EntityInterface;
 

@@ -11,6 +11,8 @@ use Drupal\Core\Form\FormStateInterface;
 class SearchAutocompleteForm extends FormBase {
 
   /**
+   * A parameter bag.
+   *
    * @var \Symfony\Component\HttpFoundation\ParameterBag
    */
   protected $query;

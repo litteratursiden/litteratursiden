@@ -8,21 +8,21 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Class ServiceSettingsForm.
+ * Class for BPI Service settingsForm.
  */
 class ServiceSettingsForm extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
    */
-  public function getFormId() {
+  public function getFormId(): string {
     return 'bpi_service_settings';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function getEditableConfigNames() {
+  public function getEditableConfigNames(): array {
     return [
       'bpi.service_settings',
     ];
@@ -31,7 +31,7 @@ class ServiceSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state) {
+  public function buildForm(array $form, FormStateInterface $form_state): array {
     $settings = $this->config('bpi.service_settings');
 
     $form['bpi_service_settings'] = [
@@ -75,7 +75,7 @@ class ServiceSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
+  public function validateForm(array &$form, FormStateInterface $form_state): void {
     if (!UrlHelper::isValid($form_state->getValue('bpi_service_url'), TRUE)) {
       $form_state->setErrorByName('bpi_service_url', $this->t('Please enter a valid url.'));
     }
@@ -101,7 +101,7 @@ class ServiceSettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
-  public function submitForm(array &$form, FormStateInterface $form_state) {
+  public function submitForm(array &$form, FormStateInterface $form_state): void {
     $this->config('bpi.service_settings')
       ->set('bpi_agency_id', $form_state->getValue('bpi_agency_id'))
       ->set('bpi_service_url', $form_state->getValue('bpi_service_url'))

@@ -5,8 +5,8 @@ namespace Drupal\lit_views\Plugin\views\area;
 use Drupal\Component\Utility\Html;
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\views\Plugin\views\style\DefaultSummary;
 use Drupal\views\Plugin\views\area\Result as BaseResult;
+use Drupal\views\Plugin\views\style\DefaultSummary;
 
 /**
  * Views area handler to display some configurable result summary.
@@ -69,9 +69,9 @@ class Result extends BaseResult {
     // Calculate the page totals.
     $current_page = (int) $this->view->getCurrentPage() + 1;
     $per_page = (int) $this->view->getItemsPerPage();
-    // @TODO: Maybe use a possible is views empty functionality.
+    // @todo Maybe use a possible is views empty functionality.
     // Not every view has total_rows set, use view->result instead.
-    $total = isset($this->view->total_rows) ? $this->view->total_rows : count($this->view->result);
+    $total = $this->view->total_rows ?? count($this->view->result);
     $label = Html::escape($this->view->storage->label());
     // If there is no result the "start" and "current_record_count" should be
     // equal to 0. To have the same calculation logic, we use a "start offset"

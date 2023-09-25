@@ -1,18 +1,12 @@
 <?php
 
-/**
- * @file
- * Batch service to support the commands defined in the module.
- */
-
 namespace Drupal\lit_cover_service\Service;
 
-use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\file\Entity\File;
 use Drupal\node\Entity\Node;
 
 /**
- * Class BatchService.
+ * Class for batch service.
  */
 class BatchService implements BatchServiceInterface {
 
@@ -20,17 +14,17 @@ class BatchService implements BatchServiceInterface {
    * Batch delete process callback.
    *
    * @param int $batchId
-   *   Id of the batch
-   * @param $batchTotal
-   *   Total number of batch operations
+   *   Id of the batch.
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function deleteBookCovers($batchId, $batchTotal, $nids, &$context) {
+  public function deleteBookCovers(int $batchId, int $batchTotal, array $nids, object &$context): void {
     if (!isset($context['sandbox']['progress'])) {
       $context['sandbox']['progress'] = 0;
       $context['sandbox']['current_node'] = 0;
@@ -69,17 +63,17 @@ class BatchService implements BatchServiceInterface {
    * Batch fetch process callback.
    *
    * @param int $batchId
-   *   Id of the batch
-   * @param $batchTotal
-   *   Total number of batch operations
+   *   Id of the batch.
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function fetchBookCovers($batchId, $batchTotal, $nids, &$context) {
+  public function fetchBookCovers(int $batchId, int $batchTotal, array $nids, object &$context): void {
     if (!isset($context['sandbox']['progress'])) {
       $context['sandbox']['progress'] = 0;
       $context['sandbox']['current_node'] = 0;
@@ -115,17 +109,17 @@ class BatchService implements BatchServiceInterface {
    * Replace process callback.
    *
    * @param int $batchId
-   *   Id of the batch
-   * @param $batchTotal
-   *   Total number of batch operations
+   *   Id of the batch.
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function replaceBookCovers($batchId, $batchTotal, $nids, &$context) {
+  public function replaceBookCovers(int $batchId, int $batchTotal, array $nids, object &$context): void {
     if (!isset($context['sandbox']['progress'])) {
       $context['sandbox']['progress'] = 0;
       $context['sandbox']['current_node'] = 0;
@@ -166,18 +160,17 @@ class BatchService implements BatchServiceInterface {
    * Fix missing covers references callback.
    *
    * @param int $batchId
-   *   Id of the batch
-   * @param $batchTotal
-   *   Total number of batch operations
+   *   Id of the batch.
+   * @param int $batchTotal
+   *   Total number of batch operations.
    * @param array $nids
-   *   The nids to process
+   *   The nids to process.
    * @param object $context
-   *   Context for operations
+   *   Context for operations.
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function missingCoverReferences($batchId, $batchTotal, $nids, &$context)
-  {
+  public function missingCoverReferences(int $batchId, int $batchTotal, array $nids, object &$context): void {
     $context['message'] = t('Processing batch @batchId of @batchTotal', [
       '@batchId' => $batchId,
       '@batchTotal' => $batchTotal,
@@ -210,7 +203,7 @@ class BatchService implements BatchServiceInterface {
    * @param array $operations
    *   Array of operations.
    */
-  public function batchFinished($success, array $results, array $operations) {
+  public function batchFinished(bool $success, array $results, array $operations): void {
     $messenger = \Drupal::messenger();
     if ($success) {
       $messenger->addMessage(t('@count books processed.', ['@count' => count($results)]));
@@ -231,11 +224,13 @@ class BatchService implements BatchServiceInterface {
   }
 
   /**
-   * Clear the cover image field
+   * Clear the cover image field.
    *
    * @param \Drupal\node\Entity\Node $node
+   *   A node entity.
    *
    * @return \Drupal\file\Entity\File|null
+   *   A file entity.
    */
   private static function clearImageField(Node $node): ?File {
     /** @var \Drupal\file\Plugin\Field\FieldType\FileFieldItemList $deletedImageField */
@@ -247,9 +242,10 @@ class BatchService implements BatchServiceInterface {
   }
 
   /**
-   * Set the image file
+   * Set the image file.
    *
    * @param \Drupal\node\Entity\Node $node
+   *   A node entity.
    */
   private static function setImageFile(Node $node): void {
     $isbn = $node->get('field_book_isbn')->getString();
@@ -264,27 +260,31 @@ class BatchService implements BatchServiceInterface {
           'title' => $node->getTitle(),
         ];
         $node->set('field_book_cover_image', $imageField);
-      } else {
-        \Drupal::logger('lit_cover_service')->info('No cover found for ISBN '.$isbn);
+      }
+      else {
+        \Drupal::logger('lit_cover_service')->info('No cover found for ISBN ' . $isbn);
       }
     }
   }
 
   /**
-   * Delete files
+   * Delete files.
    *
    * @param \Drupal\file\Entity\File[] $files
+   *   A file entity.
    */
   private static function deleteFileEntities(array $files): void {
     $files = array_filter($files);
 
     try {
-      /** @var EntityTypeManagerInterface $entityManager */
+      /** @var \Drupal\Core\Entity\EntityTypeManagerInterface $entityManager */
       $entityManager = \Drupal::service('entity.manager');
       $storage = $entityManager->getStorage('file');
       $storage->delete($files);
-    } catch (\Exception $e) {
+    }
+    catch (\Exception $e) {
       \Drupal::logger('lit_cover_service')->error($e->getMessage());
     }
   }
+
 }

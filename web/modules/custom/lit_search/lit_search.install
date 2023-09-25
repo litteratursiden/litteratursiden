@@ -1,11 +1,12 @@
 <?php
+
 /**
  * @file
  * Handle module updates.
  */
 
 /**
- *
+ * Install elastic search connector.
  */
 function lit_search_update_8001() {
   \Drupal::service('module_installer')->install(['elasticsearch_connector']);

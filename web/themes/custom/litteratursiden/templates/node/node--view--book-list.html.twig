@@ -90,7 +90,7 @@ view_mode ? view_mode|clean_class,
       <h2{{ title_attributes }}>
         <a href="{{ url }}" rel="bookmark">{{ label }}</a>
       </h2>
-      {% spaceless %}
+      {% apply spaceless %}
         <div class="author">
           {% if content.field_book_reference_author %}{{ 'Of'|t }}
             {{ content.field_book_reference_author|render|striptags|raw }}
@@ -98,7 +98,7 @@ view_mode ? view_mode|clean_class,
             {{ content.field_book_author|render|striptags|raw }}
           {% endif %}
         </div>
-      {% endspaceless %}
+      {% endapply %}
     {% endif %}
     {{ title_suffix }}
   </div>
@@ -107,7 +107,7 @@ view_mode ? view_mode|clean_class,
     <h2{{ title_attributes }}>
       {{ label }}
     </h2>
-    {% spaceless %}
+    {% apply spaceless %}
       <div class="hover-author">
         {% if content.field_book_reference_author %}{{ 'Of'|t }}
           {{ content.field_book_reference_author|render|striptags|raw }}
@@ -115,7 +115,7 @@ view_mode ? view_mode|clean_class,
           {{ content.field_book_author|render|striptags|raw }}
         {% endif %}
       </div>
-    {% endspaceless %}
+    {% endapply %}
     <div class="description">
       {% set text = content.field_book_body|render|striptags|raw|trim %}
       {{ (text|length > 200 ? text|slice(0, 201)|split(' ')|slice(0, -1)|join(' ') ~ '…' : text)|raw }}

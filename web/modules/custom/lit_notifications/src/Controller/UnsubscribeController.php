@@ -21,9 +21,9 @@ class UnsubscribeController extends ControllerBase {
   /**
    * Generates has for unsubscribing user.
    *
-   * @param UserInterface $user
+   * @param \Drupal\user\UserInterface $user
    *   User who should be unsubscribed.
-   * @param NodeInterface $node
+   * @param \Drupal\node\NodeInterface $node
    *   Content from which user should be unsubscribed.
    *
    * @return string
@@ -47,10 +47,10 @@ class UnsubscribeController extends ControllerBase {
    * @param string $hash
    *   Validating hash.
    *
-   * @return AccessResult
+   * @return \Drupal\Core\Access\AccessResult
    *   Whether user has access.
    */
-  public function unsubscribeAccess($user, $node, $hash) {
+  public function unsubscribeAccess($user, $node, $hash): AccessResult {
     $user = User::load($user);
     $node = Node::load($node);
 
@@ -65,13 +65,15 @@ class UnsubscribeController extends ControllerBase {
   /**
    * Notifications unsubscribe callback.
    *
-   * @param UserInterface $user
+   * @param \Drupal\user\UserInterface $user
    *   User who should be unsubscribed.
-   * @param NodeInterface $node
+   * @param \Drupal\node\NodeInterface $node
    *   Content from which user should be unsubscribed.
    *
-   * @return RedirectResponse
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse
    *   Redirect response to the node page.
+   *
+   * @throws \Drupal\Core\Entity\EntityMalformedException
    */
   public function unsubscribe(UserInterface $user, NodeInterface $node) {
     $flag = Flag::load('notifications');

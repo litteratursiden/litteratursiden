@@ -12,7 +12,7 @@
  * - flag_counter: The amount of flags made for the flaggable entity.
  */
 #}
-{% spaceless %}
+{% apply spaceless %}
 {# Attach the flag CSS library.#}
 {{ attach_library('flag/flag.link') }}
 
@@ -40,4 +40,4 @@ action_class
         <span class="flag-counter">({{ flag_counter }})</span>
     {% endif %}
 </div>
-{% endspaceless %}
+{% endapply %}

@@ -5,10 +5,10 @@
  * Contains lit_views.module.
  */
 
-use Drupal\views\ViewExecutable;
+use Drupal\Core\Database\Query\AlterableInterface;
 use Drupal\node\Entity\Node;
 use Drupal\views\Plugin\views\cache\CachePluginBase;
-use Drupal\Core\Database\Query\AlterableInterface;
+use Drupal\views\ViewExecutable;
 
 /**
  * Implements hook_views_data().
@@ -69,13 +69,14 @@ function lit_views_query_views_related_content_block_alter(AlterableInterface $q
   $field1_conditions = &$field1->conditions();
   $field1_conditions['#conjunction'] = 'OR';
 
-  $field2 = $field1_conditions[2]; unset($field1_conditions[2]);
+  $field2 = $field1_conditions[2];
+  unset($field1_conditions[2]);
 
   $new_contextual_conditions = [];
   $new_contextual_conditions['#conjunction'] = 'AND';
   $new_contextual_conditions[0] = [
     'field' => $field1,
-    'value' => null,
+    'value' => NULL,
     'operator' => '=',
   ];
   $new_contextual_conditions[1] = $field2;
@@ -103,12 +104,12 @@ function lit_views_views_pre_render(ViewExecutable $view) {
     $node = $view->result[0]->_entity;
 
     if ($node) {
-        $debates_field = $node->get('field_book_debates')->first();
-        $debates_enabled = $debates_field->get('status')->getValue();
+      $debates_field = $node->get('field_book_debates')->first();
+      $debates_enabled = $debates_field->get('status')->getValue();
 
-        if ($debates_enabled != 2) {
-            $view->result = [];
-        }
+      if ($debates_enabled != 2) {
+        $view->result = [];
+      }
     }
   }
 }
@@ -117,15 +118,15 @@ function lit_views_views_pre_render(ViewExecutable $view) {
  * Implement template_preprocess_block()
  */
 function lit_views_preprocess_block(&$variables) {
-    if (
+  if (
         $variables['base_plugin_id'] == 'views_block' &&
         ($variables['plugin_id'] == 'views_block:front_article-block_front_article')
     ) {
-        $view = $variables['content']['#view'];
+    $view = $variables['content']['#view'];
 
-        if (isset($view->result[0])) {
-            $node = $view->result[0]->_entity;
-            $variables['label'] = $node->type->entity->label();
-        }
+    if (isset($view->result[0])) {
+      $node = $view->result[0]->_entity;
+      $variables['label'] = $node->type->entity->label();
     }
+  }
 }

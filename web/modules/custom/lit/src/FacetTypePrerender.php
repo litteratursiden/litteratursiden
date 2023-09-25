@@ -4,21 +4,27 @@ namespace Drupal\lit;
 
 use Drupal\Core\Security\TrustedCallbackInterface;
 
+/**
+ * A prerender for facet types.
+ */
 class FacetTypePrerender implements TrustedCallbackInterface {
 
+  /**
+   * A list of trusted callbacks.
+   */
   public static function trustedCallbacks() {
     return ['preRender'];
   }
 
   /**
-   * #pre_render callback: Sets color preset logo.
+   * Pre_render callback: Sets color preset logo.
    */
   public static function preRender($build) {
     if (!isset($build['content'])) {
       return $build;
     }
 
-    $items = $build['content'][0]['#items'];
+    $items = $build['content'][0]['#items'] ?? [];
 
     $sorted = [];
     foreach ($items as $i => $item) {
@@ -71,4 +77,5 @@ class FacetTypePrerender implements TrustedCallbackInterface {
 
     return $build;
   }
+
 }

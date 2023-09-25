@@ -1,6 +1,11 @@
 <?php
 
-use \Drupal\taxonomy\Entity\Term;
+/**
+ * @file
+ * Hooks related to installing lit_slider module.
+ */
+
+use Drupal\taxonomy\Entity\Term;
 
 /**
  * @file
@@ -35,11 +40,11 @@ function lit_slider_requirements($phase) {
 }
 
 /**
- * Add Children's books taxonomy term
+ * Add Children's books taxonomy term.
  */
 function lit_slider_update_8100() {
   $term = Term::create([
-    'name' => t('Children\'s Books'),
+    'name' => t("Children's Books"),
     'vid' => 'literature_type',
   ])->save();
 }

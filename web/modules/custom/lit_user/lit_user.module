@@ -7,13 +7,15 @@
 
 require_once __DIR__ . '/includes/lit_user.form.inc';
 
-use Drupal\Core\Routing\RouteMatchInterface;
-use Drupal\user\UserInterface;
+use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Ajax\RedirectCommand;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Ajax\AjaxResponse;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 use Drupal\lit\Ajax\ShowErrorsCommand;
 use Drupal\user\Entity\Role;
+use Drupal\user\UserInterface;
 
 /**
  * Implements hook_help().
@@ -139,7 +141,7 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
   }
 
   if ($display->getComponent('edit_profile_link')) {
-    $url = \Drupal\Core\Url::fromRoute('entity.user.edit_form', [
+    $url = Url::fromRoute('entity.user.edit_form', [
       'user' => \Drupal::currentUser()
         ->id(),
     ]);
@@ -149,12 +151,12 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
       '#title' => t('Edit profile'),
       '#url' => $url,
       '#access' => \Drupal::currentUser()
-          ->id() == $entity->id() && $url->access(\Drupal::currentUser()),
+        ->id() == $entity->id() && $url->access(\Drupal::currentUser()),
     ];
   }
 
   if ($display->getComponent('contact_link')) {
-    $url = \Drupal\Core\Url::fromRoute('entity.user.contact_form', ['user' => $entity->id()]);
+    $url = Url::fromRoute('entity.user.contact_form', ['user' => $entity->id()]);
 
     $build['contact_link'] = [
       '#type' => 'link',
@@ -170,7 +172,7 @@ function lit_user_user_view(array &$build, UserInterface $entity, EntityViewDisp
  */
 function lit_user_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['actions']['submit']['#ajax'] = [
-    'callback' => 'lit_user_login_form_ajax_submit'
+    'callback' => 'lit_user_login_form_ajax_submit',
   ];
 }
 
@@ -188,7 +190,7 @@ function lit_user_login_form_ajax_submit(array &$form, FormStateInterface $form_
   }
   else {
     $path = \Drupal::request()->getPathInfo();
-    $ajax_response->addCommand(new \Drupal\Core\Ajax\RedirectCommand($path));
+    $ajax_response->addCommand(new RedirectCommand($path));
   }
 
   return $ajax_response;
@@ -233,9 +235,9 @@ function lit_user_form_user_register_form_alter(&$form, FormStateInterface $form
     '#weight' => -9,
     '#attributes' => [
       'class' => [
-        'user-consent'
-      ]
-    ]
+        'user-consent',
+      ],
+    ],
   ];
 
   $text = \Drupal::state()->get('lit_user.consent_text');

@@ -2,10 +2,11 @@
 
 namespace Drupal\lit_open_platform\Transformers;
 
+use Drupal\Core\File\FileSystemInterface;
 use Drupal\taxonomy\Entity\Term;
 
 /**
- * Class WorkTransformer.
+ * Class Transformer for work.
  */
 class WorkTransformer extends BaseTransformer {
 
@@ -25,9 +26,9 @@ class WorkTransformer extends BaseTransformer {
   private const VOCABULARY_GENERAL_TYPES = 'general_tags';
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
-  public static function transform($item): array {
+  public static function transform(array $item): array {
     $pid = $item['pid'][0] ?? NULL;
     $faustnummer = ltrim(stristr($pid, ":"), ':');
 
@@ -85,9 +86,15 @@ class WorkTransformer extends BaseTransformer {
   }
 
   /**
+   * Transform a collection and group it.
+   *
    * @param string $field
+   *   The field name to group by.
    * @param array $items
+   *   A list of items to transform.
+   *
    * @return array
+   *   The transformed items grouped by field name.
    */
   public static function transformCollectionAndGroupBy(string $field, array $items): array {
     $result = [];
@@ -104,10 +111,18 @@ class WorkTransformer extends BaseTransformer {
    * Transform url to the image field.
    *
    * @param string $url
+   *   The url to transform.
    * @param string $dir
-   * @param string|NULL $alt
-   * @param string|NULL $title
+   *   The directory.
+   * @param string|null $alt
+   *   The alt text for the field.
+   * @param string|null $title
+   *   The image title.
+   *
    * @return array|null
+   *   The image to save.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   private static function transformImage(string $url, string $dir, string $alt = NULL, string $title = NULL): ?array {
     $url = strpos($url, '://') === FALSE ? 'http:' . $url : $url;
@@ -115,12 +130,12 @@ class WorkTransformer extends BaseTransformer {
     // Get image content from the url.
     $data = file_get_contents($url);
 
-    if ($data && \Drupal::service('file_system')->prepareDirectory($dir, \Drupal\Core\File\FileSystemInterface::CREATE_DIRECTORY)) {
+    if ($data && \Drupal::service('file_system')->prepareDirectory($dir, FileSystemInterface::CREATE_DIRECTORY)) {
       // Generate unique filename based on the url.
       $filename = md5($url) . '.jpeg';
 
       // Save image.
-      $file = file_save_data($data, "$dir/$filename");
+      $file = \Drupal::service('file.repository')->writeData($data, "$dir/$filename");
 
       return [
         'target_id' => $file->id(),
@@ -135,9 +150,15 @@ class WorkTransformer extends BaseTransformer {
   /**
    * Transform string to the taxonomy term reference field.
    *
-   * @param array $name
+   * @param array $names
+   *   A list of term names.
    * @param string $vocabulary
+   *   A vocabulary id.
+   *
    * @return array
+   *   A list of term ids.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   private static function transformTerm(array $names, string $vocabulary): array {
     $result = [];
@@ -145,6 +166,7 @@ class WorkTransformer extends BaseTransformer {
     foreach ($names as $name) {
       // Check if the taxonomy term exists.
       $tid = \Drupal::entityQuery('taxonomy_term')
+        ->accessCheck(FALSE)
         ->condition('vid', $vocabulary)
         ->condition('name', $name)
         ->execute();
@@ -170,9 +192,13 @@ class WorkTransformer extends BaseTransformer {
   /**
    * Transform string to the node reference field.
    *
-   * @param array $names
+   * @param array $titles
+   *   A list of node titles.
    * @param string $type
+   *   The node type.
+   *
    * @return array
+   *   A list of nodes.
    */
   private static function transformNode(array $titles, string $type): array {
     $result = [];
@@ -180,6 +206,7 @@ class WorkTransformer extends BaseTransformer {
     foreach ($titles as $title) {
       // Check if the node exists.
       $nid = \Drupal::entityQuery('node')
+        ->accessCheck(FALSE)
         ->condition('type', $type)
         ->condition('title', $title)
         ->execute();
@@ -193,4 +220,3 @@ class WorkTransformer extends BaseTransformer {
   }
 
 }
-

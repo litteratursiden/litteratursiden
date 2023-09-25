@@ -1,64 +1,53 @@
-uuid: 0e5d4f73-032d-4265-915f-988447acc7e6
-langcode: en
+uuid: 8027b533-16bb-443e-8146-4db9939a0e39
+langcode: da
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Headers
-          items:
-            - Format
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Underline
-            - Strike
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-            - video_embed
-        -
-          name: Tools
-          items:
-            - PasteText
-            - Paste
-            - PasteFromWord
-            - Source
+    items:
+      - heading
+      - codeBlock
+      - '|'
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalInsertImage
+      - '|'
+      - sourceEditing
   plugins:
-    video_embed:
-      defaults:
-        children:
-          autoplay: true
-          responsive: true
-          width: '854'
-          height: '480'
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_imageResize:
+      allow_resize: true
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

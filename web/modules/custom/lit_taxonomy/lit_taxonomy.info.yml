@@ -1,9 +1,6 @@
-name: Litteratursiden Taxonomy
+name: Litteratursiden taxonomy
 type: module
-description: Covers taxonomy functionality.
+description: Deprecated module
 core: 8.x
 package: Litteratursiden
-
-dependencies:
-  - drupal:taxonomy
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
