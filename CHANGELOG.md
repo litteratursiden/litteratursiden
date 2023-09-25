@@ -1,6 +1,8 @@
 # Changelog for Litteratursiden
 
-## In feature/d-10-ready
+## [develop]
+
+## [4.0.0] 2023-09-25
 
 * Upgrade contrib modules to be drupal-10 compatible
 * Upgrade custom modules to be drupal-10 compatible
