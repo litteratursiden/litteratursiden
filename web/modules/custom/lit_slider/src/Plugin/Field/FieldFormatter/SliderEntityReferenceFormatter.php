@@ -20,7 +20,7 @@ use Drupal\Core\Field\Plugin\Field\FieldFormatter\EntityReferenceEntityFormatter
 class SliderEntityReferenceFormatter extends EntityReferenceEntityFormatter {
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public function viewElements(FieldItemListInterface $items, $langcode) {
     $elements = parent::viewElements($items, $langcode);

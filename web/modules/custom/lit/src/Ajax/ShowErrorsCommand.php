@@ -16,14 +16,14 @@ class ShowErrorsCommand implements CommandInterface, CommandWithAttachedAssetsIn
    *
    * @var string
    */
-  protected $selector;
+  protected string $selector;
 
   /**
    * Key/value pairs of input names and messages.
    *
    * @var array
    */
-  protected $errors;
+  protected array $errors;
 
   /**
    * Constructs an ShowErrorsCommand object.
@@ -46,7 +46,7 @@ class ShowErrorsCommand implements CommandInterface, CommandWithAttachedAssetsIn
   /**
    * {@inheritdoc}
    */
-  public function render() {
+  public function render(): array {
     return [
       'command' => 'showFormErrors',
       'selector' => $this->selector,
@@ -57,10 +57,8 @@ class ShowErrorsCommand implements CommandInterface, CommandWithAttachedAssetsIn
   /**
    * {@inheritdoc}
    */
-  public function getAttachedAssets() {
-    $attach_assets = new AttachedAssets();
-    $attach_assets->setLibraries(['lit/jquery.validate.command']);
-    return $attach_assets;
+  public function getAttachedAssets(): ?AttachedAssets {
+    return new AttachedAssets();
   }
 
 }

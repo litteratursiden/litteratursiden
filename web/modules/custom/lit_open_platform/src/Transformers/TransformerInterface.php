@@ -3,19 +3,30 @@
 namespace Drupal\lit_open_platform\Transformers;
 
 /**
- * Interface TransformerInterface.
+ * Interface for transformer.
  */
-interface TransformerInterface
-{
-    /**
-     * @param $item
-     * @return array
-     */
-    public static function transform($item): array;
+interface TransformerInterface {
 
-    /**
-     * @param array $items
-     * @return array
-     */
-    public static function transformCollection(array $items): array;
+  /**
+   * Transform an item.
+   *
+   * @param array $item
+   *   The item to transform.
+   *
+   * @return array
+   *   A list.
+   */
+  public static function transform(array $item): array;
+
+  /**
+   * Transform a collection.
+   *
+   * @param array $items
+   *   A list of items to transform.
+   *
+   * @return array
+   *   The transformed items.
+   */
+  public static function transformCollection(array $items): array;
+
 }

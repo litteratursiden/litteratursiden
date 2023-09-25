@@ -4,9 +4,9 @@ namespace Drupal\Tests\lit_open_platform\Unit;
 
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\KernelTests\KernelTestBase;
 use Drupal\lit_open_platform\Form\LitNodeForm;
 use Drupal\node\Entity\Node;
-use Drupal\KernelTests\KernelTestBase;
 use Drupal\node\Entity\NodeType;
 
 /**
@@ -19,6 +19,8 @@ use Drupal\node\Entity\NodeType;
 class LitNodeFormTest extends KernelTestBase {
 
   /**
+   * A book PID.
+   *
    * @const string
    */
   public const PID = '810015-katalog:005177353';
@@ -33,7 +35,7 @@ class LitNodeFormTest extends KernelTestBase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->installEntitySchema('node');
@@ -100,7 +102,7 @@ class LitNodeFormTest extends KernelTestBase {
       ->disableOriginalConstructor()
       ->getMock();
 
-    // Get a reflected, accessible version of the protected ::getBookByPid() method.
+    // Get a reflected, accessible version of the protected ::getBookByPid()
     $method = $this->getAccessibleMethod(LitNodeForm::class, 'getBookByPid');
     $nid = $method->invokeArgs($form, [self::PID]);
 

@@ -7,11 +7,11 @@
  * Place your custom PHP code in this file.
  */
 
-use Drupal\user\Entity\User;
+use Drupal\Core\Routing\RouteObjectInterface;
+use Drupal\Core\Url;
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
-use Symfony\Cmf\Component\Routing\RouteObjectInterface;
-use Drupal\Core\Url;
+use Drupal\user\Entity\User;
 
 /**
  * Implements hook_preprocess_html().
@@ -63,14 +63,14 @@ function litteratursiden_preprocess_page(&$variables) {
   $variables['user_name'] = FALSE;
   $variables['user_picture'] = FALSE;
   if ($user->hasField('field_user_full_name') && $user->get('field_user_full_name')
-      ->isEmpty() === FALSE) {
+    ->isEmpty() === FALSE) {
     $variables['user_name'] = $user->get('field_user_full_name')->value;
   }
   else {
     $variables['user_name'] = $user->getDisplayName();
   }
   if ($user->hasField('field_user_picture') && $user->get('field_user_picture')
-      ->isEmpty() === FALSE) {
+    ->isEmpty() === FALSE) {
     $picture = $user->get('field_user_picture')->entity;
 
     $image_style = Drupal::entityTypeManager()->getStorage('image_style')->load('avatar');
@@ -85,16 +85,16 @@ function litteratursiden_preprocess_page(&$variables) {
       $variables['user_icon'] = $image_with_style;
     }
   }
-  /* @var \Drupal\Core\Config\Config $config */
+  /** @var \Drupal\Core\Config\Config $config */
   $config = Drupal::service('config.factory')
     ->getEditable('litteratursiden.settings');
 
   $data = $config->getRawData();
   if ($data['background_path']) {
-    $variables['header_bg_image'] = file_create_url($data['background_path']);
+    $variables['header_bg_image'] = \Drupal::service('file_url_generator')->generateAbsoluteString($data['background_path']);
 
     // Fix that the URL handles http vs. https.
-    $variables['header_bg_image'] = file_url_transform_relative($variables['header_bg_image']);
+    $variables['header_bg_image'] = \Drupal::service('file_url_generator')->transformRelative($variables['header_bg_image']);
   }
 }
 
@@ -119,12 +119,12 @@ function litteratursiden_preprocess_node(&$variables) {
         $suffix = 'image';
         break;
 
-        case 'article':
+      case 'article':
       case 'blog':
         $suffix = 'cover_image';
         break;
 
-        case 'interview':
+      case 'interview':
         $suffix = 'images';
         break;
 
@@ -147,7 +147,7 @@ function litteratursiden_preprocess_node(&$variables) {
             ->buildUrl($spotbox_image_original_uri);
 
           // Ensure URL is relative to make https work.
-          $variables['spotbox_image'] = file_url_transform_relative($variables['spotbox_image']);
+          $variables['spotbox_image'] = \Drupal::service('file_url_generator')->transformRelative($variables['spotbox_image']);
         }
       }
     }
@@ -299,8 +299,8 @@ function litteratursiden_theme_suggestions_block_alter(&$suggestions, $vars, $ho
  */
 function litteratursiden_preprocess_user(&$variables) {
   if (\Drupal::request()
-      ->get(RouteObjectInterface::ROUTE_NAME) == 'entity.user.canonical') {
+    ->get(RouteObjectInterface::ROUTE_NAME) == 'entity.user.canonical') {
     $variables['view_page_path'] = Url::fromUri('base:' . \Drupal::service('path.current')
-          ->getPath())->toString() . '/view-page';
+      ->getPath())->toString() . '/view-page';
   }
 }

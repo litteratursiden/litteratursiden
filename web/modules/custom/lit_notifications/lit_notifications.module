@@ -6,22 +6,22 @@
  */
 
 use Drupal\comment\CommentInterface;
-use Drupal\Core\Session\AccountInterface;
-use Drupal\Core\Form\FormStateInterface;
 use Drupal\Component\Render\PlainTextOutput;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\BubbleableMetadata;
 use Drupal\Core\Render\Markup;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+use Drupal\lit_notifications\Controller\UnsubscribeController;
 use Drupal\node\NodeInterface;
 use Drupal\user\UserInterface;
-use Drupal\lit_notifications\Controller\UnsubscribeController;
-use Drupal\Core\Url;
-use Drupal\Core\Render\BubbleableMetadata;
 
 /**
  * Implements hook_comment_insert().
  */
 function lit_notifications_comment_insert(CommentInterface $comment) {
   if ($comment->isPublished()) {
-    _lit_notification_send_comment_insert_notification($comment);
+    lit_notifications_send_comment_insert_notification($comment);
   }
 }
 
@@ -29,15 +29,15 @@ function lit_notifications_comment_insert(CommentInterface $comment) {
  * Implements hook_comment_update().
  */
 function lit_notifications_comment_update(CommentInterface $comment) {
-  /** @var CommentInterface $comment_original */
+  /** @var \Drupal\comment\CommentInterface $comment_original */
   $comment_original = $comment->original;
   if (!$comment_original->isPublished() && $comment->isPublished()) {
-    _lit_notification_send_comment_insert_notification($comment);
+    lit_notifications_send_comment_insert_notification($comment);
   }
   elseif ($comment->getOwnerId() != Drupal::currentUser()->id()) {
     $entity = $comment->get('entity_id')->entity;
     $token_data = ['comment' => $comment, 'node' => $entity];
-    _lit_notifications_comment_notify('comment_update', $comment->getOwner(), $token_data);
+    lit_notifications_comment_notify('comment_update', $comment->getOwner(), $token_data);
   }
 }
 
@@ -48,7 +48,7 @@ function lit_notifications_comment_delete(CommentInterface $comment) {
   if ($comment->getOwnerId() != Drupal::currentUser()->id()) {
     $entity = $comment->get('entity_id')->entity;
     $token_data = ['comment' => $comment, 'node' => $entity];
-    _lit_notifications_comment_notify('comment_delete', $comment->getOwner(), $token_data);
+    lit_notifications_comment_notify('comment_delete', $comment->getOwner(), $token_data);
   }
 }
 
@@ -127,7 +127,7 @@ function lit_notifications_form_user_admin_settings_alter(&$form, FormStateInter
 /**
  * Submit handler for form 'user_admin_settings'.
  */
-function lit_notifications_user_admin_settings_submit($form, FormStateInterface $form_state) {
+function lit_notifications_user_admin_settings_submit($form, FormStateInterface $form_state): void {
   \Drupal::configFactory()->getEditable('lit_notifications.mail')
     ->set('comment_insert.subject', $form_state->getValue('comment_insert_subject'))
     ->set('comment_insert.body', $form_state->getValue('comment_insert_body'))
@@ -166,7 +166,7 @@ function lit_notifications_mail($key, &$message, $params) {
 /**
  * Implements hook_mail_alter().
  */
-function lit_notifications_mail_alter(&$message) {
+function lit_notifications_mail_alter(&$message): void {
   if (!in_array($message['module'], ['lit_notifications', 'user'])) {
     return;
   }
@@ -184,13 +184,13 @@ function lit_notifications_mail_alter(&$message) {
  *
  * @param string $key
  *   Email key.
- * @param AccountInterface $account
+ * @param \Drupal\Core\Session\AccountInterface $account
  *   Account to whom email should be sent.
  * @param array $token_data
  *   Data for token replacements. For instance node or comment.
  *   Each key is the entity type name and value is an entity.
  */
-function _lit_notifications_comment_notify($key, AccountInterface $account, $token_data = []) {
+function lit_notifications_comment_notify($key, AccountInterface $account, $token_data = []): void {
   /** @var \Drupal\Core\Mail\MailManager $mail */
   $mail = \Drupal::service('plugin.manager.mail');
 
@@ -201,10 +201,10 @@ function _lit_notifications_comment_notify($key, AccountInterface $account, $tok
 /**
  * Sends email notification about creating a new comment.
  *
- * @param CommentInterface $comment
+ * @param \Drupal\comment\CommentInterface $comment
  *   Comment entity which was created.
  */
-function _lit_notification_send_comment_insert_notification(CommentInterface $comment) {
+function lit_notifications_send_comment_insert_notification(CommentInterface $comment): void {
   $entity = $comment->get('entity_id')->entity;
 
   if ($entity) {
@@ -221,12 +221,12 @@ function _lit_notification_send_comment_insert_notification(CommentInterface $co
       $comment_parent = $comment->getParentComment();
       unset($users[$comment_parent->getOwnerId()]);
 
-      _lit_notifications_comment_notify('comment_reply',
+      lit_notifications_comment_notify('comment_reply',
         $comment_parent->getOwner(), $token_data);
     }
 
     foreach ($users as $user) {
-      _lit_notifications_comment_notify('comment_insert', $user, $token_data);
+      lit_notifications_comment_notify('comment_insert', $user, $token_data);
     }
   }
 }
@@ -234,7 +234,7 @@ function _lit_notification_send_comment_insert_notification(CommentInterface $co
 /**
  * Implements hook_tokens().
  */
-function lit_notifications_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+function lit_notifications_tokens($type, $tokens, array $data, array $options, BubbleableMetadata $bubbleable_metadata): array {
   $tokens = [];
 
   if (isset($data['user'], $data['node']) && $data['user'] instanceof UserInterface && $data['node'] instanceof NodeInterface) {

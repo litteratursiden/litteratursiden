@@ -11,14 +11,15 @@ use Drupal\node\Entity\Node;
 use Drupal\node\Entity\NodeType;
 
 /**
- * Class ConfigImportSubscriberTest.
+ * Class ConfigImportSubscriber Test.
  *
  * @coversDefaultClass \Drupal\lit\EventSubscriber\ConfigImportSubscriber
  * @group lit
  */
-class ConfigImportSubscriberTest extends KernelTestBase
-{
+class ConfigImportSubscriberTest extends KernelTestBase {
   /**
+   * An existing node UUID.
+   *
    * @const string
    */
   protected const EXISTING_NODE_UUID = '92723526-4252-4cef-93a6-85c046018f4b';
@@ -45,7 +46,7 @@ class ConfigImportSubscriberTest extends KernelTestBase
    *
    * @var array
    */
-  private $contentTypes = [
+  private array $contentTypes = [
     'author_portrait',
     'book',
     'similar',
@@ -55,7 +56,7 @@ class ConfigImportSubscriberTest extends KernelTestBase
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     parent::setUp();
 
     $this->installEntitySchema('menu_link_content');
@@ -153,7 +154,7 @@ class ConfigImportSubscriberTest extends KernelTestBase
    * @covers ::isContentExists
    */
   public function testIsContentExists() {
-    // Get a reflected, accessible version of the protected ::isContentExists() method.
+    // Get a reflected, accessible version of the protected ::isContentExists()
     $method = $this->getAccessibleMethod(Subscriber::class, 'isContentExists');
 
     $node = Node::create([
@@ -180,7 +181,8 @@ class ConfigImportSubscriberTest extends KernelTestBase
    * @covers ::createDefaultNodes
    */
   public function testCreatingDefaultNodes() {
-    // Get a reflected, accessible version of the protected ::createDefaultNodes() method.
+    // Get a reflected, accessible version of the protected
+    // ::createDefaultNodes() method.
     $method = $this->getAccessibleMethod(Subscriber::class, 'createDefaultNodes');
 
     $subscriber = new Subscriber();
@@ -201,14 +203,15 @@ class ConfigImportSubscriberTest extends KernelTestBase
    * @covers ::getRandomNodeIds
    */
   public function testGetRandomNodeIds() {
-    // Get a reflected, accessible version of the protected ::getRandomNodeIds() method.
+    // Get a reflected, accessible version of the protected
+    // ::getRandomNodeIds() method.
     $method = $this->getAccessibleMethod(Subscriber::class, 'getRandomNodeIds');
 
     $subscriber = new Subscriber();
     $first = $method->invokeArgs($subscriber, ['topic', [], 1]);
     $second = $method->invokeArgs($subscriber, ['topic', [], 1]);
 
-    $this->assertInternalType('array', $first);
+    $this->assertIsResource('array', $first);
     $this->assertCount(1, $first);
     $this->assertNotEquals($first, $second);
   }
@@ -219,7 +222,8 @@ class ConfigImportSubscriberTest extends KernelTestBase
    * @covers ::createDefaultBlocks
    */
   public function testCreatingDefaultBlocks() {
-    // Get a reflected, accessible version of the protected ::createDefaultBlocks() method.
+    // Get a reflected, accessible version of the protected
+    // ::createDefaultBlocks() method.
     $method = $this->getAccessibleMethod(Subscriber::class, 'createDefaultBlocks');
 
     $subscriber = new Subscriber();
@@ -228,6 +232,7 @@ class ConfigImportSubscriberTest extends KernelTestBase
     $count = $entity = \Drupal::entityTypeManager()
       ->getStorage('block_content')
       ->getQuery()
+      ->accessCheck(FALSE)
       ->condition('uuid', [
         Subscriber::BLOCK_TOPIC_MONTH_UUID,
         Subscriber::BLOCK_BOOK_MONTH_UUID,
@@ -259,7 +264,11 @@ class ConfigImportSubscriberTest extends KernelTestBase
    * Create demo topic for the test.
    *
    * @param string $type
+   *   THe content type.
    * @param int $number
+   *   A number.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
    */
   private function createContent(string $type, int $number = 1): void {
     for ($i = 0; $i < $number; $i++) {

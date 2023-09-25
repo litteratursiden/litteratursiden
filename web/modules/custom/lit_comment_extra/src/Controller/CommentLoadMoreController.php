@@ -3,20 +3,24 @@
 namespace Drupal\lit_comment_extra\Controller;
 
 use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Access\AccessResultAllowed;
+use Drupal\Core\Access\AccessResultForbidden;
+use Drupal\Core\Access\AccessResultNeutral;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\AppendCommand;
 use Drupal\Core\Ajax\ReplaceCommand;
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Url;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Drupal\Core\Entity\EntityInterface;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Defines a controller for comments load more formatter.
  */
-class CommentLoadMoreController extends ControllerBase {
+final class CommentLoadMoreController extends ControllerBase {
 
   /**
    * The current user.
@@ -36,7 +40,7 @@ class CommentLoadMoreController extends ControllerBase {
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container) {
-    return new static($container->get('current_user'));
+    return new CommentLoadMoreController($container->get('current_user'));
   }
 
   /**
@@ -46,11 +50,16 @@ class CommentLoadMoreController extends ControllerBase {
    *   Entity type to which comments are belong to.
    * @param int $entity
    *   ID of the entity to which comments are belong to.
+   * @param string $field_name
+   *   The name of the field.
    *
-   * @return \Drupal\Core\Access\AccessResult
+   * @return \Drupal\Core\Access\AccessResult|\Drupal\Core\Access\AccessResultAllowed|\Drupal\Core\Access\AccessResultForbidden|\Drupal\Core\Access\AccessResultNeutral
    *   Whether user has access.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
-  public function ajaxLoadMoreAccess($entity_type, $entity, $field_name) {
+  public function ajaxLoadMoreAccess(string $entity_type, int $entity, $field_name): AccessResultForbidden|AccessResultNeutral|AccessResult|AccessResultAllowed {
     $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
     if (!$storage) {
       return AccessResult::forbidden('The entity type is invalid.');
@@ -66,7 +75,7 @@ class CommentLoadMoreController extends ControllerBase {
    *
    * @param string $js
    *   Defines whether the request is 'ajax' or 'nojs'.
-   * @param EntityInterface $entity
+   * @param \Drupal\Core\Entity\EntityInterface $entity
    *   The entity whose comment(s) needs rendering.
    * @param string $field_name
    *   The field_name whose comment(s) needs rendering.
@@ -75,17 +84,17 @@ class CommentLoadMoreController extends ControllerBase {
    * @param int $last_comment_id
    *   Comment ID after which other comments should be loaded.
    *
-   * @return \Symfony\Component\HttpFoundation\Response
-   *   Ajax response.
+   * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Drupal\Core\Ajax\AjaxResponse|\Symfony\Component\HttpFoundation\Response
+   *   An ajax response.
    */
-  public function ajaxLoadMore($js, EntityInterface $entity, $field_name, $view_mode, $last_comment_id) {
+  public function ajaxLoadMore($js, EntityInterface $entity, $field_name, $view_mode, $last_comment_id): RedirectResponse|AjaxResponse|Response {
     if ($js != 'ajax') {
       // Redirect user to home page in case if it's not an ajax request.
       return new RedirectResponse('/');
     }
 
     $ajax_response = new AjaxResponse();
-    $comments = static::buildComments($entity, $field_name, $view_mode, $last_comment_id);
+    $comments = CommentLoadMoreController::buildComments($entity, $field_name, $view_mode, $last_comment_id);
 
     $load_more = FALSE;
     if (isset($comments['load_more'])) {
@@ -105,7 +114,7 @@ class CommentLoadMoreController extends ControllerBase {
   /**
    * Builds renderable array for comments with "load more" button.
    *
-   * @param EntityInterface $entity
+   * @param \Drupal\Core\Entity\EntityInterface $entity
    *   The entity whose comment(s) needs rendering.
    * @param string $field_name
    *   The field_name whose comment(s) needs rendering.
@@ -117,7 +126,7 @@ class CommentLoadMoreController extends ControllerBase {
    * @return array
    *   Renderable array ready for displaying.
    */
-  public static function buildComments(EntityInterface $entity, $field_name, $view_mode, $last_comment_id = 0) {
+  public static function buildComments(EntityInterface $entity, string $field_name, string $view_mode, int $last_comment_id = 0): array {
     $build = [];
 
     $comment_field = $entity->get($field_name);

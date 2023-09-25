@@ -15,7 +15,7 @@ function lit_taxonomy_install() {
   Database::getConnection()
     ->update('taxonomy_term_field_data')
     ->fields([
-      'status' => TAXONOMY_TERM_PUBLISHED,
+      'status' => LIT_TAXONOMY_TERM_PUBLISHED,
     ])
     ->isNull('status')
     ->execute();
@@ -28,7 +28,7 @@ function lit_taxonomy_update_8001() {
   Database::getConnection()
     ->update('taxonomy_term_field_data')
     ->fields([
-      'status' => TAXONOMY_TERM_PUBLISHED,
+      'status' => LIT_TAXONOMY_TERM_PUBLISHED,
     ])
     ->condition('status', NULL)
     ->execute();

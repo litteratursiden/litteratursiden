@@ -17,7 +17,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   title = @Translation("Book author node ID from URL")
  * )
  */
-class BookAuthor extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
+final class BookAuthor extends ArgumentDefaultPluginBase implements CacheableDependencyInterface {
 
   /**
    * The route match.
@@ -101,6 +101,7 @@ class BookAuthor extends ArgumentDefaultPluginBase implements CacheableDependenc
         $author_ids = [];
         if ($node_ids) {
           $author_ids = \Drupal::entityQuery('node')
+            ->accessCheck()
             ->condition('type', 'author_portrait')
             ->condition('nid', $node_ids, 'IN')
             ->range(0, 1)

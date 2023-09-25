@@ -11,7 +11,7 @@ use Drupal\Core\Url;
 class AuthorsController extends ControllerBase {
 
   /**
-   * Redirect path when visiting /authors
+   * Redirect path when visiting /authors.
    *
    * @return \Symfony\Component\HttpFoundation\RedirectResponse
    *   A redirect response.
@@ -21,4 +21,5 @@ class AuthorsController extends ControllerBase {
     $parameters = Url::fromUserInput('/forfattere')->getRouteParameters();
     return $this->redirect($path, $parameters);
   }
+
 }

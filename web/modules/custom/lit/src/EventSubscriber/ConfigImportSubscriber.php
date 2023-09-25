@@ -17,61 +17,85 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class ConfigImportSubscriber implements EventSubscriberInterface {
 
   /**
+   * About page UUID.
+   *
    * @const string
    */
   public const ABOUT_PAGE_UUID = '92723526-4252-4cef-93a6-85c046011f4b';
 
   /**
+   * About page menu link UUID.
+   *
    * @const string
    */
   public const ABOUT_PAGE_MENU_LINK_UUID = 'e61539cf-580f-4b8e-97ec-2cc58cf96ea8';
 
   /**
+   * Block topic month UUID.
+   *
    * @const string
    */
   public const BLOCK_TOPIC_MONTH_UUID = '00a7bc0e-de09-4b6c-9a53-92995c82548b';
 
   /**
+   * Block book month UUID.
+   *
    * @const string
    */
   public const BLOCK_BOOK_MONTH_UUID = '79085ea6-03cb-4337-90fe-ad2e82c67386';
 
   /**
+   * Block prices UUID.
+   *
    * @const string
    */
   public const BLOCK_PRICES_UUID = '798cc17d-0649-4bef-b979-f5b4b1fd7907';
 
   /**
+   * Block author recommended UUID.
+   *
    * @const string
    */
   public const BLOCK_AUTHOR_RECOMMEND_UUID = '839e05fe-ca6f-440b-903f-98ce057a64f7';
 
   /**
+   * Block editors recommended UUID.
+   *
    * @const string
    */
   public const BLOCK_EDITORS_RECOMMEND_UUID = 'd46fb841-c4f8-42ad-94bf-bc2785518710';
 
   /**
+   * Block debutants UUID.
+   *
    * @const string
    */
   public const BLOCK_DEBUTANTES_UUID = '2e4e92f8-cf74-4fe2-b4f3-0c7a8938ce0e';
 
   /**
+   * Block writers UUID.
+   *
    * @const string
    */
   public const BLOCK_WRITERS_UUID = '6a02ab29-feba-4e8c-9c89-546c58b16588';
 
   /**
+   * Block books debated UUiD.
+   *
    * @const string
    */
   public const BLOCK_BOOKS_DEBATED_UUID = '770195ea-29c5-4cf4-b4c0-effcd88d0379';
 
   /**
+   * Block winning authors UUID.
+   *
    * @const string
    */
   public const BLOCK_WINNINGS_AUTHORS_UUID = 'a5c8938a-202e-4ff8-809f-6ed5c0f48925';
 
   /**
+   * Default background color.
+   *
    * @const string
    */
   public const DEFAULT_BACKGROUND_COLOR = '#3a3b3d';
@@ -138,6 +162,7 @@ class ConfigImportSubscriber implements EventSubscriberInterface {
    */
   protected function getRandomNodeIds($type, $required_fields = [], $amount = 1) {
     $query = \Drupal::entityQuery('node')
+      ->accessCheck(TRUE)
       ->condition('type', $type)
       ->range(rand(0, 10), $amount);
 
@@ -162,6 +187,7 @@ class ConfigImportSubscriber implements EventSubscriberInterface {
    */
   protected function isContentExists($entity_type, $uuid) {
     return (bool) \Drupal::entityQuery($entity_type)
+      ->accessCheck(FALSE)
       ->condition('uuid', $uuid)
       ->execute();
   }

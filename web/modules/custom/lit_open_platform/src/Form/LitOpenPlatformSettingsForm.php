@@ -6,7 +6,7 @@ use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Class LitOpenPlatformSettingsForm.
+ * Class for defining an open platform settings form.
  */
 class LitOpenPlatformSettingsForm extends ConfigFormBase {
 
