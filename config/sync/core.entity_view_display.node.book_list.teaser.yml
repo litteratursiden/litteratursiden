@@ -50,6 +50,7 @@ content:
     weight: 11
     region: content
 hidden:
+  field_block_reference: true
   field_book_list_comments: true
   field_book_list_cover_image: true
   field_book_list_files: true
@@ -60,4 +61,5 @@ hidden:
   flag_bookmark: true
   langcode: true
   owner_portrait: true
+  search_api_excerpt: true
   social_media: true

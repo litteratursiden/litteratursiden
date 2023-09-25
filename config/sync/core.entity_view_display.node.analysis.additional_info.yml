@@ -48,10 +48,12 @@ hidden:
   field_analysis_internal_link: true
   field_analysis_reference_book: true
   field_analysis_spotbox_image: true
+  field_block_reference: true
   flag_bookmark: true
   flag_like: true
   flag_notifications: true
   langcode: true
   links: true
   owner_full_name: true
+  search_api_excerpt: true
   social_media: true

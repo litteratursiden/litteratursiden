@@ -1,7 +1,7 @@
 (function ($, Drupal) {
     Drupal.behaviors.smallSpotsSlider = {
         attach: function (context, settings) {
-            $('.small-spots-slider', context).once('smallSpotsSlider').each(function() {
+            $(once('smallSpotsSlider', '.small-spots-slider', context)).each(function() {
                 tns({
                     container: this,
                     items: 3,

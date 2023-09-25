@@ -1,0 +1,31 @@
+uuid: bd1ba38d-4ff9-44bf-8396-94e1fbcbc144
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.content_by_user
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__content_by_user_block_1
+theme: stark
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:content_by_user-block_1'
+settings:
+  id: 'views_block:content_by_user-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/user/*\r\n!/user/login\r\n!/user/register\r\n!/user/password\r\n!/user/*/edit"

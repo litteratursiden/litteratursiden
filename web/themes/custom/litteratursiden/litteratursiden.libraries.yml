@@ -1,11 +1,17 @@
 global-styling:
+  version: 1.0.0
   js:
     build/app.js: { preprocess: false }
   css:
     theme:
       build/app.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
 
 match-height:
+  version: 1.0.0
   js:
     js/jquery.matchHeight.js: {}
   dependencies:
@@ -14,6 +20,7 @@ match-height:
      - core/drupal
 
 litteratursiden:
+  version: 1.0.0
   js:
     js/litteratursiden.js: {}
     js/dropdown-list.js: {}
@@ -24,7 +31,9 @@ litteratursiden:
      - jquery_ui_accordion/accordion
 
 small-spots:
+  version: 1.0.0
   js:
     js/small-spots-slider.js: {attributes: { type: "module" }}
   dependencies:
+    - core/drupal
     - lit_slider/lit_slider
