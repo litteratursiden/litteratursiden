@@ -19,7 +19,6 @@ dependencies:
     - node.type.topic
   module:
     - action
-    - advagg
     - block
     - block_content
     - bpi
@@ -27,7 +26,6 @@ dependencies:
     - config
     - config_translation
     - contact
-    - contextual
     - entityqueue
     - facets
     - field_ui
@@ -53,7 +51,6 @@ dependencies:
     - swiftmailer
     - system
     - taxonomy
-    - toolbar
     - video_embed_field
     - video_embed_html5
     - view_unpublished
@@ -65,13 +62,11 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access contextual links'
   - 'access files overview'
   - 'access mailchimp signup pages'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
-  - 'access toolbar'
   - 'access user profiles'
   - 'administer account settings'
   - 'administer actions'
@@ -132,7 +127,6 @@ permissions:
   - 'administer views'
   - administer_mailsystem
   - 'bpi push content'
-  - 'bypass advanced aggregation'
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'

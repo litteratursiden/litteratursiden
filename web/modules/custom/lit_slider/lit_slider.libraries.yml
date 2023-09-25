@@ -4,6 +4,7 @@ lit_slider:
     js/lit_slider.js: {}
   dependencies:
     - lit_slider/tiny_slider
+    - core/drupal
 
 tiny_slider:
   remote: https://github.com/ganlanyuan/tiny-slider/
@@ -17,3 +18,5 @@ tiny_slider:
   css:
     base:
       /libraries/tiny-slider/dist/tiny-slider.css: {}
+  dependencies:
+    - core/drupal

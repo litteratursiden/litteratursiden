@@ -1,0 +1,30 @@
+uuid: d966de16-7d95-48b5-a87b-449df503b234
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.front_article
+  module:
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__front_article_block
+theme: stark
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:front_article-block_front_article'
+settings:
+  id: 'views_block:front_article-block_front_article'
+  label: Artikel
+  label_display: visible
+  provider: views
+  views_label: Artikel
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "<front>\r\n"

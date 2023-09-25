@@ -1,0 +1,44 @@
+uuid: 14198999-39a0-4a40-b95e-9680c2382ce9
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.comments
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - stark
+id: stark_views_block__comments_block
+theme: stark
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:comments-comments_block'
+settings:
+  id: 'views_block:comments-comments_block'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/node/*/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      analysis: analysis
+      article: article
+      blog: blog
+      book_debate: book_debate
+      review: review
+      topic: topic

@@ -57,6 +57,12 @@ class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterfac
         }
       }
     }
+    // Redirect to admin/content, this is overridden in
+    // lit_open_platform_node_insert() for new nodes (then we will have a nid).
+    if ($entity->id()) {
+      \Drupal::request()->query->remove('destination');
+      $form_state->setRedirect('entity.node.canonical', ['node' => $entity->id()]);
+    }
 
     $form_state->setValues($values);
 

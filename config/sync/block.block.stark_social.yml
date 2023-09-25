@@ -1,0 +1,25 @@
+uuid: 67f861cc-da3d-4737-bf84-b75b58bff5b8
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - system
+  theme:
+    - stark
+id: stark_social
+theme: stark
+region: footer
+weight: -18
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: 'Følg os'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -115,10 +115,6 @@ function litteratursiden_preprocess_node(&$variables) {
   // Get and style image for spot display type.
   if ($view_mode == 'spot') {
     switch ($node->getType()) {
-      case 'author_portrait':
-        $suffix = 'image';
-        break;
-
       case 'article':
       case 'blog':
         $suffix = 'cover_image';
@@ -133,6 +129,10 @@ function litteratursiden_preprocess_node(&$variables) {
         break;
     }
     $spotbox_image_field_name = "field_{$node->getType()}_" . $suffix;
+
+    if ('author_portrait' === $node->getType()) {
+      $spotbox_image_field_name = 'field_spotbox_image';
+    }
 
     if ($node->hasField($spotbox_image_field_name)) {
       $spotbox_image = $node->get($spotbox_image_field_name)->first();

@@ -204,7 +204,7 @@ display:
       tags: {  }
   topics_page:
     id: topics_page
-    display_title: 'Topic''s page'
+    display_title: "Topic's page"
     display_plugin: page
     position: 1
     display_options:

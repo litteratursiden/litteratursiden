@@ -19,12 +19,33 @@ dependencies:
     - image.style.thumbnail
     - node.type.author_portrait
   module:
+    - field_group
     - image
     - image_widget_crop
     - link
     - path
     - scheduler
     - text
+third_party_settings:
+  field_group:
+    group_status:
+      children:
+        - promote
+        - uid
+        - created
+      label: Status
+      region: content
+      parent_name: ''
+      weight: 16
+      format_type: details_sidebar
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+        weight: -20
 id: node.author_portrait.default
 targetEntityType: node
 bundle: author_portrait
@@ -32,7 +53,7 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 14
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -116,7 +137,7 @@ content:
     third_party_settings: {  }
   field_block_reference:
     type: entity_reference_autocomplete
-    weight: 21
+    weight: 18
     region: content
     settings:
       match_operator: CONTAINS
@@ -161,7 +182,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 17
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -174,25 +195,18 @@ content:
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 19
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 18
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 22
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 16
+    weight: 19
     region: content
     settings:
       display_label: true
@@ -207,7 +221,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 13
+    weight: 16
     region: content
     settings:
       match_operator: CONTAINS
@@ -217,8 +231,9 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 20
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  sticky: true
