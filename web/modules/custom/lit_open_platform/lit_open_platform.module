@@ -5,6 +5,7 @@
  * Exposes global functionality of integration with the Open platform.
  */
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
@@ -84,7 +85,7 @@ function lit_open_platform_theme($existing, $type, $theme, $path): array {
  * Overriding default form class above disrupts the usual node save routine,
  * and breaks the usual redirect flow, so we add it manually.
  */
-function lit_open_platform_node_insert(\Drupal\Core\Entity\EntityInterface $entity): void {
+function lit_open_platform_node_insert(EntityInterface $entity): void {
   $url = Url::fromRoute('entity.node.canonical', ['node' => $entity->id()])->toString();
 
   $response = new RedirectResponse($url);
