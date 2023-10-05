@@ -5,6 +5,7 @@
  * Exposes global functionality of integration with the Open platform.
  */
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
@@ -30,7 +31,7 @@ function lit_open_platform_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_field_widget_form_alter().
  */
-function lit_open_platform_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+function lit_open_platform_field_widget_complete_form_alter(&$field_widget_complete_form, FormStateInterface $form_state, $context) {
   $field_definition = $context['items']->getFieldDefinition();
 
   if ($field_definition->getType() == 'entity_reference') {
@@ -40,7 +41,7 @@ function lit_open_platform_field_widget_form_alter(&$element, FormStateInterface
       $target_bundles = $settings['handler_settings']['target_bundles'];
 
       if (in_array('book', $target_bundles)) {
-        $element['target_id']['#selection_handler'] = 'lit:node';
+        $field_widget_complete_form['widget'][0]['target_id']['#selection_handler'] = 'lit:node';
       }
     }
   }
@@ -49,7 +50,7 @@ function lit_open_platform_field_widget_form_alter(&$element, FormStateInterface
 /**
  * Implements hook_entity_type_alter().
  */
-function lit_open_platform_entity_type_alter(array &$entity_types) {
+function lit_open_platform_entity_type_alter(array &$entity_types): void {
   if (isset($entity_types['node'])) {
     $entity_types['node']->setFormClass('default', 'Drupal\lit_open_platform\Form\LitNodeForm');
     $entity_types['node']->setFormClass('edit', 'Drupal\lit_open_platform\Form\LitNodeForm');
@@ -65,7 +66,7 @@ function lit_open_platform_entity_type_alter(array &$entity_types) {
 /**
  * Implements hook_theme().
  */
-function lit_open_platform_theme($existing, $type, $theme, $path) {
+function lit_open_platform_theme($existing, $type, $theme, $path): array {
   return [
     'lit_open_platform_book_selection' => [
       'variables' => [
@@ -83,10 +84,8 @@ function lit_open_platform_theme($existing, $type, $theme, $path) {
  *
  * Overriding default form class above disrupts the usual node save routine,
  * and breaks the usual redirect flow, so we add it manually.
- *
- * @return void
  */
-function lit_open_platform_node_insert(\Drupal\Core\Entity\EntityInterface $entity) {
+function lit_open_platform_node_insert(EntityInterface $entity): void {
   $url = Url::fromRoute('entity.node.canonical', ['node' => $entity->id()])->toString();
 
   $response = new RedirectResponse($url);
