@@ -10,6 +10,7 @@ use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\lit_open_platform\Api\SearchClient as Client;
+use Drupal\lit_open_platform\Api\SearchClientInterface;
 use Drupal\lit_open_platform\Transformers\WorkTransformer;
 use Drupal\node\Entity\Node;
 
@@ -21,9 +22,9 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
   /**
    * The client instance.
    *
-   * @var \Drupal\lit_open_platform\Api\SearchClient
+   * @var SearchClientInterface
    */
-  protected $client;
+  protected SearchClientInterface $client;
 
   /**
    * {@inheritdoc}
@@ -124,7 +125,7 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
    * @return int|bool
    *   A nid if one was found.
    */
-  protected function getBookByPid(string $pid) {
+  protected function getBookByPid(string $pid): bool|int {
     $query = \Drupal::entityQuery('node')
       ->accessCheck()
       ->condition('status', 1)
@@ -149,7 +150,7 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
     $pids = [];
 
     foreach ($values as $i => $value) {
-      if (!is_null($value['target_id'])) {
+      if (is_array($value) && !is_null($value['target_id'])) {
         if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
           $pids[$i] = $value['target_id'];
         }
@@ -168,7 +169,7 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
    * @return array
    *   A list of field definition names.
    */
-  protected function getFieldsWithBookReference(array $field_definitions) {
+  protected function getFieldsWithBookReference(array $field_definitions): array {
     $result = [];
     foreach ($field_definitions as $field_definition) {
       if ($field_definition->getType() == 'entity_reference') {
