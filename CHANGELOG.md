@@ -8,6 +8,8 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.0.1] 2023-10-05
+
 * Added pull request template
 * Update change log format
 * Fixed open platform widget - hook_field_widget_form_alter() is deprecated and removed in Drupal 10
@@ -25,5 +27,6 @@ See [keep a changelog] for information about writing changes to this log.
 * Disable videos in wysiwyg (Not D10 compatible yet)
 
 [keep a changelog]: https://keepachangelog.com/en/1.1.0/
-[unreleased]: https://github.com/itk-dev/event-database-imports/compare/4.0.0...HEAD
+[unreleased]: https://github.com/itk-dev/event-database-imports/compare/4.0.1...HEAD
+[4.0.1]: https://github.com/itk-dev/event-database-imports/compare/compare/4.0.0...4.0.1
 [4.0.0]: https://github.com/itk-dev/event-database-imports/compare/compare/3.0.7...4.0.0
