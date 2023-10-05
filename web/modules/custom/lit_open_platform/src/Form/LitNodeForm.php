@@ -51,7 +51,7 @@ class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterfac
       // Get the open platform pids.
       $pids = $this->getPids($values[$field]);
 
-      if ($pids && $nids = $this->createBooksFromPids($pids)) {
+      if (!empty($pids) && $nids = $this->createBooksFromPids($pids)) {
         foreach ($nids as $index => $nid) {
           $values[$field][$index]['target_id'] = $nid;
         }
@@ -155,7 +155,7 @@ class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterfac
     $pids = [];
 
     foreach ($values as $i => $value) {
-      if (is_array($value) && $value['target_id']) {
+      if (is_array($value) && isset($value['target_id'])) {
         if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
           $pids[$i] = $value['target_id'];
         }

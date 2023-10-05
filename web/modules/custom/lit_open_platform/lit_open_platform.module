@@ -41,7 +41,13 @@ function lit_open_platform_field_widget_complete_form_alter(&$field_widget_compl
       $target_bundles = $settings['handler_settings']['target_bundles'];
 
       if (in_array('book', $target_bundles)) {
-        $field_widget_complete_form['widget'][0]['target_id']['#selection_handler'] = 'lit:node';
+        // Change selection handler for each widget (even for "Add one more"
+        // fields)
+        foreach ($field_widget_complete_form['widget'] as &$widget) {
+          if (is_array($widget) && isset($widget['target_id']['#selection_handler'])) {
+            $widget['target_id']['#selection_handler'] = 'lit:node';
+          }
+        }
       }
     }
   }
