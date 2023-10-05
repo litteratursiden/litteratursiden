@@ -66,6 +66,8 @@ class SearchClient extends Client implements SearchClientInterface {
 
   /**
    * {@inheritdoc}
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function requestPidByIsbn(string $isbn): ?string {
     $response = $this->request('POST', $this->buildUrl('search'), [
@@ -94,4 +96,5 @@ class SearchClient extends Client implements SearchClientInterface {
   public static function getInstance(string $clientId, string $clientSecret): SearchClient {
     return static::$client = static::$client ?? new static($clientId, $clientSecret);
   }
+
 }

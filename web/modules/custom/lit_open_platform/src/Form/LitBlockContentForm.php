@@ -22,7 +22,7 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
   /**
    * The client instance.
    *
-   * @var SearchClientInterface
+   * @var \Drupal\lit_open_platform\Api\SearchClientInterface
    */
   protected SearchClientInterface $client;
 
