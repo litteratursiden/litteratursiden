@@ -8,6 +8,8 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+* Fixed "Add one more" for book ref. fields to the open platform.
+
 ## [4.0.1] 2023-10-05
 
 * Added pull request template
