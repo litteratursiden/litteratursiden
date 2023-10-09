@@ -3,22 +3,20 @@
 namespace Drupal\lit_open_platform\Form;
 
 use Drupal\Component\Datetime\TimeInterface;
-use Drupal\Core\Datetime\DateFormatterInterface;
+use Drupal\Core\Entity\ContentEntityForm;
+use Drupal\Core\Entity\ContentEntityFormInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityRepositoryInterface;
 use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Session\AccountInterface;
 use Drupal\lit_open_platform\Api\SearchClient as Client;
 use Drupal\lit_open_platform\Transformers\WorkTransformer;
 use Drupal\node\Entity\Node;
-use Drupal\node\NodeForm;
-use Drupal\Core\TempStore\PrivateTempStoreFactory;
 
 /**
  * Form handler for the node edit forms.
  */
-class LitNodeForm extends NodeForm {
+class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterface {
 
   /**
    * The client instance.
@@ -28,10 +26,10 @@ class LitNodeForm extends NodeForm {
   protected $client;
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
-  public function __construct(EntityRepositoryInterface $entity_repository, PrivateTempStoreFactory $temp_store_factory, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL, AccountInterface $current_user, DateFormatterInterface $date_formatter) {
-    parent::__construct($entity_repository, $temp_store_factory, $entity_type_bundle_info, $time, $current_user, $date_formatter);
+  public function __construct(EntityRepositoryInterface $entity_repository, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL) {
+    parent::__construct($entity_repository, $entity_type_bundle_info, $time);
 
     // Get module config.
     $config = \Drupal::config('lit_open_platform.settings');
@@ -43,9 +41,9 @@ class LitNodeForm extends NodeForm {
   }
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
-  protected function copyFormValuesToEntity(EntityInterface $entity, array $form, FormStateInterface $form_state) {
+  protected function copyFormValuesToEntity(EntityInterface $entity, array $form, FormStateInterface $form_state): void {
     $fields = $this->getFieldsWithBookReference($entity->getFieldDefinitions());
     $values = $form_state->getValues();
 
@@ -53,11 +51,17 @@ class LitNodeForm extends NodeForm {
       // Get the open platform pids.
       $pids = $this->getPids($values[$field]);
 
-      if ($pids && $nids = $this->createBooksFromPids($pids)) {
+      if (!empty($pids) && $nids = $this->createBooksFromPids($pids)) {
         foreach ($nids as $index => $nid) {
           $values[$field][$index]['target_id'] = $nid;
         }
       }
+    }
+    // Redirect to admin/content, this is overridden in
+    // lit_open_platform_node_insert() for new nodes (then we will have a nid).
+    if ($entity->id()) {
+      \Drupal::request()->query->remove('destination');
+      $form_state->setRedirect('entity.node.canonical', ['node' => $entity->id()]);
     }
 
     $form_state->setValues($values);
@@ -69,7 +73,11 @@ class LitNodeForm extends NodeForm {
    * Create new books from the open platform.
    *
    * @param array $pids
+   *   A list of pids.
+   *
    * @return array
+   *   A list of nids.
+   *
    * @throws \Exception
    */
   protected function createBooksFromPids(array $pids): array {
@@ -117,10 +125,14 @@ class LitNodeForm extends NodeForm {
    * Get nid of the book by the pid.
    *
    * @param string $pid
-   * @return integer|boolean
+   *   A pid.
+   *
+   * @return int|bool
+   *   A node id if one was found.
    */
   protected function getBookByPid(string $pid) {
     $query = \Drupal::entityQuery('node')
+      ->accessCheck()
       ->condition('status', 1)
       ->condition('type', 'book')
       ->condition('field_book_pid.value', $pid);
@@ -134,14 +146,19 @@ class LitNodeForm extends NodeForm {
    * Get the open platform pids.
    *
    * @param array $values
+   *   A list of pid values.
+   *
    * @return array
+   *   A list of pids.
    */
   private function getPids(array $values): array {
     $pids = [];
 
     foreach ($values as $i => $value) {
-      if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
-        $pids[$i] = $value['target_id'];
+      if (is_array($value) && isset($value['target_id'])) {
+        if (is_int($i) && preg_match('/^\d+-\w+:(\d|_)+$/', $value['target_id'])) {
+          $pids[$i] = $value['target_id'];
+        }
       }
     }
 
@@ -151,10 +168,13 @@ class LitNodeForm extends NodeForm {
   /**
    * Get fields name that has reference to the book content type.
    *
-   * @param $field_definitions
+   * @param array $field_definitions
+   *   A list of field definitions.
+   *
    * @return array
+   *   A list of field names.
    */
-  protected function getFieldsWithBookReference($field_definitions) {
+  protected function getFieldsWithBookReference(array $field_definitions) {
     $result = [];
     foreach ($field_definitions as $field_definition) {
       if ($field_definition->getType() == 'entity_reference') {

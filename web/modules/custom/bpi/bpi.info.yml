@@ -6,4 +6,4 @@ package: BPI
 configure: bpi.settings
 'interface translation project': bpi
 'interface translation server pattern': modules/custom/bpi/translations/da.po
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10

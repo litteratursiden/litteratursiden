@@ -3,4 +3,4 @@ type: module
 description: Covers integration with bibliotek.dk
 core: 8.x
 package: Litteratursiden
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10

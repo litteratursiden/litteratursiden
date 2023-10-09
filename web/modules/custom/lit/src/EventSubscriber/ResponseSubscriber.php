@@ -4,7 +4,7 @@ namespace Drupal\lit\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Cookie;
-use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
@@ -15,7 +15,7 @@ class ResponseSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  public static function getSubscribedEvents() {
+  public static function getSubscribedEvents(): array {
     $events[KernelEvents::RESPONSE][] = ['improveResponse', -10];
     return $events;
   }
@@ -23,7 +23,7 @@ class ResponseSubscriber implements EventSubscriberInterface {
   /**
    * Improve response event listener.
    */
-  public function improveResponse(FilterResponseEvent $event) {
+  public function improveResponse(ResponseEvent $event): void {
     $user = \Drupal::currentUser();
 
     $response = $event->getResponse();

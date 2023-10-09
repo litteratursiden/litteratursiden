@@ -5,15 +5,18 @@
  * Contains lit.module.
  */
 
-use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
-use Drupal\node\NodeInterface;
-use Drupal\node\Entity\NodeType;
 use Drupal\comment\CommentInterface;
 use Drupal\comment\Entity\CommentType;
+use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Entity\EntityInterface;
-use Drupal\node\Entity\Node;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Drupal\flag\Entity\Flag;
+use Drupal\lit\FacetTypePrerender;
+use Drupal\node\Entity\Node;
+use Drupal\node\Entity\NodeType;
+use Drupal\node\NodeInterface;
 use Drupal\node\NodeViewBuilder;
 
 /**
@@ -28,8 +31,8 @@ function lit_theme($existing, $type, $theme, $path) {
     ],
     'lit_books_without_image' => [
       'variables' => [
-          'books' => [],
-          'offset' => 0,
+        'books' => [],
+        'offset' => 0,
       ],
     ],
   ];
@@ -140,9 +143,9 @@ function lit_node_view(array &$build, NodeInterface $entity, EntityViewDisplayIn
   }
 
   if ($display->getComponent('posted')) {
-    $build['posted'] =  [
+    $build['posted'] = [
       '#type' => 'item',
-      '#markup' => Drupal::service('date.formatter')->format($entity->getCreatedTime(), 'date_day_month_year')
+      '#markup' => Drupal::service('date.formatter')->format($entity->getCreatedTime(), 'date_day_month_year'),
     ];
   }
 
@@ -170,7 +173,7 @@ function lit_node_view(array &$build, NodeInterface $entity, EntityViewDisplayIn
       $build['latest_reviewed_book'] = [
         '#type' => 'link',
         '#title' => t('Go to latest review'),
-        '#url' => \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $book]),
+        '#url' => Url::fromRoute('entity.node.canonical', ['node' => $book]),
         '#attributes' => [
           'class' => 'author-portrait-latest-review',
         ],
@@ -199,17 +202,22 @@ function lit_entity_view(array &$build, EntityInterface $entity, EntityViewDispl
  * Implements hook_node_links_alter().
  */
 function lit_node_links_alter(array &$links, NodeInterface $entity, array &$context) {
-  $read_more_modes = ['slick_item', 'spot', 'favorite_content_teaser', 'internal_links_carousel'];
+  $read_more_modes = [
+    'slick_item',
+    'spot',
+    'favorite_content_teaser',
+    'internal_links_carousel',
+  ];
   if (!empty($context['view_mode']) && in_array($context['view_mode'], $read_more_modes)) {
     $node_title_stripped = strip_tags($entity->label());
 
     $read_more_label = t('Read more<span class="visually-hidden"> about @title</span>', [
-        '@title' => $node_title_stripped,
+      '@title' => $node_title_stripped,
     ]);
     if ($entity->getType() == 'book_list') {
-        $read_more_label = t('View the full list<span class="visually-hidden"> about @title</span>', [
-            '@title' => $node_title_stripped,
-        ]);
+      $read_more_label = t('View the full list<span class="visually-hidden"> about @title</span>', [
+        '@title' => $node_title_stripped,
+      ]);
     }
     $links['node']['#links']['node-readmore'] = [
       'title' => $read_more_label,
@@ -225,7 +233,7 @@ function lit_node_links_alter(array &$links, NodeInterface $entity, array &$cont
     if ($entity->getType() == 'book_list' || $entity->getType() == 'similar') {
       $links['node']['#links']['node-all'] = [
         'title'    => t('Show all booklists'),
-        'url'      => Drupal\Core\Url::fromRoute('lit.book_lists_overview'),
+        'url'      => Url::fromRoute('lit.book_lists_overview'),
         'language' => $entity->language(),
         'attributes' => [
           'title' => t('Show all booklists'),
@@ -264,11 +272,12 @@ function lit_get_book_review_extra_fields() {
  * @param int $book_nid
  *   Book node ID.
  *
- * @return NodeInterface:NULL
+ * @return \Drupal\node\NodeInterface:NULL
  *   Loaded node of the review object if it exists. Otherwise NULL.
  */
 function lit_get_latest_book_review($book_nid) {
   $review_ids = Drupal::entityQuery('node')
+    ->accessCheck(TRUE)
     ->condition('type', 'review')
     ->condition('field_review_reference_book.target_id', $book_nid)
     ->sort('created')
@@ -284,11 +293,12 @@ function lit_get_latest_book_review($book_nid) {
  * @param int $book_nid
  *   Book node ID.
  *
- * @return NodeInterface:NULL
+ * @return \Drupal\node\NodeInterface:NULL
  *   Loaded node of the analysis object if it exists. Otherwise NULL.
  */
 function lit_get_latest_book_analisys($book_nid) {
   $analysis_ids = Drupal::entityQuery('node')
+    ->accessCheck(TRUE)
     ->condition('type', 'analysis')
     ->condition('field_analysis_reference_book.target_id', $book_nid)
     ->sort('created')
@@ -309,12 +319,14 @@ function lit_get_latest_book_analisys($book_nid) {
  */
 function lit_get_latest_reviewed_book($nid) {
   $book_nids = Drupal::entityQuery('node')
+    ->accessCheck(TRUE)
     ->condition('type', 'book')
     ->condition('field_book_reference_author.target_id', $nid)
     ->execute();
 
   if ($book_nids) {
     $nids = Drupal::entityQuery('node')
+      ->accessCheck(TRUE)
       ->condition('type', 'review')
       ->condition('field_review_reference_book.target_id', $book_nids, 'IN')
       ->sort('created', 'DESC')
@@ -325,13 +337,12 @@ function lit_get_latest_reviewed_book($nid) {
       $node = \Drupal::entityTypeManager()->getStorage('node')->load(reset($nids));
       $refFieldItemList = $node->get('field_review_reference_book');
 
-      return  $refFieldItemList->first()->get('target_id')->getValue();
+      return $refFieldItemList->first()->get('target_id')->getValue();
     }
   }
 
   return NULL;
 }
-
 
 /**
  * Implements hook_preprocess_HOOK().
@@ -340,7 +351,7 @@ function lit_preprocess_eu_cookie_compliance_popup_info(&$variables) {
   $primary_class   = 'eu-cookie-compliance-default-button';
   $secondary_class = 'eu-cookie-compliance-secondary-button';
 
-  $variables["primary_button_class"]   = str_replace($secondary_class, $primary_class, $variables["primary_button_class"]);
+  $variables["primary_button_class"] = str_replace($secondary_class, $primary_class, $variables["primary_button_class"]);
 }
 
 /**
@@ -364,7 +375,7 @@ function lit_preprocess_flag(&$variables) {
 
   if ($flag->getThirdPartySetting('lit', 'flag_counter')) {
     $flags = \Drupal::service('flag.count')->getEntityFlagCounts($entity);
-    $variables['flag_counter'] = isset($flags[$flag->id()]) ? $flags[$flag->id()] : 0;
+    $variables['flag_counter'] = $flags[$flag->id()] ?? 0;
   }
 
   if ($flag->getThirdPartySetting('lit', 'checkbox')) {
@@ -434,7 +445,7 @@ function lit_flag_add_form_builder($entity_type, Flag $flag, &$form, FormStateIn
 /**
  * Implements hook_block_build_alter().
  */
-function lit_block_build_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+function lit_block_build_alter(array &$build, BlockPluginInterface $block) {
   if ($block->getPluginId() == 'broken') {
     $user = \Drupal::currentUser();
     if ($user->hasPermission('administer blocks') === FALSE) {
@@ -446,9 +457,9 @@ function lit_block_build_alter(array &$build, \Drupal\Core\Block\BlockPluginInte
 /**
  * Implements hook_block_view_alter().
  */
-function lit_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+function lit_block_view_alter(array &$build, BlockPluginInterface $block) {
   if ($block->getPluginId() == 'facet_block:type') {
-    $build['#pre_render'][] = [\Drupal\lit\FacetTypePrerender::class, 'preRender'];
+    $build['#pre_render'][] = [FacetTypePrerender::class, 'preRender'];
   }
 }
 
@@ -490,9 +501,9 @@ function lit_page_attachments_alter(array &$attachments) {
 function lit_menu_local_tasks_alter(&$data) {
   $current_user = \Drupal::currentUser();
   $roles = $current_user->getRoles();
-  if(isset($data['tabs'][0]) && $data['tabs'][0]) {
+  if (isset($data['tabs'][0]) && $data['tabs'][0]) {
     $tasks = $data['tabs'][0];
-    if(!in_array('superadmin', $roles)) {
+    if (!in_array('superadmin', $roles)) {
       if (array_key_exists('entityqueue.entities:entity.node.entityqueue', $tasks)) {
         unset($data['tabs'][0]['entityqueue.entities:entity.node.entityqueue']);
       }

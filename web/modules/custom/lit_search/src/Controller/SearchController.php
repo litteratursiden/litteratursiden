@@ -3,13 +3,14 @@
 namespace Drupal\lit_search\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\lit_search\SearchGroup;
 use Drupal\search_api\Entity\Index;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
- * Class SearchController.
+ * Class for SearchController.
  *
  * @package Drupal\lit_search\Controller
  */
@@ -37,8 +38,13 @@ class SearchController extends ControllerBase {
   /**
    * Autocomplete search result.
    *
-   * @param Request $request
-   * @return string
+   * @param \Symfony\Component\HttpFoundation\Request $request
+   *   A http request.
+   *
+   * @return \Symfony\Component\HttpFoundation\JsonResponse
+   *   A json response.
+   *
+   * @throws \Drupal\search_api\SearchApiException
    */
   public function autocomplete(Request $request) {
     $match = $request->query->get('q');
@@ -89,7 +95,7 @@ class SearchController extends ControllerBase {
       else {
         $data = $data->data;
       }
-   }
+    }
 
     return new JsonResponse($data);
   }
@@ -98,8 +104,10 @@ class SearchController extends ControllerBase {
    * Change the data structure to match the one required to theme it.
    *
    * @param array $groups
+   *   A list of groups.
    *
    * @return array
+   *   A list of groups keyed by group key.
    */
   private function transformResults(array $groups): array {
     $result = [];
@@ -113,27 +121,31 @@ class SearchController extends ControllerBase {
     return $result;
   }
 
-
   /**
-   *
+   * Find entities from group items.
    *
    * @param array $hits
+   *   A list of hits.
    *
    * @return array
+   *   A list of matched rendered entities.
    */
   private function findEntitiesFromGroupItems(array $hits): array {
     $result = [];
 
     foreach ($hits as $hit) {
       // Get entity type and id form the elastic search id.
-      preg_match('/(\w*):(\w*)\/(\d*):(\w*)/', $hit['_id'], $matches);
+      if (array_key_exists('_id', $hit)) {
+        preg_match('/(\w*):(\w*)\/(\d*):(\w*)/', $hit['_id'], $matches);
 
-      try {
-        $entity = \Drupal::entityTypeManager()->getStorage($matches[2])->load($matches[3]);
-        $result[] = $this->renderEntity($entity, self::VIEW_MODE);;
-      }
-      catch (\Exception $e) {
-        // No action a item simply was not loaded.
+        try {
+          $entity = \Drupal::entityTypeManager()->getStorage($matches[2])->load($matches[3]);
+          $result[] = $this->renderEntity($entity);
+          ;
+        }
+        catch (\Exception $e) {
+          // No action a item simply was not loaded.
+        }
       }
     }
 
@@ -143,14 +155,15 @@ class SearchController extends ControllerBase {
   /**
    * Render entity with given view mode.
    *
-   * @param $entity
-   * @param string $view_mode
+   * @param \Drupal\Core\Entity\EntityInterface $entity
+   *   An entity.
    *
    * @return mixed|null
+   *   A rendered entity.
    */
-  private function renderEntity($entity, string $view_mode) {
+  private function renderEntity(EntityInterface $entity): mixed {
     $render_controller = \Drupal::entityTypeManager()->getViewBuilder($entity->getEntityTypeId());
-    $pre_render = $render_controller->view($entity, $view_mode);
+    $pre_render = $render_controller->view($entity, self::VIEW_MODE);
 
     return \Drupal::service('renderer')->render($pre_render);
   }
@@ -159,10 +172,14 @@ class SearchController extends ControllerBase {
    * Create groups.
    *
    * @param string $machine_name
+   *   A search group machine name.
    * @param int $count
+   *   The count.
    * @param array $items
+   *   A list of items.
    *
    * @return \Drupal\lit_search\SearchGroup
+   *   A solr search group.
    */
   private function createGroup(string $machine_name, int $count = 0, array $items = []): SearchGroup {
     $solrGroup = new SearchGroup($machine_name);

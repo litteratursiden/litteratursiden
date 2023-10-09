@@ -5,6 +5,9 @@ namespace Drupal\lit_user\Controller;
 use Drupal\Core\Url;
 use Drupal\user_registrationpassword\Controller\RegistrationController as UserRegistrationPasswordDefault;
 
+/**
+ * Custom user registration password handling.
+ */
 class UserRegistrationPassword extends UserRegistrationPasswordDefault {
 
   /**
@@ -41,19 +44,25 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
         }
         else {
           // Invalid one-time link specifies an unknown user.
-          $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+          \Drupal::messenger()->addStatus(t('You have tried to use a one-time login link that has either been used or is no longer valid. Please request a new one using the form below.'));
+
+          // Redirect to user/pass.
+          if (!empty($redirect)) {
+            $route_name = 'user.pass';
+          }
         }
       }
     }
     else {
-      // Time out, in seconds, until login URL expires. 24 hours = 86400 seconds.
+      // Time out, in seconds, until login URL expires.
+      // 24 hours = 86400 seconds.
       $timeout = $this->config('user_registrationpassword.settings')
         ->get('registration_ftll_timeout');
-      $current = REQUEST_TIME;
+      $current = \Drupal::time()->getRequestTime();
       $timestamp_created = $timestamp - $timeout;
 
-      // Some redundant checks for extra security ?
-      $users = $this->entityQuery
+      $users = \Drupal::entityQuery('user')
+        ->accessCheck(FALSE)
         ->condition('uid', $uid)
         ->condition('status', 0)
         ->condition('access', 0)
@@ -64,11 +73,12 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
       if ($timestamp_created <= $current && !empty($users) && $account = $this->userStorage->load(reset($users))) {
         // Check if we have to enforce expiration for activation links.
         if ($this->config('user_registrationpassword.settings')
-            ->get('registration_ftll_expire') && !$account->getLastLoginTime() && $current - $timestamp > $timeout) {
-          $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+          ->get('registration_ftll_expire') && !$account->getLastLoginTime() && $current - $timestamp > $timeout) {
+          $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
         }
         // Else try to activate the account.
-        // Password = user's password - timestamp = current request - login = username.
+        // Password = user's password - timestamp = current request - login =
+        // username.
         // user_pass_rehash($password, $timestamp, $login, $uid)
         elseif ($account->id() && $timestamp >= $account->getCreatedTime() && !$account->getLastLoginTime() && $hash == user_pass_rehash($account,
             $timestamp)
@@ -100,17 +110,59 @@ class UserRegistrationPassword extends UserRegistrationPasswordDefault {
         // Something else is wrong, redirect to the password
         // reset form to request a new activation e-mail.
         else {
-          $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+          $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
         }
       }
       else {
         // Deny access, no more clues.
         // Everything will be in the watchdog's
         // URL for the administrator to check.
-        $route_name = user_registrationpassword_set_message('linkerror', TRUE);
+        $route_name = $this->userRegistrationpasswordSetMessage('linkerror', TRUE);
       }
     }
 
     return $this->redirect($route_name, $route_options, $url_options);
   }
+
+  /**
+   * Set message for user registration.
+   *
+   * Blatantly stolen from deprecated user_registrationpassword_set_message()
+   * in user_registrationpassword module.
+   *
+   * @param string $type
+   *   The type of message.
+   * @param string $redirect
+   *   Whether to redirect.
+   *
+   * @return string
+   *   The redirect route
+   */
+  private function userRegistrationpasswordSetMessage(string $type = 'welcome', string $redirect = ''): string {
+    $route_name = '';
+
+    // Select what message to display.
+    switch ($type) {
+      case 'linkerror':
+        \Drupal::messenger()->addStatus(t('You have tried to use a one-time login link that has either been used or is no longer valid. Please request a new one using the form below.'));
+
+        // Redirect to user/pass.
+        if (!empty($redirect)) {
+          $route_name = 'user.pass';
+        }
+        break;
+
+      case 'welcome':
+        \Drupal::messenger()->addStatus(t('Further instructions have been sent to your email address.'));
+        // Redirect to front.
+        if (!empty($redirect)) {
+          $route_name = '<front>';
+        }
+        break;
+
+    }
+
+    return $route_name;
+  }
+
 }

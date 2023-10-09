@@ -281,7 +281,7 @@ display:
           admin_label: ''
           plugin_id: lit_result
           empty: false
-          content: 'Viser @total resultater for <b>''@search_query''</b>'
+          content: "Viser @total resultater for <b>'@search_query'</b>"
       footer: {  }
       display_extenders: {  }
     cache_metadata:

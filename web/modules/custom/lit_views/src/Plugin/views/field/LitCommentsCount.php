@@ -14,7 +14,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *
  * @ViewsField("lit_comments_count")
  */
-class LitCommentsCount extends NumericField {
+final class LitCommentsCount extends NumericField {
 
   /**
    * Database Service Object.

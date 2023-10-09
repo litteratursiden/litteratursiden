@@ -1,6 +1,6 @@
 {
     "name": "litsiden/bpi",
     "require": {
-        "bpi/sdk": "4.2.1"
+      "bpi/sdk": "^4.2"
     }
 }

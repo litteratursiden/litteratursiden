@@ -3,12 +3,12 @@
 namespace Drupal\lit_open_platform\Transformers;
 
 /**
- * Class SearchTransformer.
+ * Class transform search.
  */
 class SearchTransformer extends BaseTransformer {
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public static function transform($item): array {
     return [
@@ -20,7 +20,7 @@ class SearchTransformer extends BaseTransformer {
   }
 
   /**
-   * @inheritdoc
+   * {@inheritdoc}
    */
   public static function transformCollection(array $items): array {
     $result = [];
@@ -33,5 +33,5 @@ class SearchTransformer extends BaseTransformer {
 
     return $result;
   }
-}
 
+}

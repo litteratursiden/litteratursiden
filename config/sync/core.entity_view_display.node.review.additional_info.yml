@@ -42,6 +42,7 @@ content:
     region: content
 hidden:
   book_links: true
+  field_block_reference: true
   field_book_author: true
   field_book_body: true
   field_book_cover_image: true
@@ -62,4 +63,5 @@ hidden:
   langcode: true
   links: true
   owner_full_name: true
+  search_api_excerpt: true
   social_media: true

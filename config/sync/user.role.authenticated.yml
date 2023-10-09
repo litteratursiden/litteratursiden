@@ -9,7 +9,6 @@ dependencies:
     - contact
     - filter
     - flag
-    - lit_taxonomy
     - node
     - scheduler
     - system
@@ -37,4 +36,3 @@ permissions:
   - 'unflag notifications'
   - 'use text format filtered_html'
   - 'view own unpublished content'
-  - 'view own unpublished taxonomy term'

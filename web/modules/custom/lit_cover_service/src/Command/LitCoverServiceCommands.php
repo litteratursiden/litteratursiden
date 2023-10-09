@@ -1,15 +1,9 @@
 <?php
 
-/**
- * @file
- * Commands for cover clean up. Deletes and download covers from DDB Cover Service.
- */
-
 namespace Drupal\lit_cover_service\Command;
 
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Logger\LoggerChannelFactoryInterface;
-use Drupal\lit_cover_service\Service\BatchService;
 use Drupal\lit_cover_service\Service\BatchServiceInterface;
 use Drush\Commands\DrushCommands;
 
@@ -26,7 +20,7 @@ class LitCoverServiceCommands extends DrushCommands {
   private const NO_COVER = 'no_cover';
 
   /**
-   * Batch service
+   * Batch service.
    *
    * @var \Drupal\lit_cover_service\Service\BatchServiceInterface
    */
@@ -92,7 +86,7 @@ class LitCoverServiceCommands extends DrushCommands {
           [
             $batchId,
             $batchTotal,
-            $batchNids
+            $batchNids,
           ],
         ];
         ++$batchId;
@@ -114,13 +108,13 @@ class LitCoverServiceCommands extends DrushCommands {
   }
 
   /**
-   * Batch delete cover images from 'Books'
+   * Batch delete cover images from 'Books'.
    *
    * This command is intended as a one time clean up command for migrating
    * from 'MoreInfo' to DDB Cover Service.
    *
-   * @param $startBatch
-   *   The batch number to start with
+   * @param string $startBatch
+   *   The batch number to start with.
    *
    * @usage lit_cover_service:delete_covers 100
    *   Delete covers from 'Books', restart batch at 100
@@ -128,7 +122,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @command lit_cover_service:delete_covers
    * @aliases delete_covers
    */
-  public function deleteCovers($startBatch = self::START_BATCH) {
+  public function deleteCovers(string $startBatch = self::START_BATCH): void {
     $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Delete covers batch operations start');
@@ -149,7 +143,7 @@ class LitCoverServiceCommands extends DrushCommands {
           [
             $batchId,
             $batchTotal,
-            $batchNids
+            $batchNids,
           ],
         ];
         ++$batchId;
@@ -171,10 +165,10 @@ class LitCoverServiceCommands extends DrushCommands {
   }
 
   /**
-   * Batch fetch cover images for 'Books' for books with no cover
+   * Batch fetch cover images for 'Books' for books with no cover.
    *
-   * @param $startBatch
-   *   The batch number to start with
+   * @param string $startBatch
+   *   The batch number to start with.
    *
    * @usage lit_cover_service:fetch_covers 100
    *   Fetch covers for 'Books', restart batch at 100
@@ -182,7 +176,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @command lit_cover_service:fetch_missing_covers
    * @aliases fetch_missing_covers
    */
-  public function fetchMissingCovers($startBatch = self::START_BATCH) {
+  public function fetchMissingCovers(string $startBatch = self::START_BATCH): void {
     $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');
@@ -205,7 +199,7 @@ class LitCoverServiceCommands extends DrushCommands {
           [
             $batchId,
             $batchTotal,
-            $batchNids
+            $batchNids,
           ],
         ];
         ++$batchId;
@@ -229,8 +223,8 @@ class LitCoverServiceCommands extends DrushCommands {
   /**
    * Batch fetch cover images for all 'Books' replacing existing covers.
    *
-   * @param $startBatch
-   *   The batch number to start with
+   * @param string $startBatch
+   *   The batch number to start with.
    *
    * @usage lit_cover_service:fetch_covers 100
    *   Fetch covers for 'Books', restart batch at 100
@@ -238,12 +232,12 @@ class LitCoverServiceCommands extends DrushCommands {
    * @command lit_cover_service:add_or_replace_covers
    * @aliases add_or_replace_covers
    */
-  public function addOrReplaceCovers($startBatch = self::START_BATCH) {
+  public function addOrReplaceCovers(string $startBatch = self::START_BATCH): void {
     $startBatch = $this->startBatch($startBatch);
 
     $this->loggerChannelFactory->get('lit_cover_service')->info('Fetch covers batch operations start');
 
-    // Load all book nids
+    // Load all book nids.
     $nids = $this->getBookNids();
 
     if (!empty($nids)) {
@@ -261,7 +255,7 @@ class LitCoverServiceCommands extends DrushCommands {
           [
             $batchId,
             $batchTotal,
-            $batchNids
+            $batchNids,
           ],
         ];
         ++$batchId;
@@ -287,16 +281,16 @@ class LitCoverServiceCommands extends DrushCommands {
    *
    * @param string $cover
    *   Should the books have covers. Default 'all' books. Valid values are
-   *   self::ALL_BOOKS, self::HAS_COVER, self::NO_COVER
+   *   self::ALL_BOOKS, self::HAS_COVER, self::NO_COVER.
    *
-   * @return array
-   *   Array of nids
+   * @return array|null
+   *   Array of nids.
    */
-  private function getBookNids(string $cover = self::ALL_BOOKS): array
-  {
+  private function getBookNids(string $cover = self::ALL_BOOKS): ?array {
     try {
       $storage = $this->entityTypeManager->getStorage('node');
       $query = $storage->getQuery()
+        ->accessCheck(FALSE)
         ->condition('type', 'book')
         ->sort('nid', 'DESC');
 
@@ -321,6 +315,8 @@ class LitCoverServiceCommands extends DrushCommands {
     catch (\Exception $e) {
       $this->logger->error('Error found @e', ['@e' => $e]);
     }
+
+    return NULL;
   }
 
   /**
@@ -329,8 +325,7 @@ class LitCoverServiceCommands extends DrushCommands {
    * @return array
    *   Array with node id's found.
    */
-  private function getBrokenReferencesNids(): array
-  {
+  private function getBrokenReferencesNids(): array {
     $database = \Drupal::database();
     $query = $database->select('node__field_book_cover_image', 'bci');
     $query->fields('bci', ['entity_id']);
@@ -356,12 +351,11 @@ class LitCoverServiceCommands extends DrushCommands {
    * @return int
    *   The start batch as integer.
    */
-  private function startBatch(string $startBatch): int
-  {
+  private function startBatch(string $startBatch): int {
     if ('0' === $startBatch) {
       return 0;
     }
-    else if (is_numeric($startBatch)) {
+    elseif (is_numeric($startBatch)) {
       $intBatch = intval($startBatch);
       // Returns the integer value of var on success, or 0 on failure.
       if (0 === $intBatch) {
@@ -374,4 +368,5 @@ class LitCoverServiceCommands extends DrushCommands {
 
     return $intBatch;
   }
+
 }

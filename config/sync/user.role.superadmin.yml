@@ -17,11 +17,8 @@ dependencies:
     - node.type.review
     - node.type.similar
     - node.type.topic
-    - taxonomy.vocabulary.general_tags
-    - taxonomy.vocabulary.literature_type
   module:
     - action
-    - advagg
     - block
     - block_content
     - bpi
@@ -29,7 +26,6 @@ dependencies:
     - config
     - config_translation
     - contact
-    - contextual
     - entityqueue
     - facets
     - field_ui
@@ -39,7 +35,6 @@ dependencies:
     - image
     - imageapi_optimize
     - language
-    - lit_taxonomy
     - locale
     - mailchimp
     - mailchimp_campaign
@@ -56,7 +51,6 @@ dependencies:
     - swiftmailer
     - system
     - taxonomy
-    - toolbar
     - video_embed_field
     - video_embed_html5
     - view_unpublished
@@ -68,12 +62,11 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access contextual links'
   - 'access files overview'
   - 'access mailchimp signup pages'
   - 'access site in maintenance mode'
   - 'access site reports'
-  - 'access toolbar'
+  - 'access taxonomy overview'
   - 'access user profiles'
   - 'administer account settings'
   - 'administer actions'
@@ -134,7 +127,6 @@ permissions:
   - 'administer views'
   - administer_mailsystem
   - 'bpi push content'
-  - 'bypass advanced aggregation'
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'
@@ -182,8 +174,6 @@ permissions:
   - 'delete own topic content'
   - 'delete review revisions'
   - 'delete similar revisions'
-  - 'delete terms in general_tags'
-  - 'delete terms in literature_type'
   - 'delete topic revisions'
   - 'edit any analysis content'
   - 'edit any article content'
@@ -208,8 +198,6 @@ permissions:
   - 'edit own review content'
   - 'edit own similar content'
   - 'edit own topic content'
-  - 'edit terms in general_tags'
-  - 'edit terms in literature_type'
   - 'export configuration'
   - 'flag bookmark'
   - 'import configuration'
@@ -307,7 +295,6 @@ permissions:
   - 'view book_list revisions'
   - 'view interview revisions'
   - 'view own unpublished content'
-  - 'view own unpublished taxonomy term'
   - 'view review revisions'
   - 'view scheduled content'
   - 'view similar revisions'

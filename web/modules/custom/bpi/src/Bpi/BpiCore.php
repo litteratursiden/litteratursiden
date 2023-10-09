@@ -3,7 +3,7 @@
 namespace Drupal\bpi\Bpi;
 
 /**
- * Class BpiCore.
+ * Class for BPI Core.
  */
 class BpiCore {
   const BPI_INITIALIZED = 0;

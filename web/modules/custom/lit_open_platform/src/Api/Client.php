@@ -3,10 +3,9 @@
 namespace Drupal\lit_open_platform\Api;
 
 use GuzzleHttp\Client as RequestClient;
-use GuzzleHttp\Exception\ClientException;
 
 /**
- * Class Client.
+ * A class for GuzzleHttp Client.
  */
 class Client {
 
@@ -18,7 +17,7 @@ class Client {
   /**
    * The OAuth2 token url.
    */
-  public const OAUTH2_TOKEM_URL = 'https://auth.dbc.dk/oauth/token';
+  public const OAUTH2_TOKEN_URL = 'https://auth.dbc.dk/oauth/token';
 
   /**
    * The API base path.
@@ -35,36 +34,38 @@ class Client {
    *
    * @var string
    */
-  protected $clientId = '';
+  protected string $clientId = '';
 
   /**
    * The client secret.
    *
    * @var string
    */
-  protected $clientSecret = '';
+  protected string $clientSecret = '';
 
   /**
    * The access token.
    *
    * @var array
    */
-  protected $token = [];
+  protected array $token = [];
 
   /**
    * The client instance.
    *
    * @var \Drupal\lit_open_platform\Api\Client
    */
-  protected static $client;
+  protected static Client $client;
 
   /**
    * Client constructor.
    *
    * @param string $clientId
+   *   The client id.
    * @param string $clientSecret
+   *   The client secret.
    */
-  protected function __construct(string $clientId, string $clientSecret) {
+  final public function __construct(string $clientId, string $clientSecret) {
     $this->setClientId($clientId);
     $this->setClientSecret($clientSecret);
   }
@@ -73,9 +74,12 @@ class Client {
    * Set the client id.
    *
    * @param string $clientId
+   *   The clinet id.
+   *
    * @return $this
+   *   The class with client id.
    */
-  public function setClientId(string $clientId) {
+  public function setClientId(string $clientId): self {
     $this->clientId = $clientId;
 
     return $this;
@@ -85,8 +89,9 @@ class Client {
    * Get the client id.
    *
    * @return string
+   *   The client id.
    */
-  public function getClientId() {
+  public function getClientId(): string {
     return $this->clientId;
   }
 
@@ -94,9 +99,12 @@ class Client {
    * Set the client secret.
    *
    * @param string $clientSecret
+   *   A client secret.
+   *
    * @return $this
+   *   The class with client secret.
    */
-  public function setClientSecret(string $clientSecret) {
+  public function setClientSecret(string $clientSecret): self {
     $this->clientSecret = $clientSecret;
 
     return $this;
@@ -106,8 +114,9 @@ class Client {
    * Get the client secret.
    *
    * @return string
+   *   The client secret.
    */
-  public function getClientSecret() {
+  public function getClientSecret(): string {
     return $this->clientSecret;
   }
 
@@ -115,9 +124,12 @@ class Client {
    * Set the access token.
    *
    * @param array $token
+   *   The access token.
+   *
    * @return $this
+   *   The class with access token included.
    */
-  public function setAccessToken(array $token) {
+  public function setAccessToken(array $token): self {
     if ($this->verifyToken($token)) {
       $this->token = $token;
 
@@ -132,6 +144,9 @@ class Client {
    * Get the access token.
    *
    * @return array
+   *   The access token.
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function getAccessToken(): array {
     if ($cache = \Drupal::cache()->get('lit_open_platform_access_token')) {
@@ -149,7 +164,10 @@ class Client {
    * Check if the access token is valid.
    *
    * @param array $token
+   *   The access token.
+   *
    * @return bool
+   *   Whether the token validates.
    */
   public function verifyToken(array $token): bool {
     return isset($token['token_type'], $token['access_token'], $token['expires_in']);
@@ -159,6 +177,7 @@ class Client {
    * Get token for basic auth.
    *
    * @return string
+   *   A base64 encoded client id and secret.
    */
   public function getBasicToken(): string {
     return base64_encode($this->getClientId() . ':' . $this->getClientSecret());
@@ -168,7 +187,10 @@ class Client {
    * Build request url to the API.
    *
    * @param string $uri
+   *   The api uri.
+   *
    * @return string
+   *   A full api url.
    */
   protected function buildUrl(string $uri): string {
     return implode('/', [self::API_BASE_PATH, self::VERSION, ltrim($uri, '/')]);
@@ -178,9 +200,12 @@ class Client {
    * Request for the access token.
    *
    * @return array
+   *   Te access token.
+   *
+   * @throws \GuzzleHttp\Exception\GuzzleException
    */
   public function requestAccessToken(): array {
-    return $this->request('POST', self::OAUTH2_TOKEM_URL, [
+    return $this->request('POST', self::OAUTH2_TOKEN_URL, [
       'headers' => [
         'Authorization' => 'Basic ' . $this->getBasicToken(),
         'Content-type' => 'application/x-www-form-urlencoded',
@@ -197,14 +222,18 @@ class Client {
    * Send a request.
    *
    * @param string $method
+   *   The request method.
    * @param string $uri
+   *   The request uri.
    * @param array $options
+   *   THe request options.
    *
    * @return array|mixed
+   *   The request result.
    *
    * @throws \GuzzleHttp\Exception\GuzzleException
    */
-  protected function request(string $method, string $uri, array $options = []) {
+  protected function request(string $method, string $uri, array $options = []): mixed {
     $client = new RequestClient();
 
     $result = [];
@@ -212,10 +241,11 @@ class Client {
     try {
       $response = $client->request($method, $uri, $options);
 
-      $result = json_decode($response->getBody(), TRUE);
+      $result = json_decode($response->getBody(), TRUE, 512, JSON_THROW_ON_ERROR);
     }
-    catch (ClientException $exception) {
-      \Drupal::messenger()->addMessage("The Open Platform " . $exception->getMessage(), 'error');
+    catch (\Exception $exception) {
+      \Drupal::messenger()
+        ->addMessage("The Open Platform " . $exception->getMessage(), 'error');
     }
 
     return $result;
@@ -225,10 +255,14 @@ class Client {
    * Get instance of client.
    *
    * @param string $clientId
+   *   The client id.
    * @param string $clientSecret
+   *   The client secret.
+   *
    * @return \Drupal\lit_open_platform\Api\Client
+   *   The lit open platform api client.
    */
-  public static function getInstance(string $clientId, string $clientSecret) {
+  public static function getInstance(string $clientId, string $clientSecret): Client {
     return static::$client = static::$client ?? new static($clientId, $clientSecret);
   }
 

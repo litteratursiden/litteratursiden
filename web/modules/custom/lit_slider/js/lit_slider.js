@@ -1,7 +1,7 @@
 (function ($, Drupal) {
     Drupal.behaviors.litSlider = {
         attach: function (context, settings) {
-            $('.lit-slider', context).once('litSlider').each(function() {
+            $(once('litSlider', '.lit-slider', context)).each(function() {
                 tns({
                     container: this,
                     items: 4,

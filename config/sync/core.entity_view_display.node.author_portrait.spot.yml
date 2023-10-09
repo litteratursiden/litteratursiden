@@ -35,7 +35,7 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_author_portrait_image:
+  field_spotbox_image:
     type: image
     label: hidden
     settings:
@@ -57,12 +57,12 @@ hidden:
   field_author_portrait_country: true
   field_author_portrait_ext_link: true
   field_author_portrait_first_name: true
+  field_author_portrait_image: true
   field_author_portrait_int_links: true
   field_author_portrait_lit_type: true
   field_author_portrait_surname: true
   field_author_portrait_tags: true
   field_block_reference: true
-  field_spotbox_image: true
   flag_bookmark: true
   flag_like: true
   langcode: true

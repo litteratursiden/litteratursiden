@@ -70,7 +70,7 @@ namespace Drupal\lit_cover_service\ProxyClass\Service {
         /**
          * {@inheritdoc}
          */
-        public function deleteBookCovers($batchId, $batchTotal, $nids, &$context)
+        public function deleteBookCovers(int $batchId, $batchTotal, array $nids, object &$context)
         {
             return $this->lazyLoadItself()->deleteBookCovers($batchId, $batchTotal, $nids, $context);
         }
@@ -78,7 +78,7 @@ namespace Drupal\lit_cover_service\ProxyClass\Service {
         /**
          * {@inheritdoc}
          */
-        public function fetchBookCovers($batchId, $batchTotal, $nids, &$context)
+        public function fetchBookCovers(int $batchId, $batchTotal, array $nids, object &$context)
         {
             return $this->lazyLoadItself()->fetchBookCovers($batchId, $batchTotal, $nids, $context);
         }
@@ -86,7 +86,7 @@ namespace Drupal\lit_cover_service\ProxyClass\Service {
         /**
          * {@inheritdoc}
          */
-        public function replaceBookCovers($batchId, $batchTotal, $nids, &$context)
+        public function replaceBookCovers(int $batchId, int $batchTotal, array $nids, object &$context)
         {
             return $this->lazyLoadItself()->replaceBookCovers($batchId, $batchTotal, $nids, $context);
         }
@@ -94,7 +94,7 @@ namespace Drupal\lit_cover_service\ProxyClass\Service {
         /**
          * {@inheritdoc}
          */
-        public function batchFinished($success, array $results, array $operations)
+        public function batchFinished(bool $success, array $results, array $operations)
         {
             return $this->lazyLoadItself()->batchFinished($success, $results, $operations);
         }

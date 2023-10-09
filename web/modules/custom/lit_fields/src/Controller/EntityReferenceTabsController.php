@@ -38,7 +38,7 @@ class EntityReferenceTabsController extends ControllerBase {
   /**
    * Updates entity reference tabs via ajax.
    *
-   * @param EntityInterface $entity
+   * @param \Drupal\Core\Entity\EntityInterface $entity
    *   Entity which should be shown on entity reference tabs.
    * @param string $mode
    *   Mode in which is needed to display entity.

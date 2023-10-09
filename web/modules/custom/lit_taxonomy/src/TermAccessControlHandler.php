@@ -2,8 +2,6 @@
 
 namespace Drupal\lit_taxonomy;
 
-use Drupal\Core\Entity\EntityInterface;
-use Drupal\Core\Session\AccountInterface;
 use Drupal\taxonomy\TermAccessControlHandler as BaseTermAccessControlHandler;
 
 /**
@@ -12,12 +10,5 @@ use Drupal\taxonomy\TermAccessControlHandler as BaseTermAccessControlHandler;
  * @see \Drupal\taxonomy\Entity\Term
  */
 class TermAccessControlHandler extends BaseTermAccessControlHandler {
-
-  /**
-   * {@inheritdoc}
-   */
-  protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
-    return Term::access($entity, $operation, $account);
-  }
 
 }
