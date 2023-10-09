@@ -100,7 +100,7 @@ class LitBlockContentForm extends ContentEntityForm implements ContentEntityForm
           continue;
         }
 
-        // Create book if does not exist.
+        // Create book if it does not exist.
         $node = Node::create($book);
 
         if ($node->save()) {
