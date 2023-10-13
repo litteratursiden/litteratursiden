@@ -229,7 +229,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: flag_link
-          label: Ops
+          label: Operationer
           exclude: false
           alter:
             alter_text: false
@@ -280,8 +280,8 @@ display:
           tags:
             next: 'næste ›'
             previous: '‹ forrige'
-            first: '« first'
-            last: 'last »'
+            first: '« første'
+            last: 'sidste »'
           expose:
             items_per_page: false
             items_per_page_label: 'Antal elementer'

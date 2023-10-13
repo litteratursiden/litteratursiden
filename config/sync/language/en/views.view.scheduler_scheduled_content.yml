@@ -2,6 +2,7 @@ label: 'Scheduled content'
 description: 'Find and manage scheduled content.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -68,8 +69,8 @@ display:
       empty:
         area_text_custom:
           content: 'No scheduled content.'
-    display_title: Master
   overview:
+    display_title: 'Content Overview'
     display_options:
       menu:
         title: Scheduled
@@ -77,8 +78,8 @@ display:
         title: Content
         description: 'Find and manage scheduled content'
       display_description: "Overview of all scheduled content, as a tab on main 'content admin' page"
-    display_title: 'Content Overview'
   user_page:
+    display_title: 'User profile tab'
     display_options:
       menu:
         title: Scheduled
@@ -93,4 +94,3 @@ display:
       empty:
         area_text_custom:
           content: 'No scheduled content for user {{ arguments.uid }}'
-    display_title: 'User profile tab'

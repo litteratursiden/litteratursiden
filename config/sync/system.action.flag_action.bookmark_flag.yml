@@ -4,10 +4,10 @@ status: true
 dependencies:
   module:
     - flag
-id: flag_action.bookmark.flag
+id: flag_action.bookmark_flag
 label: 'Bookmark this'
 type: node
-plugin: 'flag_action:bookmark.flag'
+plugin: 'flag_action:bookmark_flag'
 configuration:
   flag_id: bookmark
   flag_action: flag
