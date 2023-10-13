@@ -12,7 +12,6 @@ See [keep a changelog] for information about writing changes to this log.
 * Fixed system action flag naming conventions, causing errors during setup.
 * Updated drupal/xmlsitemap from ^1.4 -> ^1.5.
 
-
 ## [4.0.1] 2023-10-05
 
 * Added pull request template
