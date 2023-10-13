@@ -15,4 +15,5 @@ effects:
     weight: 1
     data:
       crop_type: facebook
+      automatic_crop_provider: null
 pipeline: ''

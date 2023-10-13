@@ -1,5 +1,5 @@
 uuid: 5b2d6748-fcf3-43ab-ab6d-23fa4e081141
-langcode: en
+langcode: da
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: '- bibliotekernes side om litteratur'
+  label: Sidetitel
   label_display: visible
   provider: core
 visibility: {  }

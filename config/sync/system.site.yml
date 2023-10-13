@@ -1,15 +1,14 @@
 _core:
-  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: da
 uuid: 860e0c08-e205-49b7-947f-962b639baf33
-name: Litteratursiden
-mail: www@litteratursiden.dk
-slogan: '- bibliotekernes side om litteratur'
+name: Drupal
+mail: ''
+slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/96715
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: da
-mail_notification: ''

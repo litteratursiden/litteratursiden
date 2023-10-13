@@ -7,13 +7,13 @@ name: Local
 url: 'http://es:9200'
 options:
   multiple_nodes_connection: false
-  use_authentication: 0
+  use_authentication: false
   authentication_type: Basic
   username: ''
   password: ''
-  timeout: '10'
+  timeout: 10
   rewrite:
-    rewrite_index: 0
+    rewrite_index: false
     index:
       prefix: ''
       suffix: ''
