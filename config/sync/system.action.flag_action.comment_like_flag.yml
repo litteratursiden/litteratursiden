@@ -4,10 +4,10 @@ status: true
 dependencies:
   module:
     - flag
-id: flag_action.comment_like.flag
+id: flag_action.comment_like_flag
 label: Like
 type: comment
-plugin: 'flag_action:comment_like.flag'
+plugin: 'flag_action:comment_like_flag'
 configuration:
   flag_id: comment_like
   flag_action: flag

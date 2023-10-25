@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: mRpCPs9ab0M-w_gYtSyRgFco6FohGMSbiN4DH4-xAxU
 id: watchdog
-label: Watchdog
+label: Hændelseslog
 module: views
-description: 'Recent log messages'
+description: 'Seneste logmeddelelser'
 tag: ''
 base_table: watchdog
 base_field: wid
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Recent log messages'
+      title: 'Seneste logmeddelelser'
       fields:
         nothing:
           id: nothing
@@ -29,7 +29,7 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: Icon
+          admin_label: Ikon
           plugin_id: custom
           label: ''
           exclude: false
@@ -129,7 +129,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: machine_name
-          label: Severity
+          label: Grad
           exclude: true
           alter:
             alter_text: false
@@ -228,7 +228,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: date
-          label: Date
+          label: Dato
           exclude: false
           alter:
             alter_text: false
@@ -280,7 +280,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: dblog_message
-          label: Message
+          label: Meddelelse
           exclude: false
           alter:
             alter_text: false
@@ -478,10 +478,10 @@ display:
           field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: 'No log messages available.'
+          admin_label: 'Ingen logbeskeder til rådighed.'
           plugin_id: text_custom
           empty: true
-          content: 'No log messages available.'
+          content: 'Ingen logbeskeder til rådighed.'
           tokenize: false
       sorts:
         wid:
@@ -554,7 +554,7 @@ display:
           exposed: true
           expose:
             operator_id: severity_op
-            label: Severity
+            label: Grad
             description: ''
             use_operator: false
             operator: severity_op

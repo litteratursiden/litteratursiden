@@ -2,6 +2,7 @@ label: Content
 description: 'Find and manage content.'
 display:
   default:
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -58,12 +59,11 @@ display:
       empty:
         area_text_custom:
           content: 'No content available.'
-    display_title: Master
   page_1:
+    display_title: Page
     display_options:
       menu:
         title: Content
       tab_options:
         title: Content
         description: 'Find and manage content'
-    display_title: Page

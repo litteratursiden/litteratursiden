@@ -10,7 +10,7 @@ _core:
 id: block_content
 label: 'Special blokke'
 module: views
-description: 'Find and manage custom blocks.'
+description: 'Find og håndtér brugerdefinerede blokke.'
 tag: default
 base_table: block_content_field_data
 base_field: id
@@ -33,7 +33,7 @@ display:
           entity_type: null
           entity_field: info
           plugin_id: field
-          label: 'Block description'
+          label: Beskrivelse
           exclude: false
           alter:
             alter_text: false
@@ -98,7 +98,7 @@ display:
           entity_type: block_content
           entity_field: type
           plugin_id: field
-          label: 'Block type'
+          label: Bloktype
           exclude: false
           alter:
             alter_text: false
@@ -346,7 +346,7 @@ display:
           exposed: true
           expose:
             operator_id: info_op
-            label: 'Block description'
+            label: Beskrivelse
             description: ''
             use_operator: false
             operator: info_op
@@ -389,7 +389,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Block type'
+            label: Bloktype
             description: ''
             use_operator: false
             operator: type_op
