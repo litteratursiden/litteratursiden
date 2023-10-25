@@ -6,10 +6,10 @@ dependencies:
     - flag
 _core:
   default_config_hash: 7LggW4EEsFqJQDcAGhp8EzIDLS_ZKFiEMtK1ZU-SwyQ
-id: flag_action.notifications_flag
+id: flag_action.notifications.flag
 label: Notifikationer
 type: node
-plugin: 'flag_action:notifications_flag'
+plugin: 'flag_action:notifications.flag'
 configuration:
   flag_id: notifications
   flag_action: flag

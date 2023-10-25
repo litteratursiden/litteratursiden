@@ -4,10 +4,10 @@ status: true
 dependencies:
   module:
     - flag
-id: flag_action.like_flag
+id: flag_action.like.flag
 label: Like
 type: node
-plugin: 'flag_action:like_flag'
+plugin: 'flag_action:like.flag'
 configuration:
   flag_id: like
   flag_action: flag
