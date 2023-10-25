@@ -1,5 +1,5 @@
 uuid: 99d1d51a-5457-498c-97cc-6ede58f6e782
-langcode: en
+langcode: da
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: '- bibliotekernes side om litteratur'
+  label: 'Site branding'
   label_display: visible
   provider: system
   use_site_logo: true
