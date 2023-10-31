@@ -10,6 +10,7 @@ See [keep a changelog] for information about writing changes to this log.
 
 * Fixed "Add one more" for book ref. fields to the open platform.
 * Update config of sitemap scope, to only include content types: temaer, boglister, artiker.
+* Added siteimprove
 
 ## [4.0.1] 2023-10-05
 
