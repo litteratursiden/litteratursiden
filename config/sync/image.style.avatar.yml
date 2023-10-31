@@ -15,6 +15,7 @@ effects:
     weight: 2
     data:
       crop_type: user_profile_image
+      automatic_crop_provider: null
   b08d6089-7337-4627-b62d-5e2284c315b2:
     uuid: b08d6089-7337-4627-b62d-5e2284c315b2
     id: image_scale_and_crop
