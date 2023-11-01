@@ -10,6 +10,7 @@ See [keep a changelog] for information about writing changes to this log.
 
 * Fixed "Add one more" for book ref. fields to the open platform.
 * Update config of sitemap scope, to only include content types: temaer, boglister, artiker.
+* Fixed layout overflow styling issue.
 * Fixed an issue with viewsreference interfering with infinitescroll.
 * Added siteimprove
 
