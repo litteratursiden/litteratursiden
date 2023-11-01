@@ -16,7 +16,14 @@
         },
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+                "drupal/viewsreference"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://git.drupalcode.org/issue/viewsreference-3364798"
         },
         {
           "type": "composer",
@@ -142,8 +149,8 @@
         "drupal/view_unpublished": "^1.1",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/views_show_more": "^2.0",
-        "drupal/viewsreference": "^2.0@beta",
-        "drupal/xmlsitemap": "^1.4",
+        "drupal/viewsreference": "dev-3364798-views-reference-is",
+        "drupal/xmlsitemap": "^1.5",
         "drush/drush": "^12.0",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
