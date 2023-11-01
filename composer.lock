@@ -1458,6 +1458,10 @@
                     "homepage": "https://www.drupal.org/user/3094661"
                 },
                 {
+                    "name": "poker10",
+                    "homepage": "https://www.drupal.org/user/272316"
+                },
+                {
                     "name": "rupl",
                     "homepage": "https://www.drupal.org/user/411999"
                 },
@@ -2426,6 +2430,14 @@
                     "name": "Moshe Weitzman (moshe weitzman)",
                     "homepage": "https://www.drupal.org/u/moshe-weitzman",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "Grevil",
+                    "homepage": "https://www.drupal.org/user/3668491"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
                 }
             ],
             "description": "Allows users to register with an email address as their username.",
@@ -2853,6 +2865,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Anybody",
+                    "homepage": "https://www.drupal.org/user/291091"
+                },
                 {
                     "name": "Hydra",
                     "homepage": "https://www.drupal.org/user/647364"
@@ -3428,6 +3444,10 @@
                 {
                     "name": "wxactly",
                     "homepage": "https://www.drupal.org/user/3181097"
+                },
+                {
+                    "name": "xenophyle",
+                    "homepage": "https://www.drupal.org/user/664428"
                 }
             ],
             "description": "Mailchimp is an integration with the Mailchimp Mass email tool.",
@@ -4183,6 +4203,10 @@
                     "homepage": "https://drupal.org/u/cburschka",
                     "email": "christoph@burschka.de",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "nicxvan",
+                    "homepage": "https://www.drupal.org/user/531480"
                 }
             ],
             "description": "Expose fields and entity references in REST view displays.",
@@ -5263,6 +5287,10 @@
             ],
             "authors": [
                 {
+                    "name": "alanburke",
+                    "homepage": "https://www.drupal.org/user/35997"
+                },
+                {
                     "name": "amateescu",
                     "homepage": "https://www.drupal.org/user/729614"
                 },
@@ -5291,7 +5319,7 @@
                     "homepage": "https://www.drupal.org/user/272316"
                 },
                 {
-                    "name": "RenatoG",
+                    "name": "renatog",
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
