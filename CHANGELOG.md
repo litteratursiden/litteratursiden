@@ -9,6 +9,8 @@ See [keep a changelog] for information about writing changes to this log.
 ## [Unreleased]
 
 * Fixed "Add one more" for book ref. fields to the open platform.
+* Fixed system action flag naming conventions, causing errors during setup.
+* Updated drupal/xmlsitemap from ^1.4 -> ^1.5.
 * Update config of sitemap scope, to only include content types: temaer, boglister, artiker.
 * Fixed layout overflow styling issue.
 * Fixed an issue with viewsreference interfering with infinitescroll.

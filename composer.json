@@ -150,7 +150,7 @@
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/views_show_more": "^2.0",
         "drupal/viewsreference": "dev-3364798-views-reference-is",
-        "drupal/xmlsitemap": "^1.4",
+        "drupal/xmlsitemap": "^1.5",
         "drush/drush": "^12.0",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
