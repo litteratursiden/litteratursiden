@@ -1,0 +1,44 @@
+uuid: 9ee9fab7-6115-4912-885c-70740e5a458a
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.youthreview.body
+    - node.type.youthreview
+  module:
+    - text
+    - user
+id: node.youthreview.teaser
+targetEntityType: node
+bundle: youthreview
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  posted:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  social_media:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  owner_full_name: true
+  owner_portrait: true
+  search_api_excerpt: true

@@ -96,6 +96,7 @@ hidden:
   flag_notifications: true
   langcode: true
   latest_analysis: true
+  latest_youthreview: true
   latest_review: true
   links: true
   owner_full_name: true

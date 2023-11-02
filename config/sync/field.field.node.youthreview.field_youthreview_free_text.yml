@@ -1,0 +1,21 @@
+uuid: bd251100-c43e-4cd4-a8f9-2c2cb80e4b7b
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youthreview_free_text
+    - node.type.youthreview
+  module:
+    - text
+id: node.youthreview.field_youthreview_free_text
+field_name: field_youthreview_free_text
+entity_type: node
+bundle: youthreview
+label: 'Free text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

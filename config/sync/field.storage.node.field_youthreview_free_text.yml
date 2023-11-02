@@ -1,0 +1,19 @@
+uuid: b049dd12-01fa-46ce-b5ac-774bd564cacc
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_youthreview_free_text
+field_name: field_youthreview_free_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

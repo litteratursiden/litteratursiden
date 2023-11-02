@@ -1,0 +1,21 @@
+uuid: 73862075-2377-45de-9d59-3249c6a962ae
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youthreview_spotbox_image
+    - node.type.youthreview
+id: node.youthreview.field_youthreview_spotbox_image
+field_name: field_youthreview_spotbox_image
+entity_type: node
+bundle: youthreview
+label: 'Spotbox image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

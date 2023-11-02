@@ -1,0 +1,21 @@
+uuid: fd0ba663-1acf-49b6-b0b0-af87c28ea300
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youthreview_excerpt
+    - node.type.youthreview
+  module:
+    - text
+id: node.youthreview.field_youthreview_excerpt
+field_name: field_youthreview_excerpt
+entity_type: node
+bundle: youthreview
+label: Excerpt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
