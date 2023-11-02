@@ -111,6 +111,13 @@ function lit_entity_extra_field_info() {
     'weight' => 0,
   ];
 
+  $extra['node']['book']['display']['latest_youthreview'] = [
+    'label' => t('youthreview'),
+    'description' => t('Shows latest youthreview for the book.'),
+    'visible' => FALSE,
+    'weight' => 0,
+  ];
+
   $extra['node']['author_portrait']['display']['latest_reviewed_book'] = [
     'label' => t('Latest reviewed book link'),
     'description' => t('Show a link to the latest reviewed book.'),
@@ -155,7 +162,13 @@ function lit_node_view(array &$build, NodeInterface $entity, EntityViewDisplayIn
       ->view($analysis, 'additional_info');
   }
 
-  if ($display->getComponent('latest_review') || $display->getComponent('latest_analysis')) {
+  if ($display->getComponent('latest_youthreview') && $youthReview = lit_get_latest_youth_review($entity->id())) {
+    $build['latest_youthreview'] = \Drupal::entityTypeManager()
+      ->getViewBuilder('node')
+      ->view($youthReview, 'additional_info');
+  }
+
+  if ($display->getComponent('latest_review') || $display->getComponent('latest_analysis') || $display->getComponent('latest_youthreview')) {
     // We need to make sure that new reviews and analysis
     // will be added to a node.
     $build['#cache']['tags'][] = 'node_list';
@@ -306,6 +319,27 @@ function lit_get_latest_book_analisys($book_nid) {
     ->execute();
 
   return empty($analysis_ids) ? NULL : Node::load(reset($analysis_ids));
+}
+
+/**
+ * Gets book's latest youth review.
+ *
+ * @param int $book_nid
+ *   Book node ID.
+ *
+ * @return \Drupal\node\NodeInterface:NULL
+ *   Loaded node of the youthreview object if it exists. Otherwise NULL.
+ */
+function lit_get_latest_youth_review($book_nid) {
+  $review_ids = Drupal::entityQuery('node')
+    ->accessCheck(TRUE)
+    ->condition('type', 'youthreview')
+    ->condition('field_youthreview_reference_book.target_id', $book_nid)
+    ->sort('created')
+    ->range(0, 1)
+    ->execute();
+
+  return empty($review_ids) ? NULL : Node::load(reset($review_ids));
 }
 
 /**
