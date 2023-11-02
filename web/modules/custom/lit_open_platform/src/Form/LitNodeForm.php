@@ -181,7 +181,7 @@ class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterfac
         $settings = $field_definition->getSettings();
 
         if ($settings['handler'] == 'default:node') {
-          $target_bundles = $settings['handler_settings']['target_bundles'];
+          $target_bundles = $settings['handler_settings']['target_bundles'] ?? [];
 
           if (in_array('book', $target_bundles)) {
             $result[] = $field_definition->getName();
