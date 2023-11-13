@@ -1,0 +1,19 @@
+uuid: 38b91ab8-6346-489f-bf6c-1034c2fde2dd
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_youthreview_excerpt
+field_name: field_youthreview_excerpt
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

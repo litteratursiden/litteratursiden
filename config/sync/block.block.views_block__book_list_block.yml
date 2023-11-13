@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.book_list
   module:
+    - node
     - system
     - views
   theme:
@@ -29,3 +30,10 @@ visibility:
     negate: false
     context_mapping: {  }
     pages: '<front>'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      book: book

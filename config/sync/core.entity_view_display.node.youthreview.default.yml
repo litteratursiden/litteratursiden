@@ -1,0 +1,107 @@
+uuid: 282a6901-7614-4386-9d52-24a2287af014
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.youthreview.body
+    - field.field.node.youthreview.field_block_reference
+    - field.field.node.youthreview.field_youthreview_comments
+    - field.field.node.youthreview.field_youthreview_cover_image
+    - field.field.node.youthreview.field_youthreview_excerpt
+    - field.field.node.youthreview.field_youthreview_external_link
+    - field.field.node.youthreview.field_youthreview_free_text
+    - field.field.node.youthreview.field_youthreview_general_tags
+    - field.field.node.youthreview.field_youthreview_internal_link
+    - field.field.node.youthreview.field_youthreview_reference_book
+    - field.field.node.youthreview.field_youthreview_spotbox_image
+    - node.type.youthreview
+  module:
+    - link
+    - text
+    - user
+id: node.youthreview.default
+targetEntityType: node
+bundle: youthreview
+mode: default
+content:
+  field_block_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_youthreview_excerpt:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_youthreview_external_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_youthreview_general_tags:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_youthreview_internal_link:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_youthreview_spotbox_image:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  owner_portrait:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  posted:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  social_media:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  field_youthreview_comments: true
+  field_youthreview_cover_image: true
+  field_youthreview_free_text: true
+  field_youthreview_reference_book: true
+  langcode: true
+  owner_full_name: true
+  search_api_excerpt: true

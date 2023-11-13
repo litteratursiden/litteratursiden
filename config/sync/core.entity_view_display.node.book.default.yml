@@ -38,6 +38,7 @@ third_party_settings:
       children:
         - group_book_review
         - group_book_analysis
+        - group_youthreview
         - group_book_details
       label: 'Additional info'
       parent_name: ''
@@ -60,7 +61,7 @@ third_party_settings:
       label: Bogdetaljer
       parent_name: group_additional_info
       region: content
-      weight: 11
+      weight: 12
       format_type: accordion_item
       format_settings:
         classes: book-details
@@ -92,6 +93,19 @@ third_party_settings:
         classes: book-analysis
         show_empty_fields: false
         id: book-additional-info-analysis
+        formatter: closed
+    group_youthreview:
+      children:
+        - latest_youthreview
+      label: Ungeanmeldelse
+      parent_name: group_additional_info
+      region: content
+      weight: 11
+      format_type: accordion_item
+      format_settings:
+        classes: book-analysis
+        show_empty_fields: false
+        id: book-additional-info-youthreview
         formatter: closed
 id: node.book.default
 targetEntityType: node
@@ -252,6 +266,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 10
+    region: content
+  latest_youthreview:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
     settings: {  }
