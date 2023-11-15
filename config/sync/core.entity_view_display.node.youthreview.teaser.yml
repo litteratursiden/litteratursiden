@@ -38,6 +38,16 @@ content:
     weight: 0
     region: content
 hidden:
+  field_block_reference: true
+  field_youthreview_comments: true
+  field_youthreview_cover_image: true
+  field_youthreview_excerpt: true
+  field_youthreview_external_link: true
+  field_youthreview_free_text: true
+  field_youthreview_general_tags: true
+  field_youthreview_internal_link: true
+  field_youthreview_reference_book: true
+  field_youthreview_spotbox_image: true
   langcode: true
   owner_full_name: true
   owner_portrait: true
