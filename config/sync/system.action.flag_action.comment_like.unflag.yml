@@ -4,10 +4,10 @@ status: true
 dependencies:
   module:
     - flag
-id: flag_action.comment_like_unflag
+id: flag_action.comment_like.unflag
 label: Unlike
 type: comment
-plugin: 'flag_action:comment_like_unflag'
+plugin: 'flag_action:comment_like.unflag'
 configuration:
   flag_id: comment_like
   flag_action: unflag

@@ -4,10 +4,10 @@ status: true
 dependencies:
   module:
     - flag
-id: flag_action.like_unflag
+id: flag_action.like.unflag
 label: Unlike
 type: node
-plugin: 'flag_action:like_unflag'
+plugin: 'flag_action:like.unflag'
 configuration:
   flag_id: like
   flag_action: unflag
