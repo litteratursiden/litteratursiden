@@ -95,6 +95,7 @@ view_mode ? view_mode|clean_class,
             {{ content.flag_like }}
           </div>
         </div>
+
         <div{{ content_attributes.addClass('content') }}>
           {{ content|without('links', 'owner_portrait', 'flag_bookmark', 'flag_like', 'social_media', 'group_additional_info', 'posted', 'field_block_reference') }}
         </div>
@@ -132,6 +133,10 @@ view_mode ? view_mode|clean_class,
   {% elseif node.bundle == 'review' %}
     {% if node.field_review_reference_book.entity.field_book_reference_author.value is not empty %}
       {% set field = node.field_review_reference_book.entity.field_book_reference_author.entity.title.value %}
+    {% endif %}
+  {% elseif node.bundle == 'youthreview' %}
+    {% if node.field_youthreview_reference_book.entity.field_book_reference_author.value is not empty %}
+      {% set field = node.field_youthreview_reference_book.entity.field_book_reference_author.entity.title.value %}
     {% endif %}
   {% endif %}
   {% if field is defined %}

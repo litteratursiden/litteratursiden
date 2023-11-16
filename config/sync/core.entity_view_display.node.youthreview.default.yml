@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.youthreview.field_youthreview_internal_link
     - field.field.node.youthreview.field_youthreview_reference_book
     - field.field.node.youthreview.field_youthreview_spotbox_image
+    - image.style.spot
     - node.type.youthreview
   module:
     - image
@@ -32,14 +33,14 @@ content:
       view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 9
+    weight: 11
     region: content
   field_youthreview_excerpt:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 7
     region: content
   field_youthreview_external_link:
     type: link
@@ -51,7 +52,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 7
+    weight: 9
     region: content
   field_youthreview_general_tags:
     type: entity_reference_label
@@ -59,7 +60,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 6
+    weight: 8
     region: content
   field_youthreview_internal_link:
     type: entity_reference_label
@@ -67,23 +68,33 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 8
+    weight: 10
     region: content
   field_youthreview_spotbox_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: spot
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 10
+    weight: 6
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  flag_like:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 5
     region: content
   owner_portrait:
     settings: {  }
@@ -98,7 +109,7 @@ content:
   social_media:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
 hidden:
   body: true

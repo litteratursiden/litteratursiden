@@ -1,0 +1,22 @@
+uuid: 8e70dc99-584d-4892-ac18-a1ddae878a32
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: ungeanmeldelse
+label: Ungeanmeldelse
+type: 'canonical_entities:node'
+pattern: 'ungeanmeldelse/[node:title]'
+selection_criteria:
+  08a90e70-dc9f-4225-bf46-2abe63c7c8d3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 08a90e70-dc9f-4225-bf46-2abe63c7c8d3
+    context_mapping:
+      node: node
+    bundles:
+      youthreview: youthreview
+selection_logic: and
+weight: -5
+relationships: {  }
