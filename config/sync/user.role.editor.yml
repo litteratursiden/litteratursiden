@@ -17,6 +17,7 @@ dependencies:
     - node.type.review
     - node.type.similar
     - node.type.topic
+    - node.type.youthreview
   module:
     - action
     - block
@@ -73,6 +74,7 @@ permissions:
   - 'create review content'
   - 'create similar content'
   - 'create topic content'
+  - 'create youthreview content'
   - 'delete any analysis content'
   - 'delete any article content'
   - 'delete any author_portrait content'
@@ -84,6 +86,7 @@ permissions:
   - 'delete any review content'
   - 'delete any similar content'
   - 'delete any topic content'
+  - 'delete any youthreview content'
   - 'delete own analysis content'
   - 'delete own article content'
   - 'delete own author_portrait content'
@@ -95,6 +98,7 @@ permissions:
   - 'delete own review content'
   - 'delete own similar content'
   - 'delete own topic content'
+  - 'delete own youthreview content'
   - 'edit any analysis content'
   - 'edit any article content'
   - 'edit any author_portrait content'
@@ -107,6 +111,7 @@ permissions:
   - 'edit any review content'
   - 'edit any similar content'
   - 'edit any topic content'
+  - 'edit any youthreview content'
   - 'edit own analysis content'
   - 'edit own article content'
   - 'edit own author_portrait content'
@@ -119,6 +124,7 @@ permissions:
   - 'edit own review content'
   - 'edit own similar content'
   - 'edit own topic content'
+  - 'edit own youthreview content'
   - 'link to any page'
   - 'manipulate all entityqueues'
   - 'manipulate entityqueues'
@@ -132,6 +138,7 @@ permissions:
   - 'override review published option'
   - 'override similar published option'
   - 'override topic published option'
+  - 'override youthreview published option'
   - 'skip comment approval'
   - 'translate configuration'
   - 'translate interface'

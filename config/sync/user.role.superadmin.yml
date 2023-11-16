@@ -17,6 +17,7 @@ dependencies:
     - node.type.review
     - node.type.similar
     - node.type.topic
+    - node.type.youthreview
   module:
     - action
     - block
@@ -143,6 +144,7 @@ permissions:
   - 'create similar content'
   - 'create topic content'
   - 'create url aliases'
+  - 'create youthreview content'
   - 'delete all revisions'
   - 'delete analysis revisions'
   - 'delete any analysis content'
@@ -156,6 +158,7 @@ permissions:
   - 'delete any review content'
   - 'delete any similar content'
   - 'delete any topic content'
+  - 'delete any youthreview content'
   - 'delete article revisions'
   - 'delete author_portrait revisions'
   - 'delete blog revisions'
@@ -165,6 +168,7 @@ permissions:
   - 'delete own analysis content'
   - 'delete own article content'
   - 'delete own author_portrait content'
+  - 'delete own blog content'
   - 'delete own book content'
   - 'delete own book_list content'
   - 'delete own interview content'
@@ -172,9 +176,11 @@ permissions:
   - 'delete own review content'
   - 'delete own similar content'
   - 'delete own topic content'
+  - 'delete own youthreview content'
   - 'delete review revisions'
   - 'delete similar revisions'
   - 'delete topic revisions'
+  - 'delete youthreview revisions'
   - 'edit any analysis content'
   - 'edit any article content'
   - 'edit any author_portrait content'
@@ -187,9 +193,11 @@ permissions:
   - 'edit any review content'
   - 'edit any similar content'
   - 'edit any topic content'
+  - 'edit any youthreview content'
   - 'edit own analysis content'
   - 'edit own article content'
   - 'edit own author_portrait content'
+  - 'edit own blog content'
   - 'edit own book content'
   - 'edit own book_list content'
   - 'edit own interview content'
@@ -198,6 +206,7 @@ permissions:
   - 'edit own review content'
   - 'edit own similar content'
   - 'edit own topic content'
+  - 'edit own youthreview content'
   - 'export configuration'
   - 'flag bookmark'
   - 'import configuration'
@@ -266,6 +275,9 @@ permissions:
   - 'override topic published option'
   - 'override topic revision option'
   - 'override topic sticky option'
+  - 'override youthreview authored by option'
+  - 'override youthreview authored on option'
+  - 'override youthreview published option'
   - 'revert all revisions'
   - 'revert analysis revisions'
   - 'revert article revisions'
@@ -277,6 +289,7 @@ permissions:
   - 'revert review revisions'
   - 'revert similar revisions'
   - 'revert topic revisions'
+  - 'revert youthreview revisions'
   - 'select account cancellation method'
   - 'skip comment approval'
   - 'synchronize configuration'
@@ -300,3 +313,4 @@ permissions:
   - 'view similar revisions'
   - 'view the administration theme'
   - 'view topic revisions'
+  - 'view youthreview revisions'
