@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.spot
+    - field.field.node.youthreview.body
     - field.field.node.youthreview.field_block_reference
     - field.field.node.youthreview.field_youthreview_comments
     - field.field.node.youthreview.field_youthreview_cover_image

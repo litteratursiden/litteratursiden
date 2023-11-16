@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_youthreview_general_tags
     - node.type.youthreview
+    - taxonomy.vocabulary.general_tags
 id: node.youthreview.field_youthreview_general_tags
 field_name: field_youthreview_general_tags
 entity_type: node
@@ -16,6 +17,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
-  handler_settings: {  }
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      general_tags: general_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
 field_type: entity_reference

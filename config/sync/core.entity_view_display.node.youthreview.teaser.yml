@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.youthreview.body
+    - field.field.node.youthreview.field_block_reference
+    - field.field.node.youthreview.field_youthreview_comments
+    - field.field.node.youthreview.field_youthreview_cover_image
+    - field.field.node.youthreview.field_youthreview_excerpt
+    - field.field.node.youthreview.field_youthreview_external_link
+    - field.field.node.youthreview.field_youthreview_free_text
+    - field.field.node.youthreview.field_youthreview_general_tags
+    - field.field.node.youthreview.field_youthreview_internal_link
+    - field.field.node.youthreview.field_youthreview_reference_book
+    - field.field.node.youthreview.field_youthreview_spotbox_image
     - node.type.youthreview
   module:
     - text
