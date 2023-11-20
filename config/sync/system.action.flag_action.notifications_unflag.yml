@@ -6,10 +6,10 @@ dependencies:
     - flag
 _core:
   default_config_hash: rZ0iX3qdNDSWvbJw3Ml6eopUVz5Zv4g_Bpm0hSEeWI0
-id: flag_action.notifications_unflag
+id: flag_action.notifications.unflag
 label: Notifikationer
 type: node
-plugin: 'flag_action:notifications_unflag'
+plugin: 'flag_action:notifications.unflag'
 configuration:
   flag_id: notifications
   flag_action: unflag
