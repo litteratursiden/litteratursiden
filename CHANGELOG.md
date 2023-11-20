@@ -8,6 +8,10 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.1.2] 2023-11-20
+
+* Renamed flag actions.
+
 ## [4.1.1] 2023-11-20
 
 * Updated new contenttype Ungeanmeldelse/youthreview
