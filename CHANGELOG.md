@@ -10,6 +10,10 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [4.1.0] 2023-11-15
 
+** Added new contenttype Ungeanmeldelse/youthreview
+
+## [4.0.2] 2023-10-09
+
 * Fixed "Add one more" for book ref. fields to the open platform.
 * Fixed system action flag naming conventions, causing errors during setup.
 * Updated drupal/xmlsitemap from ^1.4 -> ^1.5.
@@ -38,6 +42,7 @@ See [keep a changelog] for information about writing changes to this log.
 * Disable videos in wysiwyg (Not D10 compatible yet)
 
 [keep a changelog]: https://keepachangelog.com/en/1.1.0/
-[unreleased]: https://github.com/itk-dev/event-database-imports/compare/4.0.1...HEAD
+[unreleased]: https://github.com/itk-dev/event-database-imports/compare/4.0.2...HEAD
+[4.0.2]: https://github.com/itk-dev/event-database-imports/compare/compare/4.0.1...4.0.2
 [4.0.1]: https://github.com/itk-dev/event-database-imports/compare/compare/4.0.0...4.0.1
 [4.0.0]: https://github.com/itk-dev/event-database-imports/compare/compare/3.0.7...4.0.0
