@@ -1,0 +1,21 @@
+uuid: 5bb99ffc-1cdb-4ea3-b553-f5bdfb9b654d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youthreview_internal_link
+    - node.type.youthreview
+id: node.youthreview.field_youthreview_internal_link
+field_name: field_youthreview_internal_link
+entity_type: node
+bundle: youthreview
+label: 'Interne links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

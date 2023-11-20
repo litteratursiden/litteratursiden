@@ -1,0 +1,22 @@
+uuid: 09564c04-7f86-46b2-9b3e-654ebb27cdc9
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.youthreview
+id: node.youthreview.status
+field_name: status
+entity_type: node
+bundle: youthreview
+label: Udgivet
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Tilsluttet
+  off_label: Afbrudt
+field_type: boolean

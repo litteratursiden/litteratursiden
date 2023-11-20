@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - lit
+    - node
 third_party_settings:
   lit:
     flag_counter: 1
@@ -15,12 +16,12 @@ bundles:
   - author_portrait
   - blog
   - book
-  - book_debate
   - book_list
   - interview
   - review
   - similar
   - topic
+  - youthreview
 entity_type: node
 global: false
 flag_short: Like

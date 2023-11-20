@@ -8,6 +8,10 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.1.0] 2023-11-15
+
+** Added new contenttype Ungeanmeldelse/youthreview
+
 ## [4.0.2] 2023-10-09
 
 * Fixed "Add one more" for book ref. fields to the open platform.
@@ -17,6 +21,7 @@ See [keep a changelog] for information about writing changes to this log.
 * Fixed layout overflow styling issue.
 * Fixed an issue with viewsreference interfering with infinitescroll.
 * Added siteimprove
+* Added new contenttype Ungeanmeldelse/youthreview
 
 ## [4.0.1] 2023-10-05
 

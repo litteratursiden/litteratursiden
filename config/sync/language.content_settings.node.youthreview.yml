@@ -1,0 +1,11 @@
+uuid: 9a322dad-4c01-43c1-98bd-a6fadbbfeae3
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.youthreview
+id: node.youthreview
+target_entity_type_id: node
+target_bundle: youthreview
+default_langcode: site_default
+language_alterable: false

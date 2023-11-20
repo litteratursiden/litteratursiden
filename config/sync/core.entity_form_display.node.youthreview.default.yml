@@ -1,0 +1,175 @@
+uuid: 9b875aa9-4ba3-493b-9dcb-4bacd55265ce
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.youthreview.body
+    - field.field.node.youthreview.field_block_reference
+    - field.field.node.youthreview.field_youthreview_comments
+    - field.field.node.youthreview.field_youthreview_cover_image
+    - field.field.node.youthreview.field_youthreview_excerpt
+    - field.field.node.youthreview.field_youthreview_external_link
+    - field.field.node.youthreview.field_youthreview_free_text
+    - field.field.node.youthreview.field_youthreview_general_tags
+    - field.field.node.youthreview.field_youthreview_internal_link
+    - field.field.node.youthreview.field_youthreview_reference_book
+    - field.field.node.youthreview.field_youthreview_spotbox_image
+    - image.style.thumbnail
+    - node.type.youthreview
+  module:
+    - comment
+    - image
+    - link
+    - path
+    - scheduler
+    - text
+id: node.youthreview.default
+targetEntityType: node
+bundle: youthreview
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_block_reference:
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_youthreview_comments:
+    type: comment_default
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_youthreview_cover_image:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_youthreview_excerpt:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_youthreview_external_link:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_youthreview_free_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_youthreview_general_tags:
+    type: entity_reference_autocomplete
+    weight: 8
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_youthreview_internal_link:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_youthreview_reference_book:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_youthreview_spotbox_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  scheduler_settings:
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 11
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  langcode: true
+  promote: true
+  sticky: true

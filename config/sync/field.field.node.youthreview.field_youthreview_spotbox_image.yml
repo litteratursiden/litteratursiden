@@ -1,0 +1,38 @@
+uuid: 2f29f295-bf90-42d5-9da5-e3e8d3f83e1e
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youthreview_spotbox_image
+    - node.type.youthreview
+  module:
+    - image
+id: node.youthreview.field_youthreview_spotbox_image
+field_name: field_youthreview_spotbox_image
+entity_type: node
+bundle: youthreview
+label: 'Spotbox image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: field_youthreview_spotbox_image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ed4218f9-b4d8-421a-afcd-d82538fdb7f1
+    alt: ''
+    title: ''
+    width: 186
+    height: 287
+field_type: image
