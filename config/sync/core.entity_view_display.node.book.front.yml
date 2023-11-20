@@ -80,8 +80,8 @@ hidden:
   flag_notifications: true
   langcode: true
   latest_analysis: true
-  latest_youthreview: true
   latest_review: true
+  latest_youthreview: true
   owner_full_name: true
   owner_portrait: true
   posted: true

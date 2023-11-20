@@ -15,6 +15,7 @@ dependencies:
     - node.type.review
     - node.type.similar
     - node.type.topic
+    - node.type.youthreview
   module:
     - bpi
     - comment
@@ -37,6 +38,7 @@ permissions:
   - 'create review content'
   - 'create similar content'
   - 'create topic content'
+  - 'create youthreview content'
   - 'delete own analysis content'
   - 'delete own article content'
   - 'delete own author_portrait content'
@@ -47,6 +49,7 @@ permissions:
   - 'delete own review content'
   - 'delete own similar content'
   - 'delete own topic content'
+  - 'delete own youthreview content'
   - 'edit any review content'
   - 'edit own analysis content'
   - 'edit own article content'
@@ -57,6 +60,7 @@ permissions:
   - 'edit own interview content'
   - 'edit own similar content'
   - 'edit own topic content'
+  - 'edit own youthreview content'
   - 'skip comment approval'
   - 'use text format filtered_html'
   - 'use text format full_html'

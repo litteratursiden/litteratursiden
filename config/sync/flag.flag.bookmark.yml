@@ -2,6 +2,8 @@ uuid: b205f8d2-3624-42d2-9c4d-b36d4e5c504e
 langcode: da
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - flag_bookmark
@@ -15,12 +17,12 @@ bundles:
   - author_portrait
   - blog
   - book
-  - book_debate
   - book_list
   - interview
   - review
   - similar
   - topic
+  - youthreview
 entity_type: node
 global: false
 flag_short: 'Tilføj til favoritter'
