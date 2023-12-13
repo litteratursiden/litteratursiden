@@ -61,9 +61,22 @@ function lit_entity_extra_field_info() {
       'visible' => FALSE,
       'weight' => 0,
     ];
+
+    $extra['node']['youthreview']['display'][$field] = [
+      'label' => $label_prefix . $field_definition->getLabel(),
+      'description' => $field_definition->getDescription(),
+      'visible' => FALSE,
+      'weight' => 0,
+    ];
   }
 
   $extra['node']['review']['display']['book_links'] = [
+    'label' => $label_prefix . 'Links',
+    'visible' => FALSE,
+  ];
+
+
+  $extra['node']['youthreview']['display']['book_links'] = [
     'label' => $label_prefix . 'Links',
     'visible' => FALSE,
   ];
@@ -133,6 +146,17 @@ function lit_entity_extra_field_info() {
  */
 function lit_node_view(array &$build, NodeInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
   if ($entity->bundle() == 'review' && $book_node = $entity->get('field_review_reference_book')->entity) {
+
+    foreach (lit_get_book_review_extra_fields() as $field) {
+      if ($display->getComponent($field)) {
+        $build[$field] = $book_node->$field->view($view_mode);
+      }
+    }
+
+    $build['book_links'] = NodeViewBuilder::renderLinks($book_node->id(), $view_mode, $book_node->language()->getId(), $book_node->in_preview);
+  }
+
+  if ($entity->bundle() == 'youthreview' && $book_node = $entity->get('field_youthreview_reference_book')->entity) {
 
     foreach (lit_get_book_review_extra_fields() as $field) {
       if ($display->getComponent($field)) {
