@@ -75,7 +75,6 @@ function lit_entity_extra_field_info() {
     'visible' => FALSE,
   ];
 
-
   $extra['node']['youthreview']['display']['book_links'] = [
     'label' => $label_prefix . 'Links',
     'visible' => FALSE,

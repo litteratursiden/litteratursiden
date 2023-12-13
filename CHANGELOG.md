@@ -8,6 +8,8 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+* Allow adding youthreview to latest reviews.
+
 ## [4.1.2] 2023-11-20
 
 * Renamed flag actions.
