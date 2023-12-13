@@ -1,9 +1,9 @@
-uuid: b16f57c1-d6e0-4d51-b690-843333378279
+uuid: 2decfe30-d65c-4aaa-ba52-a26df01357a8
 langcode: da
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.spot
+    - core.entity_view_mode.node.slick_item
     - field.field.node.youthreview.body
     - field.field.node.youthreview.field_block_reference
     - field.field.node.youthreview.field_review_literature_type
@@ -16,67 +16,86 @@ dependencies:
     - field.field.node.youthreview.field_youthreview_internal_link
     - field.field.node.youthreview.field_youthreview_reference_book
     - field.field.node.youthreview.field_youthreview_spotbox_image
+    - image.style.slick_item
     - node.type.youthreview
   module:
+    - image
     - text
     - user
-id: node.youthreview.spot
+id: node.youthreview.slick_item
 targetEntityType: node
 bundle: youthreview
-mode: spot
+mode: slick_item
 content:
-  field_youthreview_free_text:
+  body:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 6
     region: content
-  field_youthreview_reference_book:
-    type: entity_reference_label
-    label: above
+  book_links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_book_author:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_book_body:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_book_cover_image:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_book_original_title:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_book_reference_author:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_youthreview_spotbox_image:
+    type: image
+    label: hidden
     settings:
-      link: true
+      image_link: ''
+      image_style: slick_item
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 101
-    region: content
-  flag_bookmark:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 10
+    weight: 0
     region: content
   flag_like:
     settings: {  }
     third_party_settings: {  }
-    weight: 10
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
-  posted:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  social_media:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
+    weight: 12
     region: content
 hidden:
-  body: true
   field_block_reference: true
   field_review_literature_type: true
   field_youthreview_comments: true
   field_youthreview_cover_image: true
   field_youthreview_excerpt: true
   field_youthreview_external_link: true
+  field_youthreview_free_text: true
   field_youthreview_general_tags: true
   field_youthreview_internal_link: true
-  field_youthreview_spotbox_image: true
+  field_youthreview_reference_book: true
+  flag_bookmark: true
   langcode: true
+  links: true
   owner_full_name: true
   owner_portrait: true
+  posted: true
   search_api_excerpt: true
+  social_media: true

@@ -1,17 +1,15 @@
-uuid: f009bb7b-1557-45aa-9df3-425e17d3c5da
+uuid: 1aa8f603-be8e-49f4-91a2-4e39d89fb74e
 langcode: da
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
-_core:
-  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
-id: stark_messages
-theme: stark
+    - claro
+id: beskeder
+theme: claro
 region: highlighted
-weight: -10
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

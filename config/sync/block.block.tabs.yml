@@ -1,15 +1,13 @@
-uuid: 38f8dd03-c958-40f3-a780-5aeaea96917b
+uuid: fc1c9ed9-3cf5-4ce9-a05d-b6bb75f119dd
 langcode: da
 status: true
 dependencies:
   theme:
     - claro
-_core:
-  default_config_hash: ACjBZI5shAMiiUpsz-inLYVXDqNNXRnSzAWV3kV_8Hw
-id: claro_primary_local_tasks
+id: tabs
 theme: claro
 region: header
-weight: 0
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:
