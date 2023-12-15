@@ -8,6 +8,8 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.1.3] 2023-12-15
+
 * Allow adding youthreview to latest reviews.
 
 ## [4.1.2] 2023-11-20
