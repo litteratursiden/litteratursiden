@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.favorite_content_teaser
     - field.field.node.youthreview.body
     - field.field.node.youthreview.field_block_reference
+    - field.field.node.youthreview.field_review_literature_type
     - field.field.node.youthreview.field_youthreview_comments
     - field.field.node.youthreview.field_youthreview_cover_image
     - field.field.node.youthreview.field_youthreview_excerpt
@@ -39,6 +40,16 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  flag_like:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -57,6 +68,7 @@ content:
 hidden:
   body: true
   field_block_reference: true
+  field_review_literature_type: true
   field_youthreview_comments: true
   field_youthreview_cover_image: true
   field_youthreview_excerpt: true

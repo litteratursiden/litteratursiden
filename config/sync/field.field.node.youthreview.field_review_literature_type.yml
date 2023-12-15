@@ -1,0 +1,29 @@
+uuid: 0e66cef7-a371-452a-99c1-03836237d8da
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_review_literature_type
+    - node.type.youthreview
+    - taxonomy.vocabulary.literature_type
+id: node.youthreview.field_review_literature_type
+field_name: field_review_literature_type
+entity_type: node
+bundle: youthreview
+label: 'Literature types'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      literature_type: literature_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

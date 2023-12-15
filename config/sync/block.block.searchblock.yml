@@ -1,0 +1,26 @@
+uuid: 2bbb6483-927a-476b-aca8-8d0764ca6020
+langcode: en
+status: false
+dependencies:
+  module:
+    - lit_search
+    - system
+  theme:
+    - litteratursiden
+id: searchblock
+theme: litteratursiden
+region: header
+weight: 1
+provider: null
+plugin: lit_search_block
+settings:
+  id: lit_search_block
+  label: 'Søg Litteratursiden'
+  label_display: visible
+  provider: lit_search
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /search

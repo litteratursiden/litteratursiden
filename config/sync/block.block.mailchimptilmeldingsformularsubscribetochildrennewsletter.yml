@@ -1,6 +1,6 @@
 uuid: 2358dd90-a83a-4ab5-b005-98471fa0547c
 langcode: da
-status: true
+status: false
 dependencies:
   module:
     - mailchimp_signup
