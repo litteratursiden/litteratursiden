@@ -8,6 +8,10 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.1.4] 2024-01-30
+
+* Add comma to taxonomy term list
+
 ## [4.1.3] 2023-12-15
 
 * Allow adding youthreview to latest reviews.
