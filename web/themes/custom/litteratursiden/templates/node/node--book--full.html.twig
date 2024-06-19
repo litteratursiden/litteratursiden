@@ -102,15 +102,15 @@ view_mode ? view_mode|clean_class,
 
         <div class="social-block">
           <div class="grow">
-            {% if user.hasPermission('create review content') %}
-              <div class="add-review hidden-xs hidden-sm">
-                <a href="{{ path('node.add', {'node_type': 'review'}) }}">{{ 'Review the book'|t }}</a>
-              </div>
-            {% elseif logged_in == false %}
-              <div class="login-to-review hidden-xs hidden-sm">
-                <a href="/user/login?destination={{ url }}">{{ 'Login'|t }}</a>&nbsp;{{ 'to review'|t }}
-              </div>
-            {% endif %}
+{#            {% if user.hasPermission('create review content') %}#}
+{#              <div class="add-review hidden-xs hidden-sm">#}
+{#                <a href="{{ path('node.add', {'node_type': 'review'}) }}">{{ 'Review the book'|t }}</a>#}
+{#              </div>#}
+{#            {% elseif logged_in == false %}#}
+{#              <div class="login-to-review hidden-xs hidden-sm">#}
+{#                <a href="/user/login?destination={{ url }}">{{ 'Login'|t }}</a>&nbsp;{{ 'to review'|t }}#}
+{#              </div>#}
+{#            {% endif %}#}
             {{ content.flag_bookmark }}
             {{ content.flag_like }}
           </div>
@@ -126,15 +126,15 @@ view_mode ? view_mode|clean_class,
     <div class="mobile-node-content hidden-md hidden-lg">
       <div class="social-block">
         <div class="grow">
-          {% if user.hasPermission('create review content') %}
-          <div class="add-review hidden-md hidden-lg">
-            <a href="{{ path('node.add', {'node_type': 'review'}) }}">{{ 'Review the book'|t }}</a>
-          </div>
-          {% else %}
-            <div class="login-to-review hidden-md hidden-lg">
-              <a href="/user/login?destination={{ url }}">{{ 'Login'|t }}</a>&nbsp;{{ 'to review'|t }}
-            </div>
-          {% endif %}
+{#          {% if user.hasPermission('create review content') %}#}
+{#          <div class="add-review hidden-md hidden-lg">#}
+{#            <a href="{{ path('node.add', {'node_type': 'review'}) }}">{{ 'Review the book'|t }}</a>#}
+{#          </div>#}
+{#          {% else %}#}
+{#            <div class="login-to-review hidden-md hidden-lg">#}
+{#              <a href="/user/login?destination={{ url }}">{{ 'Login'|t }}</a>&nbsp;{{ 'to review'|t }}#}
+{#            </div>#}
+{#          {% endif %}#}
           {{ content.flag_bookmark }}
           {{ content.flag_like }}
         </div>

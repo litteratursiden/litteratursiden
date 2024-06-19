@@ -22,12 +22,10 @@ dependencies:
     - action
     - block
     - block_content
-    - bpi
     - comment
     - config
     - config_translation
     - entityqueue
-    - facets
     - field_ui
     - file
     - filter
@@ -36,9 +34,6 @@ dependencies:
     - imageapi_optimize
     - language
     - locale
-    - mailchimp
-    - mailchimp_campaign
-    - mailchimp_signup
     - mailsystem
     - node
     - override_node_options
@@ -47,7 +42,6 @@ dependencies:
     - reroute_email
     - rest
     - scheduler
-    - search_api
     - swiftmailer
     - system
     - taxonomy
@@ -63,7 +57,6 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access files overview'
-  - 'access mailchimp signup pages'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
@@ -74,7 +67,6 @@ permissions:
   - 'administer block_content fields'
   - 'administer block_content form display'
   - 'administer blocks'
-  - 'administer bpi'
   - 'administer comment display'
   - 'administer comment fields'
   - 'administer comment form display'
@@ -82,7 +74,6 @@ permissions:
   - 'administer comments'
   - 'administer content types'
   - 'administer display modes'
-  - 'administer facets'
   - 'administer filters'
   - 'administer flagging display'
   - 'administer flagging fields'
@@ -91,9 +82,6 @@ permissions:
   - 'administer image styles'
   - 'administer imageapi optimize pipelines'
   - 'administer languages'
-  - 'administer mailchimp'
-  - 'administer mailchimp campaigns'
-  - 'administer mailchimp signup entities'
   - 'administer menu'
   - 'administer modules'
   - 'administer node display'
@@ -105,7 +93,6 @@ permissions:
   - 'administer reroute email'
   - 'administer rest resources'
   - 'administer scheduler'
-  - 'administer search_api'
   - 'administer site configuration'
   - 'administer software updates'
   - 'administer swiftmailer'
@@ -122,7 +109,6 @@ permissions:
   - 'administer video_embed_html5'
   - 'administer views'
   - administer_mailsystem
-  - 'bpi push content'
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'
