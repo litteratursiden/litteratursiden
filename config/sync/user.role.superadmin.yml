@@ -26,7 +26,6 @@ dependencies:
     - comment
     - config
     - config_translation
-    - contact
     - entityqueue
     - facets
     - field_ui
@@ -81,10 +80,6 @@ permissions:
   - 'administer comment form display'
   - 'administer comment types'
   - 'administer comments'
-  - 'administer contact forms'
-  - 'administer contact_message display'
-  - 'administer contact_message fields'
-  - 'administer contact_message form display'
   - 'administer content types'
   - 'administer display modes'
   - 'administer facets'

@@ -6,7 +6,6 @@ dependencies:
     - filter.format.filtered_html
   module:
     - comment
-    - contact
     - filter
     - flag
     - node
@@ -19,8 +18,6 @@ is_admin: null
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
-  - 'access user contact forms'
   - 'access user profiles'
   - 'edit own comments'
   - 'flag bookmark'
