@@ -64,6 +64,14 @@
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
+
+    {# Add banner with last update #}
+    <div id="static_site_last_update" style="width: 100%; background-color: yellow; padding: 20px;">
+      <div class="container">
+        <strong>Senest opdateret 30/6-24</strong>
+      </div>
+    </div>
+
     <a href="#main-content" class="visually-hidden focusable skip-link">
       {{ 'Skip to main content'|t }}
     </a>
