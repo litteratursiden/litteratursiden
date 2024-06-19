@@ -8,8 +8,14 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.2.0] 2024-06-19
+
 * [PR-65](https://github.com/litteratursiden/litteratursiden/pull/65)
   Add last update banner to site
+* Removed search and facets
+* Remove mailchimp
+* Remove search and account links in header
+* Removed links to blocked user profiles in articles
 
 ## [4.1.4] 2024-01-30
 
