@@ -3,6 +3,6 @@ langcode: da
 status: true
 dependencies: {  }
 id: book_list_carousel
-label: 'Book list carousel'
+label: 'Booklist carousel'
 revision: 0
 description: ''

@@ -22,10 +22,8 @@ dependencies:
     - action
     - block
     - block_content
-    - bpi
     - comment
     - config_translation
-    - contact
     - entityqueue
     - field_ui
     - filter
@@ -52,7 +50,6 @@ permissions:
   - 'administer block_content form display'
   - 'administer blocks'
   - 'administer comments'
-  - 'administer contact forms'
   - 'administer display modes'
   - 'administer flags'
   - 'administer menu'
@@ -60,7 +57,6 @@ permissions:
   - 'administer taxonomy'
   - 'administer themes'
   - 'administer users'
-  - 'bpi push content'
   - 'change own username'
   - 'create analysis content'
   - 'create article content'

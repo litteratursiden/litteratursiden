@@ -3,11 +3,9 @@ _core:
 langcode: da
 module:
   action: 0
-  antibot: 0
   block: 0
   block_content: 0
   block_exclude_pages: 0
-  bpi: 0
   breakpoint: 0
   ckeditor5: 0
   color_field: 0
@@ -16,7 +14,6 @@ module:
   config_filter: 0
   config_ignore: 0
   config_translation: 0
-  contact: 0
   contextual: 0
   crop: 0
   ctools: 0
@@ -25,11 +22,9 @@ module:
   dynamic_page_cache: 0
   editor: 0
   elasticsearch_connector: 0
-  email_registration: 0
   entity_reference_revisions: 0
   entityqueue: 0
   extrafield_views_integration: 0
-  facets: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -54,16 +49,11 @@ module:
   lit_notifications: 0
   lit_open_platform: 0
   lit_print: 0
-  lit_search: 0
   lit_share: 0
   lit_slider: 0
   lit_user: 0
   lit_views: 0
   locale: 0
-  mailchimp: 0
-  mailchimp_campaign: 0
-  mailchimp_lists: 0
-  mailchimp_signup: 0
   mailsystem: 0
   maxlength: 0
   memcache: 0
@@ -82,7 +72,6 @@ module:
   rest_views: 0
   restui: 0
   scheduler: 0
-  search_api: 0
   serialization: 0
   social_media: 0
   swiftmailer: 0
@@ -95,7 +84,6 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
-  user_registrationpassword: 0
   video_embed_field: 0
   video_embed_html5: 0
   view_unpublished: 0

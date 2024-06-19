@@ -122,6 +122,12 @@ content:
     region: content
 hidden:
   body: true
+  book_links: true
+  field_book_author: true
+  field_book_body: true
+  field_book_cover_image: true
+  field_book_original_title: true
+  field_book_reference_author: true
   field_youthreview_comments: true
   field_youthreview_cover_image: true
   field_youthreview_free_text: true

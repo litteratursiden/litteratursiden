@@ -8,6 +8,9 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+* [PR-65](https://github.com/litteratursiden/litteratursiden/pull/65)
+  Add last update banner to site
+
 ## [4.1.4] 2024-01-30
 
 * Add comma to taxonomy term list
