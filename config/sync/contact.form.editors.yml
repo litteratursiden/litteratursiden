@@ -5,7 +5,7 @@ dependencies: {  }
 id: editors
 label: 'Spørg redaktionen'
 recipients:
-  - litteratursiden@mkb.aarhus.dk
+  - litteratursiden@kk.dk
 reply: ''
 weight: 1
 message: "Tak for din mail.\r\n\r\nVi vender tilbage til dig så hurtigt som muligt."
