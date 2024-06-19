@@ -1,0 +1,11 @@
+uuid: c72a2452-f088-426f-8e78-d8923f1d9d3f
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.book_list_carousel
+id: block_content.book_list_carousel
+target_entity_type_id: block_content
+target_bundle: book_list_carousel
+default_langcode: site_default
+language_alterable: false

@@ -36,7 +36,7 @@ social_media:
     library: ''
     img: ''
   twitter:
-    enable: 1
+    enable: 0
     text: Tweet
     api_url: 'https://twitter.com/intent/tweet?url=[current-page:url]&status=[current-page:title]+[current-page:url]'
     api_event: href

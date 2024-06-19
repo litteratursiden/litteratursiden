@@ -5,7 +5,7 @@ dependencies: {  }
 id: literature
 label: 'Spørg om litteratur'
 recipients:
-  - litteratursiden@mkb.aarhus.dk
+  - litteratursiden@kk.dk
 reply: ''
 weight: 0
 message: "Tak for dit spørgsmål!\r\n\r\nLitteratursiden har kontakt til adskillige eksperter indenfor litteratur, og dit spørgsmål vil blive behandlet hurtigst muligt."
