@@ -1,0 +1,11 @@
+.llu-banner {
+  --banner-bg: yellow;
+
+  width: 100%;
+  background-color: var(--banner-bg);
+  padding: 20px;
+}
+
+.llu-banner .container {
+  text-align: center;
+}
