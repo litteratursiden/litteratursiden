@@ -82,7 +82,7 @@ view_mode ? view_mode|clean_class,
         {% if bookclub_cover_image %}
           <a href="{{ url }}" rel="bookmark">
             <div class="field--name-field-book-club-cover-image"
-                 style="background-image: url({{ file_url(bookclub_cover_image) }});"></div>
+                 style="background-image: url('{{ file_url(bookclub_cover_image) }}');"></div>
           </a>
         {% endif %}
 
