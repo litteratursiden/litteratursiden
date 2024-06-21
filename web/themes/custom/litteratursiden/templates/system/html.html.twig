@@ -62,11 +62,12 @@
     <script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js" data-culture="DA" type="text/javascript"></script>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
+    <link rel="stylesheet" media="all" href="/themes/custom/litteratursiden/banner.css">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
 
     {# Add banner with last update #}
-    <div id="static_site_last_update" style="width: 100%; background-color: yellow; padding: 20px;">
+    <div id="static_site_last_update" class="llu-banner">
       <div class="container">
         <strong>Senest opdateret 30/6-24</strong>
       </div>
