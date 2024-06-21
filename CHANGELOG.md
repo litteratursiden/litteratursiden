@@ -8,6 +8,8 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+* [PR-66](https://github.com/litteratursiden/litteratursiden/pull/66)
+  Last update banner move styling
 * [PR-65](https://github.com/litteratursiden/litteratursiden/pull/65)
   Add last update banner to site
 
