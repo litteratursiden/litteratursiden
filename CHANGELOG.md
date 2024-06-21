@@ -8,6 +8,11 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.2.2] 2024-06-21
+
+* [PR-66](https://github.com/litteratursiden/litteratursiden/pull/66)
+  Last update banner move styling
+
 ## [4.2.0] 2024-06-19
 
 * [PR-65](https://github.com/litteratursiden/litteratursiden/pull/65)
