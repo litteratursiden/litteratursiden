@@ -124,7 +124,7 @@
         "drupal/jquery_ui_accordion": "^2.0",
         "drupal/mailchimp": "^2.0",
         "drupal/mailsystem": "^4.1",
-        "drupal/maxlength": "2.1",
+        "drupal/maxlength": "2.1.*",
         "drupal/memcache": "^2.1",
         "drupal/metatag": "^1.4",
         "drupal/override_node_options": "^2.0",
