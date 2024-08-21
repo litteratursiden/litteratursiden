@@ -22,7 +22,6 @@ dependencies:
     - action
     - block
     - block_content
-    - bpi
     - comment
     - config_translation
     - entityqueue
@@ -58,7 +57,6 @@ permissions:
   - 'administer taxonomy'
   - 'administer themes'
   - 'administer users'
-  - 'bpi push content'
   - 'change own username'
   - 'create analysis content'
   - 'create article content'

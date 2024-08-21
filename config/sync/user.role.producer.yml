@@ -17,7 +17,6 @@ dependencies:
     - node.type.topic
     - node.type.youthreview
   module:
-    - bpi
     - comment
     - filter
     - node
@@ -27,7 +26,6 @@ weight: 2
 is_admin: null
 permissions:
   - 'administer comments'
-  - 'bpi push content'
   - 'create analysis content'
   - 'create article content'
   - 'create author_portrait content'

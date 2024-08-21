@@ -22,7 +22,6 @@ dependencies:
     - action
     - block
     - block_content
-    - bpi
     - comment
     - config
     - config_translation
@@ -68,7 +67,6 @@ permissions:
   - 'administer block_content fields'
   - 'administer block_content form display'
   - 'administer blocks'
-  - 'administer bpi'
   - 'administer comment display'
   - 'administer comment fields'
   - 'administer comment form display'
@@ -111,7 +109,6 @@ permissions:
   - 'administer users'
   - 'administer video_embed_html5'
   - 'administer views'
-  - 'bpi push content'
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'

@@ -7,7 +7,6 @@ module:
   block: 0
   block_content: 0
   block_exclude_pages: 0
-  bpi: 0
   breakpoint: 0
   ckeditor5: 0
   color_field: 0
