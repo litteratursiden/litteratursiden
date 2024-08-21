@@ -36,10 +36,6 @@ dependencies:
     - imageapi_optimize
     - language
     - locale
-    - mailchimp
-    - mailchimp_campaign
-    - mailchimp_signup
-    - mailsystem
     - node
     - override_node_options
     - path
@@ -48,7 +44,6 @@ dependencies:
     - rest
     - scheduler
     - search_api
-    - swiftmailer
     - system
     - taxonomy
     - video_embed_field
@@ -63,7 +58,6 @@ permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access files overview'
-  - 'access mailchimp signup pages'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
@@ -91,9 +85,6 @@ permissions:
   - 'administer image styles'
   - 'administer imageapi optimize pipelines'
   - 'administer languages'
-  - 'administer mailchimp'
-  - 'administer mailchimp campaigns'
-  - 'administer mailchimp signup entities'
   - 'administer menu'
   - 'administer modules'
   - 'administer node display'
@@ -108,7 +99,6 @@ permissions:
   - 'administer search_api'
   - 'administer site configuration'
   - 'administer software updates'
-  - 'administer swiftmailer'
   - 'administer taxonomy'
   - 'administer taxonomy_term display'
   - 'administer taxonomy_term fields'
@@ -121,7 +111,6 @@ permissions:
   - 'administer users'
   - 'administer video_embed_html5'
   - 'administer views'
-  - administer_mailsystem
   - 'bpi push content'
   - 'bypass node access'
   - 'cancel account'

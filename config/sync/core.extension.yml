@@ -58,11 +58,6 @@ module:
   lit_user: 0
   lit_views: 0
   locale: 0
-  mailchimp: 0
-  mailchimp_campaign: 0
-  mailchimp_lists: 0
-  mailchimp_signup: 0
-  mailsystem: 0
   maxlength: 0
   memcache: 0
   menu_link_content: 0
@@ -83,7 +78,6 @@ module:
   search_api: 0
   serialization: 0
   social_media: 0
-  swiftmailer: 0
   syslog: 0
   system: 0
   taxonomy: 0
@@ -93,7 +87,6 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
-  user_registrationpassword: 0
   video_embed_field: 0
   video_embed_html5: 0
   view_unpublished: 0
