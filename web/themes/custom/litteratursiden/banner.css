@@ -15,3 +15,8 @@
   text-align: center;
   color: #ffffff;
 }
+
+/* Evil hack that should not be here.... but it is here. */
+.comments-posting-forbidden {
+  display: none;
+}
