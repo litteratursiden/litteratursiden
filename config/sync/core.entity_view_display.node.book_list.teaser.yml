@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.book_list.field_block_reference
     - field.field.node.book_list.field_book_list_body
     - field.field.node.book_list.field_book_list_comments
     - field.field.node.book_list.field_book_list_cover_image

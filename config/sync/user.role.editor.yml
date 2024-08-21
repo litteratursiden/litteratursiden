@@ -26,6 +26,7 @@ dependencies:
     - config_translation
     - entityqueue
     - field_ui
+    - file
     - filter
     - flag
     - locale
@@ -41,10 +42,13 @@ weight: 3
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access toolbar'
   - 'administer account settings'
   - 'administer actions'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer block_content display'
   - 'administer block_content fields'
   - 'administer block_content form display'
@@ -89,6 +93,7 @@ permissions:
   - 'delete own blog content'
   - 'delete own book content'
   - 'delete own book_list content'
+  - 'delete own files'
   - 'delete own interview content'
   - 'delete own page content'
   - 'delete own review content'

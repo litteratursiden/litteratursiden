@@ -1,9 +1,12 @@
 uuid: a9166e5f-a16e-4c35-bd3f-75f685a39a91
 langcode: da
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - file
 id: api
 label: API
 weight: 5
 is_admin: null
-permissions: {  }
+permissions:
+  - 'delete own files'

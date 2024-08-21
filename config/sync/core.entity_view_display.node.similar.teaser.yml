@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.similar.field_block_reference
     - field.field.node.similar.field_similar_author
     - field.field.node.similar.field_similar_body
     - field.field.node.similar.field_similar_comments

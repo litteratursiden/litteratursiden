@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.slick_item
+    - field.field.node.book.field_block_reference
     - field.field.node.book.field_book_author
     - field.field.node.book.field_book_body
     - field.field.node.book.field_book_comments

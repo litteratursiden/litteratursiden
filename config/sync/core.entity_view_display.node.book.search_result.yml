@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_display.comment.comment.default
     - core.entity_view_mode.node.search_result
+    - field.field.node.book.field_block_reference
     - field.field.node.book.field_book_author
     - field.field.node.book.field_book_body
     - field.field.node.book.field_book_comments

@@ -55,6 +55,7 @@ weight: 4
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access files overview'
   - 'access site in maintenance mode'
@@ -63,6 +64,8 @@ permissions:
   - 'access user profiles'
   - 'administer account settings'
   - 'administer actions'
+  - 'administer block content'
+  - 'administer block types'
   - 'administer block_content display'
   - 'administer block_content fields'
   - 'administer block_content form display'
@@ -152,6 +155,7 @@ permissions:
   - 'delete own blog content'
   - 'delete own book content'
   - 'delete own book_list content'
+  - 'delete own files'
   - 'delete own interview content'
   - 'delete own page content'
   - 'delete own review content'

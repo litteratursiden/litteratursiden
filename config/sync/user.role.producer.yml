@@ -18,6 +18,7 @@ dependencies:
     - node.type.youthreview
   module:
     - comment
+    - file
     - filter
     - node
 id: producer
@@ -43,6 +44,7 @@ permissions:
   - 'delete own blog content'
   - 'delete own book content'
   - 'delete own book_list content'
+  - 'delete own files'
   - 'delete own interview content'
   - 'delete own review content'
   - 'delete own similar content'

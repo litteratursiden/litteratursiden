@@ -26,7 +26,6 @@ dependencies:
     - field.field.node.book.field_book_spotbox_image
     - field.field.node.book.field_book_subject_number
     - field.field.node.book.field_book_translater
-    - image.style.book_cover
     - node.type.book
   module:
     - image

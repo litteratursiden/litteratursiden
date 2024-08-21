@@ -6,6 +6,7 @@ dependencies:
     - filter.format.filtered_html
   module:
     - comment
+    - file
     - filter
     - flag
     - node
@@ -19,6 +20,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access user profiles'
+  - 'delete own files'
   - 'edit own comments'
   - 'flag bookmark'
   - 'flag comment_like'

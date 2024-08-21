@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.search_index
+    - field.field.node.review.field_block_reference
     - field.field.node.review.field_review_body
     - field.field.node.review.field_review_comments
     - field.field.node.review.field_review_cover_image

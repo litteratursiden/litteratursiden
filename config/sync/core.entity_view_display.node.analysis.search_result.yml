@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.analysis.field_analysis_internal_link
     - field.field.node.analysis.field_analysis_reference_book
     - field.field.node.analysis.field_analysis_spotbox_image
+    - field.field.node.analysis.field_block_reference
     - node.type.analysis
   module:
     - comment
