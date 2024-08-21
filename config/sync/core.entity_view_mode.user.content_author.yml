@@ -6,5 +6,6 @@ dependencies:
     - user
 id: user.content_author
 label: 'Content author'
+description: ''
 targetEntityType: user
 cache: true

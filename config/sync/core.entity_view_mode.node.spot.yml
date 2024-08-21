@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.spot
 label: Spot
+description: ''
 targetEntityType: node
 cache: true

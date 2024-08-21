@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.favorite_content_teaser
 label: 'Favorite content teaser'
+description: ''
 targetEntityType: node
 cache: true

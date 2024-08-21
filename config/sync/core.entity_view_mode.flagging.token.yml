@@ -6,5 +6,6 @@ dependencies:
     - flag
 id: flagging.token
 label: Token
+description: ''
 targetEntityType: flagging
 cache: true

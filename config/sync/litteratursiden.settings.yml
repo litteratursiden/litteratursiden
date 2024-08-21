@@ -1,6 +1,5 @@
 _core:
   default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
-langcode: da
 favicon:
   mimetype: image/png
   path: 'public://favicon_litteratursiden_web_1.png'

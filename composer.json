@@ -186,7 +186,8 @@
             "zaporylie/composer-drupal-optimizations": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "oomphinc/composer-installers-extender": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
         }
     },
     "scripts": {
@@ -247,9 +248,6 @@
             },
             "drupal/views_infinite_scroll": {
               "https://www.drupal.org/project/views_infinite_scroll/issues/2877652": "https://www.drupal.org/files/issues/2022-08-17/2877652-33-fix_views_infinite_scroll_pager_when_multi_views_on_single_page.patch"
-            },
-            "drupal/pathauto": {
-              "https://www.drupal.org/project/pathauto/issues/3370089": "https://www.drupal.org/files/issues/2023-07-13/must-be-of-type-array-3370089-5.patch"
             }
         },
         "merge-plugin": {

@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.internal_links_carousel
 label: 'Internal links carousel'
+description: ''
 targetEntityType: node
 cache: true

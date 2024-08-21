@@ -6,5 +6,6 @@ dependencies:
     - node
 id: node.front
 label: Front
+description: ''
 targetEntityType: node
 cache: true

@@ -113,6 +113,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 4
+          pagination_heading_level: h4
       exposed_form:
         type: lit_views_advanced
         options:
@@ -129,7 +130,7 @@ display:
         type: none
         options: {  }
       cache:
-        type: none
+        type: search_api_none
         options: {  }
       empty:
         area:
@@ -301,7 +302,7 @@ display:
     position: 1
     display_options:
       cache:
-        type: none
+        type: search_api_none
       defaults:
         cache: false
       exposed_block: false

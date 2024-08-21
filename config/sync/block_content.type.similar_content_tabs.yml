@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: similar_content_tabs
 label: 'Similar content tabs'
-revision: 0
+revision: false
 description: ''

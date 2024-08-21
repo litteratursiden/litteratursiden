@@ -22,8 +22,8 @@ third_party_settings:
     parent: ''
 name: 'Noget der ligner'
 type: similar
-description: ''
-help: ''
+description: null
+help: null
 new_revision: false
 preview_mode: 0
 display_submitted: true

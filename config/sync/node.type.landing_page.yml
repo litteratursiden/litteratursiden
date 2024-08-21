@@ -24,7 +24,7 @@ third_party_settings:
 name: 'Landing page'
 type: landing_page
 description: 'An overview page containing blocks. Primarily used for pages accessed from the main menu. (i.e Children books, authors, themes)'
-help: ''
+help: null
 new_revision: false
 preview_mode: 0
 display_submitted: false

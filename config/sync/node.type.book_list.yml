@@ -22,8 +22,8 @@ third_party_settings:
     parent: ''
 name: Bogliste
 type: book_list
-description: ''
-help: ''
+description: null
+help: null
 new_revision: false
 preview_mode: 0
 display_submitted: true

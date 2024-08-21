@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: book_list_carousel
 label: 'Booklist carousel'
-revision: 0
+revision: false
 description: ''

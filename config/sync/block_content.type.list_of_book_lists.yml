@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: list_of_book_lists
 label: 'List of book lists'
-revision: 0
+revision: false
 description: ''
