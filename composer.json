@@ -88,10 +88,35 @@
                     "type": "zip"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "bgrins/spectrum",
+                "version": "1.8.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/bgrins/spectrum/archive/refs/tags/1.8.0.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "recurser/jquery-simple-color",
+                "version": "v1.2.3",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/recurser/jquery-simple-color/archive/refs/tags/v1.2.3.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
         "php": "^8.1",
+        "bgrins/spectrum": "^1.8",
         "bpi/sdk": "^4.2",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
@@ -157,6 +182,7 @@
         "jquery_validation/jqueryvalidate": "~1.0",
         "kenwheeler/slick": "master",
         "oomphinc/composer-installers-extender": "^2.0",
+        "recurser/jquery-simple-color": "^1.2",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",

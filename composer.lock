@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41eb17e1a6d8282541a02824407174c8",
+    "content-hash": "6221ebfea9b61360db5e5c8915a0c054",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -213,6 +213,15 @@
                 "source": "https://github.com/aws/aws-sdk-php/tree/3.320.4"
             },
             "time": "2024-08-20T18:20:32+00:00"
+        },
+        {
+            "name": "bgrins/spectrum",
+            "version": "1.8.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/bgrins/spectrum/archive/refs/tags/1.8.0.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "bpi/sdk",
@@ -7893,6 +7902,15 @@
                 }
             ],
             "time": "2023-11-16T16:16:50+00:00"
+        },
+        {
+            "name": "recurser/jquery-simple-color",
+            "version": "v1.2.3",
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/recurser/jquery-simple-color/archive/refs/tags/v1.2.3.zip"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "ruflin/elastica",
