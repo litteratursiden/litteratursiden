@@ -8,12 +8,16 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
-## [4.2.2] 2024-08-21
+## [4.3.0] 2025-03-24
+
+* Drupal core updates.
+
+## [4.2.3] 2024-08-21
 
 * [PR-66](https://github.com/litteratursiden/litteratursiden/pull/66)
   Last update banner move styling
 
-## [4.2.3] 2024-08-21
+## [4.2.2] 2024-08-21
 
 * [PR-65](https://github.com/litteratursiden/litteratursiden/pull/65)
   Add last update banner to site
