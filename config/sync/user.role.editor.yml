@@ -19,7 +19,6 @@ dependencies:
     - node.type.topic
     - node.type.youthreview
   module:
-    - action
     - block
     - block_content
     - comment
