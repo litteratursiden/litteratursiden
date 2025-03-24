@@ -195,6 +195,7 @@ private-files/
 # Ignore VS-code
 .vscode
 
+
 settings.local.php
 .env.docker.local
 node_modules
