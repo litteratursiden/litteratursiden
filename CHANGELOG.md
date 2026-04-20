@@ -8,6 +8,10 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.3.1] 2026-04-20
+
+* Drupal core updates. 
+
 ## [4.3.0] 2025-03-24
 
 * Drupal core updates.

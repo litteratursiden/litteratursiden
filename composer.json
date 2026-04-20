@@ -175,7 +175,7 @@
         "drupal/views_show_more": "^2.0",
         "drupal/viewsreference": "dev-3364798-views-reference-is",
         "drupal/xmlsitemap": "^1.5",
-        "drush/drush": "^13",
+        "drush/drush": "^13.7",
         "ganlanyuan/tiny-slider": "master",
         "gdsmith/easing": "master",
         "itk-dev/web_accessibility_statement": "^1.1",
