@@ -8,9 +8,14 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.4.0] 2026-05-20
+
+* Updated Drupal core from 10.4 to 10.6.9.
+* Pinned core constraints to `~10.6.0` to keep the project on the 10.6.x series.
+
 ## [4.3.1] 2026-04-20
 
-* Drupal core updates. 
+* Drupal core updates.
 
 ## [4.3.0] 2025-03-24
 
