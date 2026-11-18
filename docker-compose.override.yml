@@ -1,6 +1,6 @@
 services:
   es:
-    image: elasticsearch:7.17.4
+    image: elasticsearch:9.5.5
     networks:
       - app
       - frontend
