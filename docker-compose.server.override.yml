@@ -11,7 +11,7 @@ services:
       - .:/app
 
   es:
-    image: elasticsearch:7.17.4
+    image: elasticsearch:9.5.5
     restart: unless-stopped
     networks:
       - app

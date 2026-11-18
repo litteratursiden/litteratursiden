@@ -8,6 +8,14 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [4.4.2] 2026-11-18
+
+* Drupal security update
+
+## [4.4.1] 2026-10-14
+
+* Drupal security update
+
 ## [4.4.0] 2026-05-20
 
 * Updated Drupal core from 10.4 to 10.6.9.
