@@ -2,17 +2,18 @@ uuid: 16c19cca-0b22-48cc-aa9c-4315f95deeb3
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.review
   module:
     - node
 id: review
 label: Review
 type: 'canonical_entities:node'
-pattern: 'anmeldelser/[node:title]'
+pattern: '/anmeldelser/[node:title]'
 selection_criteria:
   ca667b24-1c7b-4dfd-90b2-17b79308b3f5:
     id: 'entity_bundle:node'
     negate: false
-    uuid: ca667b24-1c7b-4dfd-90b2-17b79308b3f5
     context_mapping:
       node: node
     bundles:

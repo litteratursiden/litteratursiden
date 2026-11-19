@@ -339,7 +339,8 @@ display:
           entity_type: node
           plugin_id: entity_queue
           required: false
-          limit_queue: booklists
+          limit_queue:
+            - booklists
       use_ajax: true
       header: {  }
       footer: {  }

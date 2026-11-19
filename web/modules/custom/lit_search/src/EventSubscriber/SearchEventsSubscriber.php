@@ -2,7 +2,7 @@
 
 namespace Drupal\lit_search\EventSubscriber;
 
-use Drupal\elasticsearch_connector\Event\BuildSearchParamsEvent;
+use Drupal\elasticsearch_connector\Event\QueryParamsEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
@@ -17,17 +17,17 @@ class SearchEventsSubscriber implements EventSubscriberInterface {
    */
   public static function getSubscribedEvents() {
     return [
-      BuildSearchParamsEvent::BUILD_QUERY => 'buildQuery',
+      QueryParamsEvent::class => 'buildQuery',
     ];
   }
 
   /**
    * Extend elastic search query with aggregations to create groups.
    *
-   * @param \Drupal\elasticsearch_connector\Event\BuildSearchParamsEvent $event
+   * @param \Drupal\elasticsearch_connector\Event\QueryParamsEvent $event
    *   The event to react on.
    */
-  public function buildQuery(BuildSearchParamsEvent $event) {
+  public function buildQuery(QueryParamsEvent $event) {
     $params = [
       'body' => [
         'aggs' => [
@@ -52,9 +52,7 @@ class SearchEventsSubscriber implements EventSubscriberInterface {
       ],
     ];
 
-    $event_params = $event->getElasticSearchParams();
-    $params = array_replace_recursive((array) $event_params, $params);
-    $event->setElasticSearchParams($params);
+    $event->setParams(array_replace_recursive($event->getParams(), $params));
   }
 
 }

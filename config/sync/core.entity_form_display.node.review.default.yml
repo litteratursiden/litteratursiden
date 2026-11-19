@@ -169,12 +169,12 @@ content:
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 6
+    weight: 52
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 5
+    weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -203,11 +203,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   sticky: true
+  unpublish_on: true

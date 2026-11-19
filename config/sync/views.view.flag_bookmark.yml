@@ -445,7 +445,8 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - flag.flag.bookmark
   favorite_content_block:
     id: favorite_content_block
     display_title: 'Favorite content block'
@@ -487,4 +488,5 @@ display:
         - user
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - flag.flag.bookmark

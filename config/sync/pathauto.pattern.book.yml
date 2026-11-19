@@ -2,17 +2,18 @@ uuid: d3f0e1c3-5af7-4171-be98-eaeb2479c2a4
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.book
   module:
     - node
 id: book
 label: Book
 type: 'canonical_entities:node'
-pattern: 'boeger/[node:title]'
+pattern: '/boeger/[node:title]'
 selection_criteria:
   4239fda0-7107-4080-bac6-f3541a87c0d6:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 4239fda0-7107-4080-bac6-f3541a87c0d6
     context_mapping:
       node: node
     bundles:

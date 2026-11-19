@@ -12,6 +12,7 @@ services:
           memory: 4096M
     environment:
       - discovery.type=single-node
+      - xpack.security.enabled=false
 
   phpfpm:
     depends_on:

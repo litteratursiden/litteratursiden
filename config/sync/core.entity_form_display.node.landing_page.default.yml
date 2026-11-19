@@ -8,7 +8,6 @@ dependencies:
   module:
     - field_group
     - path
-    - scheduler
 third_party_settings:
   field_group:
     group_status:
@@ -70,12 +69,6 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 9
@@ -101,11 +94,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  unpublish_on:
-    type: datetime_timestamp_no_default
-    weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  publish_on: true
   sticky: true
+  unpublish_on: true
