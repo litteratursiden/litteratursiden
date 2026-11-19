@@ -60,14 +60,6 @@ content:
     third_party_settings: {  }
     weight: 7
     region: content
-  field_review_generel_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 8
-    region: content
   field_review_internal_link:
     type: entity_reference_label
     label: above
@@ -121,6 +113,7 @@ hidden:
   field_book_original_title: true
   field_book_reference_author: true
   field_review_comments: true
+  field_review_generel_tags: true
   field_review_literature_type: true
   field_review_reference_book: true
   field_review_spotbox_image: true

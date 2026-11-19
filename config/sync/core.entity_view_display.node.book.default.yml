@@ -152,14 +152,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_book_general_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 11
-    region: content
   field_book_graphic:
     type: string
     label: above
@@ -285,6 +277,7 @@ content:
 hidden:
   field_book_comments: true
   field_book_debates: true
+  field_book_general_tags: true
   field_book_language: true
   field_book_literature_type: true
   field_book_pid: true

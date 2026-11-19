@@ -63,14 +63,6 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
-  field_topic_general_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 8
-    region: content
   field_topic_internal_link:
     type: entity_reference_label
     label: above
@@ -125,6 +117,7 @@ hidden:
   field_teaser: true
   field_topic_comments: true
   field_topic_excerpt: true
+  field_topic_general_tags: true
   field_topic_spotbox_image: true
   field_topic_theme_body_text: true
   flag_notifications: true

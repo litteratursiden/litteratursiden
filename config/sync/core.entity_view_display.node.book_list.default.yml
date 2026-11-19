@@ -46,14 +46,6 @@ content:
     third_party_settings: {  }
     weight: 8
     region: content
-  field_book_list_general_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 7
-    region: content
   flag_bookmark:
     settings: {  }
     third_party_settings: {  }
@@ -87,6 +79,7 @@ content:
 hidden:
   field_book_list_comments: true
   field_book_list_cover_image: true
+  field_book_list_general_tags: true
   field_book_list_reference_book: true
   field_book_list_reference_review: true
   field_book_list_spotbox_image: true

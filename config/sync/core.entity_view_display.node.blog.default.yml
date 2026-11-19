@@ -75,14 +75,6 @@ content:
     third_party_settings: {  }
     weight: 11
     region: content
-  field_blog_general_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 8
-    region: content
   field_blog_internal_link:
     type: entity_reference_label
     label: above
@@ -123,6 +115,7 @@ content:
     region: content
 hidden:
   field_blog_comments: true
+  field_blog_general_tags: true
   field_blog_literature_type: true
   field_blog_message_flag: true
   field_spotbox_image: true

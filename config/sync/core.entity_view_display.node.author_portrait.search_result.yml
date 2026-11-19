@@ -97,14 +97,6 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
-  field_author_portrait_tags:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 106
-    region: content
   flag_bookmark:
     settings: {  }
     third_party_settings: {  }
@@ -132,6 +124,7 @@ content:
     region: content
 hidden:
   field_author_portrait_like: true
+  field_author_portrait_tags: true
   field_block_reference: true
   field_spotbox_image: true
   field_teaser: true

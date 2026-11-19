@@ -41,14 +41,6 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
-  field_article_general_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 8
-    region: content
   field_article_internal_link:
     type: entity_reference_label
     label: above
@@ -110,6 +102,7 @@ content:
     region: content
 hidden:
   field_article_comments: true
+  field_article_general_tags: true
   field_teaser: true
   flag_notifications: true
   langcode: true

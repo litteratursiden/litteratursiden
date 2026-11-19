@@ -44,14 +44,6 @@ content:
     third_party_settings: {  }
     weight: 9
     region: content
-  field_analysis_general_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 8
-    region: content
   field_analysis_internal_link:
     type: entity_reference_label
     label: above
@@ -114,6 +106,7 @@ hidden:
   field_analysis_comments: true
   field_analysis_cover_image: true
   field_analysis_free_text: true
+  field_analysis_general_tags: true
   field_analysis_reference_book: true
   flag_notifications: true
   langcode: true

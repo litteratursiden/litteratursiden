@@ -39,14 +39,6 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
-  field_similar_general_tags:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 7
-    region: content
   field_similar_reference:
     type: entity_reference_label
     label: above
@@ -90,6 +82,7 @@ hidden:
   field_similar_comments: true
   field_similar_cover_image: true
   field_similar_files: true
+  field_similar_general_tags: true
   field_similar_reference_book: true
   field_similar_reference_review: true
   field_similar_spotbox_image: true

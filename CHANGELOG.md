@@ -22,6 +22,10 @@ See [keep a changelog] for information about writing changes to this log.
   format. Elasticsearch 9 runs with `xpack.security.enabled=false`.
   Index all content again after deployment.
 * Fixed deprecated API calls and implicit nullable parameters in custom code.
+* Fixed the header search. The search blocks now put the form attributes on
+  the block wrapper, because Drupal 11 does not do this for forms.
+* Removed the tag fields from the full and search result node displays, so
+  the pages show the same content as before the upgrade.
 * Set `core_version_requirement: ^10 || ^11` on all custom modules and the
   theme.
 

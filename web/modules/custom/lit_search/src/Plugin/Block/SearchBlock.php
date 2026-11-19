@@ -18,7 +18,14 @@ class SearchBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    return \Drupal::formBuilder()->getForm('Drupal\lit_search\Form\SearchForm');
+    $form = \Drupal::formBuilder()->getForm('Drupal\lit_search\Form\SearchForm');
+
+    // Drupal 11 does not move form attributes to the block wrapper. The theme
+    // CSS expects the form classes on the wrapper, so move them.
+    $form['#wrapper_attributes'] = $form['#attributes'] ?? [];
+    unset($form['#attributes']);
+
+    return $form;
   }
 
 }
