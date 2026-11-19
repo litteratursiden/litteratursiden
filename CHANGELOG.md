@@ -8,109 +8,223 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+## [5.0.0] - 2026-11-19
+
+### Added
+
+* Added the contrib module `drupal/action`, because Drupal 11 removed Action UI
+  from core.
+
+### Changed
+
 * Updated Drupal core from 10.6.22 to 11.4.13.
-* Removed contrib modules that were not enabled: advagg, email_registration,
-  group, mailchimp, mailsystem, purge, purge_users, s3fs,
-  user_registrationpassword and varnish_purge.
 * Updated contrib modules to new major versions with Drupal 11 support:
   config_filter 2, config_ignore 3, elasticsearch_connector 9, field_group 4,
   flag 5, flood_control 3, image_widget_crop 3, maxlength 3, metatag 2,
   reroute_email 2.3, scheduler 2, video_embed_field 3 and xmlsitemap 2.
-* Added the contrib module `drupal/action`, because Drupal 11 removed Action UI
-  from core.
 * Changed the search server configuration to the elasticsearch_connector 9
   format. Elasticsearch 9 runs with `xpack.security.enabled=false`.
   Index all content again after deployment.
-* Fixed deprecated API calls and implicit nullable parameters in custom code.
-* Fixed the header search. The search blocks now put the form attributes on
-  the block wrapper, because Drupal 11 does not do this for forms.
-* Removed the tag fields from the full and search result node displays, so
-  the pages show the same content as before the upgrade.
 * Set `core_version_requirement: ^10 || ^11` on all custom modules and the
   theme.
 
-## [4.4.2] 2026-11-18
+### Removed
+
+* Removed contrib modules that were not enabled: advagg, email_registration,
+  group, mailchimp, mailsystem, purge, purge_users, s3fs,
+  user_registrationpassword and varnish_purge.
+* Removed the tag fields from the full and search result node displays, so
+  the pages show the same content as before the upgrade.
+
+### Fixed
+
+* Fixed deprecated API calls and implicit nullable parameters in custom code.
+* Fixed the header search. The search blocks now put the form attributes on
+  the block wrapper, because Drupal 11 does not do this for forms.
+
+## [4.4.2] - 2026-11-18
+
+### Security
 
 * Drupal security update
 
-## [4.4.1] 2026-10-14
+## [4.4.1] - 2026-10-14
+
+### Security
 
 * Drupal security update
 
-## [4.4.0] 2026-05-20
+## [4.4.0] - 2026-05-20
+
+### Changed
 
 * Updated Drupal core from 10.4 to 10.6.9.
 * Pinned core constraints to `~10.6.0` to keep the project on the 10.6.x series.
 
-## [4.3.1] 2026-04-20
+## [4.3.1] - 2026-04-20
+
+### Changed
 
 * Drupal core updates.
 
-## [4.3.0] 2025-03-24
+## [4.3.0] - 2025-03-24
+
+### Changed
 
 * Drupal core updates.
 
-## [4.2.3] 2024-08-21
+## [4.2.3] - 2024-06-21
+
+### Fixed
+
+* Fixed background-image paths.
+
+## [4.2.2] - 2024-06-21
+
+### Changed
 
 * [PR-66](https://github.com/litteratursiden/litteratursiden/pull/66)
-  Last update banner move styling
+  Moved the last update banner styling to a CSS file.
 
-## [4.2.2] 2024-08-21
+## [4.2.1] - 2024-06-19
+
+### Removed
+
+* Removed the user picture with link.
+
+## [4.2.0] - 2024-06-19
+
+### Added
 
 * [PR-65](https://github.com/litteratursiden/litteratursiden/pull/65)
-  Add last update banner to site
+  Added the last update banner to the site.
 
-## [4.1.4] 2024-01-30
+### Changed
 
-* Add comma to taxonomy term list
+* Disabled search, forms and login.
+* Disabled contact forms.
+* Updated configuration from production.
 
-## [4.1.3] 2023-12-15
+## [4.1.4] - 2024-01-30
+
+### Changed
+
+* Added a comma to the taxonomy term list.
+
+## [4.1.3] - 2023-12-15
+
+### Added
 
 * Allow adding youthreview to latest reviews.
 
-## [4.1.2] 2023-11-20
+## [4.1.2] - 2023-11-20
+
+### Changed
 
 * Renamed flag actions.
 
-## [4.1.1] 2023-11-20
+## [4.1.1] - 2023-11-20
 
-* Updated new contenttype Ungeanmeldelse/youthreview
+### Changed
 
-## [4.1.0] 2023-11-15
+* Updated new content type Ungeanmeldelse/youthreview.
 
-* Added new contenttype Ungeanmeldelse/youthreview
+## [4.1.0] - 2023-11-15
 
-## [4.0.2] 2023-10-09
+### Added
 
-* Fixed "Add one more" for book ref. fields to the open platform.
+* Added new content type Ungeanmeldelse/youthreview.
+
+## [4.0.5] - 2023-11-01
+
+### Added
+
+* Added Siteimprove script to the footer.
+
+### Changed
+
+* Updated drupal/xmlsitemap from ^1.4 to ^1.5.
+
+### Fixed
+
 * Fixed system action flag naming conventions, causing errors during setup.
-* Updated drupal/xmlsitemap from ^1.4 -> ^1.5.
-* Update config of sitemap scope, to only include content types: temaer, boglister, artiker.
 * Fixed layout overflow styling issue.
 * Fixed an issue with viewsreference interfering with infinitescroll.
-* Added siteimprove
-* Added new contenttype Ungeanmeldelse/youthreview
 
-## [4.0.1] 2023-10-05
+## [4.0.4] - 2023-10-25
 
-* Added pull request template
-* Update change log format
-* Fixed open platform widget - hook_field_widget_form_alter() is deprecated and removed in Drupal 10
+### Changed
 
-## [4.0.0] 2023-09-25
+* Changed action IDs.
 
-* Upgrade contrib modules to be drupal-10 compatible
-* Upgrade custom modules to be drupal-10 compatible
-* Add GitHub actions to check code
-* Add this changelog
-* Add linting for markdown
-* Add php code sniffer
-* Add PHPStan code analyzing
-* Disable several modules
-* Disable videos in wysiwyg (Not D10 compatible yet)
+## [4.0.3] - 2023-10-25
+
+### Changed
+
+* Updated config of sitemap scope, to only include content types: temaer,
+  boglister, artikler.
+
+## [4.0.2] - 2023-10-09
+
+### Fixed
+
+* Fixed "Add one more" for book ref. fields to the open platform.
+
+## [4.0.1] - 2023-10-05
+
+### Added
+
+* Added pull request template.
+
+### Changed
+
+* Updated change log format.
+
+### Fixed
+
+* Fixed open platform widget - hook_field_widget_form_alter() is deprecated
+  and removed in Drupal 10.
+
+## [4.0.0] - 2023-09-25
+
+### Added
+
+* Added GitHub actions to check code.
+* Added this changelog.
+* Added linting for markdown.
+* Added PHP code sniffer.
+* Added PHPStan code analyzing.
+
+### Changed
+
+* Upgraded contrib modules to be Drupal 10 compatible.
+* Upgraded custom modules to be Drupal 10 compatible.
+
+### Removed
+
+* Disabled several modules.
+* Disabled videos in WYSIWYG (not D10 compatible yet).
 
 [keep a changelog]: https://keepachangelog.com/en/1.1.0/
-[unreleased]: https://github.com/itk-dev/event-database-imports/compare/4.0.2...HEAD
-[4.0.2]: https://github.com/itk-dev/event-database-imports/compare/compare/4.0.1...4.0.2
-[4.0.1]: https://github.com/itk-dev/event-database-imports/compare/compare/4.0.0...4.0.1
-[4.0.0]: https://github.com/itk-dev/event-database-imports/compare/compare/3.0.7...4.0.0
+[unreleased]: https://github.com/litteratursiden/litteratursiden/compare/5.0.0...HEAD
+[5.0.0]: https://github.com/litteratursiden/litteratursiden/compare/4.4.2...5.0.0
+[4.4.2]: https://github.com/litteratursiden/litteratursiden/compare/4.4.1...4.4.2
+[4.4.1]: https://github.com/litteratursiden/litteratursiden/compare/4.4.0...4.4.1
+[4.4.0]: https://github.com/litteratursiden/litteratursiden/compare/4.3.1...4.4.0
+[4.3.1]: https://github.com/litteratursiden/litteratursiden/compare/4.3.0...4.3.1
+[4.3.0]: https://github.com/litteratursiden/litteratursiden/compare/4.2.3...4.3.0
+[4.2.3]: https://github.com/litteratursiden/litteratursiden/compare/4.2.2...4.2.3
+[4.2.2]: https://github.com/litteratursiden/litteratursiden/compare/4.2.1...4.2.2
+[4.2.1]: https://github.com/litteratursiden/litteratursiden/compare/4.2.0...4.2.1
+[4.2.0]: https://github.com/litteratursiden/litteratursiden/compare/4.1.4...4.2.0
+[4.1.4]: https://github.com/litteratursiden/litteratursiden/compare/4.1.3...4.1.4
+[4.1.3]: https://github.com/litteratursiden/litteratursiden/compare/4.1.2...4.1.3
+[4.1.2]: https://github.com/litteratursiden/litteratursiden/compare/4.1.1...4.1.2
+[4.1.1]: https://github.com/litteratursiden/litteratursiden/compare/4.1.0...4.1.1
+[4.1.0]: https://github.com/litteratursiden/litteratursiden/compare/4.0.5...4.1.0
+[4.0.5]: https://github.com/litteratursiden/litteratursiden/compare/4.0.4...4.0.5
+[4.0.4]: https://github.com/litteratursiden/litteratursiden/compare/4.0.3...4.0.4
+[4.0.3]: https://github.com/litteratursiden/litteratursiden/compare/4.0.2...4.0.3
+[4.0.2]: https://github.com/litteratursiden/litteratursiden/compare/4.0.1...4.0.2
+[4.0.1]: https://github.com/litteratursiden/litteratursiden/compare/4.0.0...4.0.1
+[4.0.0]: https://github.com/litteratursiden/litteratursiden/compare/3.0.7...4.0.0
