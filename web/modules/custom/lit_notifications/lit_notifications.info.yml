@@ -1,10 +1,9 @@
 name: Litteratursiden Notifications
 type: module
 description: Provides notifications functionality
-core: 8.x
 package: Litteratursiden
 
 dependencies:
   - flag
   - extrafield_views_integration
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^10 || ^11

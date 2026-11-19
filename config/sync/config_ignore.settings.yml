@@ -1,13 +1,14 @@
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk
+mode: simple
 ignored_config_entities:
+  - '*.mail'
   - 'block.block.*'
+  - 'contact.form.*'
+  - lit_open_platform.settings
+  - litteratursiden.settings
   - 'system.menu.*'
   - system.site
-  - '*.mail'
-  - 'contact.form.*'
-  - litteratursiden.settings
-  - lit_open_platform.settings
   - user_registrationpassword.mail
   - ~block.block.views_block__content_by_user_block_1
   - ~block.block.views_block__content_by_user_block_2

@@ -15,7 +15,7 @@ class BooksController extends ControllerBase {
    * Returns content.
    */
   public function withoutImagesList(Request $request) {
-    $offset = $request->get('offset', 0);
+    $offset = $request->query->get('offset', 0);
 
     $query = \Drupal::database()->select('node_field_data', 'n');
     $query->fields('n', ['nid', 'title']);

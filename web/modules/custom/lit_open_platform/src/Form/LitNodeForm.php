@@ -28,7 +28,7 @@ class LitNodeForm extends ContentEntityForm implements ContentEntityFormInterfac
   /**
    * {@inheritdoc}
    */
-  public function __construct(EntityRepositoryInterface $entity_repository, EntityTypeBundleInfoInterface $entity_type_bundle_info = NULL, TimeInterface $time = NULL) {
+  public function __construct(EntityRepositoryInterface $entity_repository, EntityTypeBundleInfoInterface $entity_type_bundle_info, TimeInterface $time) {
     parent::__construct($entity_repository, $entity_type_bundle_info, $time);
 
     // Get module config.

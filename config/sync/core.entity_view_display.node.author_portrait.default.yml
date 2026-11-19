@@ -81,14 +81,6 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-  field_author_portrait_tags:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 8
-    region: content
   field_block_reference:
     type: entity_reference_entity_view
     label: hidden
@@ -126,6 +118,7 @@ content:
 hidden:
   field_author_portrait_country: true
   field_author_portrait_lit_type: true
+  field_author_portrait_tags: true
   field_spotbox_image: true
   field_teaser: true
   langcode: true

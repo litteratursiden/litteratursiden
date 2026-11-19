@@ -33,7 +33,7 @@ class SearchForm extends FormBase {
 
     $form['search'] = [
       '#type' => 'textfield',
-      '#default_value' => $this->getRequest()->get('search'),
+      '#default_value' => $this->getRequest()->query->get('search'),
     ];
 
     $form['actions']['#type'] = 'actions';

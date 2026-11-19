@@ -25,7 +25,7 @@ class FlagCheckboxForm extends FormBase {
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state, FlagInterface $flag = NULL, EntityBase $entity = NULL) {
+  public function buildForm(array $form, FormStateInterface $form_state, ?FlagInterface $flag = NULL, ?EntityBase $entity = NULL) {
     if (!$flag || !$entity) {
       return $form;
     }

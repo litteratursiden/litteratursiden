@@ -8,6 +8,27 @@ See [keep a changelog] for information about writing changes to this log.
 
 ## [Unreleased]
 
+* Updated Drupal core from 10.6.22 to 11.4.13.
+* Removed contrib modules that were not enabled: advagg, email_registration,
+  group, mailchimp, mailsystem, purge, purge_users, s3fs,
+  user_registrationpassword and varnish_purge.
+* Updated contrib modules to new major versions with Drupal 11 support:
+  config_filter 2, config_ignore 3, elasticsearch_connector 9, field_group 4,
+  flag 5, flood_control 3, image_widget_crop 3, maxlength 3, metatag 2,
+  reroute_email 2.3, scheduler 2, video_embed_field 3 and xmlsitemap 2.
+* Added the contrib module `drupal/action`, because Drupal 11 removed Action UI
+  from core.
+* Changed the search server configuration to the elasticsearch_connector 9
+  format. Elasticsearch 9 runs with `xpack.security.enabled=false`.
+  Index all content again after deployment.
+* Fixed deprecated API calls and implicit nullable parameters in custom code.
+* Fixed the header search. The search blocks now put the form attributes on
+  the block wrapper, because Drupal 11 does not do this for forms.
+* Removed the tag fields from the full and search result node displays, so
+  the pages show the same content as before the upgrade.
+* Set `core_version_requirement: ^10 || ^11` on all custom modules and the
+  theme.
+
 ## [4.4.2] 2026-11-18
 
 * Drupal security update

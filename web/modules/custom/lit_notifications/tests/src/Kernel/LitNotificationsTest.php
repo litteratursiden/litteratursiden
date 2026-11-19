@@ -19,7 +19,7 @@ class LitNotificationsTest extends FlagKernelTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'comment',
     'lit_notifications',
     'lit_notifications_test',
@@ -44,7 +44,7 @@ class LitNotificationsTest extends FlagKernelTestBase {
    *
    * @var \Drupal\user\UserInterface
    */
-  protected $root = NULL;
+  protected $rootUser = NULL;
 
   /**
    * {@inheritdoc}
@@ -63,7 +63,7 @@ class LitNotificationsTest extends FlagKernelTestBase {
     $bundles[] = 'lit_notifications_test';
     $this->flag->set('bundles', $bundles);
 
-    $this->root = $this->createUser();
+    $this->rootUser = $this->createUser();
   }
 
   /**
@@ -132,10 +132,10 @@ class LitNotificationsTest extends FlagKernelTestBase {
 
     // Check multiple subscriptions.
     $this->clearMails();
-    $this->flagService->flag($this->flag, $node, $this->root);
+    $this->flagService->flag($this->flag, $node, $this->rootUser);
     Comment::create($comment_values)->save();
     $this->assertMailsAmount(2, 'Check whether two users got emails.');
-    $this->flagService->unflag($this->flag, $node, $this->root);
+    $this->flagService->unflag($this->flag, $node, $this->rootUser);
 
     // Unsubscribing.
     $this->clearMails();

@@ -1,8 +1,7 @@
 name: Litteratursiden search
 type: module
 description: Extends search API for the Litteratursiden
-core: 8.x
 package: Litteratursiden
 dependencies:
   - elasticsearch_connector
-core_version_requirement: ^8 || ^9 || ^10
+core_version_requirement: ^10 || ^11

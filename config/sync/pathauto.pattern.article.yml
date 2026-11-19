@@ -2,17 +2,18 @@ uuid: 2e02668e-454d-444b-b66f-1bc3c806f892
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
   module:
     - node
 id: article
 label: Article
 type: 'canonical_entities:node'
-pattern: 'artikler/[node:title]'
+pattern: '/artikler/[node:title]'
 selection_criteria:
   1b867f6b-d9c4-4523-9459-b6868a7e0982:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 1b867f6b-d9c4-4523-9459-b6868a7e0982
     context_mapping:
       node: node
     bundles:

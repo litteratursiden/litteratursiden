@@ -115,7 +115,7 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: field
-          label: Type
+          label: Indholdstype
           exclude: false
           alter:
             alter_text: false
@@ -357,8 +357,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -388,7 +386,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: Indholdstype
             description: ''
             use_operator: false
             operator: type_op
@@ -400,8 +398,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -491,8 +487,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -546,11 +540,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              producer: '0'
-              editor: '0'
-              superadmin: '0'
-              api: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -592,11 +581,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              producer: '0'
-              editor: '0'
-              superadmin: '0'
-              api: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -637,11 +621,6 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              producer: '0'
-              editor: '0'
-              superadmin: '0'
-              api: '0'
             reduce: false
           is_grouped: true
           group_info:
@@ -781,6 +760,7 @@ display:
           empty_table: true
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
       query:

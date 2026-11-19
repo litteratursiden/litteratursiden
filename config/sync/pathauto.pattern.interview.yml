@@ -2,17 +2,18 @@ uuid: e7d11b4b-6d06-4076-a7e5-2c2d402ea95d
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.interview
   module:
     - node
 id: interview
 label: Interview
 type: 'canonical_entities:node'
-pattern: 'videoer/[node:title]'
+pattern: '/videoer/[node:title]'
 selection_criteria:
   d6425b9a-69d8-41f6-870b-126a3f70dc17:
     id: 'entity_bundle:node'
     negate: false
-    uuid: d6425b9a-69d8-41f6-870b-126a3f70dc17
     context_mapping:
       node: node
     bundles:

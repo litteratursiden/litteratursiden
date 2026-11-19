@@ -7,12 +7,11 @@ dependencies:
 id: book_debate
 label: 'Book debate'
 type: 'canonical_entities:node'
-pattern: 'debat/[node:title]'
+pattern: '/debat/[node:title]'
 selection_criteria:
   266b77e9-0fd2-41df-99ae-46cc1d30e3f7:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 266b77e9-0fd2-41df-99ae-46cc1d30e3f7
     context_mapping:
       node: node
     bundles:

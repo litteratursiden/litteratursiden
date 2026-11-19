@@ -338,7 +338,7 @@ function bpi_error_message($http_code) {
       $msg = t('BPI: Trying to syndicate content by owner who already did that is not allowed.');
       break;
 
-    case 500;
+    case 500:
       $msg = t('BPI: Failed to communicate with BPI service. Check your field mapping setting and/or service settings.');
       break;
 

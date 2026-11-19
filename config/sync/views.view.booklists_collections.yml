@@ -296,7 +296,8 @@ display:
           entity_type: block_content
           plugin_id: entity_queue
           required: false
-          limit_queue: book_list_collections
+          limit_queue:
+            - book_list_collections
       header: {  }
       footer: {  }
       display_extenders: {  }

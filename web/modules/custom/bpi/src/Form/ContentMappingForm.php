@@ -32,7 +32,7 @@ class ContentMappingForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $node_types = node_type_get_names();
+    $node_types = \Drupal::service('entity_type.bundle.info')->getBundleLabels('node');
     $node_types_names = array_keys($node_types);
 
     $settings = $this->config('bpi.content_mapping');
