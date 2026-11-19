@@ -30,7 +30,7 @@ class LitNodeFormTest extends KernelTestBase {
    *
    * @var array
    */
-  public static $modules = ['system', 'node', 'user', 'field', 'text'];
+  protected static $modules = ['system', 'node', 'user', 'field', 'text'];
 
   /**
    * {@inheritdoc}

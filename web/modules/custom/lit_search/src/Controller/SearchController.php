@@ -141,7 +141,6 @@ class SearchController extends ControllerBase {
         try {
           $entity = \Drupal::entityTypeManager()->getStorage($matches[2])->load($matches[3]);
           $result[] = $this->renderEntity($entity);
-          ;
         }
         catch (\Exception $e) {
           // No action a item simply was not loaded.

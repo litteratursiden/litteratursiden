@@ -124,7 +124,7 @@ class WorkTransformer extends BaseTransformer {
    *
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  private static function transformImage(string $url, string $dir, string $alt = NULL, string $title = NULL): ?array {
+  private static function transformImage(string $url, string $dir, ?string $alt = NULL, ?string $title = NULL): ?array {
     $url = strpos($url, '://') === FALSE ? 'http:' . $url : $url;
 
     // Get image content from the url.

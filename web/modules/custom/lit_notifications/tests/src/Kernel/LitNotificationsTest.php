@@ -19,7 +19,7 @@ class LitNotificationsTest extends FlagKernelTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'comment',
     'lit_notifications',
     'lit_notifications_test',

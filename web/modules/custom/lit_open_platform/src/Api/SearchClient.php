@@ -22,12 +22,15 @@ class SearchClient extends Client implements SearchClientInterface {
   /**
    * {@inheritdoc}
    */
-  public function requestSearch(string $search, array $fields = [
-    'pid',
-    'dcTitleFull',
-    'coverUrl42',
-    'creatorAut',
-  ]): array {
+  public function requestSearch(
+    string $search,
+    array $fields = [
+      'pid',
+      'dcTitleFull',
+      'coverUrl42',
+      'creatorAut',
+    ],
+  ): array {
     $types = implode(' OR ', array_map(function ($type) {
       return 'term.type="' . $type . '"';
     }, self::MATERIAL_TYPES));
@@ -47,11 +50,14 @@ class SearchClient extends Client implements SearchClientInterface {
   /**
    * {@inheritdoc}
    */
-  public function requestWork(array $pids, array $fields = [
-    'pid', 'dcTitleFull', 'identifierISBN', 'coverUrlFull', 'creatorAut', 'abstract',
-    'source', 'contributorTrl', 'date', 'publisher', 'extent', 'language', 'subjectDK5',
-    'subjectDK5Text', 'subjectDBCS', 'subjectDBCN', 'subjectDBCF',
-  ]): array {
+  public function requestWork(
+    array $pids,
+    array $fields = [
+      'pid', 'dcTitleFull', 'identifierISBN', 'coverUrlFull', 'creatorAut', 'abstract',
+      'source', 'contributorTrl', 'date', 'publisher', 'extent', 'language', 'subjectDK5',
+      'subjectDK5Text', 'subjectDBCS', 'subjectDBCN', 'subjectDBCF',
+    ],
+  ): array {
     $response = $this->request('POST', $this->buildUrl('work'), [
       'json' => [
         'pretty' => TRUE,
