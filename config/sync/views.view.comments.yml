@@ -310,7 +310,7 @@ display:
           precision: 0
           decimal: .
           separator: ','
-          format_plural: 1
+          format_plural: true
           format_plural_string: !!binary QGNvdW50IGluZGzDpmcDQGNvdW50IGluZGzDpmc=
           prefix: ''
           suffix: ''
@@ -1070,7 +1070,7 @@ display:
           precision: 0
           decimal: .
           separator: ','
-          format_plural: 1
+          format_plural: true
           format_plural_string: !!binary QGNvdW50IGFubWVsZGVsc2UDQGNvdW50IGFubWVsZGVsc2Vy
           prefix: ''
           suffix: ''

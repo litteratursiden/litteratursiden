@@ -10,4 +10,4 @@ parameters:
       - '#Plugin manager has cache backend specified but does not declare cache tags.#'
   reportUnmatchedIgnoredErrors: false
   excludePaths:
-      - web/themes/custom/litteratursiden/node_modules
+      - web/themes/custom/litteratursiden/node_modules (?)

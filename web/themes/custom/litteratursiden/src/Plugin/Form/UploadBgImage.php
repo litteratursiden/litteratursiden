@@ -4,6 +4,7 @@ namespace Drupal\litteratursiden\Plugin\Form;
 
 use Drupal\bootstrap\Plugin\Form\SystemThemeSettings;
 use Drupal\bootstrap\Utility\Element;
+use Drupal\Core\Extension\ThemeSettingsProvider;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StreamWrapper\StreamWrapperManager;
 
@@ -33,7 +34,7 @@ class UploadBgImage extends SystemThemeSettings {
     $form['background']['background_path'] = [
       '#type' => 'textfield',
       '#title' => t('Path to custom background image'),
-      '#default_value' => theme_get_setting('background_path', 'litteratursiden'),
+      '#default_value' => \Drupal::service(ThemeSettingsProvider::class)->getSetting('background_path', 'litteratursiden'),
     ];
 
     $form['background']['background_upload'] = [

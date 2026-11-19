@@ -262,6 +262,7 @@ permissions:
   - 'override youthreview authored by option'
   - 'override youthreview authored on option'
   - 'override youthreview published option'
+  - 'rebuild node access permissions'
   - 'revert all revisions'
   - 'revert analysis revisions'
   - 'revert article revisions'

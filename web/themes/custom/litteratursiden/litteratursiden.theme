@@ -299,7 +299,7 @@ function litteratursiden_theme_suggestions_block_alter(&$suggestions, $vars, $ho
  */
 function litteratursiden_preprocess_user(&$variables) {
   if (\Drupal::request()
-    ->get(RouteObjectInterface::ROUTE_NAME) == 'entity.user.canonical') {
+    ->attributes->get(RouteObjectInterface::ROUTE_NAME) == 'entity.user.canonical') {
     $variables['view_page_path'] = Url::fromUri('base:' . \Drupal::service('path.current')
       ->getPath())->toString() . '/view-page';
   }

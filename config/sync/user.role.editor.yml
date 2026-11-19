@@ -139,6 +139,7 @@ permissions:
   - 'override similar published option'
   - 'override topic published option'
   - 'override youthreview published option'
+  - 'rebuild node access permissions'
   - 'skip comment approval'
   - 'translate configuration'
   - 'translate interface'

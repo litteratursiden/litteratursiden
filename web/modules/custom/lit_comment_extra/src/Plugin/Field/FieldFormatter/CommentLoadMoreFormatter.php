@@ -2,8 +2,9 @@
 
 namespace Drupal\lit_comment_extra\Plugin\Field\FieldFormatter;
 
+use Drupal\comment\CommentingStatus;
 use Drupal\comment\Plugin\Field\FieldFormatter\CommentDefaultFormatter;
-use Drupal\comment\Plugin\Field\FieldType\CommentItemInterface;
+use Drupal\comment\FormLocation;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\lit_comment_extra\CommentStorageExtraInterface;
@@ -79,7 +80,7 @@ class CommentLoadMoreFormatter extends CommentDefaultFormatter {
 
     $status = $items->status;
 
-    if ($status != CommentItemInterface::HIDDEN && empty($entity->in_preview) &&
+    if ($status != CommentingStatus::Hidden->value && empty($entity->in_preview) &&
       // Comments are added to the search results and search index by
       // comment_node_update_index() instead of by this formatter, so don't
       // return anything if the view mode is search_index or search_result.
@@ -107,7 +108,7 @@ class CommentLoadMoreFormatter extends CommentDefaultFormatter {
 
       // Append comment form if the comments are open and the form is set to
       // display below the entity. Do not show the form for the print view mode.
-      if ($status == CommentItemInterface::OPEN && $comment_settings['form_location'] == CommentItemInterface::FORM_BELOW && $this->viewMode != 'print') {
+      if ($status == CommentingStatus::Open->value && $comment_settings['form_location'] == FormLocation::Below->value && $this->viewMode != 'print') {
         // Only show the add comment form if the user has permission.
         $elements['#cache']['contexts'][] = 'user.roles';
         if ($this->currentUser->hasPermission('post comments')) {

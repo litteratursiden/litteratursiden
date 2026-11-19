@@ -32,7 +32,7 @@ class LitNodeSelection extends NodeSelection {
    *
    * @var \Drupal\lit_open_platform\Api\SearchClient
    */
-  private $client;
+  protected $client;
 
   /**
    * {@inheritdoc}

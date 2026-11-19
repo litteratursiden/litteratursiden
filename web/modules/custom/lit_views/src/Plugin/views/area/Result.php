@@ -102,7 +102,7 @@ class Result extends BaseResult {
     $replacements['@current_page'] = $current_page;
     $replacements['@current_record_count'] = $current_record_count;
     $replacements['@page_count'] = $page_count;
-    $replacements['@search_query'] = \Drupal::request()->get('search');
+    $replacements['@search_query'] = \Drupal::request()->query->get('search');
 
     // Send the output.
     if (!empty($total) || !empty($this->options['empty'])) {
